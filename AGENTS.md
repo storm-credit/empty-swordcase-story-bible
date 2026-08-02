@@ -1,4 +1,4 @@
-# AGENTS.md — Novel Production Orchestra v2.7
+# AGENTS.md — Novel Production Orchestra v2.8
 
 ## Governance
 
@@ -41,12 +41,23 @@
 7. 작가가 A급 변경을 승인한다.
 8. Claude Code가 반영하고 Codex/A10이 검증한다.
 
-## Required v2.7 Inputs
+## Required Inputs
 
 - `production/continuity/PAYOFF_ARCHITECTURE_V2_7.md`
 - `data/episode_payoff_index_001_200.json`
+- `data/episode_world_cast_cost_index_001_200.json`
+- `data/supporting_cast_028.json`
 - `docs/WRITING_HARNESS_PAYOFF_ADDENDUM_V2_7.md`
+- `docs/45_SETTLEMENT_CAST_COST_ALLOCATION_V2_8.md`
 - 해당 10화 제작 패킷
+
+## v2.8 Linkage Responsibilities
+
+- A02: 48개 거점의 회차 사용과 지역 생활 규칙 승인.
+- A04: 조연 28명의 첫 등장·재등장·종착 승인.
+- A03: 신규 고유명사 과밀과 재방문 간격 검토.
+- A07: 장소·부상·권리·관계 잔여 상태 교차 검사.
+- A10: 48/48, 28/28, 200/200 자동 차단 검증.
 
 ## Hard Constraints
 
@@ -62,4 +73,5 @@
 - 5액트·20서브액트·200화 구조: 완료
 - 1~200화 제작 패킷 커버리지: 완료
 - 1~200화 복선·회수 태깅: 완료
+- 거점 48/48·조연 28/28·구체 대가 200/200: 완료
 - 소설 원고: 미작성
