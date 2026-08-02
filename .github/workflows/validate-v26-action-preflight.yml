@@ -1,0 +1,38 @@
+name: Validate v2.6 action preflight
+
+on:
+  push:
+    paths:
+      - 'data/episodes_041_080.json'
+      - 'data/episodes_081_120.json'
+      - 'data/episodes_121_160.json'
+      - 'data/episodes_161_200.json'
+      - 'scripts/build_detailed_packets_v2_6.py'
+      - 'scripts/build_action_preflight_v2_6.py'
+      - '.github/workflows/validate-v26-action-preflight.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-action-preflight:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build action preflight sheets
+        run: python scripts/build_action_preflight_v2_6.py
+      - name: Validate action sheet count and gates
+        run: |
+          test "$(grep -c '^## [0-9].*화' production/combat/ACTION_PREFLIGHT_041_200.md)" -eq 47
+          test "$(grep -c '집필 승인:' production/combat/ACTION_PREFLIGHT_041_200.md)" -eq 47
+          test "$(grep -c 'ZONE A 진입점' production/combat/ACTION_PREFLIGHT_041_200.md)" -eq 47
+      - name: Upload action preflight artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: action-preflight-041-200
+          path: production/combat/ACTION_PREFLIGHT_041_200.md
+          if-no-files-found: error
