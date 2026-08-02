@@ -1,0 +1,41 @@
+name: Validate v2.8 world cast cost links
+
+on:
+  push:
+    paths:
+      - 'data/episodes_*.json'
+      - 'data/world_settlements_048.json'
+      - 'data/supporting_cast_028.json'
+      - 'data/episode_world_cast_cost_001_050.json'
+      - 'data/episode_world_cast_cost_051_100.json'
+      - 'data/episode_world_cast_cost_101_150.json'
+      - 'data/episode_world_cast_cost_151_200.json'
+      - 'scripts/build_effective_episodes_v2_8.py'
+      - 'scripts/validate_world_cast_cost_v2_8.py'
+      - '.github/workflows/validate-v28-world-cast-cost.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build effective v2.8 episode data
+        run: python scripts/build_effective_episodes_v2_8.py
+      - name: Validate settlements, supporting cast, and concrete costs
+        run: python scripts/validate_world_cast_cost_v2_8.py
+      - name: Upload effective data and human matrix
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-linkage-v2.8
+          path: |
+            build/episodes_effective_001_200_v2_8.json
+            build/episodes_effective_001_200_v2_8.csv
+            production/continuity/EPISODE_WORLD_CAST_COST_MATRIX_001_200.md
+          if-no-files-found: error
