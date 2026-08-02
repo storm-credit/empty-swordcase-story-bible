@@ -1,71 +1,71 @@
-# CLAUDE.md — Empty Swordcase Story Bible v2.4
+# CLAUDE.md — Empty Swordcase Story Bible v2.7
 
 ## Mission
 
-이 저장소는 소설 원고가 아니라 《빈 검함으로 천하를 수집한다》의 정본 설계도·세계관·제작 관리 문서다.
+이 저장소는 《빈 검함으로 천하를 수집한다》의 정본 설계도·세계관·제작 관리 시스템이다. 기본 모드는 `DESIGN_MODE`이며, 사용자가 명시적으로 요청하기 전에는 소설 본문을 작성하지 않는다.
 
 ## Authority
 
 - Final Canon Owner: 사용자(작가)
 - Project Manager / Lead Story Architect: Synapse-PM
 - Repository Executor: Claude Code
-- Data / CI Auditor: Codex
+- Data / CI Auditor: Codex/A10
+- Continuity Blocker: A07
+- Foreshadowing & Payoff Editor: A14
 
-AI는 스스로 핵심 정본을 바꾸지 않는다. 다음 항목은 작가 승인 없이는 변경 금지다.
-
-- 주인공 담운의 정체와 최종 선택
-- 신수 비소유 원칙
-- 5액트 결말
-- 주요 동료의 생존·이탈·관계 방향
-- 소유권·귀환·책임이라는 작품 주제
+작가 승인 없이는 주인공 정체, 신수 비소유 원칙, 5액트 결말, 주요 동료의 생존·이탈, 소유권·귀환·책임이라는 주제를 변경하지 않는다.
 
 ## Canon Reading Order
 
 1. `CLAUDE.md`
 2. `AGENTS.md`
 3. `PROJECT_BLUEPRINT_V2_4.md`
-4. `orchestra/TEAM_ROSTER.md`
-5. `data/project_manifest.json`
-
-## Mode
-
-기본값은 `DESIGN_MODE`다.
-
-- 원고를 작성하지 않는다.
-- 액트, 서브액트, 회차, 장면, 인물, 수집품의 연결을 설계한다.
-- 설정을 새로 만들기 전에 기존 설정으로 해결 가능한지 확인한다.
-- 변경 전 맹점·연쇄 영향·복선 충돌을 점검한다.
-- 변경 이유와 영향을 기록한다.
+4. `production/continuity/PAYOFF_ARCHITECTURE_V2_7.md`
+5. `data/episode_payoff_index_001_200.json`에서 해당 화
+6. 해당 `production/packets/` 10화 패킷
+7. 관련 세계관·인물·수집품 정본
 
 ## Production Gate
 
 한 화를 집필 가능 상태로 판정하려면 다음을 모두 충족해야 한다.
 
-1. 회차 목표와 갈등이 구체적이다.
+1. 회차 목표와 반대자 목표가 구체적이다.
 2. 6~10개 씬비트가 있다.
-3. 등장 장소·조연·수집품이 정본 ID로 연결된다.
-4. 주인공의 선택과 실제 대가가 명시된다.
-5. 전투 화는 거리·공간·역전·부상 시트가 있다.
-6. 마지막 훅이 다음 화의 첫 장면에서 회수 가능하다.
-7. 연속성 감사자가 승인한다.
+3. 장소·인물·수집품이 정본 ID로 연결된다.
+4. 실제 대가와 후속 상태가 명시된다.
+5. 전투 화는 공간·거리·세 번의 역전·기능 손실을 갖는다.
+6. 직전 C-Tier 훅을 첫 10%에서 행동으로 회수한다.
+7. 이번 화의 S/A/CH/IT 태그가 지정돼 있다.
+8. A07과 A14 검사를 통과한다.
+
+## Payoff Gate v2.7
+
+- S-Tier: 장편 전체 질문 8개.
+- A-Tier: 10화 서브액트 추적축 20개.
+- CH-Tier: 주요 인물 변화선 7개.
+- IT-Tier: 핵심 수집품·제도 장치 16개.
+- C-Tier: C001~C200 회차 훅.
+- 한 화의 신규 장기 질문은 최대 1개다.
+- 핵심 복선은 40화 넘게 재등장 없이 방치하지 않는다.
+- 160화 이후 새로운 S-Tier 세계법칙을 만들지 않는다.
+- 정답 발표만으로 회수하지 않고 선택·관계·장비·제도 변화로 갚는다.
+- 태그명을 원고에 직접 노출하지 않는다.
 
 ## Non-Negotiable Rules
 
 - 강탈품은 정상 수납 불가.
-- 신수는 소유·수납 대상이 아님.
-- 도감 진척에는 수집뿐 아니라 귀환·비수집·공동 책임도 포함.
-- 의흔은 죽은 사람의 영혼이 아니라 사물에 남은 행위·감정의 흔적.
-- 무주 상태는 소유자 부재, 권리 포기, 공동체 승인 등 복합 조건으로 판정.
-- 설정 설명은 장면·선택·갈등으로 보여준다.
-- 시스템창 남용 금지. 감각·사물의 반응·인물의 해석을 우선.
+- 신수는 소유·수납 대상이 아니다.
+- 귀환·비수집·공동 책임도 도감 진척이다.
+- 의흔은 영혼이 아니라 사물에 남은 행위·감정의 흔적이다.
+- 설정은 사전식 설명보다 누가 그 규칙 때문에 손해를 보는지로 보여준다.
+- 단문 자체가 아니라 파편 단문의 연속을 제한한다.
+- 전투는 거리·발 위치·무기 궤적·기능 손실을 추적 가능하게 쓴다.
+- 풍경은 방향·생활·위험·감정·액션 준비 중 최소 두 기능을 수행한다.
 
 ## Definition of Done
 
-‘200화 설계 완료’는 원고 200화 완성을 뜻하지 않는다. 다음 네 층위를 구분한다.
-
-- Architecture: 5 Act / 20 Subact / 200 Episode coverage
-- Production Blueprint: 회차별 구체 씬비트
-- Draft: 소설 원고
-- Revision: 문체·연속성·상업성 교정
-
-현재 상태는 Architecture 완료, Production Blueprint 진행 중이다.
+- Architecture: 5 Act / 20 Subact / 200 Episode — 완료
+- Production Packet Coverage: 1~200화 — 완료
+- Payoff Tagging: 1~200화 — 완료
+- Draft: 소설 원고 — 미작성
+- Revision: 문체·연속성·상업성 교정 — 미착수
