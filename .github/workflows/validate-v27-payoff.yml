@@ -1,0 +1,43 @@
+name: Validate v2.7 payoff architecture
+
+on:
+  push:
+    paths:
+      - 'data/episodes_001_010.json'
+      - 'data/episodes_011_020.json'
+      - 'data/episodes_021_030.json'
+      - 'data/episodes_031_040.json'
+      - 'data/episodes_041_080.json'
+      - 'data/episodes_081_120.json'
+      - 'data/episodes_121_160.json'
+      - 'data/episodes_161_200.json'
+      - 'data/payoff_tracks_v2_7.json'
+      - 'data/episode_payoff_index_001_200.json'
+      - 'scripts/build_episode_payoff_tags_v2_7.py'
+      - 'scripts/validate_episode_payoff_tags_v2_7.py'
+      - '.github/workflows/validate-v27-payoff.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build 1-200 payoff map
+        run: python scripts/build_episode_payoff_tags_v2_7.py
+      - name: Validate coverage, density, dormancy, and endgame rules
+        run: python scripts/validate_episode_payoff_tags_v2_7.py
+      - name: Upload generated payoff map
+        uses: actions/upload-artifact@v4
+        with:
+          name: payoff-map-v2.7
+          path: |
+            data/episode_payoff_tags_001_200.json
+            production/continuity/EPISODE_PAYOFF_MATRIX_001_200.md
+          if-no-files-found: error
