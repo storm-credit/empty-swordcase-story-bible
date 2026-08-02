@@ -18,7 +18,18 @@
   "files": {
     "track_definitions": "data/payoff_tracks_v2_7.json",
     "payoff_index": "data/episode_payoff_index_001_200.json",
-    "episode_source_001_040": "data/episodes_001_040.json",
+    "episode_sources_001_040": [
+      "data/episodes_001_010.json",
+      "data/episodes_011_020.json",
+      "data/episodes_021_030.json",
+      "data/episodes_031_040.json"
+    ],
+    "episode_sources_041_200": [
+      "data/episodes_041_080.json",
+      "data/episodes_081_120.json",
+      "data/episodes_121_160.json",
+      "data/episodes_161_200.json"
+    ],
     "builder": "scripts/build_episode_payoff_tags_v2_7.py",
     "validator": "scripts/validate_episode_payoff_tags_v2_7.py",
     "generated_episode_tags": "data/episode_payoff_tags_001_200.json",
