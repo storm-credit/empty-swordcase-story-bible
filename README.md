@@ -1,6 +1,6 @@
 # 《빈 검함으로 천하를 수집한다》 Story Bible v3.0
 
-> **Design Complete / Manuscript Drafting Started / Episode 1 Internal Harness Pass / Author Approval Pending**
+> **Design Complete / Manuscript Drafting Started / Episodes 1-2 Internal Harness Pass / Author Approval Pending**
 
 ## 현재 범위
 
@@ -11,7 +11,7 @@
 - 주요 액션 공간 프리플라이트: 47/47
 - 조연 음성 카드: 28/28
 - 핵심 부상·장비·권리 연속성: 45개
-- 원고 초고: 1화 작성·내부 하네스 통과
+- 원고 초고: 1~2화 작성·내부 하네스 통과
 - 작가 승인 원고: 0화
 
 ## GitHub 운영 원칙
@@ -43,6 +43,8 @@ python scripts/validate_manuscript_drafts_v3_0.py
 현재 작성본:
 
 - `manuscript/drafts/001_수신인_없는_검함.md`
+- `manuscript/drafts/002_반_치_모자란_칼.md`
 - `production/reviews/001_PROSE_AUDIT_V3_0.md`
+- `production/reviews/002_PROSE_AUDIT_V3_0.md`
 
-다음 작업 대상은 제2화 「반 치 모자란 칼」이다.
+다음 작업 대상은 제3화 「첫 번째 수집」이다.
