@@ -59,6 +59,6 @@
 ## Current Status
 
 - Architecture / Production Packets / Payoff / World-Cast-Cost Linkage / Prose Preflight — 완료
-- Episode 1 Draft / Internal Harness — 완료
+- Episodes 1-2 Draft / Internal Harness — 완료
 - Author-approved manuscript — 0화
-- Next episode — 2화 「반 치 모자란 칼」
+- Next episode — 3화 「첫 번째 수집」
