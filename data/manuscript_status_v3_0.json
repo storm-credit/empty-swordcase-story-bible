@@ -3,16 +3,25 @@
   "status": "drafting_started_internal_harness_pass_author_approval_pending",
   "manuscript": {
     "planned_episodes": 200,
-    "drafted_episodes": [1],
-    "internally_reviewed_episodes": [1],
+    "drafted_episodes": [1, 2],
+    "internally_reviewed_episodes": [1, 2],
     "author_approved_episodes": []
   },
-  "episode_1": {
-    "path": "manuscript/drafts/001_수신인_없는_검함.md",
-    "review": "production/reviews/001_PROSE_AUDIT_V3_0.md",
-    "characters_with_spaces": 5169,
-    "prose_lint_warnings": 0,
-    "canon_status": "draft"
+  "episodes": {
+    "1": {
+      "path": "manuscript/drafts/001_수신인_없는_검함.md",
+      "review": "production/reviews/001_PROSE_AUDIT_V3_0.md",
+      "characters_with_spaces": 5169,
+      "prose_lint_warnings": 0,
+      "canon_status": "draft"
+    },
+    "2": {
+      "path": "manuscript/drafts/002_반_치_모자란_칼.md",
+      "review": "production/reviews/002_PROSE_AUDIT_V3_0.md",
+      "characters_with_spaces": 4831,
+      "prose_lint_warnings": 0,
+      "canon_status": "draft"
+    }
   },
-  "next_episode": 2
+  "next_episode": 3
 }
