@@ -1,0 +1,42 @@
+name: Validate v2.6 production packets
+
+on:
+  push:
+    paths:
+      - 'data/episodes_041_080.json'
+      - 'data/episodes_081_120.json'
+      - 'data/episodes_121_160.json'
+      - 'data/episodes_161_200.json'
+      - 'scripts/build_detailed_packets_v2_6.py'
+      - 'scripts/validate_detailed_packets.py'
+      - '.github/workflows/validate-v26-packets.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build episodes 41-200 packets
+        run: python scripts/build_detailed_packets_v2_6.py
+
+      - name: Validate coverage and required fields
+        run: python scripts/validate_detailed_packets.py
+
+      - name: Confirm generated packet count
+        run: test "$(find production/packets -maxdepth 1 -name '*.md' | wc -l)" -eq 16
+
+      - name: Upload generated packets
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-packets-041-200
+          path: production/packets/*.md
+          if-no-files-found: error
