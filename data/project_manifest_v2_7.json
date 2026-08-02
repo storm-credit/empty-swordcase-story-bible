@@ -1,0 +1,27 @@
+{
+  "version": "2.7",
+  "status": "architecture_and_payoff_tagging_complete_production_packets_complete_prose_not_drafted",
+  "coverage": {
+    "episodes": 200,
+    "s_tier_tracks": 8,
+    "a_tier_tracks": 20,
+    "character_tracks": 7,
+    "item_tracks": 16,
+    "c_tier_hooks": 200
+  },
+  "gates": {
+    "episode_payoff_tags": true,
+    "max_s_tier_dormancy_40": true,
+    "no_new_s_tier_after_160": true,
+    "prose_drafted": false
+  },
+  "files": {
+    "track_definitions": "data/payoff_tracks_v2_7.json",
+    "payoff_index": "data/episode_payoff_index_001_200.json",
+    "episode_source_001_040": "data/episodes_001_040.json",
+    "builder": "scripts/build_episode_payoff_tags_v2_7.py",
+    "validator": "scripts/validate_episode_payoff_tags_v2_7.py",
+    "generated_episode_tags": "data/episode_payoff_tags_001_200.json",
+    "generated_human_matrix": "production/continuity/EPISODE_PAYOFF_MATRIX_001_200.md"
+  }
+}
