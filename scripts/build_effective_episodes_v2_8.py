@@ -82,6 +82,27 @@ def main() -> None:
                     out[key] = "|".join(map(str, out[key]))
             writer.writerow(out)
 
+    matrix = [
+        "# 1~200화 거점·조연·대가 매트릭스 v2.8",
+        "",
+        "| 화 | 제목 | 거점 ID·이름 | 조연 ID·이름 | 실제 대가 |",
+        "|---:|---|---|---|---|",
+    ]
+    for row in episodes:
+        place_text = ", ".join(
+            f"{sid} {settlements[sid]['name']}" for sid in row["settlement_ids"]
+        )
+        cast_text = ", ".join(
+            f"{sid} {supporting[sid]['name']}" for sid in row["supporting_cast_ids"]
+        ) or "-"
+        cost = str(row["cost"]).replace("|", "\\|")
+        matrix.append(
+            f"| {row['episode']} | {row['title']} | {place_text} | {cast_text} | {cost} |"
+        )
+    matrix_path = ROOT / "production" / "continuity" / "EPISODE_WORLD_CAST_COST_MATRIX_001_200.md"
+    matrix_path.parent.mkdir(parents=True, exist_ok=True)
+    matrix_path.write_text("\n".join(matrix) + "\n", encoding="utf-8")
+
     print("built effective v2.8 episodes: 200")
 
 if __name__ == "__main__":
