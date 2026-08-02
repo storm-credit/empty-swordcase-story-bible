@@ -1,0 +1,38 @@
+{
+  "project": {
+    "title_ko": "빈 검함으로 천하를 수집한다",
+    "repository": "storm-credit/empty-swordcase-story-bible",
+    "version": "2.4-core",
+    "status": "canon_architecture_complete_production_detailing_in_progress",
+    "prose_status": "not_drafted"
+  },
+  "scale": {
+    "episodes": 200,
+    "acts": 5,
+    "arcs": 10,
+    "subacts": 20,
+    "regions": 8,
+    "settlements": 48,
+    "factions": 18,
+    "collectibles": 120,
+    "sets": 24,
+    "beasts_and_mounts": 18,
+    "martial_traditions": 36,
+    "supporting_cast": 28
+  },
+  "completion": {
+    "act_subact_architecture": true,
+    "episode_function_map_001_200": true,
+    "detailed_scene_beats_001_020": true,
+    "detailed_scene_beats_021_200": false,
+    "major_combat_sheets": false,
+    "prose_manuscript": false
+  },
+  "governance": {
+    "final_canon_owner": "author",
+    "project_manager": "Synapse-PM",
+    "repository_executor": "Claude Code",
+    "data_ci_auditor": "Codex"
+  },
+  "next_gate": "episodes_021_040_detailed_scene_beats_and_combat_sheets"
+}
