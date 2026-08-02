@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate 41-200 detailed production packets from compact canonical data."""
 from __future__ import annotations
+
 import json
 from pathlib import Path
 
@@ -8,6 +9,13 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 OUT = ROOT / "production" / "packets"
 OUT.mkdir(parents=True, exist_ok=True)
+
+SOURCE_FILES = (
+    "episodes_041_080.json",
+    "episodes_081_120.json",
+    "episodes_121_160.json",
+    "episodes_161_200.json",
+)
 
 META = {
     41: ("남독택 독안개 마을과 야생계약소", "단내가 밴 독안개, 젖은 나무다리, 약초를 삶는 놋솥, 숨소리를 적는 초록 표찰", "신수 밀매단과 허가 독점", "생명을 물건처럼 다루지 않는 법"),
@@ -40,7 +48,10 @@ ACTIONS = {
 
 def load_rows() -> list[dict]:
     rows: list[dict] = []
-    for path in sorted(DATA.glob("episodes_0*.json")):
+    for name in SOURCE_FILES:
+        path = DATA / name
+        if not path.exists():
+            raise FileNotFoundError(f"missing source file: {path}")
         rows.extend(json.loads(path.read_text(encoding="utf-8")))
     return sorted(rows, key=lambda row: row["episode"])
 
@@ -82,28 +93,24 @@ def build(rows: list[dict]) -> None:
                 f"`{row['choice']}`을 선택한다. 실제 대가: {row['cost']}",
                 f"`{row['hook']}`을 사물의 움직임·몸의 반응·새 행동 요청으로 제시해 다음 화 첫 장면을 강제한다.",
             ]
-            block.extend(
-                [
-                    f"## {episode}화 — {row['title']}",
-                    "",
-                    f"- 회차 기능: {row['episode_function']}",
-                    f"- 즉시 목표: {row['goal']}",
-                    f"- 등장: {', '.join(row.get('cast', []))}",
-                    f"- 위치: {row['location']}",
-                    "",
-                    "### 씬비트",
-                ]
-            )
+            block.extend([
+                f"## {episode}화 — {row['title']}",
+                "",
+                f"- 회차 기능: {row['episode_function']}",
+                f"- 즉시 목표: {row['goal']}",
+                f"- 등장: {', '.join(row.get('cast', []))}",
+                f"- 위치: {row['location']}",
+                "",
+                "### 씬비트",
+            ])
             block.extend(f"{index}. {beat}" for index, beat in enumerate(beats, 1))
-            block.extend(
-                [
-                    "",
-                    f"- **구체 대가:** {row['cost']}",
-                    f"- **보상:** {row['reward']}",
-                    f"- **끝 훅:** {row['hook']}",
-                    "",
-                ]
-            )
+            block.extend([
+                "",
+                f"- **구체 대가:** {row['cost']}",
+                f"- **보상:** {row['reward']}",
+                f"- **끝 훅:** {row['hook']}",
+                "",
+            ])
 
         (OUT / f"{start:03d}_{start + 9:03d}.md").write_text(
             "\n".join(block), encoding="utf-8"
@@ -112,8 +119,9 @@ def build(rows: list[dict]) -> None:
 
 def main() -> None:
     rows = load_rows()
-    if [row["episode"] for row in rows] != list(range(41, 201)):
-        raise SystemExit("coverage must be 41-200")
+    episodes = [row["episode"] for row in rows]
+    if episodes != list(range(41, 201)):
+        raise SystemExit(f"coverage must be 41-200 without duplicates: {episodes[:5]} ... {episodes[-5:]}")
     build(rows)
     print("generated 16 packet files for episodes 41-200")
 
