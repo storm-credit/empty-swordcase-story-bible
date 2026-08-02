@@ -1,17 +1,26 @@
-# 《빈 검함으로 천하를 수집한다》 Story Bible v2.9
+# 《빈 검함으로 천하를 수집한다》 Story Bible v3.0
 
-> **Canon Architecture Complete / Production Linkage Complete / Prose Preflight Complete / Manuscript Not Drafted**
+> **Design Complete / Manuscript Drafting Started / Episode 1 Internal Harness Pass / Author Approval Pending**
 
-## 완성 범위
+## 현재 범위
 
-- 5 Act / 10 Arc / 20 Subact / 200화
+- 5 Act / 10 Arc / 20 Subact / 200화 설계 완료
 - 세계관: 8권역·48거점·18세력
 - 수집 시스템: 수집품 120·세트 24·신수 18
 - 회차 제작 패킷·복선 회수·거점·조연·대가 연결: 200/200
 - 주요 액션 공간 프리플라이트: 47/47
 - 조연 음성 카드: 28/28
 - 핵심 부상·장비·권리 연속성: 45개
-- 소설 원고: 미작성
+- 원고 초고: 1화 작성·내부 하네스 통과
+- 작가 승인 원고: 0화
+
+## GitHub 운영 원칙
+
+- `main`을 유일한 작업 정본으로 사용한다.
+- 별도 다운로드 패키지를 기본 전달 방식으로 사용하지 않는다.
+- 작업은 설계/집필 → 자동 검사 → 검수 보고서 → 커밋·푸시 순서로 진행한다.
+- 초고는 `manuscript/drafts/`에 저장한다.
+- 작가 승인 전에는 `draft`이며 최종 원고로 승격하지 않는다.
 
 ## AI 읽기 순서
 
@@ -23,16 +32,17 @@
 6. 액션 화이면 v2.9 액션 시트
 7. 등장 조연의 v2.9 음성 카드
 8. 활성 연속성 상태
+9. 직전 화 원고와 검수 보고서
 
-## 최종 검증
+## 원고 검증
 
 ```bash
-python scripts/build_effective_episodes_v2_8.py
-python scripts/validate_world_cast_cost_v2_8.py
-python scripts/build_episode_payoff_tags_v2_7.py
-python scripts/validate_episode_payoff_tags_v2_7.py
-python scripts/build_prose_preflight_v2_9.py
-python scripts/validate_prose_preflight_v2_9.py
+python scripts/validate_manuscript_drafts_v3_0.py
 ```
 
-설정 추가 단계는 종료됐다. 다음은 1화 초고 또는 1~10화 샘플 원고로 문체 하네스를 실전 검증하는 단계다.
+현재 작성본:
+
+- `manuscript/drafts/001_수신인_없는_검함.md`
+- `production/reviews/001_PROSE_AUDIT_V3_0.md`
+
+다음 작업 대상은 제2화 「반 치 모자란 칼」이다.
