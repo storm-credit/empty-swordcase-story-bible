@@ -1,0 +1,26 @@
+name: Validate manuscript drafts
+
+on:
+  push:
+    paths:
+      - 'manuscript/drafts/**'
+      - 'production/reviews/**'
+      - 'data/manuscript_status_v3_0.json'
+      - 'scripts/lint_prose.py'
+      - 'scripts/validate_manuscript_drafts_v3_0.py'
+      - '.github/workflows/validate-manuscript-drafts.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate manuscript drafts
+        run: python scripts/validate_manuscript_drafts_v3_0.py
