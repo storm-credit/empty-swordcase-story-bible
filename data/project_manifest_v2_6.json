@@ -1,0 +1,18 @@
+{
+  "version": "2.6",
+  "title": "빈 검함으로 천하를 수집한다",
+  "architecture": {
+    "acts": 5,
+    "arcs": 10,
+    "subacts": 20,
+    "episodes": 200
+  },
+  "production": {
+    "detailed_episode_packets": "001-200",
+    "major_action_sheets": "021-200",
+    "prose_harness": true,
+    "payoff_ledger": true,
+    "manuscript": "not_drafted"
+  },
+  "honest_scope_note": "41-200 packets are production-ready scene-function blueprints; prose and scene choreography still require per-episode drafting and human review."
+}
