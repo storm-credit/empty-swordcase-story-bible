@@ -13,138 +13,24 @@
     "collection_inventory": "120수집품·24세트·18신수의 개별 정본과 전수 추적"
   },
   "categories": [
-    {
-      "id": "C01",
-      "name": "작품 정체성·주제",
-      "status": "complete",
-      "coverage": "소유권·귀환·책임·비수집·신수 비소유",
-      "evidence": ["PROJECT_BLUEPRINT_V2_4.md", "WORLD_BIBLE_COMPLETE.md"]
-    },
-    {
-      "id": "C02",
-      "name": "세계 핵심 법칙",
-      "status": "complete",
-      "coverage": "무주 판정·강탈품 거부·의흔·상극·철회권",
-      "evidence": ["PROJECT_BLUEPRINT_V2_4.md", "WORLD_BIBLE_COMPLETE.md"]
-    },
-    {
-      "id": "C03",
-      "name": "5액트·20서브액트 아키텍처",
-      "status": "complete",
-      "coverage": "5/20",
-      "evidence": ["PROJECT_BLUEPRINT_V2_4.md", "data/acts_subacts_005_020.json"]
-    },
-    {
-      "id": "C04",
-      "name": "200화 기능 지도",
-      "status": "complete",
-      "coverage": "200/200",
-      "evidence": ["data/episodes_001_010.json", "data/episodes_011_020.json", "data/episodes_021_030.json", "data/episodes_031_040.json", "data/episodes_041_080.json", "data/episodes_081_120.json", "data/episodes_121_160.json", "data/episodes_161_200.json"]
-    },
-    {
-      "id": "C05",
-      "name": "1~20화 Production Blueprint",
-      "status": "complete_by_existing_canon",
-      "coverage": "20/20",
-      "evidence": ["data/project_manifest.json"],
-      "note": "기존 정본 판정을 유지하되 실제 씬비트 파일 재검증 필요"
-    },
-    {
-      "id": "C06",
-      "name": "21~40화 Production Blueprint",
-      "status": "partial",
-      "coverage": "20화에 회차당 4개 비트",
-      "evidence": ["production/packets/EPISODES_021_040_PRODUCTION_PACKET_V2_5.md"],
-      "blocker": "CLAUDE.md 게이트의 6~10개 씬비트 미달"
-    },
-    {
-      "id": "C07",
-      "name": "41~200화 Production Blueprint",
-      "status": "incomplete",
-      "coverage": "0/160 confirmed at 6~10 scene beats",
-      "evidence": ["data/episodes_041_080.json", "data/episodes_081_120.json", "data/episodes_121_160.json", "data/episodes_161_200.json"],
-      "blocker": "회차 기능 데이터와 상세 장면 패킷이 혼용됨"
-    },
-    {
-      "id": "C08",
-      "name": "8권역",
-      "status": "complete",
-      "coverage": "8/8",
-      "evidence": ["data/world_regions_008.json"]
-    },
-    {
-      "id": "C09",
-      "name": "48거점 개별 작동성",
-      "status": "integrated_v3_3",
-      "coverage": "48/48",
-      "evidence": ["data/world_settlements_048.json", "data/settlement_identity_overlay_v3_3.json"],
-      "note": "기존 권역 템플릿 반복을 v3.3 고유 기능으로 보강"
-    },
-    {
-      "id": "C10",
-      "name": "20노선 물류 작동성",
-      "status": "integrated_v3_3",
-      "coverage": "20/20",
-      "evidence": ["data/world_routes_020.json", "data/route_operability_overlay_v3_3.json"]
-    },
-    {
-      "id": "C11",
-      "name": "18세력 관계망",
-      "status": "integrated_v3_3",
-      "coverage": "18노드/25관계",
-      "evidence": ["data/world_factions_018.json", "data/faction_relation_overlay_v3_3.json"]
-    },
-    {
-      "id": "C12",
-      "name": "20 Subact 구체 인과",
-      "status": "integrated_v3_3",
-      "coverage": "20/20",
-      "evidence": ["data/acts_subacts_005_020.json", "data/subact_causality_overlay_v3_3.json"]
-    },
-    {
-      "id": "C13",
-      "name": "장기 복선·회수",
-      "status": "complete",
-      "coverage": "S 8 / A 20 / character 7 / item track 16",
-      "evidence": ["data/project_manifest_v2_7.json", "data/payoff_tracks_v2_7.json"]
-    },
-    {
-      "id": "C14",
-      "name": "수집품 120 개별 정본",
-      "status": "unverified",
-      "declared_count": 120,
-      "verified_long_term_tracks": 16,
-      "blocker": "정본 진입점과 매니페스트가 120개 전수 원천 파일을 명시하지 않음"
-    },
-    {
-      "id": "C15",
-      "name": "세트 24 개별 정본",
-      "status": "unverified",
-      "declared_count": 24,
-      "blocker": "24세트 조합·상극·해체·중복 전수 데이터 원천 미확인"
-    },
-    {
-      "id": "C16",
-      "name": "신수·탈것 18 개별 정본",
-      "status": "unverified",
-      "declared_count": 18,
-      "blocker": "18종 계약 거절·독립 목표·이탈·최종 상태 전수 데이터 원천 미확인"
-    },
-    {
-      "id": "C17",
-      "name": "조연 28명",
-      "status": "structural_complete_emotional_conditional",
-      "coverage": "28 voice cards",
-      "evidence": ["data/project_manifest_v2_9.json"],
-      "blocker": "사적 욕망·질투·가족 압력이 실제 장면 인과로 작동하는지 미검증"
-    },
-    {
-      "id": "C18",
-      "name": "주요 액션 프리플라이트",
-      "status": "complete",
-      "coverage": "47",
-      "evidence": ["data/project_manifest_v2_9.json"]
-    }
+    {"id":"C01","name":"작품 정체성·주제","status":"complete","coverage":"소유권·귀환·책임·비수집·신수 비소유","evidence":["PROJECT_BLUEPRINT_V2_4.md","WORLD_BIBLE_COMPLETE.md"]},
+    {"id":"C02","name":"세계 핵심 법칙","status":"complete","coverage":"무주 판정·강탈품 거부·의흔·상극·철회권","evidence":["PROJECT_BLUEPRINT_V2_4.md","WORLD_BIBLE_COMPLETE.md"]},
+    {"id":"C03","name":"5액트·20서브액트 아키텍처","status":"complete","coverage":"5/20","evidence":["PROJECT_BLUEPRINT_V2_4.md","data/acts_subacts_005_020.json"]},
+    {"id":"C04","name":"200화 기능 지도","status":"complete","coverage":"200/200","evidence":["data/episodes_001_010.json","data/episodes_011_020.json","data/episodes_021_030.json","data/episodes_031_040.json","data/episodes_041_080.json","data/episodes_081_120.json","data/episodes_121_160.json","data/episodes_161_200.json"]},
+    {"id":"C05","name":"1~20화 Production Blueprint","status":"complete_by_existing_canon","coverage":"20/20","evidence":["data/project_manifest.json"],"note":"기존 정본 판정을 유지하되 실제 씬비트 파일 재검증 필요"},
+    {"id":"C06","name":"21~40화 Production Blueprint","status":"partial","coverage":"20화에 회차당 4개 비트","evidence":["docs/PRODUCTION_PACKET_021_040_V2_5.md"],"blocker":"CLAUDE.md 게이트의 6~10개 씬비트 미달"},
+    {"id":"C07","name":"41~200화 Production Blueprint","status":"incomplete","coverage":"0/160 confirmed at 6~10 scene beats","evidence":["data/episodes_041_080.json","data/episodes_081_120.json","data/episodes_121_160.json","data/episodes_161_200.json"],"blocker":"회차 기능 데이터와 상세 장면 패킷이 혼용됨"},
+    {"id":"C08","name":"8권역","status":"complete","coverage":"8/8","evidence":["data/world_regions_008.json"]},
+    {"id":"C09","name":"48거점 개별 작동성","status":"integrated_v3_3","coverage":"48/48","evidence":["data/world_settlements_048.json","data/settlement_identity_overlay_v3_3.json"],"note":"기존 권역 템플릿 반복을 v3.3 고유 기능으로 보강"},
+    {"id":"C10","name":"20노선 물류 작동성","status":"integrated_v3_3","coverage":"20/20","evidence":["data/world_routes_020.json","data/route_operability_overlay_v3_3.json"]},
+    {"id":"C11","name":"18세력 관계망","status":"integrated_v3_3","coverage":"18노드/25관계","evidence":["data/world_factions_018.json","data/faction_relation_overlay_v3_3.json"]},
+    {"id":"C12","name":"20 Subact 구체 인과","status":"integrated_v3_3","coverage":"20/20","evidence":["data/acts_subacts_005_020.json","data/subact_causality_overlay_v3_3.json"]},
+    {"id":"C13","name":"장기 복선·회수","status":"complete","coverage":"S 8 / A 20 / character 7 / item track 16","evidence":["data/project_manifest_v2_7.json","data/payoff_tracks_v2_7.json"]},
+    {"id":"C14","name":"수집품 120 개별 정본","status":"unverified","declared_count":120,"verified_long_term_tracks":16,"blocker":"정본 진입점과 매니페스트가 120개 전수 원천 파일을 명시하지 않음"},
+    {"id":"C15","name":"세트 24 개별 정본","status":"unverified","declared_count":24,"blocker":"24세트 조합·상극·해체·중복 전수 데이터 원천 미확인"},
+    {"id":"C16","name":"신수·탈것 18 개별 정본","status":"unverified","declared_count":18,"blocker":"18종 계약 거절·독립 목표·이탈·최종 상태 전수 데이터 원천 미확인"},
+    {"id":"C17","name":"조연 28명","status":"structural_complete_emotional_conditional","coverage":"28 voice cards","evidence":["data/project_manifest_v2_9.json"],"blocker":"사적 욕망·질투·가족 압력이 실제 장면 인과로 작동하는지 미검증"},
+    {"id":"C18","name":"주요 액션 프리플라이트","status":"complete","coverage":"47","evidence":["data/project_manifest_v2_9.json"]}
   ],
   "official_status_line": "핵심 정본 완료 / 5액트·20서브액트·200화 기능 구조 완료 / 8권역 완료 / 48거점·20노선·18세력 통합 보강 완료 / 200화 상세 장면 설계 미완료 / 수집품 120·세트 24·신수 18 전수 정본 감사 미완료",
   "next_gate": [
