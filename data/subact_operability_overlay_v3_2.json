@@ -1,0 +1,31 @@
+{
+  "version": "3.2",
+  "base_head": "4f2cc298a52ccb4e6a50314c2be9184247753846",
+  "policy": {
+    "non_destructive": true,
+    "protect_existing_act_subact_answers": true,
+    "consecutive_conflict_engine_duplicates_forbidden": true
+  },
+  "subacts": [
+    {"id":"A01","conflict_engine":"발견·추적","lifestyle_pressure":"청래역 인수 확인과 보관 공간 부족","movement_change":"하루 수입과 배달 평판이 변한다","emotional_pressure":"절차를 지킨 담운 때문에 손해 본 사람이 원망한다","damun_voluntary_goal":"의뢰 밖에서 검함의 실제 수신인을 확인한다","post_climax_world_change":"청래역 보관·인수 관행이 강화된다"},
+    {"id":"A02","conflict_engine":"길·호송","lifestyle_pressure":"장거리 운임과 파손 위험","movement_change":"돈·몸·장비·관계 중 둘 이상이 변한다","emotional_pressure":"동행자는 담운의 우회 선택을 무능으로 본다","damun_voluntary_goal":"배송 경로를 바꿔 길에서 생긴 소유권 문제를 해결한다","post_climax_world_change":"노선과 통행 조건이 바뀐다"},
+    {"id":"A03","conflict_engine":"시장·감정","lifestyle_pressure":"가격표와 증서가 생계를 좌우한다","movement_change":"거래 권리와 동료 신뢰가 변한다","emotional_pressure":"서린화는 담운의 귀환 판단으로 얻을 이익을 잃는다","damun_voluntary_goal":"가격이 아니라 실제 사용 흔적을 먼저 조사한다","post_climax_world_change":"시장 감정과 보증 관행이 변한다"},
+    {"id":"A04","conflict_engine":"제작·과부하","lifestyle_pressure":"수선 노동·연료·공동 풀무의 사용권","movement_change":"장비 성능과 주민의 노동 부담이 변한다","emotional_pressure":"대장장이는 담운의 선택으로 작업 순번을 잃는다","damun_voluntary_goal":"첫 세트 완성보다 제작 노동의 책임자를 지킨다","post_climax_world_change":"공동 제작 규칙과 비용 분담이 바뀐다"},
+    {"id":"A05","conflict_engine":"관계·계약 거절","lifestyle_pressure":"계약 거부가 숙식과 이동을 막는다","movement_change":"동행 권리와 관계가 변한다","emotional_pressure":"동료는 담운의 윤리가 자기 가족에게 적용되는 것을 거부한다","damun_voluntary_goal":"계약 성립이 아닌 거절권 보장을 목표로 삼는다","post_climax_world_change":"계약 철회 관행이 인정된다"},
+    {"id":"A06","conflict_engine":"생태·비수집","lifestyle_pressure":"숲 보존과 주민 생계가 충돌한다","movement_change":"식량·통행·신수 관계가 변한다","emotional_pressure":"예란은 인간의 생계를 이유로 한 양보를 배신으로 느낀다","damun_voluntary_goal":"수집하지 않는 해결책을 먼저 선택한다","post_climax_world_change":"보호 구역과 생계 규칙이 재조정된다"},
+    {"id":"A07","conflict_engine":"공동 방어·물류","lifestyle_pressure":"일곱 마을의 보급·운송·교대 노동","movement_change":"보급선과 마을 간 신뢰가 변한다","emotional_pressure":"한 마을은 담운 때문에 자기 몫을 빼앗겼다고 믿는다","damun_voluntary_goal":"의뢰 범위를 넘어 공동 방어망의 병목을 해소한다","post_climax_world_change":"공동 창고와 보급 책임이 분산된다"},
+    {"id":"A08","conflict_engine":"조직 분열","lifestyle_pressure":"봉인 유지비와 조직 손실","movement_change":"조직 권력과 동료 관계가 변한다","emotional_pressure":"곽무석은 담운의 책임 떠맡기를 오만으로 받아들인다","damun_voluntary_goal":"조직의 명령보다 실패 비용의 실제 부담자를 확인한다","post_climax_world_change":"봉인 조직의 권한과 책임선이 갈라진다"},
+    {"id":"A09","conflict_engine":"탐험·재난","lifestyle_pressure":"폐분관 진입과 재난 취약점","movement_change":"장비·부상·퇴로가 변한다","emotional_pressure":"동료는 담운의 탐사 지속으로 구조 시기를 놓쳤다고 원망한다","damun_voluntary_goal":"유물보다 구조적 취약점의 원인을 먼저 찾는다","post_climax_world_change":"분관 운영과 재난 대응 방식이 바뀐다"},
+    {"id":"A10","conflict_engine":"제한 선택·구조","lifestyle_pressure":"구조 시간과 운송 용량이 부족하다","movement_change":"누가 이동하고 남는지가 관계를 바꾼다","emotional_pressure":"구하지 못한 사람의 가족이 담운을 용서하지 않는다","damun_voluntary_goal":"보상보다 구조 우선순위를 스스로 재정의한다","post_climax_world_change":"구조·인수 우선순위 규정이 생긴다"},
+    {"id":"A11","conflict_engine":"도시 생존·공동 소유","lifestyle_pressure":"침몰도시의 숙식·운송·보관 문제","movement_change":"공동 소유 권리와 생존 자원이 변한다","emotional_pressure":"한 가문은 담운의 공동 소유 판단으로 상속을 잃는다","damun_voluntary_goal":"도시 생존망을 유지하는 사용자를 먼저 찾는다","post_climax_world_change":"공동 관리 체계가 실무적으로 작동한다"},
+    {"id":"A12","conflict_engine":"정치·정체성","lifestyle_pressure":"가문 증명과 통행·치료·취업 권리","movement_change":"신분과 정치적 동맹이 변한다","emotional_pressure":"동료는 담운의 정체성 판단 때문에 자기 공적을 잃는다","damun_voluntary_goal":"정치적 이득보다 사용·보호·비용의 기록을 공개한다","post_climax_world_change":"가문 소유권과 시민 권리의 기준이 바뀐다"},
+    {"id":"A13","conflict_engine":"기억 상실·관계","lifestyle_pressure":"이름 부재가 숙박·치료·거래를 막는다","movement_change":"관계와 권리가 동시에 손상된다","emotional_pressure":"동료는 기억하지 못하는 담운을 다시 믿는 일을 거부한다","damun_voluntary_goal":"자기 이름 회복보다 타인의 생활 권리를 먼저 복구한다","post_climax_world_change":"이름 없이도 책임을 증명하는 절차가 생긴다"},
+    {"id":"A14","conflict_engine":"기록 해체·행정","lifestyle_pressure":"중앙 장부의 오류가 세금·통행·배급에 영향을 준다","movement_change":"행정 권리와 지역 자율성이 변한다","emotional_pressure":"기록 담당자는 담운 때문에 평생의 공적이 부정됐다고 느낀다","damun_voluntary_goal":"장부 파괴가 아닌 분산된 사용 기록의 연결을 택한다","post_climax_world_change":"행정 기록이 다중 보관으로 전환된다"},
+    {"id":"A15","conflict_engine":"다중 전선","lifestyle_pressure":"여러 권역의 물류와 방어가 동시에 붕괴한다","movement_change":"보급·동맹·부상 상태가 연쇄 변동한다","emotional_pressure":"동료는 자기 고향보다 다른 권역을 택한 담운을 원망한다","damun_voluntary_goal":"하나의 승리보다 연쇄 붕괴를 끊는 책임 배분을 선택한다","post_climax_world_change":"권역 간 지원 체계가 재편된다"},
+    {"id":"A16","conflict_engine":"동료 독립","lifestyle_pressure":"담운 없이 각자의 생계와 임무를 유지해야 한다","movement_change":"동료들의 진로와 관계가 분리된다","emotional_pressure":"동료는 담운의 보호를 통제로 받아들인다","damun_voluntary_goal":"동료의 독립 선택을 막지 않고 책임 인계를 완료한다","post_climax_world_change":"동료별 독립 조직과 책임 범위가 생긴다"},
+    {"id":"A17","conflict_engine":"폐쇄 공간·권한 침식","lifestyle_pressure":"살아 있는 박물관 내부의 통로·보관·권한 제한","movement_change":"이동권과 장비 사용권이 단계적으로 사라진다","emotional_pressure":"누군가는 담운이 모두를 살리려다 더 큰 위험을 만들었다고 판단한다","damun_voluntary_goal":"탈출보다 내부 권한의 강제 소유 연결을 끊는다","post_climax_world_change":"박물관 관리 권한이 분산된다"},
+    {"id":"A18","conflict_engine":"과거와 현재의 선택","lifestyle_pressure":"과거의 소유 기록이 현재 생계를 압박한다","movement_change":"기억·권리·관계의 해석이 변한다","emotional_pressure":"과거 피해자는 진실이 밝혀져도 담운을 용서하지 않는다","damun_voluntary_goal":"완벽한 명예 회복보다 현재 피해의 책임을 우선한다","post_climax_world_change":"과거 기록의 효력이 제한된다"},
+    {"id":"A19","conflict_engine":"전쟁·재독점","lifestyle_pressure":"전쟁 물자와 통행권이 중앙에 다시 집중된다","movement_change":"가격·보급·조직 권력이 급변한다","emotional_pressure":"중앙 체계로 실제 구원받은 사람들은 담운의 해체를 두려워한다","damun_voluntary_goal":"중앙 권한 탈취가 아니라 재독점 연결을 끊는다","post_climax_world_change":"권역별 책임 인수 체계가 가동된다"},
+    {"id":"A20","conflict_engine":"배송·분산 책임","lifestyle_pressure":"마지막 배송의 인수 조건과 권역별 유지 노동","movement_change":"여섯 책임 조각과 관계가 각 권역으로 이동한다","emotional_pressure":"동료들은 담운이 자신을 수집하지 않는 선택을 받아들여야 한다","damun_voluntary_goal":"권한을 갖지 않고 책임을 끝까지 배송한다","post_climax_world_change":"중앙 소유 체계가 책임 분산 체계로 전환된다"}
+  ]
+}
