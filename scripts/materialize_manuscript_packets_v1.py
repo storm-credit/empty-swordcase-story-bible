@@ -14,14 +14,10 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "production" / "manuscript_packets"
 EPISODE_FILES = [
-    "data/episodes_001_010.json",
-    "data/episodes_011_020.json",
-    "data/episodes_021_030.json",
-    "data/episodes_031_040.json",
-    "data/episodes_041_080.json",
-    "data/episodes_081_120.json",
-    "data/episodes_121_160.json",
-    "data/episodes_161_200.json",
+    "data/episodes_001_010.json", "data/episodes_011_020.json",
+    "data/episodes_021_030.json", "data/episodes_031_040.json",
+    "data/episodes_041_080.json", "data/episodes_081_120.json",
+    "data/episodes_121_160.json", "data/episodes_161_200.json",
 ]
 BLUEPRINT_FILE = "production/blueprints/EPISODES_021_200_SCENE_BLUEPRINT_V3_4.json"
 
@@ -55,12 +51,8 @@ def compact_markdown(start: int, end: int, rows: list[dict[str, Any]]) -> str:
         )
         blueprint = row.get("scene_blueprint")
         if blueprint:
-            lines.append("- 장면 비트:")
-            for beat in blueprint.get("scene_beats", []):
-                lines.append(
-                    f"  {beat['beat_no']}. {beat['phase']} — {beat['objective']} / "
-                    f"행동: {beat['action']} / 변화: {beat['state_change']}"
-                )
+            phases = [beat.get("phase", "") for beat in blueprint.get("scene_beats", [])]
+            lines.append(f"- 6비트: {' → '.join(phases)}")
         lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 
@@ -77,23 +69,21 @@ def main() -> int:
         raise ValueError("canonical episode files must cover EP001..EP200 exactly")
 
     blueprint_payload = load(BLUEPRINT_FILE)
-    blueprint_rows = blueprint_payload.get("episodes", [])
-    blueprints = {row["episode"]: row for row in blueprint_rows}
+    blueprints = {row["episode"]: row for row in blueprint_payload.get("episodes", [])}
     if set(blueprints) != set(range(21, 201)):
         raise ValueError("v3.4 blueprints must cover EP021..EP200 exactly")
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     for start in range(1, 201, 10):
         end = start + 9
-        rows: list[dict[str, Any]] = []
-        for episode in range(start, end + 1):
-            rows.append(
-                {
-                    "episode": episode,
-                    "canonical_episode": episodes[episode - 1],
-                    "scene_blueprint": blueprints.get(episode),
-                }
-            )
+        rows = [
+            {
+                "episode": episode,
+                "canonical_episode": episodes[episode - 1],
+                "scene_blueprint": blueprints.get(episode),
+            }
+            for episode in range(start, end + 1)
+        ]
         payload = {
             "version": "v3.4-manuscript-packet-v1",
             "status": "derived_read_only_drafting_input",
@@ -101,12 +91,14 @@ def main() -> int:
             "range": [start, end],
             "episodes": rows,
         }
-        json_target = OUT_DIR / f"EPISODES_{start:03d}_{end:03d}_V3_4.json"
-        md_target = OUT_DIR / f"EPISODES_{start:03d}_{end:03d}_COMPACT_V3_4.md"
-        json_target.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        md_target.write_text(compact_markdown(start, end, rows), encoding="utf-8")
+        (OUT_DIR / f"EPISODES_{start:03d}_{end:03d}_V3_4.json").write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+        (OUT_DIR / f"EPISODES_{start:03d}_{end:03d}_COMPACT_V3_4.md").write_text(
+            compact_markdown(start, end, rows), encoding="utf-8"
+        )
 
-    print("wrote 20 JSON packets and 20 compact Markdown packets for EP001..EP200")
+    print("wrote 20 JSON packets and 20 minimal compact packets for EP001..EP200")
     return 0
 
 
