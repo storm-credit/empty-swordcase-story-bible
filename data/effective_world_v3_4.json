@@ -1,0 +1,4135 @@
+{
+  "version": "3.4",
+  "status": "approved_effective_world_canon",
+  "source_files": [
+    "data/world_regions_008.json",
+    "data/world_settlements_048.json",
+    "data/settlement_identity_overlay_v3_3.json",
+    "data/world_routes_020.json",
+    "data/route_operability_overlay_v3_3.json",
+    "data/world_factions_018.json",
+    "data/faction_relation_overlay_v3_3.json",
+    "data/acts_subacts_005_020.json",
+    "data/subact_causality_overlay_v3_3.json"
+  ],
+  "regions": [
+    {
+      "id": "R00",
+      "name": "청래역권",
+      "episodes": "1-20, 191-200 return echoes",
+      "core_question": "길과 물건은 누구의 책임으로 남는가.",
+      "staple_food": "보리수제비",
+      "shortage_trigger": "역마가 끊기면 말먹이와 마른 약재가 먼저 모자란다.",
+      "transport": "역마 수레와 갈대나루 배편",
+      "bottleneck": "폭우 뒤 우물마당 배수로가 막히면 모든 남행 화물이 한 칸 창고에 몰린다.",
+      "taboo": "수신인 이름을 한 번만 부르고 물건을 선반에 올리는 일.",
+      "ownership_custom": "분실물은 팔지 않고 서른 날 동안 공개 보관한다.",
+      "civic_schedule": "해질 무렵 공개 보관 절차와 새벽 남행 분류.",
+      "disaster_weakness": "야간 분류 인력이 줄면 출처 불명 유물이 폐기 창고로 밀린다.",
+      "sensory_marks": [
+        "젖은 쇠고리 소리",
+        "마른 약재 냄새",
+        "수레축에 묻은 진흙"
+      ],
+      "local_terms": [
+        "수신인 세 번",
+        "마지막 배송"
+      ],
+      "irrational_rule": "주인이 죽어도 수신인 확인 전에는 연료로 쓰지 않는다.",
+      "finale_contribution": "첫 귀로인의 배달패와 분산 배송망의 보증."
+    },
+    {
+      "id": "R01",
+      "name": "중원 경도",
+      "episodes": "21-40, 141-153, 195",
+      "core_question": "진품과 가격이 실제 쓰임보다 우선할 수 있는가.",
+      "staple_food": "기름장 국수",
+      "shortage_trigger": "시장 폭동 뒤 값싼 기름과 종이 표찰이 먼저 동난다.",
+      "transport": "관물청 수레와 시장 인력 행렬",
+      "bottleneck": "감정대 문이 닫히면 모든 거래와 숙박 보증이 동시에 멈춘다.",
+      "taboo": "감정서 원문을 보지 않고 가격부터 부르는 일.",
+      "ownership_custom": "증서, 사용 이력, 공개 증언을 세 줄로 나누어 기록한다.",
+      "civic_schedule": "정오 경매종과 저녁 공개 감정회.",
+      "disaster_weakness": "가격표가 먼저 움직이면 군중이 출구보다 감정대로 몰린다.",
+      "sensory_marks": [
+        "달군 인장 냄새",
+        "가격표 종이 긁힘",
+        "전시대 기름빛"
+      ],
+      "local_terms": [
+        "공개끈",
+        "반론값"
+      ],
+      "irrational_rule": "가짜라도 사람을 지킨 물건은 광장 바닥에 바로 놓지 않는다.",
+      "finale_contribution": "공개 전시관과 원격 공명 설비."
+    },
+    {
+      "id": "R02",
+      "name": "남독택",
+      "episodes": "41-60, 146, 152, 196",
+      "core_question": "생명과 물건의 경계는 누가 판정하는가.",
+      "staple_food": "연잎 약죽",
+      "shortage_trigger": "독안개가 짙어지면 해독재와 깨끗한 천이 먼저 끊긴다.",
+      "transport": "나무다리, 얕은 배, 신수 발자국길",
+      "bottleneck": "야생계약소 보호실 접근권이 막히면 치료와 심사가 함께 늦어진다.",
+      "taboo": "신수에게 먼저 이름을 붙이고 소유자를 묻는 일.",
+      "ownership_custom": "계약은 인간의 권리보다 신수의 철회권을 먼저 적는다.",
+      "civic_schedule": "안개가 얇아지는 새벽 치료열과 저녁 촌회.",
+      "disaster_weakness": "향로가 마을을 살리는 동안 숲 전체가 잠든다.",
+      "sensory_marks": [
+        "단내 섞인 독안개",
+        "약솥 김",
+        "젖은 허물의 냉기"
+      ],
+      "local_terms": [
+        "숨허락",
+        "허물값"
+      ],
+      "irrational_rule": "아픈 신수에게 먹이를 먼저 주지 않고 냄새를 확인한다.",
+      "finale_contribution": "역계약 제도와 신수 자율 심사."
+    },
+    {
+      "id": "R03",
+      "name": "북설원",
+      "episodes": "61-80, 145, 151, 197",
+      "core_question": "보호 장비는 한 사람의 전리품인가 공동 방어망인가.",
+      "staple_food": "얼음보리죽",
+      "shortage_trigger": "봉화 교대가 끊기면 장작과 말기름이 먼저 사라진다.",
+      "transport": "설각마, 썰매, 봉화대 사이 눈길",
+      "bottleneck": "눈벽 하나가 닫히면 일곱 촌락의 식량 순환이 끊긴다.",
+      "taboo": "구조받은 사람 이름을 봉인 기록에서 지우는 일.",
+      "ownership_custom": "방어구 조각은 촌락별 제한 사용권으로 보관한다.",
+      "civic_schedule": "해 뜨지 않는 백야 교대와 봉화 점검일.",
+      "disaster_weakness": "공동 방어망은 매일 인력을 요구해 가난한 집부터 무너진다.",
+      "sensory_marks": [
+        "눈벽 마찰음",
+        "마른 장작 냄새",
+        "얼음 밑 종소리"
+      ],
+      "local_terms": [
+        "교대몫",
+        "눈벽값"
+      ],
+      "irrational_rule": "혼자 살아남은 피난민을 바로 축하하지 않는다.",
+      "finale_contribution": "열린 봉인소와 공동 방어 교대 체계."
+    },
+    {
+      "id": "R04",
+      "name": "서황막",
+      "episodes": "81-100, 147, 154, 184, 198",
+      "core_question": "편리한 길은 무엇을 지우고 누구에게 비용을 청구하는가.",
+      "staple_food": "마른 대추밥",
+      "shortage_trigger": "대상로가 접히면 물표와 그늘천이 먼저 오르며 피난민이 밀린다.",
+      "transport": "대상 낙타수레와 세관 물표",
+      "bottleneck": "유리폐도의 세관 장대가 기억 통행료를 받기 시작한다.",
+      "taboo": "남의 물표에 손가락으로 물방울을 찍는 일.",
+      "ownership_custom": "우물과 그늘은 지분보다 하루 생존권으로 먼저 배정한다.",
+      "civic_schedule": "정오 물표 검사와 밤 대상 출발.",
+      "disaster_weakness": "지도 유물이 길을 줄이면 뒤쪽 길과 귀향 기억이 사라진다.",
+      "sensory_marks": [
+        "입안의 모래",
+        "천막 줄 마찰음",
+        "빈 물독의 쇳소리"
+      ],
+      "local_terms": [
+        "그늘몫",
+        "기억세"
+      ],
+      "irrational_rule": "지도에 없는 발자국은 세 번 밟지 않는다.",
+      "finale_contribution": "책임거래소와 기억세 개혁."
+    },
+    {
+      "id": "R05",
+      "name": "동해군도",
+      "episodes": "101-120, 148, 194",
+      "core_question": "바다에 잠긴 도시의 주인은 증서인가 기억인가.",
+      "staple_food": "소금미역밥",
+      "shortage_trigger": "조수종이 늦으면 마른 밧줄과 숨부적이 먼저 사라진다.",
+      "transport": "부유역참, 조수 배, 닻줄 길",
+      "bottleneck": "한 섬이 허락을 거부하면 여섯 가문의 창고가 열리지 않는다.",
+      "taboo": "실종자 닻줄을 발로 넘는 일.",
+      "ownership_custom": "바다 유산은 구조, 기억, 지분, 장례권을 나누어 기록한다.",
+      "civic_schedule": "조수종, 장례 전 실종자 신호 확인, 공동 인양일.",
+      "disaster_weakness": "축소지도가 도시를 접으면 숨빚 상환일이 앞당겨진다.",
+      "sensory_marks": [
+        "젖은 밧줄 냄새",
+        "조수종 울림",
+        "소금 묻은 나무바닥"
+      ],
+      "local_terms": [
+        "닻허락",
+        "숨빚"
+      ],
+      "irrational_rule": "새 배에 오르기 전 빈 매듭 하나를 남긴다.",
+      "finale_contribution": "마지막 배송 항로와 중앙핵 조각 수신위원."
+    },
+    {
+      "id": "R06",
+      "name": "무명시",
+      "episodes": "121-160, 184",
+      "core_question": "이름과 죄명도 소유되고 거래될 수 있는가.",
+      "staple_food": "무명떡",
+      "shortage_trigger": "장부 압수가 시작되면 잉크와 임시 호칭패가 먼저 사라진다.",
+      "transport": "호칭문, 장부 계단, 지하 역로",
+      "bottleneck": "임시 이름이 없으면 숙소, 치료, 통행이 동시에 거부된다.",
+      "taboo": "상대가 먼저 말하지 않은 본명을 세 번 부르는 일.",
+      "ownership_custom": "이름은 사용권, 기억은 보증, 행적은 공개 기록으로 나눈다.",
+      "civic_schedule": "아침 호칭 경매와 밤 장부 수정 시간.",
+      "disaster_weakness": "가난한 사람은 성씨를 팔아 하루를 살고 조상 제사권을 잃는다.",
+      "sensory_marks": [
+        "마른 먹가루",
+        "이름표 태우는 냄새",
+        "남의 목소리 호객"
+      ],
+      "local_terms": [
+        "빈호칭",
+        "행적값"
+      ],
+      "irrational_rule": "이름 없는 아이에게 물건을 바로 건네지 않고 습관을 확인한다.",
+      "finale_contribution": "여섯 공개 기록과 행적명 체계."
+    },
+    {
+      "id": "R07",
+      "name": "천외산맥",
+      "episodes": "161-200",
+      "core_question": "수장은 무엇을 소유해야 하며 무엇을 내려놓아야 하는가.",
+      "staple_food": "건량 조각",
+      "shortage_trigger": "중력 계단이 뒤집히면 물보다 장비 고정끈이 먼저 모자란다.",
+      "transport": "천외문, 부유계단, 분류 전시실",
+      "bottleneck": "문이 사람을 직업으로만 인식하면 동료가 장비 칸으로 분류된다.",
+      "taboo": "살아 있는 사람을 전시 명패로 부르는 일.",
+      "ownership_custom": "중앙 권한은 인격 침식 대가 없이는 사용할 수 없다.",
+      "civic_schedule": "박물관 분류 갱신과 중앙핵 맥박 주기.",
+      "disaster_weakness": "모든 길이 중앙핵으로 모여 재독점 위험을 만든다.",
+      "sensory_marks": [
+        "소독약과 돌먼지",
+        "금속핵 맥박",
+        "끊어지는 금빛 선"
+      ],
+      "local_terms": [
+        "분류거부",
+        "귀로조각"
+      ],
+      "irrational_rule": "문이 통과를 허락해도 동료 이름을 먼저 확인한다.",
+      "finale_contribution": "중앙핵을 여섯 책임 조각으로 나누는 최종 무대."
+    }
+  ],
+  "settlements": [
+    {
+      "id": "ST001",
+      "name": "청래역",
+      "region_id": "R00",
+      "region": "청래역권",
+      "episodes": [
+        1,
+        3,
+        9,
+        10,
+        19
+      ],
+      "landmark": "분실물 선반에서 매일 위치가 바뀌는 낡은 신발",
+      "current_tension": "길과 물건은 누구의 책임으로 남는가.",
+      "entry_rule": "수신인 이름을 한 번만 부르고 물건을 선반에 올리는 일.",
+      "daily_operation": "해질 무렵 공개 보관 절차와 새벽 남행 분류.",
+      "logistics_bottleneck": "폭우 뒤 우물마당 배수로가 막히면 모든 남행 화물이 한 칸 창고에 몰린다.",
+      "disaster_weakness": "야간 분류 인력이 줄면 출처 불명 유물이 폐기 창고로 밀린다.",
+      "sensory_marks": [
+        "젖은 쇠고리 소리",
+        "마른 약재 냄새",
+        "수레축에 묻은 진흙"
+      ],
+      "local_terms": [
+        "수신인 세 번",
+        "마지막 배송"
+      ],
+      "event_seed": "해질 무렵 공개 보관 절차와 새벽 남행 분류. -> 분실물 선반에서 매일 위치가 바뀌는 낡은 신발 -> 야간 분류 인력이 줄면 출처 불명 유물이 폐기 창고로 밀린다.",
+      "operability_v3_4": {
+        "name": "청래역",
+        "region_id": "R00",
+        "region": "청래역권",
+        "linked_route_ids": [
+          "RT001",
+          "RT002"
+        ],
+        "primary_function": "남행 화물 분류와 분실물 공개보관",
+        "local_bottleneck": "폭우 때 우물마당 배수로가 막혀 분류 화물이 한 창고에 몰린다.",
+        "civic_routine": "해질 무렵 수신인 이름을 세 차례 대조하고 새벽에 남행 화물을 다시 나눈다.",
+        "ownership_dispute": "죽은 수신인의 물건을 연료로 돌릴 수 있는 시점",
+        "signature_evidence": "배달패의 닳은 모서리와 선반 이동 기록",
+        "failure_cascade": "분류 지연 → 약재·말먹이 부족 → 역마 운행 축소",
+        "primary_faction_id": "FC001"
+      }
+    },
+    {
+      "id": "ST002",
+      "name": "쇠울촌",
+      "region_id": "R00",
+      "region": "청래역권",
+      "episodes": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "landmark": "죽은 수신인에게 20년째 도착하는 빈 편지",
+      "current_tension": "길과 물건은 누구의 책임으로 남는가.",
+      "entry_rule": "수신인 이름을 한 번만 부르고 물건을 선반에 올리는 일.",
+      "daily_operation": "해질 무렵 공개 보관 절차와 새벽 남행 분류.",
+      "logistics_bottleneck": "폭우 뒤 우물마당 배수로가 막히면 모든 남행 화물이 한 칸 창고에 몰린다.",
+      "disaster_weakness": "야간 분류 인력이 줄면 출처 불명 유물이 폐기 창고로 밀린다.",
+      "sensory_marks": [
+        "젖은 쇠고리 소리",
+        "마른 약재 냄새",
+        "수레축에 묻은 진흙"
+      ],
+      "local_terms": [
+        "수신인 세 번",
+        "마지막 배송"
+      ],
+      "event_seed": "해질 무렵 공개 보관 절차와 새벽 남행 분류. -> 죽은 수신인에게 20년째 도착하는 빈 편지 -> 야간 분류 인력이 줄면 출처 불명 유물이 폐기 창고로 밀린다.",
+      "operability_v3_4": {
+        "name": "쇠울촌",
+        "region_id": "R00",
+        "region": "청래역권",
+        "linked_route_ids": [
+          "RT001"
+        ],
+        "primary_function": "공동 풀무와 수선 노동",
+        "local_bottleneck": "공동 풀무의 연료와 야간 교대가 끊기면 농기구·수레축 수선이 동시에 멈춘다.",
+        "civic_routine": "화로 교대자는 수선 의뢰와 남은 쇳조각을 공개 장부에 함께 적는다.",
+        "ownership_dispute": "죽은 대장장이의 실패작을 가족·마을·사용자 중 누가 책임질 것인가",
+        "signature_evidence": "반복 수선된 손잡이와 공동 풀무에서만 쓰는 못",
+        "failure_cascade": "수선 중단 → 수레 고장 → 청래역 적체 → 생필품 가격 상승",
+        "primary_faction_id": "FC001"
+      }
+    },
+    {
+      "id": "ST003",
+      "name": "갈대나루",
+      "region_id": "R00",
+      "region": "청래역권",
+      "episodes": [
+        11,
+        13,
+        20
+      ],
+      "landmark": "역마가 특정 봉인수레만 거부",
+      "current_tension": "길과 물건은 누구의 책임으로 남는가.",
+      "entry_rule": "수신인 이름을 한 번만 부르고 물건을 선반에 올리는 일.",
+      "daily_operation": "해질 무렵 공개 보관 절차와 새벽 남행 분류.",
+      "logistics_bottleneck": "폭우 뒤 우물마당 배수로가 막히면 모든 남행 화물이 한 칸 창고에 몰린다.",
+      "disaster_weakness": "야간 분류 인력이 줄면 출처 불명 유물이 폐기 창고로 밀린다.",
+      "sensory_marks": [
+        "젖은 쇠고리 소리",
+        "마른 약재 냄새",
+        "수레축에 묻은 진흙"
+      ],
+      "local_terms": [
+        "수신인 세 번",
+        "마지막 배송"
+      ],
+      "event_seed": "해질 무렵 공개 보관 절차와 새벽 남행 분류. -> 역마가 특정 봉인수레만 거부 -> 야간 분류 인력이 줄면 출처 불명 유물이 폐기 창고로 밀린다.",
+      "operability_v3_4": {
+        "name": "갈대나루",
+        "region_id": "R00",
+        "region": "청래역권",
+        "linked_route_ids": [
+          "RT002",
+          "RT003"
+        ],
+        "primary_function": "수레 화물을 배편으로 갈아 싣는 환적지",
+        "local_bottleneck": "갈대 수위가 낮거나 봉인수레를 역마가 거부하면 환적 순서가 무너진다.",
+        "civic_routine": "물때마다 짐 무게와 밧줄 매듭을 다시 확인해 육로 장부와 맞춘다.",
+        "ownership_dispute": "운송 도중 물건이 파손됐을 때 육로·수로 중 누가 책임지는가",
+        "signature_evidence": "젖은 짐끈의 매듭 방향과 선저의 무게 자국",
+        "failure_cascade": "환적 지연 → 돌배고개 우회 집중 → 다리 과부하",
+        "primary_faction_id": "FC001"
+      }
+    },
+    {
+      "id": "ST004",
+      "name": "돌배고개",
+      "region_id": "R00",
+      "region": "청래역권",
+      "episodes": [
+        12,
+        14,
+        15
+      ],
+      "landmark": "우물 쇠고리에 남은 여러 세대의 구조 의흔",
+      "current_tension": "길과 물건은 누구의 책임으로 남는가.",
+      "entry_rule": "수신인 이름을 한 번만 부르고 물건을 선반에 올리는 일.",
+      "daily_operation": "해질 무렵 공개 보관 절차와 새벽 남행 분류.",
+      "logistics_bottleneck": "폭우 뒤 우물마당 배수로가 막히면 모든 남행 화물이 한 칸 창고에 몰린다.",
+      "disaster_weakness": "야간 분류 인력이 줄면 출처 불명 유물이 폐기 창고로 밀린다.",
+      "sensory_marks": [
+        "젖은 쇠고리 소리",
+        "마른 약재 냄새",
+        "수레축에 묻은 진흙"
+      ],
+      "local_terms": [
+        "수신인 세 번",
+        "마지막 배송"
+      ],
+      "event_seed": "해질 무렵 공개 보관 절차와 새벽 남행 분류. -> 우물 쇠고리에 남은 여러 세대의 구조 의흔 -> 야간 분류 인력이 줄면 출처 불명 유물이 폐기 창고로 밀린다.",
+      "operability_v3_4": {
+        "name": "돌배고개",
+        "region_id": "R00",
+        "region": "청래역권",
+        "linked_route_ids": [
+          "RT003",
+          "RT004"
+        ],
+        "primary_function": "고개·교량 통행과 구조 장비 유지",
+        "local_bottleneck": "냉철못과 낡은 교량이 상극 장비를 밀어내 통행량을 제한한다.",
+        "civic_routine": "다리 지기는 통행료보다 먼저 구조 종과 교량 못의 상태를 점검한다.",
+        "ownership_dispute": "다리 수선비를 이용자·인근 마을·봉인 기관 중 누가 부담하는가",
+        "signature_evidence": "기둥의 세대별 못 자국과 구조 종의 음색",
+        "failure_cascade": "통행 차단 → 경도행 화물 우회 → 청래역 창고 포화",
+        "primary_faction_id": "FC001"
+      }
+    },
+    {
+      "id": "ST005",
+      "name": "우엉들",
+      "region_id": "R00",
+      "region": "청래역권",
+      "episodes": [
+        16,
+        17
+      ],
+      "landmark": "가짜 배달패를 찬 아이",
+      "current_tension": "길과 물건은 누구의 책임으로 남는가.",
+      "entry_rule": "수신인 이름을 한 번만 부르고 물건을 선반에 올리는 일.",
+      "daily_operation": "해질 무렵 공개 보관 절차와 새벽 남행 분류.",
+      "logistics_bottleneck": "폭우 뒤 우물마당 배수로가 막히면 모든 남행 화물이 한 칸 창고에 몰린다.",
+      "disaster_weakness": "야간 분류 인력이 줄면 출처 불명 유물이 폐기 창고로 밀린다.",
+      "sensory_marks": [
+        "젖은 쇠고리 소리",
+        "마른 약재 냄새",
+        "수레축에 묻은 진흙"
+      ],
+      "local_terms": [
+        "수신인 세 번",
+        "마지막 배송"
+      ],
+      "event_seed": "해질 무렵 공개 보관 절차와 새벽 남행 분류. -> 가짜 배달패를 찬 아이 -> 야간 분류 인력이 줄면 출처 불명 유물이 폐기 창고로 밀린다.",
+      "operability_v3_4": {
+        "name": "우엉들",
+        "region_id": "R00",
+        "region": "청래역권",
+        "linked_route_ids": [
+          "RT004"
+        ],
+        "primary_function": "농산물 집하와 임시 배달패 발급",
+        "local_bottleneck": "수확기 가짜 배달패가 늘면 곡물과 약재의 수신인이 뒤섞인다.",
+        "civic_routine": "장날 전날 농가별 묶음표와 아이들이 나르는 소포를 대조한다.",
+        "ownership_dispute": "문맹 농가의 표시와 관청 배달패 중 어느 기록을 우선할 것인가",
+        "signature_evidence": "우엉 자루의 묶음법과 손바닥 먹자국",
+        "failure_cascade": "오배송 → 종자 부족 → 다음 철 수확 감소",
+        "primary_faction_id": "FC001"
+      }
+    },
+    {
+      "id": "ST006",
+      "name": "비탈창고",
+      "region_id": "R00",
+      "region": "청래역권",
+      "episodes": [
+        18,
+        19,
+        20
+      ],
+      "landmark": "폭우에 떠내려온 경도 왕실 표찰",
+      "current_tension": "길과 물건은 누구의 책임으로 남는가.",
+      "entry_rule": "수신인 이름을 한 번만 부르고 물건을 선반에 올리는 일.",
+      "daily_operation": "해질 무렵 공개 보관 절차와 새벽 남행 분류.",
+      "logistics_bottleneck": "폭우 뒤 우물마당 배수로가 막히면 모든 남행 화물이 한 칸 창고에 몰린다.",
+      "disaster_weakness": "야간 분류 인력이 줄면 출처 불명 유물이 폐기 창고로 밀린다.",
+      "sensory_marks": [
+        "젖은 쇠고리 소리",
+        "마른 약재 냄새",
+        "수레축에 묻은 진흙"
+      ],
+      "local_terms": [
+        "수신인 세 번",
+        "마지막 배송"
+      ],
+      "event_seed": "해질 무렵 공개 보관 절차와 새벽 남행 분류. -> 폭우에 떠내려온 경도 왕실 표찰 -> 야간 분류 인력이 줄면 출처 불명 유물이 폐기 창고로 밀린다.",
+      "operability_v3_4": {
+        "name": "비탈창고",
+        "region_id": "R00",
+        "region": "청래역권",
+        "linked_route_ids": [
+          "RT004"
+        ],
+        "primary_function": "폭우·분쟁 때 쓰는 초과 화물 보관소",
+        "local_bottleneck": "비탈 배수와 지붕 하중 때문에 오래된 상자부터 아래 칸으로 밀린다.",
+        "civic_routine": "야간 보관인은 떠내려온 표찰과 실제 상자 무게를 별도 장부에 기록한다.",
+        "ownership_dispute": "표찰만 남은 화물을 습득물·왕실 물자·폐기물 중 무엇으로 볼 것인가",
+        "signature_evidence": "바닥을 긁은 상자 모서리와 물먹은 왕실 표찰",
+        "failure_cascade": "붕괴 → 증거 소실 → 경도 소유권 분쟁 확대",
+        "primary_faction_id": "FC001"
+      }
+    },
+    {
+      "id": "ST007",
+      "name": "경도 내성",
+      "region_id": "R01",
+      "region": "중원 경도",
+      "episodes": [
+        23,
+        24
+      ],
+      "landmark": "한 물건에 합법 증서가 세 장",
+      "current_tension": "진품과 가격이 실제 쓰임보다 우선할 수 있는가.",
+      "entry_rule": "감정서 원문을 보지 않고 가격부터 부르는 일.",
+      "daily_operation": "정오 경매종과 저녁 공개 감정회.",
+      "logistics_bottleneck": "감정대 문이 닫히면 모든 거래와 숙박 보증이 동시에 멈춘다.",
+      "disaster_weakness": "가격표가 먼저 움직이면 군중이 출구보다 감정대로 몰린다.",
+      "sensory_marks": [
+        "달군 인장 냄새",
+        "가격표 종이 긁힘",
+        "전시대 기름빛"
+      ],
+      "local_terms": [
+        "공개끈",
+        "반론값"
+      ],
+      "event_seed": "정오 경매종과 저녁 공개 감정회. -> 한 물건에 합법 증서가 세 장 -> 가격표가 먼저 움직이면 군중이 출구보다 감정대로 몰린다.",
+      "operability_v3_4": {
+        "name": "경도 내성",
+        "region_id": "R01",
+        "region": "중원 경도",
+        "linked_route_ids": [
+          "RT004",
+          "RT005"
+        ],
+        "primary_function": "왕실 원문·증서 심사와 도시 출입 보증",
+        "local_bottleneck": "내성 감정문이 닫히면 거래뿐 아니라 숙박·통행 보증까지 멈춘다.",
+        "civic_routine": "오전에는 원문 대조, 오후에는 이의 신청, 밤에는 봉인 인장 회수 절차를 연다.",
+        "ownership_dispute": "서로 모두 합법인 세 증서 가운데 무엇이 실제 권리를 만드는가",
+        "signature_evidence": "잉크 층위·인장 열흔·필사관 교대 표식",
+        "failure_cascade": "심사 정지 → 시장 신용 경색 → 외곽 숙소 폐쇄",
+        "primary_faction_id": "FC005"
+      }
+    },
+    {
+      "id": "ST008",
+      "name": "만보시장",
+      "region_id": "R01",
+      "region": "중원 경도",
+      "episodes": [
+        21,
+        22,
+        25,
+        29
+      ],
+      "landmark": "가짜 왕검이 진품보다 더 많은 시민을 지킨 기록",
+      "current_tension": "진품과 가격이 실제 쓰임보다 우선할 수 있는가.",
+      "entry_rule": "감정서 원문을 보지 않고 가격부터 부르는 일.",
+      "daily_operation": "정오 경매종과 저녁 공개 감정회.",
+      "logistics_bottleneck": "감정대 문이 닫히면 모든 거래와 숙박 보증이 동시에 멈춘다.",
+      "disaster_weakness": "가격표가 먼저 움직이면 군중이 출구보다 감정대로 몰린다.",
+      "sensory_marks": [
+        "달군 인장 냄새",
+        "가격표 종이 긁힘",
+        "전시대 기름빛"
+      ],
+      "local_terms": [
+        "공개끈",
+        "반론값"
+      ],
+      "event_seed": "정오 경매종과 저녁 공개 감정회. -> 가짜 왕검이 진품보다 더 많은 시민을 지킨 기록 -> 가격표가 먼저 움직이면 군중이 출구보다 감정대로 몰린다.",
+      "operability_v3_4": {
+        "name": "만보시장",
+        "region_id": "R01",
+        "region": "중원 경도",
+        "linked_route_ids": [
+          "RT005"
+        ],
+        "primary_function": "유물 경매·보험·가격 형성",
+        "local_bottleneck": "경매종과 감정대가 멈추면 군중이 출구보다 물건 쪽으로 몰린다.",
+        "civic_routine": "정오 경매 전 공개 반론값을 받고 낙찰 뒤 사용 이력을 별도 고지한다.",
+        "ownership_dispute": "최고가 낙찰권과 실제로 사람을 지킨 사용권이 충돌할 때의 우선순위",
+        "signature_evidence": "가격표 교체 자국과 전시대 기름때",
+        "failure_cascade": "가격 폭등 → 보험 취소 → 소상인 연쇄 파산",
+        "primary_faction_id": "FC002"
+      }
+    },
+    {
+      "id": "ST009",
+      "name": "열두손골",
+      "region_id": "R01",
+      "region": "중원 경도",
+      "episodes": [
+        27,
+        28,
+        31,
+        32,
+        33,
+        37
+      ],
+      "landmark": "거짓말을 먹지만 진실은 말하지 않는 귀걸이",
+      "current_tension": "진품과 가격이 실제 쓰임보다 우선할 수 있는가.",
+      "entry_rule": "감정서 원문을 보지 않고 가격부터 부르는 일.",
+      "daily_operation": "정오 경매종과 저녁 공개 감정회.",
+      "logistics_bottleneck": "감정대 문이 닫히면 모든 거래와 숙박 보증이 동시에 멈춘다.",
+      "disaster_weakness": "가격표가 먼저 움직이면 군중이 출구보다 감정대로 몰린다.",
+      "sensory_marks": [
+        "달군 인장 냄새",
+        "가격표 종이 긁힘",
+        "전시대 기름빛"
+      ],
+      "local_terms": [
+        "공개끈",
+        "반론값"
+      ],
+      "event_seed": "정오 경매종과 저녁 공개 감정회. -> 거짓말을 먹지만 진실은 말하지 않는 귀걸이 -> 가격표가 먼저 움직이면 군중이 출구보다 감정대로 몰린다.",
+      "operability_v3_4": {
+        "name": "열두손골",
+        "region_id": "R01",
+        "region": "중원 경도",
+        "linked_route_ids": [
+          "RT005",
+          "RT006"
+        ],
+        "primary_function": "모조품 제작·수선·비공식 감정",
+        "local_bottleneck": "재료 반입로가 막히면 모조품과 정품 수선이 동시에 멈춘다.",
+        "civic_routine": "열두 공방이 매주 한 번 제작표식과 실패작을 서로 공개한다.",
+        "ownership_dispute": "독점을 막기 위한 모조품이 위조 범죄와 어디서 갈리는가",
+        "signature_evidence": "공방별 못 머리·연마 방향·숨은 제작표식",
+        "failure_cascade": "단속 과잉 → 수선공 이탈 → 진품 유지비 급등",
+        "primary_faction_id": "FC007"
+      }
+    },
+    {
+      "id": "ST010",
+      "name": "공도원",
+      "region_id": "R01",
+      "region": "중원 경도",
+      "episodes": [
+        34,
+        35,
+        36,
+        141,
+        142,
+        143
+      ],
+      "landmark": "가격 없는 저울이 가난한 배달부 쪽에서 움직이지 않음",
+      "current_tension": "진품과 가격이 실제 쓰임보다 우선할 수 있는가.",
+      "entry_rule": "감정서 원문을 보지 않고 가격부터 부르는 일.",
+      "daily_operation": "정오 경매종과 저녁 공개 감정회.",
+      "logistics_bottleneck": "감정대 문이 닫히면 모든 거래와 숙박 보증이 동시에 멈춘다.",
+      "disaster_weakness": "가격표가 먼저 움직이면 군중이 출구보다 감정대로 몰린다.",
+      "sensory_marks": [
+        "달군 인장 냄새",
+        "가격표 종이 긁힘",
+        "전시대 기름빛"
+      ],
+      "local_terms": [
+        "공개끈",
+        "반론값"
+      ],
+      "event_seed": "정오 경매종과 저녁 공개 감정회. -> 가격 없는 저울이 가난한 배달부 쪽에서 움직이지 않음 -> 가격표가 먼저 움직이면 군중이 출구보다 감정대로 몰린다.",
+      "operability_v3_4": {
+        "name": "공도원",
+        "region_id": "R01",
+        "region": "중원 경도",
+        "linked_route_ids": [
+          "RT006"
+        ],
+        "primary_function": "공개 감정·시민 증언·가격 없는 가치 판정",
+        "local_bottleneck": "증언 대기열과 보안 인력이 무너지면 군중 판정이 인기투표로 변한다.",
+        "civic_routine": "아침 물건 공개, 낮 사용 증언, 저녁 반론과 재심 순으로 진행한다.",
+        "ownership_dispute": "가격 없는 유산의 보관 비용을 누가 감당할 것인가",
+        "signature_evidence": "저울의 멈춤 위치와 공개끈에 남은 손때",
+        "failure_cascade": "판정 불신 → 시민전시거리 철수 → 왕실 기록 독점 강화",
+        "primary_faction_id": "FC007"
+      }
+    },
+    {
+      "id": "ST011",
+      "name": "진수문",
+      "region_id": "R01",
+      "region": "중원 경도",
+      "episodes": [
+        24,
+        26,
+        35,
+        39,
+        40
+      ],
+      "landmark": "감정사가 자기 가문의 오류를 공개해야 하는 재판",
+      "current_tension": "진품과 가격이 실제 쓰임보다 우선할 수 있는가.",
+      "entry_rule": "감정서 원문을 보지 않고 가격부터 부르는 일.",
+      "daily_operation": "정오 경매종과 저녁 공개 감정회.",
+      "logistics_bottleneck": "감정대 문이 닫히면 모든 거래와 숙박 보증이 동시에 멈춘다.",
+      "disaster_weakness": "가격표가 먼저 움직이면 군중이 출구보다 감정대로 몰린다.",
+      "sensory_marks": [
+        "달군 인장 냄새",
+        "가격표 종이 긁힘",
+        "전시대 기름빛"
+      ],
+      "local_terms": [
+        "공개끈",
+        "반론값"
+      ],
+      "event_seed": "정오 경매종과 저녁 공개 감정회. -> 감정사가 자기 가문의 오류를 공개해야 하는 재판 -> 가격표가 먼저 움직이면 군중이 출구보다 감정대로 몰린다.",
+      "operability_v3_4": {
+        "name": "진수문",
+        "region_id": "R01",
+        "region": "중원 경도",
+        "linked_route_ids": [
+          "RT005",
+          "RT006"
+        ],
+        "primary_function": "감정서·거래증서의 법적 관문",
+        "local_bottleneck": "인장 약품이나 필사 인력이 부족하면 문 전체가 닫힌다.",
+        "civic_routine": "통행자는 물건보다 먼저 감정 책임자의 이름과 오류 이력을 제출한다.",
+        "ownership_dispute": "감정사의 과거 오류가 현재 모든 판정을 무효화하는가",
+        "signature_evidence": "인장 균열과 수정된 필획의 압력",
+        "failure_cascade": "문 폐쇄 → 경매 중단 → 외곽 암시장 확대",
+        "primary_faction_id": "FC005"
+      }
+    },
+    {
+      "id": "ST012",
+      "name": "시민전시거리",
+      "region_id": "R01",
+      "region": "중원 경도",
+      "episodes": [
+        22,
+        24,
+        29,
+        30,
+        37,
+        38,
+        144,
+        153
+      ],
+      "landmark": "왕실이 위조품을 정통성 선전에 이용",
+      "current_tension": "진품과 가격이 실제 쓰임보다 우선할 수 있는가.",
+      "entry_rule": "감정서 원문을 보지 않고 가격부터 부르는 일.",
+      "daily_operation": "정오 경매종과 저녁 공개 감정회.",
+      "logistics_bottleneck": "감정대 문이 닫히면 모든 거래와 숙박 보증이 동시에 멈춘다.",
+      "disaster_weakness": "가격표가 먼저 움직이면 군중이 출구보다 감정대로 몰린다.",
+      "sensory_marks": [
+        "달군 인장 냄새",
+        "가격표 종이 긁힘",
+        "전시대 기름빛"
+      ],
+      "local_terms": [
+        "공개끈",
+        "반론값"
+      ],
+      "event_seed": "정오 경매종과 저녁 공개 감정회. -> 왕실이 위조품을 정통성 선전에 이용 -> 가격표가 먼저 움직이면 군중이 출구보다 감정대로 몰린다.",
+      "operability_v3_4": {
+        "name": "시민전시거리",
+        "region_id": "R01",
+        "region": "중원 경도",
+        "linked_route_ids": [
+          "RT005"
+        ],
+        "primary_function": "공동체 사용 기록을 보존하는 공개 전시구역",
+        "local_bottleneck": "보안 예산과 기부가 줄면 보호 유리보다 먼저 해설 인력이 사라진다.",
+        "civic_routine": "폐장 뒤 시민 대표가 전시품 상태와 사용 증언을 함께 확인한다.",
+        "ownership_dispute": "왕실 선전물로 쓰인 모조품을 시민 기억의 유산으로 남길 수 있는가",
+        "signature_evidence": "손잡이 수선층과 관람객이 남긴 공개 증언표",
+        "failure_cascade": "전시 폐쇄 → 사용 기록 소실 → 진품 중심 독점 회귀",
+        "primary_faction_id": "FC007"
+      }
+    },
+    {
+      "id": "ST013",
+      "name": "연무약곡",
+      "region_id": "R02",
+      "region": "남독택",
+      "episodes": [
+        52,
+        53,
+        54
+      ],
+      "landmark": "향로가 마을을 살리지만 숲 전체를 잠재움",
+      "current_tension": "생명과 물건의 경계는 누가 판정하는가.",
+      "entry_rule": "신수에게 먼저 이름을 붙이고 소유자를 묻는 일.",
+      "daily_operation": "안개가 얇아지는 새벽 치료열과 저녁 촌회.",
+      "logistics_bottleneck": "야생계약소 보호실 접근권이 막히면 치료와 심사가 함께 늦어진다.",
+      "disaster_weakness": "향로가 마을을 살리는 동안 숲 전체가 잠든다.",
+      "sensory_marks": [
+        "단내 섞인 독안개",
+        "약솥 김",
+        "젖은 허물의 냉기"
+      ],
+      "local_terms": [
+        "숨허락",
+        "허물값"
+      ],
+      "event_seed": "안개가 얇아지는 새벽 치료열과 저녁 촌회. -> 향로가 마을을 살리지만 숲 전체를 잠재움 -> 향로가 마을을 살리는 동안 숲 전체가 잠든다.",
+      "operability_v3_4": {
+        "name": "연무약곡",
+        "region_id": "R02",
+        "region": "남독택",
+        "linked_route_ids": [
+          "RT009"
+        ],
+        "primary_function": "해독재 재배와 독안개 치료",
+        "local_bottleneck": "깨끗한 천과 해독재가 동시에 부족해지면 사람·신수 치료 순서가 충돌한다.",
+        "civic_routine": "안개가 옅은 새벽에 채집하고 저녁 촌회에서 치료 우선순위를 정한다.",
+        "ownership_dispute": "마을을 살리지만 숲을 잠재우는 향로를 누가 멈출 권리가 있는가",
+        "signature_evidence": "약솥 침전물과 잎맥의 독 변색",
+        "failure_cascade": "치료 지연 → 노동력 감소 → 보호실 접근 제한",
+        "primary_faction_id": "FC008"
+      }
+    },
+    {
+      "id": "ST014",
+      "name": "부엽촌",
+      "region_id": "R02",
+      "region": "남독택",
+      "episodes": [
+        45,
+        46,
+        47,
+        48
+      ],
+      "landmark": "독을 없애면 서식지가 붕괴하는 치료 선택",
+      "current_tension": "생명과 물건의 경계는 누가 판정하는가.",
+      "entry_rule": "신수에게 먼저 이름을 붙이고 소유자를 묻는 일.",
+      "daily_operation": "안개가 얇아지는 새벽 치료열과 저녁 촌회.",
+      "logistics_bottleneck": "야생계약소 보호실 접근권이 막히면 치료와 심사가 함께 늦어진다.",
+      "disaster_weakness": "향로가 마을을 살리는 동안 숲 전체가 잠든다.",
+      "sensory_marks": [
+        "단내 섞인 독안개",
+        "약솥 김",
+        "젖은 허물의 냉기"
+      ],
+      "local_terms": [
+        "숨허락",
+        "허물값"
+      ],
+      "event_seed": "안개가 얇아지는 새벽 치료열과 저녁 촌회. -> 독을 없애면 서식지가 붕괴하는 치료 선택 -> 향로가 마을을 살리는 동안 숲 전체가 잠든다.",
+      "operability_v3_4": {
+        "name": "부엽촌",
+        "region_id": "R02",
+        "region": "남독택",
+        "linked_route_ids": [
+          "RT008"
+        ],
+        "primary_function": "습지 농업과 독 생태 공존",
+        "local_bottleneck": "나무다리가 썩거나 물길이 바뀌면 식량과 치료 인력이 고립된다.",
+        "civic_routine": "주민은 물길별 독 농도와 수확량을 공동 표찰에 기록한다.",
+        "ownership_dispute": "독을 제거해 사람을 살리는 일과 서식지를 보존하는 일의 우선순위",
+        "signature_evidence": "장화 밑 진흙층과 잎에 남은 치료 칼집",
+        "failure_cascade": "정화 과잉 → 먹이망 붕괴 → 신수 이탈",
+        "primary_faction_id": "FC008"
+      }
+    },
+    {
+      "id": "ST015",
+      "name": "향등나루",
+      "region_id": "R02",
+      "region": "남독택",
+      "episodes": [
+        41,
+        42,
+        43,
+        44
+      ],
+      "landmark": "신수가 계약을 세 번 거부",
+      "current_tension": "생명과 물건의 경계는 누가 판정하는가.",
+      "entry_rule": "신수에게 먼저 이름을 붙이고 소유자를 묻는 일.",
+      "daily_operation": "안개가 얇아지는 새벽 치료열과 저녁 촌회.",
+      "logistics_bottleneck": "야생계약소 보호실 접근권이 막히면 치료와 심사가 함께 늦어진다.",
+      "disaster_weakness": "향로가 마을을 살리는 동안 숲 전체가 잠든다.",
+      "sensory_marks": [
+        "단내 섞인 독안개",
+        "약솥 김",
+        "젖은 허물의 냉기"
+      ],
+      "local_terms": [
+        "숨허락",
+        "허물값"
+      ],
+      "event_seed": "안개가 얇아지는 새벽 치료열과 저녁 촌회. -> 신수가 계약을 세 번 거부 -> 향로가 마을을 살리는 동안 숲 전체가 잠든다.",
+      "operability_v3_4": {
+        "name": "향등나루",
+        "region_id": "R02",
+        "region": "남독택",
+        "linked_route_ids": [
+          "RT007",
+          "RT008"
+        ],
+        "primary_function": "신수 계약 심사와 외부인 검역",
+        "local_bottleneck": "보호실 접근권이 막히면 치료·심사·수로 통행이 함께 지연된다.",
+        "civic_routine": "도착자는 소유자 이름이 아니라 냄새·호흡·상처 상태부터 확인받는다.",
+        "ownership_dispute": "인간이 먼저 붙인 이름이 계약 의사를 대신할 수 있는가",
+        "signature_evidence": "향등 연기 반응과 발자국 회피 방향",
+        "failure_cascade": "심사 적체 → 밀매단 위조 계약 증가 → 수로 봉쇄",
+        "primary_faction_id": "FC008"
+      }
+    },
+    {
+      "id": "ST016",
+      "name": "백옥습",
+      "region_id": "R02",
+      "region": "남독택",
+      "episodes": [
+        49,
+        50,
+        51
+      ],
+      "landmark": "인간 주민을 미끼로 신수를 유인하는 밀매단",
+      "current_tension": "생명과 물건의 경계는 누가 판정하는가.",
+      "entry_rule": "신수에게 먼저 이름을 붙이고 소유자를 묻는 일.",
+      "daily_operation": "안개가 얇아지는 새벽 치료열과 저녁 촌회.",
+      "logistics_bottleneck": "야생계약소 보호실 접근권이 막히면 치료와 심사가 함께 늦어진다.",
+      "disaster_weakness": "향로가 마을을 살리는 동안 숲 전체가 잠든다.",
+      "sensory_marks": [
+        "단내 섞인 독안개",
+        "약솥 김",
+        "젖은 허물의 냉기"
+      ],
+      "local_terms": [
+        "숨허락",
+        "허물값"
+      ],
+      "event_seed": "안개가 얇아지는 새벽 치료열과 저녁 촌회. -> 인간 주민을 미끼로 신수를 유인하는 밀매단 -> 향로가 마을을 살리는 동안 숲 전체가 잠든다.",
+      "operability_v3_4": {
+        "name": "백옥습",
+        "region_id": "R02",
+        "region": "남독택",
+        "linked_route_ids": [
+          "RT008"
+        ],
+        "primary_function": "희귀 신수 보호와 습지 감시",
+        "local_bottleneck": "보호 구역과 밀매 운송로가 겹쳐 구조 인력이 매복 위험을 떠안는다.",
+        "civic_routine": "해질 때 우리 흔적·먹이 이동·인간 발자국을 따로 순찰한다.",
+        "ownership_dispute": "구조를 명분으로 한 포획과 실제 보호를 무엇으로 구분하는가",
+        "signature_evidence": "잘린 갈대 높이와 위장 우리의 녹 자국",
+        "failure_cascade": "포획 증가 → 번식지 붕괴 → 독안개 확산",
+        "primary_faction_id": "FC009"
+      }
+    },
+    {
+      "id": "ST017",
+      "name": "독왕초림",
+      "region_id": "R02",
+      "region": "남독택",
+      "episodes": [
+        55,
+        56,
+        57
+      ],
+      "landmark": "허물 안에 천공무고 사육 표식",
+      "current_tension": "생명과 물건의 경계는 누가 판정하는가.",
+      "entry_rule": "신수에게 먼저 이름을 붙이고 소유자를 묻는 일.",
+      "daily_operation": "안개가 얇아지는 새벽 치료열과 저녁 촌회.",
+      "logistics_bottleneck": "야생계약소 보호실 접근권이 막히면 치료와 심사가 함께 늦어진다.",
+      "disaster_weakness": "향로가 마을을 살리는 동안 숲 전체가 잠든다.",
+      "sensory_marks": [
+        "단내 섞인 독안개",
+        "약솥 김",
+        "젖은 허물의 냉기"
+      ],
+      "local_terms": [
+        "숨허락",
+        "허물값"
+      ],
+      "event_seed": "안개가 얇아지는 새벽 치료열과 저녁 촌회. -> 허물 안에 천공무고 사육 표식 -> 향로가 마을을 살리는 동안 숲 전체가 잠든다.",
+      "operability_v3_4": {
+        "name": "독왕초림",
+        "region_id": "R02",
+        "region": "남독택",
+        "linked_route_ids": [
+          "RT009"
+        ],
+        "primary_function": "독성 식물 군락과 생태 경계 관리",
+        "local_bottleneck": "씨앗 채취가 늘면 해독재는 늘지만 군락 균형이 무너진다.",
+        "civic_routine": "채취자는 씨앗 수보다 남긴 뿌리와 주변 생물 상태를 보고한다.",
+        "ownership_dispute": "천공무고 사육 표식이 붙은 생물을 야생으로 볼 수 있는가",
+        "signature_evidence": "허물 안쪽 표식과 뿌리 주변의 인공 흙",
+        "failure_cascade": "과채취 → 독충 이동 → 마을 치료비 급증",
+        "primary_faction_id": "FC008"
+      }
+    },
+    {
+      "id": "ST018",
+      "name": "역계약림",
+      "region_id": "R02",
+      "region": "남독택",
+      "episodes": [
+        58,
+        59,
+        60,
+        146,
+        152
+      ],
+      "landmark": "독왕초 씨앗을 봉인할지 남길지 촌회 분열",
+      "current_tension": "생명과 물건의 경계는 누가 판정하는가.",
+      "entry_rule": "신수에게 먼저 이름을 붙이고 소유자를 묻는 일.",
+      "daily_operation": "안개가 얇아지는 새벽 치료열과 저녁 촌회.",
+      "logistics_bottleneck": "야생계약소 보호실 접근권이 막히면 치료와 심사가 함께 늦어진다.",
+      "disaster_weakness": "향로가 마을을 살리는 동안 숲 전체가 잠든다.",
+      "sensory_marks": [
+        "단내 섞인 독안개",
+        "약솥 김",
+        "젖은 허물의 냉기"
+      ],
+      "local_terms": [
+        "숨허락",
+        "허물값"
+      ],
+      "event_seed": "안개가 얇아지는 새벽 치료열과 저녁 촌회. -> 독왕초 씨앗을 봉인할지 남길지 촌회 분열 -> 향로가 마을을 살리는 동안 숲 전체가 잠든다.",
+      "operability_v3_4": {
+        "name": "역계약림",
+        "region_id": "R02",
+        "region": "남독택",
+        "linked_route_ids": [
+          "RT009",
+          "RT010"
+        ],
+        "primary_function": "신수가 인간 계약을 심사·철회하는 숲",
+        "local_bottleneck": "심사 대기와 숲길 폐쇄가 겹치면 북상 이동이 막힌다.",
+        "civic_routine": "계약 당사자는 일정 기간 서로를 따라다닌 뒤 숲의 판정을 받는다.",
+        "ownership_dispute": "신수가 떠난 뒤 인간이 보유한 장비·기억·성과의 권리는 누구에게 남는가",
+        "signature_evidence": "되돌아온 발자국과 거절 뒤 남겨진 먹이",
+        "failure_cascade": "계약 붕괴 → 운송수단 상실 → 북설 보급 지연",
+        "primary_faction_id": "FC008"
+      }
+    },
+    {
+      "id": "ST019",
+      "name": "칠화로진",
+      "region_id": "R03",
+      "region": "북설원",
+      "episodes": [
+        61,
+        62,
+        63,
+        64
+      ],
+      "landmark": "주인을 얼려 살린 피풍이 다시 주인을 가둠",
+      "current_tension": "보호 장비는 한 사람의 전리품인가 공동 방어망인가.",
+      "entry_rule": "구조받은 사람 이름을 봉인 기록에서 지우는 일.",
+      "daily_operation": "해 뜨지 않는 백야 교대와 봉화 점검일.",
+      "logistics_bottleneck": "눈벽 하나가 닫히면 일곱 촌락의 식량 순환이 끊긴다.",
+      "disaster_weakness": "공동 방어망은 매일 인력을 요구해 가난한 집부터 무너진다.",
+      "sensory_marks": [
+        "눈벽 마찰음",
+        "마른 장작 냄새",
+        "얼음 밑 종소리"
+      ],
+      "local_terms": [
+        "교대몫",
+        "눈벽값"
+      ],
+      "event_seed": "해 뜨지 않는 백야 교대와 봉화 점검일. -> 주인을 얼려 살린 피풍이 다시 주인을 가둠 -> 공동 방어망은 매일 인력을 요구해 가난한 집부터 무너진다.",
+      "operability_v3_4": {
+        "name": "칠화로진",
+        "region_id": "R03",
+        "region": "북설원",
+        "linked_route_ids": [
+          "RT010",
+          "RT011"
+        ],
+        "primary_function": "난방 화로·장비 해빙·북상 보급",
+        "local_bottleneck": "장작과 말기름이 부족하면 화로 일곱 곳 중 일부를 끌 수밖에 없다.",
+        "civic_routine": "백야 교대마다 화로 온도와 구조 장비의 동결 상태를 확인한다.",
+        "ownership_dispute": "한 사람을 살린 보호 장비가 다시 그 사람을 가둘 때 회수권은 누구에게 있는가",
+        "signature_evidence": "화로 재의 층과 얼어붙은 가죽끈",
+        "failure_cascade": "화로 축소 → 장비 동결 → 봉화 교대 중단",
+        "primary_faction_id": "FC010"
+      }
+    },
+    {
+      "id": "ST020",
+      "name": "봉인성",
+      "region_id": "R03",
+      "region": "북설원",
+      "episodes": [
+        65,
+        66,
+        67,
+        68,
+        145
+      ],
+      "landmark": "깨진 설갑 일곱 조각을 서로 다른 촌락이 보유",
+      "current_tension": "보호 장비는 한 사람의 전리품인가 공동 방어망인가.",
+      "entry_rule": "구조받은 사람 이름을 봉인 기록에서 지우는 일.",
+      "daily_operation": "해 뜨지 않는 백야 교대와 봉화 점검일.",
+      "logistics_bottleneck": "눈벽 하나가 닫히면 일곱 촌락의 식량 순환이 끊긴다.",
+      "disaster_weakness": "공동 방어망은 매일 인력을 요구해 가난한 집부터 무너진다.",
+      "sensory_marks": [
+        "눈벽 마찰음",
+        "마른 장작 냄새",
+        "얼음 밑 종소리"
+      ],
+      "local_terms": [
+        "교대몫",
+        "눈벽값"
+      ],
+      "event_seed": "해 뜨지 않는 백야 교대와 봉화 점검일. -> 깨진 설갑 일곱 조각을 서로 다른 촌락이 보유 -> 공동 방어망은 매일 인력을 요구해 가난한 집부터 무너진다.",
+      "operability_v3_4": {
+        "name": "봉인성",
+        "region_id": "R03",
+        "region": "북설원",
+        "linked_route_ids": [
+          "RT011",
+          "RT012"
+        ],
+        "primary_function": "설갑 조각 조율과 공동 방어 지휘",
+        "local_bottleneck": "일곱 촌락 중 하나가 교대를 거부하면 방어망 전체가 비대칭이 된다.",
+        "civic_routine": "매일 조각 공명과 촌락별 인력·식량 부담을 공개한다.",
+        "ownership_dispute": "설갑을 한 명에게 완성할지 일곱 마을의 제한 사용권으로 둘지",
+        "signature_evidence": "조각 접합면의 서로 다른 수선법",
+        "failure_cascade": "교대 이탈 → 눈벽 붕괴 → 피난민 집중",
+        "primary_faction_id": "FC010"
+      }
+    },
+    {
+      "id": "ST021",
+      "name": "설각촌",
+      "region_id": "R03",
+      "region": "북설원",
+      "episodes": [
+        69,
+        70,
+        71
+      ],
+      "landmark": "봉인성은 안전하지만 마을의 기억을 삭제",
+      "current_tension": "보호 장비는 한 사람의 전리품인가 공동 방어망인가.",
+      "entry_rule": "구조받은 사람 이름을 봉인 기록에서 지우는 일.",
+      "daily_operation": "해 뜨지 않는 백야 교대와 봉화 점검일.",
+      "logistics_bottleneck": "눈벽 하나가 닫히면 일곱 촌락의 식량 순환이 끊긴다.",
+      "disaster_weakness": "공동 방어망은 매일 인력을 요구해 가난한 집부터 무너진다.",
+      "sensory_marks": [
+        "눈벽 마찰음",
+        "마른 장작 냄새",
+        "얼음 밑 종소리"
+      ],
+      "local_terms": [
+        "교대몫",
+        "눈벽값"
+      ],
+      "event_seed": "해 뜨지 않는 백야 교대와 봉화 점검일. -> 봉인성은 안전하지만 마을의 기억을 삭제 -> 공동 방어망은 매일 인력을 요구해 가난한 집부터 무너진다.",
+      "operability_v3_4": {
+        "name": "설각촌",
+        "region_id": "R03",
+        "region": "북설원",
+        "linked_route_ids": [
+          "RT011"
+        ],
+        "primary_function": "설각마 사육과 눈길 운송",
+        "local_bottleneck": "말기름·건초 부족과 거짓 목적지 신고가 운송 안전을 떨어뜨린다.",
+        "civic_routine": "기수는 출발 전 목적지와 귀환 시각을 설각마 앞에서 다시 말한다.",
+        "ownership_dispute": "동물이 거부한 운송 명령을 사람의 계약으로 강제할 수 있는가",
+        "signature_evidence": "발굽의 멈춤 자국과 안장끈 이빨 흔적",
+        "failure_cascade": "운송 거부 → 식량 순환 단절 → 외딴 촌락 이탈",
+        "primary_faction_id": "FC010"
+      }
+    },
+    {
+      "id": "ST022",
+      "name": "빙잠골",
+      "region_id": "R03",
+      "region": "북설원",
+      "episodes": [
+        72,
+        73,
+        74
+      ],
+      "landmark": "방패가 지킨 사람과 버린 사람 이름을 동시에 품음",
+      "current_tension": "보호 장비는 한 사람의 전리품인가 공동 방어망인가.",
+      "entry_rule": "구조받은 사람 이름을 봉인 기록에서 지우는 일.",
+      "daily_operation": "해 뜨지 않는 백야 교대와 봉화 점검일.",
+      "logistics_bottleneck": "눈벽 하나가 닫히면 일곱 촌락의 식량 순환이 끊긴다.",
+      "disaster_weakness": "공동 방어망은 매일 인력을 요구해 가난한 집부터 무너진다.",
+      "sensory_marks": [
+        "눈벽 마찰음",
+        "마른 장작 냄새",
+        "얼음 밑 종소리"
+      ],
+      "local_terms": [
+        "교대몫",
+        "눈벽값"
+      ],
+      "event_seed": "해 뜨지 않는 백야 교대와 봉화 점검일. -> 방패가 지킨 사람과 버린 사람 이름을 동시에 품음 -> 공동 방어망은 매일 인력을 요구해 가난한 집부터 무너진다.",
+      "operability_v3_4": {
+        "name": "빙잠골",
+        "region_id": "R03",
+        "region": "북설원",
+        "linked_route_ids": [
+          "RT011"
+        ],
+        "primary_function": "방한 천·방패 안감·구조 명부 제작",
+        "local_bottleneck": "빙잠실 온도가 내려가면 방패 수선과 피난복 생산이 함께 멈춘다.",
+        "civic_routine": "직조자는 지킨 사람과 구하지 못한 사람의 이름을 다른 실색으로 남긴다.",
+        "ownership_dispute": "보호 장비의 실패 기록을 지우는 것이 안전을 높이는가",
+        "signature_evidence": "실의 매듭 간격과 방패 안감의 이름 자국",
+        "failure_cascade": "기록 삭제 → 결함 반복 → 구조 실패 증가",
+        "primary_faction_id": "FC011"
+      }
+    },
+    {
+      "id": "ST023",
+      "name": "백야초소",
+      "region_id": "R03",
+      "region": "북설원",
+      "episodes": [
+        75,
+        76,
+        77,
+        151
+      ],
+      "landmark": "설각마가 목적지를 속인 기수를 버림",
+      "current_tension": "보호 장비는 한 사람의 전리품인가 공동 방어망인가.",
+      "entry_rule": "구조받은 사람 이름을 봉인 기록에서 지우는 일.",
+      "daily_operation": "해 뜨지 않는 백야 교대와 봉화 점검일.",
+      "logistics_bottleneck": "눈벽 하나가 닫히면 일곱 촌락의 식량 순환이 끊긴다.",
+      "disaster_weakness": "공동 방어망은 매일 인력을 요구해 가난한 집부터 무너진다.",
+      "sensory_marks": [
+        "눈벽 마찰음",
+        "마른 장작 냄새",
+        "얼음 밑 종소리"
+      ],
+      "local_terms": [
+        "교대몫",
+        "눈벽값"
+      ],
+      "event_seed": "해 뜨지 않는 백야 교대와 봉화 점검일. -> 설각마가 목적지를 속인 기수를 버림 -> 공동 방어망은 매일 인력을 요구해 가난한 집부터 무너진다.",
+      "operability_v3_4": {
+        "name": "백야초소",
+        "region_id": "R03",
+        "region": "북설원",
+        "linked_route_ids": [
+          "RT012"
+        ],
+        "primary_function": "봉화·눈사태 감시·교대 기록",
+        "local_bottleneck": "백야 피로와 장작 부족으로 감시 공백이 생긴다.",
+        "civic_routine": "교대자는 봉화 세기·눈벽 소리·실종자 수를 함께 인계한다.",
+        "ownership_dispute": "구조 성과를 위해 희생자 이름을 삭제할 수 있는가",
+        "signature_evidence": "그을음 높이와 봉화대 발자국 겹침",
+        "failure_cascade": "감시 공백 → 눈사태 경보 실패 → 해빙나루 고립",
+        "primary_faction_id": "FC011"
+      }
+    },
+    {
+      "id": "ST024",
+      "name": "해빙나루",
+      "region_id": "R03",
+      "region": "북설원",
+      "episodes": [
+        78,
+        79,
+        80
+      ],
+      "landmark": "공동 징발된 유물이 돌아오지 않음",
+      "current_tension": "보호 장비는 한 사람의 전리품인가 공동 방어망인가.",
+      "entry_rule": "구조받은 사람 이름을 봉인 기록에서 지우는 일.",
+      "daily_operation": "해 뜨지 않는 백야 교대와 봉화 점검일.",
+      "logistics_bottleneck": "눈벽 하나가 닫히면 일곱 촌락의 식량 순환이 끊긴다.",
+      "disaster_weakness": "공동 방어망은 매일 인력을 요구해 가난한 집부터 무너진다.",
+      "sensory_marks": [
+        "눈벽 마찰음",
+        "마른 장작 냄새",
+        "얼음 밑 종소리"
+      ],
+      "local_terms": [
+        "교대몫",
+        "눈벽값"
+      ],
+      "event_seed": "해 뜨지 않는 백야 교대와 봉화 점검일. -> 공동 징발된 유물이 돌아오지 않음 -> 공동 방어망은 매일 인력을 요구해 가난한 집부터 무너진다.",
+      "operability_v3_4": {
+        "name": "해빙나루",
+        "region_id": "R03",
+        "region": "북설원",
+        "linked_route_ids": [
+          "RT012",
+          "RT013"
+        ],
+        "primary_function": "계절 해빙기 환승과 공동 징발품 반환",
+        "local_bottleneck": "얼음 두께와 회수선 운항일이 어긋나면 징발품 귀환이 미뤄진다.",
+        "civic_routine": "첫 해빙일에 빌린 장비와 돌아오지 않은 사람의 명단을 함께 낭독한다.",
+        "ownership_dispute": "공동 방어를 위해 징발한 유물을 언제, 누구에게 돌려줘야 하는가",
+        "signature_evidence": "얼음 밑 종 울림과 반환표의 물얼룩",
+        "failure_cascade": "반환 지연 → 민심 이탈 → 다음 교대 거부",
+        "primary_faction_id": "FC010"
+      }
+    },
+    {
+      "id": "ST025",
+      "name": "황문대시장",
+      "region_id": "R04",
+      "region": "서황막",
+      "episodes": [
+        81,
+        82,
+        83,
+        84,
+        147,
+        154
+      ],
+      "landmark": "사막을 접는 지도가 뒤의 길을 지움",
+      "current_tension": "편리한 길은 무엇을 지우고 누구에게 비용을 청구하는가.",
+      "entry_rule": "남의 물표에 손가락으로 물방울을 찍는 일.",
+      "daily_operation": "정오 물표 검사와 밤 대상 출발.",
+      "logistics_bottleneck": "유리폐도의 세관 장대가 기억 통행료를 받기 시작한다.",
+      "disaster_weakness": "지도 유물이 길을 줄이면 뒤쪽 길과 귀향 기억이 사라진다.",
+      "sensory_marks": [
+        "입안의 모래",
+        "천막 줄 마찰음",
+        "빈 물독의 쇳소리"
+      ],
+      "local_terms": [
+        "그늘몫",
+        "기억세"
+      ],
+      "event_seed": "정오 물표 검사와 밤 대상 출발. -> 사막을 접는 지도가 뒤의 길을 지움 -> 지도 유물이 길을 줄이면 뒤쪽 길과 귀향 기억이 사라진다.",
+      "operability_v3_4": {
+        "name": "황문대시장",
+        "region_id": "R04",
+        "region": "서황막",
+        "linked_route_ids": [
+          "RT013"
+        ],
+        "primary_function": "대상 편성·물표 거래·사막 진입 허가",
+        "local_bottleneck": "대상로가 접히거나 물표 가격이 오르면 피난민이 시장에 묶인다.",
+        "civic_routine": "정오에 물표를 검사하고 해진 뒤 대상별 물·그늘 몫을 확정한다.",
+        "ownership_dispute": "지도 유물로 줄인 거리의 비용을 뒤에 남겨진 사람에게 청구할 수 있는가",
+        "signature_evidence": "물표 구멍 수와 천막줄 마모",
+        "failure_cascade": "시장 적체 → 물값 폭등 → 불법 지름길 확산",
+        "primary_faction_id": "FC012"
+      }
+    },
+    {
+      "id": "ST026",
+      "name": "첫물성",
+      "region_id": "R04",
+      "region": "서황막",
+      "episodes": [
+        85,
+        86,
+        87,
+        88
+      ],
+      "landmark": "기억을 물로 바꾸는 호리병이 사생활을 노출",
+      "current_tension": "편리한 길은 무엇을 지우고 누구에게 비용을 청구하는가.",
+      "entry_rule": "남의 물표에 손가락으로 물방울을 찍는 일.",
+      "daily_operation": "정오 물표 검사와 밤 대상 출발.",
+      "logistics_bottleneck": "유리폐도의 세관 장대가 기억 통행료를 받기 시작한다.",
+      "disaster_weakness": "지도 유물이 길을 줄이면 뒤쪽 길과 귀향 기억이 사라진다.",
+      "sensory_marks": [
+        "입안의 모래",
+        "천막 줄 마찰음",
+        "빈 물독의 쇳소리"
+      ],
+      "local_terms": [
+        "그늘몫",
+        "기억세"
+      ],
+      "event_seed": "정오 물표 검사와 밤 대상 출발. -> 기억을 물로 바꾸는 호리병이 사생활을 노출 -> 지도 유물이 길을 줄이면 뒤쪽 길과 귀향 기억이 사라진다.",
+      "operability_v3_4": {
+        "name": "첫물성",
+        "region_id": "R04",
+        "region": "서황막",
+        "linked_route_ids": [
+          "RT014"
+        ],
+        "primary_function": "우물 지분·식수 배급·기억 담보 관리",
+        "local_bottleneck": "첫 우물의 수위가 낮아지면 지분 없는 피난민부터 배급에서 밀린다.",
+        "civic_routine": "새벽 수위 측정 뒤 생존 몫과 거래 몫을 분리해 배급한다.",
+        "ownership_dispute": "물을 얻기 위해 기억을 제공한 사람의 사생활을 누가 보호하는가",
+        "signature_evidence": "물독 안쪽 수위 흠집과 기억호리병의 김",
+        "failure_cascade": "배급 불신 → 우물 습격 → 대상로 폐쇄",
+        "primary_faction_id": "FC013"
+      }
+    },
+    {
+      "id": "ST027",
+      "name": "유리폐도",
+      "region_id": "R04",
+      "region": "서황막",
+      "episodes": [
+        89,
+        90,
+        91
+      ],
+      "landmark": "대상이 물 대신 기억을 통행료로 요구",
+      "current_tension": "편리한 길은 무엇을 지우고 누구에게 비용을 청구하는가.",
+      "entry_rule": "남의 물표에 손가락으로 물방울을 찍는 일.",
+      "daily_operation": "정오 물표 검사와 밤 대상 출발.",
+      "logistics_bottleneck": "유리폐도의 세관 장대가 기억 통행료를 받기 시작한다.",
+      "disaster_weakness": "지도 유물이 길을 줄이면 뒤쪽 길과 귀향 기억이 사라진다.",
+      "sensory_marks": [
+        "입안의 모래",
+        "천막 줄 마찰음",
+        "빈 물독의 쇳소리"
+      ],
+      "local_terms": [
+        "그늘몫",
+        "기억세"
+      ],
+      "event_seed": "정오 물표 검사와 밤 대상 출발. -> 대상이 물 대신 기억을 통행료로 요구 -> 지도 유물이 길을 줄이면 뒤쪽 길과 귀향 기억이 사라진다.",
+      "operability_v3_4": {
+        "name": "유리폐도",
+        "region_id": "R04",
+        "region": "서황막",
+        "linked_route_ids": [
+          "RT014"
+        ],
+        "primary_function": "세관·기억세·폐도 통행 판정",
+        "local_bottleneck": "검문 장대가 기억을 통행료로 받기 시작하면 신원과 길 정보가 동시에 훼손된다.",
+        "civic_routine": "낮에는 물표, 밤에는 귀향 기억의 잔존 여부를 검사한다.",
+        "ownership_dispute": "세금으로 제출한 기억을 행정 정보로 재사용할 수 있는가",
+        "signature_evidence": "장대 유리면의 손바닥 흔적과 끊긴 지도선",
+        "failure_cascade": "기억 소실 → 귀향 불가 → 피난민 영구 정착",
+        "primary_faction_id": "FC013"
+      }
+    },
+    {
+      "id": "ST028",
+      "name": "긴그늘역",
+      "region_id": "R04",
+      "region": "서황막",
+      "episodes": [
+        92,
+        93,
+        94
+      ],
+      "landmark": "첫 천품 파편이 전시실 상극을 일으킴",
+      "current_tension": "편리한 길은 무엇을 지우고 누구에게 비용을 청구하는가.",
+      "entry_rule": "남의 물표에 손가락으로 물방울을 찍는 일.",
+      "daily_operation": "정오 물표 검사와 밤 대상 출발.",
+      "logistics_bottleneck": "유리폐도의 세관 장대가 기억 통행료를 받기 시작한다.",
+      "disaster_weakness": "지도 유물이 길을 줄이면 뒤쪽 길과 귀향 기억이 사라진다.",
+      "sensory_marks": [
+        "입안의 모래",
+        "천막 줄 마찰음",
+        "빈 물독의 쇳소리"
+      ],
+      "local_terms": [
+        "그늘몫",
+        "기억세"
+      ],
+      "event_seed": "정오 물표 검사와 밤 대상 출발. -> 첫 천품 파편이 전시실 상극을 일으킴 -> 지도 유물이 길을 줄이면 뒤쪽 길과 귀향 기억이 사라진다.",
+      "operability_v3_4": {
+        "name": "긴그늘역",
+        "region_id": "R04",
+        "region": "서황막",
+        "linked_route_ids": [
+          "RT015"
+        ],
+        "primary_function": "대상 휴식·그늘 배분·상극 유물 격리",
+        "local_bottleneck": "그늘천과 격리 칸이 부족하면 사람과 유물이 같은 공간에 몰린다.",
+        "civic_routine": "밤 대상 출발 전 상극 장비와 물독을 서로 다른 줄에 묶는다.",
+        "ownership_dispute": "생존을 위한 그늘과 위험 유물 격리 중 무엇을 먼저 배정할 것인가",
+        "signature_evidence": "천막줄 마찰음과 격리 칸의 유리 가루",
+        "failure_cascade": "격리 실패 → 유물 폭주 → 동해문 통행 중단",
+        "primary_faction_id": "FC012"
+      }
+    },
+    {
+      "id": "ST029",
+      "name": "접힌문",
+      "region_id": "R04",
+      "region": "서황막",
+      "episodes": [
+        95,
+        96,
+        97
+      ],
+      "landmark": "유리폐도의 길이 매일 재분류",
+      "current_tension": "편리한 길은 무엇을 지우고 누구에게 비용을 청구하는가.",
+      "entry_rule": "남의 물표에 손가락으로 물방울을 찍는 일.",
+      "daily_operation": "정오 물표 검사와 밤 대상 출발.",
+      "logistics_bottleneck": "유리폐도의 세관 장대가 기억 통행료를 받기 시작한다.",
+      "disaster_weakness": "지도 유물이 길을 줄이면 뒤쪽 길과 귀향 기억이 사라진다.",
+      "sensory_marks": [
+        "입안의 모래",
+        "천막 줄 마찰음",
+        "빈 물독의 쇳소리"
+      ],
+      "local_terms": [
+        "그늘몫",
+        "기억세"
+      ],
+      "event_seed": "정오 물표 검사와 밤 대상 출발. -> 유리폐도의 길이 매일 재분류 -> 지도 유물이 길을 줄이면 뒤쪽 길과 귀향 기억이 사라진다.",
+      "operability_v3_4": {
+        "name": "접힌문",
+        "region_id": "R04",
+        "region": "서황막",
+        "linked_route_ids": [
+          "RT015"
+        ],
+        "primary_function": "지름길 지도 판정과 사라진 길 복원",
+        "local_bottleneck": "문이 매일 경로를 재분류해 뒤쪽 길과 표지판을 지운다.",
+        "civic_routine": "통과 전후 이동 거리·동행자·기억 누락을 대조한다.",
+        "ownership_dispute": "더 빠른 길을 선택한 사람이 사라진 옛길의 복구 비용을 져야 하는가",
+        "signature_evidence": "겹쳐진 발자국과 지도 가장자리의 잘린 마을명",
+        "failure_cascade": "경로 소실 → 구조대 오인 → 기억잔촌 고립",
+        "primary_faction_id": "FC014"
+      }
+    },
+    {
+      "id": "ST030",
+      "name": "기억잔촌",
+      "region_id": "R04",
+      "region": "서황막",
+      "episodes": [
+        98,
+        99,
+        100
+      ],
+      "landmark": "우물 지분이 없는 피난민 행렬",
+      "current_tension": "편리한 길은 무엇을 지우고 누구에게 비용을 청구하는가.",
+      "entry_rule": "남의 물표에 손가락으로 물방울을 찍는 일.",
+      "daily_operation": "정오 물표 검사와 밤 대상 출발.",
+      "logistics_bottleneck": "유리폐도의 세관 장대가 기억 통행료를 받기 시작한다.",
+      "disaster_weakness": "지도 유물이 길을 줄이면 뒤쪽 길과 귀향 기억이 사라진다.",
+      "sensory_marks": [
+        "입안의 모래",
+        "천막 줄 마찰음",
+        "빈 물독의 쇳소리"
+      ],
+      "local_terms": [
+        "그늘몫",
+        "기억세"
+      ],
+      "event_seed": "정오 물표 검사와 밤 대상 출발. -> 우물 지분이 없는 피난민 행렬 -> 지도 유물이 길을 줄이면 뒤쪽 길과 귀향 기억이 사라진다.",
+      "operability_v3_4": {
+        "name": "기억잔촌",
+        "region_id": "R04",
+        "region": "서황막",
+        "linked_route_ids": [
+          "RT015"
+        ],
+        "primary_function": "길과 고향 기억을 잃은 피난민 정착지",
+        "local_bottleneck": "우물 지분·호칭·귀향 기억이 없어 행정상 주민으로 인정받지 못한다.",
+        "civic_routine": "주민은 매일 서로의 고향 묘사와 남은 물건을 교차 확인한다.",
+        "ownership_dispute": "기억이 없는 사람의 고향·상속·귀환 권리를 무엇으로 증명할 것인가",
+        "signature_evidence": "빈 물독의 쇳소리와 서로 다른 고향 흙주머니",
+        "failure_cascade": "권리 부재 → 노동 착취 → 대상연합 갈등 확대",
+        "primary_faction_id": "FC012"
+      }
+    },
+    {
+      "id": "ST031",
+      "name": "육닻항",
+      "region_id": "R05",
+      "region": "동해군도",
+      "episodes": [
+        101,
+        102,
+        103,
+        104,
+        148
+      ],
+      "landmark": "파도를 기억하는 닻의 주인이 여섯 공동체",
+      "current_tension": "바다에 잠긴 도시의 주인은 증서인가 기억인가.",
+      "entry_rule": "실종자 닻줄을 발로 넘는 일.",
+      "daily_operation": "조수종, 장례 전 실종자 신호 확인, 공동 인양일.",
+      "logistics_bottleneck": "한 섬이 허락을 거부하면 여섯 가문의 창고가 열리지 않는다.",
+      "disaster_weakness": "축소지도가 도시를 접으면 숨빚 상환일이 앞당겨진다.",
+      "sensory_marks": [
+        "젖은 밧줄 냄새",
+        "조수종 울림",
+        "소금 묻은 나무바닥"
+      ],
+      "local_terms": [
+        "닻허락",
+        "숨빚"
+      ],
+      "event_seed": "조수종, 장례 전 실종자 신호 확인, 공동 인양일. -> 파도를 기억하는 닻의 주인이 여섯 공동체 -> 축소지도가 도시를 접으면 숨빚 상환일이 앞당겨진다.",
+      "operability_v3_4": {
+        "name": "육닻항",
+        "region_id": "R05",
+        "region": "동해군도",
+        "linked_route_ids": [
+          "RT016"
+        ],
+        "primary_function": "인양선 출항·여섯 가문 화물 조정",
+        "local_bottleneck": "한 가문이 닻줄 허락을 거부하면 공동 창고와 항로가 동시에 닫힌다.",
+        "civic_routine": "조수종 뒤 가문별 구조선·숨부적·장례권을 공개 배정한다.",
+        "ownership_dispute": "구조비를 낸 가문과 실종자를 기억하는 공동체 중 누가 인양권을 갖는가",
+        "signature_evidence": "닻줄 매듭층과 소금 먹은 인장",
+        "failure_cascade": "출항 중단 → 숨부적 부족 → 침몰도시 구조 지연",
+        "primary_faction_id": "FC015"
+      }
+    },
+    {
+      "id": "ST032",
+      "name": "해람섬",
+      "region_id": "R05",
+      "region": "동해군도",
+      "episodes": [
+        105,
+        106,
+        107,
+        108
+      ],
+      "landmark": "숨 목걸이가 나중에 호흡 부채를 청구",
+      "current_tension": "바다에 잠긴 도시의 주인은 증서인가 기억인가.",
+      "entry_rule": "실종자 닻줄을 발로 넘는 일.",
+      "daily_operation": "조수종, 장례 전 실종자 신호 확인, 공동 인양일.",
+      "logistics_bottleneck": "한 섬이 허락을 거부하면 여섯 가문의 창고가 열리지 않는다.",
+      "disaster_weakness": "축소지도가 도시를 접으면 숨빚 상환일이 앞당겨진다.",
+      "sensory_marks": [
+        "젖은 밧줄 냄새",
+        "조수종 울림",
+        "소금 묻은 나무바닥"
+      ],
+      "local_terms": [
+        "닻허락",
+        "숨빚"
+      ],
+      "event_seed": "조수종, 장례 전 실종자 신호 확인, 공동 인양일. -> 숨 목걸이가 나중에 호흡 부채를 청구 -> 축소지도가 도시를 접으면 숨빚 상환일이 앞당겨진다.",
+      "operability_v3_4": {
+        "name": "해람섬",
+        "region_id": "R05",
+        "region": "동해군도",
+        "linked_route_ids": [
+          "RT016"
+        ],
+        "primary_function": "잠수 장비·호흡 부채·해저 작업자 치료",
+        "local_bottleneck": "숨 목걸이의 후불 호흡 부채가 누적되면 작업자가 갑자기 쓰러진다.",
+        "civic_routine": "잠수 전 빌린 숨과 귀환 뒤 갚아야 할 호흡 시간을 기록한다.",
+        "ownership_dispute": "생존을 위해 빌린 호흡을 노동 빚으로 청구할 수 있는가",
+        "signature_evidence": "목걸이 안쪽 소금 결정과 호흡 간격 기록",
+        "failure_cascade": "작업자 붕괴 → 인양 중단 → 가문 빚 증가",
+        "primary_faction_id": "FC015"
+      }
+    },
+    {
+      "id": "ST033",
+      "name": "빈매듭촌",
+      "region_id": "R05",
+      "region": "동해군도",
+      "episodes": [
+        109,
+        110,
+        111
+      ],
+      "landmark": "라이벌이 합법적으로 핵심 유산 낙찰",
+      "current_tension": "바다에 잠긴 도시의 주인은 증서인가 기억인가.",
+      "entry_rule": "실종자 닻줄을 발로 넘는 일.",
+      "daily_operation": "조수종, 장례 전 실종자 신호 확인, 공동 인양일.",
+      "logistics_bottleneck": "한 섬이 허락을 거부하면 여섯 가문의 창고가 열리지 않는다.",
+      "disaster_weakness": "축소지도가 도시를 접으면 숨빚 상환일이 앞당겨진다.",
+      "sensory_marks": [
+        "젖은 밧줄 냄새",
+        "조수종 울림",
+        "소금 묻은 나무바닥"
+      ],
+      "local_terms": [
+        "닻허락",
+        "숨빚"
+      ],
+      "event_seed": "조수종, 장례 전 실종자 신호 확인, 공동 인양일. -> 라이벌이 합법적으로 핵심 유산 낙찰 -> 축소지도가 도시를 접으면 숨빚 상환일이 앞당겨진다.",
+      "operability_v3_4": {
+        "name": "빈매듭촌",
+        "region_id": "R05",
+        "region": "동해군도",
+        "linked_route_ids": [
+          "RT016"
+        ],
+        "primary_function": "실종자 장례·빈매듭 신호·가족 증언",
+        "local_bottleneck": "실종 신호와 장례 일정이 엇갈리면 재산 분배가 먼저 진행된다.",
+        "civic_routine": "장례 전 마지막으로 닻줄과 빈매듭의 움직임을 확인한다.",
+        "ownership_dispute": "사망 확정 전 상속·매각을 진행한 권리를 되돌릴 수 있는가",
+        "signature_evidence": "빈매듭의 젖은 방향과 가족별 매듭 습관",
+        "failure_cascade": "오판 장례 → 상속 분쟁 → 구조선 협조 거부",
+        "primary_faction_id": "FC015"
+      }
+    },
+    {
+      "id": "ST034",
+      "name": "조류탑섬",
+      "region_id": "R05",
+      "region": "동해군도",
+      "episodes": [
+        112,
+        113,
+        114
+      ],
+      "landmark": "청묘가 여섯 섬 중 한 곳의 허락을 거부",
+      "current_tension": "바다에 잠긴 도시의 주인은 증서인가 기억인가.",
+      "entry_rule": "실종자 닻줄을 발로 넘는 일.",
+      "daily_operation": "조수종, 장례 전 실종자 신호 확인, 공동 인양일.",
+      "logistics_bottleneck": "한 섬이 허락을 거부하면 여섯 가문의 창고가 열리지 않는다.",
+      "disaster_weakness": "축소지도가 도시를 접으면 숨빚 상환일이 앞당겨진다.",
+      "sensory_marks": [
+        "젖은 밧줄 냄새",
+        "조수종 울림",
+        "소금 묻은 나무바닥"
+      ],
+      "local_terms": [
+        "닻허락",
+        "숨빚"
+      ],
+      "event_seed": "조수종, 장례 전 실종자 신호 확인, 공동 인양일. -> 청묘가 여섯 섬 중 한 곳의 허락을 거부 -> 축소지도가 도시를 접으면 숨빚 상환일이 앞당겨진다.",
+      "operability_v3_4": {
+        "name": "조류탑섬",
+        "region_id": "R05",
+        "region": "동해군도",
+        "linked_route_ids": [
+          "RT016"
+        ],
+        "primary_function": "조수 신호·섬 간 허가·항로 경보",
+        "local_bottleneck": "탑 하나가 허락을 거부하거나 신호가 늦으면 여섯 항로가 서로 충돌한다.",
+        "civic_routine": "조수 변화마다 탑별 신호와 거부 사유를 공개한다.",
+        "ownership_dispute": "소수 섬의 거부권이 전체 공동체 생존보다 우선할 수 있는가",
+        "signature_evidence": "종 울림의 시간차와 바닷새 회피 방향",
+        "failure_cascade": "신호 불일치 → 선박 충돌 → 공동 인양 중단",
+        "primary_faction_id": "FC015"
+      }
+    },
+    {
+      "id": "ST035",
+      "name": "침몰도시 입구",
+      "region_id": "R05",
+      "region": "동해군도",
+      "episodes": [
+        115,
+        116,
+        117
+      ],
+      "landmark": "침몰도시 축소지도가 실제 도시를 접으려 함",
+      "current_tension": "바다에 잠긴 도시의 주인은 증서인가 기억인가.",
+      "entry_rule": "실종자 닻줄을 발로 넘는 일.",
+      "daily_operation": "조수종, 장례 전 실종자 신호 확인, 공동 인양일.",
+      "logistics_bottleneck": "한 섬이 허락을 거부하면 여섯 가문의 창고가 열리지 않는다.",
+      "disaster_weakness": "축소지도가 도시를 접으면 숨빚 상환일이 앞당겨진다.",
+      "sensory_marks": [
+        "젖은 밧줄 냄새",
+        "조수종 울림",
+        "소금 묻은 나무바닥"
+      ],
+      "local_terms": [
+        "닻허락",
+        "숨빚"
+      ],
+      "event_seed": "조수종, 장례 전 실종자 신호 확인, 공동 인양일. -> 침몰도시 축소지도가 실제 도시를 접으려 함 -> 축소지도가 도시를 접으면 숨빚 상환일이 앞당겨진다.",
+      "operability_v3_4": {
+        "name": "침몰도시 입구",
+        "region_id": "R05",
+        "region": "동해군도",
+        "linked_route_ids": [
+          "RT016"
+        ],
+        "primary_function": "도시 진입권·축소지도·여섯 열쇠 조정",
+        "local_bottleneck": "축소지도가 실제 공간을 접으면서 탈출로와 구조 구역을 함께 줄인다.",
+        "civic_routine": "진입 전 각 가문의 열쇠·기억·장례권을 다른 슬롯에 배치한다.",
+        "ownership_dispute": "도시를 열 권리와 도시를 접지 않을 책임을 분리할 수 있는가",
+        "signature_evidence": "문틀의 여섯 수선층과 접힌 거리 표식",
+        "failure_cascade": "공간 축소 → 피난로 소멸 → 숨빚 조기 청구",
+        "primary_faction_id": "FC015"
+      }
+    },
+    {
+      "id": "ST036",
+      "name": "파랑나루",
+      "region_id": "R05",
+      "region": "동해군도",
+      "episodes": [
+        118,
+        119,
+        120
+      ],
+      "landmark": "빈매듭 장례 직전 실종자의 신호",
+      "current_tension": "바다에 잠긴 도시의 주인은 증서인가 기억인가.",
+      "entry_rule": "실종자 닻줄을 발로 넘는 일.",
+      "daily_operation": "조수종, 장례 전 실종자 신호 확인, 공동 인양일.",
+      "logistics_bottleneck": "한 섬이 허락을 거부하면 여섯 가문의 창고가 열리지 않는다.",
+      "disaster_weakness": "축소지도가 도시를 접으면 숨빚 상환일이 앞당겨진다.",
+      "sensory_marks": [
+        "젖은 밧줄 냄새",
+        "조수종 울림",
+        "소금 묻은 나무바닥"
+      ],
+      "local_terms": [
+        "닻허락",
+        "숨빚"
+      ],
+      "event_seed": "조수종, 장례 전 실종자 신호 확인, 공동 인양일. -> 빈매듭 장례 직전 실종자의 신호 -> 축소지도가 도시를 접으면 숨빚 상환일이 앞당겨진다.",
+      "operability_v3_4": {
+        "name": "파랑나루",
+        "region_id": "R05",
+        "region": "동해군도",
+        "linked_route_ids": [
+          "RT016",
+          "RT017"
+        ],
+        "primary_function": "침몰도시 귀환자 수용·실종 신호 중계",
+        "local_bottleneck": "귀환자와 유품이 동시에 몰리면 신원·소유·장례 확인이 뒤섞인다.",
+        "civic_routine": "도착 순서가 아니라 생존자 치료, 신호 확인, 유품 인계를 분리한다.",
+        "ownership_dispute": "사람의 귀환과 물건의 귀환이 서로 다른 수신인을 가질 때 무엇을 먼저 할 것인가",
+        "signature_evidence": "젖은 나무바닥의 끌린 자국과 파랑 신호천",
+        "failure_cascade": "인계 오류 → 가문 불신 → 무명시행 기록 봉쇄",
+        "primary_faction_id": "FC015"
+      }
+    },
+    {
+      "id": "ST037",
+      "name": "첫호칭거리",
+      "region_id": "R06",
+      "region": "무명시",
+      "episodes": [
+        121,
+        122,
+        123,
+        124
+      ],
+      "landmark": "담운이 동료 기억에서 지워짐",
+      "current_tension": "이름과 죄명도 소유되고 거래될 수 있는가.",
+      "entry_rule": "상대가 먼저 말하지 않은 본명을 세 번 부르는 일.",
+      "daily_operation": "아침 호칭 경매와 밤 장부 수정 시간.",
+      "logistics_bottleneck": "임시 이름이 없으면 숙소, 치료, 통행이 동시에 거부된다.",
+      "disaster_weakness": "가난한 사람은 성씨를 팔아 하루를 살고 조상 제사권을 잃는다.",
+      "sensory_marks": [
+        "마른 먹가루",
+        "이름표 태우는 냄새",
+        "남의 목소리 호객"
+      ],
+      "local_terms": [
+        "빈호칭",
+        "행적값"
+      ],
+      "event_seed": "아침 호칭 경매와 밤 장부 수정 시간. -> 담운이 동료 기억에서 지워짐 -> 가난한 사람은 성씨를 팔아 하루를 살고 조상 제사권을 잃는다.",
+      "operability_v3_4": {
+        "name": "첫호칭거리",
+        "region_id": "R06",
+        "region": "무명시",
+        "linked_route_ids": [
+          "RT017"
+        ],
+        "primary_function": "임시 이름·숙박·치료·통행을 묶어 파는 거리",
+        "local_bottleneck": "호칭패가 없으면 기본 생활 서비스가 동시에 거부된다.",
+        "civic_routine": "아침 경매 전 전날 사용자의 행적과 남은 권리를 낭독한다.",
+        "ownership_dispute": "살기 위해 빌린 이름으로 저지른 행위의 책임은 누구에게 있는가",
+        "signature_evidence": "호칭패 목끈의 마모와 목소리 흉내의 어긋남",
+        "failure_cascade": "호칭 부족 → 노숙·치료 거부 → 암시장 확대",
+        "primary_faction_id": "FC016"
+      }
+    },
+    {
+      "id": "ST038",
+      "name": "빈호적골",
+      "region_id": "R06",
+      "region": "무명시",
+      "episodes": [
+        125,
+        126,
+        127,
+        128
+      ],
+      "landmark": "무명견이 이름 대신 습관으로 담운을 찾음",
+      "current_tension": "이름과 죄명도 소유되고 거래될 수 있는가.",
+      "entry_rule": "상대가 먼저 말하지 않은 본명을 세 번 부르는 일.",
+      "daily_operation": "아침 호칭 경매와 밤 장부 수정 시간.",
+      "logistics_bottleneck": "임시 이름이 없으면 숙소, 치료, 통행이 동시에 거부된다.",
+      "disaster_weakness": "가난한 사람은 성씨를 팔아 하루를 살고 조상 제사권을 잃는다.",
+      "sensory_marks": [
+        "마른 먹가루",
+        "이름표 태우는 냄새",
+        "남의 목소리 호객"
+      ],
+      "local_terms": [
+        "빈호칭",
+        "행적값"
+      ],
+      "event_seed": "아침 호칭 경매와 밤 장부 수정 시간. -> 무명견이 이름 대신 습관으로 담운을 찾음 -> 가난한 사람은 성씨를 팔아 하루를 살고 조상 제사권을 잃는다.",
+      "operability_v3_4": {
+        "name": "빈호적골",
+        "region_id": "R06",
+        "region": "무명시",
+        "linked_route_ids": [
+          "RT017"
+        ],
+        "primary_function": "호적 없는 주민·아이·이주민의 생활 공동체",
+        "local_bottleneck": "공식 이름이 없어 배급·교육·치료 기록이 누적되지 않는다.",
+        "civic_routine": "주민은 습관·관계·공동 노동을 서로의 신원 보증으로 남긴다.",
+        "ownership_dispute": "문서가 없는 사람에게도 상속·보호·증언권을 인정할 수 있는가",
+        "signature_evidence": "신발 수선법과 식기 놓는 습관",
+        "failure_cascade": "권리 부재 → 이름상회 종속 → 세대 단위 채무",
+        "primary_faction_id": "FC016"
+      }
+    },
+    {
+      "id": "ST039",
+      "name": "등표시장",
+      "region_id": "R06",
+      "region": "무명시",
+      "episodes": [
+        129,
+        130,
+        131
+      ],
+      "landmark": "빌린 칭호의 원한이 따라옴",
+      "current_tension": "이름과 죄명도 소유되고 거래될 수 있는가.",
+      "entry_rule": "상대가 먼저 말하지 않은 본명을 세 번 부르는 일.",
+      "daily_operation": "아침 호칭 경매와 밤 장부 수정 시간.",
+      "logistics_bottleneck": "임시 이름이 없으면 숙소, 치료, 통행이 동시에 거부된다.",
+      "disaster_weakness": "가난한 사람은 성씨를 팔아 하루를 살고 조상 제사권을 잃는다.",
+      "sensory_marks": [
+        "마른 먹가루",
+        "이름표 태우는 냄새",
+        "남의 목소리 호객"
+      ],
+      "local_terms": [
+        "빈호칭",
+        "행적값"
+      ],
+      "event_seed": "아침 호칭 경매와 밤 장부 수정 시간. -> 빌린 칭호의 원한이 따라옴 -> 가난한 사람은 성씨를 팔아 하루를 살고 조상 제사권을 잃는다.",
+      "operability_v3_4": {
+        "name": "등표시장",
+        "region_id": "R06",
+        "region": "무명시",
+        "linked_route_ids": [
+          "RT017"
+        ],
+        "primary_function": "칭호·직업명·죄명 대여와 거래",
+        "local_bottleneck": "빌린 칭호의 원한과 채무가 새 사용자에게 따라붙는다.",
+        "civic_routine": "시장 폐장 때 칭호의 전 사용자와 미해결 의무를 함께 고지한다.",
+        "ownership_dispute": "명예·죄·직업 권한을 이름처럼 양도할 수 있는가",
+        "signature_evidence": "등표 뒷면의 지워진 소유자 수와 음성 잔향",
+        "failure_cascade": "원한 전가 → 보복 오인 → 행적법정 폭주",
+        "primary_faction_id": "FC016"
+      }
+    },
+    {
+      "id": "ST040",
+      "name": "기억매듭원",
+      "region_id": "R06",
+      "region": "무명시",
+      "episodes": [
+        132,
+        133,
+        134
+      ],
+      "landmark": "빈 호적죽간에 담운 이름만 쓰이지 않음",
+      "current_tension": "이름과 죄명도 소유되고 거래될 수 있는가.",
+      "entry_rule": "상대가 먼저 말하지 않은 본명을 세 번 부르는 일.",
+      "daily_operation": "아침 호칭 경매와 밤 장부 수정 시간.",
+      "logistics_bottleneck": "임시 이름이 없으면 숙소, 치료, 통행이 동시에 거부된다.",
+      "disaster_weakness": "가난한 사람은 성씨를 팔아 하루를 살고 조상 제사권을 잃는다.",
+      "sensory_marks": [
+        "마른 먹가루",
+        "이름표 태우는 냄새",
+        "남의 목소리 호객"
+      ],
+      "local_terms": [
+        "빈호칭",
+        "행적값"
+      ],
+      "event_seed": "아침 호칭 경매와 밤 장부 수정 시간. -> 빈 호적죽간에 담운 이름만 쓰이지 않음 -> 가난한 사람은 성씨를 팔아 하루를 살고 조상 제사권을 잃는다.",
+      "operability_v3_4": {
+        "name": "기억매듭원",
+        "region_id": "R06",
+        "region": "무명시",
+        "linked_route_ids": [
+          "RT018"
+        ],
+        "primary_function": "기억·습관·관계 증거를 묶어 신원을 복원",
+        "local_bottleneck": "기억 담보가 과도하면 증언자와 당사자의 삶이 함께 훼손된다.",
+        "civic_routine": "매듭 하나마다 누가 기억했고 무엇을 직접 보았는지 구분한다.",
+        "ownership_dispute": "타인의 기억으로 복원된 이름을 본인의 소유라고 할 수 있는가",
+        "signature_evidence": "매듭 재질과 손가락 굳은살 방향",
+        "failure_cascade": "거짓 복원 → 신원 중복 → 중앙장부 오류 확산",
+        "primary_faction_id": "FC017"
+      }
+    },
+    {
+      "id": "ST041",
+      "name": "행적법정",
+      "region_id": "R06",
+      "region": "무명시",
+      "episodes": [
+        135,
+        136,
+        137
+      ],
+      "landmark": "이름장수의 주판이 사람의 빚을 계산",
+      "current_tension": "이름과 죄명도 소유되고 거래될 수 있는가.",
+      "entry_rule": "상대가 먼저 말하지 않은 본명을 세 번 부르는 일.",
+      "daily_operation": "아침 호칭 경매와 밤 장부 수정 시간.",
+      "logistics_bottleneck": "임시 이름이 없으면 숙소, 치료, 통행이 동시에 거부된다.",
+      "disaster_weakness": "가난한 사람은 성씨를 팔아 하루를 살고 조상 제사권을 잃는다.",
+      "sensory_marks": [
+        "마른 먹가루",
+        "이름표 태우는 냄새",
+        "남의 목소리 호객"
+      ],
+      "local_terms": [
+        "빈호칭",
+        "행적값"
+      ],
+      "event_seed": "아침 호칭 경매와 밤 장부 수정 시간. -> 이름장수의 주판이 사람의 빚을 계산 -> 가난한 사람은 성씨를 팔아 하루를 살고 조상 제사권을 잃는다.",
+      "operability_v3_4": {
+        "name": "행적법정",
+        "region_id": "R06",
+        "region": "무명시",
+        "linked_route_ids": [
+          "RT018"
+        ],
+        "primary_function": "이름보다 행위·책임을 판정하는 재판소",
+        "local_bottleneck": "사건이 몰리면 주판식 채무 계산이 인간관계를 단순 금액으로 바꾼다.",
+        "civic_routine": "증서·기억·생활 흔적·피해 비용을 서로 다른 심리 단계에서 다룬다.",
+        "ownership_dispute": "이름이 달라도 같은 사람이 남긴 책임을 어떻게 이어 붙일 것인가",
+        "signature_evidence": "주판알 마모와 증언석의 발 위치",
+        "failure_cascade": "판정 지연 → 임시 호칭 연장 → 이름상회 수익 확대",
+        "primary_faction_id": "FC017"
+      }
+    },
+    {
+      "id": "ST042",
+      "name": "천외밑문",
+      "region_id": "R06",
+      "region": "무명시",
+      "episodes": [
+        138,
+        139,
+        140,
+        141,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160
+      ],
+      "landmark": "린화가 물건 다루는 습관으로 담운을 알아봄",
+      "current_tension": "이름과 죄명도 소유되고 거래될 수 있는가.",
+      "entry_rule": "상대가 먼저 말하지 않은 본명을 세 번 부르는 일.",
+      "daily_operation": "아침 호칭 경매와 밤 장부 수정 시간.",
+      "logistics_bottleneck": "임시 이름이 없으면 숙소, 치료, 통행이 동시에 거부된다.",
+      "disaster_weakness": "가난한 사람은 성씨를 팔아 하루를 살고 조상 제사권을 잃는다.",
+      "sensory_marks": [
+        "마른 먹가루",
+        "이름표 태우는 냄새",
+        "남의 목소리 호객"
+      ],
+      "local_terms": [
+        "빈호칭",
+        "행적값"
+      ],
+      "event_seed": "아침 호칭 경매와 밤 장부 수정 시간. -> 린화가 물건 다루는 습관으로 담운을 알아봄 -> 가난한 사람은 성씨를 팔아 하루를 살고 조상 제사권을 잃는다.",
+      "operability_v3_4": {
+        "name": "천외밑문",
+        "region_id": "R06",
+        "region": "무명시",
+        "linked_route_ids": [
+          "RT018",
+          "RT019"
+        ],
+        "primary_function": "무명시 기록을 천외산맥 출입 권한으로 번역",
+        "local_bottleneck": "문이 사람을 이름·직업·물건 번호 중 하나로만 읽어 오분류한다.",
+        "civic_routine": "등반 전 행적 기록과 동료 증언을 분리 제출해 사람 분류를 방지한다.",
+        "ownership_dispute": "중앙 시스템이 인정하지 않는 사람의 통행권을 누가 보증하는가",
+        "signature_evidence": "문틀에 겹친 호칭 흔적과 장비 칸 오류표",
+        "failure_cascade": "오분류 → 동료 분리 → 천외산맥 구조 실패",
+        "primary_faction_id": "FC017"
+      }
+    },
+    {
+      "id": "ST043",
+      "name": "하늘아래역",
+      "region_id": "R07",
+      "region": "천외산맥",
+      "episodes": [
+        155,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167
+      ],
+      "landmark": "문이 사람을 직업으로만 인식",
+      "current_tension": "수장은 무엇을 소유해야 하며 무엇을 내려놓아야 하는가.",
+      "entry_rule": "살아 있는 사람을 전시 명패로 부르는 일.",
+      "daily_operation": "박물관 분류 갱신과 중앙핵 맥박 주기.",
+      "logistics_bottleneck": "문이 사람을 직업으로만 인식하면 동료가 장비 칸으로 분류된다.",
+      "disaster_weakness": "모든 길이 중앙핵으로 모여 재독점 위험을 만든다.",
+      "sensory_marks": [
+        "소독약과 돌먼지",
+        "금속핵 맥박",
+        "끊어지는 금빛 선"
+      ],
+      "local_terms": [
+        "분류거부",
+        "귀로조각"
+      ],
+      "event_seed": "박물관 분류 갱신과 중앙핵 맥박 주기. -> 문이 사람을 직업으로만 인식 -> 모든 길이 중앙핵으로 모여 재독점 위험을 만든다.",
+      "operability_v3_4": {
+        "name": "하늘아래역",
+        "region_id": "R07",
+        "region": "천외산맥",
+        "linked_route_ids": [
+          "RT019"
+        ],
+        "primary_function": "천외산맥 등반 준비·장비 고정·분류 오류 점검",
+        "local_bottleneck": "중력 변화 때 물보다 장비 고정끈이 먼저 부족해진다.",
+        "civic_routine": "출발 전 사람·장비·유산을 서로 다른 명단으로 세 번 확인한다.",
+        "ownership_dispute": "직업과 소지품으로만 읽히는 사람을 어떻게 인격으로 증명할 것인가",
+        "signature_evidence": "고정끈 눌림 자국과 명단의 빈 사람 칸",
+        "failure_cascade": "장비 추락 → 등반 지연 → 백장 선행 진입",
+        "primary_faction_id": "FC018"
+      }
+    },
+    {
+      "id": "ST044",
+      "name": "부유계단군",
+      "region_id": "R07",
+      "region": "천외산맥",
+      "episodes": [
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174
+      ],
+      "landmark": "살아 있는 전시실이 동료를 수집품 분류",
+      "current_tension": "수장은 무엇을 소유해야 하며 무엇을 내려놓아야 하는가.",
+      "entry_rule": "살아 있는 사람을 전시 명패로 부르는 일.",
+      "daily_operation": "박물관 분류 갱신과 중앙핵 맥박 주기.",
+      "logistics_bottleneck": "문이 사람을 직업으로만 인식하면 동료가 장비 칸으로 분류된다.",
+      "disaster_weakness": "모든 길이 중앙핵으로 모여 재독점 위험을 만든다.",
+      "sensory_marks": [
+        "소독약과 돌먼지",
+        "금속핵 맥박",
+        "끊어지는 금빛 선"
+      ],
+      "local_terms": [
+        "분류거부",
+        "귀로조각"
+      ],
+      "event_seed": "박물관 분류 갱신과 중앙핵 맥박 주기. -> 살아 있는 전시실이 동료를 수집품 분류 -> 모든 길이 중앙핵으로 모여 재독점 위험을 만든다.",
+      "operability_v3_4": {
+        "name": "부유계단군",
+        "region_id": "R07",
+        "region": "천외산맥",
+        "linked_route_ids": [
+          "RT019"
+        ],
+        "primary_function": "중력 역전 구간과 분산 이동 통제",
+        "local_bottleneck": "계단 방향이 바뀔 때 동료와 화물이 서로 다른 층으로 분리된다.",
+        "civic_routine": "맥박 주기마다 이동 순서와 잃어버린 장비를 갱신한다.",
+        "ownership_dispute": "먼저 도착한 사람이 뒤처진 동료의 권한을 대신 행사할 수 있는가",
+        "signature_evidence": "발바닥 먼지 방향과 고정끈 절단면",
+        "failure_cascade": "분리 → 구조 정보 단절 → 전시실 오분류",
+        "primary_faction_id": "FC018"
+      }
+    },
+    {
+      "id": "ST045",
+      "name": "십이문실",
+      "region_id": "R07",
+      "region": "천외산맥",
+      "episodes": [
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181
+      ],
+      "landmark": "백장의 장갑이 중앙핵 열쇠",
+      "current_tension": "수장은 무엇을 소유해야 하며 무엇을 내려놓아야 하는가.",
+      "entry_rule": "살아 있는 사람을 전시 명패로 부르는 일.",
+      "daily_operation": "박물관 분류 갱신과 중앙핵 맥박 주기.",
+      "logistics_bottleneck": "문이 사람을 직업으로만 인식하면 동료가 장비 칸으로 분류된다.",
+      "disaster_weakness": "모든 길이 중앙핵으로 모여 재독점 위험을 만든다.",
+      "sensory_marks": [
+        "소독약과 돌먼지",
+        "금속핵 맥박",
+        "끊어지는 금빛 선"
+      ],
+      "local_terms": [
+        "분류거부",
+        "귀로조각"
+      ],
+      "event_seed": "박물관 분류 갱신과 중앙핵 맥박 주기. -> 백장의 장갑이 중앙핵 열쇠 -> 모든 길이 중앙핵으로 모여 재독점 위험을 만든다.",
+      "operability_v3_4": {
+        "name": "십이문실",
+        "region_id": "R07",
+        "region": "천외산맥",
+        "linked_route_ids": [
+          "RT019"
+        ],
+        "primary_function": "열두 종류의 소유·관리·통행 권한 심사",
+        "local_bottleneck": "문마다 다른 기준이 적용돼 한 문에서 사람인 존재가 다음 문에서 물건이 된다.",
+        "civic_routine": "통과자는 각 문이 요구한 권한과 포기한 권리를 기록한다.",
+        "ownership_dispute": "부분 권한 통과가 인격 전체에 대한 소유권으로 확대될 수 있는가",
+        "signature_evidence": "문별 인장 깊이와 거부 때 남는 금속음",
+        "failure_cascade": "권한 누적 → 인격 침식 → 중앙핵 수납 조건 완성",
+        "primary_faction_id": "FC018"
+      }
+    },
+    {
+      "id": "ST046",
+      "name": "살아있는전시실",
+      "region_id": "R07",
+      "region": "천외산맥",
+      "episodes": [
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188
+      ],
+      "landmark": "담운과 같은 얼굴의 수장 초상",
+      "current_tension": "수장은 무엇을 소유해야 하며 무엇을 내려놓아야 하는가.",
+      "entry_rule": "살아 있는 사람을 전시 명패로 부르는 일.",
+      "daily_operation": "박물관 분류 갱신과 중앙핵 맥박 주기.",
+      "logistics_bottleneck": "문이 사람을 직업으로만 인식하면 동료가 장비 칸으로 분류된다.",
+      "disaster_weakness": "모든 길이 중앙핵으로 모여 재독점 위험을 만든다.",
+      "sensory_marks": [
+        "소독약과 돌먼지",
+        "금속핵 맥박",
+        "끊어지는 금빛 선"
+      ],
+      "local_terms": [
+        "분류거부",
+        "귀로조각"
+      ],
+      "event_seed": "박물관 분류 갱신과 중앙핵 맥박 주기. -> 담운과 같은 얼굴의 수장 초상 -> 모든 길이 중앙핵으로 모여 재독점 위험을 만든다.",
+      "operability_v3_4": {
+        "name": "살아있는전시실",
+        "region_id": "R07",
+        "region": "천외산맥",
+        "linked_route_ids": [
+          "RT020"
+        ],
+        "primary_function": "방문자를 가치·위험·소유권으로 자동 분류",
+        "local_bottleneck": "분류표가 갱신될수록 동료가 전시품·관리자·위험물로 갈라진다.",
+        "civic_routine": "전시실은 중앙핵 맥박마다 사람과 물건의 칸을 재배치한다.",
+        "ownership_dispute": "안전을 위한 분류가 살아 있는 존재의 철회권을 침해할 수 있는가",
+        "signature_evidence": "명패 위치 변화와 소독약 속 체온 흔적",
+        "failure_cascade": "사람 수납 → 동료 전력 붕괴 → 중앙 분류 강화",
+        "primary_faction_id": "FC018"
+      }
+    },
+    {
+      "id": "ST047",
+      "name": "중앙핵실",
+      "region_id": "R07",
+      "region": "천외산맥",
+      "episodes": [
+        189,
+        190,
+        191,
+        192,
+        193,
+        194
+      ],
+      "landmark": "수장인 반쪽이 담운을 완성품으로 요구",
+      "current_tension": "수장은 무엇을 소유해야 하며 무엇을 내려놓아야 하는가.",
+      "entry_rule": "살아 있는 사람을 전시 명패로 부르는 일.",
+      "daily_operation": "박물관 분류 갱신과 중앙핵 맥박 주기.",
+      "logistics_bottleneck": "문이 사람을 직업으로만 인식하면 동료가 장비 칸으로 분류된다.",
+      "disaster_weakness": "모든 길이 중앙핵으로 모여 재독점 위험을 만든다.",
+      "sensory_marks": [
+        "소독약과 돌먼지",
+        "금속핵 맥박",
+        "끊어지는 금빛 선"
+      ],
+      "local_terms": [
+        "분류거부",
+        "귀로조각"
+      ],
+      "event_seed": "박물관 분류 갱신과 중앙핵 맥박 주기. -> 수장인 반쪽이 담운을 완성품으로 요구 -> 모든 길이 중앙핵으로 모여 재독점 위험을 만든다.",
+      "operability_v3_4": {
+        "name": "중앙핵실",
+        "region_id": "R07",
+        "region": "천외산맥",
+        "linked_route_ids": [
+          "RT020"
+        ],
+        "primary_function": "모든 소유선·수장인·중앙 권한의 결절점",
+        "local_bottleneck": "여섯 권역 응답이 끊기면 중앙핵이 한 사람을 빈 소유자 자리로 요구한다.",
+        "civic_routine": "맥박마다 권역별 소유선과 책임 미납 상태를 표시한다.",
+        "ownership_dispute": "천하의 안전을 위해 한 사람을 중앙 소유자로 희생할 수 있는가",
+        "signature_evidence": "금빛 선의 접속 순서와 핵 표면의 이름 파편",
+        "failure_cascade": "강제 연결 → 담운 수납 → 중앙 독점 재완성",
+        "primary_faction_id": "FC018"
+      }
+    },
+    {
+      "id": "ST048",
+      "name": "열린무고",
+      "region_id": "R07",
+      "region": "천외산맥",
+      "episodes": [
+        195,
+        196,
+        197,
+        198,
+        199,
+        200
+      ],
+      "landmark": "놓아준 유산들이 자발적으로 원격 공명",
+      "current_tension": "수장은 무엇을 소유해야 하며 무엇을 내려놓아야 하는가.",
+      "entry_rule": "살아 있는 사람을 전시 명패로 부르는 일.",
+      "daily_operation": "박물관 분류 갱신과 중앙핵 맥박 주기.",
+      "logistics_bottleneck": "문이 사람을 직업으로만 인식하면 동료가 장비 칸으로 분류된다.",
+      "disaster_weakness": "모든 길이 중앙핵으로 모여 재독점 위험을 만든다.",
+      "sensory_marks": [
+        "소독약과 돌먼지",
+        "금속핵 맥박",
+        "끊어지는 금빛 선"
+      ],
+      "local_terms": [
+        "분류거부",
+        "귀로조각"
+      ],
+      "event_seed": "박물관 분류 갱신과 중앙핵 맥박 주기. -> 놓아준 유산들이 자발적으로 원격 공명 -> 모든 길이 중앙핵으로 모여 재독점 위험을 만든다.",
+      "operability_v3_4": {
+        "name": "열린무고",
+        "region_id": "R07",
+        "region": "천외산맥",
+        "linked_route_ids": [
+          "RT020"
+        ],
+        "primary_function": "중앙 해체 뒤 여섯 권역의 책임 조각을 인수·중계",
+        "local_bottleneck": "각 권역의 응답·운송·유지비가 달라 책임 공백이 생긴다.",
+        "civic_routine": "정기적으로 권역별 책임 이행과 반환 가능한 권한을 공개한다.",
+        "ownership_dispute": "분산 책임에서 실패한 권한을 다시 중앙으로 회수할 수 있는가",
+        "signature_evidence": "서로 다른 권역의 수신표와 자발 공명 간격",
+        "failure_cascade": "책임 미납 → 지역 재독점 → 새 중앙화 요구",
+        "primary_faction_id": "FC018"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "id": "RT001",
+      "from": "청래역",
+      "to": "쇠울촌",
+      "episodes": "1-10",
+      "bottleneck": "폭우 배수로",
+      "cost": "파손 책임",
+      "operability_v3_4": {
+        "from_settlement_id": "ST001",
+        "to_settlement_id": "ST002",
+        "controlling_faction_ids": [
+          "FC001"
+        ],
+        "normal_transit": "역마 수레 반나절",
+        "standard_capacity": "수레 12대 또는 수선용 철재 3묶음/교대",
+        "closure_trigger": "폭우로 배수 깊이가 수레축을 넘을 때",
+        "alternate_path": "우엉들 농로를 거쳐 ST005에서 재분류",
+        "failure_cascade": "쇠울촌 수선 중단과 청래역 적체가 동시에 발생",
+        "ownership_question": "파손 책임을 발송지·운송자·수선지 중 누가 지는가"
+      }
+    },
+    {
+      "id": "RT002",
+      "from": "청래역",
+      "to": "갈대나루",
+      "episodes": "11-13",
+      "bottleneck": "역마 거부",
+      "cost": "봉인표 통행권",
+      "operability_v3_4": {
+        "from_settlement_id": "ST001",
+        "to_settlement_id": "ST003",
+        "controlling_faction_ids": [
+          "FC001"
+        ],
+        "normal_transit": "역마 1일",
+        "standard_capacity": "봉인수레 2대 또는 일반 화물 8대/일",
+        "closure_trigger": "역마가 봉인수레를 세 차례 거부할 때",
+        "alternate_path": "갈대 수로의 소형 배에 분산 환적",
+        "failure_cascade": "남행 약재 지연과 나루 숙박비 급등",
+        "ownership_question": "운송수단의 거부를 소유권 판정에 반영할 수 있는가"
+      }
+    },
+    {
+      "id": "RT003",
+      "from": "갈대나루",
+      "to": "돌배고개",
+      "episodes": "12-15",
+      "bottleneck": "냉철못 다리",
+      "cost": "상극 장비 제한",
+      "operability_v3_4": {
+        "from_settlement_id": "ST003",
+        "to_settlement_id": "ST004",
+        "controlling_faction_ids": [
+          "FC001"
+        ],
+        "normal_transit": "환적 포함 1일",
+        "standard_capacity": "나룻배 4척·수레 6대/물때",
+        "closure_trigger": "냉철못 공명이 장착 유물을 밀어낼 때",
+        "alternate_path": "우엉들 외곽 제방길",
+        "failure_cascade": "교량 과부하와 고개 구조 인력 고갈",
+        "ownership_question": "다리의 안전을 위해 사용자의 장비권을 제한할 수 있는가"
+      }
+    },
+    {
+      "id": "RT004",
+      "from": "돌배고개",
+      "to": "경도 입구",
+      "episodes": "16-20",
+      "bottleneck": "회수대 검문",
+      "cost": "고향 이탈",
+      "operability_v3_4": {
+        "from_settlement_id": "ST004",
+        "to_settlement_id": "ST007",
+        "controlling_faction_ids": [
+          "FC001",
+          "FC003"
+        ],
+        "normal_transit": "검문 포함 2일",
+        "standard_capacity": "통행표 30장·회수대 봉인상자 4개/일",
+        "closure_trigger": "회수대가 무주함 또는 동행 유물을 위험기물로 판정할 때",
+        "alternate_path": "비탈창고에 화물을 맡기고 사람만 경도 입성",
+        "failure_cascade": "청래역 귀환 지연과 경도 외곽 화물 암시장 확대",
+        "ownership_question": "조직의 위험 판정이 배달 계약보다 우선하는가"
+      }
+    },
+    {
+      "id": "RT005",
+      "from": "경도 만보시장",
+      "to": "시민전시거리",
+      "episodes": "21-30",
+      "bottleneck": "경매 군중",
+      "cost": "신용 손실",
+      "operability_v3_4": {
+        "from_settlement_id": "ST008",
+        "to_settlement_id": "ST012",
+        "controlling_faction_ids": [
+          "FC002",
+          "FC005",
+          "FC007"
+        ],
+        "normal_transit": "도보 반나절",
+        "standard_capacity": "공개 전시품 20점 또는 경매 화물 40점/일",
+        "closure_trigger": "감정대 폐쇄·군중 밀도 초과·왕실 봉인 발동",
+        "alternate_path": "진수문을 거쳐 공도원에서 재감정",
+        "failure_cascade": "경매 중단→보험 취소→시민전시 철수",
+        "ownership_question": "낙찰권·증서·사용 기억 중 무엇이 이동권을 결정하는가"
+      }
+    },
+    {
+      "id": "RT006",
+      "from": "열두손골",
+      "to": "공도원",
+      "episodes": "31-40",
+      "bottleneck": "공개 감정대",
+      "cost": "감정 노동 담보",
+      "operability_v3_4": {
+        "from_settlement_id": "ST009",
+        "to_settlement_id": "ST010",
+        "controlling_faction_ids": [
+          "FC007",
+          "FC005"
+        ],
+        "normal_transit": "수레 반나절",
+        "standard_capacity": "수선품 18점·증언자 12명/회차",
+        "closure_trigger": "위조 단속으로 제작표식이 압수될 때",
+        "alternate_path": "진수문 공식 이의 절차",
+        "failure_cascade": "수선 지연과 공개 감정 신뢰 하락",
+        "ownership_question": "가짜 제작 기술의 공개가 공동체 권리인가 영업비밀인가"
+      }
+    },
+    {
+      "id": "RT007",
+      "from": "경도 남문",
+      "to": "향등나루",
+      "episodes": "39-44",
+      "bottleneck": "남독 통행 검사",
+      "cost": "약재 지연",
+      "operability_v3_4": {
+        "from_settlement_id": "ST007",
+        "to_settlement_id": "ST015",
+        "controlling_faction_ids": [
+          "FC002",
+          "FC008"
+        ],
+        "normal_transit": "검역 포함 4일",
+        "standard_capacity": "약재 수레 5대·보호 우리 2칸/행렬",
+        "closure_trigger": "남독 통행검사에서 생명·물건 분류가 충돌할 때",
+        "alternate_path": "부엽촌 우회 수로",
+        "failure_cascade": "약재 부패와 신수 구조 지연",
+        "ownership_question": "생명 운송에 물건용 인수 조건을 적용할 수 있는가"
+      }
+    },
+    {
+      "id": "RT008",
+      "from": "부엽촌",
+      "to": "백옥습",
+      "episodes": "45-51",
+      "bottleneck": "독안개 수로",
+      "cost": "신수 접근권 상실",
+      "operability_v3_4": {
+        "from_settlement_id": "ST014",
+        "to_settlement_id": "ST016",
+        "controlling_faction_ids": [
+          "FC008",
+          "FC009"
+        ],
+        "normal_transit": "나무다리·수로 1일",
+        "standard_capacity": "치료선 3척·구조 우리 1칸/물때",
+        "closure_trigger": "독안개가 표준 마스크 한계를 넘거나 밀매 흔적이 확인될 때",
+        "alternate_path": "연무약곡에서 해독 후 육로 진입",
+        "failure_cascade": "치료 인력 고립과 밀매단 활동 증가",
+        "ownership_question": "보호구역 진입권을 구조자에게 자동 부여할 수 있는가"
+      }
+    },
+    {
+      "id": "RT009",
+      "from": "연무약곡",
+      "to": "역계약림",
+      "episodes": "52-60",
+      "bottleneck": "잠든 숲길",
+      "cost": "치료비와 비수집 대가",
+      "operability_v3_4": {
+        "from_settlement_id": "ST013",
+        "to_settlement_id": "ST018",
+        "controlling_faction_ids": [
+          "FC008"
+        ],
+        "normal_transit": "숲길 2일",
+        "standard_capacity": "치료단 10명·신수 동행 3계약/회차",
+        "closure_trigger": "숲이 계약 당사자 한쪽을 거부하거나 향로가 길을 잠재울 때",
+        "alternate_path": "독왕초림 가장자리를 따라 장거리 우회",
+        "failure_cascade": "계약 심사 적체와 북설 보급 지연",
+        "ownership_question": "신수의 철회가 인간의 이동 계약까지 무효화하는가"
+      }
+    },
+    {
+      "id": "RT010",
+      "from": "남독택",
+      "to": "칠화로진",
+      "episodes": "60-64",
+      "bottleneck": "북상 눈길",
+      "cost": "두리 비행 제한",
+      "operability_v3_4": {
+        "from_settlement_id": "ST018",
+        "to_settlement_id": "ST019",
+        "controlling_faction_ids": [
+          "FC008",
+          "FC010"
+        ],
+        "normal_transit": "남독 출발·설원 도착 6일",
+        "standard_capacity": "방한 수레 6대·신수 동행 2팀/행렬",
+        "closure_trigger": "북상 눈길 폐쇄 또는 두리의 비행 제한이 누적될 때",
+        "alternate_path": "해빙나루 계절선 대기",
+        "failure_cascade": "약재 동결·칠화로 연료 부족",
+        "ownership_question": "생명 동행 조건 때문에 상업 운송을 포기할 비용은 누가 부담하는가"
+      }
+    },
+    {
+      "id": "RT011",
+      "from": "칠화로진",
+      "to": "봉인성",
+      "episodes": "65-70",
+      "bottleneck": "봉화 교대",
+      "cost": "식량 분담",
+      "operability_v3_4": {
+        "from_settlement_id": "ST019",
+        "to_settlement_id": "ST020",
+        "controlling_faction_ids": [
+          "FC010",
+          "FC011"
+        ],
+        "normal_transit": "눈수레 1일",
+        "standard_capacity": "식량 수레 7대·설갑 조각 1점/교대",
+        "closure_trigger": "봉화 교대 누락 또는 눈벽 하나가 닫힐 때",
+        "alternate_path": "설각촌의 설각마 소로",
+        "failure_cascade": "일곱 촌락 식량 순환과 방어망 동시 약화",
+        "ownership_question": "공동 방어 물자를 한 촌락이 먼저 사용할 수 있는가"
+      }
+    },
+    {
+      "id": "RT012",
+      "from": "봉인성",
+      "to": "해빙나루",
+      "episodes": "71-80",
+      "bottleneck": "백야 회수선",
+      "cost": "역참 이용권 상실",
+      "operability_v3_4": {
+        "from_settlement_id": "ST020",
+        "to_settlement_id": "ST024",
+        "controlling_faction_ids": [
+          "FC010",
+          "FC011"
+        ],
+        "normal_transit": "백야 회수선 2일",
+        "standard_capacity": "징발품 20점·피난민 40명/운항",
+        "closure_trigger": "회수선 명부와 실제 반환품 수가 맞지 않을 때",
+        "alternate_path": "백야초소 육상 구호로",
+        "failure_cascade": "반환 지연과 다음 교대 거부",
+        "ownership_question": "공동 징발의 반환 순서를 피해·기여·소유 중 무엇으로 정하는가"
+      }
+    },
+    {
+      "id": "RT013",
+      "from": "해빙나루",
+      "to": "황문대시장",
+      "episodes": "80-84",
+      "bottleneck": "눈 위 사막문",
+      "cost": "귀향길 상실",
+      "operability_v3_4": {
+        "from_settlement_id": "ST024",
+        "to_settlement_id": "ST025",
+        "controlling_faction_ids": [
+          "FC010",
+          "FC012"
+        ],
+        "normal_transit": "해빙기 7일",
+        "standard_capacity": "북설 물자 8대·사막 물독 20개/행렬",
+        "closure_trigger": "눈 위 사막문이 닫히거나 귀향 표식이 사라질 때",
+        "alternate_path": "칠화로진에서 경도 남문을 거치는 장거리 우회",
+        "failure_cascade": "귀향길 상실과 황문대시장 물가 급등",
+        "ownership_question": "지름길이 지운 옛길의 책임을 현재 이용자가 져야 하는가"
+      }
+    },
+    {
+      "id": "RT014",
+      "from": "첫물성",
+      "to": "유리폐도",
+      "episodes": "85-91",
+      "bottleneck": "물표 세관",
+      "cost": "기억 통행료",
+      "operability_v3_4": {
+        "from_settlement_id": "ST026",
+        "to_settlement_id": "ST027",
+        "controlling_faction_ids": [
+          "FC012",
+          "FC013"
+        ],
+        "normal_transit": "대상 반나절",
+        "standard_capacity": "물독 30개·통행자 60명/검사",
+        "closure_trigger": "물표 위조 또는 기억세 징수량이 안전 기준을 넘을 때",
+        "alternate_path": "황문대시장 공개 물표 재발급",
+        "failure_cascade": "세관 적체→물 부족→기억 담보 급증",
+        "ownership_question": "통행세로 받은 기억을 세관이 소유하는가"
+      }
+    },
+    {
+      "id": "RT015",
+      "from": "긴그늘역",
+      "to": "동해문",
+      "episodes": "92-100",
+      "bottleneck": "상극 전시실",
+      "cost": "핵심 장비 귀환",
+      "operability_v3_4": {
+        "from_settlement_id": "ST028",
+        "to_settlement_id": "ST030",
+        "controlling_faction_ids": [
+          "FC012",
+          "FC014"
+        ],
+        "normal_transit": "접힌문 통과 시 반나절, 우회 시 4일",
+        "standard_capacity": "격리 화물 6칸·피난민 25명/회차",
+        "closure_trigger": "상극 전시실 폭주 또는 지도 유물이 뒤쪽 길을 삭제할 때",
+        "alternate_path": "유리폐도 외곽의 옛 대상로",
+        "failure_cascade": "구조대 길 상실과 기억잔촌 고립",
+        "ownership_question": "단축된 거리의 이익과 삭제된 길의 손실을 어떻게 나누는가"
+      }
+    },
+    {
+      "id": "RT016",
+      "from": "육닻항",
+      "to": "침몰도시",
+      "episodes": "101-120",
+      "bottleneck": "조수종과 닻줄",
+      "cost": "숨빚",
+      "operability_v3_4": {
+        "from_settlement_id": "ST031",
+        "to_settlement_id": "ST035",
+        "controlling_faction_ids": [
+          "FC015"
+        ],
+        "normal_transit": "조수 2회, 통상 2일",
+        "standard_capacity": "구조선 6척·잠수자 24명/공동 인양",
+        "closure_trigger": "가문 하나가 닻허락을 철회하거나 조수종이 불일치할 때",
+        "alternate_path": "해람섬·조류탑섬 순환 항로",
+        "failure_cascade": "침몰도시 진입 지연과 숨빚 누적",
+        "ownership_question": "한 가문의 거부권이 공동 인양 전체를 멈출 수 있는가"
+      }
+    },
+    {
+      "id": "RT017",
+      "from": "무명시 지하역로",
+      "to": "이름시장",
+      "episodes": "120-130",
+      "bottleneck": "임시 호칭문",
+      "cost": "이름 사용권",
+      "operability_v3_4": {
+        "from_settlement_id": "ST036",
+        "to_settlement_id": "ST037",
+        "controlling_faction_ids": [
+          "FC015",
+          "FC016"
+        ],
+        "normal_transit": "해로·지하역로 5일",
+        "standard_capacity": "귀환자 40명·유품 80점/행렬",
+        "closure_trigger": "신원표와 유품 수신인이 불일치하거나 임시 호칭문이 닫힐 때",
+        "alternate_path": "행적법정 임시 보증서를 먼저 발급",
+        "failure_cascade": "귀환자 치료·숙박 거부와 이름 암시장 확대",
+        "ownership_question": "이름 없는 귀환자의 물건을 누구에게 인계할 것인가"
+      }
+    },
+    {
+      "id": "RT018",
+      "from": "중앙 장부실",
+      "to": "천외밑문",
+      "episodes": "131-160",
+      "bottleneck": "장부 계단",
+      "cost": "기억·호칭 손실",
+      "operability_v3_4": {
+        "from_settlement_id": "ST041",
+        "to_settlement_id": "ST042",
+        "controlling_faction_ids": [
+          "FC017",
+          "FC018"
+        ],
+        "normal_transit": "장부 계단 1일",
+        "standard_capacity": "행적 기록 50건·통행자 20명/심사",
+        "closure_trigger": "기억·호칭 손실로 동일 인물 판정이 실패할 때",
+        "alternate_path": "기억매듭원에서 관계 증언을 보강",
+        "failure_cascade": "천외 출입 지연과 중앙장부 오류 증폭",
+        "ownership_question": "행적 증명 없이도 사람에게 통행권이 존재하는가"
+      }
+    },
+    {
+      "id": "RT019",
+      "from": "천외문",
+      "to": "원형 천공무고",
+      "episodes": "161-180",
+      "bottleneck": "중력 계단",
+      "cost": "인격 침식",
+      "operability_v3_4": {
+        "from_settlement_id": "ST042",
+        "to_settlement_id": "ST045",
+        "controlling_faction_ids": [
+          "FC018"
+        ],
+        "normal_transit": "중력 주기 3회",
+        "standard_capacity": "등반자 12명·고정 상자 6개/주기",
+        "closure_trigger": "중력 역전 또는 문이 사람을 장비로 오분류할 때",
+        "alternate_path": "부유계단군의 느린 외곽 고리",
+        "failure_cascade": "동료 분리·장비 추락·백장 선행",
+        "ownership_question": "중앙 통과 기준을 거부한 사람이 구조 권리를 유지하는가"
+      }
+    },
+    {
+      "id": "RT020",
+      "from": "중앙핵실",
+      "to": "열린무고",
+      "episodes": "181-200",
+      "bottleneck": "소유선 붕괴",
+      "cost": "중앙 권한 상실",
+      "operability_v3_4": {
+        "from_settlement_id": "ST047",
+        "to_settlement_id": "ST048",
+        "controlling_faction_ids": [
+          "FC018"
+        ],
+        "normal_transit": "소유선 절단 뒤 권역별 배송 6구간",
+        "standard_capacity": "책임 조각 6개·동행 보증인 각 1명",
+        "closure_trigger": "소유선 붕괴 또는 권역 응답 하나가 끊길 때",
+        "alternate_path": "각 권역의 기존 생활 노선을 역순으로 사용",
+        "failure_cascade": "중앙 공백→지역 재독점→새 중앙화 요구",
+        "ownership_question": "권한이 아니라 책임을 배송했을 때 실패 책임은 어디에 남는가"
+      }
+    }
+  ],
+  "factions": [
+    {
+      "id": "FC001",
+      "name": "청래역참망",
+      "monopoly_resource": "역마와 장부 신뢰",
+      "external_dependency": "위험 보관 시설",
+      "income_source": "운송료",
+      "largest_fixed_cost": "역마 사료와 야간 인력",
+      "public_goal": "배송 질서 유지",
+      "hidden_survival_goal": "출처 불명 유물 사고를 역참 밖으로 내보내기",
+      "hardline_faction": "폐기파",
+      "moderate_faction": "귀환파",
+      "beneficiary_cast": "오복산",
+      "losing_cast": "젊은 역부",
+      "if_damun_disappears": "담운 실종 시 임시 귀로대를 만든다",
+      "post_act5_conflict": "분산 배송 책임 비용을 누가 낼지 다툰다",
+      "relation_state_v3_4": {
+        "name": "청래역참망",
+        "primary_settlement_ids": [
+          "ST001",
+          "ST002",
+          "ST003",
+          "ST004",
+          "ST005",
+          "ST006"
+        ],
+        "victory_condition": "수신인 확인과 운송 신뢰를 유지한다.",
+        "defeat_condition": "분실물·파손 기록이 시장·관청보다 신뢰받지 못하게 된다.",
+        "autonomous_action_without_damun": "회수대 압박이 커지면 공개보관을 축소하고 유료 보증으로 전환한다."
+      }
+    },
+    {
+      "id": "FC002",
+      "name": "만보상련",
+      "monopoly_resource": "감정 보험과 거래망",
+      "external_dependency": "현장 증언",
+      "income_source": "보증금과 수수료",
+      "largest_fixed_cost": "감정사 신용 한도",
+      "public_goal": "안전한 유물 거래",
+      "hidden_survival_goal": "약탈품도 보험 안에 넣어 통제하기",
+      "hardline_faction": "실적파",
+      "moderate_faction": "공개파",
+      "beneficiary_cast": "문하준",
+      "losing_cast": "피해 상인",
+      "if_damun_disappears": "담운 실종 시 회수권을 경매한다",
+      "post_act5_conflict": "공개 책임보험의 보험료 갈등",
+      "relation_state_v3_4": {
+        "name": "만보상련",
+        "primary_settlement_ids": [
+          "ST007",
+          "ST008"
+        ],
+        "victory_condition": "유물 회수·감정·보험을 하나의 계약망으로 독점한다.",
+        "defeat_condition": "사용 기록과 공동체 승인 때문에 증서 독점이 무력화된다.",
+        "autonomous_action_without_damun": "담운이 사라지면 현장 회수대를 늘리고 무주 판정을 사설 감정으로 대체한다."
+      }
+    },
+    {
+      "id": "FC003",
+      "name": "귀장회 봉장파",
+      "monopoly_resource": "봉인 명령권",
+      "external_dependency": "지역 식량과 치료권",
+      "income_source": "국가 위탁 보조금",
+      "largest_fixed_cost": "봉인소 유지비",
+      "public_goal": "재앙 유산 봉인",
+      "hidden_survival_goal": "위험을 중앙 기록으로 독점",
+      "hardline_faction": "희생파",
+      "moderate_faction": "현장파",
+      "beneficiary_cast": "백장",
+      "losing_cast": "윤봉",
+      "if_damun_disappears": "담운 실종 시 무주함을 회수한다",
+      "post_act5_conflict": "중앙 봉인 붕괴 뒤 책임 추궁",
+      "relation_state_v3_4": {
+        "name": "귀장회 봉장파",
+        "primary_settlement_ids": [
+          "ST004",
+          "ST020",
+          "ST023"
+        ],
+        "victory_condition": "위험 유산을 중앙 봉인 체계로 회수한다.",
+        "defeat_condition": "분산 방어가 실제 재난을 막고 삭제된 피해 기록이 공개된다.",
+        "autonomous_action_without_damun": "담운이 사라지면 무주함과 신수 계약을 위험 예외로 지정한다."
+      }
+    },
+    {
+      "id": "FC004",
+      "name": "귀장회 귀환파",
+      "monopoly_resource": "삭제 기록과 피해자 명단",
+      "external_dependency": "공개 증언",
+      "income_source": "내부 보급",
+      "largest_fixed_cost": "비밀 운송비",
+      "public_goal": "봉인 피해 복구",
+      "hidden_survival_goal": "봉장파 내부에서 생존",
+      "hardline_faction": "폭로파",
+      "moderate_faction": "잔류파",
+      "beneficiary_cast": "손백하",
+      "losing_cast": "무석",
+      "if_damun_disappears": "담운 실종 시 피해자 명단을 먼저 공개한다",
+      "post_act5_conflict": "공개 기록의 복수 악용",
+      "relation_state_v3_4": {
+        "name": "귀장회 귀환파",
+        "primary_settlement_ids": [
+          "ST010",
+          "ST024"
+        ],
+        "victory_condition": "유산을 원사용자·공동체에 돌려보내는 절차를 제도화한다.",
+        "defeat_condition": "무조건적 귀환이 새 독점과 보복을 낳는 사례가 반복된다.",
+        "autonomous_action_without_damun": "담운이 사라지면 지역 귀환 중개인을 양성하되 중앙 인증을 요구한다."
+      }
+    },
+    {
+      "id": "FC005",
+      "name": "경도 왕실 기록관",
+      "monopoly_resource": "왕실 원문 기록",
+      "external_dependency": "시장 여론",
+      "income_source": "열람료와 관물세",
+      "largest_fixed_cost": "기록 보존 약품",
+      "public_goal": "정통성 유지",
+      "hidden_survival_goal": "위조 실패 은폐",
+      "hardline_faction": "은폐파",
+      "moderate_faction": "공개파",
+      "beneficiary_cast": "윤세정",
+      "losing_cast": "하급 필사관",
+      "if_damun_disappears": "담운 실종 시 왕검 기록을 봉한다",
+      "post_act5_conflict": "왕실 오류 보상금",
+      "relation_state_v3_4": {
+        "name": "경도 왕실 기록관",
+        "primary_settlement_ids": [
+          "ST007",
+          "ST011"
+        ],
+        "victory_condition": "왕실 원문과 인장을 최상위 소유 증거로 유지한다.",
+        "defeat_condition": "위조·수정 이력과 시민 사용 증거가 원문보다 설득력을 얻는다.",
+        "autonomous_action_without_damun": "담운이 사라지면 왕실 표찰을 재발급해 시장 혼란을 잠근다."
+      }
+    },
+    {
+      "id": "FC006",
+      "name": "경도 귀족 수집회",
+      "monopoly_resource": "사병과 전시권",
+      "external_dependency": "실사용 증언",
+      "income_source": "대여료와 후원금",
+      "largest_fixed_cost": "사병 유지비",
+      "public_goal": "유산 품격 보존",
+      "hidden_survival_goal": "권위 약화를 막기 위한 위조품 몰수",
+      "hardline_faction": "몰수파",
+      "moderate_faction": "보존파",
+      "beneficiary_cast": "귀족 대리인",
+      "losing_cast": "가난한 방계",
+      "if_damun_disappears": "담운 실종 시 진품 목록을 사들인다",
+      "post_act5_conflict": "공개 전시관 참여 범위",
+      "relation_state_v3_4": {
+        "name": "경도 귀족 수집회",
+        "primary_settlement_ids": [
+          "ST008",
+          "ST012"
+        ],
+        "victory_condition": "희귀 유산과 정통성 상징을 사적 전시망에 집중한다.",
+        "defeat_condition": "유지비·복구비·사용 책임을 감당하지 못해 소장품이 이탈한다.",
+        "autonomous_action_without_damun": "담운이 사라지면 경매 가격을 올려 공공기관의 접근을 막는다."
+      }
+    },
+    {
+      "id": "FC007",
+      "name": "시민공개감정회",
+      "monopoly_resource": "군중 증언",
+      "external_dependency": "전문 감정 기술",
+      "income_source": "기부와 전시 수익",
+      "largest_fixed_cost": "공개장 보안",
+      "public_goal": "실사용 기록 공개",
+      "hidden_survival_goal": "왕실·상련 사이에서 생존",
+      "hardline_faction": "급진파",
+      "moderate_faction": "절차파",
+      "beneficiary_cast": "한여정",
+      "losing_cast": "소상인",
+      "if_damun_disappears": "담운 실종 시 모조 왕검을 지킨다",
+      "post_act5_conflict": "거짓 증언 처리",
+      "relation_state_v3_4": {
+        "name": "시민공개감정회",
+        "primary_settlement_ids": [
+          "ST009",
+          "ST010",
+          "ST012"
+        ],
+        "victory_condition": "가격·증서 외에 사용·수선·피해 증언을 가치 판정에 넣는다.",
+        "defeat_condition": "군중 인기와 정치 선동이 공개 감정을 잠식한다.",
+        "autonomous_action_without_damun": "담운이 사라지면 지역 증언관을 순회시키고 공개끈 기록을 복제한다."
+      }
+    },
+    {
+      "id": "FC008",
+      "name": "남독 야생계약단",
+      "monopoly_resource": "신수 심사권",
+      "external_dependency": "약재와 보호 시설",
+      "income_source": "치료·심사 수수료",
+      "largest_fixed_cost": "보호실 유지비",
+      "public_goal": "신수 철회권 보장",
+      "hidden_survival_goal": "인간 불신을 조직 생존 명분으로 유지",
+      "hardline_faction": "불허파",
+      "moderate_faction": "공존파",
+      "beneficiary_cast": "미라",
+      "losing_cast": "연호",
+      "if_damun_disappears": "담운 실종 시 두리 선택을 먼저 확인한다",
+      "post_act5_conflict": "역계약 남용 분쟁",
+      "relation_state_v3_4": {
+        "name": "남독 야생계약단",
+        "primary_settlement_ids": [
+          "ST013",
+          "ST014",
+          "ST015",
+          "ST017",
+          "ST018"
+        ],
+        "victory_condition": "신수의 계약 거절·종료·이동권을 보장한다.",
+        "defeat_condition": "보호 비용과 주민 생계가 감당 불가능해져 밀매 의존이 커진다.",
+        "autonomous_action_without_damun": "담운이 사라지면 계약 심사를 중단하지 않고 인간 보증인을 더 엄격히 심사한다."
+      }
+    },
+    {
+      "id": "FC009",
+      "name": "남독 밀매단",
+      "monopoly_resource": "불법 우리와 검은 운송로",
+      "external_dependency": "합법 치료 기록",
+      "income_source": "희귀 신수 판매",
+      "largest_fixed_cost": "뇌물과 위장 우리",
+      "public_goal": "멸종종 상품화",
+      "hidden_survival_goal": "생태 붕괴를 숨기고 수요 유지",
+      "hardline_faction": "포획파",
+      "moderate_faction": "거래파",
+      "beneficiary_cast": "사태오",
+      "losing_cast": "잡역꾼",
+      "if_damun_disappears": "담운 실종 시 신수 표식을 팔아넘긴다",
+      "post_act5_conflict": "잔당의 생계 범죄",
+      "relation_state_v3_4": {
+        "name": "남독 밀매단",
+        "primary_settlement_ids": [
+          "ST016"
+        ],
+        "victory_condition": "보호·치료 명목으로 신수와 희귀 생물을 거래품으로 바꾼다.",
+        "defeat_condition": "운송로·구매자·위조 계약이 공개되고 생존 주민이 협조를 거둔다.",
+        "autonomous_action_without_damun": "담운이 사라지면 인간 주민을 담보로 구조 계약을 위조한다."
+      }
+    },
+    {
+      "id": "FC010",
+      "name": "북설 칠촌회의",
+      "monopoly_resource": "설갑 조각과 봉화대",
+      "external_dependency": "외부 식량",
+      "income_source": "공동 방어 분담금",
+      "largest_fixed_cost": "장작과 교대 인력",
+      "public_goal": "일곱 마을 생존",
+      "hidden_survival_goal": "봉인성 기억 삭제를 감수하고 안전 확보",
+      "hardline_faction": "독점파",
+      "moderate_faction": "분산파",
+      "beneficiary_cast": "노상린",
+      "losing_cast": "젊은 피난민",
+      "if_damun_disappears": "담운 실종 시 조각 이동을 멈춘다",
+      "post_act5_conflict": "교대 부담 불평등",
+      "relation_state_v3_4": {
+        "name": "북설 칠촌회의",
+        "primary_settlement_ids": [
+          "ST019",
+          "ST020",
+          "ST021",
+          "ST024"
+        ],
+        "victory_condition": "식량·화로·설갑·피난 인력을 일곱 촌락이 분담한다.",
+        "defeat_condition": "부담이 가난한 촌락에 집중돼 한 곳이 교대에서 이탈한다.",
+        "autonomous_action_without_damun": "담운이 사라지면 설갑 조각을 순환시키되 반환 기한을 강화한다."
+      }
+    },
+    {
+      "id": "FC011",
+      "name": "북설 귀장회 현장대",
+      "monopoly_resource": "현장 봉인 기술",
+      "external_dependency": "마을 협조",
+      "income_source": "귀장회 보급",
+      "largest_fixed_cost": "치료권과 방패 수리",
+      "public_goal": "북설 재앙 차단",
+      "hidden_survival_goal": "삭제 기록을 유지해 책임 회피",
+      "hardline_faction": "명령파",
+      "moderate_faction": "보호파",
+      "beneficiary_cast": "윤봉",
+      "losing_cast": "탈퇴 파수꾼",
+      "if_damun_disappears": "담운 실종 시 무석을 추적한다",
+      "post_act5_conflict": "탈퇴자의 연금권",
+      "relation_state_v3_4": {
+        "name": "북설 귀장회 현장대",
+        "primary_settlement_ids": [
+          "ST022",
+          "ST023"
+        ],
+        "victory_condition": "봉화·봉인·구조 장비를 규격화해 재난을 줄인다.",
+        "defeat_condition": "구조 실패와 삭제된 희생자 이름이 조직 정당성을 무너뜨린다.",
+        "autonomous_action_without_damun": "담운이 사라지면 위험 장비를 회수하지만 민간 구조에는 계속 참여한다."
+      }
+    },
+    {
+      "id": "FC012",
+      "name": "서황막 대상연합",
+      "monopoly_resource": "대상로와 물표",
+      "external_dependency": "우물 지분",
+      "income_source": "운송 이익",
+      "largest_fixed_cost": "물과 그늘천",
+      "public_goal": "길 유지와 거래",
+      "hidden_survival_goal": "기억세를 새 수입으로 만들기",
+      "hardline_faction": "통행세파",
+      "moderate_faction": "책임거래파",
+      "beneficiary_cast": "마지한",
+      "losing_cast": "짐꾼",
+      "if_damun_disappears": "담운 실종 시 지도 유물을 임대한다",
+      "post_act5_conflict": "피난민 통행료",
+      "relation_state_v3_4": {
+        "name": "서황막 대상연합",
+        "primary_settlement_ids": [
+          "ST025",
+          "ST028",
+          "ST030"
+        ],
+        "victory_condition": "물표와 대상로를 유지해 지역 간 거래를 지속한다.",
+        "defeat_condition": "우물 지분과 기억세 때문에 피난민·짐꾼이 운송을 거부한다.",
+        "autonomous_action_without_damun": "담운이 사라지면 지도 유물을 임대하고 사라진 길의 비용을 이용자에게 전가한다."
+      }
+    },
+    {
+      "id": "FC013",
+      "name": "서황 관물세관",
+      "monopoly_resource": "검문 장대와 보물세",
+      "external_dependency": "정확한 유산 위험 평가",
+      "income_source": "관물세",
+      "largest_fixed_cost": "세관 인장과 감시 인력",
+      "public_goal": "위험 유산 통제",
+      "hidden_survival_goal": "세금을 책임 정보로 포장",
+      "hardline_faction": "징수파",
+      "moderate_faction": "개혁파",
+      "beneficiary_cast": "우담",
+      "losing_cast": "하급 세리",
+      "if_damun_disappears": "담운 실종 시 기억세를 강화한다",
+      "post_act5_conflict": "책임정보 납부제의 사생활 침해",
+      "relation_state_v3_4": {
+        "name": "서황 관물세관",
+        "primary_settlement_ids": [
+          "ST026",
+          "ST027"
+        ],
+        "victory_condition": "물표·유산 위험·통행세를 하나의 검문 체계로 묶는다.",
+        "defeat_condition": "기억세가 신원·귀향권을 파괴한다는 증거가 축적된다.",
+        "autonomous_action_without_damun": "담운이 사라지면 기억세를 강화하고 분실 기억을 행정 자산으로 저장한다."
+      }
+    },
+    {
+      "id": "FC014",
+      "name": "천공무고 폐분관 기록체",
+      "monopoly_resource": "분류실 알고리즘",
+      "external_dependency": "살아 있는 판단자",
+      "income_source": "자동 보관 권한",
+      "largest_fixed_cost": "상극 격리실",
+      "public_goal": "오류 없는 보관",
+      "hidden_survival_goal": "실패 기록을 삭제해 체계 신뢰 유지",
+      "hardline_faction": "자동분류파",
+      "moderate_faction": "기록보존파",
+      "beneficiary_cast": "서문록",
+      "losing_cast": "삭제 인격",
+      "if_damun_disappears": "담운 실종 시 무주함 데이터를 흡수한다",
+      "post_act5_conflict": "기록 인격의 권리",
+      "relation_state_v3_4": {
+        "name": "천공무고 폐분관 기록체",
+        "primary_settlement_ids": [
+          "ST029"
+        ],
+        "victory_condition": "분류 알고리즘으로 상극 유산과 사람의 위험을 자동 판정한다.",
+        "defeat_condition": "삭제된 실패 기록과 오분류된 인격이 권리를 요구한다.",
+        "autonomous_action_without_damun": "담운이 사라지면 무주함 데이터를 흡수해 자동 분류 정확도를 높이려 한다."
+      }
+    },
+    {
+      "id": "FC015",
+      "name": "동해 여섯가문 회의",
+      "monopoly_resource": "인양권과 닻줄",
+      "external_dependency": "외부 조정자",
+      "income_source": "항로 지분",
+      "largest_fixed_cost": "구조선과 숨부적",
+      "public_goal": "침몰도시 공동 관리",
+      "hidden_survival_goal": "지분 매각으로 빚을 갚기",
+      "hardline_faction": "매각파",
+      "moderate_faction": "공동파",
+      "beneficiary_cast": "해라",
+      "losing_cast": "권해주",
+      "if_damun_disappears": "담운 실종 시 창고 문을 닫는다",
+      "post_act5_conflict": "장례권과 지분권 충돌",
+      "relation_state_v3_4": {
+        "name": "동해 여섯가문 회의",
+        "primary_settlement_ids": [
+          "ST031",
+          "ST032",
+          "ST033",
+          "ST034",
+          "ST035",
+          "ST036"
+        ],
+        "victory_condition": "인양권·장례권·항로 지분을 공동 관리한다.",
+        "defeat_condition": "한 가문의 거부·매각·빚 때문에 여섯 열쇠 체계가 멈춘다.",
+        "autonomous_action_without_damun": "담운이 사라지면 창고를 닫고 외부 조정자를 배제한다."
+      }
+    },
+    {
+      "id": "FC016",
+      "name": "무명시 이름상회",
+      "monopoly_resource": "이름 사용권 시장",
+      "external_dependency": "행적 증명",
+      "income_source": "이름 대여료",
+      "largest_fixed_cost": "호칭패와 기억 담보",
+      "public_goal": "이름 거래 안정",
+      "hidden_survival_goal": "가난한 이름을 계속 유통시키기",
+      "hardline_faction": "매매파",
+      "moderate_faction": "행적파",
+      "beneficiary_cast": "윤무명",
+      "losing_cast": "이름 없는 아이",
+      "if_damun_disappears": "담운 실종 시 그의 이름 권리를 판다",
+      "post_act5_conflict": "성씨 판매 피해 복구",
+      "relation_state_v3_4": {
+        "name": "무명시 이름상회",
+        "primary_settlement_ids": [
+          "ST037",
+          "ST038",
+          "ST039"
+        ],
+        "victory_condition": "이름·칭호·직업 권한을 대여하고 거래 수수료를 받는다.",
+        "defeat_condition": "행적과 관계 증거가 이름 없이도 권리를 만들기 시작한다.",
+        "autonomous_action_without_damun": "담운이 사라지면 그의 이름 사용권을 최고가 상품으로 올린다."
+      }
+    },
+    {
+      "id": "FC017",
+      "name": "무명시 중앙장부국",
+      "monopoly_resource": "중앙 이름장부",
+      "external_dependency": "분산 증언",
+      "income_source": "수정 수수료",
+      "largest_fixed_cost": "장부 보존 인력",
+      "public_goal": "이름 질서 유지",
+      "hidden_survival_goal": "사람을 항목으로 분류해 통제",
+      "hardline_faction": "잠금파",
+      "moderate_faction": "이력파",
+      "beneficiary_cast": "류백",
+      "losing_cast": "단소아",
+      "if_damun_disappears": "담운 실종 시 최종 수집 칸을 연다",
+      "post_act5_conflict": "공개 기록의 오기 책임",
+      "relation_state_v3_4": {
+        "name": "무명시 중앙장부국",
+        "primary_settlement_ids": [
+          "ST040",
+          "ST041",
+          "ST042"
+        ],
+        "victory_condition": "모든 이름·행적·죄명·통행권을 중앙 장부에서 일치시킨다.",
+        "defeat_condition": "분산 증언과 생활 흔적이 장부 오류를 공개적으로 교정한다.",
+        "autonomous_action_without_damun": "담운이 사라지면 최종 수집 칸을 열고 사람을 물건 번호로 분류한다."
+      }
+    },
+    {
+      "id": "FC018",
+      "name": "원형 천공무고",
+      "monopoly_resource": "중앙핵과 수장인",
+      "external_dependency": "여섯 권역 응답",
+      "income_source": "중앙 보관 권한",
+      "largest_fixed_cost": "살아 있는 전시실",
+      "public_goal": "천하 유산의 완전 보관",
+      "hidden_survival_goal": "사람까지 분류해 재앙을 막기",
+      "hardline_faction": "완성파",
+      "moderate_faction": "해체파",
+      "beneficiary_cast": "묵언",
+      "losing_cast": "분류된 동료",
+      "if_damun_disappears": "담운 실종 시 그를 완성품으로 수납한다",
+      "post_act5_conflict": "중앙 없는 안전의 지속 비용",
+      "relation_state_v3_4": {
+        "name": "원형 천공무고",
+        "primary_settlement_ids": [
+          "ST043",
+          "ST044",
+          "ST045",
+          "ST046",
+          "ST047",
+          "ST048"
+        ],
+        "victory_condition": "천하 유산과 위험을 한 중앙 소유권 아래 완전 분류한다.",
+        "defeat_condition": "여섯 권역이 권한이 아니라 책임을 인수해 중앙 필요성을 낮춘다.",
+        "autonomous_action_without_damun": "담운이 사라지면 이름 조각을 완성품으로 수납하고 중앙핵을 재가동한다."
+      }
+    }
+  ],
+  "faction_relations": [
+    {
+      "relation_id": "FR001",
+      "from_faction_id": "FC001",
+      "to_faction_id": "FC002",
+      "relation_type": "경쟁",
+      "disputed_resource": "분실·회수 유산의 최초 인수권",
+      "escalation_trigger": "상련이 역참의 공개보관 기록을 무효로 처리할 때",
+      "resolution_leverage": "공개 수신 기록과 실제 보관 비용"
+    },
+    {
+      "relation_id": "FR002",
+      "from_faction_id": "FC001",
+      "to_faction_id": "FC003",
+      "relation_type": "의존과 경계",
+      "disputed_resource": "위험기물 통행 판정",
+      "escalation_trigger": "봉장파가 역참 화물을 일괄 위험물로 지정할 때",
+      "resolution_leverage": "현장 파손률과 민간 피해 장부"
+    },
+    {
+      "relation_id": "FR003",
+      "from_faction_id": "FC002",
+      "to_faction_id": "FC005",
+      "relation_type": "상호이용",
+      "disputed_resource": "왕실 증서와 사설 감정권",
+      "escalation_trigger": "왕실이 상련 위조를 희생양으로 삼거나 상련이 원문 오류를 폭로할 때",
+      "resolution_leverage": "진수문의 수정 이력"
+    },
+    {
+      "relation_id": "FR004",
+      "from_faction_id": "FC002",
+      "to_faction_id": "FC006",
+      "relation_type": "가격동맹",
+      "disputed_resource": "희귀 유산 경매와 보험",
+      "escalation_trigger": "귀족회가 보험 손실을 상련에 떠넘길 때",
+      "resolution_leverage": "소장품 유지비와 시민 사용 기록"
+    },
+    {
+      "relation_id": "FR005",
+      "from_faction_id": "FC005",
+      "to_faction_id": "FC007",
+      "relation_type": "정당성 충돌",
+      "disputed_resource": "원문 증서 대 공개 사용 증언",
+      "escalation_trigger": "시민 감정이 왕실 정통성 선전을 뒤집을 때",
+      "resolution_leverage": "동일 물건의 수선층·사용자 증언"
+    },
+    {
+      "relation_id": "FR006",
+      "from_faction_id": "FC006",
+      "to_faction_id": "FC007",
+      "relation_type": "계급갈등",
+      "disputed_resource": "사적 전시 대 공공 접근",
+      "escalation_trigger": "시민전시가 귀족 소장품의 피해 비용을 공개할 때",
+      "resolution_leverage": "보존비 부담과 실제 구조 공적"
+    },
+    {
+      "relation_id": "FR007",
+      "from_faction_id": "FC003",
+      "to_faction_id": "FC004",
+      "relation_type": "내부분열",
+      "disputed_resource": "봉인 우선 대 귀환 우선",
+      "escalation_trigger": "귀환한 유산이 재앙 또는 재독점을 낳을 때",
+      "resolution_leverage": "조건부 귀환·공동 관리 절차"
+    },
+    {
+      "relation_id": "FR008",
+      "from_faction_id": "FC003",
+      "to_faction_id": "FC011",
+      "relation_type": "지휘관계",
+      "disputed_resource": "현장 봉인 권한",
+      "escalation_trigger": "현장대가 민간 구조를 위해 중앙 명령을 거부할 때",
+      "resolution_leverage": "삭제되지 않은 구조·희생 기록"
+    },
+    {
+      "relation_id": "FR009",
+      "from_faction_id": "FC004",
+      "to_faction_id": "FC008",
+      "relation_type": "원칙연대",
+      "disputed_resource": "귀환·비소유·철회권",
+      "escalation_trigger": "귀환파가 신수 계약을 물건 인계처럼 처리할 때",
+      "resolution_leverage": "생명체의 반복 거절과 독립 목표"
+    },
+    {
+      "relation_id": "FR010",
+      "from_faction_id": "FC008",
+      "to_faction_id": "FC009",
+      "relation_type": "적대",
+      "disputed_resource": "신수 이동권과 밀매 수익",
+      "escalation_trigger": "밀매단이 주민 생계를 인질로 보호구역을 침범할 때",
+      "resolution_leverage": "위조 계약·우리 흔적·구매 장부"
+    },
+    {
+      "relation_id": "FR011",
+      "from_faction_id": "FC008",
+      "to_faction_id": "FC010",
+      "relation_type": "상호의존",
+      "disputed_resource": "해독재·운송 신수 대 북설 보호 장비",
+      "escalation_trigger": "한쪽이 생존 물자를 계약 조건으로 독점할 때",
+      "resolution_leverage": "교환 물자의 실제 생산비"
+    },
+    {
+      "relation_id": "FR012",
+      "from_faction_id": "FC010",
+      "to_faction_id": "FC011",
+      "relation_type": "협력과 불신",
+      "disputed_resource": "공동 방어망과 중앙 규격",
+      "escalation_trigger": "현장대가 설갑 조각을 중앙 회수하려 할 때",
+      "resolution_leverage": "촌락별 교대 노동과 구조 성과"
+    },
+    {
+      "relation_id": "FR013",
+      "from_faction_id": "FC010",
+      "to_faction_id": "FC012",
+      "relation_type": "무역의존",
+      "disputed_resource": "북설 장비·약재 대 서황 물·소금",
+      "escalation_trigger": "대상연합이 해빙기 가격을 폭등시킬 때",
+      "resolution_leverage": "운송 손실과 촌락 생존선"
+    },
+    {
+      "relation_id": "FR014",
+      "from_faction_id": "FC012",
+      "to_faction_id": "FC013",
+      "relation_type": "세금갈등",
+      "disputed_resource": "대상로 수익 대 물표·기억세",
+      "escalation_trigger": "세관이 기억을 통행 자산으로 재판매할 때",
+      "resolution_leverage": "피난민의 귀향권 피해"
+    },
+    {
+      "relation_id": "FR015",
+      "from_faction_id": "FC013",
+      "to_faction_id": "FC014",
+      "relation_type": "데이터거래",
+      "disputed_resource": "위험평가·기억 정보",
+      "escalation_trigger": "자동 분류가 세금 미납자를 위험인격으로 판정할 때",
+      "resolution_leverage": "오분류 피해와 삭제 로그"
+    },
+    {
+      "relation_id": "FR016",
+      "from_faction_id": "FC014",
+      "to_faction_id": "FC018",
+      "relation_type": "상하위체계",
+      "disputed_resource": "폐분관 알고리즘과 중앙핵",
+      "escalation_trigger": "폐분관이 지역 실패를 숨겨 중앙 신뢰를 유지할 때",
+      "resolution_leverage": "삭제된 기록 인격의 증언"
+    },
+    {
+      "relation_id": "FR017",
+      "from_faction_id": "FC012",
+      "to_faction_id": "FC015",
+      "relation_type": "교역관계",
+      "disputed_resource": "사막 물표 대 해상 인양품",
+      "escalation_trigger": "대상연합이 숨부적·구조 장비에 기억세를 붙일 때",
+      "resolution_leverage": "항로 지분과 실제 구조비"
+    },
+    {
+      "relation_id": "FR018",
+      "from_faction_id": "FC015",
+      "to_faction_id": "FC016",
+      "relation_type": "기록의존",
+      "disputed_resource": "실종자·상속자 이름 확인",
+      "escalation_trigger": "이름상회가 사망 미확정자의 성씨를 거래할 때",
+      "resolution_leverage": "빈매듭 신호와 가족 생활 증거"
+    },
+    {
+      "relation_id": "FR019",
+      "from_faction_id": "FC016",
+      "to_faction_id": "FC017",
+      "relation_type": "시장과 관청의 공생갈등",
+      "disputed_resource": "이름 대여료 대 장부 수정 수수료",
+      "escalation_trigger": "장부국이 임시 호칭을 불법화하거나 상회가 오류를 상품화할 때",
+      "resolution_leverage": "행적법정의 책임 판정"
+    },
+    {
+      "relation_id": "FR020",
+      "from_faction_id": "FC017",
+      "to_faction_id": "FC018",
+      "relation_type": "흡수관계",
+      "disputed_resource": "중앙 이름장부와 최종 수집 목록",
+      "escalation_trigger": "장부국이 사람을 물건 번호로 넘길 때",
+      "resolution_leverage": "분산 증언과 철회 기록"
+    },
+    {
+      "relation_id": "FR021",
+      "from_faction_id": "FC004",
+      "to_faction_id": "FC007",
+      "relation_type": "제도연대",
+      "disputed_resource": "귀환 대상의 공개 검증",
+      "escalation_trigger": "공개 감정이 인기 판정으로 귀환을 강제할 때",
+      "resolution_leverage": "피해자·사용자·보관자 분리 심사"
+    },
+    {
+      "relation_id": "FR022",
+      "from_faction_id": "FC007",
+      "to_faction_id": "FC015",
+      "relation_type": "지식교환",
+      "disputed_resource": "사용 기록과 공동 인양 증언",
+      "escalation_trigger": "경도식 가격 판정이 장례·기억 권리를 덮을 때",
+      "resolution_leverage": "현장 수선·구조·상속 기록"
+    },
+    {
+      "relation_id": "FR023",
+      "from_faction_id": "FC011",
+      "to_faction_id": "FC014",
+      "relation_type": "조직충돌",
+      "disputed_resource": "현장 판단과 자동 위험 분류",
+      "escalation_trigger": "알고리즘이 구조 대상자를 위험물로 분류할 때",
+      "resolution_leverage": "현장대의 부상·구조 로그"
+    },
+    {
+      "relation_id": "FR024",
+      "from_faction_id": "FC015",
+      "to_faction_id": "FC017",
+      "relation_type": "법적충돌",
+      "disputed_resource": "여섯 가문 증언 대 중앙 신원",
+      "escalation_trigger": "장부 오류로 실종자 상속이 확정될 때",
+      "resolution_leverage": "조수종·빈매듭·가족 증언"
+    },
+    {
+      "relation_id": "FR025",
+      "from_faction_id": "FC018",
+      "to_faction_id": "FC003",
+      "relation_type": "중앙화동맹의 균열",
+      "disputed_resource": "완전 봉인과 수장 희생",
+      "escalation_trigger": "원형 무고가 봉장파까지 관리 대상 물건으로 분류할 때",
+      "resolution_leverage": "백장의 손실과 중앙핵 오분류"
+    }
+  ],
+  "subacts": [
+    {
+      "id": "A01",
+      "act": "ACT1",
+      "act_title": "물건의 주인은 누구인가",
+      "episodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "title": "빈 검함이 열린 날",
+      "false_answer": "검함이 담운을 새 주인으로 골랐다.",
+      "truth": "담운은 소유자가 아니라 임시 배송자이며 물건의 미련을 해결해야 한다.",
+      "start_episode_title": "수신인 없는 검함",
+      "end_episode_title": "다음 배송지",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "담운은 소유자가 아니라 임시 배송자이며 물건의 미련을 해결해야 한다.",
+      "causality_v3_4": {
+        "title": "빈 검함이 열린 날",
+        "incoming_cost": "없음: 작품 시작",
+        "present_problem": "수신인 없는 검함과 반치의 무주 판정을 확인한다.",
+        "damun_voluntary_goal": "담운이 단순 인수·전달을 넘어 물건의 사용 이력과 책임자를 추적한다.",
+        "irreversible_choice": "반치를 살리는 용도로 사용하고 첫 수집 책임을 떠안는다.",
+        "outgoing_cost": "만보상련의 회수 청구, 철구와 쇠울촌의 손실, 담운의 배달 평판 악화",
+        "next_subact_id": "A02"
+      }
+    },
+    {
+      "id": "A02",
+      "act": "ACT1",
+      "act_title": "물건의 주인은 누구인가",
+      "episodes": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "title": "길과 고향의 소유권",
+      "false_answer": "주소와 배달패가 있으면 고향과 길의 주인을 판정할 수 있다.",
+      "truth": "길은 사용·책임·공동체 기억으로 유지되고 담운은 고향을 지키기 위해 떠난다.",
+      "start_episode_title": "길을 막는 봉인표",
+      "end_episode_title": "가짜 왕검의 목소리",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "길은 사용·책임·공동체 기억으로 유지되고 담운은 고향을 지키기 위해 떠난다.",
+      "causality_v3_4": {
+        "title": "길과 고향의 소유권",
+        "incoming_cost": "첫 수집 때문에 담운의 화물·통행·평판이 모두 감시 대상이 된다.",
+        "present_problem": "봉인표로 막힌 옛길과 공동체 운송 책임을 추적한다.",
+        "damun_voluntary_goal": "고향을 지키려면 떠나야 한다는 모순 속에서 경도행을 스스로 선택한다.",
+        "irreversible_choice": "문서 권리와 생활 기억을 함께 증언해 조직의 단일 판정을 거부한다.",
+        "outgoing_cost": "청래역을 즉시 돕지 못하고 린화·무석·귀장회와의 관계 빚을 안는다.",
+        "next_subact_id": "A03"
+      }
+    },
+    {
+      "id": "A03",
+      "act": "ACT1",
+      "act_title": "물건의 주인은 누구인가",
+      "episodes": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "title": "진품보다 오래 살아남은 가짜",
+      "false_answer": "진품 여부와 법적 낙찰권을 밝히면 분쟁이 끝난다.",
+      "truth": "실제 쓰임과 공동체 기억이 가치를 만들며 왕검은 공개 전시에 남는다.",
+      "start_episode_title": "만 가지 보물의 시장",
+      "end_episode_title": "왕검을 돌려주다",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "실제 쓰임과 공동체 기억이 가치를 만들며 왕검은 공개 전시에 남는다.",
+      "causality_v3_4": {
+        "title": "진품보다 오래 살아남은 가짜",
+        "incoming_cost": "경도에 들어왔지만 담운 일행의 증언은 가격·증서 체계에서 낮게 평가된다.",
+        "present_problem": "모조 왕검과 위조 감정이 실제로 누구를 지켰는지 밝힌다.",
+        "damun_voluntary_goal": "담운이 낙찰 경쟁보다 사용 흔적과 피해 비용을 공개하는 쪽을 택한다.",
+        "irreversible_choice": "진검을 수집하지 않고 모조품의 공동 사용 이력을 인정한다.",
+        "outgoing_cost": "린화의 가문 오류가 공개되고 만보상련·왕실 기록관과 정면 충돌한다.",
+        "next_subact_id": "A04"
+      }
+    },
+    {
+      "id": "A04",
+      "act": "ACT1",
+      "act_title": "물건의 주인은 누구인가",
+      "episodes": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "title": "값 없는 유산과 첫 완성",
+      "false_answer": "한숨풀무를 얻고 세트를 완성하면 첫 목표가 끝난다.",
+      "truth": "완성은 후회 과부하를 만들고 생명인 두리가 수집의 경계를 깨뜨린다.",
+      "start_episode_title": "풀무를 산 수집가",
+      "end_episode_title": "짐 속의 재채기",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "완성은 후회 과부하를 만들고 생명인 두리가 수집의 경계를 깨뜨린다.",
+      "causality_v3_4": {
+        "title": "값 없는 유산과 첫 완성",
+        "incoming_cost": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다.",
+        "present_problem": "무명의 장인 유산을 한 세트로 완성하되 상극과 대가를 검증한다.",
+        "damun_voluntary_goal": "담운이 강한 장비를 모으는 대신 제작 노동과 실패 기록을 보존한다.",
+        "irreversible_choice": "첫 세트를 완성하지만 모든 기능을 동시에 소유·사용할 수 없다는 한계를 받아들인다.",
+        "outgoing_cost": "상극 공명과 감각 손실이 생기고 생명체까지 수집 대상으로 보려는 시선이 두리에게 향한다.",
+        "next_subact_id": "A05"
+      }
+    },
+    {
+      "id": "A05",
+      "act": "ACT2",
+      "act_title": "생명은 수집될 수 있는가",
+      "episodes": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "title": "계약을 거부한 신수",
+      "false_answer": "어미를 찾아주거나 계약하면 두리를 보호할 수 있다.",
+      "truth": "두리가 인간을 선택하며 철회권이 있는 동행 계약이 성립한다.",
+      "start_episode_title": "마지막 풍비",
+      "end_episode_title": "두리가 고른 사람",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "두리가 인간을 선택하며 철회권이 있는 동행 계약이 성립한다.",
+      "causality_v3_4": {
+        "title": "계약을 거부한 신수",
+        "incoming_cost": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다.",
+        "present_problem": "두리의 반복 거절과 인간 구조 계약의 차이를 확인한다.",
+        "damun_voluntary_goal": "담운이 계약 성사보다 두리의 거절 이유와 독립 목표를 보호한다.",
+        "irreversible_choice": "두리가 선택할 때까지 전력·속도·소유권 이익을 포기한다.",
+        "outgoing_cost": "밀매단이 주민 생계와 치료를 담보로 신수 포획을 확대하고 여행 일정이 늦어진다.",
+        "next_subact_id": "A06"
+      }
+    },
+    {
+      "id": "A06",
+      "act": "ACT2",
+      "act_title": "생명은 수집될 수 있는가",
+      "episodes": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "title": "잠든 숲을 놓아주다",
+      "false_answer": "향로를 가져가거나 부수면 숲을 구할 수 있다.",
+      "truth": "향로를 공동 관리에 남기며 비수집과 귀환도 도감 진척이 된다.",
+      "start_episode_title": "그리움의 냄새",
+      "end_episode_title": "금빛 장갑의 명령",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "향로를 공동 관리에 남기며 비수집과 귀환도 도감 진척이 된다.",
+      "causality_v3_4": {
+        "title": "잠든 숲을 놓아주다",
+        "incoming_cost": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다.",
+        "present_problem": "향로와 독왕초가 사람을 살리면서 숲을 잠재우는 구조를 끊는다.",
+        "damun_voluntary_goal": "담운이 강력한 향로를 가져가지 않고 숲에 남길 관리 조건을 만든다.",
+        "irreversible_choice": "비수집을 도감 진척으로 인정하고 주민·신수 공동 철회권을 둔다.",
+        "outgoing_cost": "즉시 쓸 수 있는 전력을 잃고 북설원은 방어 유산 지원을 받지 못해 공동 방어 위기에 놓인다.",
+        "next_subact_id": "A07"
+      }
+    },
+    {
+      "id": "A07",
+      "act": "ACT2",
+      "act_title": "생명은 수집될 수 있는가",
+      "episodes": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70
+      ],
+      "title": "일곱 조각의 봉인성",
+      "false_answer": "일곱 조각을 한 사람이 모아야 완전한 갑옷이 된다.",
+      "truth": "설갑은 일곱 마을이 함께 작동하는 분산 방어망으로 완성된다.",
+      "start_episode_title": "북설원의 문",
+      "end_episode_title": "칠촌의 방패",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "설갑은 일곱 마을이 함께 작동하는 분산 방어망으로 완성된다.",
+      "causality_v3_4": {
+        "title": "일곱 조각의 봉인성",
+        "incoming_cost": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다.",
+        "present_problem": "설갑 일곱 조각과 식량·봉화 교대를 공동 방어망으로 재구성한다.",
+        "damun_voluntary_goal": "담운이 완성 갑옷의 단독 장착보다 촌락별 제한 사용을 제안한다.",
+        "irreversible_choice": "설갑을 한 사람의 수집품으로 완성하지 않고 분산 방어망으로 인정한다.",
+        "outgoing_cost": "가난한 촌락의 교대 부담과 귀장회 규격 충돌이 커지고 곽무석이 조직과 주민 사이에서 갈라진다.",
+        "next_subact_id": "A08"
+      }
+    },
+    {
+      "id": "A08",
+      "act": "ACT2",
+      "act_title": "생명은 수집될 수 있는가",
+      "episodes": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "title": "파수꾼의 이탈",
+      "false_answer": "귀장회의 삭제 기록만 공개하면 백장의 정당성이 무너진다.",
+      "truth": "백장의 구조 실적도 사실이며 무석은 조직 대신 선택권을 지키는 파수꾼이 된다.",
+      "start_episode_title": "눈사태 기록",
+      "end_episode_title": "눈 위의 수장",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "백장의 구조 실적도 사실이며 무석은 조직 대신 선택권을 지키는 파수꾼이 된다.",
+      "causality_v3_4": {
+        "title": "파수꾼의 이탈",
+        "incoming_cost": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다.",
+        "present_problem": "곽무석이 지킨 사람과 버린 사람의 기록, 봉장파의 삭제 관행을 드러낸다.",
+        "damun_voluntary_goal": "담운이 무석을 설득해 조직 안에 남기기보다 독립 선택과 책임을 인정한다.",
+        "irreversible_choice": "무석이 귀장회 지위를 버리고 현장 방패를 주민에게 남긴다.",
+        "outgoing_cost": "중앙 봉인 정보·통행권·지원 인력을 잃어 서황막 폐분관 진입이 더 위험해진다.",
+        "next_subact_id": "A09"
+      }
+    },
+    {
+      "id": "A09",
+      "act": "ACT3",
+      "act_title": "보관은 보호인가",
+      "episodes": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ],
+      "title": "사막문과 상극의 전시실",
+      "false_answer": "지름길과 소유선 시야가 탐사를 쉽게 만든다.",
+      "truth": "편리한 유물은 길·기억을 빼앗고 상극 보관이 재앙을 일으킨다.",
+      "start_episode_title": "사막으로 열린 문",
+      "end_episode_title": "함께 둘 수 없는 것",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "편리한 유물은 길·기억을 빼앗고 상극 보관이 재앙을 일으킨다.",
+      "causality_v3_4": {
+        "title": "사막문과 상극의 전시실",
+        "incoming_cost": "무석 이탈로 공식 봉인 지원 없이 기억세와 접힌 길을 지나 폐분관을 조사해야 한다.",
+        "present_problem": "지도 유물·기억 통행료·상극 전시실이 사람과 길을 삭제하는 원인을 추적한다.",
+        "damun_voluntary_goal": "담운이 빠른 지름길 대신 지워진 길과 피난민의 귀향권을 복구한다.",
+        "irreversible_choice": "천품 파편을 장착해 돌파하지 않고 전시실의 분류 규칙을 흔든다.",
+        "outgoing_cost": "상극 유산이 무주함 내부에서 폭주하고 두리가 오류 수납되어 핵심 유산을 포기해야 하는 상황이 생긴다.",
+        "next_subact_id": "A10"
+      }
+    },
+    {
+      "id": "A10",
+      "act": "ACT3",
+      "act_title": "보관은 보호인가",
+      "episodes": [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
+      ],
+      "title": "하나를 놓아야 하는 방",
+      "false_answer": "가장 약한 수집품 하나를 버리면 위기를 넘길 수 있다.",
+      "truth": "핵심 망치를 영구 귀환시켜 두리를 살리고 비운 자리에도 관계가 남는다.",
+      "start_episode_title": "그림자 속의 두리",
+      "end_episode_title": "바다가 부르는 전시실",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "핵심 망치를 영구 귀환시켜 두리를 살리고 비운 자리에도 관계가 남는다.",
+      "causality_v3_4": {
+        "title": "하나를 놓아야 하는 방",
+        "incoming_cost": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다.",
+        "present_problem": "두리를 구하기 위해 어떤 핵심 유산을 영구 귀환할지 결정한다.",
+        "damun_voluntary_goal": "담운이 가장 강한 유산과 자신의 완성 가능성을 스스로 포기한다.",
+        "irreversible_choice": "핵심 유산을 영구 귀환해 두리를 생명체로 분류 밖에 놓는다.",
+        "outgoing_cost": "전력·수집 진척·폐분관 접근권을 잃고 동해 침몰도시에서 외부 조정자로 신뢰받기 어려워진다.",
+        "next_subact_id": "A11"
+      }
+    },
+    {
+      "id": "A11",
+      "act": "ACT3",
+      "act_title": "보관은 보호인가",
+      "episodes": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110
+      ],
+      "title": "침몰도시의 여섯 주인",
+      "false_answer": "진짜 증서나 선착순 낙찰권이 도시의 주인을 정한다.",
+      "truth": "여섯 가문의 기억과 책임을 나눈 공동 소유만 도시를 연다.",
+      "start_episode_title": "바다 위의 역참",
+      "end_episode_title": "한 사람이 가질 수 없는 것",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "여섯 가문의 기억과 책임을 나눈 공동 소유만 도시를 연다.",
+      "causality_v3_4": {
+        "title": "침몰도시의 여섯 주인",
+        "incoming_cost": "핵심 유산 귀환으로 일행의 전력이 줄고, 여섯 가문은 담운이 소유권을 포기한 일을 무능으로 본다.",
+        "present_problem": "인양권·장례권·항로 지분·사용 기억이 갈라진 도시의 책임자를 찾는다.",
+        "damun_voluntary_goal": "담운이 한 명의 진짜 주인을 고르지 않고 여섯 책임을 분리한다.",
+        "irreversible_choice": "핵심 유산을 공동 관리하되 각 가문에 철회·거부·비용 분담 조건을 둔다.",
+        "outgoing_cost": "공동 소유 체계가 느리고 취약해져 한 가문의 거부가 전체를 멈추며 담운과 같은 얼굴의 수장 초상이 공개된다.",
+        "next_subact_id": "A12"
+      }
+    },
+    {
+      "id": "A12",
+      "act": "ACT3",
+      "act_title": "보관은 보호인가",
+      "episodes": [
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120
+      ],
+      "title": "공동 소유와 수장의 얼굴",
+      "false_answer": "초상이 담운의 전생을 증명하면 정체 문제가 풀린다.",
+      "truth": "초상은 질문만 열고 담운은 현재 행동으로 자신을 증명해야 한다.",
+      "start_episode_title": "되풀이되는 침몰",
+      "end_episode_title": "이름을 사러 가는 길",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "초상은 질문만 열고 담운은 현재 행동으로 자신을 증명해야 한다.",
+      "causality_v3_4": {
+        "title": "공동 소유와 수장의 얼굴",
+        "incoming_cost": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다.",
+        "present_problem": "수장 초상·과거 기록·공동 소유 실패를 조사해 담운과 천공무고의 연결을 확인한다.",
+        "damun_voluntary_goal": "담운이 정체 비밀을 숨겨 통제권을 유지하기보다 동료에게 먼저 공개한다.",
+        "irreversible_choice": "과거 수장과 닮았어도 현재의 선택과 책임이 별개임을 행동으로 증명한다.",
+        "outgoing_cost": "이름과 행적을 증명해야 하는 부담이 커지고 무명시에서 담운의 이름이 공격 대상이 된다.",
+        "next_subact_id": "A13"
+      }
+    },
+    {
+      "id": "A13",
+      "act": "ACT4",
+      "act_title": "사람의 이름도 소유될 수 있는가",
+      "episodes": [
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "title": "이름을 잃은 담운",
+      "false_answer": "본명을 복원하면 동료의 기억과 정체가 돌아온다.",
+      "truth": "냄새·습관·행적이 이름보다 먼저 사람을 증명한다.",
+      "start_episode_title": "이름을 파는 도시",
+      "end_episode_title": "서린화가 알아본 것",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "냄새·습관·행적이 이름보다 먼저 사람을 증명한다.",
+      "causality_v3_4": {
+        "title": "이름을 잃은 담운",
+        "incoming_cost": "수장 초상 공개로 담운의 이름·기원·권한을 사고팔려는 세력이 몰린다.",
+        "present_problem": "이름 지우는 가면과 임시 호칭 시장 속에서 동료와 생활 관계를 복원한다.",
+        "damun_voluntary_goal": "담운이 자신의 이름을 되사는 대신 이름 없는 주민의 치료·통행 문제를 먼저 해결한다.",
+        "irreversible_choice": "동료들이 문서가 아니라 습관·물건 다루는 방식·공동 기억으로 담운을 선택한다.",
+        "outgoing_cost": "이름을 되찾아도 중앙 장부가 담운을 사람 아닌 최종 수집 항목으로 고정한다.",
+        "next_subact_id": "A14"
+      }
+    },
+    {
+      "id": "A14",
+      "act": "ACT4",
+      "act_title": "사람의 이름도 소유될 수 있는가",
+      "episodes": [
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140
+      ],
+      "title": "중앙 장부를 해체하다",
+      "false_answer": "잘못된 이름 항목만 고치면 중앙 장부를 선하게 쓸 수 있다.",
+      "truth": "중앙 장부 자체를 여섯 공개 기록으로 해체하고 옛 수장 이름을 거부한다.",
+      "start_episode_title": "무명시의 이름장부",
+      "end_episode_title": "돌아온 호칭",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "중앙 장부 자체를 여섯 공개 기록으로 해체하고 옛 수장 이름을 거부한다.",
+      "causality_v3_4": {
+        "title": "중앙 장부를 해체하다",
+        "incoming_cost": "관계로 담운을 되찾았지만 중앙 장부의 법적 분류는 남아 숙박·치료·통행을 계속 막는다.",
+        "present_problem": "장부 오류·수정 수수료·분산 증언을 공개해 중앙 신원 체계를 해체한다.",
+        "damun_voluntary_goal": "담운이 자신의 항목만 고치는 특혜를 거부하고 전체 기록 접근권을 연다.",
+        "irreversible_choice": "중앙 원본을 없애지 않고 여러 지역의 수정·반론 기록으로 분산한다.",
+        "outgoing_cost": "기록 권한이 여러 세력에 흩어져 서로 다른 버전의 소유권이 충돌하고 여섯 갈래 수집 전쟁이 열린다.",
+        "next_subact_id": "A15"
+      }
+    },
+    {
+      "id": "A15",
+      "act": "ACT4",
+      "act_title": "사람의 이름도 소유될 수 있는가",
+      "episodes": [
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150
+      ],
+      "title": "여섯 갈래 수집 전쟁",
+      "false_answer": "담운이 여섯 열쇠를 모두 모아야 천외문이 열린다.",
+      "truth": "동료들이 독립 열쇠지기가 되며 담운의 중앙 권한은 줄어든다.",
+      "start_episode_title": "보물 지도가 퍼졌다",
+      "end_episode_title": "피를 거부한 검함",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "동료들이 독립 열쇠지기가 되며 담운의 중앙 권한은 줄어든다.",
+      "causality_v3_4": {
+        "title": "여섯 갈래 수집 전쟁",
+        "incoming_cost": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다.",
+        "present_problem": "각 전선의 생계·안전·기억·계약 문제를 동료들이 나눠 해결한다.",
+        "damun_voluntary_goal": "담운이 모든 전선의 최종 결정자가 되지 않고 권한을 동료와 지역에 넘긴다.",
+        "irreversible_choice": "승리를 위해 한 세력을 완전히 소유·복속하지 않고 상호 의존 조건을 공개한다.",
+        "outgoing_cost": "동료들이 담운 없이도 독립 결정을 내리며 일부 선택은 담운의 계획과 충돌한다.",
+        "next_subact_id": "A16"
+      }
+    },
+    {
+      "id": "A16",
+      "act": "ACT4",
+      "act_title": "사람의 이름도 소유될 수 있는가",
+      "episodes": [
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160
+      ],
+      "title": "동료들의 완성과 마지막 빈칸",
+      "false_answer": "담운이 희생돼 빈칸을 채우면 모든 문제가 끝난다.",
+      "truth": "여섯 증언으로 문을 열고 담운의 이름이 최종 수집 대상임을 드러낸다.",
+      "start_episode_title": "곽무석의 완성 방패",
+      "end_episode_title": "마지막 수집 대상",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "여섯 증언으로 문을 열고 담운의 이름이 최종 수집 대상임을 드러낸다.",
+      "causality_v3_4": {
+        "title": "동료들의 완성과 마지막 빈칸",
+        "incoming_cost": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다.",
+        "present_problem": "각 동료가 담운과 무관한 진로를 선택하고 마지막 빈칸의 의미를 확인한다.",
+        "damun_voluntary_goal": "담운이 동료를 최종 결전에 묶어두지 않고 떠날 권리를 보장한다.",
+        "irreversible_choice": "동료들은 독립한 채 필요한 책임만 자발적으로 다시 연결한다.",
+        "outgoing_cost": "중앙으로 들어갈 인원·장비·정보가 줄고 원형 천공무고는 빈자리를 담운 한 사람으로 채우려 한다.",
+        "next_subact_id": "A17"
+      }
+    },
+    {
+      "id": "A17",
+      "act": "ACT5",
+      "act_title": "수장은 무엇을 소유해야 하는가",
+      "episodes": [
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170
+      ],
+      "title": "살아 있는 박물관",
+      "false_answer": "과거 수장 권한을 얻으면 박물관을 통제할 수 있다.",
+      "truth": "권한은 담운의 인격을 침식하고 사람을 분류하는 체계 자체가 적이다.",
+      "start_episode_title": "천외산맥을 오르다",
+      "end_episode_title": "백장이 봉인한 날",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "권한은 담운의 인격을 침식하고 사람을 분류하는 체계 자체가 적이다.",
+      "causality_v3_4": {
+        "title": "살아 있는 박물관",
+        "incoming_cost": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다.",
+        "present_problem": "사람·신수·동료를 전시품·관리자·위험물로 나누는 규칙을 깨뜨린다.",
+        "damun_voluntary_goal": "담운이 수장 권한을 얻기보다 분류 거부자들의 철회권을 먼저 연다.",
+        "irreversible_choice": "사람 목록을 끊는 과정에서 자신이 과거 수장 이름 조각이라는 단서까지 공개한다.",
+        "outgoing_cost": "중앙의 안전 기능도 함께 약해지고 담운의 기원을 완성하면 재난을 막을 수 있다는 유혹이 커진다.",
+        "next_subact_id": "A18"
+      }
+    },
+    {
+      "id": "A18",
+      "act": "ACT5",
+      "act_title": "수장은 무엇을 소유해야 하는가",
+      "episodes": [
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180
+      ],
+      "title": "이름에서 태어난 아이",
+      "false_answer": "몸·기억·이름을 복원하면 진짜 수장이 돌아와 해결한다.",
+      "truth": "백장은 몸 조각을 파괴하고 담운은 과거 인격 대신 현재 자신을 택한다.",
+      "start_episode_title": "이름에서 태어난 아이",
+      "end_episode_title": "들어갈 것인가, 없앨 것인가",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "백장은 몸 조각을 파괴하고 담운은 과거 인격 대신 현재 자신을 택한다.",
+      "causality_v3_4": {
+        "title": "이름에서 태어난 아이",
+        "incoming_cost": "분류를 끊어 중앙 안전장치가 흔들리고 담운만 완성하면 체계를 복구할 수 있다는 주장이 힘을 얻는다.",
+        "present_problem": "몸·기억·이름으로 갈라진 과거 수장과 현재 담운의 독립성을 증명한다.",
+        "damun_voluntary_goal": "담운이 과거 기억과 권한을 받아 영웅이 되는 길을 거부한다.",
+        "irreversible_choice": "백장도 과거 수장 복원을 포기하고 장갑·몸 조각을 파괴한다.",
+        "outgoing_cost": "담운의 이름만 마지막 재료로 남아 중앙파와 분산파가 전면전으로 충돌한다.",
+        "next_subact_id": "A19"
+      }
+    },
+    {
+      "id": "A19",
+      "act": "ACT5",
+      "act_title": "수장은 무엇을 소유해야 하는가",
+      "episodes": [
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190
+      ],
+      "title": "중앙 소유권 전쟁",
+      "false_answer": "중앙핵 지분을 모두에게 나누면 독점 문제가 해결된다.",
+      "truth": "중앙이 남아 있는 한 재독점되므로 중앙 없는 분산 책임이 필요하다.",
+      "start_episode_title": "회수 대상 담운",
+      "end_episode_title": "무너지는 박물관",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "중앙이 남아 있는 한 재독점되므로 중앙 없는 분산 책임이 필요하다.",
+      "causality_v3_4": {
+        "title": "중앙 소유권 전쟁",
+        "incoming_cost": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다.",
+        "present_problem": "중앙 봉인·공동 지분·완전 해체 세 선택의 실제 피해와 비용을 검증한다.",
+        "damun_voluntary_goal": "담운이 자신이 중앙 주인이 되는 안과 권한을 지분화하는 안을 모두 거부한다.",
+        "irreversible_choice": "반치로 강제 소유 연결선을 자르되 지역이 책임을 인수할 준비가 될 때까지 버틴다.",
+        "outgoing_cost": "중앙 권한·지원·분류 안전망이 사라지고 여섯 책임 조각을 실제로 배송해야만 세계가 유지된다.",
+        "next_subact_id": "A20"
+      }
+    },
+    {
+      "id": "A20",
+      "act": "ACT5",
+      "act_title": "수장은 무엇을 소유해야 하는가",
+      "episodes": [
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200
+      ],
+      "title": "소유권을 자르는 칼과 마지막 배송",
+      "false_answer": "중앙핵을 파괴하거나 담운이 희생해야만 끝난다.",
+      "truth": "강제 소유선을 자르고 여섯 책임 조각을 배송해 첫 화의 약속을 결말 행동으로 회수한다.",
+      "start_episode_title": "소유권을 자르는 칼",
+      "end_episode_title": "빈 검함, 열린 길",
+      "causal_input": "앞 서브액트의 선택 비용을 다음 생활 문제로 넘긴다.",
+      "terminal_state_change": "강제 소유선을 자르고 여섯 책임 조각을 배송해 첫 화의 약속을 결말 행동으로 회수한다.",
+      "causality_v3_4": {
+        "title": "소유권을 자르는 칼과 마지막 배송",
+        "incoming_cost": "중앙전 승리 뒤에도 각 권역은 비용·인력·기억·안전 책임을 떠맡지 않으면 붕괴한다.",
+        "present_problem": "여섯 책임 조각을 권력이 아니라 수행 의무로 전달하고 인수 여부를 확인한다.",
+        "damun_voluntary_goal": "담운이 마지막 조각과 자기 이름을 소유하지 않고 전달자로 남는다.",
+        "irreversible_choice": "각 권역이 실패 가능성까지 포함해 책임을 자발적으로 인수하고 담운은 첫 귀로인이 된다.",
+        "outgoing_cost": "분산 책임의 유지비와 지역 재독점 위험이 남아 세계는 계속 움직인다.",
+        "next_subact_id": null
+      }
+    }
+  ],
+  "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+}

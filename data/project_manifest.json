@@ -3,8 +3,11 @@
     "title_ko": "빈 검함으로 천하를 수집한다",
     "repository": "storm-credit/empty-swordcase-story-bible",
     "version": "2.4-core",
-    "status": "canon_architecture_complete_production_detailing_in_progress",
-    "prose_status": "not_drafted"
+    "status": "historical_snapshot_canon_architecture_complete_production_detailing_in_progress",
+    "prose_status": "not_drafted",
+    "historical_snapshot": true,
+    "superseded_by": "data/world_blueprint_completion_manifest_v3_3.json",
+    "latest_audit": "docs/52_WORLD_BIBLE_BLUEPRINT_INTEGRATION_AUDIT_V3_3.md"
   },
   "scale": {
     "episodes": 200,
@@ -28,11 +31,25 @@
     "major_combat_sheets": false,
     "prose_manuscript": false
   },
+  "historical_next_gate": "episodes_021_040_detailed_scene_beats_and_combat_sheets",
+  "current_v3_3_status": {
+    "core_canon": "complete",
+    "episode_function_map_001_200": "complete",
+    "production_blueprint_021_040": "partial_four_beats_each",
+    "production_blueprint_041_200": "incomplete",
+    "world_regions_008": "complete",
+    "settlement_integration_048": "integrated_v3_3_overlay",
+    "route_integration_020": "integrated_v3_3_overlay",
+    "faction_relation_graph_018": "integrated_v3_3_overlay",
+    "collection_registry_120": "unverified",
+    "set_registry_024": "unverified",
+    "beast_registry_018": "unverified"
+  },
   "governance": {
     "final_canon_owner": "author",
     "project_manager": "Synapse-PM",
     "repository_executor": "Claude Code",
     "data_ci_auditor": "Codex"
   },
-  "next_gate": "episodes_021_040_detailed_scene_beats_and_combat_sheets"
+  "current_next_gate": "run_v3_3_validator_then_resolve_collection_registry_and_scene_beat_gaps"
 }

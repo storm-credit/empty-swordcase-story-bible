@@ -1,0 +1,288 @@
+{
+  "version": "3.3",
+  "status": "provisional_candidate_overlay",
+  "author_approval_required": true,
+  "purpose": "기존 character_voice_cards_v2_9의 28명에게 사적 욕망·거절선·개인 손실·담운 부재 선택을 부여한다. 신규 인물을 추가하지 않는다.",
+  "characters": [
+    {
+      "id":"CH001","name":"담운","source_role":"1인칭 주인공·배달부",
+      "private_goal":"세상의 주인이 되지 않고도 맡은 사람과 물건을 끝까지 제자리로 돌려보내는 배달부로 남는다.",
+      "hidden_insecurity":"자신이 과거 수장의 부품이거나 다른 사람을 대신하기 위해 만들어진 빈자리일 수 있다는 두려움.",
+      "refusal_line":"살아 있는 존재·동료·자기 자신을 수집품으로 등록하는 해결책은 받아들이지 않는다.",
+      "personal_loss_from_damun_choice":"올바른 귀환을 선택할수록 수입·장비·이름·동료의 상시 동행을 잃는다.",
+      "choice_without_damun":"자신이 사라져도 각 지역이 수신인 확인과 책임 인계를 계속하도록 절차를 남긴다.",
+      "relationship_pressure":"모두의 책임을 떠안으려는 태도가 동료에게 오만과 불신으로 보인다.",
+      "focus_episodes":[1,10,20,40,50,60,80,100,120,130,140,160,180,190,200]
+    },
+    {
+      "id":"CH002","name":"서린화","source_role":"상단 출신 감정가",
+      "private_goal":"가문을 숨기지 않고도 가격·증서·사용 기록을 함께 보는 새로운 감정 기준을 세운다.",
+      "hidden_insecurity":"증서와 가문 권위를 잃으면 자신의 판단에도 아무 가치가 없을지 모른다는 열등감.",
+      "refusal_line":"아버지와 가문의 죄를 이유로 무고한 하급 감정사까지 생계를 잃게 하는 처벌은 거부한다.",
+      "personal_loss_from_damun_choice":"담운이 공개 감정과 비수집을 택할 때 가문 신용·상단 지분·치료비로 쓸 보수를 잃는다.",
+      "choice_without_damun":"담운의 결론을 기다리지 않고 가문 장부의 수정 이력과 피해 배상액을 먼저 공개한다.",
+      "relationship_pressure":"담운의 이름 없는 선행 때문에 자신의 조사와 설득 공적이 사라지는 것에 질투를 느낀다.",
+      "focus_episodes":[21,24,30,37,118,141,150,160,184,198]
+    },
+    {
+      "id":"CH003","name":"곽무석","source_role":"귀장회 파수꾼",
+      "private_goal":"봉인 명령보다 현장 사람의 퇴로와 선택권을 지키는 독립 파수 체계를 만든다.",
+      "hidden_insecurity":"과거 명령을 따른 탓에 구하지 못한 사람의 이름을 기억하면서도 조직 뒤에 숨었다는 죄책감.",
+      "refusal_line":"위험을 줄인다는 이유로 희생자 이름·구조 실패·민간의 거부권을 삭제하지 않는다.",
+      "personal_loss_from_damun_choice":"담운이 설갑을 공동 방어망으로 남기면서 조직 지위·보급·동료 파수꾼의 신뢰를 잃는다.",
+      "choice_without_damun":"귀장회 명령 없이 주민 퇴로를 열고 자신의 인장을 반납한다.",
+      "relationship_pressure":"담운의 윤리를 존중하지만 그 윤리 때문에 자기 부하가 다치는 순간 담운을 용서하지 못한다.",
+      "focus_episodes":[61,67,70,72,75,78,80,151,170,185,197]
+    },
+    {
+      "id":"CH004","name":"소예란","source_role":"신수 의원",
+      "private_goal":"치료·보호·계약을 분리하고 신수가 인간을 심사할 권리를 제도로 만든다.",
+      "hidden_insecurity":"생명을 지키겠다는 확신 때문에 주민의 생계와 인간 환자의 절박함을 가볍게 볼 수 있다는 두려움.",
+      "refusal_line":"구조·치료·먹이를 계약 채무나 소유권 근거로 계산하지 않는다.",
+      "personal_loss_from_damun_choice":"담운이 향로를 숲에 남기면서 즉시 쓸 치료 자원과 의원으로서의 명성을 잃는다.",
+      "choice_without_damun":"두리와 지역 신수의 거절을 근거로 인간 환자에게 불리해도 계약 심사를 중단한다.",
+      "relationship_pressure":"담운이 모두의 책임을 떠안는 습관을 생명을 대신 결정하려는 인간의 오만으로 받아들인다.",
+      "focus_episodes":[41,45,50,54,59,60,94,100,152,169,196]
+    },
+    {
+      "id":"CH005","name":"진여강","source_role":"계약·지분 거래가",
+      "private_goal":"자신이 없어도 작동하며 감정과 생명을 담보로 잡지 않는 공개 책임 계약을 설계한다.",
+      "hidden_insecurity":"협상 능력과 계약 지식이 사라지면 동료들이 자신을 필요로 하지 않을 것이라는 불안.",
+      "refusal_line":"가족·이름·애정·신수의 철회권을 채무 담보로 넣는 계약은 체결하지 않는다.",
+      "personal_loss_from_damun_choice":"담운이 공동 지분안까지 거부하면서 가장 큰 계약 성과와 중앙 운영권을 잃는다.",
+      "choice_without_damun":"각 권역의 미납 책임과 재독점 조건을 공개하고 자신이 최대 지분자가 되는 안을 철회한다.",
+      "relationship_pressure":"담운이 계약 조건을 무시하고 도덕적 책임을 먼저 택할 때 자신이 이용당했다고 느낀다.",
+      "focus_episodes":[101,107,120,134,140,148,160,183,188,190,200]
+    },
+    {
+      "id":"CH006","name":"백장","source_role":"귀장회 수장·중앙 봉인론자",
+      "private_goal":"대형 재앙을 막는 안전 체계를 유지하면서 자신이 삭제한 희생자와 실패를 끝내 기록한다.",
+      "hidden_insecurity":"중앙 봉인이 사라지면 자신이 두려워한 참사가 반복되고 모든 희생이 무의미해질 것이라는 공포.",
+      "refusal_line":"후계 체계도 없이 위험 유산을 해방하거나 책임자를 정하지 않은 채 중앙을 파괴하는 선택은 거부한다.",
+      "personal_loss_from_damun_choice":"담운이 중앙 소유를 거부하면서 수장 권한·조직의 정당성·과거의 자기희생 의미를 잃는다.",
+      "choice_without_damun":"과거 수장 복원보다 현재 사람을 택하고 몸 조각 장갑을 스스로 파괴한다.",
+      "relationship_pressure":"담운 한 사람을 희생하면 다수를 구할 수 있다는 계산 때문에 끝까지 담운의 인간성을 시험한다.",
+      "focus_episodes":[71,78,80,118,140,170,173,176,180,184,190,197]
+    },
+    {
+      "id":"CH007","name":"철구","source_role":"쇠울촌 대장간 일꾼",
+      "private_goal":"실패작을 만든 노동자도 수선권과 공적을 인정받는 공동 풀무 규칙을 만든다.",
+      "hidden_insecurity":"반치 도난과 실패작 표식 때문에 평생 도둑·무능한 일꾼으로 불릴까 두렵다.",
+      "refusal_line":"담운의 수집을 위해 쇠울촌 주민의 생계 도구와 장작 몫을 내주지 않는다.",
+      "personal_loss_from_damun_choice":"담운이 반치를 사용하고 떠나면서 대장간 평판·수선 일감·주민 신뢰가 흔들린다.",
+      "choice_without_damun":"공동 풀무 노동 장부와 실패작 수선 기록을 주민 앞에 공개한다.",
+      "relationship_pressure":"담운이 옳더라도 자신과 마을이 치른 손실을 인정하지 않으면 협조하지 않는다.",
+      "focus_episodes":[1,2,3,5,7,10,31,40]
+    },
+    {
+      "id":"CH008","name":"청묘","source_role":"부유계단 정비사",
+      "private_goal":"중력 역전 때 사람과 화물을 다른 규칙으로 고정하는 안전 정비 표준을 남긴다.",
+      "hidden_insecurity":"자신의 계산 실수 하나가 등반자 추락으로 이어질 수 있다는 강박.",
+      "refusal_line":"사람을 계단 균형추나 장비 번호로 취급하는 운행은 중단한다.",
+      "personal_loss_from_damun_choice":"담운이 분류거부를 택하면 기존 중앙 정비 자격과 부품 공급을 잃는다.",
+      "choice_without_damun":"권한패 없이 계단을 봉쇄하고 뒤처진 등반자를 먼저 구조한다.",
+      "relationship_pressure":"담운이 서두르며 안전 계산을 생략할 때 협조를 거부한다.",
+      "focus_episodes":[161,163,165,169,170,185]
+    },
+    {
+      "id":"CH009","name":"남잠수","source_role":"동해 잠수·인양 노동자",
+      "private_goal":"가문 허락보다 잠수자의 호흡·구조·배상 기준을 우선하는 인양 규칙을 만든다.",
+      "hidden_insecurity":"가족 빚 때문에 위험한 인양을 자원해 동료를 죽게 했다는 죄책감.",
+      "refusal_line":"숨빚을 잠수자의 자녀에게 상속하거나 구조 실패를 개인 과실로만 처리하지 않는다.",
+      "personal_loss_from_damun_choice":"담운의 공동 소유안 때문에 빠른 인양 보수와 빚 상환 기회를 잃는다.",
+      "choice_without_damun":"여섯 가문 승인을 기다리지 않고 붕괴 구역의 잠수자부터 철수시킨다.",
+      "relationship_pressure":"담운의 윤리가 자기 가족의 빚을 해결해 주지 못할 때 공개적으로 반발한다.",
+      "focus_episodes":[101,103,106,110,116,120]
+    },
+    {
+      "id":"CH010","name":"소금모","source_role":"채무 조정인",
+      "private_goal":"생존 물자 빚이 이름·가족·자녀에게 상속되지 않는 조정 규칙을 만든다.",
+      "hidden_insecurity":"자신이 과거 잘못 계산한 이자 때문에 한 가족이 흩어졌다는 사실을 숨긴다.",
+      "refusal_line":"아이·이름·치료권을 채무 담보로 인정하지 않는다.",
+      "personal_loss_from_damun_choice":"담운이 물건을 귀환시키거나 공동 관리로 돌리면 중개 수수료와 상단 신뢰를 잃는다.",
+      "choice_without_damun":"채권자와 관계를 끊더라도 불법 상속 채무 장부를 공개한다.",
+      "relationship_pressure":"진여강의 효율적 계약과 담운의 도덕적 선택 사이에서 어느 쪽도 완전히 믿지 못한다.",
+      "focus_episodes":[25,27,83,87,134,138,148]
+    },
+    {
+      "id":"CH011","name":"육할매","source_role":"약초 기록 노인",
+      "private_goal":"문자를 모르는 채집자의 표시와 남긴 뿌리를 약초 정본에 포함한다.",
+      "hidden_insecurity":"글을 읽지 못해 자신의 지식이 감정가와 의원에게 빼앗길까 두렵다.",
+      "refusal_line":"희귀 약초를 전량 채취하거나 환자를 살린다는 이유로 숲을 영구 잠재우지 않는다.",
+      "personal_loss_from_damun_choice":"향로 비수집으로 손자의 즉시 치료에 쓸 강한 약효를 포기한다.",
+      "choice_without_damun":"가족이 반대해도 씨앗함을 공동체에 열고 채집량을 줄인다.",
+      "relationship_pressure":"소예란의 생태 원칙이 자기 가족에게 적용될 때 냉정함을 느낀다.",
+      "focus_episodes":[51,52,55,57,60]
+    },
+    {
+      "id":"CH012","name":"왕기름","source_role":"왕실 창고 기름칠 담당",
+      "private_goal":"기름과 수선 흔적으로 왕실 인장 위조·교체 이력을 증명하고 하급 노동자의 책임을 분리한다.",
+      "hidden_insecurity":"위조를 눈치채고도 가족 생계를 위해 침묵한 공범이라는 죄책감.",
+      "refusal_line":"왕실 체면을 위해 하급 창고지기 한 사람을 희생양으로 삼지 않는다.",
+      "personal_loss_from_damun_choice":"담운이 수정 이력을 공개하면서 직업·숙소·가족 연금을 잃는다.",
+      "choice_without_damun":"원본 창고를 잠그고 자신이 보관한 기름 배합 기록을 시민감정회에 넘긴다.",
+      "relationship_pressure":"서린화가 가문을 지키려 머뭇거리면 먼저 배신자로 지목한다.",
+      "focus_episodes":[23,24,26,29,30]
+    },
+    {
+      "id":"CH013","name":"차마실","source_role":"찻집 주인·중립 증언 중개자",
+      "private_goal":"세력과 신분이 다른 사람들이 보복 없이 증언을 교환할 중립 장소를 지킨다.",
+      "hidden_insecurity":"비밀을 들으며 번 돈 때문에 실제 피해를 막지 못한 방관자라는 자책.",
+      "refusal_line":"찻집 안에서 채무 추심·강제 서명·피의 보복을 허용하지 않는다.",
+      "personal_loss_from_damun_choice":"담운이 공개 감정을 밀어붙이면 손님과 후원 세력을 잃고 가게가 공격받는다.",
+      "choice_without_damun":"중립을 포기하고 위조 증언의 시간·자리·차 주문 기록을 공개한다.",
+      "relationship_pressure":"담운이 증언자를 보호하지 못하면 다시는 정보를 주지 않는다.",
+      "focus_episodes":[21,25,27,30,132,139]
+    },
+    {
+      "id":"CH014","name":"독우","source_role":"해독 수련생",
+      "private_goal":"독을 모두 없애지 않고 사람과 습지가 함께 버틸 치료 농도 기준을 만든다.",
+      "hidden_insecurity":"과거 성급한 해독으로 환자의 호흡을 망가뜨렸다는 실패를 숨긴다.",
+      "refusal_line":"신수·죄수·가난한 환자를 해독제 시험 대상으로 쓰지 않는다.",
+      "personal_loss_from_damun_choice":"향로를 숲에 남기면서 빠른 치료법과 의원 승급 기회를 잃는다.",
+      "choice_without_damun":"약효가 느려도 독비늘수달의 수로 지표를 따르는 장기 치료를 선택한다.",
+      "relationship_pressure":"소예란의 인정을 원하지만 그녀가 자신의 실패를 알까 두려워 거짓 보고를 한다.",
+      "focus_episodes":[43,46,51,54,57,60]
+    },
+    {
+      "id":"CH015","name":"갈뿌리","source_role":"갈대길 안내자",
+      "private_goal":"역참과 나루 사이의 오래된 농로·장례길을 지우지 않는 길 지도를 남긴다.",
+      "hidden_insecurity":"예전에 돈을 받고 지름길을 팔아 공동묘지 길을 침수시켰다.",
+      "refusal_line":"죽은 사람의 길과 농민 통행을 빠른 상업 노선 때문에 없애지 않는다.",
+      "personal_loss_from_damun_choice":"담운이 옛길의 진실을 밝히면서 안내자 신뢰와 상단 계약을 잃는다.",
+      "choice_without_damun":"자신의 죄를 포함한 침수 지도를 주민 앞에 펼친다.",
+      "relationship_pressure":"담운이 길을 도덕 문제로만 말하고 생계 손실을 계산하지 않으면 반발한다.",
+      "focus_episodes":[11,13,16,19,20]
+    },
+    {
+      "id":"CH016","name":"설누이","source_role":"북설 촌락 대표",
+      "private_goal":"일곱 촌락의 방어·장작·피난 노동을 가구별 형편에 맞게 다시 나눈다.",
+      "hidden_insecurity":"자신이 짠 교대표 때문에 어린 동생이 눈벽 교대 중 죽었다.",
+      "refusal_line":"부유한 촌락이나 귀장회 초소가 공동 교대에서 빠지는 예외를 인정하지 않는다.",
+      "personal_loss_from_damun_choice":"설갑 분산으로 자기 촌락의 독점 방어력과 정치적 영향력을 잃는다.",
+      "choice_without_damun":"표결에서 자기 촌락 몫을 먼저 늘리고 가난한 촌락 부담을 줄인다.",
+      "relationship_pressure":"곽무석의 영웅적 구조가 반복되면 제도가 아니라 개인에게 의존하게 될까 경계한다.",
+      "focus_episodes":[61,64,67,70,74,78]
+    },
+    {
+      "id":"CH017","name":"얼음귀","source_role":"빙벽 밀항 안내자",
+      "private_goal":"신분표가 없는 피난민도 눈벽을 건널 수 있는 비공식 구조로를 유지한다.",
+      "hidden_insecurity":"위험을 과장해 받은 돈으로 가족을 먹여 살렸다는 수치심.",
+      "refusal_line":"어린이·부상자·신원 없는 사람을 속도 때문에 눈밭에 남기지 않는다.",
+      "personal_loss_from_damun_choice":"공식 귀환로가 열리면 밀항 수입과 정보 독점을 잃는다.",
+      "choice_without_damun":"돈을 받지 못해도 눈사태 전 마지막 피난 행렬을 이끈다.",
+      "relationship_pressure":"담운이 규칙을 지키느라 구조 시각을 놓치면 그를 무능한 배달부라 비난한다.",
+      "focus_episodes":[62,65,69,73,79]
+    },
+    {
+      "id":"CH018","name":"유리손","source_role":"위조 인장 제거 기술자",
+      "private_goal":"지운 흔적까지 남기는 수선 방식으로 자신의 위조 기술을 공공 감정에 돌려놓는다.",
+      "hidden_insecurity":"과거 만든 위조 인장 때문에 무고한 상인이 처벌받았다.",
+      "refusal_line":"피해자 서명·수선층·삭제 흔적을 완전히 지우는 의뢰는 받지 않는다.",
+      "personal_loss_from_damun_choice":"공개 감정으로 과거 범죄와 고객 명단이 드러나 자유와 생계를 잃을 수 있다.",
+      "choice_without_damun":"도망치지 않고 위조 도구와 고객 장부를 시민감정회에 제출한다.",
+      "relationship_pressure":"서린화가 자신만 면책받으려 하면 증언을 철회한다.",
+      "focus_episodes":[24,27,29,35,39]
+    },
+    {
+      "id":"CH019","name":"늙은향","source_role":"은퇴 대상 안내자",
+      "private_goal":"기억세를 내지 않아도 찾을 수 있는 옛 우물과 그늘 표식을 후대에 남긴다.",
+      "hidden_insecurity":"젊을 때 피난민의 물을 빼앗고 길 기억을 세관에 팔았다.",
+      "refusal_line":"물·그늘·귀향 기억을 통행세나 거래 담보로 넘기지 않는다.",
+      "personal_loss_from_damun_choice":"지워진 길이 복원되면 과거 범죄와 숨긴 우물이 공개된다.",
+      "choice_without_damun":"자기 재산을 잃더라도 무료 우물 위치와 세관 뇌물 기록을 공개한다.",
+      "relationship_pressure":"모래등이 자신의 과거를 모르는 채 존경하는 것을 견디지 못해 거칠게 대한다.",
+      "focus_episodes":[81,82,85,88,90]
+    },
+    {
+      "id":"CH020","name":"조수종","source_role":"조류탑섬 종지기",
+      "private_goal":"여섯 가문 지분보다 실제 조수·고래 이동·잠수자 귀환을 우선해 종을 울린다.",
+      "hidden_insecurity":"한 가문의 압력으로 경보를 늦춰 잠수자를 잃은 과거.",
+      "refusal_line":"가문 하나의 거부로 전체 구조 경보를 멈추지 않는다.",
+      "personal_loss_from_damun_choice":"공동 관리안이 도입되면 종지기 독점 권한과 가문 후원을 잃는다.",
+      "choice_without_damun":"허가가 없어도 조수등고래의 이동과 붕괴 전조를 보고 비상종을 울린다.",
+      "relationship_pressure":"남잠수가 경보를 무시하고 빚 때문에 잠수하면 그의 구조를 우선할지 갈등한다.",
+      "focus_episodes":[102,106,109,110,116,120]
+    },
+    {
+      "id":"CH021","name":"이름쇠","source_role":"임시 호칭패 제작자",
+      "private_goal":"본명 없이도 치료·숙박·노동·통행을 받을 수 있는 임시 권리표를 만든다.",
+      "hidden_insecurity":"자신의 현재 이름도 돈을 주고 산 것이며 진짜 이름을 기억하지 못한다.",
+      "refusal_line":"노예명·죄명·채무명을 사람에게 강제로 새기지 않는다.",
+      "personal_loss_from_damun_choice":"이름 거래가 해체되면 공방 수입과 자기 신분의 법적 근거를 잃는다.",
+      "choice_without_damun":"자기 이름의 효력을 포기하고 빈 호적 주민에게 임시 호칭패를 무료로 배포한다.",
+      "relationship_pressure":"담운이 이름 없이도 산다고 쉽게 말할 때 이름 없는 사람의 생활 고통을 모른다고 화낸다.",
+      "focus_episodes":[121,122,126,130,132,140]
+    },
+    {
+      "id":"CH022","name":"장부눈","source_role":"중앙장부 감사관",
+      "private_goal":"중앙 기록을 무너뜨리지 않으면서 오류·반론·수정 책임을 영구적으로 남긴다.",
+      "hidden_insecurity":"승진과 생계가 자신이 눈감은 오류 위에 세워졌다.",
+      "refusal_line":"체계 유지를 위해 반론 기록·피해자 이름·수정자를 삭제하지 않는다.",
+      "personal_loss_from_damun_choice":"장부 공개로 직위·연금·가족의 신원 특혜를 잃는다.",
+      "choice_without_damun":"중앙 서버가 닫히기 전에 오류 장부를 여섯 공개장부함으로 복제한다.",
+      "relationship_pressure":"담운이 장부 전체를 악으로 취급하면 실제로 장부 덕분에 살아난 사람들을 들이민다.",
+      "focus_episodes":[131,134,137,140,159,181]
+    },
+    {
+      "id":"CH023","name":"말매듭","source_role":"구두계약 기록자",
+      "private_goal":"문맹 주민의 말·몸짓·증인을 계약과 철회 기록으로 인정받게 한다.",
+      "hidden_insecurity":"글을 읽지 못해 진여강의 계약을 이해하지 못하면서도 아는 척했다.",
+      "refusal_line":"슬픔·애정·가족 의무를 풀 수 없는 계약 매듭으로 묶지 않는다.",
+      "personal_loss_from_damun_choice":"공개·분산 계약으로 자신의 독점 증언 수수료와 권위를 잃는다.",
+      "choice_without_damun":"자신의 말보다 주민 여러 명의 상충 증언을 함께 기록한다.",
+      "relationship_pressure":"진여강에게 열등감을 느끼지만 그의 조건 분해 방식이 필요해 계속 충돌한다.",
+      "focus_episodes":[46,48,50,133,136,140,148]
+    },
+    {
+      "id":"CH024","name":"숨빚","source_role":"산소 부채를 진 잠수자",
+      "private_goal":"구조받은 호흡을 금전·가문 충성·자녀 채무로 갚지 않아도 되는 규칙을 만든다.",
+      "hidden_insecurity":"물속 공황으로 동료 줄을 놓쳤지만 장비 고장이라고 거짓말했다.",
+      "refusal_line":"숨빚을 가족에게 상속하거나 구조 순서를 채무 크기로 정하지 않는다.",
+      "personal_loss_from_damun_choice":"공동 인양으로 개인 보너스와 가족 빚 상환 기회를 잃는다.",
+      "choice_without_damun":"자신의 공황 기록을 공개하고 가장 위험한 구조의 후방 안전줄을 맡는다.",
+      "relationship_pressure":"남잠수의 무모함을 미워하면서도 자신을 구한 빚 때문에 거절하지 못한다.",
+      "focus_episodes":[103,105,108,110,116]
+    },
+    {
+      "id":"CH025","name":"모래등","source_role":"사막 행렬 등불지기",
+      "private_goal":"기억세 없이도 우물·그늘·귀향 방향을 찾는 반복 가능한 등불 표식을 만든다.",
+      "hidden_insecurity":"기억세로 고향 위치를 잃어 늙은향을 가족처럼 의지한다.",
+      "refusal_line":"길 기억을 세관·대상주·지도 유물에 독점 판매하지 않는다.",
+      "personal_loss_from_damun_choice":"사막 지도가 해체되면 등불지기 직업과 빠른 대상 계약을 잃는다.",
+      "choice_without_damun":"행렬이 떠나도 지워진 길에 등불을 남겨 뒤처진 피난민을 기다린다.",
+      "relationship_pressure":"늙은향의 과거 배신을 알게 된 뒤 길을 배운 은혜와 분노 사이에서 흔들린다.",
+      "focus_episodes":[82,84,87,89,90]
+    },
+    {
+      "id":"CH026","name":"북눈","source_role":"북설 원거리 감시자",
+      "private_goal":"지도와 중앙 봉화에서 빠진 작은 촌락까지 재난 신호망에 포함한다.",
+      "hidden_insecurity":"한 번 잘못 본 눈발 때문에 구조대를 엉뚱한 골짜기로 보냈다.",
+      "refusal_line":"느린 촌락·가난한 촌락·신원 없는 피난민을 구조 우선순위에서 지우지 않는다.",
+      "personal_loss_from_damun_choice":"분산 봉화망이 생기면 독점 감시권과 귀장회 보수를 잃는다.",
+      "choice_without_damun":"자기 판정이 틀릴 가능성을 공개하고 일곱 촌락의 상충 신호를 모두 울린다.",
+      "relationship_pressure":"설누이의 정치적 타협을 안전보다 앞선 배신으로 오해한다.",
+      "focus_episodes":[62,64,68,70,76,79]
+    },
+    {
+      "id":"CH027","name":"경도먹","source_role":"왕실 필사·먹 배합 기술자",
+      "private_goal":"원문과 수정본·삭제 흔적을 같은 문서에 남기는 필사 표준을 만든다.",
+      "hidden_insecurity":"가족을 살리기 위해 한 번 왕실 인장을 모사했고 그 문서가 아직 살아 있다.",
+      "refusal_line":"초고·수정안·반대 의견을 태워 단일 원본만 남기지 않는다.",
+      "personal_loss_from_damun_choice":"왕실 오류 공개로 자신이 위조범으로 처벌받고 가족 보호를 잃을 수 있다.",
+      "choice_without_damun":"자기 죄를 포함한 먹 배합표와 수정 시각을 시민전시거리에 복제한다.",
+      "relationship_pressure":"왕기름과 서로가 더 큰 공범이라고 의심하며 증언 순서를 두고 충돌한다.",
+      "focus_episodes":[23,26,29,30,132,138]
+    },
+    {
+      "id":"CH028","name":"우엉노파","source_role":"우엉들 토지·길 증언자",
+      "private_goal":"문서에 없는 공동 밭·장례길·홍수 피난로의 사용권을 후대에 남긴다.",
+      "hidden_insecurity":"수십 년 전 상단 돈을 받고 공동 길 하나를 사유지라고 증언했다.",
+      "refusal_line":"공동 밭과 피난로를 담장·증서·통행료로 막지 않는다.",
+      "personal_loss_from_damun_choice":"옛길 조사가 진행되면 과거 거짓 증언과 가족 토지까지 잃는다.",
+      "choice_without_damun":"자기 가족이 반대해도 반복 수선된 울타리와 매장 흔적을 공개 증언한다.",
+      "relationship_pressure":"갈뿌리와 서로의 거짓말을 알고 있어 한쪽이 먼저 말하면 다른 쪽도 무너진다.",
+      "focus_episodes":[11,14,17,19,20]
+    }
+  ]
+}

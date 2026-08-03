@@ -1,0 +1,277 @@
+{
+  "version": "3.3",
+  "status": "canon_registry",
+  "count": 120,
+  "living_entities_excluded": true,
+  "rule": "발견·임시 보관·사용·공동 관리·귀환·비수집·책임 인계가 모두 수집 진척으로 인정되며 생명체는 포함하지 않는다.",
+  "role_slots": {
+    "core_rule": "서브액트의 소유권 규칙을 직접 드러낸다.",
+    "material_evidence": "문서보다 먼저 노동·사용·수선 흔적을 제시한다.",
+    "logistics_pressure": "이동·보관·수선·통행의 병목을 만든다.",
+    "limited_utility": "문제를 해결할 수 있지만 기능 손실이나 사용 제한을 남긴다.",
+    "relationship_cost": "인물 사이의 신뢰·약속·책임을 바꾼다.",
+    "responsibility_transfer": "현재 문제의 비용을 다음 사람·장소·Subact로 넘긴다."
+  },
+  "batches": [
+    {
+      "subact_id": "A01",
+      "episodes": [1,10],
+      "theme": "무주·사용 이력·첫 책임",
+      "items": [
+        {"id":"CI001","name":"무주함","category":"container","first_episode":1,"role_slot":"core_rule","cost_axis":"인격·책임","resolution":"temporary_custody","set_refs":["SET002","SET024"],"track_id":"IT01","final_episode":200,"final_state":"중앙 권한을 잃고 평범한 빈 검함으로 남는다."},
+        {"id":"CI002","name":"반치","category":"blade","first_episode":2,"role_slot":"limited_utility","cost_axis":"내구·선택","resolution":"use_without_ownership","set_refs":["SET024"],"track_id":"IT02","final_episode":191,"final_state":"사람이 아니라 강제 소유 연결선을 자르는 귀로식 도구가 된다."},
+        {"id":"CI003","name":"빈 명패","category":"record","first_episode":7,"role_slot":"relationship_cost","cost_axis":"이름·행적","resolution":"responsibility_transfer","set_refs":["SET002","SET024"],"track_id":"IT03","final_episode":199,"final_state":"본명 대신 선택과 배송 행적을 기록한다."},
+        {"id":"CI004","name":"불먹장갑","category":"protective_tool","first_episode":5,"role_slot":"limited_utility","cost_axis":"촉각","resolution":"conditional_use","set_refs":["SET001"],"track_id":"IT05","final_episode":40,"final_state":"열을 흡수하지만 촉각 손실 한계를 공개한 채 공동 수선품이 된다."},
+        {"id":"CI005","name":"소리 없는 망치","category":"craft_tool","first_episode":7,"role_slot":"material_evidence","cost_axis":"말·기억","resolution":"return","set_refs":["SET001","SET013"],"track_id":"IT09","final_episode":100,"final_state":"두리를 구하기 위해 원래 대장간으로 영구 귀환한다."},
+        {"id":"CI006","name":"냉철못","category":"infrastructure","first_episode":15,"role_slot":"logistics_pressure","cost_axis":"통행·상극","resolution":"joint_management","set_refs":["SET001","SET003"],"track_id":"IT05","final_episode":40,"final_state":"다리와 장비를 함께 지키는 공동 수선 규격으로 남는다."}
+      ]
+    },
+    {
+      "subact_id": "A02",
+      "episodes": [11,20],
+      "theme": "길·고향·운송 책임",
+      "items": [
+        {"id":"CI007","name":"봉인표 역패","category":"permit","first_episode":11,"role_slot":"core_rule","cost_axis":"통행권","resolution":"responsibility_transfer","set_refs":["SET002"],"final_episode":20,"final_state":"조직 독점표에서 현장 이의 기록이 붙는 통행패로 바뀐다."},
+        {"id":"CI008","name":"돌아오는 방울","category":"signal","first_episode":12,"role_slot":"relationship_cost","cost_axis":"귀환 약속","resolution":"shared_use","set_refs":["SET002"],"final_episode":20,"final_state":"소유자가 아니라 귀환을 기다리는 공동체가 울리는 방울이 된다."},
+        {"id":"CI009","name":"고향 흙주머니","category":"evidence","first_episode":13,"role_slot":"material_evidence","cost_axis":"고향 이탈","resolution":"non_collection","set_refs":["SET003"],"final_episode":20,"final_state":"담운이 가져가지 않고 길을 증언하는 주민에게 남긴다."},
+        {"id":"CI010","name":"길먹는 수레못","category":"transport_tool","first_episode":14,"role_slot":"logistics_pressure","cost_axis":"이동거리","resolution":"conditional_use","set_refs":["SET003"],"final_episode":20,"final_state":"지름길을 만드는 대신 뒤 길을 망가뜨리는 결함 표본으로 봉인된다."},
+        {"id":"CI011","name":"갈대나루 무게끈","category":"logistics_tool","first_episode":16,"role_slot":"limited_utility","cost_axis":"파손 책임","resolution":"joint_management","set_refs":["SET003"],"final_episode":20,"final_state":"육로와 수로가 함께 책임을 기록하는 환적 기준이 된다."},
+        {"id":"CI012","name":"떠난 집 열쇠","category":"key","first_episode":18,"role_slot":"responsibility_transfer","cost_axis":"가족·관계","resolution":"return","set_refs":["SET003"],"final_episode":20,"final_state":"집이 아니라 남은 가족에게 돌아가 고향의 권리를 증명한다."}
+      ]
+    },
+    {
+      "subact_id": "A03",
+      "episodes": [21,30],
+      "theme": "진품·가격·사용 기억",
+      "items": [
+        {"id":"CI013","name":"모조 왕검","category":"blade","first_episode":22,"role_slot":"core_rule","cost_axis":"정통성","resolution":"non_collection","set_refs":["SET004"],"track_id":"IT04","final_episode":30,"final_state":"담운에게 수납되지 않고 시민전시거리에 남아 사용 기억을 보존한다."},
+        {"id":"CI014","name":"왕실 진검","category":"blade","first_episode":23,"role_slot":"material_evidence","cost_axis":"왕실 신뢰","resolution":"return","set_refs":["SET005"],"track_id":"IT04","final_episode":30,"final_state":"왕실 기록관에 돌아가되 원본과 수정 이력이 함께 공개된다."},
+        {"id":"CI015","name":"거짓말을 먹는 귀걸이","category":"evidence_tool","first_episode":25,"role_slot":"relationship_cost","cost_axis":"고백·사생활","resolution":"conditional_use","set_refs":["SET004"],"final_episode":30,"final_state":"강제 심문 금지 조건이 붙은 공개 감정 도구가 된다."},
+        {"id":"CI016","name":"열두손 인장","category":"craft_mark","first_episode":24,"role_slot":"material_evidence","cost_axis":"공동 책임","resolution":"joint_management","set_refs":["SET004"],"final_episode":30,"final_state":"열두 제작자가 함께 눌러야 작동하는 공동 제작 증거로 남는다."},
+        {"id":"CI017","name":"수정 공고판","category":"public_record","first_episode":27,"role_slot":"responsibility_transfer","cost_axis":"신용·배상","resolution":"shared_use","set_refs":["SET005"],"final_episode":30,"final_state":"오류를 지우지 않고 수정·배상 이력을 겹쳐 기록한다."},
+        {"id":"CI018","name":"시민전시 칼집","category":"display_tool","first_episode":30,"role_slot":"logistics_pressure","cost_axis":"보존비","resolution":"joint_management","set_refs":["SET004"],"final_episode":30,"final_state":"왕검보다 시민 사용 증언을 먼저 보여주는 공개 보관함이 된다."}
+      ]
+    },
+    {
+      "subact_id": "A04",
+      "episodes": [31,40],
+      "theme": "제작 노동·실패작·첫 완성",
+      "items": [
+        {"id":"CI019","name":"한숨풀무","category":"craft_relic","first_episode":28,"role_slot":"core_rule","cost_axis":"후회 과부하","resolution":"joint_management","set_refs":["SET001"],"track_id":"IT05","final_episode":40,"final_state":"한 사람이 소유하지 않고 열두손골 공동 공방의 동력으로 남는다."},
+        {"id":"CI020","name":"무명 장인의 재함","category":"memorial","first_episode":31,"role_slot":"material_evidence","cost_axis":"이름·공적","resolution":"return","set_refs":["SET005"],"final_episode":40,"final_state":"이름 없는 장인의 가족과 제자들이 나누어 보관한다."},
+        {"id":"CI021","name":"후회저울","category":"measuring_tool","first_episode":32,"role_slot":"limited_utility","cost_axis":"감정 노출","resolution":"conditional_use","set_refs":["SET005"],"final_episode":40,"final_state":"무게가 아니라 사용자가 감당하지 못한 선택을 경고하는 도구가 된다."},
+        {"id":"CI022","name":"반쪽 집게","category":"craft_tool","first_episode":34,"role_slot":"logistics_pressure","cost_axis":"작업시간","resolution":"shared_use","set_refs":["SET005"],"final_episode":40,"final_state":"두 사람이 서로 다른 손으로 잡아야 작동하는 수선 도구가 된다."},
+        {"id":"CI023","name":"마지막 주문 두레박","category":"daily_tool","first_episode":6,"role_slot":"relationship_cost","cost_axis":"미완성 약속","resolution":"return","set_refs":["SET005"],"final_episode":36,"final_state":"우물마당에 설치되어 장인의 마지막 노동을 생활 속에서 계속 쓴다."},
+        {"id":"CI024","name":"열두손 작업대","category":"workplace_relic","first_episode":28,"role_slot":"responsibility_transfer","cost_axis":"공방 지분","resolution":"joint_management","set_refs":["SET005"],"final_episode":40,"final_state":"제작표식과 실패작을 공개하는 공동 작업대로 복원된다."}
+      ]
+    },
+    {
+      "subact_id": "A05",
+      "episodes": [41,50],
+      "theme": "신수 계약 거절·인간 심사",
+      "items": [
+        {"id":"CI025","name":"빈 계약목걸이","category":"contract_tool","first_episode":41,"role_slot":"core_rule","cost_axis":"계약 강제","resolution":"non_collection","set_refs":["SET006"],"final_episode":50,"final_state":"신수가 선택하지 않으면 끝내 빈 채로 남는 계약 표본이 된다."},
+        {"id":"CI026","name":"냄새길 풍경","category":"signal","first_episode":42,"role_slot":"material_evidence","cost_axis":"추적 노출","resolution":"shared_use","set_refs":["SET006"],"final_episode":50,"final_state":"주인이 아니라 길을 선택한 신수의 방향만 울린다."},
+        {"id":"CI027","name":"어미 흔적 천","category":"evidence","first_episode":44,"role_slot":"relationship_cost","cost_axis":"가족 기억","resolution":"return","set_refs":["SET008"],"final_episode":50,"final_state":"두리에게 돌려주되 인간이 보관한 냄새 기록은 폐기한다."},
+        {"id":"CI028","name":"밀매 우리 자물쇠","category":"restraint","first_episode":45,"role_slot":"logistics_pressure","cost_axis":"구조 시간","resolution":"dismantle","set_refs":["SET008"],"final_episode":50,"final_state":"구조 뒤 분해되어 위조 계약 수법의 증거로만 남는다."},
+        {"id":"CI029","name":"철회 매듭","category":"contract_record","first_episode":48,"role_slot":"limited_utility","cost_axis":"동행 전력","resolution":"responsibility_transfer","set_refs":["SET006"],"final_episode":50,"final_state":"어느 쪽이든 풀면 계약이 끝나는 상호 철회 장치가 된다."},
+        {"id":"CI030","name":"인간심사패","category":"permit","first_episode":50,"role_slot":"responsibility_transfer","cost_axis":"평판·자격","resolution":"shared_use","set_refs":["SET006"],"final_episode":152,"final_state":"인간이 신수를 심사하는 패가 아니라 신수가 인간의 자격을 기록하는 역계약패가 된다."}
+      ]
+    },
+    {
+      "subact_id": "A06",
+      "episodes": [51,60],
+      "theme": "생태·비수집·공동 관리",
+      "items": [
+        {"id":"CI031","name":"잠든 숲 향로","category":"ecology_relic","first_episode":51,"role_slot":"core_rule","cost_axis":"숲의 자율성","resolution":"non_collection","set_refs":["SET007"],"track_id":"IT06","final_episode":60,"final_state":"수집하지 않고 주민과 신수의 공동 철회 조건 아래 숲에 남는다."},
+        {"id":"CI032","name":"독왕초 씨앗함","category":"seed_vault","first_episode":52,"role_slot":"material_evidence","cost_axis":"생태 균형","resolution":"joint_management","set_refs":["SET008"],"final_episode":60,"final_state":"채취량과 남긴 뿌리를 함께 기록하는 공동 종자함이 된다."},
+        {"id":"CI033","name":"공동 숨돌","category":"medical_tool","first_episode":53,"role_slot":"limited_utility","cost_axis":"호흡 부채","resolution":"shared_use","set_refs":["SET007"],"final_episode":60,"final_state":"사람과 신수가 번갈아 쓰며 사용 시간을 공개하는 치료 도구가 된다."},
+        {"id":"CI034","name":"깨우지 않는 종","category":"signal","first_episode":55,"role_slot":"logistics_pressure","cost_axis":"경보 지연","resolution":"conditional_use","set_refs":["SET007"],"final_episode":60,"final_state":"큰 소리 대신 땅의 진동으로 위험만 알리는 숲 경보가 된다."},
+        {"id":"CI035","name":"뿌리기억 삽","category":"craft_tool","first_episode":57,"role_slot":"material_evidence","cost_axis":"채집 기억","resolution":"return","set_refs":["SET008"],"final_episode":60,"final_state":"독왕초림 채집자들에게 돌아가 뿌리 손상 기록을 남긴다."},
+        {"id":"CI036","name":"비수집 표찰","category":"canon_record","first_episode":60,"role_slot":"responsibility_transfer","cost_axis":"즉시 전력","resolution":"responsibility_transfer","set_refs":["SET007"],"final_episode":197,"final_state":"소유하지 않은 선택도 관계와 책임을 만들었다는 원격 공명 증거가 된다."}
+      ]
+    },
+    {
+      "subact_id": "A07",
+      "episodes": [61,70],
+      "theme": "공동 방어·분산 장비",
+      "items": [
+        {"id":"CI037","name":"설갑 일곱 조각","category":"distributed_armor","first_episode":61,"role_slot":"core_rule","cost_axis":"교대 노동","resolution":"joint_management","set_refs":["SET009"],"track_id":"IT07","final_episode":70,"final_state":"한 사람의 갑옷이 아니라 일곱 촌락의 분산 방어망으로 완성된다."},
+        {"id":"CI038","name":"교대봉","category":"duty_record","first_episode":62,"role_slot":"relationship_cost","cost_axis":"가구 노동","resolution":"shared_use","set_refs":["SET009"],"final_episode":70,"final_state":"가난한 집에 숨겨지던 교대 부담을 공개 기록한다."},
+        {"id":"CI039","name":"눈벽못","category":"infrastructure","first_episode":64,"role_slot":"logistics_pressure","cost_axis":"수선 인력","resolution":"joint_management","set_refs":["SET009"],"final_episode":70,"final_state":"촌락별로 다른 눈벽을 하나의 규격이 아닌 호환 체계로 잇는다."},
+        {"id":"CI040","name":"마른장작 계량함","category":"resource_tool","first_episode":65,"role_slot":"material_evidence","cost_axis":"난방 몫","resolution":"shared_use","set_refs":["SET009"],"final_episode":70,"final_state":"방어와 생계에 쓴 장작을 분리 기록한다."},
+        {"id":"CI041","name":"구조명부 방패안감","category":"protective_record","first_episode":67,"role_slot":"material_evidence","cost_axis":"희생자 이름","resolution":"responsibility_transfer","set_refs":["SET009"],"final_episode":78,"final_state":"지킨 사람과 버린 사람의 이름을 동시에 품는다."},
+        {"id":"CI042","name":"칠촌 공명종","category":"signal_network","first_episode":70,"role_slot":"responsibility_transfer","cost_axis":"동시 대응","resolution":"joint_management","set_refs":["SET009"],"final_episode":196,"final_state":"중앙 명령 없이도 일곱 마을이 자발적으로 응답하는 방어 종망이 된다."}
+      ]
+    },
+    {
+      "subact_id": "A08",
+      "episodes": [71,80],
+      "theme": "조직 이탈·현장 책임",
+      "items": [
+        {"id":"CI043","name":"삭제기록 칼","category":"record_tool","first_episode":71,"role_slot":"core_rule","cost_axis":"피해자 기억","resolution":"dismantle","set_refs":["SET010"],"final_episode":80,"final_state":"삭제 기능은 파기되고 지운 흔적만 감사 증거로 보존된다."},
+        {"id":"CI044","name":"빈 손목 보호대","category":"protective_tool","first_episode":72,"role_slot":"relationship_cost","cost_axis":"권한 상실","resolution":"return","set_refs":["SET010"],"track_id":"IT14","final_episode":197,"final_state":"백장의 권한이 아니라 버린 권한의 흔적을 기억하는 보호대로 남는다."},
+        {"id":"CI045","name":"파수꾼 퇴로방패","category":"shield","first_episode":73,"role_slot":"limited_utility","cost_axis":"후퇴 선택","resolution":"shared_use","set_refs":["SET010"],"final_episode":80,"final_state":"적을 막는 방패보다 주민의 퇴로를 여는 현장 장비가 된다."},
+        {"id":"CI046","name":"희생자 이름판","category":"memorial_record","first_episode":75,"role_slot":"material_evidence","cost_axis":"조직 정당성","resolution":"joint_management","set_refs":["SET010"],"final_episode":80,"final_state":"봉인 성공 수치와 함께 희생자 이름을 공개한다."},
+        {"id":"CI047","name":"봉화열쇠","category":"key","first_episode":77,"role_slot":"logistics_pressure","cost_axis":"지휘권","resolution":"responsibility_transfer","set_refs":["SET010"],"final_episode":80,"final_state":"귀장회 본부가 아니라 백야초소 교대자에게 인계된다."},
+        {"id":"CI048","name":"이탈 인장","category":"authority_mark","first_episode":80,"role_slot":"responsibility_transfer","cost_axis":"조직 보호","resolution":"non_collection","set_refs":["SET010"],"final_episode":80,"final_state":"곽무석이 조직 지위를 버린 증거로 본인이 보관한다."}
+      ]
+    },
+    {
+      "subact_id": "A09",
+      "episodes": [81,90],
+      "theme": "지름길·기억세·상극 전시",
+      "items": [
+        {"id":"CI049","name":"사막을 접는 지도","category":"map_relic","first_episode":81,"role_slot":"core_rule","cost_axis":"길·귀향 기억","resolution":"dismantle","set_refs":["SET011"],"track_id":"IT08","final_episode":90,"final_state":"접는 기능을 분해하고 지워진 옛길을 복원하는 지도판으로 바뀐다."},
+        {"id":"CI050","name":"기억세 장대파편","category":"tax_record","first_episode":83,"role_slot":"relationship_cost","cost_axis":"사생활·신원","resolution":"public_evidence","set_refs":["SET011"],"final_episode":90,"final_state":"세관이 거둔 기억을 피해자에게 돌려주는 감사 증거가 된다."},
+        {"id":"CI051","name":"천품 파편","category":"power_fragment","first_episode":86,"role_slot":"limited_utility","cost_axis":"인격·상극","resolution":"conditional_use","set_refs":["SET012"],"track_id":"IT08","final_episode":100,"final_state":"강한 장착품이 아니라 중앙 분류의 위험을 증명하는 파편으로 봉인된다."},
+        {"id":"CI052","name":"되감기는 발자국 모래병","category":"route_tool","first_episode":84,"role_slot":"material_evidence","cost_axis":"이동 반복","resolution":"shared_use","set_refs":["SET011"],"final_episode":90,"final_state":"사라진 대상로를 찾는 구조대의 공동 도구가 된다."},
+        {"id":"CI053","name":"지워진 길 표석","category":"landmark","first_episode":88,"role_slot":"logistics_pressure","cost_axis":"복구 노동","resolution":"return","set_refs":["SET011"],"final_episode":90,"final_state":"기억잔촌 입구에 돌아가 옛 귀향길을 표시한다."},
+        {"id":"CI054","name":"상극 전시명패","category":"classification_record","first_episode":90,"role_slot":"responsibility_transfer","cost_axis":"오류 수납","resolution":"public_evidence","set_refs":["SET012"],"final_episode":100,"final_state":"생명과 물건을 같은 칸에 넣은 폐분관 오류의 핵심 증거가 된다."}
+      ]
+    },
+    {
+      "subact_id": "A10",
+      "episodes": [91,100],
+      "theme": "핵심 유산 귀환·생명 분류 거부",
+      "items": [
+        {"id":"CI055","name":"귀환 기록판","category":"return_record","first_episode":91,"role_slot":"core_rule","cost_axis":"수집 진척","resolution":"responsibility_transfer","set_refs":["SET013"],"track_id":"IT09","final_episode":100,"final_state":"핵심 유산을 놓아준 선택을 실패가 아닌 귀환 진척으로 기록한다."},
+        {"id":"CI056","name":"유리방 분류침","category":"classification_tool","first_episode":92,"role_slot":"limited_utility","cost_axis":"오분류","resolution":"dismantle","set_refs":["SET012"],"final_episode":100,"final_state":"분류 기능을 잃고 오류 기준을 보여주는 표본으로 남는다."},
+        {"id":"CI057","name":"그림자 감금끈","category":"restraint","first_episode":93,"role_slot":"logistics_pressure","cost_axis":"퇴로·동행","resolution":"dismantle","set_refs":["SET012"],"final_episode":100,"final_state":"두리를 묶은 매듭이 풀리고 다시 묶을 수 없도록 잘린다."},
+        {"id":"CI058","name":"바닷물 문틈병","category":"transition_tool","first_episode":96,"role_slot":"material_evidence","cost_axis":"다음 장소 침수","resolution":"shared_use","set_refs":["SET013"],"final_episode":101,"final_state":"동해문이 열린 원인을 기록하는 경계 표본이 된다."},
+        {"id":"CI059","name":"놓아준 망치 자리쇠","category":"absence_record","first_episode":99,"role_slot":"relationship_cost","cost_axis":"전력 빈칸","resolution":"non_collection","set_refs":["SET013"],"final_episode":197,"final_state":"망치가 없어도 관계와 원격 공명이 남는 빈자리 증거가 된다."},
+        {"id":"CI060","name":"생명분류 거부패","category":"rights_record","first_episode":100,"role_slot":"responsibility_transfer","cost_axis":"중앙 접근권","resolution":"shared_use","set_refs":["SET013"],"final_episode":196,"final_state":"살아 있는 존재의 자동 수납을 거부하는 모든 신수의 공통 권리패가 된다."}
+      ]
+    },
+    {
+      "subact_id": "A11",
+      "episodes": [101,110],
+      "theme": "인양·숨빚·여섯 가문",
+      "items": [
+        {"id":"CI061","name":"기억 닻","category":"anchor_relic","first_episode":101,"role_slot":"core_rule","cost_axis":"장소 기억","resolution":"joint_management","set_refs":["SET014"],"track_id":"IT10","final_episode":120,"final_state":"한 가문의 소유물이 아니라 침몰도시의 공동 기억 좌표가 된다."},
+        {"id":"CI062","name":"여섯 닻줄 허가패","category":"permit_set","first_episode":102,"role_slot":"relationship_cost","cost_axis":"거부권","resolution":"joint_management","set_refs":["SET014"],"track_id":"IT10","final_episode":120,"final_state":"여섯 가문 중 하나라도 거부하면 멈추되 거부 비용도 공개한다."},
+        {"id":"CI063","name":"숨빚 목걸이","category":"breathing_tool","first_episode":103,"role_slot":"limited_utility","cost_axis":"후불 호흡","resolution":"conditional_use","set_refs":["SET014"],"final_episode":110,"final_state":"빌린 호흡과 회복 시간을 분리 기록하는 잠수 안전구가 된다."},
+        {"id":"CI064","name":"침몰도시 축소지도","category":"map_relic","first_episode":105,"role_slot":"logistics_pressure","cost_axis":"공간·탈출로","resolution":"joint_management","set_refs":["SET014"],"final_episode":120,"final_state":"도시를 접는 권한을 여섯 허가로 나누고 단독 사용을 금지한다."},
+        {"id":"CI065","name":"공동창고 여섯열쇠","category":"key_set","first_episode":107,"role_slot":"responsibility_transfer","cost_axis":"보관 지분","resolution":"joint_management","set_refs":["SET014"],"final_episode":120,"final_state":"열 권리와 닫을 책임이 서로 다른 가문에 분산된다."},
+        {"id":"CI066","name":"조수종 조각","category":"signal","first_episode":109,"role_slot":"material_evidence","cost_axis":"출항 시간","resolution":"return","set_refs":["SET014"],"final_episode":110,"final_state":"조류탑섬에 돌아가 여섯 항로의 시간차를 경고한다."}
+      ]
+    },
+    {
+      "subact_id": "A12",
+      "episodes": [111,120],
+      "theme": "공동 소유·수장 초상·현재 인격",
+      "items": [
+        {"id":"CI067","name":"최후 수장 초상","category":"portrait_relic","first_episode":111,"role_slot":"core_rule","cost_axis":"정체성 의심","resolution":"public_evidence","set_refs":["SET015"],"track_id":"IT14","final_episode":180,"final_state":"환생 증거가 아니라 과거와 현재를 구분하는 질문으로 남는다."},
+        {"id":"CI068","name":"얼굴 없는 표지판","category":"identity_record","first_episode":112,"role_slot":"logistics_pressure","cost_axis":"신원·통행","resolution":"shared_use","set_refs":["SET015"],"final_episode":120,"final_state":"얼굴 대신 행동 경로를 표시하는 항로판으로 고쳐진다."},
+        {"id":"CI069","name":"여섯 가문 기억패","category":"testimony_set","first_episode":114,"role_slot":"material_evidence","cost_axis":"기억 충돌","resolution":"joint_management","set_refs":["SET015"],"final_episode":120,"final_state":"서로 모순되는 기억을 지우지 않고 함께 보관한다."},
+        {"id":"CI070","name":"거꾸로 기포병","category":"evidence_tool","first_episode":115,"role_slot":"limited_utility","cost_axis":"방향 감각","resolution":"conditional_use","set_refs":["SET015"],"final_episode":120,"final_state":"침몰도시의 위아래가 뒤집힐 때만 작동하는 구조 표식이 된다."},
+        {"id":"CI071","name":"공동소유 장부틀","category":"governance_tool","first_episode":118,"role_slot":"relationship_cost","cost_axis":"처리 지연","resolution":"joint_management","set_refs":["SET015"],"final_episode":140,"final_state":"한 원본 대신 여섯 수정 기록을 병렬로 끼우는 틀이 된다."},
+        {"id":"CI072","name":"현재행적 거울","category":"identity_tool","first_episode":120,"role_slot":"responsibility_transfer","cost_axis":"과거 권한","resolution":"non_collection","set_refs":["SET015"],"final_episode":180,"final_state":"과거 얼굴이 아니라 지금까지의 선택만 비추고 담운에게 소유되지 않는다."}
+      ]
+    },
+    {
+      "subact_id": "A13",
+      "episodes": [121,130],
+      "theme": "이름 상실·습관·관계 증명",
+      "items": [
+        {"id":"CI073","name":"이름 지우는 가면","category":"identity_relic","first_episode":121,"role_slot":"core_rule","cost_axis":"이름·관계","resolution":"dismantle","set_refs":["SET016"],"track_id":"IT11","final_episode":130,"final_state":"이름을 지우는 기능은 파기되고 기억 손실 사례만 남는다."},
+        {"id":"CI074","name":"어린 배달패","category":"identity_record","first_episode":123,"role_slot":"material_evidence","cost_axis":"과거 책임","resolution":"return","set_refs":["SET016"],"track_id":"IT11","final_episode":130,"final_state":"담운의 본명을 증명하지 않고 오래된 배송 습관만 확인한다."},
+        {"id":"CI075","name":"무명견 냄새끈","category":"scent_record","first_episode":125,"role_slot":"relationship_cost","cost_axis":"사생활·추적","resolution":"non_collection","set_refs":["SET016"],"final_episode":130,"final_state":"무명견이 선택한 사람에게 남고 인간 장부에는 복사되지 않는다."},
+        {"id":"CI076","name":"임시 호칭패","category":"permit","first_episode":122,"role_slot":"logistics_pressure","cost_axis":"숙박·치료·통행","resolution":"shared_use","set_refs":["SET016"],"final_episode":140,"final_state":"이름이 없는 사람에게도 기본 생활권을 주는 임시 권리패가 된다."},
+        {"id":"CI077","name":"빌린 칭호 등표","category":"title_record","first_episode":127,"role_slot":"limited_utility","cost_axis":"원한·채무","resolution":"return","set_refs":["SET016"],"final_episode":130,"final_state":"전 사용자에게 돌아가 미해결 의무와 함께 공개된다."},
+        {"id":"CI078","name":"습관증명 식기","category":"daily_evidence","first_episode":129,"role_slot":"responsibility_transfer","cost_axis":"관계 증언","resolution":"shared_use","set_refs":["SET016"],"final_episode":130,"final_state":"문서 없는 주민이 서로의 생활 습관을 증명하는 공동 물건이 된다."}
+      ]
+    },
+    {
+      "subact_id": "A14",
+      "episodes": [131,140],
+      "theme": "중앙 장부·분산 기록·행적 책임",
+      "items": [
+        {"id":"CI079","name":"무명시 이름장부","category":"central_record","first_episode":131,"role_slot":"core_rule","cost_axis":"중앙 신원","resolution":"dismantle","set_refs":["SET017"],"track_id":"IT12","final_episode":140,"final_state":"한 원본 권한을 잃고 여섯 공개 기록으로 분산된다."},
+        {"id":"CI080","name":"빈 호적죽간","category":"identity_record","first_episode":132,"role_slot":"material_evidence","cost_axis":"법적 부재","resolution":"shared_use","set_refs":["SET017"],"final_episode":140,"final_state":"이름 대신 관계·노동·거주 흔적을 기록한다."},
+        {"id":"CI081","name":"행적주판","category":"judgment_tool","first_episode":135,"role_slot":"limited_utility","cost_axis":"관계의 금액화","resolution":"conditional_use","set_refs":["SET017"],"final_episode":140,"final_state":"빚을 계산하되 사람의 가치나 죄를 합산하지 못하도록 제한된다."},
+        {"id":"CI082","name":"분산 기록도장","category":"governance_tool","first_episode":136,"role_slot":"responsibility_transfer","cost_axis":"버전 충돌","resolution":"joint_management","set_refs":["SET017"],"final_episode":140,"final_state":"여섯 지역이 서로 다른 수정 이력을 남기는 도장망이 된다."},
+        {"id":"CI083","name":"시민반론 먹끈","category":"public_record","first_episode":138,"role_slot":"relationship_cost","cost_axis":"공개 책임","resolution":"shared_use","set_refs":["SET017"],"final_episode":140,"final_state":"공식 기록 옆에 반론과 피해를 지우지 않고 매단다."},
+        {"id":"CI084","name":"여섯 공개장부함","category":"distributed_archive","first_episode":140,"role_slot":"logistics_pressure","cost_axis":"동기화 지연","resolution":"responsibility_transfer","set_refs":["SET017"],"track_id":"IT12","final_episode":200,"final_state":"중앙 없이 각 권역의 책임 이행과 오류를 교차 확인한다."}
+      ]
+    },
+    {
+      "subact_id": "A15",
+      "episodes": [141,150],
+      "theme": "여섯 권역 열쇠·독립 권한",
+      "items": [
+        {"id":"CI085","name":"경도 공개열쇠","category":"distributed_key","first_episode":141,"role_slot":"material_evidence","cost_axis":"가격·증서 공개","resolution":"responsibility_transfer","set_refs":["SET018"],"track_id":"IT13","final_episode":160,"final_state":"서린화가 공개 감정 책임과 함께 보관한다."},
+        {"id":"CI086","name":"남독 철회열쇠","category":"distributed_key","first_episode":142,"role_slot":"core_rule","cost_axis":"신수 계약 중단","resolution":"responsibility_transfer","set_refs":["SET018"],"track_id":"IT13","final_episode":160,"final_state":"소예란과 신수 심사단이 인간 명령과 독립해 보관한다."},
+        {"id":"CI087","name":"북설 교대열쇠","category":"distributed_key","first_episode":143,"role_slot":"logistics_pressure","cost_axis":"공동 방어 노동","resolution":"responsibility_transfer","set_refs":["SET018"],"track_id":"IT13","final_episode":160,"final_state":"곽무석이 아닌 칠촌 교대자들이 순환 보관한다."},
+        {"id":"CI088","name":"서황 길열쇠","category":"distributed_key","first_episode":145,"role_slot":"limited_utility","cost_axis":"지름길 삭제","resolution":"responsibility_transfer","set_refs":["SET018"],"track_id":"IT13","final_episode":160,"final_state":"대상연합·피난민·세관이 함께 길 변경을 승인한다."},
+        {"id":"CI089","name":"동해 공동열쇠","category":"distributed_key","first_episode":147,"role_slot":"relationship_cost","cost_axis":"가문 거부권","resolution":"responsibility_transfer","set_refs":["SET018"],"track_id":"IT13","final_episode":160,"final_state":"여섯 가문이 각자 한 부분만 보유해 단독 개방을 막는다."},
+        {"id":"CI090","name":"무명 행적열쇠","category":"distributed_key","first_episode":150,"role_slot":"responsibility_transfer","cost_axis":"이름 없는 통행","resolution":"responsibility_transfer","set_refs":["SET018"],"track_id":"IT13","final_episode":160,"final_state":"장부국이 아니라 이름 없는 주민의 공개 증언으로 작동한다."}
+      ]
+    },
+    {
+      "subact_id": "A16",
+      "episodes": [151,160],
+      "theme": "동료 독립·떠날 권리·마지막 빈칸",
+      "items": [
+        {"id":"CI091","name":"마지막 빈칸 명패","category":"classification_record","first_episode":159,"role_slot":"core_rule","cost_axis":"담운의 이름","resolution":"non_collection","set_refs":["SET019"],"final_episode":200,"final_state":"담운이 자신을 채우지 않아 끝내 빈칸으로 남는다."},
+        {"id":"CI092","name":"여섯 증언끈","category":"testimony_network","first_episode":151,"role_slot":"material_evidence","cost_axis":"동료 독립","resolution":"joint_management","set_refs":["SET019"],"final_episode":160,"final_state":"동료가 같은 답을 말하지 않아도 서로를 사람으로 증명한다."},
+        {"id":"CI093","name":"독립 열쇠고리","category":"key_holder","first_episode":153,"role_slot":"responsibility_transfer","cost_axis":"중앙 지휘력","resolution":"responsibility_transfer","set_refs":["SET019"],"final_episode":160,"final_state":"담운이 모든 열쇠를 모으지 못하도록 비어 있는 고리만 보관한다."},
+        {"id":"CI094","name":"떠날 권리패","category":"rights_record","first_episode":154,"role_slot":"relationship_cost","cost_axis":"동료 전력","resolution":"shared_use","set_refs":["SET019"],"final_episode":160,"final_state":"최종 결전 참여보다 떠날 권리를 먼저 보장한다."},
+        {"id":"CI095","name":"귀환 약속종","category":"signal","first_episode":156,"role_slot":"limited_utility","cost_axis":"재회 기대","resolution":"non_collection","set_refs":["SET019"],"final_episode":200,"final_state":"명령이 아니라 자발적 재합류 때만 울린다."},
+        {"id":"CI096","name":"분산 동행지도","category":"map","first_episode":158,"role_slot":"logistics_pressure","cost_axis":"일행 분리","resolution":"joint_management","set_refs":["SET019"],"final_episode":200,"final_state":"한 경로가 아니라 각자의 책임 장소와 재접속 지점을 함께 표시한다."}
+      ]
+    },
+    {
+      "subact_id": "A17",
+      "episodes": [161,170],
+      "theme": "살아 있는 박물관·분류 거부",
+      "items": [
+        {"id":"CI097","name":"십이문 권한패","category":"authority_set","first_episode":161,"role_slot":"core_rule","cost_axis":"부분 권한 누적","resolution":"dismantle","set_refs":["SET020"],"final_episode":170,"final_state":"문별 통과권을 인격 전체 소유권으로 합치지 못하도록 분리된다."},
+        {"id":"CI098","name":"사람을 재는 문추","category":"classification_tool","first_episode":162,"role_slot":"limited_utility","cost_axis":"가치 수치화","resolution":"dismantle","set_refs":["SET020"],"final_episode":170,"final_state":"무게 기능을 잃고 오분류 피해 기록만 남는다."},
+        {"id":"CI099","name":"움직이는 전시벽 조각","category":"architecture_relic","first_episode":164,"role_slot":"logistics_pressure","cost_axis":"동료 분리","resolution":"shared_use","set_refs":["SET020"],"final_episode":170,"final_state":"전시칸을 만드는 대신 탈출 통로를 여는 가변벽로 바뀐다."},
+        {"id":"CI100","name":"분류거부 명패","category":"rights_record","first_episode":166,"role_slot":"responsibility_transfer","cost_axis":"중앙 보호 제외","resolution":"shared_use","set_refs":["SET020"],"final_episode":196,"final_state":"사람·신수·물건이 자동 분류를 거부할 공통 표식이 된다."},
+        {"id":"CI101","name":"살아있는 전시번호","category":"evidence","first_episode":168,"role_slot":"material_evidence","cost_axis":"인격 침식","resolution":"public_evidence","set_refs":["SET020"],"final_episode":170,"final_state":"중앙 체계가 사람을 물건으로 분류한 범죄 번호로 공개된다."},
+        {"id":"CI102","name":"중력계단 고정끈","category":"mobility_tool","first_episode":169,"role_slot":"relationship_cost","cost_axis":"장비·동료 선택","resolution":"joint_management","set_refs":["SET020"],"final_episode":170,"final_state":"사람과 화물을 다른 명단으로 고정해 오분류를 막는다."}
+      ]
+    },
+    {
+      "subact_id": "A18",
+      "episodes": [171,180],
+      "theme": "과거 수장·현재 인격·권한 거부",
+      "items": [
+        {"id":"CI103","name":"수장인","category":"authority_relic","first_episode":171,"role_slot":"core_rule","cost_axis":"인격 침식","resolution":"return_and_seal","set_refs":["SET021"],"track_id":"IT14","final_episode":180,"final_state":"담운이 착용하지 않고 과거 수장 기록과 함께 봉인된다."},
+        {"id":"CI104","name":"이름 조각","category":"identity_fragment","first_episode":172,"role_slot":"relationship_cost","cost_axis":"현재 이름","resolution":"non_collection","set_refs":["SET021"],"final_episode":180,"final_state":"담운의 기원이지만 현재 담운의 소유권을 주장하지 못한다."},
+        {"id":"CI105","name":"몸 조각 장갑","category":"body_fragment","first_episode":173,"role_slot":"limited_utility","cost_axis":"과거 몸 복원","resolution":"destroy","set_refs":["SET021"],"final_episode":176,"final_state":"백장이 직접 파괴해 과거 수장 복원을 포기한다."},
+        {"id":"CI106","name":"기억핵편","category":"memory_fragment","first_episode":174,"role_slot":"material_evidence","cost_axis":"기억 덮어쓰기","resolution":"public_evidence","set_refs":["SET021"],"final_episode":180,"final_state":"담운에게 합쳐지지 않고 과거 실패의 공개 기록으로 남는다."},
+        {"id":"CI107","name":"현재인격 봉인끈","category":"rights_tool","first_episode":175,"role_slot":"responsibility_transfer","cost_axis":"과거 권한 포기","resolution":"shared_use","set_refs":["SET021"],"final_episode":180,"final_state":"현재 선택이 과거 조각보다 우선한다는 동료 증언을 묶는다."},
+        {"id":"CI108","name":"백장 빈손목 인장흔","category":"absence_record","first_episode":176,"role_slot":"material_evidence","cost_axis":"권한 상실","resolution":"non_collection","set_refs":["SET021"],"track_id":"IT14","final_episode":197,"final_state":"권한을 버린 빈자리와 피해자 이름을 기억하는 표식이 된다."}
+      ]
+    },
+    {
+      "subact_id": "A19",
+      "episodes": [181,190],
+      "theme": "중앙 소유권·지분화·재독점",
+      "items": [
+        {"id":"CI109","name":"중앙핵","category":"central_system","first_episode":181,"role_slot":"core_rule","cost_axis":"중앙 소유자 희생","resolution":"dismantle_into_responsibility","set_refs":["SET022"],"track_id":"IT15","final_episode":194,"final_state":"파괴나 공동 지분이 아니라 여섯 책임 조각으로 분해된다."},
+        {"id":"CI110","name":"공동지분 원판","category":"governance_tool","first_episode":183,"role_slot":"limited_utility","cost_axis":"재독점 가능성","resolution":"reject","set_refs":["SET022"],"final_episode":190,"final_state":"권한을 나누어도 중앙은 남는다는 이유로 채택되지 않는다."},
+        {"id":"CI111","name":"여섯 권역 응답종","category":"signal_network","first_episode":184,"role_slot":"relationship_cost","cost_axis":"응답 지연","resolution":"joint_management","set_refs":["SET022"],"final_episode":197,"final_state":"명령 없이 각 권역이 책임을 인수할 준비가 됐을 때 울린다."},
+        {"id":"CI112","name":"소유선 시야경","category":"perception_tool","first_episode":186,"role_slot":"material_evidence","cost_axis":"타인 권리 노출","resolution":"dismantle","set_refs":["SET022"],"final_episode":191,"final_state":"사람을 선으로 보던 기능은 파기되고 강제 연결 위치만 표시한다."},
+        {"id":"CI113","name":"재독점 경고패","category":"risk_record","first_episode":188,"role_slot":"responsibility_transfer","cost_axis":"지역 권력","resolution":"shared_use","set_refs":["SET022"],"final_episode":200,"final_state":"책임을 이행하지 않은 지역 권한이 다시 중앙화되는 징후를 공개한다."},
+        {"id":"CI114","name":"반치 귀로식 칼집","category":"ritual_tool","first_episode":190,"role_slot":"logistics_pressure","cost_axis":"절단 순서·시간","resolution":"temporary_custody","set_refs":["SET022","SET024"],"track_id":"IT02","final_episode":191,"final_state":"반치를 무기로 보관하지 않고 소유선 절단 순서를 제한하는 안전 칼집이 된다."}
+      ]
+    },
+    {
+      "subact_id": "A20",
+      "episodes": [191,200],
+      "theme": "여섯 책임 조각·마지막 배송",
+      "items": [
+        {"id":"CI115","name":"경도 책임조각","category":"responsibility_fragment","first_episode":194,"role_slot":"material_evidence","cost_axis":"감정·기록 공개","resolution":"responsibility_transfer","set_refs":["SET023","SET024"],"track_id":"IT15","final_episode":198,"final_state":"경도가 가격·증서 오류와 보존비를 공개할 책임으로 인수한다."},
+        {"id":"CI116","name":"남독 책임조각","category":"responsibility_fragment","first_episode":194,"role_slot":"core_rule","cost_axis":"생명 철회권·생계","resolution":"responsibility_transfer","set_refs":["SET023","SET024"],"track_id":"IT15","final_episode":198,"final_state":"남독이 신수 철회권과 주민 생계 비용을 함께 인수한다."},
+        {"id":"CI117","name":"북설 책임조각","category":"responsibility_fragment","first_episode":194,"role_slot":"logistics_pressure","cost_axis":"교대·식량·방어","resolution":"responsibility_transfer","set_refs":["SET023","SET024"],"track_id":"IT15","final_episode":199,"final_state":"북설 칠촌이 공동 방어의 노동과 실패 기록을 인수한다."},
+        {"id":"CI118","name":"서황 책임조각","category":"responsibility_fragment","first_episode":194,"role_slot":"limited_utility","cost_axis":"물·길·기억세","resolution":"responsibility_transfer","set_refs":["SET023","SET024"],"track_id":"IT15","final_episode":199,"final_state":"서황 세력이 길 단축의 이익과 지워진 길 복구비를 함께 인수한다."},
+        {"id":"CI119","name":"동해 책임조각","category":"responsibility_fragment","first_episode":194,"role_slot":"relationship_cost","cost_axis":"거부권·인양·장례","resolution":"responsibility_transfer","set_refs":["SET023","SET024"],"track_id":"IT15","final_episode":200,"final_state":"여섯 가문이 공동 인양·장례·숨빚을 분산 책임으로 인수한다."},
+        {"id":"CI120","name":"무명 책임조각","category":"responsibility_fragment","first_episode":194,"role_slot":"responsibility_transfer","cost_axis":"이름 없는 권리·기록 동기화","resolution":"responsibility_transfer","set_refs":["SET023","SET024"],"track_id":"IT15","final_episode":200,"final_state":"무명시가 이름 없이도 생활·행적·관계로 권리를 보장할 책임을 인수한다."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "version": "3.3",
+  "status": "canon_relation_overlay",
+  "purpose": "18세력의 개별 설명을 실제 정치·경제 관계망으로 연결한다. 기존 세력 목표와 결말은 변경하지 않는다.",
+  "factions": [
+    {
+      "faction_id": "FC001",
+      "name": "청래역참망",
+      "primary_settlement_ids": ["ST001", "ST002", "ST003", "ST004", "ST005", "ST006"],
+      "victory_condition": "수신인 확인과 운송 신뢰를 유지한다.",
+      "defeat_condition": "분실물·파손 기록이 시장·관청보다 신뢰받지 못하게 된다.",
+      "autonomous_action_without_damun": "회수대 압박이 커지면 공개보관을 축소하고 유료 보증으로 전환한다."
+    },
+    {
+      "faction_id": "FC002",
+      "name": "만보상련",
+      "primary_settlement_ids": ["ST007", "ST008"],
+      "victory_condition": "유물 회수·감정·보험을 하나의 계약망으로 독점한다.",
+      "defeat_condition": "사용 기록과 공동체 승인 때문에 증서 독점이 무력화된다.",
+      "autonomous_action_without_damun": "담운이 사라지면 현장 회수대를 늘리고 무주 판정을 사설 감정으로 대체한다."
+    },
+    {
+      "faction_id": "FC003",
+      "name": "귀장회 봉장파",
+      "primary_settlement_ids": ["ST004", "ST020", "ST023"],
+      "victory_condition": "위험 유산을 중앙 봉인 체계로 회수한다.",
+      "defeat_condition": "분산 방어가 실제 재난을 막고 삭제된 피해 기록이 공개된다.",
+      "autonomous_action_without_damun": "담운이 사라지면 무주함과 신수 계약을 위험 예외로 지정한다."
+    },
+    {
+      "faction_id": "FC004",
+      "name": "귀장회 귀환파",
+      "primary_settlement_ids": ["ST010", "ST024"],
+      "victory_condition": "유산을 원사용자·공동체에 돌려보내는 절차를 제도화한다.",
+      "defeat_condition": "무조건적 귀환이 새 독점과 보복을 낳는 사례가 반복된다.",
+      "autonomous_action_without_damun": "담운이 사라지면 지역 귀환 중개인을 양성하되 중앙 인증을 요구한다."
+    },
+    {
+      "faction_id": "FC005",
+      "name": "경도 왕실 기록관",
+      "primary_settlement_ids": ["ST007", "ST011"],
+      "victory_condition": "왕실 원문과 인장을 최상위 소유 증거로 유지한다.",
+      "defeat_condition": "위조·수정 이력과 시민 사용 증거가 원문보다 설득력을 얻는다.",
+      "autonomous_action_without_damun": "담운이 사라지면 왕실 표찰을 재발급해 시장 혼란을 잠근다."
+    },
+    {
+      "faction_id": "FC006",
+      "name": "경도 귀족 수집회",
+      "primary_settlement_ids": ["ST008", "ST012"],
+      "victory_condition": "희귀 유산과 정통성 상징을 사적 전시망에 집중한다.",
+      "defeat_condition": "유지비·복구비·사용 책임을 감당하지 못해 소장품이 이탈한다.",
+      "autonomous_action_without_damun": "담운이 사라지면 경매 가격을 올려 공공기관의 접근을 막는다."
+    },
+    {
+      "faction_id": "FC007",
+      "name": "시민공개감정회",
+      "primary_settlement_ids": ["ST009", "ST010", "ST012"],
+      "victory_condition": "가격·증서 외에 사용·수선·피해 증언을 가치 판정에 넣는다.",
+      "defeat_condition": "군중 인기와 정치 선동이 공개 감정을 잠식한다.",
+      "autonomous_action_without_damun": "담운이 사라지면 지역 증언관을 순회시키고 공개끈 기록을 복제한다."
+    },
+    {
+      "faction_id": "FC008",
+      "name": "남독 야생계약단",
+      "primary_settlement_ids": ["ST013", "ST014", "ST015", "ST017", "ST018"],
+      "victory_condition": "신수의 계약 거절·종료·이동권을 보장한다.",
+      "defeat_condition": "보호 비용과 주민 생계가 감당 불가능해져 밀매 의존이 커진다.",
+      "autonomous_action_without_damun": "담운이 사라지면 계약 심사를 중단하지 않고 인간 보증인을 더 엄격히 심사한다."
+    },
+    {
+      "faction_id": "FC009",
+      "name": "남독 밀매단",
+      "primary_settlement_ids": ["ST016"],
+      "victory_condition": "보호·치료 명목으로 신수와 희귀 생물을 거래품으로 바꾼다.",
+      "defeat_condition": "운송로·구매자·위조 계약이 공개되고 생존 주민이 협조를 거둔다.",
+      "autonomous_action_without_damun": "담운이 사라지면 인간 주민을 담보로 구조 계약을 위조한다."
+    },
+    {
+      "faction_id": "FC010",
+      "name": "북설 칠촌회의",
+      "primary_settlement_ids": ["ST019", "ST020", "ST021", "ST024"],
+      "victory_condition": "식량·화로·설갑·피난 인력을 일곱 촌락이 분담한다.",
+      "defeat_condition": "부담이 가난한 촌락에 집중돼 한 곳이 교대에서 이탈한다.",
+      "autonomous_action_without_damun": "담운이 사라지면 설갑 조각을 순환시키되 반환 기한을 강화한다."
+    },
+    {
+      "faction_id": "FC011",
+      "name": "북설 귀장회 현장대",
+      "primary_settlement_ids": ["ST022", "ST023"],
+      "victory_condition": "봉화·봉인·구조 장비를 규격화해 재난을 줄인다.",
+      "defeat_condition": "구조 실패와 삭제된 희생자 이름이 조직 정당성을 무너뜨린다.",
+      "autonomous_action_without_damun": "담운이 사라지면 위험 장비를 회수하지만 민간 구조에는 계속 참여한다."
+    },
+    {
+      "faction_id": "FC012",
+      "name": "서황막 대상연합",
+      "primary_settlement_ids": ["ST025", "ST028", "ST030"],
+      "victory_condition": "물표와 대상로를 유지해 지역 간 거래를 지속한다.",
+      "defeat_condition": "우물 지분과 기억세 때문에 피난민·짐꾼이 운송을 거부한다.",
+      "autonomous_action_without_damun": "담운이 사라지면 지도 유물을 임대하고 사라진 길의 비용을 이용자에게 전가한다."
+    },
+    {
+      "faction_id": "FC013",
+      "name": "서황 관물세관",
+      "primary_settlement_ids": ["ST026", "ST027"],
+      "victory_condition": "물표·유산 위험·통행세를 하나의 검문 체계로 묶는다.",
+      "defeat_condition": "기억세가 신원·귀향권을 파괴한다는 증거가 축적된다.",
+      "autonomous_action_without_damun": "담운이 사라지면 기억세를 강화하고 분실 기억을 행정 자산으로 저장한다."
+    },
+    {
+      "faction_id": "FC014",
+      "name": "천공무고 폐분관 기록체",
+      "primary_settlement_ids": ["ST029"],
+      "victory_condition": "분류 알고리즘으로 상극 유산과 사람의 위험을 자동 판정한다.",
+      "defeat_condition": "삭제된 실패 기록과 오분류된 인격이 권리를 요구한다.",
+      "autonomous_action_without_damun": "담운이 사라지면 무주함 데이터를 흡수해 자동 분류 정확도를 높이려 한다."
+    },
+    {
+      "faction_id": "FC015",
+      "name": "동해 여섯가문 회의",
+      "primary_settlement_ids": ["ST031", "ST032", "ST033", "ST034", "ST035", "ST036"],
+      "victory_condition": "인양권·장례권·항로 지분을 공동 관리한다.",
+      "defeat_condition": "한 가문의 거부·매각·빚 때문에 여섯 열쇠 체계가 멈춘다.",
+      "autonomous_action_without_damun": "담운이 사라지면 창고를 닫고 외부 조정자를 배제한다."
+    },
+    {
+      "faction_id": "FC016",
+      "name": "무명시 이름상회",
+      "primary_settlement_ids": ["ST037", "ST038", "ST039"],
+      "victory_condition": "이름·칭호·직업 권한을 대여하고 거래 수수료를 받는다.",
+      "defeat_condition": "행적과 관계 증거가 이름 없이도 권리를 만들기 시작한다.",
+      "autonomous_action_without_damun": "담운이 사라지면 그의 이름 사용권을 최고가 상품으로 올린다."
+    },
+    {
+      "faction_id": "FC017",
+      "name": "무명시 중앙장부국",
+      "primary_settlement_ids": ["ST040", "ST041", "ST042"],
+      "victory_condition": "모든 이름·행적·죄명·통행권을 중앙 장부에서 일치시킨다.",
+      "defeat_condition": "분산 증언과 생활 흔적이 장부 오류를 공개적으로 교정한다.",
+      "autonomous_action_without_damun": "담운이 사라지면 최종 수집 칸을 열고 사람을 물건 번호로 분류한다."
+    },
+    {
+      "faction_id": "FC018",
+      "name": "원형 천공무고",
+      "primary_settlement_ids": ["ST043", "ST044", "ST045", "ST046", "ST047", "ST048"],
+      "victory_condition": "천하 유산과 위험을 한 중앙 소유권 아래 완전 분류한다.",
+      "defeat_condition": "여섯 권역이 권한이 아니라 책임을 인수해 중앙 필요성을 낮춘다.",
+      "autonomous_action_without_damun": "담운이 사라지면 이름 조각을 완성품으로 수납하고 중앙핵을 재가동한다."
+    }
+  ],
+  "relations": [
+    {"relation_id":"FR001","from_faction_id":"FC001","to_faction_id":"FC002","relation_type":"경쟁","disputed_resource":"분실·회수 유산의 최초 인수권","escalation_trigger":"상련이 역참의 공개보관 기록을 무효로 처리할 때","resolution_leverage":"공개 수신 기록과 실제 보관 비용"},
+    {"relation_id":"FR002","from_faction_id":"FC001","to_faction_id":"FC003","relation_type":"의존과 경계","disputed_resource":"위험기물 통행 판정","escalation_trigger":"봉장파가 역참 화물을 일괄 위험물로 지정할 때","resolution_leverage":"현장 파손률과 민간 피해 장부"},
+    {"relation_id":"FR003","from_faction_id":"FC002","to_faction_id":"FC005","relation_type":"상호이용","disputed_resource":"왕실 증서와 사설 감정권","escalation_trigger":"왕실이 상련 위조를 희생양으로 삼거나 상련이 원문 오류를 폭로할 때","resolution_leverage":"진수문의 수정 이력"},
+    {"relation_id":"FR004","from_faction_id":"FC002","to_faction_id":"FC006","relation_type":"가격동맹","disputed_resource":"희귀 유산 경매와 보험","escalation_trigger":"귀족회가 보험 손실을 상련에 떠넘길 때","resolution_leverage":"소장품 유지비와 시민 사용 기록"},
+    {"relation_id":"FR005","from_faction_id":"FC005","to_faction_id":"FC007","relation_type":"정당성 충돌","disputed_resource":"원문 증서 대 공개 사용 증언","escalation_trigger":"시민 감정이 왕실 정통성 선전을 뒤집을 때","resolution_leverage":"동일 물건의 수선층·사용자 증언"},
+    {"relation_id":"FR006","from_faction_id":"FC006","to_faction_id":"FC007","relation_type":"계급갈등","disputed_resource":"사적 전시 대 공공 접근","escalation_trigger":"시민전시가 귀족 소장품의 피해 비용을 공개할 때","resolution_leverage":"보존비 부담과 실제 구조 공적"},
+    {"relation_id":"FR007","from_faction_id":"FC003","to_faction_id":"FC004","relation_type":"내부분열","disputed_resource":"봉인 우선 대 귀환 우선","escalation_trigger":"귀환한 유산이 재앙 또는 재독점을 낳을 때","resolution_leverage":"조건부 귀환·공동 관리 절차"},
+    {"relation_id":"FR008","from_faction_id":"FC003","to_faction_id":"FC011","relation_type":"지휘관계","disputed_resource":"현장 봉인 권한","escalation_trigger":"현장대가 민간 구조를 위해 중앙 명령을 거부할 때","resolution_leverage":"삭제되지 않은 구조·희생 기록"},
+    {"relation_id":"FR009","from_faction_id":"FC004","to_faction_id":"FC008","relation_type":"원칙연대","disputed_resource":"귀환·비소유·철회권","escalation_trigger":"귀환파가 신수 계약을 물건 인계처럼 처리할 때","resolution_leverage":"생명체의 반복 거절과 독립 목표"},
+    {"relation_id":"FR010","from_faction_id":"FC008","to_faction_id":"FC009","relation_type":"적대","disputed_resource":"신수 이동권과 밀매 수익","escalation_trigger":"밀매단이 주민 생계를 인질로 보호구역을 침범할 때","resolution_leverage":"위조 계약·우리 흔적·구매 장부"},
+    {"relation_id":"FR011","from_faction_id":"FC008","to_faction_id":"FC010","relation_type":"상호의존","disputed_resource":"해독재·운송 신수 대 북설 보호 장비","escalation_trigger":"한쪽이 생존 물자를 계약 조건으로 독점할 때","resolution_leverage":"교환 물자의 실제 생산비"},
+    {"relation_id":"FR012","from_faction_id":"FC010","to_faction_id":"FC011","relation_type":"협력과 불신","disputed_resource":"공동 방어망과 중앙 규격","escalation_trigger":"현장대가 설갑 조각을 중앙 회수하려 할 때","resolution_leverage":"촌락별 교대 노동과 구조 성과"},
+    {"relation_id":"FR013","from_faction_id":"FC010","to_faction_id":"FC012","relation_type":"무역의존","disputed_resource":"북설 장비·약재 대 서황 물·소금","escalation_trigger":"대상연합이 해빙기 가격을 폭등시킬 때","resolution_leverage":"운송 손실과 촌락 생존선"},
+    {"relation_id":"FR014","from_faction_id":"FC012","to_faction_id":"FC013","relation_type":"세금갈등","disputed_resource":"대상로 수익 대 물표·기억세","escalation_trigger":"세관이 기억을 통행 자산으로 재판매할 때","resolution_leverage":"피난민의 귀향권 피해"},
+    {"relation_id":"FR015","from_faction_id":"FC013","to_faction_id":"FC014","relation_type":"데이터거래","disputed_resource":"위험평가·기억 정보","escalation_trigger":"자동 분류가 세금 미납자를 위험인격으로 판정할 때","resolution_leverage":"오분류 피해와 삭제 로그"},
+    {"relation_id":"FR016","from_faction_id":"FC014","to_faction_id":"FC018","relation_type":"상하위체계","disputed_resource":"폐분관 알고리즘과 중앙핵","escalation_trigger":"폐분관이 지역 실패를 숨겨 중앙 신뢰를 유지할 때","resolution_leverage":"삭제된 기록 인격의 증언"},
+    {"relation_id":"FR017","from_faction_id":"FC012","to_faction_id":"FC015","relation_type":"교역관계","disputed_resource":"사막 물표 대 해상 인양품","escalation_trigger":"대상연합이 숨부적·구조 장비에 기억세를 붙일 때","resolution_leverage":"항로 지분과 실제 구조비"},
+    {"relation_id":"FR018","from_faction_id":"FC015","to_faction_id":"FC016","relation_type":"기록의존","disputed_resource":"실종자·상속자 이름 확인","escalation_trigger":"이름상회가 사망 미확정자의 성씨를 거래할 때","resolution_leverage":"빈매듭 신호와 가족 생활 증거"},
+    {"relation_id":"FR019","from_faction_id":"FC016","to_faction_id":"FC017","relation_type":"시장과 관청의 공생갈등","disputed_resource":"이름 대여료 대 장부 수정 수수료","escalation_trigger":"장부국이 임시 호칭을 불법화하거나 상회가 오류를 상품화할 때","resolution_leverage":"행적법정의 책임 판정"},
+    {"relation_id":"FR020","from_faction_id":"FC017","to_faction_id":"FC018","relation_type":"흡수관계","disputed_resource":"중앙 이름장부와 최종 수집 목록","escalation_trigger":"장부국이 사람을 물건 번호로 넘길 때","resolution_leverage":"분산 증언과 철회 기록"},
+    {"relation_id":"FR021","from_faction_id":"FC004","to_faction_id":"FC007","relation_type":"제도연대","disputed_resource":"귀환 대상의 공개 검증","escalation_trigger":"공개 감정이 인기 판정으로 귀환을 강제할 때","resolution_leverage":"피해자·사용자·보관자 분리 심사"},
+    {"relation_id":"FR022","from_faction_id":"FC007","to_faction_id":"FC015","relation_type":"지식교환","disputed_resource":"사용 기록과 공동 인양 증언","escalation_trigger":"경도식 가격 판정이 장례·기억 권리를 덮을 때","resolution_leverage":"현장 수선·구조·상속 기록"},
+    {"relation_id":"FR023","from_faction_id":"FC011","to_faction_id":"FC014","relation_type":"조직충돌","disputed_resource":"현장 판단과 자동 위험 분류","escalation_trigger":"알고리즘이 구조 대상자를 위험물로 분류할 때","resolution_leverage":"현장대의 부상·구조 로그"},
+    {"relation_id":"FR024","from_faction_id":"FC015","to_faction_id":"FC017","relation_type":"법적충돌","disputed_resource":"여섯 가문 증언 대 중앙 신원","escalation_trigger":"장부 오류로 실종자 상속이 확정될 때","resolution_leverage":"조수종·빈매듭·가족 증언"},
+    {"relation_id":"FR025","from_faction_id":"FC018","to_faction_id":"FC003","relation_type":"중앙화동맹의 균열","disputed_resource":"완전 봉인과 수장 희생","escalation_trigger":"원형 무고가 봉장파까지 관리 대상 물건으로 분류할 때","resolution_leverage":"백장의 손실과 중앙핵 오분류"}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "version": "3.4",
+  "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+  "approved": true,
+  "approved_by": "author",
+  "approval_date": "2026-08-03",
+  "approval_basis": "작가의 명시적 지시: 설계도·설정집·세계관을 질문 없이 자동으로 끝까지 진행",
+  "scope": [
+    "v3.3 세계 통합 오버레이의 effective-world 승격",
+    "수집품 120·세트 24·신수 18 후보의 교정 적용 후 정본 승격",
+    "실제 supporting-cast 음성 카드 28명의 감정 작동성 정본화",
+    "EP021~EP200 180화×6비트 Production Blueprint 정본화"
+  ],
+  "conditions": [
+    "보호 정본의 핵심 사건·결말·복선 답을 변경하지 않음",
+    "구조 및 의미 감사의 critical_errors가 0",
+    "원고 prose는 별도 단계로 유지"
+  ],
+  "audit_status": "passed"
+}

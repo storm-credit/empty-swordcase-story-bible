@@ -1,0 +1,57 @@
+{
+  "project": {
+    "title_ko": "빈 검함으로 천하를 수집한다",
+    "repository": "storm-credit/empty-swordcase-story-bible",
+    "version": "3.4-final-design-bible",
+    "status": "design_blueprint_world_bible_complete",
+    "prose_status": "not_drafted_except_existing_early_drafts",
+    "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+  },
+  "scale": {
+    "episodes": 200,
+    "acts": 5,
+    "arcs": 10,
+    "subacts": 20,
+    "regions": 8,
+    "settlements": 48,
+    "routes": 20,
+    "factions": 18,
+    "collectibles": 120,
+    "sets": 24,
+    "beasts_and_mounts": 18,
+    "supporting_cast": 28,
+    "episode_blueprints_021_200": 180,
+    "scene_beats_021_200": 1080
+  },
+  "completion": {
+    "core_canon": true,
+    "act_arc_subact_architecture": true,
+    "episode_function_map_001_200": true,
+    "effective_world_008_048_020_018": true,
+    "collectible_registry_120": true,
+    "set_registry_024": true,
+    "beast_registry_018": true,
+    "supporting_cast_operability_028": true,
+    "production_blueprints_021_200_six_beats": true,
+    "semantic_audit": true,
+    "prose_manuscript": false
+  },
+  "canon_files": {
+    "world": "data/effective_world_v3_4.json",
+    "items": "data/collection_registry_120_v3_4.json",
+    "sets": "data/set_registry_024_v3_4.json",
+    "beasts": "data/beast_registry_018_v3_4.json",
+    "supporting_cast": "data/supporting_cast_operability_028_v3_4.json",
+    "blueprints": "production/blueprints/EPISODES_021_200_SCENE_BLUEPRINT_V3_4.json",
+    "approval": "data/canon_approval_v3_4.json",
+    "audit": "data/final_semantic_audit_v3_4.json",
+    "manifest": "data/project_manifest_v3_4.json",
+    "freeze_doc": "docs/57_FINAL_CANON_FREEZE_V3_4.md"
+  },
+  "governance": {
+    "final_canon_owner": "author",
+    "approval_ledger": "data/canon_approval_v3_4.json",
+    "protected_sources_modified": false
+  },
+  "next_gate": "manuscript_drafting_and_human_reader_feedback"
+}

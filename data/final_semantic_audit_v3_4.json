@@ -1,0 +1,413 @@
+{
+  "version": "3.4",
+  "status": "passed",
+  "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+  "critical_errors": [],
+  "warnings": [],
+  "applied_corrections": [
+    {
+      "id": "SET002",
+      "changes": {
+        "first_complete_episode": 20
+      },
+      "reason": "구성품 CI007·CI008이 11~12화에 처음 등장하므로 10화 완성은 불가능하다."
+    }
+  ],
+  "supporting_cast_reconciliation": {
+    "source_count": 28,
+    "promoted_candidate_names": [
+      "철구"
+    ],
+    "generated_from_voice_cards": [
+      "오복산",
+      "설도연",
+      "모귀",
+      "문하준",
+      "한여정",
+      "백도윤",
+      "윤세정",
+      "장추",
+      "노단비",
+      "허잠",
+      "미라",
+      "연호",
+      "사태오",
+      "강설현",
+      "노상린",
+      "윤봉",
+      "마지한",
+      "우담",
+      "서문록",
+      "문청묘",
+      "해라",
+      "권해주",
+      "윤무명",
+      "류백",
+      "단소아",
+      "손백하",
+      "묵언"
+    ],
+    "candidate_names_not_in_source": [
+      "갈뿌리",
+      "경도먹",
+      "곽무석",
+      "남잠수",
+      "늙은향",
+      "담운",
+      "독우",
+      "말매듭",
+      "모래등",
+      "백장",
+      "북눈",
+      "서린화",
+      "설누이",
+      "소금모",
+      "소예란",
+      "숨빚",
+      "얼음귀",
+      "왕기름",
+      "우엉노파",
+      "유리손",
+      "육할매",
+      "이름쇠",
+      "장부눈",
+      "조수종",
+      "진여강",
+      "차마실",
+      "청묘"
+    ],
+    "missing_canonical_appearances": [],
+    "v3_4_blueprint_assignments": [
+      {
+        "id": "SC003",
+        "name": "설도연",
+        "region": "청래역권",
+        "episode": 21
+      },
+      {
+        "id": "SC005",
+        "name": "문하준",
+        "region": "청래역권",
+        "episode": 22
+      },
+      {
+        "id": "SC006",
+        "name": "한여정",
+        "region": "경도",
+        "episode": 23
+      },
+      {
+        "id": "SC007",
+        "name": "백도윤",
+        "region": "경도",
+        "episode": 24
+      },
+      {
+        "id": "SC008",
+        "name": "윤세정",
+        "region": "경도",
+        "episode": 25
+      },
+      {
+        "id": "SC009",
+        "name": "장추",
+        "region": "경도",
+        "episode": 26
+      },
+      {
+        "id": "SC010",
+        "name": "노단비",
+        "region": "경도",
+        "episode": 27
+      },
+      {
+        "id": "SC012",
+        "name": "미라",
+        "region": "남독택",
+        "episode": 41
+      },
+      {
+        "id": "SC013",
+        "name": "연호",
+        "region": "남독택",
+        "episode": 42
+      },
+      {
+        "id": "SC014",
+        "name": "사태오",
+        "region": "남독택",
+        "episode": 43
+      },
+      {
+        "id": "SC015",
+        "name": "강설현",
+        "region": "북설원",
+        "episode": 61
+      },
+      {
+        "id": "SC016",
+        "name": "노상린",
+        "region": "북설원",
+        "episode": 62
+      },
+      {
+        "id": "SC017",
+        "name": "윤봉",
+        "region": "북설원",
+        "episode": 63
+      },
+      {
+        "id": "SC018",
+        "name": "마지한",
+        "region": "서황막",
+        "episode": 81
+      },
+      {
+        "id": "SC019",
+        "name": "우담",
+        "region": "서황막",
+        "episode": 82
+      },
+      {
+        "id": "SC020",
+        "name": "서문록",
+        "region": "서황막",
+        "episode": 83
+      },
+      {
+        "id": "SC021",
+        "name": "문청묘",
+        "region": "동해군도",
+        "episode": 101
+      },
+      {
+        "id": "SC022",
+        "name": "해라",
+        "region": "동해군도",
+        "episode": 102
+      },
+      {
+        "id": "SC023",
+        "name": "권해주",
+        "region": "동해군도",
+        "episode": 103
+      },
+      {
+        "id": "SC024",
+        "name": "윤무명",
+        "region": "무명시",
+        "episode": 121
+      },
+      {
+        "id": "SC025",
+        "name": "류백",
+        "region": "무명시",
+        "episode": 122
+      },
+      {
+        "id": "SC026",
+        "name": "단소아",
+        "region": "무명시",
+        "episode": 123
+      },
+      {
+        "id": "SC027",
+        "name": "손백하",
+        "region": "귀장회·천외",
+        "episode": 28
+      },
+      {
+        "id": "SC028",
+        "name": "묵언",
+        "region": "귀장회·천외",
+        "episode": 29
+      }
+    ]
+  },
+  "verified_counts": {
+    "episodes": 200,
+    "acts": 5,
+    "arcs": 10,
+    "subacts": 20,
+    "regions": 8,
+    "settlements": 48,
+    "routes": 20,
+    "factions": 18,
+    "collectibles": 120,
+    "sets": 24,
+    "beasts_and_mounts": 18,
+    "supporting_cast": 28,
+    "episode_blueprints_021_200": 180,
+    "scene_beats_021_200": 1080
+  },
+  "protected_sources_modified": false,
+  "protected_sources": [
+    "PROJECT_BLUEPRINT_V2_4.md",
+    "data/episodes_001_010.json",
+    "data/episodes_011_020.json",
+    "data/episodes_021_030.json",
+    "data/episodes_031_040.json",
+    "data/episodes_041_080.json",
+    "data/episodes_081_120.json",
+    "data/episodes_121_160.json",
+    "data/episodes_161_200.json",
+    "data/payoff_tracks_v2_7.json",
+    "data/episode_payoff_tags_001_200.json",
+    "data/supporting_cast_voice_028_v2_9.json"
+  ],
+  "supporting_cast_blueprint_assignments": [
+    {
+      "id": "SC003",
+      "name": "설도연",
+      "region": "청래역권",
+      "episode": 21
+    },
+    {
+      "id": "SC005",
+      "name": "문하준",
+      "region": "청래역권",
+      "episode": 22
+    },
+    {
+      "id": "SC006",
+      "name": "한여정",
+      "region": "경도",
+      "episode": 23
+    },
+    {
+      "id": "SC007",
+      "name": "백도윤",
+      "region": "경도",
+      "episode": 24
+    },
+    {
+      "id": "SC008",
+      "name": "윤세정",
+      "region": "경도",
+      "episode": 25
+    },
+    {
+      "id": "SC009",
+      "name": "장추",
+      "region": "경도",
+      "episode": 26
+    },
+    {
+      "id": "SC010",
+      "name": "노단비",
+      "region": "경도",
+      "episode": 27
+    },
+    {
+      "id": "SC012",
+      "name": "미라",
+      "region": "남독택",
+      "episode": 41
+    },
+    {
+      "id": "SC013",
+      "name": "연호",
+      "region": "남독택",
+      "episode": 42
+    },
+    {
+      "id": "SC014",
+      "name": "사태오",
+      "region": "남독택",
+      "episode": 43
+    },
+    {
+      "id": "SC015",
+      "name": "강설현",
+      "region": "북설원",
+      "episode": 61
+    },
+    {
+      "id": "SC016",
+      "name": "노상린",
+      "region": "북설원",
+      "episode": 62
+    },
+    {
+      "id": "SC017",
+      "name": "윤봉",
+      "region": "북설원",
+      "episode": 63
+    },
+    {
+      "id": "SC018",
+      "name": "마지한",
+      "region": "서황막",
+      "episode": 81
+    },
+    {
+      "id": "SC019",
+      "name": "우담",
+      "region": "서황막",
+      "episode": 82
+    },
+    {
+      "id": "SC020",
+      "name": "서문록",
+      "region": "서황막",
+      "episode": 83
+    },
+    {
+      "id": "SC021",
+      "name": "문청묘",
+      "region": "동해군도",
+      "episode": 101
+    },
+    {
+      "id": "SC022",
+      "name": "해라",
+      "region": "동해군도",
+      "episode": 102
+    },
+    {
+      "id": "SC023",
+      "name": "권해주",
+      "region": "동해군도",
+      "episode": 103
+    },
+    {
+      "id": "SC024",
+      "name": "윤무명",
+      "region": "무명시",
+      "episode": 121
+    },
+    {
+      "id": "SC025",
+      "name": "류백",
+      "region": "무명시",
+      "episode": 122
+    },
+    {
+      "id": "SC026",
+      "name": "단소아",
+      "region": "무명시",
+      "episode": 123
+    },
+    {
+      "id": "SC027",
+      "name": "손백하",
+      "region": "귀장회·천외",
+      "episode": 28
+    },
+    {
+      "id": "SC028",
+      "name": "묵언",
+      "region": "귀장회·천외",
+      "episode": 29
+    }
+  ],
+  "beast_episode_corrections": [
+    {
+      "id": "BS011",
+      "name": "빙잠나방",
+      "added_episode": 72,
+      "reason": "home settlement and major episode continuity"
+    }
+  ],
+  "expected_named_beast_companion": "두리"
+}
