@@ -1,0 +1,54 @@
+name: Materialize Complete Compact Manuscript
+
+on:
+  push:
+    branches:
+      - 'agent/manuscript-001-200-v1'
+    paths:
+      - 'manuscript/compact_sources/**'
+      - 'scripts/materialize_compact_manuscript_v1.py'
+      - 'scripts/validate_complete_compact_manuscript_v1.py'
+      - '.github/workflows/materialize-compact-manuscript.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out manuscript branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/manuscript-001-200-v1
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Split compact source into episode drafts
+        run: python scripts/materialize_compact_manuscript_v1.py
+
+      - name: Commit generated episode drafts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add manuscript/drafts
+          if git diff --cached --quiet; then
+            echo "Drafts are already current."
+          else
+            git commit -m "manuscript: materialize compact episode drafts [skip ci]"
+            git push origin HEAD:agent/manuscript-001-200-v1
+          fi
+
+      - name: Validate complete compact manuscript when all episodes exist
+        run: |
+          count=$(find manuscript/drafts -maxdepth 1 -type f -name '[0-9][0-9][0-9]_*.md' | wc -l)
+          if [ "$count" -eq 200 ]; then
+            python scripts/validate_complete_compact_manuscript_v1.py
+          else
+            echo "Current materialized episode count: $count/200"
+          fi
