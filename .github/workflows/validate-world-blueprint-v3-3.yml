@@ -30,5 +30,11 @@ jobs:
       - name: Build effective world
         run: python scripts/build_effective_world_v3_3.py
 
-      - name: Validate integration and completion gates
-        run: python scripts/validate_world_blueprint_integration_v3_3.py
+      - name: Validate world and blueprint structure
+        run: python scripts/validate_world_blueprint_integration_v3_3.py --report-json data/world_blueprint_validation_report_v3_3.json
+
+      - name: Validate 120 items, 24 sets, and 18 beasts
+        run: python scripts/validate_collection_system_v3_3.py
+
+      - name: Validate provisional canon governance
+        run: python scripts/validate_collection_governance_v3_3.py
