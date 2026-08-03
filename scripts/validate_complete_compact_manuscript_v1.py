@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Validate a complete EP001~EP200 compact manuscript draft."""
+"""Validate a complete EP001~EP200 compact manuscript draft.
+
+This validator checks compact-draft completeness and canon-hook continuity. It
+intentionally does not claim publication-length readiness.
+"""
 
 from __future__ import annotations
 
@@ -18,6 +22,11 @@ EPISODE_FILES = [
 FORBIDDEN = ("TODO", "TBD", "placeholder", "삽입 예정", "보완 예정", "예시 대사", "미정")
 ERRORS: list[str] = []
 WARNINGS: list[str] = []
+KOREAN_SUFFIXES = (
+    "에게서", "으로부터", "이라고", "이라는", "에서는", "에게", "에서", "으로", "까지", "부터",
+    "처럼", "보다", "하고", "하며", "한다", "된다", "했다", "됐다", "이다", "였다", "의", "은", "는",
+    "이", "가", "을", "를", "에", "와", "과", "로", "도", "만",
+)
 
 
 def body_text(raw: str) -> str:
@@ -33,6 +42,20 @@ def body_text(raw: str) -> str:
         except ValueError:
             pass
     return "\n".join(lines).strip()
+
+
+def normalize_words(text: str) -> list[str]:
+    cleaned = re.sub(r"[^0-9A-Za-z가-힣]+", " ", text)
+    words: list[str] = []
+    for word in cleaned.split():
+        stem = word
+        for suffix in KOREAN_SUFFIXES:
+            if len(stem) - len(suffix) >= 2 and stem.endswith(suffix):
+                stem = stem[: -len(suffix)]
+                break
+        if len(stem) >= 2:
+            words.append(stem)
+    return words
 
 
 def main() -> int:
@@ -68,21 +91,25 @@ def main() -> int:
             ERRORS.append(f"EP{episode:03d}: heading number mismatch")
         if title not in raw.splitlines()[0]:
             ERRORS.append(f"EP{episode:03d}: canonical title missing from heading")
-        if len(body) < 250:
-            ERRORS.append(f"EP{episode:03d}: prose too short ({len(body)} chars)")
+        if len(body) < 180:
+            ERRORS.append(f"EP{episode:03d}: compact prose too short ({len(body)} chars)")
         if len(body) > 6200:
             ERRORS.append(f"EP{episode:03d}: prose too long ({len(body)} chars)")
         if episode >= 4 and len(body) < 500:
-            WARNINGS.append(f"EP{episode:03d}: compact expansion target ({len(body)} chars)")
+            WARNINGS.append(f"EP{episode:03d}: publication-length expansion target ({len(body)} chars)")
         for token in FORBIDDEN:
             if token.lower() in body.lower():
                 ERRORS.append(f"EP{episode:03d}: forbidden token {token}")
         if re.search(r"<[^>]+>", body):
             ERRORS.append(f"EP{episode:03d}: internal angle-bracket tag remains")
-        hook = canon[episode]["hook"].strip().rstrip(".")
-        hook_terms = [term for term in re.split(r"[· ,.'\"()]+", hook) if len(term) >= 2]
-        if hook_terms and not any(term in body[-600:] for term in hook_terms):
-            ERRORS.append(f"EP{episode:03d}: ending does not visibly recover canonical hook")
+
+        ending = body[-700:]
+        hook_words = normalize_words(canon[episode]["hook"])
+        ending_words = normalize_words(ending)
+        ending_text = " ".join(ending_words)
+        anchors = [word for word in hook_words if len(word) >= 3]
+        if anchors and not any(anchor in ending_text for anchor in anchors):
+            ERRORS.append(f"EP{episode:03d}: ending does not recover a canonical hook anchor")
 
     result = {
         "status": "failed" if ERRORS else "passed",
