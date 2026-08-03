@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Materialize compact 10-episode manuscript packets from frozen v3.4 canon.
 
-The packets are reading inputs for manuscript drafting. They do not alter any
-canonical episode field or final-canon source.
+The packets are read-only inputs for manuscript drafting. They never modify
+canonical episode fields or final-canon sources.
 """
 
 from __future__ import annotations
@@ -30,6 +30,41 @@ def load(path: str) -> Any:
     return json.loads((ROOT / path).read_text(encoding="utf-8"))
 
 
+def compact_markdown(start: int, end: int, rows: list[dict[str, Any]]) -> str:
+    lines = [
+        f"# EP{start:03d}~EP{end:03d} 집필 압축 패킷 v3.4",
+        "",
+        "> 보호 정본의 집필용 요약이다. 목표·선택·보상·훅·비용을 변경하지 않는다.",
+        "",
+    ]
+    for row in rows:
+        ep = row["canonical_episode"]
+        lines.extend(
+            [
+                f"## EP{ep['episode']:03d} {ep['title']}",
+                f"- Act/Subact: {ep['act']} / {ep['subact']} ({ep['subact_title']})",
+                f"- 장소: {ep['location']}",
+                f"- 등장: {', '.join(ep.get('cast', []))}",
+                f"- 목표: {ep['goal']}",
+                f"- 선택: {ep['choice']}",
+                f"- 보상: {ep['reward']}",
+                f"- 비용: {ep['cost']}",
+                f"- 훅: {ep['hook']}",
+                f"- 기능: {ep['episode_function']}",
+            ]
+        )
+        blueprint = row.get("scene_blueprint")
+        if blueprint:
+            lines.append("- 장면 비트:")
+            for beat in blueprint.get("scene_beats", []):
+                lines.append(
+                    f"  {beat['beat_no']}. {beat['phase']} — {beat['objective']} / "
+                    f"행동: {beat['action']} / 변화: {beat['state_change']}"
+                )
+        lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
 def main() -> int:
     episodes: list[dict[str, Any]] = []
     for path in EPISODE_FILES:
@@ -52,11 +87,10 @@ def main() -> int:
         end = start + 9
         rows: list[dict[str, Any]] = []
         for episode in range(start, end + 1):
-            canonical = episodes[episode - 1]
             rows.append(
                 {
                     "episode": episode,
-                    "canonical_episode": canonical,
+                    "canonical_episode": episodes[episode - 1],
                     "scene_blueprint": blueprints.get(episode),
                 }
             )
@@ -67,10 +101,12 @@ def main() -> int:
             "range": [start, end],
             "episodes": rows,
         }
-        target = OUT_DIR / f"EPISODES_{start:03d}_{end:03d}_V3_4.json"
-        target.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        json_target = OUT_DIR / f"EPISODES_{start:03d}_{end:03d}_V3_4.json"
+        md_target = OUT_DIR / f"EPISODES_{start:03d}_{end:03d}_COMPACT_V3_4.md"
+        json_target.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        md_target.write_text(compact_markdown(start, end, rows), encoding="utf-8")
 
-    print("wrote 20 manuscript packets for EP001..EP200")
+    print("wrote 20 JSON packets and 20 compact Markdown packets for EP001..EP200")
     return 0
 
 
