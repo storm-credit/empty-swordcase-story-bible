@@ -1,0 +1,62 @@
+{
+  "version": "3.3",
+  "authority": "official_governance_overlay",
+  "purpose": "자동 생성된 120·24·18 전수 구조가 작가 승인 없이 기존 정본을 덮어쓰지 못하게 한다.",
+  "registry_precedence": {
+    "data/collection_registry_120_v3_3.json": "provisional_candidate_registry",
+    "data/set_registry_024_v3_3.json": "provisional_candidate_registry",
+    "data/beast_registry_018_v3_3.json": "provisional_candidate_registry"
+  },
+  "approval_required": true,
+  "approval_owner": "author",
+  "allowed_use_before_approval": [
+    "중복·누락·참조 검증",
+    "기존 200화 기능표와의 충돌 탐지",
+    "후보 비교와 국소 수정",
+    "정본 승격 대상 선별"
+  ],
+  "forbidden_use_before_approval": [
+    "원고에서 신규 후보명을 확정 설정처럼 사용",
+    "기존 확정 사건·인물·결말을 후보 레지스트리에 맞춰 변경",
+    "신수를 수집품 또는 세트 부품으로 취급",
+    "자동 생성 후보를 author-approved canon이라고 표시"
+  ],
+  "inherited_locked_elements": [
+    "무주함",
+    "반치",
+    "빈 명패",
+    "불먹장갑",
+    "소리 없는 망치",
+    "냉철못",
+    "모조 왕검",
+    "한숨풀무",
+    "잠든 숲 향로",
+    "설갑 일곱 조각",
+    "사막을 접는 지도",
+    "천품 파편",
+    "기억 닻과 여섯 닻",
+    "이름 지우는 가면",
+    "어린 배달패",
+    "무명시 이름장부",
+    "육도 열쇠",
+    "수장인",
+    "중앙핵",
+    "두리·신수 역계약",
+    "여섯 책임 조각"
+  ],
+  "effective_corrections": {
+    "SET002": {
+      "first_complete_episode": 20,
+      "reason": "구성품 CI007·CI008이 11~12화에 처음 등장하므로 10화 완성은 불가능하다."
+    }
+  },
+  "promotion_gate": [
+    "120·24·18 수량과 ID 참조 검증 통과",
+    "기존 핵심 아이템 트랙 16개와 충돌 없음",
+    "200화 사건·보상·복선 태그와 회차 배치 충돌 없음",
+    "24세트 기능 중복·상극·해체 조건 감사 통과",
+    "18신수 모두 독립 목표·거절·철회·이탈 조건 보유",
+    "작가 승인 기록"
+  ],
+  "status_line": "전수 후보 레지스트리 작성 완료 / 자동 검증 및 기존 정본 충돌 감사 진행 중 / 작가 승인 전 공식 정본 승격 금지"
+}
