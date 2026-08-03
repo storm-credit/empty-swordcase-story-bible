@@ -1,6 +1,6 @@
 # World Bible v3.3 — 통합 보강 상태
 
-> 판정: **핵심 법칙 완료 / 세계 인벤토리 구축 / 세계 통합 v3.3 보강 / 수집 설정 전수 감사 미완료**.
+> 판정: **핵심 법칙 완료 / 8권역 완료 / 48거점·20노선·18세력 통합 보강 완료 / 120·24·18 전수 후보 작성 완료·검증 및 작가 승인 대기**.
 
 ## 1. 핵심 세계법칙 — 완료
 
@@ -11,22 +11,25 @@
 - 귀환·공동 관리·비수집도 도감 진척으로 인정된다.
 - 신수는 수집품이나 펫이 아니며, 계약은 상호 동의와 철회권을 가진다.
 
-## 2. 세계 규모
+## 2. 세계 규모와 정본 파일
 
 - 8권역: `data/world_regions_008.json`
-- 48거점: `data/world_settlements_048.json`
-- 20노선: `data/world_routes_020.json`
-- 18세력: `data/world_factions_018.json`
+- 48거점 원본: `data/world_settlements_048.json`
+- 48거점 고유 기능: `data/settlement_identity_overlay_v3_3.json`
+- 20노선 원본: `data/world_routes_020.json`
+- 20노선 물류 보강: `data/route_operability_overlay_v3_3.json`
+- 18세력 원본: `data/world_factions_018.json`
+- 18세력 관계망: `data/faction_relation_overlay_v3_3.json`
 - 작가용 비밀 36개: `data/world_secrets_036.json`
 - 정본 용어 120개: `data/world_glossary_120.json`
 
-## 3. 기존 데이터의 한계와 v3.3 보강
+## 3. v3.3 세계 통합
 
 ### 48거점
 
 기존 48거점은 이름·회차·랜드마크는 달랐지만 같은 권역의 여섯 거점이 생활 규칙·행정 일정·병목·재난·감각을 반복했다.
 
-`data/settlement_identity_overlay_v3_3.json`에서 48거점 각각에 다음을 고유 지정했다.
+v3.3에서는 모든 거점에 다음을 개별 지정했다.
 
 - 생활·행정 기능
 - 지역 병목
@@ -38,9 +41,7 @@
 
 ### 20노선
 
-기존 노선은 출발·도착·병목·대가 중심이었다.
-
-`data/route_operability_overlay_v3_3.json`에서 다음을 추가했다.
+다음을 추가했다.
 
 - 통제 세력
 - 이동 시간
@@ -52,9 +53,7 @@
 
 ### 18세력
 
-기존 세력은 자원·수입·고정비·생존 목표는 강했지만 관계망이 없었다.
-
-`data/faction_relation_overlay_v3_3.json`에서 다음을 추가했다.
+다음을 추가했다.
 
 - 승리·패배 조건
 - 담운 부재 시 자율 행동
@@ -62,46 +61,87 @@
 - 25개 동맹·적대·의존·지휘 관계
 - 분쟁 자원과 격화 조건
 
-## 4. 세계 작동성 원칙
+## 4. 수집 시스템 전수 후보
 
-각 사건은 가능한 한 다음 연쇄를 가진다.
+### 수집품 120
+
+`data/collection_registry_120_v3_3.json`
+
+- 20 Subact×6개
+- ID·첫 등장·기능 역할·대가 축
+- 획득·사용·공동 관리·귀환·비수집·책임 인계
+- 세트 참조·핵심 트랙 참조·최종 상태
+- 생명체 제외
+
+### 세트 24
+
+`data/set_registry_024_v3_3.json`
+
+- 구성품
+- 발동 조건
+- 독자 보상
+- 상극·관계·생활 대가
+- 해체 조건
+- 소유 방식
+- 최종 상태
+
+### 신수·탈것 18
+
+`data/beast_registry_018_v3_3.json`
+
+- 독립 목표
+- 동의 조건
+- 거절 조건
+- 철회·이탈 조건
+- 인간 이익과 인간 비용
+- 주요 등장 화와 최종 상태
+
+신수는 수집품이나 세트 부품이 될 수 없다.
+
+## 5. 정본 거버넌스
+
+`data/collection_system_governance_v3_3.json`이 세 후보 레지스트리보다 우선한다.
+
+- 기존 확정 핵심 요소: 보호 정본
+- 자동 생성 신규 이름·세부 기능: provisional
+- 원고에서 승인 전 확정 사용: 금지
+- 공식 정본 승격: 작가 승인 필요
+
+따라서 “전수 후보가 작성됐다”와 “작가 승인 공식 정본이다”를 구분한다.
+
+## 6. 세계 작동성 원칙
 
 > 평시 운영 결정
-> → 특정 집단의 이익
-> → 다른 집단의 생활 손실
-> → 노선 또는 행정 병목
+> → 특정 집단 이익
+> → 다른 집단 생활 손실
+> → 노선·행정 병목
 > → 세력 간 충돌
 > → 담운의 비요청 선택
-> → 다음 거점·Subact에 남는 비용
+> → 다음 거점·Subact 비용
 
-이 연쇄의 구체 데이터는 다음 파일을 함께 읽는다.
+구체 데이터는 다음을 함께 읽는다.
 
 - `data/settlement_identity_overlay_v3_3.json`
 - `data/route_operability_overlay_v3_3.json`
 - `data/faction_relation_overlay_v3_3.json`
 - `data/subact_causality_overlay_v3_3.json`
 
-## 5. 아직 완료되지 않은 설정집 영역
+## 7. 검증
 
-프로젝트는 수집품 120·세트 24·신수·탈것 18을 규모로 선언한다. 그러나 현재 정본 진입점과 매니페스트가 직접 확인시키는 장기 아이템 회수 트랙은 16개다.
+```bash
+python scripts/build_effective_world_v3_3.py
+python scripts/validate_world_blueprint_integration_v3_3.py
+python scripts/validate_collection_system_v3_3.py
+python scripts/validate_collection_governance_v3_3.py
+```
 
-따라서 다음은 아직 최종 완료로 판정하지 않는다.
-
-- 수집품 120개 전부의 개별 ID·기능·제약·대가
-- 첫 등장·재사용·귀환·최종 상태
-- 24세트의 조합·상극·해체·기능 중복
-- 18신수의 계약 거절 조건·독립 목표·이탈·최종 상태
-
-실제 원천 파일이 존재한다면 정본 진입점과 검증기에 연결해야 한다. 없다면 신규 전수 레지스트리를 작성한다.
-
-## 6. 공식 판정
+## 8. 공식 판정
 
 - 세계 핵심 법칙: **완료**.
 - 8권역: **완료**.
-- 48거점 개별 작동성: **v3.3 보강 완료**.
-- 20노선 물류망: **v3.3 보강 완료**.
-- 18세력 관계망: **v3.3 보강 완료**.
-- 세계 전체의 원고 작동성: **조건부 — 실제 회차에서 검증 필요**.
-- 수집품 120·세트 24·신수 18 전수 정본: **감사 미완료**.
+- 48거점·20노선·18세력 통합: **v3.3 보강 완료**.
+- 수집품 120·세트 24·신수 18 전수 구조: **후보 작성 완료**.
+- 신규 후보의 공식 정본 승격: **자동 검증·충돌 감사·작가 승인 대기**.
+- 세계 전체의 원고 작동성: **실제 회차에서 검증 필요**.
 
-상세 판정은 `docs/52_WORLD_BIBLE_BLUEPRINT_INTEGRATION_AUDIT_V3_3.md`와 `data/world_blueprint_completion_manifest_v3_3.json`을 따른다.
+상세 판정은 `docs/52_WORLD_BIBLE_BLUEPRINT_INTEGRATION_AUDIT_V3_3.md`, `docs/53_COLLECTION_SYSTEM_REGISTRY_V3_3.md`, `data/world_blueprint_completion_manifest_v3_3.json`을 따른다.
