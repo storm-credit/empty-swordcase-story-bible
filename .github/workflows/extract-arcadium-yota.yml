@@ -34,7 +34,7 @@ jobs:
         run: python scripts/extract_arcadium_yota.py
       - name: Commit derived analysis source
         run: |
-          if git diff --quiet -- analysis/arcadium_yota_extraction.md; then
+          if [ -z "$(git status --porcelain -- analysis/arcadium_yota_extraction.md)" ]; then
             echo 'No extraction changes'
             exit 0
           fi
