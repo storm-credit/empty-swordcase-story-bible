@@ -1,0 +1,208 @@
+{
+  "version": "3.3",
+  "status": "canon_registry",
+  "count": 18,
+  "collectible": false,
+  "set_component_allowed": false,
+  "rule": "신수·영물·탈것은 인간과 무관한 독립 목표를 가지며 계약을 거절·종료·변경할 수 있다. 전투 승리·구조·치료·먹이 제공만으로 소유권이 이전되지 않는다.",
+  "beasts": [
+    {
+      "id":"BS001","name":"두리","kind":"풍비→귀로풍비","type":"신수·길 연결자","first_episode":40,"region_id":"R02","home_settlement_ids":["ST015","ST018"],
+      "independent_goal":"어미의 흔적을 확인한 뒤 인간과 신수가 서로를 심사하는 길을 만든다.",
+      "consent_condition":"담운이 계약 성사보다 반복된 거절과 이동권을 먼저 지킨다.",
+      "refusal_condition":"인간이 구조·먹이·치료를 계약 채무로 계산하거나 두리를 전투 슬롯에 넣는다.",
+      "withdrawal_trigger":"담운 또는 동료가 살아 있는 존재를 수집품·담보·교환물로 등록한다.",
+      "human_benefit":"냄새로 이름과 기억 너머의 사람을 식별하고 끊긴 길을 연결한다.",
+      "human_cost":"두리가 거부하거나 떠나면 비행·정찰·길 찾기 능력을 즉시 잃는다.",
+      "major_episodes":[40,42,45,50,56,59,78,94,100,112,130,152,169,185,196],
+      "final_state":"담운의 소유물이 아니라 독립된 귀로풍비로서 역계약 제도를 심사한다."
+    },
+    {
+      "id":"BS002","name":"갈대잠룡","kind":"수로 영물","type":"나루 수위 조정자","first_episode":12,"region_id":"R00","home_settlement_ids":["ST003"],
+      "independent_goal":"갈대나루의 산란 수로와 어린 개체가 다니는 얕은 물길을 지킨다.",
+      "consent_condition":"환적선이 산란기 수로를 비우고 파손 화물을 물속에 버리지 않는다.",
+      "refusal_condition":"사람이 빠른 환적을 위해 수로를 직선으로 파거나 무게끈을 몸에 묶는다.",
+      "withdrawal_trigger":"나루가 물길을 사유화해 주민과 영물의 접근을 막는다.",
+      "human_benefit":"안전한 물때와 침수 전조를 몸의 비늘빛으로 알린다.",
+      "human_cost":"산란기에는 가장 빠른 수로를 포기하고 운송을 하루 늦춰야 한다.",
+      "major_episodes":[12,13,16,20],
+      "final_state":"계약 없이 갈대나루의 공동 수로 표식으로 존중받는다."
+    },
+    {
+      "id":"BS003","name":"재먹까치","kind":"화로 영물","type":"수선 흔적 수집자","first_episode":5,"region_id":"R00","home_settlement_ids":["ST002","ST006"],
+      "independent_goal":"버려진 쇳조각과 실패작 표식을 둥지에 모아 대장간의 노동 기억을 보존한다.",
+      "consent_condition":"사람이 둥지의 쇳조각을 훔치지 않고 매번 같은 양의 무해한 철편을 남긴다.",
+      "refusal_condition":"희귀 금속 위치를 찾기 위해 둥지를 추적하거나 새끼를 미끼로 쓴다.",
+      "withdrawal_trigger":"공동 풀무가 실패작을 숨기고 제작자의 이름만 남긴다.",
+      "human_benefit":"서로 다른 공방의 수선 금속과 위조 표식을 구분하는 단서를 제공한다.",
+      "human_cost":"둥지에 맡긴 금속은 회수할 수 없고 즉시 수선 재료가 줄어든다.",
+      "major_episodes":[5,7,28,31,40],
+      "final_state":"열두손골과 쇠울촌을 오가며 실패작 기록을 분산 보존한다."
+    },
+    {
+      "id":"BS004","name":"칼집여우","kind":"시장 영물","type":"사용 흔적 감별자","first_episode":22,"region_id":"R01","home_settlement_ids":["ST008","ST012"],
+      "independent_goal":"전시품보다 오래 사람 손을 탄 칼집과 생활 도구의 냄새를 따라다닌다.",
+      "consent_condition":"감정사가 여우의 선택을 진품 판정으로 과장하지 않고 사용 흔적의 한 증거로만 기록한다.",
+      "refusal_condition":"귀족 수집가가 여우를 특정 소장품의 정통성 상징으로 가둔다.",
+      "withdrawal_trigger":"시민전시거리가 사용 기록을 지우고 가격표만 남긴다.",
+      "human_benefit":"새 가죽·오래된 손때·약품으로 지운 냄새를 구별한다.",
+      "human_cost":"여우가 가리킨 물건도 법적 증서 없이 즉시 거래할 수 없고 공개 검증을 거쳐야 한다.",
+      "major_episodes":[22,24,29,30,37],
+      "final_state":"시민전시거리의 자유 영물로 남아 어떤 감정가의 소유 표식도 받지 않는다."
+    },
+    {
+      "id":"BS005","name":"먹문학","kind":"기록 영조","type":"수정 흔적 감시자","first_episode":23,"region_id":"R01","home_settlement_ids":["ST007","ST011"],
+      "independent_goal":"원문 위에 덧쓴 먹과 지워진 이름의 흔적을 둥지 재료로 모은다.",
+      "consent_condition":"기록관이 수정본을 폐기하지 않고 원본 옆에 공개한다.",
+      "refusal_condition":"새가 떨어뜨린 먹가루를 비밀 감정 기술로 독점한다.",
+      "withdrawal_trigger":"왕실 기록관이 오류 책임을 하급 필사관에게 전가한다.",
+      "human_benefit":"먹의 산화·필사 교대·약품 삭제 시점을 알려준다.",
+      "human_cost":"오류가 발견되면 관련 기록 전체가 재심에 들어가 행정이 지연된다.",
+      "major_episodes":[23,24,26,30,139],
+      "final_state":"분산 기록도장 사이를 오가며 서로 다른 수정 이력을 대조한다."
+    },
+    {
+      "id":"BS006","name":"독비늘수달","kind":"습지 영물","type":"독 농도 안내자","first_episode":43,"region_id":"R02","home_settlement_ids":["ST013","ST014"],
+      "independent_goal":"독성 수로와 깨끗한 수로 사이의 먹이길을 유지한다.",
+      "consent_condition":"치료단이 독을 전부 제거하지 않고 생태 농도 지도를 함께 관리한다.",
+      "refusal_condition":"수달을 해독제 시험 대상으로 묶거나 비늘을 채취한다.",
+      "withdrawal_trigger":"부엽촌이 농지를 넓히기 위해 산란 수로를 메운다.",
+      "human_benefit":"사람이 통과 가능한 독 농도와 갑작스러운 농도 역전을 알려준다.",
+      "human_cost":"수달이 택한 우회 수로는 느리고 약재 일부가 젖는다.",
+      "major_episodes":[43,46,52,57],
+      "final_state":"연무약곡과 부엽촌의 공동 생태 지표로 남는다."
+    },
+    {
+      "id":"BS007","name":"향등나비","kind":"계약 영충","type":"동의 반응자","first_episode":42,"region_id":"R02","home_settlement_ids":["ST015","ST018"],
+      "independent_goal":"강제 계약 냄새를 피해 상호 동의가 유지되는 사람과 신수 사이에만 알을 낳는다.",
+      "consent_condition":"계약 당사자 양쪽이 같은 자리에서 철회 매듭을 확인한다.",
+      "refusal_condition":"나비의 착지를 계약 승인 도장처럼 사용한다.",
+      "withdrawal_trigger":"한쪽 당사자가 떠날 권리를 잃는다.",
+      "human_benefit":"계약 문구와 실제 감정이 어긋나는 순간 향등이 꺼진다.",
+      "human_cost":"나비가 떠나면 계약은 즉시 재심 대상이 되고 운송 일정이 멈춘다.",
+      "major_episodes":[42,48,50,59,152],
+      "final_state":"역계약림의 자율 심사 생물로 남고 인간이 사육하지 못한다."
+    },
+    {
+      "id":"BS008","name":"백옥늪거북","kind":"보호구역 영물","type":"서식지 경계 이동자","first_episode":45,"region_id":"R02","home_settlement_ids":["ST016","ST017"],
+      "independent_goal":"백옥습과 독왕초림 사이의 오래된 산란 경로를 되찾는다.",
+      "consent_condition":"구조대가 등껍질의 옛 사육 표식을 소유 증거가 아니라 피해 기록으로 인정한다.",
+      "refusal_condition":"보호를 명분으로 우리에 넣거나 등껍질 표식을 관광 상품으로 쓴다.",
+      "withdrawal_trigger":"보호구역 경계가 주민 생계만을 위해 다시 좁아진다.",
+      "human_benefit":"땅속 독수위와 오래된 인공 사육장의 위치를 알려준다.",
+      "human_cost":"이동 경로의 논밭과 나무다리를 계절마다 비워야 한다.",
+      "major_episodes":[45,51,55,60],
+      "final_state":"어느 보호단의 소유도 아닌 계절 이동권을 인정받는다."
+    },
+    {
+      "id":"BS009","name":"설각마","kind":"설원 탈것","type":"목적지 심사 운송자","first_episode":63,"region_id":"R03","home_settlement_ids":["ST019","ST021","ST024"],
+      "independent_goal":"눈벽이 무너지기 전 어린 무리와 먹이길을 안전한 곳으로 옮긴다.",
+      "consent_condition":"기수가 목적지·귀환 시각·화물 성격을 숨기지 않는다.",
+      "refusal_condition":"거짓 목적지, 강제 재갈, 신수 포획 화물을 확인한다.",
+      "withdrawal_trigger":"기수가 눈사태 경보보다 상업 계약을 우선한다.",
+      "human_benefit":"눈밑 공극과 안전한 적설면을 감지해 수레를 이끈다.",
+      "human_cost":"거부하면 식량 운송이 멈추며 다른 말로 대체할 수 없다.",
+      "major_episodes":[63,65,69,72,80],
+      "final_state":"칠촌회의와 계약하지 않고 기수별 상호 동행 약속만 맺는다."
+    },
+    {
+      "id":"BS010","name":"눈벽산양","kind":"재난 영물","type":"눈벽 균열 감시자","first_episode":64,"region_id":"R03","home_settlement_ids":["ST020","ST023"],
+      "independent_goal":"새끼 무리가 다니는 절벽과 인간 피난로가 동시에 무너지지 않게 이동한다.",
+      "consent_condition":"백야초소가 산양의 이동을 봉화 경보와 같은 수준의 증거로 인정한다.",
+      "refusal_condition":"뿔을 구조 장비 재료로 요구하거나 무리를 몰아 균열 시험에 쓴다.",
+      "withdrawal_trigger":"봉인성이 산양 이동로에 설갑 조각을 고정한다.",
+      "human_benefit":"눈벽 내부 균열과 눈사태 직전의 저주파를 몸짓으로 알린다.",
+      "human_cost":"산양 길을 비우기 위해 방어선을 일시 해체해야 한다.",
+      "major_episodes":[64,67,70,76],
+      "final_state":"칠촌 방어망의 명령받지 않는 재난 경보자로 남는다."
+    },
+    {
+      "id":"BS011","name":"빙잠나방","kind":"직조 영충","type":"방한실 생산자","first_episode":66,"region_id":"R03","home_settlement_ids":["ST022"],
+      "independent_goal":"빙잠실 온도와 산란 주기를 지켜 다음 세대의 실을 남긴다.",
+      "consent_condition":"직조자가 번데기와 실패 실을 버리지 않고 일정 몫을 둥지에 돌려준다.",
+      "refusal_condition":"전쟁 물자 생산을 위해 온도를 강제로 높이거나 전량 채취한다.",
+      "withdrawal_trigger":"희생자 이름을 지우기 위해 방패 안감을 태운다.",
+      "human_benefit":"추위에 강하고 손상 부위를 스스로 조이는 방한실을 제공한다.",
+      "human_cost":"생산량은 산란 주기에 제한되고 긴급 증산이 불가능하다.",
+      "major_episodes":[66,68,75,78],
+      "final_state":"빙잠골의 계절 공동체로 보호되며 실만 교환한다."
+    },
+    {
+      "id":"BS012","name":"유리등낙","kind":"사막 탈것","type":"물표 거부 운송자","first_episode":82,"region_id":"R04","home_settlement_ids":["ST025","ST026","ST028"],
+      "independent_goal":"사라진 옛 우물과 무리의 휴식 그늘을 계절마다 되찾는다.",
+      "consent_condition":"대상이 물표보다 실제 물과 그늘 몫을 먼저 보여준다.",
+      "refusal_condition":"기억세 미납자를 묶어 운송하거나 물독을 숨긴다.",
+      "withdrawal_trigger":"접힌문이 무리의 옛길을 삭제한다.",
+      "human_benefit":"모래 아래 빈 공간과 오래된 우물 냄새를 찾아낸다.",
+      "human_cost":"유리등낙이 옛길을 택하면 여정이 길어지고 상업 일정이 깨진다.",
+      "major_episodes":[82,85,88,90],
+      "final_state":"대상연합의 자산이 아니라 물과 그늘을 확인한 행렬만 자발적으로 따른다."
+    },
+    {
+      "id":"BS013","name":"기억도마뱀","kind":"기억 영물","type":"삭제 흔적 반응자","first_episode":84,"region_id":"R04","home_settlement_ids":["ST027","ST029","ST030"],
+      "independent_goal":"기억세로 버려진 귀향 기억의 파편을 햇볕 드는 폐벽에 모은다.",
+      "consent_condition":"사람이 파편을 당사자에게 돌려주고 행정 자산으로 복제하지 않는다.",
+      "refusal_condition":"도마뱀의 피부 무늬를 읽어 타인의 기억을 거래한다.",
+      "withdrawal_trigger":"세관이 기억세 장대를 다시 가동한다.",
+      "human_benefit":"어떤 기억이 강제로 잘렸는지와 원래 길 방향을 색으로 보여준다.",
+      "human_cost":"기억을 되돌리면 행정 기록과 현재 정착 관계가 충돌한다.",
+      "major_episodes":[84,86,89,90,128],
+      "final_state":"기억잔촌 주민이 소유하지 않고 폐도 벽을 자유롭게 오간다."
+    },
+    {
+      "id":"BS014","name":"조수등고래","kind":"해상 신수","type":"침몰 항로 이동자","first_episode":102,"region_id":"R05","home_settlement_ids":["ST031","ST034","ST035"],
+      "independent_goal":"침몰도시 위를 지나던 오래된 이동 경로와 새끼의 호흡 수면을 지킨다.",
+      "consent_condition":"여섯 가문이 조수종을 고래 이동보다 먼저 울리지 않는다.",
+      "refusal_condition":"등불 무늬를 항로 소유 표식으로 등록하거나 고래를 선박에 묶는다.",
+      "withdrawal_trigger":"축소지도가 고래의 수면 공간을 접는다.",
+      "human_benefit":"도시 붕괴와 큰 조수 변화를 먼 거리에서 예고한다.",
+      "human_cost":"고래 이동일에는 인양선이 항로를 비우고 구조 일정이 늦어진다.",
+      "major_episodes":[102,106,110,116,120],
+      "final_state":"동해 여섯가문의 공동 소유 요구를 거부한 채 항로의 살아 있는 기준이 된다."
+    },
+    {
+      "id":"BS015","name":"청묘","kind":"섬 영물","type":"실종 신호 감시자","first_episode":108,"region_id":"R05","home_settlement_ids":["ST033","ST034","ST036"],
+      "independent_goal":"실종자를 사망자로 확정하기 전 마지막 냄새와 빈매듭 신호를 확인한다.",
+      "consent_condition":"가족과 가문이 청묘의 반응을 기다리는 동안 상속·매각을 유예한다.",
+      "refusal_condition":"청묘를 사망 판정 도구로 가두거나 특정 가문 신호만 배우게 한다.",
+      "withdrawal_trigger":"빈매듭촌이 구조보다 재산 분배를 먼저 진행한다.",
+      "human_benefit":"바닷물·유품·생존자 냄새를 구분해 오판 장례를 줄인다.",
+      "human_cost":"확정 판정이 늦어져 가족과 가문의 재산 처리가 지연된다.",
+      "major_episodes":[108,109,113,120],
+      "final_state":"파랑나루와 빈매듭촌을 자유롭게 오가는 독립 신호 감시자가 된다."
+    },
+    {
+      "id":"BS016","name":"닻등게","kind":"해저 영물","type":"인양 흔적 보존자","first_episode":104,"region_id":"R05","home_settlement_ids":["ST032","ST035"],
+      "independent_goal":"해저 창고와 난파선의 작은 생태계를 지키며 오래된 닻줄을 집으로 삼는다.",
+      "consent_condition":"인양단이 살아 있는 서식지와 유품 구역을 구분한다.",
+      "refusal_condition":"등껍질에 붙은 인장을 떼어 소유 증거로 사용한다.",
+      "withdrawal_trigger":"가문이 공동창고를 독점하고 다른 닻줄을 끊는다.",
+      "human_benefit":"최근 잘린 닻줄과 오래된 파손, 인공 이동 흔적을 구분한다.",
+      "human_cost":"서식지 구역의 유물은 인양하지 못하고 장소 귀환으로 처리한다.",
+      "major_episodes":[104,107,110,118],
+      "final_state":"침몰도시의 비수집 구역을 지키는 해저 영물로 남는다."
+    },
+    {
+      "id":"BS017","name":"무명견","kind":"도시 영물","type":"습관·관계 식별자","first_episode":124,"region_id":"R06","home_settlement_ids":["ST037","ST038","ST040"],
+      "independent_goal":"이름을 잃은 주민 중 자신을 먹이고 돌본 사람을 냄새와 습관으로 다시 찾는다.",
+      "consent_condition":"사람이 냄새끈을 신원 독점 자료로 저장하지 않고 당사자의 생활권 복원에만 쓴다.",
+      "refusal_condition":"현상금·죄명·채무 추적에 냄새를 이용한다.",
+      "withdrawal_trigger":"이름상회가 무명견의 선택을 호칭 상품의 보증으로 판매한다.",
+      "human_benefit":"본명·얼굴·기억이 달라도 같은 사람의 생활 냄새와 동작을 알아본다.",
+      "human_cost":"무명견이 인정하지 않는 문서 신원은 재심해야 해 행정이 지연된다.",
+      "major_episodes":[124,126,128,130,139],
+      "final_state":"어떤 이름에도 등록되지 않고 빈호적골 주민들과 함께 산다."
+    },
+    {
+      "id":"BS018","name":"천외돌학","kind":"산맥 신수","type":"중력길 안내자","first_episode":163,"region_id":"R07","home_settlement_ids":["ST043","ST044","ST045"],
+      "independent_goal":"부유계단군의 중력 주기에 맞춰 둥지와 어린 학의 이동로를 유지한다.",
+      "consent_condition":"등반자가 사람과 화물을 다른 명단으로 기록하고 뒤처진 동료를 버리지 않는다.",
+      "refusal_condition":"깃털을 권한패 재료로 쓰거나 돌학의 비행로를 중앙핵 직행로로 고정한다.",
+      "withdrawal_trigger":"십이문실이 살아 있는 존재를 전시품으로 분류한다.",
+      "human_benefit":"중력 역전 시점과 안전하게 발을 디딜 부유계단을 알려준다.",
+      "human_cost":"돌학이 선택한 경로는 느리고 모든 동료가 함께 움직여야 한다.",
+      "major_episodes":[163,165,169,170,185],
+      "final_state":"열린무고 이후에도 천외산맥의 자유로운 길 안내자로 남는다."
+    }
+  ]
+}
