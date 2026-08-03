@@ -1,10 +1,23 @@
-name: Validate World Blueprint v3.3
+name: Validate and Finalize World Blueprint v3.4
 
 on:
+  push:
+    branches:
+      - 'agent/world-bible-integration-v3-3'
+    paths:
+      - 'data/**'
+      - 'docs/**'
+      - 'production/**'
+      - 'scripts/**'
+      - 'COMPLETE_BLUEPRINT.md'
+      - 'WORLD_BIBLE_COMPLETE.md'
+      - 'WORLD_REFERENCE_QUICK.md'
+      - '.github/workflows/validate-world-blueprint-v3-3.yml'
   pull_request:
     paths:
       - 'data/**'
       - 'docs/**'
+      - 'production/**'
       - 'scripts/**'
       - 'COMPLETE_BLUEPRINT.md'
       - 'WORLD_BIBLE_COMPLETE.md'
@@ -13,28 +26,63 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  validate:
+  validate-and-finalize:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Check out integration branch
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref_name }}
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Build effective world
-        run: python scripts/build_effective_world_v3_3.py
-
-      - name: Validate world and blueprint structure
+      - name: Validate v3.3 world structure
         run: python scripts/validate_world_blueprint_integration_v3_3.py --report-json data/world_blueprint_validation_report_v3_3.json
 
-      - name: Validate 120 items, 24 sets, and 18 beasts
+      - name: Validate v3.3 collection candidates
         run: python scripts/validate_collection_system_v3_3.py
 
-      - name: Validate provisional canon governance
+      - name: Validate v3.3 governance
         run: python scripts/validate_collection_governance_v3_3.py
+
+      - name: Finalize approved v3.4 canon artifacts
+        run: python scripts/finalize_canon_v3_4.py
+
+      - name: Validate approved v3.4 final canon
+        run: python scripts/validate_final_canon_v3_4.py
+
+      - name: Check deterministic finalization
+        run: |
+          git diff --exit-code -- scripts/finalize_canon_v3_4.py scripts/validate_final_canon_v3_4.py
+          python scripts/finalize_canon_v3_4.py
+          python scripts/validate_final_canon_v3_4.py
+
+      - name: Commit generated final canon artifacts
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            data/effective_world_v3_4.json \
+            data/collection_registry_120_v3_4.json \
+            data/set_registry_024_v3_4.json \
+            data/beast_registry_018_v3_4.json \
+            data/supporting_cast_operability_028_v3_4.json \
+            data/canon_approval_v3_4.json \
+            data/final_semantic_audit_v3_4.json \
+            data/project_manifest_v3_4.json \
+            production/blueprints/EPISODES_021_200_SCENE_BLUEPRINT_V3_4.json \
+            docs/57_FINAL_CANON_FREEZE_V3_4.md
+          if git diff --cached --quiet; then
+            echo "Generated canon artifacts are already current."
+          else
+            git commit -m "build: generate approved v3.4 final canon [generated]"
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
