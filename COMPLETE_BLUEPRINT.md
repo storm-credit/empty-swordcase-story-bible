@@ -1,78 +1,79 @@
-# Complete Blueprint v3.3
+# Complete Blueprint v3.4 — 최종 동결
 
-> 이 문서는 분산된 정본의 빠른 진입점이다. ‘200화 기능 구조 완료’와 ‘200화 상세 장면 설계 완료’를 구분한다.
+> 승인 ID: `AUTHOR-AUTO-V3.4-20260803`  
+> 판정: **설계도·설정집·세계관 완료 / 원고 집필 전 단계**
 
-## 정본 원천
+## 최종 규모
 
-- 핵심 설계: `PROJECT_BLUEPRINT_V2_4.md`
-- 5액트·20서브액트: `data/acts_subacts_005_020.json`
-- 200화 기능 지도: `data/episodes_*.json`
-- 복선·회수: `data/payoff_tracks_v2_7.json`, `data/episode_payoff_tags_001_200.json`
-- 세계 작동성 v3.1: `docs/50_WORLD_OPERATIONALITY_PATCH_V3_1.md`
-- 세계·설계 통합 감사 v3.3: `docs/52_WORLD_BIBLE_BLUEPRINT_INTEGRATION_AUDIT_V3_3.md`
-- 수집 시스템 전수 후보: `docs/53_COLLECTION_SYSTEM_REGISTRY_V3_3.md`
-- 완료 상태표: `data/world_blueprint_completion_manifest_v3_3.json`
-- 남은 갭: `data/world_integration_gap_register_v3_3.json`
+- 5 Act / 10 Arc / 20 Subact
+- 본편 200화 목표·갈등·선택·보상·훅 기능 지도
+- EP021~EP200 Production Blueprint: 180화 / 1,080비트
+- 8권역 / 48거점 / 20노선 / 18세력
+- 수집품 120 / 세트 24 / 신수·탈것 18
+- 실제 음성 카드 기준 조연 28명 감정·관계 작동성
+- S-Tier 8 / A-Tier 20 / 캐릭터 트랙 7 / 핵심 아이템 트랙 16
 
-## 현재 공식 판정
+## 최종 정본 파일
 
-- 작품 정체성·주제·세계 핵심 법칙: **완료**.
-- 5 Act / 10 Arc / 20 Subact: **완료**.
-- 1~200화 목표·갈등·선택·보상·훅 기능 지도: **완료**.
-- 1~20화 상세 설계: **기존 정본 기준 완료**.
-- 21~40화 상세 설계: **부분 완료 — 회차당 4비트, 6~10비트 게이트 미달**.
-- 41~200화 상세 설계: **미완료 — 기능표는 있으나 6~10개 씬비트 패킷 없음**.
-- 8권역: **완료**.
-- 48거점 개별 작동성: **v3.3 오버레이 보강 완료**.
-- 20노선 물류 작동성: **v3.3 오버레이 보강 완료**.
-- 18세력 관계망: **v3.3 오버레이 보강 완료**.
-- 20 Subact 구체 인과사슬: **v3.3 오버레이 보강 완료**.
-- 수집품 120·세트 24·신수·탈것 18: **전수 후보 레지스트리 작성 완료, 자동 검증·기존 정본 충돌 감사·작가 승인 대기**.
-- 장기 복선: S-Tier 8 / A-Tier 20 / 캐릭터 7 / 핵심 아이템 트랙 16 완료.
-- 원고: 1~2화 초고·내부 검수, 작가 승인 0화.
+- 프로젝트 상태: `data/project_manifest_v3_4.json`
+- 승인 장부: `data/canon_approval_v3_4.json`
+- 최종 의미 감사: `data/final_semantic_audit_v3_4.json`
+- 세계 통합본: `data/effective_world_v3_4.json`
+- 수집품 120: `data/collection_registry_120_v3_4.json`
+- 세트 24: `data/set_registry_024_v3_4.json`
+- 신수·탈것 18: `data/beast_registry_018_v3_4.json`
+- 조연 28 작동성: `data/supporting_cast_operability_028_v3_4.json`
+- EP021~EP200 상세 설계: `production/blueprints/EPISODES_021_200_SCENE_BLUEPRINT_V3_4.json`
+- 최종 동결 보고서: `docs/57_FINAL_CANON_FREEZE_V3_4.md`
 
-## v3.3 세계 통합 파일
+## 완료 판정
 
-- 48거점 고유 생활·행정·물류: `data/settlement_identity_overlay_v3_3.json`
-- 20노선 처리량·폐쇄·우회·연쇄손실: `data/route_operability_overlay_v3_3.json`
-- 18세력 승패·자율행동·25개 관계선: `data/faction_relation_overlay_v3_3.json`
-- 20 Subact 이전 비용→다음 문제 연결: `data/subact_causality_overlay_v3_3.json`
-- effective world 생성: `scripts/build_effective_world_v3_3.py`
+- 작품 정체성·주제·세계 핵심 법칙: **완료**
+- 5 Act / 10 Arc / 20 Subact: **완료**
+- 1~200화 기능 지도: **완료**
+- EP021~EP200 6비트 상세 설계: **완료**
+- 8권역·48거점·20노선·18세력: **완료**
+- 수집품 120·세트 24·신수 18: **완료**
+- 조연 음성·사적 목표·거절선·담운 부재 선택 28명: **완료**
+- 구조·참조·시간축·이름 충돌·의미 감사: **통과**
+- 원고: **미완료 — 기존 1~2화 초고만 존재**
 
-## v3.3 수집 시스템 파일
+## 감사에서 해결한 핵심 문제
 
-- 수집품 120 후보: `data/collection_registry_120_v3_3.json`
-- 세트 24 후보: `data/set_registry_024_v3_3.json`
-- 신수·탈것 18 후보: `data/beast_registry_018_v3_3.json`
-- 작가 승인·정본 보호: `data/collection_system_governance_v3_3.json`
-- 전수 구조 검증: `scripts/validate_collection_system_v3_3.py`
-- 후보 정본 거버넌스 검증: `scripts/validate_collection_governance_v3_3.py`
-
-새 120·24·18 후보는 기존 확정 정본을 덮어쓰지 않는다. 자동 생성한 신규 이름은 작가 승인 전 원고에 확정 설정처럼 사용할 수 없다.
+1. 200화 Architecture와 회차별 Production Blueprint를 분리했다.
+2. 48거점의 권역별 복제 운영문을 48개 고유 생활·행정·물류 기능으로 바꿨다.
+3. 20노선에 시간·용량·폐쇄·우회·연쇄 손실을 부여했다.
+4. 18세력에 승패 조건·자율 행동·25개 관계선을 부여했다.
+5. 20 Subact를 이전 비용→현재 문제→비가역 선택→다음 비용으로 연결했다.
+6. 수집품 120·세트 24·신수 18을 개별 ID와 생애주기로 정본화했다.
+7. 실제 `supporting_cast_voice_028_v2_9.json`의 28명만 조연 정본으로 승격했다.
+8. 기능표에 없던 조연은 권역별 상세 Blueprint의 보조 장면에 배치했다.
+9. 사람·신수 이름 충돌과 세트 완성 시점 오류를 교정했다.
+10. 기존 200화의 목표·선택·보상·훅·비용은 변경하지 않았다.
 
 ## 보호 정본
 
-- 담운의 정체와 현재 인격의 독립성.
-- 신수 비소유·계약 거절·종료·철회권.
-- 소유권·귀환·책임 주제.
-- 5액트 결말.
-- 중앙 소유선 절단과 여섯 책임 조각 배송.
-- 주요 동료의 생존과 이탈.
-- 1~2화 핵심 사건.
-- S-Tier 8개와 A-Tier 20개의 최종 답.
+- 담운의 현재 인격과 과거 수장으로부터의 독립성
+- 신수 비소유·계약 거절·종료·철회권
+- 소유권·귀환·책임 주제
+- 5 Act 결말
+- 중앙 소유선 절단과 여섯 책임 조각 배송
+- 기존 200화의 목표·선택·보상·훅·비용
+- S-Tier 8개와 A-Tier 20개의 최종 답
 
-## 다음 완료 게이트
+## 검증
 
-1. `python scripts/build_effective_world_v3_3.py`
-2. `python scripts/validate_world_blueprint_integration_v3_3.py`
-3. `python scripts/validate_collection_system_v3_3.py`
-4. `python scripts/validate_collection_governance_v3_3.py`
-5. 120·24·18 후보와 기존 200화·복선·보상 데이터 충돌 감사.
-6. 작가 승인 또는 국소 수정 뒤 공식 정본 승격.
-7. 21~40화 6~10비트 승격.
-8. 41~200화 6~10비트 Production Blueprint 작성.
-9. 모든 검증 통과 후에만 ‘설계도·설정집·세계관 최종 완성’으로 승격.
+```bash
+python scripts/finalize_canon_v3_4_complete.py
+python scripts/validate_final_canon_v3_4_complete.py
+```
 
-## 현재 공식 문구
+검증 결과:
 
-> **핵심 정본 완료 / 5액트·20서브액트·200화 기능 구조 완료 / 8권역 완료 / 48거점·20노선·18세력 통합 보강 완료 / 120수집품·24세트·18신수 전수 후보 작성 완료·검증 및 작가 승인 대기 / 200화 상세 장면 설계 미완료.**
+- critical error: 0
+- warning: 0
+- 보호 정본 변경: 없음
+
+## 다음 단계
+
+설계 확장이 아니라 제3화부터 원고를 작성한다. 인간 독자 반응 전에는 전체 구조를 다시 만들지 않고, 장면 설명 밀도·공간·감정 반응·대사만 국소 편집한다.
