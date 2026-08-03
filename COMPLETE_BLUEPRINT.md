@@ -1,6 +1,6 @@
 # Complete Blueprint v3.3
 
-> 이 문서는 분산된 정본의 빠른 진입점이다. ‘200화 구조 완료’와 ‘200화 상세 장면 설계 완료’를 구분한다.
+> 이 문서는 분산된 정본의 빠른 진입점이다. ‘200화 기능 구조 완료’와 ‘200화 상세 장면 설계 완료’를 구분한다.
 
 ## 정본 원천
 
@@ -9,7 +9,8 @@
 - 200화 기능 지도: `data/episodes_*.json`
 - 복선·회수: `data/payoff_tracks_v2_7.json`, `data/episode_payoff_tags_001_200.json`
 - 세계 작동성 v3.1: `docs/50_WORLD_OPERATIONALITY_PATCH_V3_1.md`
-- 통합 감사 v3.3: `docs/52_WORLD_BIBLE_BLUEPRINT_INTEGRATION_AUDIT_V3_3.md`
+- 세계·설계 통합 감사 v3.3: `docs/52_WORLD_BIBLE_BLUEPRINT_INTEGRATION_AUDIT_V3_3.md`
+- 수집 시스템 전수 후보: `docs/53_COLLECTION_SYSTEM_REGISTRY_V3_3.md`
 - 완료 상태표: `data/world_blueprint_completion_manifest_v3_3.json`
 - 남은 갭: `data/world_integration_gap_register_v3_3.json`
 
@@ -22,11 +23,11 @@
 - 21~40화 상세 설계: **부분 완료 — 회차당 4비트, 6~10비트 게이트 미달**.
 - 41~200화 상세 설계: **미완료 — 기능표는 있으나 6~10개 씬비트 패킷 없음**.
 - 8권역: **완료**.
-- 48거점 개별 작동성: **v3.3 오버레이로 보강 완료**.
-- 20노선 물류 작동성: **v3.3 오버레이로 보강 완료**.
-- 18세력 관계망: **v3.3 오버레이로 보강 완료**.
-- 20 Subact 구체 인과사슬: **v3.3 오버레이로 보강 완료**.
-- 수집품 120·세트 24·신수 18: **수량 선언은 있으나 전수 정본 원천과 중복 감사는 미완료**.
+- 48거점 개별 작동성: **v3.3 오버레이 보강 완료**.
+- 20노선 물류 작동성: **v3.3 오버레이 보강 완료**.
+- 18세력 관계망: **v3.3 오버레이 보강 완료**.
+- 20 Subact 구체 인과사슬: **v3.3 오버레이 보강 완료**.
+- 수집품 120·세트 24·신수·탈것 18: **전수 후보 레지스트리 작성 완료, 자동 검증·기존 정본 충돌 감사·작가 승인 대기**.
 - 장기 복선: S-Tier 8 / A-Tier 20 / 캐릭터 7 / 핵심 아이템 트랙 16 완료.
 - 원고: 1~2화 초고·내부 검수, 작가 승인 0화.
 
@@ -36,7 +37,18 @@
 - 20노선 처리량·폐쇄·우회·연쇄손실: `data/route_operability_overlay_v3_3.json`
 - 18세력 승패·자율행동·25개 관계선: `data/faction_relation_overlay_v3_3.json`
 - 20 Subact 이전 비용→다음 문제 연결: `data/subact_causality_overlay_v3_3.json`
-- 통합 검증기: `scripts/validate_world_blueprint_integration_v3_3.py`
+- effective world 생성: `scripts/build_effective_world_v3_3.py`
+
+## v3.3 수집 시스템 파일
+
+- 수집품 120 후보: `data/collection_registry_120_v3_3.json`
+- 세트 24 후보: `data/set_registry_024_v3_3.json`
+- 신수·탈것 18 후보: `data/beast_registry_018_v3_3.json`
+- 작가 승인·정본 보호: `data/collection_system_governance_v3_3.json`
+- 전수 구조 검증: `scripts/validate_collection_system_v3_3.py`
+- 후보 정본 거버넌스 검증: `scripts/validate_collection_governance_v3_3.py`
+
+새 120·24·18 후보는 기존 확정 정본을 덮어쓰지 않는다. 자동 생성한 신규 이름은 작가 승인 전 원고에 확정 설정처럼 사용할 수 없다.
 
 ## 보호 정본
 
@@ -51,13 +63,16 @@
 
 ## 다음 완료 게이트
 
-1. `python scripts/validate_world_blueprint_integration_v3_3.py`
-2. 수집품 120·세트 24·신수 18의 실제 원천 파일 식별.
-3. 원천이 없다면 전수 정본 레지스트리 작성.
-4. 21~40화의 4비트를 6~10비트로 승격.
-5. 41~200화의 6~10비트 Production Blueprint 작성.
-6. 모든 검증 통과 후에만 ‘설계도·설정집·세계관 최종 완성’으로 승격.
+1. `python scripts/build_effective_world_v3_3.py`
+2. `python scripts/validate_world_blueprint_integration_v3_3.py`
+3. `python scripts/validate_collection_system_v3_3.py`
+4. `python scripts/validate_collection_governance_v3_3.py`
+5. 120·24·18 후보와 기존 200화·복선·보상 데이터 충돌 감사.
+6. 작가 승인 또는 국소 수정 뒤 공식 정본 승격.
+7. 21~40화 6~10비트 승격.
+8. 41~200화 6~10비트 Production Blueprint 작성.
+9. 모든 검증 통과 후에만 ‘설계도·설정집·세계관 최종 완성’으로 승격.
 
 ## 현재 공식 문구
 
-> **핵심 정본 완료 / 5액트·20서브액트·200화 기능 구조 완료 / 8권역 완료 / 48거점·20노선·18세력 통합 보강 완료 / 200화 상세 장면 설계 미완료 / 수집품 120·세트 24·신수 18 전수 정본 감사 미완료.**
+> **핵심 정본 완료 / 5액트·20서브액트·200화 기능 구조 완료 / 8권역 완료 / 48거점·20노선·18세력 통합 보강 완료 / 120수집품·24세트·18신수 전수 후보 작성 완료·검증 및 작가 승인 대기 / 200화 상세 장면 설계 미완료.**
