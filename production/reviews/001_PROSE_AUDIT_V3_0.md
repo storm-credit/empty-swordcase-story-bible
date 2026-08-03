@@ -11,8 +11,9 @@
 - `data/episodes_001_010.json` 제1화
 - `data/episode_world_cast_cost_001_050.json` 제1화 오버레이
 - `data/episode_payoff_tags_001_200.json` 제1화 태그
-- `world/regions/R00_청래역권.md`
-- `docs/15_VOICE_AND_DIALOGUE_BIBLE.md`
+- `data/world_regions_008.json` R00 청래역권 운영 카드
+- `data/world_settlements_048.json` ST001 청래역 운영 카드
+- `docs/46_SUPPORTING_CAST_VOICE_BIBLE_V2_9.md`
 - `docs/41_PROSE_STYLE_AND_WEBNOVEL_BIBLE.md`
 - `data/supporting_cast_voice_028_v2_9.json`
 

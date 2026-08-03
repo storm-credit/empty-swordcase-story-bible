@@ -4,6 +4,17 @@
 
 **Internal Harness Pass / Author Approval Pending**
 
+## 입력 정본
+
+- `data/episodes_001_010.json` 제2화
+- `data/episode_world_cast_cost_001_050.json` 제2화 오버레이
+- `data/episode_payoff_tags_001_200.json` 제2화 태그
+- `data/world_regions_008.json` R00 청래역권 운영 카드
+- `data/world_settlements_048.json` ST002 쇠울촌 운영 카드
+- `docs/46_SUPPORTING_CAST_VOICE_BIBLE_V2_9.md`
+- `docs/41_PROSE_STYLE_AND_WEBNOVEL_BIBLE.md`
+- `data/supporting_cast_voice_028_v2_9.json`
+
 ## 검수 결과
 
 | 역할 | 결과 | 확인 내용 |
