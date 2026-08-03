@@ -1,6 +1,6 @@
-# 《빈 검함으로 천하를 수집한다》 Story Bible v3.0
+# 《빈 검함으로 천하를 수집한다》 Story Bible v3.1
 
-> **Design Complete / Manuscript Drafting Started / Episodes 1-2 Internal Harness Pass / Author Approval Pending**
+> **Design Complete / Arcadium-Yota Reaudit Complete / World Operability Conditional Pass / Episodes 1-2 Internal Harness Pass / Author Approval Pending**
 
 ## 현재 범위
 
@@ -11,6 +11,7 @@
 - 주요 액션 공간 프리플라이트: 47/47
 - 조연 음성 카드: 28/28
 - 핵심 부상·장비·권리 연속성: 45개
+- Arcadium/Yota 비교 후 세계관 작동성 보강: 8권역·48거점·18세력·20노선·36비밀·120용어 운영 데이터 추가
 - 원고 초고: 1~2화 작성·내부 하네스 통과
 - 작가 승인 원고: 0화
 
@@ -27,12 +28,15 @@
 1. `CLAUDE.md`
 2. `AGENTS.md`
 3. `docs/48_FINAL_PROSE_PREFLIGHT_V2_9.md`
-4. 해당 화의 v2.7 복선 태그
-5. 해당 화의 v2.8 거점·조연·대가 오버레이
-6. 액션 화이면 v2.9 액션 시트
-7. 등장 조연의 v2.9 음성 카드
-8. 활성 연속성 상태
-9. 직전 화 원고와 검수 보고서
+4. `docs/49_ARCADIUM_YOTA_WORLD_BIBLE_COMPARISON.md`
+5. `docs/50_WORLD_OPERATIONALITY_PATCH_V3_1.md`
+6. 해당 화의 v2.7 복선 태그
+7. 해당 화의 v2.8 거점·조연·대가 오버레이
+8. 해당 권역·세력의 v3.1 세계 운영 데이터
+9. 액션 화이면 v2.9 액션 시트
+10. 등장 조연의 v2.9 음성 카드
+11. 활성 연속성 상태
+12. 직전 화 원고와 검수 보고서
 
 ## 원고 검증
 
@@ -48,3 +52,12 @@ python scripts/validate_manuscript_drafts_v3_0.py
 - `production/reviews/002_PROSE_AUDIT_V3_0.md`
 
 다음 작업 대상은 제3화 「첫 번째 수집」이다.
+
+## v3.1 세계관 재감사
+
+- `docs/49_ARCADIUM_YOTA_WORLD_BIBLE_COMPARISON.md`
+- `production/audits/ARCADIUM_YOTA_ADOPTION_CANDIDATES.md`
+- `orchestra/PM_WORLD_BIBLE_REAUDIT_AFTER_ARCADIUM.md`
+- `docs/50_WORLD_OPERATIONALITY_PATCH_V3_1.md`
+
+판정: 구조 재설계는 불필요하나 세계관은 **조건부 완성**이다. 제3화 집필 전에는 v3.1 운영 데이터와 검증기를 함께 읽는다.

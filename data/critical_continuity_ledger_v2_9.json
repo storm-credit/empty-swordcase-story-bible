@@ -1,0 +1,407 @@
+[
+  {
+    "id": "CT001",
+    "start_episode": 2,
+    "end_episode": 5,
+    "state": "담운 왼손 엄지 상처",
+    "scene_effect": "손잡이 압력 감소·매듭 속도 저하",
+    "resolution": "5화 화로 작업 전에 붕대 교체",
+    "permanent": false
+  },
+  {
+    "id": "CT002",
+    "start_episode": 3,
+    "end_episode": 31,
+    "state": "반치 끝 파손",
+    "scene_effect": "찌르기·정밀 절단 금지",
+    "resolution": "31화 담보 보관 전 임시 복구",
+    "permanent": false
+  },
+  {
+    "id": "CT003",
+    "start_episode": 5,
+    "end_episode": 7,
+    "state": "담운 오른손 촉감 둔화",
+    "scene_effect": "매듭 직접 작업 불가",
+    "resolution": "7화 망치 진동으로 감각 확인",
+    "permanent": false
+  },
+  {
+    "id": "CT004",
+    "start_episode": 15,
+    "end_episode": 18,
+    "state": "촉각·청각 혼선",
+    "scene_effect": "거리 판정 한 박자 지연",
+    "resolution": "18화 판결 장면에서 안정",
+    "permanent": false
+  },
+  {
+    "id": "CT005",
+    "start_episode": 29,
+    "end_episode": 32,
+    "state": "오른손 촉감 상실·반치 균열",
+    "scene_effect": "오른손 장비 교체 금지",
+    "resolution": "32화 말미 감각 일부 회복",
+    "permanent": false
+  },
+  {
+    "id": "CT006",
+    "start_episode": 37,
+    "end_episode": 40,
+    "state": "수면 부족·집중 흔들림",
+    "scene_effect": "5품 동시 사용 금지",
+    "resolution": "40화 출발 전 휴식",
+    "permanent": false
+  },
+  {
+    "id": "CT007",
+    "start_episode": 38,
+    "end_episode": 48,
+    "state": "이명·손 떨림",
+    "scene_effect": "세트 5품 동시 사용 봉인",
+    "resolution": "남독 환경에서 단계적 해제",
+    "permanent": false
+  },
+  {
+    "id": "CT008",
+    "start_episode": 44,
+    "end_episode": 47,
+    "state": "불먹장갑 안감 독오염",
+    "scene_effect": "장착 시간 증가",
+    "resolution": "47화 독왕초 처리 후 세척",
+    "permanent": false
+  },
+  {
+    "id": "CT009",
+    "start_episode": 49,
+    "end_episode": 51,
+    "state": "두리 방향 감각 손실",
+    "scene_effect": "냄새 추적 신뢰도 감소",
+    "resolution": "51화 과열 뒤 예란이 진정",
+    "permanent": false
+  },
+  {
+    "id": "CT010",
+    "start_episode": 60,
+    "end_episode": 81,
+    "state": "두리 한쪽 날개 경직",
+    "scene_effect": "비행 이동 불가",
+    "resolution": "서황막 문 통과 후 재활 완료",
+    "permanent": false
+  },
+  {
+    "id": "CT011",
+    "start_episode": 62,
+    "end_episode": 65,
+    "state": "예란 저체온",
+    "scene_effect": "해동·전투 작업 제외",
+    "resolution": "65화 피풍 열로 회복",
+    "permanent": false
+  },
+  {
+    "id": "CT012",
+    "start_episode": 66,
+    "end_episode": 72,
+    "state": "담운 오른쪽 무릎 부상",
+    "scene_effect": "급회전·도약 제한",
+    "resolution": "빙잠골 휴식 뒤 보조대 제거",
+    "permanent": false
+  },
+  {
+    "id": "CT013",
+    "start_episode": 74,
+    "end_episode": 80,
+    "state": "무석 방패 모서리 파손",
+    "scene_effect": "한 팔 방어 불가",
+    "resolution": "80화 퇴로 고정으로 임시 보강",
+    "permanent": false
+  },
+  {
+    "id": "CT014",
+    "start_episode": 77,
+    "end_episode": 200,
+    "state": "무석 귀장회 이름·연금·치료권 상실",
+    "scene_effect": "공식 보급·명령권 없음",
+    "resolution": "결말까지 제도적으로 회복하지 않음",
+    "permanent": true
+  },
+  {
+    "id": "CT015",
+    "start_episode": 80,
+    "end_episode": 94,
+    "state": "무석 왼팔 감각 상실",
+    "scene_effect": "방패 교체 시간 증가",
+    "resolution": "망치 귀환 전 마지막 수리로 부분 회복",
+    "permanent": false
+  },
+  {
+    "id": "CT016",
+    "start_episode": 84,
+    "end_episode": 200,
+    "state": "린화가 담운과 공유한 하루 망각",
+    "scene_effect": "관계 기억의 빈칸",
+    "resolution": "복원하지 않고 행동 기록으로 대체",
+    "permanent": true
+  },
+  {
+    "id": "CT017",
+    "start_episode": 88,
+    "end_episode": 91,
+    "state": "담운 관계선 시야 과부하",
+    "scene_effect": "두통·오판 위험",
+    "resolution": "전시실 붕괴 후 천품 파편 봉인",
+    "permanent": false
+  },
+  {
+    "id": "CT018",
+    "start_episode": 89,
+    "end_episode": 96,
+    "state": "전시품 세 점 장착 봉인",
+    "scene_effect": "전력 감소",
+    "resolution": "96화 방 하나 포기 후 재분류",
+    "permanent": false
+  },
+  {
+    "id": "CT019",
+    "start_episode": 91,
+    "end_episode": 94,
+    "state": "담운 손바닥 열상",
+    "scene_effect": "검함 조작 속도 저하",
+    "resolution": "망치 귀환 장면에서 봉합",
+    "permanent": false
+  },
+  {
+    "id": "CT020",
+    "start_episode": 93,
+    "end_episode": 99,
+    "state": "반치 완전 파손",
+    "scene_effect": "주 무기 없음",
+    "resolution": "99화 연결선 전용으로 복원",
+    "permanent": false
+  },
+  {
+    "id": "CT021",
+    "start_episode": 94,
+    "end_episode": 200,
+    "state": "소리 없는 망치 영구 귀환",
+    "scene_effect": "5품 세트 해체·수리력 감소",
+    "resolution": "결말 원격 공명만 허용",
+    "permanent": true
+  },
+  {
+    "id": "CT022",
+    "start_episode": 103,
+    "end_episode": 129,
+    "state": "삼십 일 뒤 호흡 부채",
+    "scene_effect": "예정 시각 한 시진 호흡 공백",
+    "resolution": "129화 행적 재현 중 징수",
+    "permanent": false
+  },
+  {
+    "id": "CT023",
+    "start_episode": 122,
+    "end_episode": 130,
+    "state": "동료의 최근 약속 기억 삭제",
+    "scene_effect": "담운 정체 신뢰 약화",
+    "resolution": "습관·냄새·행적으로 관계 재구축",
+    "permanent": false
+  },
+  {
+    "id": "CT024",
+    "start_episode": 124,
+    "end_episode": 150,
+    "state": "담운 몸의 봉인 명령 흔적",
+    "scene_effect": "백장 원격 명령 감응",
+    "resolution": "150화 검함이 피와 명령을 함께 거부",
+    "permanent": false
+  },
+  {
+    "id": "CT025",
+    "start_episode": 125,
+    "end_episode": 130,
+    "state": "담운 장비 접근권 회수",
+    "scene_effect": "무주함·전시실 사용 제한",
+    "resolution": "린화의 행동 증명 뒤 복구",
+    "permanent": false
+  },
+  {
+    "id": "CT026",
+    "start_episode": 127,
+    "end_episode": 130,
+    "state": "린화 기억 담보",
+    "scene_effect": "과거 감정 기록 일부 불안정",
+    "resolution": "130화 담운을 알아보고 담보 종료",
+    "permanent": false
+  },
+  {
+    "id": "CT027",
+    "start_episode": 134,
+    "end_episode": 140,
+    "state": "무주함 장착 권한 절반 잠김",
+    "scene_effect": "슬롯 절반 사용 불가",
+    "resolution": "현재 이름 선택 뒤 제한 해제",
+    "permanent": false
+  },
+  {
+    "id": "CT028",
+    "start_episode": 139,
+    "end_episode": 142,
+    "state": "담운 손등 화상",
+    "scene_effect": "반치 손잡이 장시간 유지 불가",
+    "resolution": "분산 전쟁 시작 전 치료",
+    "permanent": false
+  },
+  {
+    "id": "CT029",
+    "start_episode": 142,
+    "end_episode": 157,
+    "state": "파티 분산·무주함 기능 절반",
+    "scene_effect": "동료 기술 호출 불가",
+    "resolution": "157화 재집결",
+    "permanent": false
+  },
+  {
+    "id": "CT030",
+    "start_episode": 145,
+    "end_episode": 200,
+    "state": "무석 방패 개인 회복 기능 포기",
+    "scene_effect": "자기 치료 불가·공동 방어만 가능",
+    "resolution": "영구 선택",
+    "permanent": true
+  },
+  {
+    "id": "CT031",
+    "start_episode": 150,
+    "end_episode": 160,
+    "state": "담운 보호 규칙 밖 분류",
+    "scene_effect": "검함 자동 방어 미작동",
+    "resolution": "160화 동료 증언으로 천외문 진입",
+    "permanent": false
+  },
+  {
+    "id": "CT032",
+    "start_episode": 151,
+    "end_episode": 200,
+    "state": "무석 팔 복원 가능성 포기",
+    "scene_effect": "완성 방패 공동 방어 고정",
+    "resolution": "영구 선택",
+    "permanent": true
+  },
+  {
+    "id": "CT033",
+    "start_episode": 161,
+    "end_episode": 200,
+    "state": "보조 수집품 세 점 분실",
+    "scene_effect": "보조 슬롯 전력 감소",
+    "resolution": "회수하지 않음",
+    "permanent": true
+  },
+  {
+    "id": "CT034",
+    "start_episode": 163,
+    "end_episode": 169,
+    "state": "동료 방 분리",
+    "scene_effect": "상호 상태 확인 불가",
+    "resolution": "169화 분류실 연결 절단",
+    "permanent": false
+  },
+  {
+    "id": "CT035",
+    "start_episode": 165,
+    "end_episode": 176,
+    "state": "과거 수장 말투 침투",
+    "scene_effect": "담운 대사·판단 혼선",
+    "resolution": "176화 복원 의식 거부",
+    "permanent": false
+  },
+  {
+    "id": "CT036",
+    "start_episode": 168,
+    "end_episode": 193,
+    "state": "진여강 기억 일부 담보",
+    "scene_effect": "계약 계산의 개인 기억 결손",
+    "resolution": "중앙핵 분할 후 담보 해제",
+    "permanent": false
+  },
+  {
+    "id": "CT037",
+    "start_episode": 169,
+    "end_episode": 178,
+    "state": "두리 신수 물품 칸 감금",
+    "scene_effect": "진화·자율 행동 정지",
+    "resolution": "박물관 파괴로 해방",
+    "permanent": false
+  },
+  {
+    "id": "CT038",
+    "start_episode": 171,
+    "end_episode": 200,
+    "state": "담운 어린 시절 기억 하나 봉인",
+    "scene_effect": "개인 기억 영구 공백",
+    "resolution": "복원하지 않음",
+    "permanent": true
+  },
+  {
+    "id": "CT039",
+    "start_episode": 173,
+    "end_episode": 200,
+    "state": "백장 오른손 기능 상실",
+    "scene_effect": "장갑·봉인 직접 사용 불가",
+    "resolution": "영구 선택",
+    "permanent": true
+  },
+  {
+    "id": "CT040",
+    "start_episode": 175,
+    "end_episode": 191,
+    "state": "수장인 손 고정",
+    "scene_effect": "장비 교체·반치 사용 지연",
+    "resolution": "191화 소유선 절단과 함께 해제",
+    "permanent": false
+  },
+  {
+    "id": "CT041",
+    "start_episode": 177,
+    "end_episode": 180,
+    "state": "담운 이름 일부 흐림",
+    "scene_effect": "동료 기억 호칭 불안정",
+    "resolution": "동료 증언으로 유지",
+    "permanent": false
+  },
+  {
+    "id": "CT042",
+    "start_episode": 180,
+    "end_episode": 191,
+    "state": "담운 수납 절반 진행",
+    "scene_effect": "남은 시간 한 시진·몸 감각 저하",
+    "resolution": "191화 자기 이름 선 절단",
+    "permanent": false
+  },
+  {
+    "id": "CT043",
+    "start_episode": 181,
+    "end_episode": 186,
+    "state": "반치와 검함 압수",
+    "scene_effect": "주 무기·보관 기능 없음",
+    "resolution": "186화 반치, 187화 검함 반응 회복",
+    "permanent": false
+  },
+  {
+    "id": "CT044",
+    "start_episode": 185,
+    "end_episode": 200,
+    "state": "두리 이전 풍비 능력 하나 상실",
+    "scene_effect": "과거 이동 기술 사용 불가",
+    "resolution": "귀로풍비 새 역할로 대체",
+    "permanent": true
+  },
+  {
+    "id": "CT045",
+    "start_episode": 191,
+    "end_episode": 200,
+    "state": "담운 과거 수장 권한·기억 일부 상실",
+    "scene_effect": "중앙 권한 재사용 불가",
+    "resolution": "결말의 비중앙화 보증",
+    "permanent": true
+  }
+]

@@ -196,3 +196,32 @@
 - 감정적 악역이 백장과 핵심 대립자의 기능을 빼앗는다.
 - 담운의 자발적 행동이 기존 성격과 모순된다.
 - 생활 표식이 고유명사 암기 부담만 늘린다.
+
+## 15. 이번 v3.1 실제 반영
+
+이번 패치는 원칙 문서에 머물지 않도록 다음 정본 데이터를 추가했다.
+
+- `data/world_regions_008.json`: 8권역별 주식, 결핍, 이동 병목, 금기, 소유 관습, 재난 취약점, 감각 표식, 결말 기여.
+- `data/world_settlements_048.json`: 48거점별 회차 사용, 랜드마크, 입장 규칙, 물류 병목, 사건 씨앗.
+- `data/world_factions_018.json`: 18세력별 독점 자원, 외부 의존, 수입원, 고정비, 공개 목표, 비공개 생존 목표, 내부 파벌.
+- `data/world_routes_020.json`: 20개 주요 이동로의 병목과 이동 비용.
+- `data/world_secrets_036.json`: S-Tier, A-Tier, 권역 압력을 합친 작가용 비밀 36개.
+- `data/world_glossary_120.json`: 권역, 거점, 조연, 세력, 장기 질문, 핵심 장치까지 포함한 120개 정본 용어.
+- `data/acts_subacts_005_020.json`: 20서브액트의 거짓 답, 진짜 답, 시작·종착 상태.
+- `scripts/build_world_operability_v3_1.py`: 위 데이터를 재생성하는 빌더.
+- `scripts/validate_world_operability_v3_1.py`: 카운트, ID, 중복, 필수 필드를 검사하는 자동 감사기.
+
+## 16. 검증 기준
+
+v3.1 이후 세계관 작동성은 다음 명령을 통과해야 한다.
+
+```bash
+python -X utf8 scripts/build_world_operability_v3_1.py
+python -X utf8 scripts/validate_world_operability_v3_1.py
+python -X utf8 scripts/build_effective_episodes_v2_8.py
+python -X utf8 scripts/validate_world_cast_cost_v2_8.py
+python -X utf8 scripts/build_episode_payoff_tags_v2_7.py
+python -X utf8 scripts/validate_episode_payoff_tags_v2_7.py
+```
+
+검증 통과가 곧 원고 품질을 뜻하지는 않는다. 이 검증은 “세계관 데이터가 실제 회차 입력으로 연결되는가”만 확인한다. 장면 체온, 감정 설득력, 독자 보상은 A09/A11/A16이 원고에서 다시 판단한다.

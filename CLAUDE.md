@@ -1,8 +1,8 @@
-# CLAUDE.md — Empty Swordcase Story Bible v3.0
+# CLAUDE.md — Empty Swordcase Story Bible v3.1
 
 ## Mission
 
-이 저장소는 《빈 검함으로 천하를 수집한다》의 정본 설계·세계관·제작·집필 시스템이다. 설계 단계는 종료됐고 현재는 `DRAFT_MODE`다. GitHub `main`을 유일한 작업 정본으로 사용하며, 별도 다운로드 패키지를 기본 산출물로 만들지 않는다.
+이 저장소는 《빈 검함으로 천하를 수집한다》의 정본 설계·세계관·제작·집필 시스템이다. 설계 단계는 종료됐고 현재는 `DRAFT_MODE`다. Arcadium/Yota 비교 뒤 세계관 판정은 `조건부 완성`이며, v3.1 세계 운영 오버레이를 집필 입력으로 사용한다. GitHub `main`을 유일한 작업 정본으로 사용하며, 별도 다운로드 패키지를 기본 산출물로 만들지 않는다.
 
 ## Authority
 
@@ -21,11 +21,14 @@
 2. `AGENTS.md`
 3. `PROJECT_BLUEPRINT_V2_4.md`
 4. `docs/48_FINAL_PROSE_PREFLIGHT_V2_9.md`
-5. `data/episode_payoff_index_001_200.json`
-6. `data/episode_world_cast_cost_*.json`
-7. v2.9 액션·음성·연속성 산출물
-8. 해당 10화 제작 패킷
-9. 직전 화 원고와 검수 보고서
+5. `docs/49_ARCADIUM_YOTA_WORLD_BIBLE_COMPARISON.md`
+6. `docs/50_WORLD_OPERATIONALITY_PATCH_V3_1.md`
+7. `data/episode_payoff_index_001_200.json`
+8. `data/episode_world_cast_cost_*.json`
+9. 해당 권역·세력의 v3.1 세계 운영 데이터
+10. v2.9 액션·음성·연속성 산출물
+11. 해당 10화 제작 패킷
+12. 직전 화 원고와 검수 보고서
 
 ## Draft Gate
 
@@ -34,6 +37,7 @@
 - 회차 목표·반대자 목표·6~10개 씬비트
 - S/A/CH/IT/C 회수 태그
 - 정본 거점·조연·구체 대가
+- 권역 생활 압력·이동 병목·소유 관습·세력 자원 구조
 - 활성 부상·장비·권리 상태
 - 액션 화의 ZONE A~E·보폭 거리·첫 3합·세 번의 역전
 - 등장 조연의 음성 카드
@@ -59,6 +63,7 @@
 ## Current Status
 
 - Architecture / Production Packets / Payoff / World-Cast-Cost Linkage / Prose Preflight — 완료
+- World Operability v3.1 — 조건부 완성, 운영 데이터·검증기 반영
 - Episodes 1-2 Draft / Internal Harness — 완료
 - Author-approved manuscript — 0화
 - Next episode — 3화 「첫 번째 수집」

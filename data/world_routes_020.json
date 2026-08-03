@@ -1,0 +1,162 @@
+[
+  {
+    "id": "RT001",
+    "from": "청래역",
+    "to": "쇠울촌",
+    "episodes": "1-10",
+    "bottleneck": "폭우 배수로",
+    "cost": "파손 책임"
+  },
+  {
+    "id": "RT002",
+    "from": "청래역",
+    "to": "갈대나루",
+    "episodes": "11-13",
+    "bottleneck": "역마 거부",
+    "cost": "봉인표 통행권"
+  },
+  {
+    "id": "RT003",
+    "from": "갈대나루",
+    "to": "돌배고개",
+    "episodes": "12-15",
+    "bottleneck": "냉철못 다리",
+    "cost": "상극 장비 제한"
+  },
+  {
+    "id": "RT004",
+    "from": "돌배고개",
+    "to": "경도 입구",
+    "episodes": "16-20",
+    "bottleneck": "회수대 검문",
+    "cost": "고향 이탈"
+  },
+  {
+    "id": "RT005",
+    "from": "경도 만보시장",
+    "to": "시민전시거리",
+    "episodes": "21-30",
+    "bottleneck": "경매 군중",
+    "cost": "신용 손실"
+  },
+  {
+    "id": "RT006",
+    "from": "열두손골",
+    "to": "공도원",
+    "episodes": "31-40",
+    "bottleneck": "공개 감정대",
+    "cost": "감정 노동 담보"
+  },
+  {
+    "id": "RT007",
+    "from": "경도 남문",
+    "to": "향등나루",
+    "episodes": "39-44",
+    "bottleneck": "남독 통행 검사",
+    "cost": "약재 지연"
+  },
+  {
+    "id": "RT008",
+    "from": "부엽촌",
+    "to": "백옥습",
+    "episodes": "45-51",
+    "bottleneck": "독안개 수로",
+    "cost": "신수 접근권 상실"
+  },
+  {
+    "id": "RT009",
+    "from": "연무약곡",
+    "to": "역계약림",
+    "episodes": "52-60",
+    "bottleneck": "잠든 숲길",
+    "cost": "치료비와 비수집 대가"
+  },
+  {
+    "id": "RT010",
+    "from": "남독택",
+    "to": "칠화로진",
+    "episodes": "60-64",
+    "bottleneck": "북상 눈길",
+    "cost": "두리 비행 제한"
+  },
+  {
+    "id": "RT011",
+    "from": "칠화로진",
+    "to": "봉인성",
+    "episodes": "65-70",
+    "bottleneck": "봉화 교대",
+    "cost": "식량 분담"
+  },
+  {
+    "id": "RT012",
+    "from": "봉인성",
+    "to": "해빙나루",
+    "episodes": "71-80",
+    "bottleneck": "백야 회수선",
+    "cost": "역참 이용권 상실"
+  },
+  {
+    "id": "RT013",
+    "from": "해빙나루",
+    "to": "황문대시장",
+    "episodes": "80-84",
+    "bottleneck": "눈 위 사막문",
+    "cost": "귀향길 상실"
+  },
+  {
+    "id": "RT014",
+    "from": "첫물성",
+    "to": "유리폐도",
+    "episodes": "85-91",
+    "bottleneck": "물표 세관",
+    "cost": "기억 통행료"
+  },
+  {
+    "id": "RT015",
+    "from": "긴그늘역",
+    "to": "동해문",
+    "episodes": "92-100",
+    "bottleneck": "상극 전시실",
+    "cost": "핵심 장비 귀환"
+  },
+  {
+    "id": "RT016",
+    "from": "육닻항",
+    "to": "침몰도시",
+    "episodes": "101-120",
+    "bottleneck": "조수종과 닻줄",
+    "cost": "숨빚"
+  },
+  {
+    "id": "RT017",
+    "from": "무명시 지하역로",
+    "to": "이름시장",
+    "episodes": "120-130",
+    "bottleneck": "임시 호칭문",
+    "cost": "이름 사용권"
+  },
+  {
+    "id": "RT018",
+    "from": "중앙 장부실",
+    "to": "천외밑문",
+    "episodes": "131-160",
+    "bottleneck": "장부 계단",
+    "cost": "기억·호칭 손실"
+  },
+  {
+    "id": "RT019",
+    "from": "천외문",
+    "to": "원형 천공무고",
+    "episodes": "161-180",
+    "bottleneck": "중력 계단",
+    "cost": "인격 침식"
+  },
+  {
+    "id": "RT020",
+    "from": "중앙핵실",
+    "to": "열린무고",
+    "episodes": "181-200",
+    "bottleneck": "소유선 붕괴",
+    "cost": "중앙 권한 상실"
+  }
+]

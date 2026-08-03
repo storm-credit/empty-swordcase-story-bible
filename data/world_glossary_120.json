@@ -1,0 +1,962 @@
+[
+  {
+    "id": "GL001",
+    "source_id": "R00",
+    "term": "청래역권",
+    "type": "region",
+    "first_episode": 1,
+    "function": "길과 물건은 누구의 책임으로 남는가."
+  },
+  {
+    "id": "GL002",
+    "source_id": "R01",
+    "term": "중원 경도",
+    "type": "region",
+    "first_episode": 21,
+    "function": "진품과 가격이 실제 쓰임보다 우선할 수 있는가."
+  },
+  {
+    "id": "GL003",
+    "source_id": "R02",
+    "term": "남독택",
+    "type": "region",
+    "first_episode": 41,
+    "function": "생명과 물건의 경계는 누가 판정하는가."
+  },
+  {
+    "id": "GL004",
+    "source_id": "R03",
+    "term": "북설원",
+    "type": "region",
+    "first_episode": 61,
+    "function": "보호 장비는 한 사람의 전리품인가 공동 방어망인가."
+  },
+  {
+    "id": "GL005",
+    "source_id": "R04",
+    "term": "서황막",
+    "type": "region",
+    "first_episode": 81,
+    "function": "편리한 길은 무엇을 지우고 누구에게 비용을 청구하는가."
+  },
+  {
+    "id": "GL006",
+    "source_id": "R05",
+    "term": "동해군도",
+    "type": "region",
+    "first_episode": 101,
+    "function": "바다에 잠긴 도시의 주인은 증서인가 기억인가."
+  },
+  {
+    "id": "GL007",
+    "source_id": "R06",
+    "term": "무명시",
+    "type": "region",
+    "first_episode": 121,
+    "function": "이름과 죄명도 소유되고 거래될 수 있는가."
+  },
+  {
+    "id": "GL008",
+    "source_id": "R07",
+    "term": "천외산맥",
+    "type": "region",
+    "first_episode": 161,
+    "function": "수장은 무엇을 소유해야 하며 무엇을 내려놓아야 하는가."
+  },
+  {
+    "id": "GL009",
+    "source_id": "ST001",
+    "term": "청래역",
+    "type": "settlement",
+    "first_episode": 1,
+    "function": "분실물 선반에서 매일 위치가 바뀌는 낡은 신발"
+  },
+  {
+    "id": "GL010",
+    "source_id": "ST002",
+    "term": "쇠울촌",
+    "type": "settlement",
+    "first_episode": 2,
+    "function": "죽은 수신인에게 20년째 도착하는 빈 편지"
+  },
+  {
+    "id": "GL011",
+    "source_id": "ST003",
+    "term": "갈대나루",
+    "type": "settlement",
+    "first_episode": 11,
+    "function": "역마가 특정 봉인수레만 거부"
+  },
+  {
+    "id": "GL012",
+    "source_id": "ST004",
+    "term": "돌배고개",
+    "type": "settlement",
+    "first_episode": 12,
+    "function": "우물 쇠고리에 남은 여러 세대의 구조 의흔"
+  },
+  {
+    "id": "GL013",
+    "source_id": "ST005",
+    "term": "우엉들",
+    "type": "settlement",
+    "first_episode": 16,
+    "function": "가짜 배달패를 찬 아이"
+  },
+  {
+    "id": "GL014",
+    "source_id": "ST006",
+    "term": "비탈창고",
+    "type": "settlement",
+    "first_episode": 18,
+    "function": "폭우에 떠내려온 경도 왕실 표찰"
+  },
+  {
+    "id": "GL015",
+    "source_id": "ST007",
+    "term": "경도 내성",
+    "type": "settlement",
+    "first_episode": 23,
+    "function": "한 물건에 합법 증서가 세 장"
+  },
+  {
+    "id": "GL016",
+    "source_id": "ST008",
+    "term": "만보시장",
+    "type": "settlement",
+    "first_episode": 21,
+    "function": "가짜 왕검이 진품보다 더 많은 시민을 지킨 기록"
+  },
+  {
+    "id": "GL017",
+    "source_id": "ST009",
+    "term": "열두손골",
+    "type": "settlement",
+    "first_episode": 27,
+    "function": "거짓말을 먹지만 진실은 말하지 않는 귀걸이"
+  },
+  {
+    "id": "GL018",
+    "source_id": "ST010",
+    "term": "공도원",
+    "type": "settlement",
+    "first_episode": 34,
+    "function": "가격 없는 저울이 가난한 배달부 쪽에서 움직이지 않음"
+  },
+  {
+    "id": "GL019",
+    "source_id": "ST011",
+    "term": "진수문",
+    "type": "settlement",
+    "first_episode": 24,
+    "function": "감정사가 자기 가문의 오류를 공개해야 하는 재판"
+  },
+  {
+    "id": "GL020",
+    "source_id": "ST012",
+    "term": "시민전시거리",
+    "type": "settlement",
+    "first_episode": 22,
+    "function": "왕실이 위조품을 정통성 선전에 이용"
+  },
+  {
+    "id": "GL021",
+    "source_id": "ST013",
+    "term": "연무약곡",
+    "type": "settlement",
+    "first_episode": 52,
+    "function": "향로가 마을을 살리지만 숲 전체를 잠재움"
+  },
+  {
+    "id": "GL022",
+    "source_id": "ST014",
+    "term": "부엽촌",
+    "type": "settlement",
+    "first_episode": 45,
+    "function": "독을 없애면 서식지가 붕괴하는 치료 선택"
+  },
+  {
+    "id": "GL023",
+    "source_id": "ST015",
+    "term": "향등나루",
+    "type": "settlement",
+    "first_episode": 41,
+    "function": "신수가 계약을 세 번 거부"
+  },
+  {
+    "id": "GL024",
+    "source_id": "ST016",
+    "term": "백옥습",
+    "type": "settlement",
+    "first_episode": 49,
+    "function": "인간 주민을 미끼로 신수를 유인하는 밀매단"
+  },
+  {
+    "id": "GL025",
+    "source_id": "ST017",
+    "term": "독왕초림",
+    "type": "settlement",
+    "first_episode": 55,
+    "function": "허물 안에 천공무고 사육 표식"
+  },
+  {
+    "id": "GL026",
+    "source_id": "ST018",
+    "term": "역계약림",
+    "type": "settlement",
+    "first_episode": 58,
+    "function": "독왕초 씨앗을 봉인할지 남길지 촌회 분열"
+  },
+  {
+    "id": "GL027",
+    "source_id": "ST019",
+    "term": "칠화로진",
+    "type": "settlement",
+    "first_episode": 61,
+    "function": "주인을 얼려 살린 피풍이 다시 주인을 가둠"
+  },
+  {
+    "id": "GL028",
+    "source_id": "ST020",
+    "term": "봉인성",
+    "type": "settlement",
+    "first_episode": 65,
+    "function": "깨진 설갑 일곱 조각을 서로 다른 촌락이 보유"
+  },
+  {
+    "id": "GL029",
+    "source_id": "ST021",
+    "term": "설각촌",
+    "type": "settlement",
+    "first_episode": 69,
+    "function": "봉인성은 안전하지만 마을의 기억을 삭제"
+  },
+  {
+    "id": "GL030",
+    "source_id": "ST022",
+    "term": "빙잠골",
+    "type": "settlement",
+    "first_episode": 72,
+    "function": "방패가 지킨 사람과 버린 사람 이름을 동시에 품음"
+  },
+  {
+    "id": "GL031",
+    "source_id": "ST023",
+    "term": "백야초소",
+    "type": "settlement",
+    "first_episode": 75,
+    "function": "설각마가 목적지를 속인 기수를 버림"
+  },
+  {
+    "id": "GL032",
+    "source_id": "ST024",
+    "term": "해빙나루",
+    "type": "settlement",
+    "first_episode": 78,
+    "function": "공동 징발된 유물이 돌아오지 않음"
+  },
+  {
+    "id": "GL033",
+    "source_id": "ST025",
+    "term": "황문대시장",
+    "type": "settlement",
+    "first_episode": 81,
+    "function": "사막을 접는 지도가 뒤의 길을 지움"
+  },
+  {
+    "id": "GL034",
+    "source_id": "ST026",
+    "term": "첫물성",
+    "type": "settlement",
+    "first_episode": 85,
+    "function": "기억을 물로 바꾸는 호리병이 사생활을 노출"
+  },
+  {
+    "id": "GL035",
+    "source_id": "ST027",
+    "term": "유리폐도",
+    "type": "settlement",
+    "first_episode": 89,
+    "function": "대상이 물 대신 기억을 통행료로 요구"
+  },
+  {
+    "id": "GL036",
+    "source_id": "ST028",
+    "term": "긴그늘역",
+    "type": "settlement",
+    "first_episode": 92,
+    "function": "첫 천품 파편이 전시실 상극을 일으킴"
+  },
+  {
+    "id": "GL037",
+    "source_id": "ST029",
+    "term": "접힌문",
+    "type": "settlement",
+    "first_episode": 95,
+    "function": "유리폐도의 길이 매일 재분류"
+  },
+  {
+    "id": "GL038",
+    "source_id": "ST030",
+    "term": "기억잔촌",
+    "type": "settlement",
+    "first_episode": 98,
+    "function": "우물 지분이 없는 피난민 행렬"
+  },
+  {
+    "id": "GL039",
+    "source_id": "ST031",
+    "term": "육닻항",
+    "type": "settlement",
+    "first_episode": 101,
+    "function": "파도를 기억하는 닻의 주인이 여섯 공동체"
+  },
+  {
+    "id": "GL040",
+    "source_id": "ST032",
+    "term": "해람섬",
+    "type": "settlement",
+    "first_episode": 105,
+    "function": "숨 목걸이가 나중에 호흡 부채를 청구"
+  },
+  {
+    "id": "GL041",
+    "source_id": "ST033",
+    "term": "빈매듭촌",
+    "type": "settlement",
+    "first_episode": 109,
+    "function": "라이벌이 합법적으로 핵심 유산 낙찰"
+  },
+  {
+    "id": "GL042",
+    "source_id": "ST034",
+    "term": "조류탑섬",
+    "type": "settlement",
+    "first_episode": 112,
+    "function": "청묘가 여섯 섬 중 한 곳의 허락을 거부"
+  },
+  {
+    "id": "GL043",
+    "source_id": "ST035",
+    "term": "침몰도시 입구",
+    "type": "settlement",
+    "first_episode": 115,
+    "function": "침몰도시 축소지도가 실제 도시를 접으려 함"
+  },
+  {
+    "id": "GL044",
+    "source_id": "ST036",
+    "term": "파랑나루",
+    "type": "settlement",
+    "first_episode": 118,
+    "function": "빈매듭 장례 직전 실종자의 신호"
+  },
+  {
+    "id": "GL045",
+    "source_id": "ST037",
+    "term": "첫호칭거리",
+    "type": "settlement",
+    "first_episode": 121,
+    "function": "담운이 동료 기억에서 지워짐"
+  },
+  {
+    "id": "GL046",
+    "source_id": "ST038",
+    "term": "빈호적골",
+    "type": "settlement",
+    "first_episode": 125,
+    "function": "무명견이 이름 대신 습관으로 담운을 찾음"
+  },
+  {
+    "id": "GL047",
+    "source_id": "ST039",
+    "term": "등표시장",
+    "type": "settlement",
+    "first_episode": 129,
+    "function": "빌린 칭호의 원한이 따라옴"
+  },
+  {
+    "id": "GL048",
+    "source_id": "ST040",
+    "term": "기억매듭원",
+    "type": "settlement",
+    "first_episode": 132,
+    "function": "빈 호적죽간에 담운 이름만 쓰이지 않음"
+  },
+  {
+    "id": "GL049",
+    "source_id": "ST041",
+    "term": "행적법정",
+    "type": "settlement",
+    "first_episode": 135,
+    "function": "이름장수의 주판이 사람의 빚을 계산"
+  },
+  {
+    "id": "GL050",
+    "source_id": "ST042",
+    "term": "천외밑문",
+    "type": "settlement",
+    "first_episode": 138,
+    "function": "린화가 물건 다루는 습관으로 담운을 알아봄"
+  },
+  {
+    "id": "GL051",
+    "source_id": "ST043",
+    "term": "하늘아래역",
+    "type": "settlement",
+    "first_episode": 155,
+    "function": "문이 사람을 직업으로만 인식"
+  },
+  {
+    "id": "GL052",
+    "source_id": "ST044",
+    "term": "부유계단군",
+    "type": "settlement",
+    "first_episode": 168,
+    "function": "살아 있는 전시실이 동료를 수집품 분류"
+  },
+  {
+    "id": "GL053",
+    "source_id": "ST045",
+    "term": "십이문실",
+    "type": "settlement",
+    "first_episode": 175,
+    "function": "백장의 장갑이 중앙핵 열쇠"
+  },
+  {
+    "id": "GL054",
+    "source_id": "ST046",
+    "term": "살아있는전시실",
+    "type": "settlement",
+    "first_episode": 182,
+    "function": "담운과 같은 얼굴의 수장 초상"
+  },
+  {
+    "id": "GL055",
+    "source_id": "ST047",
+    "term": "중앙핵실",
+    "type": "settlement",
+    "first_episode": 189,
+    "function": "수장인 반쪽이 담운을 완성품으로 요구"
+  },
+  {
+    "id": "GL056",
+    "source_id": "ST048",
+    "term": "열린무고",
+    "type": "settlement",
+    "first_episode": 195,
+    "function": "놓아준 유산들이 자발적으로 원격 공명"
+  },
+  {
+    "id": "GL057",
+    "source_id": "SC001",
+    "term": "철구",
+    "type": "supporting_cast",
+    "first_episode": 2,
+    "function": "쇠울촌 대장장이"
+  },
+  {
+    "id": "GL058",
+    "source_id": "SC002",
+    "term": "오복산",
+    "type": "supporting_cast",
+    "first_episode": 1,
+    "function": "청래역 총역장"
+  },
+  {
+    "id": "GL059",
+    "source_id": "SC003",
+    "term": "설도연",
+    "type": "supporting_cast",
+    "first_episode": 5,
+    "function": "유리공방 장인"
+  },
+  {
+    "id": "GL060",
+    "source_id": "SC004",
+    "term": "모귀",
+    "type": "supporting_cast",
+    "first_episode": 14,
+    "function": "돌배고개 다리 지기"
+  },
+  {
+    "id": "GL061",
+    "source_id": "SC005",
+    "term": "문하준",
+    "type": "supporting_cast",
+    "first_episode": 4,
+    "function": "만보상련 회수관"
+  },
+  {
+    "id": "GL062",
+    "source_id": "SC006",
+    "term": "한여정",
+    "type": "supporting_cast",
+    "first_episode": 22,
+    "function": "시민회 대표"
+  },
+  {
+    "id": "GL063",
+    "source_id": "SC007",
+    "term": "백도윤",
+    "type": "supporting_cast",
+    "first_episode": 27,
+    "function": "서린화의 옛 스승"
+  },
+  {
+    "id": "GL064",
+    "source_id": "SC008",
+    "term": "윤세정",
+    "type": "supporting_cast",
+    "first_episode": 23,
+    "function": "왕실 기록감"
+  },
+  {
+    "id": "GL065",
+    "source_id": "SC009",
+    "term": "장추",
+    "type": "supporting_cast",
+    "first_episode": 28,
+    "function": "열두 위조인의 생존 장인"
+  },
+  {
+    "id": "GL066",
+    "source_id": "SC010",
+    "term": "노단비",
+    "type": "supporting_cast",
+    "first_episode": 24,
+    "function": "시민 공개기록사"
+  },
+  {
+    "id": "GL067",
+    "source_id": "SC011",
+    "term": "허잠",
+    "type": "supporting_cast",
+    "first_episode": 43,
+    "function": "독안개 마을 원로"
+  },
+  {
+    "id": "GL068",
+    "source_id": "SC012",
+    "term": "미라",
+    "type": "supporting_cast",
+    "first_episode": 42,
+    "function": "야생계약단장"
+  },
+  {
+    "id": "GL069",
+    "source_id": "SC013",
+    "term": "연호",
+    "type": "supporting_cast",
+    "first_episode": 54,
+    "function": "독안개 마을 아이"
+  },
+  {
+    "id": "GL070",
+    "source_id": "SC014",
+    "term": "사태오",
+    "type": "supporting_cast",
+    "first_episode": 48,
+    "function": "밀매단장"
+  },
+  {
+    "id": "GL071",
+    "source_id": "SC015",
+    "term": "강설현",
+    "type": "supporting_cast",
+    "first_episode": 65,
+    "function": "피풍 속 생존자"
+  },
+  {
+    "id": "GL072",
+    "source_id": "SC016",
+    "term": "노상린",
+    "type": "supporting_cast",
+    "first_episode": 64,
+    "function": "칠촌 대표"
+  },
+  {
+    "id": "GL073",
+    "source_id": "SC017",
+    "term": "윤봉",
+    "type": "supporting_cast",
+    "first_episode": 74,
+    "function": "귀장회 북설 현장대장"
+  },
+  {
+    "id": "GL074",
+    "source_id": "SC018",
+    "term": "마지한",
+    "type": "supporting_cast",
+    "first_episode": 83,
+    "function": "대상주"
+  },
+  {
+    "id": "GL075",
+    "source_id": "SC019",
+    "term": "우담",
+    "type": "supporting_cast",
+    "first_episode": 86,
+    "function": "사막도시 관물세관장"
+  },
+  {
+    "id": "GL076",
+    "source_id": "SC020",
+    "term": "서문록",
+    "type": "supporting_cast",
+    "first_episode": 87,
+    "function": "폐분관 전 탐사자 기록 인격"
+  },
+  {
+    "id": "GL077",
+    "source_id": "SC021",
+    "term": "문청묘",
+    "type": "supporting_cast",
+    "first_episode": 101,
+    "function": "부유역참장"
+  },
+  {
+    "id": "GL078",
+    "source_id": "SC022",
+    "term": "해라",
+    "type": "supporting_cast",
+    "first_episode": 109,
+    "function": "여섯 가문 조정자"
+  },
+  {
+    "id": "GL079",
+    "source_id": "SC023",
+    "term": "권해주",
+    "type": "supporting_cast",
+    "first_episode": 109,
+    "function": "지분 매각 가문 대표"
+  },
+  {
+    "id": "GL080",
+    "source_id": "SC024",
+    "term": "윤무명",
+    "type": "supporting_cast",
+    "first_episode": 121,
+    "function": "이름 상인"
+  },
+  {
+    "id": "GL081",
+    "source_id": "SC025",
+    "term": "류백",
+    "type": "supporting_cast",
+    "first_episode": 129,
+    "function": "중앙 장부지기"
+  },
+  {
+    "id": "GL082",
+    "source_id": "SC026",
+    "term": "단소아",
+    "type": "supporting_cast",
+    "first_episode": 122,
+    "function": "이름 없는 시민 대표"
+  },
+  {
+    "id": "GL083",
+    "source_id": "SC027",
+    "term": "손백하",
+    "type": "supporting_cast",
+    "first_episode": 59,
+    "function": "귀장회 기록부회주"
+  },
+  {
+    "id": "GL084",
+    "source_id": "SC028",
+    "term": "묵언",
+    "type": "supporting_cast",
+    "first_episode": 163,
+    "function": "원형 무고 안내 기록"
+  },
+  {
+    "id": "GL085",
+    "source_id": "FC001",
+    "term": "청래역참망",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "배송 질서 유지"
+  },
+  {
+    "id": "GL086",
+    "source_id": "FC002",
+    "term": "만보상련",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "안전한 유물 거래"
+  },
+  {
+    "id": "GL087",
+    "source_id": "FC003",
+    "term": "귀장회 봉장파",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "재앙 유산 봉인"
+  },
+  {
+    "id": "GL088",
+    "source_id": "FC004",
+    "term": "귀장회 귀환파",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "봉인 피해 복구"
+  },
+  {
+    "id": "GL089",
+    "source_id": "FC005",
+    "term": "경도 왕실 기록관",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "정통성 유지"
+  },
+  {
+    "id": "GL090",
+    "source_id": "FC006",
+    "term": "경도 귀족 수집회",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "유산 품격 보존"
+  },
+  {
+    "id": "GL091",
+    "source_id": "FC007",
+    "term": "시민공개감정회",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "실사용 기록 공개"
+  },
+  {
+    "id": "GL092",
+    "source_id": "FC008",
+    "term": "남독 야생계약단",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "신수 철회권 보장"
+  },
+  {
+    "id": "GL093",
+    "source_id": "FC009",
+    "term": "남독 밀매단",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "멸종종 상품화"
+  },
+  {
+    "id": "GL094",
+    "source_id": "FC010",
+    "term": "북설 칠촌회의",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "일곱 마을 생존"
+  },
+  {
+    "id": "GL095",
+    "source_id": "FC011",
+    "term": "북설 귀장회 현장대",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "북설 재앙 차단"
+  },
+  {
+    "id": "GL096",
+    "source_id": "FC012",
+    "term": "서황막 대상연합",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "길 유지와 거래"
+  },
+  {
+    "id": "GL097",
+    "source_id": "FC013",
+    "term": "서황 관물세관",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "위험 유산 통제"
+  },
+  {
+    "id": "GL098",
+    "source_id": "FC014",
+    "term": "천공무고 폐분관 기록체",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "오류 없는 보관"
+  },
+  {
+    "id": "GL099",
+    "source_id": "FC015",
+    "term": "동해 여섯가문 회의",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "침몰도시 공동 관리"
+  },
+  {
+    "id": "GL100",
+    "source_id": "FC016",
+    "term": "무명시 이름상회",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "이름 거래 안정"
+  },
+  {
+    "id": "GL101",
+    "source_id": "FC017",
+    "term": "무명시 중앙장부국",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "이름 질서 유지"
+  },
+  {
+    "id": "GL102",
+    "source_id": "FC018",
+    "term": "원형 천공무고",
+    "type": "faction",
+    "first_episode": 1,
+    "function": "천하 유산의 완전 보관"
+  },
+  {
+    "id": "GL103",
+    "source_id": "S01",
+    "term": "빈 검함의 진짜 수신인",
+    "type": "long_question",
+    "first_episode": 1,
+    "function": "담운은 자신을 수납하지 않고 중앙 권한을 여섯 책임 조각으로 분산한다."
+  },
+  {
+    "id": "GL104",
+    "source_id": "S02",
+    "term": "반치는 왜 짧은가",
+    "type": "long_question",
+    "first_episode": 2,
+    "function": "반치는 사람을 베는 칼이 아니라 강제 소유 연결선을 자르는 칼로 완성된다."
+  },
+  {
+    "id": "GL105",
+    "source_id": "S03",
+    "term": "빈 명패는 무엇을 기록하는가",
+    "type": "long_question",
+    "first_episode": 7,
+    "function": "본명과 혈통 대신 선택과 배송 행적을 기록해 귀로인이라는 행적명이 생긴다."
+  },
+  {
+    "id": "GL106",
+    "source_id": "S04",
+    "term": "왜 신수는 수납할 수 없는가",
+    "type": "long_question",
+    "first_episode": 40,
+    "function": "신수가 인간을 심사하고 언제든 계약을 끝낼 수 있는 역계약 제도로 바뀐다."
+  },
+  {
+    "id": "GL107",
+    "source_id": "S05",
+    "term": "놓아준 유산은 사라지는가",
+    "type": "long_question",
+    "first_episode": 30,
+    "function": "소유하지 않은 유산과 공동체가 명령이 아니라 관계와 책임 때문에 자발적으로 응답한다."
+  },
+  {
+    "id": "GL108",
+    "source_id": "S06",
+    "term": "유산은 왜 육도에 흩어졌는가",
+    "type": "long_question",
+    "first_episode": 88,
+    "function": "중앙 봉인을 재건하지 않고 중앙핵을 여섯 책임 조각으로 나누어 배송한다."
+  },
+  {
+    "id": "GL109",
+    "source_id": "S07",
+    "term": "담운은 최후 수장의 환생인가",
+    "type": "long_question",
+    "first_episode": 20,
+    "function": "담운은 수장의 이름 조각에서 태어났지만 현재의 선택으로 형성된 독립 인격이다."
+  },
+  {
+    "id": "GL110",
+    "source_id": "S08",
+    "term": "백장의 빈 손목에는 무엇이 있었는가",
+    "type": "long_question",
+    "first_episode": 69,
+    "function": "백장은 수장 몸 조각과 중앙 봉인 권한을 버리고 피해자 이름을 기억하는 평범한 봉인관이 된다."
+  },
+  {
+    "id": "GL111",
+    "source_id": "IT01",
+    "term": "무주함",
+    "type": "system",
+    "first_episode": 1,
+    "function": "무주·귀환·공동 책임 판정 장치"
+  },
+  {
+    "id": "GL112",
+    "source_id": "IT02",
+    "term": "반치",
+    "type": "item",
+    "first_episode": 2,
+    "function": "최종부 강제 소유 연결선을 자르는 실패작 단검"
+  },
+  {
+    "id": "GL113",
+    "source_id": "IT03",
+    "term": "빈 명패",
+    "type": "item",
+    "first_episode": 7,
+    "function": "본명보다 행적을 기록하는 정체 장치"
+  },
+  {
+    "id": "GL114",
+    "source_id": "IT04",
+    "term": "모조 왕검",
+    "type": "item",
+    "first_episode": 20,
+    "function": "진품보다 쓰임이 오래 남은 왕검"
+  },
+  {
+    "id": "GL115",
+    "source_id": "IT05",
+    "term": "무명의 대장장이 세트",
+    "type": "set",
+    "first_episode": 4,
+    "function": "완성과 후회 과부하를 보여주는 초기 세트"
+  },
+  {
+    "id": "GL116",
+    "source_id": "IT06",
+    "term": "잠든 숲 향로",
+    "type": "item",
+    "first_episode": 43,
+    "function": "수집하지 않고 공동체에 남기는 비수집 장치"
+  },
+  {
+    "id": "GL117",
+    "source_id": "IT07",
+    "term": "설갑",
+    "type": "set",
+    "first_episode": 63,
+    "function": "일곱 마을 공동 방어망으로 완성되는 갑옷"
+  },
+  {
+    "id": "GL118",
+    "source_id": "IT08",
+    "term": "사막 지도",
+    "type": "item",
+    "first_episode": 82,
+    "function": "길을 줄이는 대신 지나온 길을 지우는 지도"
+  },
+  {
+    "id": "GL119",
+    "source_id": "IT09",
+    "term": "소리 없는 망치",
+    "type": "item",
+    "first_episode": 94,
+    "function": "영구 귀환으로 두리를 살리는 핵심 도구"
+  },
+  {
+    "id": "GL120",
+    "source_id": "IT10",
+    "term": "중앙핵",
+    "type": "system",
+    "first_episode": 168,
+    "function": "중앙 소유 체계의 결말 장치"
+  }
+]

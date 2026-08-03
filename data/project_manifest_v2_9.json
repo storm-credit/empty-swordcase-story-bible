@@ -2,10 +2,10 @@
   "version": "2.9",
   "status": "prose_preflight_complete_manuscript_not_drafted",
   "coverage": {
-    "episodes": 200,
     "action_preflights": 47,
     "supporting_cast_voices": 28,
-    "critical_continuity_states": 45
+    "critical_continuity_states": 45,
+    "episodes": 200
   },
   "gates": {
     "exact_action_space": true,
@@ -14,17 +14,11 @@
     "injury_equipment_continuity": true,
     "prose_drafted": false
   },
-  "source": {
-    "builder": "scripts/build_prose_preflight_v2_9.py",
-    "workflow": ".github/workflows/validate-v29-prose-preflight.yml",
-    "final_gate": "docs/48_FINAL_PROSE_PREFLIGHT_V2_9.md"
-  },
-  "generated_artifacts": [
-    "data/action_preflight_v2_9.json",
-    "data/supporting_cast_voice_028_v2_9.json",
-    "data/critical_continuity_ledger_v2_9.json",
-    "production/combat/ACTION_PREFLIGHT_V2_9_COMPLETE.md",
-    "docs/46_SUPPORTING_CAST_VOICE_BIBLE_V2_9.md",
-    "docs/47_INJURY_EQUIPMENT_CONTINUITY_V2_9.md"
-  ]
+  "files": {
+    "actions": "data/action_preflight_v2_9.json",
+    "voices": "data/supporting_cast_voice_028_v2_9.json",
+    "continuity": "data/critical_continuity_ledger_v2_9.json",
+    "final_gate": "docs/48_FINAL_PROSE_PREFLIGHT_V2_9.md",
+    "validator": "scripts/validate_prose_preflight_v2_9.py"
+  }
 }

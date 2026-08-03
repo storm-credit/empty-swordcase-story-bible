@@ -1,12 +1,14 @@
-# MANIFEST v2.9
+# MANIFEST v3.1
 
 ## Status
 
 - 200화 구조·제작·복선·거점·조연·대가: 완료
+- Arcadium/Yota 비교 후 세계관 작동성 재감사: 조건부 완성
+- v3.1 세계 운영 오버레이: 8권역·48거점·18세력·20노선·36비밀·120용어 복구
 - 액션 프리플라이트: 47/47
 - 조연 음성 카드: 28/28
 - 연속성 상태: 45개
-- 원고: 미작성
+- 원고: 1~2화 초고 작성·내부 검수 통과 / 작가 승인 0화
 
 ## v2.9 Source and Gates
 
@@ -30,3 +32,36 @@
 ## Prior Canon
 
 v2.7 payoff architecture and v2.8 production linkage remain active inputs.
+
+## v3.1 Arcadium/Yota Reaudit
+
+- `COMPLETE_BLUEPRINT.md`
+- `WORLD_BIBLE_COMPLETE.md`
+- `WORLD_REFERENCE_QUICK.md`
+- `docs/28_ACT_SUBACT_STORY_BIBLE.md`
+- `docs/29_ACT_SUBACT_BEAT_MATRIX.md`
+- `docs/41_PROSE_STYLE_AND_WEBNOVEL_BIBLE.md`
+- `docs/49_ARCADIUM_YOTA_WORLD_BIBLE_COMPARISON.md`
+- `production/audits/ARCADIUM_YOTA_ADOPTION_CANDIDATES.md`
+- `orchestra/PM_WORLD_BIBLE_REAUDIT_AFTER_ARCADIUM.md`
+- `docs/50_WORLD_OPERATIONALITY_PATCH_V3_1.md`
+- `scripts/build_world_operability_v3_1.py`
+- `scripts/validate_world_operability_v3_1.py`
+- `data/acts_subacts_005_020.json`
+- `data/world_regions_008.json`
+- `data/world_settlements_048.json`
+- `data/world_factions_018.json`
+- `data/world_routes_020.json`
+- `data/world_secrets_036.json`
+- `data/world_glossary_120.json`
+
+## v3.1 Validation
+
+```bash
+python -X utf8 scripts/build_world_operability_v3_1.py
+python -X utf8 scripts/validate_world_operability_v3_1.py
+python -X utf8 scripts/build_effective_episodes_v2_8.py
+python -X utf8 scripts/validate_world_cast_cost_v2_8.py
+python -X utf8 scripts/build_episode_payoff_tags_v2_7.py
+python -X utf8 scripts/validate_episode_payoff_tags_v2_7.py
+```
