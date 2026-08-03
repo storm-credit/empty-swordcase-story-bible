@@ -1,0 +1,569 @@
+{
+  "version": "3.4",
+  "status": "approved_canon_operability",
+  "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+  "count": 28,
+  "source_file": "data/supporting_cast_voice_028_v2_9.json",
+  "rule": "원천 28명만 승격하며 이름·직업·음성은 바꾸지 않는다.",
+  "characters": [
+    {
+      "id": "SC001",
+      "name": "철구",
+      "role": "쇠울촌 대장장이",
+      "region": "청래역권",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "실패작을 만든 노동자도 수선권과 공적을 인정받는 공동 풀무 규칙을 만든다.",
+      "hidden_insecurity": "반치 도난과 실패작 표식 때문에 평생 도둑·무능한 일꾼으로 불릴까 두렵다.",
+      "refusal_line": "담운의 수집을 위해 쇠울촌 주민의 생계 도구와 장작 몫을 내주지 않는다.",
+      "personal_loss_from_damun_choice": "담운이 반치를 사용하고 떠나면서 대장간 평판·수선 일감·주민 신뢰가 흔들린다.",
+      "choice_without_damun": "공동 풀무 노동 장부와 실패작 수선 기록을 주민 앞에 공개한다.",
+      "relationship_pressure": "담운이 옳더라도 자신과 마을이 치른 손실을 인정하지 않으면 협조하지 않는다.",
+      "ending_state": "열린 대장간 운영 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        19,
+        37,
+        92,
+        95,
+        99
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "protected episode function map"
+    },
+    {
+      "id": "SC002",
+      "name": "오복산",
+      "role": "청래역 총역장",
+      "region": "청래역권",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "오복산은 담운과 별개로 청래역권에서 청래역 총역장의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "감정 대신 업무를 더 맡긴다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "오복산은 시간·수신인·노선을 차례로 확인한다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 오복산은 청래역 총역장로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 오복산은 시간·수신인·노선을 차례로 확인한다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 청래역권 주민이 치르는 생활 비용을 계산하지 않으면 오복산은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "첫 귀로인 배달패 보증 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        1,
+        2,
+        3
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "protected episode function map"
+    },
+    {
+      "id": "SC003",
+      "name": "설도연",
+      "role": "유리공방 장인",
+      "region": "청래역권",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "설도연은 담운과 별개로 청래역권에서 유리공방 장인의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "말끝을 줄이고 작업음으로 대답한다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "설도연은 손의 순서와 재질을 먼저 말한다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 설도연은 유리공방 장인로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 설도연은 손의 순서와 재질을 먼저 말한다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 청래역권 주민이 치르는 생활 비용을 계산하지 않으면 설도연은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "공개 전시관 안전 책임자 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        21
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC004",
+      "name": "모귀",
+      "role": "돌배고개 다리 지기",
+      "region": "청래역권",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "모귀은 담운과 별개로 청래역권에서 돌배고개 다리 지기의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "압박을 받으면 문장이 짧아지고 핵심 명사를 반복한다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "모귀은 자기 생업의 도구와 절차를 비유로 쓴다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 모귀은 돌배고개 다리 지기로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 모귀은 자기 생업의 도구와 절차를 비유로 쓴다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 청래역권 주민이 치르는 생활 비용을 계산하지 않으면 모귀은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "분산 시설 간 첫 답장 운송 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "protected episode function map"
+    },
+    {
+      "id": "SC005",
+      "name": "문하준",
+      "role": "만보상련 회수관",
+      "region": "청래역권",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "문하준은 담운과 별개로 청래역권에서 만보상련 회수관의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "미안하다는 말 대신 퇴로를 연다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "문하준은 명령 번호와 위험 시간을 짧게 말한다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 문하준은 만보상련 회수관로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 문하준은 명령 번호와 위험 시간을 짧게 말한다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 청래역권 주민이 치르는 생활 비용을 계산하지 않으면 문하준은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "책임 보험표 개혁 참여 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        22
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC006",
+      "name": "한여정",
+      "role": "시민회 대표",
+      "region": "경도",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "한여정은 담운과 별개로 경도에서 시민회 대표의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "결론 직전에 상대 이름을 부른다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "한여정은 개인보다 주민 수와 공개 절차를 앞세운다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 한여정은 시민회 대표로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 한여정은 개인보다 주민 수와 공개 절차를 앞세운다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 경도 주민이 치르는 생활 비용을 계산하지 않으면 한여정은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "공개 전시관 운영위원 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        23
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC007",
+      "name": "백도윤",
+      "role": "서린화의 옛 스승",
+      "region": "경도",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "백도윤은 담운과 별개로 경도에서 서린화의 옛 스승의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "압박을 받으면 문장이 짧아지고 핵심 명사를 반복한다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "백도윤은 자기 생업의 도구와 절차를 비유로 쓴다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 백도윤은 서린화의 옛 스승로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 백도윤은 자기 생업의 도구와 절차를 비유로 쓴다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 경도 주민이 치르는 생활 비용을 계산하지 않으면 백도윤은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "열린 감정서에 첫 반론 제출 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        24
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC008",
+      "name": "윤세정",
+      "role": "왕실 기록감",
+      "region": "경도",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "윤세정은 담운과 별개로 경도에서 왕실 기록감의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "모르는 부분은 빈칸으로 남긴다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "윤세정은 원문과 수정 이력을 구분한다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 윤세정은 왕실 기록감로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 윤세정은 원문과 수정 이력을 구분한다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 경도 주민이 치르는 생활 비용을 계산하지 않으면 윤세정은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "왕검 기록 원문 공개 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        25
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC009",
+      "name": "장추",
+      "role": "열두 위조인의 생존 장인",
+      "region": "경도",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "장추은 담운과 별개로 경도에서 열두 위조인의 생존 장인의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "말끝을 줄이고 작업음으로 대답한다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "장추은 손의 순서와 재질을 먼저 말한다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 장추은 열두 위조인의 생존 장인로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 장추은 손의 순서와 재질을 먼저 말한다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 경도 주민이 치르는 생활 비용을 계산하지 않으면 장추은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "원격 공명 설비 제작 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        26
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC010",
+      "name": "노단비",
+      "role": "시민 공개기록사",
+      "region": "경도",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "노단비은 담운과 별개로 경도에서 시민 공개기록사의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "모르는 부분은 빈칸으로 남긴다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "노단비은 원문과 수정 이력을 구분한다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 노단비은 시민 공개기록사로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 노단비은 원문과 수정 이력을 구분한다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 경도 주민이 치르는 생활 비용을 계산하지 않으면 노단비은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "외부 기록 전송 책임 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        27
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC011",
+      "name": "허잠",
+      "role": "독안개 마을 원로",
+      "region": "남독택",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "허잠은 담운과 별개로 남독택에서 독안개 마을 원로의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "압박을 받으면 문장이 짧아지고 핵심 명사를 반복한다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "허잠은 자기 생업의 도구와 절차를 비유로 쓴다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 허잠은 독안개 마을 원로로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 허잠은 자기 생업의 도구와 절차를 비유로 쓴다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 남독택 주민이 치르는 생활 비용을 계산하지 않으면 허잠은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "역계약림 인간 대표 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        51,
+        52,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "protected episode function map"
+    },
+    {
+      "id": "SC012",
+      "name": "미라",
+      "role": "야생계약단장",
+      "region": "남독택",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "미라은 담운과 별개로 남독택에서 야생계약단장의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "압박을 받으면 문장이 짧아지고 핵심 명사를 반복한다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "미라은 자기 생업의 도구와 절차를 비유로 쓴다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 미라은 야생계약단장로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 미라은 자기 생업의 도구와 절차를 비유로 쓴다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 남독택 주민이 치르는 생활 비용을 계산하지 않으면 미라은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "첫 공개 역계약 심사관 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        41
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC013",
+      "name": "연호",
+      "role": "독안개 마을 아이",
+      "region": "남독택",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "연호은 담운과 별개로 남독택에서 독안개 마을 아이의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "압박을 받으면 문장이 짧아지고 핵심 명사를 반복한다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "연호은 자기 생업의 도구와 절차를 비유로 쓴다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 연호은 독안개 마을 아이로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 연호은 자기 생업의 도구와 절차를 비유로 쓴다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 남독택 주민이 치르는 생활 비용을 계산하지 않으면 연호은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "어린 견습 의원 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        42
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC014",
+      "name": "사태오",
+      "role": "밀매단장",
+      "region": "남독택",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "사태오은 담운과 별개로 남독택에서 밀매단장의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "압박을 받으면 문장이 짧아지고 핵심 명사를 반복한다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "사태오은 자기 생업의 도구와 절차를 비유로 쓴다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 사태오은 밀매단장로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 사태오은 자기 생업의 도구와 절차를 비유로 쓴다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 남독택 주민이 치르는 생활 비용을 계산하지 않으면 사태오은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "공개 재판 뒤 판례로 남음 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        43
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC015",
+      "name": "강설현",
+      "role": "피풍 속 생존자",
+      "region": "북설원",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "강설현은 담운과 별개로 북설원에서 피풍 속 생존자의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "압박을 받으면 문장이 짧아지고 핵심 명사를 반복한다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "강설현은 자기 생업의 도구와 절차를 비유로 쓴다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 강설현은 피풍 속 생존자로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 강설현은 자기 생업의 도구와 절차를 비유로 쓴다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 북설원 주민이 치르는 생활 비용을 계산하지 않으면 강설현은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "열린 봉인소 증언 교관 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        61
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC016",
+      "name": "노상린",
+      "role": "칠촌 대표",
+      "region": "북설원",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "노상린은 담운과 별개로 북설원에서 칠촌 대표의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "결론 직전에 상대 이름을 부른다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "노상린은 개인보다 주민 수와 공개 절차를 앞세운다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 노상린은 칠촌 대표로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 노상린은 개인보다 주민 수와 공개 절차를 앞세운다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 북설원 주민이 치르는 생활 비용을 계산하지 않으면 노상린은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "제한 사용 위원장 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        62
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC017",
+      "name": "윤봉",
+      "role": "귀장회 북설 현장대장",
+      "region": "북설원",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "윤봉은 담운과 별개로 북설원에서 귀장회 북설 현장대장의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "압박을 받으면 문장이 짧아지고 핵심 명사를 반복한다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "윤봉은 자기 생업의 도구와 절차를 비유로 쓴다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 윤봉은 귀장회 북설 현장대장로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 윤봉은 자기 생업의 도구와 절차를 비유로 쓴다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 북설원 주민이 치르는 생활 비용을 계산하지 않으면 윤봉은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "최종부 구조 협력 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        63
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC018",
+      "name": "마지한",
+      "role": "대상주",
+      "region": "서황막",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "마지한은 담운과 별개로 서황막에서 대상주의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "압박을 받으면 문장이 짧아지고 핵심 명사를 반복한다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "마지한은 자기 생업의 도구와 절차를 비유로 쓴다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 마지한은 대상주로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 마지한은 자기 생업의 도구와 절차를 비유로 쓴다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 서황막 주민이 치르는 생활 비용을 계산하지 않으면 마지한은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "책임거래소 첫 조합장 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        81
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC019",
+      "name": "우담",
+      "role": "사막도시 관물세관장",
+      "region": "서황막",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "우담은 담운과 별개로 서황막에서 사막도시 관물세관장의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "압박을 받으면 문장이 짧아지고 핵심 명사를 반복한다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "우담은 자기 생업의 도구와 절차를 비유로 쓴다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 우담은 사막도시 관물세관장로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 우담은 자기 생업의 도구와 절차를 비유로 쓴다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 서황막 주민이 치르는 생활 비용을 계산하지 않으면 우담은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "책임정보 납부제 도입 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        82
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC020",
+      "name": "서문록",
+      "role": "폐분관 전 탐사자 기록 인격",
+      "region": "서황막",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "서문록은 담운과 별개로 서황막에서 폐분관 전 탐사자 기록 인격의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "모르는 부분은 빈칸으로 남긴다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "서문록은 원문과 수정 이력을 구분한다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 서문록은 폐분관 전 탐사자 기록 인격로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 서문록은 원문과 수정 이력을 구분한다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 서황막 주민이 치르는 생활 비용을 계산하지 않으면 서문록은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "공공 기록으로 잔존 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        83
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC021",
+      "name": "문청묘",
+      "role": "부유역참장",
+      "region": "동해군도",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "문청묘은 담운과 별개로 동해군도에서 부유역참장의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "압박을 받으면 문장이 짧아지고 핵심 명사를 반복한다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "문청묘은 자기 생업의 도구와 절차를 비유로 쓴다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 문청묘은 부유역참장로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 문청묘은 자기 생업의 도구와 절차를 비유로 쓴다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 동해군도 주민이 치르는 생활 비용을 계산하지 않으면 문청묘은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "마지막 배송 항로 책임 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        101
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC022",
+      "name": "해라",
+      "role": "여섯 가문 조정자",
+      "region": "동해군도",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "해라은 담운과 별개로 동해군도에서 여섯 가문 조정자의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "압박을 받으면 문장이 짧아지고 핵심 명사를 반복한다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "해라은 자기 생업의 도구와 절차를 비유로 쓴다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 해라은 여섯 가문 조정자로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 해라은 자기 생업의 도구와 절차를 비유로 쓴다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 동해군도 주민이 치르는 생활 비용을 계산하지 않으면 해라은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "중앙핵 조각 수신위원 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        102
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC023",
+      "name": "권해주",
+      "role": "지분 매각 가문 대표",
+      "region": "동해군도",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "권해주은 담운과 별개로 동해군도에서 지분 매각 가문 대표의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "결론 직전에 상대 이름을 부른다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "권해주은 개인보다 주민 수와 공개 절차를 앞세운다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 권해주은 지분 매각 가문 대표로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 권해주은 개인보다 주민 수와 공개 절차를 앞세운다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 동해군도 주민이 치르는 생활 비용을 계산하지 않으면 권해주은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "책임 지분 재계약 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        103
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC024",
+      "name": "윤무명",
+      "role": "이름 상인",
+      "region": "무명시",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "윤무명은 담운과 별개로 무명시에서 이름 상인의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "상대의 이름 대신 값과 책임을 부른다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "윤무명은 조건을 두 개 제시하고 숨은 비용을 세 번째로 말한다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 윤무명은 이름 상인로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 윤무명은 조건을 두 개 제시하고 숨은 비용을 세 번째로 말한다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 무명시 주민이 치르는 생활 비용을 계산하지 않으면 윤무명은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "중앙 장부 해체에 조건부 협력 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        121
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC025",
+      "name": "류백",
+      "role": "중앙 장부지기",
+      "region": "무명시",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "류백은 담운과 별개로 무명시에서 중앙 장부지기의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "압박을 받으면 문장이 짧아지고 핵심 명사를 반복한다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "류백은 자기 생업의 도구와 절차를 비유로 쓴다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 류백은 중앙 장부지기로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 류백은 자기 생업의 도구와 절차를 비유로 쓴다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 무명시 주민이 치르는 생활 비용을 계산하지 않으면 류백은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "수정 이력 보존 담당 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        122
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC026",
+      "name": "단소아",
+      "role": "이름 없는 시민 대표",
+      "region": "무명시",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "단소아은 담운과 별개로 무명시에서 이름 없는 시민 대표의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "결론 직전에 상대 이름을 부른다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "단소아은 개인보다 주민 수와 공개 절차를 앞세운다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 단소아은 이름 없는 시민 대표로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 단소아은 개인보다 주민 수와 공개 절차를 앞세운다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 무명시 주민이 치르는 생활 비용을 계산하지 않으면 단소아은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "여섯 권역 답장 작성자 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        123
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC027",
+      "name": "손백하",
+      "role": "귀장회 기록부회주",
+      "region": "귀장회·천외",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "손백하은 담운과 별개로 귀장회·천외에서 귀장회 기록부회주의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "모르는 부분은 빈칸으로 남긴다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "손백하은 원문과 수정 이력을 구분한다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 손백하은 귀장회 기록부회주로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 손백하은 원문과 수정 이력을 구분한다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 귀장회·천외 주민이 치르는 생활 비용을 계산하지 않으면 손백하은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "희생자 명단 복원 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        28
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    },
+    {
+      "id": "SC028",
+      "name": "묵언",
+      "role": "원형 무고 안내 기록",
+      "region": "귀장회·천외",
+      "voice_source": "data/supporting_cast_voice_028_v2_9.json",
+      "private_goal": "묵언은 담운과 별개로 귀장회·천외에서 원형 무고 안내 기록의 생업·안전·기록이 특정 세력의 소유물이 되지 않는 운영 규칙을 남기려 한다.",
+      "hidden_insecurity": "모르는 부분은 빈칸으로 남긴다는 과거 자신의 판단이나 침묵이 누군가의 생활 손실로 이어졌다는 불안을 감추는 방식이다.",
+      "refusal_line": "묵언은 원문과 수정 이력을 구분한다는 원칙을 버리고 사람·생계·기록을 편의를 위한 담보나 희생양으로 넘기는 협력을 거절한다.",
+      "personal_loss_from_damun_choice": "담운이 귀환·공동 관리·비수집을 택할 때 묵언은 원형 무고 안내 기록로서 누리던 수입·자격·평판·관계 중 하나를 실제로 잃는다.",
+      "choice_without_damun": "담운의 지시가 없어도 묵언은 원문과 수정 이력을 구분한다는 습관에 따라 현장 기록을 공개하고 피해가 커지는 절차를 스스로 중단한다.",
+      "relationship_pressure": "담운이 옳은 결론만 말하고 귀장회·천외 주민이 치르는 생활 비용을 계산하지 않으면 묵언은 협력을 보류하며 대가를 먼저 인정하라고 요구한다.",
+      "ending_state": "분류 기능과 함께 해체 이후에는 명령형보다 책임 주체를 묻는 문장이 늘어난다.",
+      "canonical_appearance_episodes": [
+        29
+      ],
+      "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+      "appearance_basis": "v3.4 regional supporting-scene assignment"
+    }
+  ]
+}
