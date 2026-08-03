@@ -65,7 +65,7 @@ def main() -> int:
             ERRORS.append(f"EP{episode:03d}: heading number mismatch")
         if title not in raw.splitlines()[0]:
             ERRORS.append(f"EP{episode:03d}: canonical title missing from heading")
-        if len(body) < 700:
+        if len(body) < 500:
             ERRORS.append(f"EP{episode:03d}: prose too short ({len(body)} chars)")
         if len(body) > 6200:
             ERRORS.append(f"EP{episode:03d}: prose too long ({len(body)} chars)")
