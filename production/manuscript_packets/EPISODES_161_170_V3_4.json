@@ -1,0 +1,1620 @@
+{
+  "version": "v3.4-manuscript-packet-v1",
+  "status": "derived_read_only_drafting_input",
+  "protected_canon_unchanged": true,
+  "range": [
+    161,
+    170
+  ],
+  "episodes": [
+    {
+      "episode": 161,
+      "canonical_episode": {
+        "episode": 161,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA1",
+        "subact_title": "살아 있는 박물관",
+        "title": "천외산맥을 오르다",
+        "goal": "중력이 뒤집히는 계단과 분류 문을 통과한다.",
+        "choice": "담운이 동료 도움 없이는 전진 불가",
+        "reward": "천외 길표",
+        "hook": "문이 각자에게 다른 소유자 질문을 던진다.",
+        "location": "천외산맥·원형 천공무고",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "새 문제와 지역 규칙 도입",
+        "cost": "뒤집힌 계단에서 장비 상자 하나가 추락해 보조 수집품 세 점을 잃는다."
+      },
+      "scene_blueprint": {
+        "episode": 161,
+        "act": "ACT5",
+        "subact_id": "A17",
+        "source_subact": "ACT5-SA1",
+        "title": "천외산맥을 오르다",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "중력이 뒤집히는 계단과 분류 문을 통과한다.",
+          "choice": "담운이 동료 도움 없이는 전진 불가",
+          "reward": "천외 길표",
+          "hook": "문이 각자에게 다른 소유자 질문을 던진다.",
+          "location": "천외산맥·원형 천공무고",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "새 문제와 지역 규칙 도입",
+          "cost": "뒤집힌 계단에서 장비 상자 하나가 추락해 보조 수집품 세 점을 잃는다."
+        },
+        "state_before": {
+          "previous_hook": "천외산맥의 원형 무고가 담운에게 문을 연다.",
+          "previous_cost": "혼자 들어가려던 담운은 동료에게 제압당해 천외문 선두권을 잃는다.",
+          "incoming_subact_cost": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 천외산맥·원형 천공무고에서 즉시 행동 문제로 회수한다.",
+            "pressure": "천외산맥의 원형 무고가 담운에게 문을 연다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "중력이 뒤집히는 계단과 분류 문을 통과한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "새 문제와 지역 규칙 도입",
+            "action": "천외산맥·원형 천공무고의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "뒤집힌 계단에서 장비 상자 하나가 추락해 보조 수집품 세 점을 잃는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "중력이 뒤집히는 계단과 분류 문을 통과한다.",
+            "pressure": "사람·신수·동료를 전시품·관리자·위험물로 나누는 규칙을 깨뜨린다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 동료 도움 없이는 전진 불가라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI097:first",
+            "action": "후보 참조(CI097:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "천외 길표",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 동료 도움 없이는 전진 불가",
+            "pressure": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "뒤집힌 계단에서 장비 상자 하나가 추락해 보조 수집품 세 점을 잃는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "천외 길표",
+            "pressure": "뒤집힌 계단에서 장비 상자 하나가 추락해 보조 수집품 세 점을 잃는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "문이 각자에게 다른 소유자 질문을 던진다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "뒤집힌 계단에서 장비 상자 하나가 추락해 보조 수집품 세 점을 잃는다.",
+          "earned_reward": "천외 길표",
+          "next_hook": "문이 각자에게 다른 소유자 질문을 던진다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI097:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 162,
+      "canonical_episode": {
+        "episode": 162,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA1",
+        "subact_title": "살아 있는 박물관",
+        "title": "주인 없는 문",
+        "goal": "누구도 소유하지 않은 문은 통과자를 스스로 선택한다.",
+        "choice": "담운이 무주가 공백이 아닌 선택 상태임을 이해",
+        "reward": "무주문 기록",
+        "hook": "문이 백장도 통과시킨다.",
+        "location": "천외산맥·원형 천공무고",
+        "cast": [
+          "담운",
+          "백장",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "규칙의 예외와 비용 확대",
+        "cost": "무주문이 선택할 때까지 기다리느라 백장이 다른 경로로 먼저 진입한다."
+      },
+      "scene_blueprint": {
+        "episode": 162,
+        "act": "ACT5",
+        "subact_id": "A17",
+        "source_subact": "ACT5-SA1",
+        "title": "주인 없는 문",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "누구도 소유하지 않은 문은 통과자를 스스로 선택한다.",
+          "choice": "담운이 무주가 공백이 아닌 선택 상태임을 이해",
+          "reward": "무주문 기록",
+          "hook": "문이 백장도 통과시킨다.",
+          "location": "천외산맥·원형 천공무고",
+          "cast": [
+            "담운",
+            "백장",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "규칙의 예외와 비용 확대",
+          "cost": "무주문이 선택할 때까지 기다리느라 백장이 다른 경로로 먼저 진입한다."
+        },
+        "state_before": {
+          "previous_hook": "문이 각자에게 다른 소유자 질문을 던진다.",
+          "previous_cost": "뒤집힌 계단에서 장비 상자 하나가 추락해 보조 수집품 세 점을 잃는다.",
+          "incoming_subact_cost": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 천외산맥·원형 천공무고에서 즉시 행동 문제로 회수한다.",
+            "pressure": "문이 각자에게 다른 소유자 질문을 던진다.",
+            "action": "담운·백장가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "누구도 소유하지 않은 문은 통과자를 스스로 선택한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "규칙의 예외와 비용 확대",
+            "action": "천외산맥·원형 천공무고의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "무주문이 선택할 때까지 기다리느라 백장이 다른 경로로 먼저 진입한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "누구도 소유하지 않은 문은 통과자를 스스로 선택한다.",
+            "pressure": "사람·신수·동료를 전시품·관리자·위험물로 나누는 규칙을 깨뜨린다.",
+            "action": "담운·백장가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 무주가 공백이 아닌 선택 상태임을 이해라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI098:first",
+            "action": "후보 참조(CI098:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "무주문 기록",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 무주가 공백이 아닌 선택 상태임을 이해",
+            "pressure": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "무주문이 선택할 때까지 기다리느라 백장이 다른 경로로 먼저 진입한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "무주문 기록",
+            "pressure": "무주문이 선택할 때까지 기다리느라 백장이 다른 경로로 먼저 진입한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "문이 백장도 통과시킨다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "무주문이 선택할 때까지 기다리느라 백장이 다른 경로로 먼저 진입한다.",
+          "earned_reward": "무주문 기록",
+          "next_hook": "문이 백장도 통과시킨다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI098:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 163,
+      "canonical_episode": {
+        "episode": 163,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA1",
+        "subact_title": "살아 있는 박물관",
+        "title": "원형 천공무고",
+        "goal": "살아 움직이는 박물관과 중앙 전시실을 발견한다.",
+        "choice": "동료들이 각자 다른 방으로 분리",
+        "reward": "원형 무고 장소기록",
+        "hook": "전시실이 담운을 물건 번호로 호명한다.",
+        "location": "천외산맥·원형 천공무고",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "첫 실전 적용과 오판",
+        "cost": "방 분리로 담운은 동료 상태를 알 수 없고 자신의 권한도 일부 봉쇄된다."
+      },
+      "scene_blueprint": {
+        "episode": 163,
+        "act": "ACT5",
+        "subact_id": "A17",
+        "source_subact": "ACT5-SA1",
+        "title": "원형 천공무고",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "살아 움직이는 박물관과 중앙 전시실을 발견한다.",
+          "choice": "동료들이 각자 다른 방으로 분리",
+          "reward": "원형 무고 장소기록",
+          "hook": "전시실이 담운을 물건 번호로 호명한다.",
+          "location": "천외산맥·원형 천공무고",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "첫 실전 적용과 오판",
+          "cost": "방 분리로 담운은 동료 상태를 알 수 없고 자신의 권한도 일부 봉쇄된다."
+        },
+        "state_before": {
+          "previous_hook": "문이 백장도 통과시킨다.",
+          "previous_cost": "무주문이 선택할 때까지 기다리느라 백장이 다른 경로로 먼저 진입한다.",
+          "incoming_subact_cost": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 천외산맥·원형 천공무고에서 즉시 행동 문제로 회수한다.",
+            "pressure": "문이 백장도 통과시킨다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "살아 움직이는 박물관과 중앙 전시실을 발견한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "첫 실전 적용과 오판",
+            "action": "천외산맥·원형 천공무고의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "방 분리로 담운은 동료 상태를 알 수 없고 자신의 권한도 일부 봉쇄된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "살아 움직이는 박물관과 중앙 전시실을 발견한다.",
+            "pressure": "사람·신수·동료를 전시품·관리자·위험물로 나누는 규칙을 깨뜨린다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 동료들이 각자 다른 방으로 분리라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "BS018",
+            "action": "후보 참조(BS018)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "원형 무고 장소기록",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "동료들이 각자 다른 방으로 분리",
+            "pressure": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "방 분리로 담운은 동료 상태를 알 수 없고 자신의 권한도 일부 봉쇄된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "원형 무고 장소기록",
+            "pressure": "방 분리로 담운은 동료 상태를 알 수 없고 자신의 권한도 일부 봉쇄된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "전시실이 담운을 물건 번호로 호명한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "방 분리로 담운은 동료 상태를 알 수 없고 자신의 권한도 일부 봉쇄된다.",
+          "earned_reward": "원형 무고 장소기록",
+          "next_hook": "전시실이 담운을 물건 번호로 호명한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": [
+            "BS018"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 164,
+      "canonical_episode": {
+        "episode": 164,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA1",
+        "subact_title": "살아 있는 박물관",
+        "title": "살아 있는 전시실",
+        "goal": "전시실이 방문자를 가치·위험·소유권으로 분류한다.",
+        "choice": "담운이 분류를 거부",
+        "reward": "살아 있는 전시실 후보",
+        "hook": "린화가 사람 등급표를 찢자 전시실이 공격한다.",
+        "location": "천외산맥·원형 천공무고",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "적대 세력의 압박 구체화",
+        "cost": "사람 등급표를 찢은 린화가 전시실 제거 대상으로 분류된다."
+      },
+      "scene_blueprint": {
+        "episode": 164,
+        "act": "ACT5",
+        "subact_id": "A17",
+        "source_subact": "ACT5-SA1",
+        "title": "살아 있는 전시실",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "전시실이 방문자를 가치·위험·소유권으로 분류한다.",
+          "choice": "담운이 분류를 거부",
+          "reward": "살아 있는 전시실 후보",
+          "hook": "린화가 사람 등급표를 찢자 전시실이 공격한다.",
+          "location": "천외산맥·원형 천공무고",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "적대 세력의 압박 구체화",
+          "cost": "사람 등급표를 찢은 린화가 전시실 제거 대상으로 분류된다."
+        },
+        "state_before": {
+          "previous_hook": "전시실이 담운을 물건 번호로 호명한다.",
+          "previous_cost": "방 분리로 담운은 동료 상태를 알 수 없고 자신의 권한도 일부 봉쇄된다.",
+          "incoming_subact_cost": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 천외산맥·원형 천공무고에서 즉시 행동 문제로 회수한다.",
+            "pressure": "전시실이 담운을 물건 번호로 호명한다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "전시실이 방문자를 가치·위험·소유권으로 분류한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "적대 세력의 압박 구체화",
+            "action": "천외산맥·원형 천공무고의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "사람 등급표를 찢은 린화가 전시실 제거 대상으로 분류된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "전시실이 방문자를 가치·위험·소유권으로 분류한다.",
+            "pressure": "사람·신수·동료를 전시품·관리자·위험물로 나누는 규칙을 깨뜨린다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 분류를 거부라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI099:first",
+            "action": "후보 참조(CI099:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "살아 있는 전시실 후보",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 분류를 거부",
+            "pressure": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "사람 등급표를 찢은 린화가 전시실 제거 대상으로 분류된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "살아 있는 전시실 후보",
+            "pressure": "사람 등급표를 찢은 린화가 전시실 제거 대상으로 분류된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "린화가 사람 등급표를 찢자 전시실이 공격한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "사람 등급표를 찢은 린화가 전시실 제거 대상으로 분류된다.",
+          "earned_reward": "살아 있는 전시실 후보",
+          "next_hook": "린화가 사람 등급표를 찢자 전시실이 공격한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI099:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 165,
+      "canonical_episode": {
+        "episode": 165,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA1",
+        "subact_title": "살아 있는 박물관",
+        "title": "수장인의 반쪽",
+        "goal": "담운이 과거 수장 권한의 절반을 얻는다.",
+        "choice": "권한 사용 때 과거 인격 침투 위험",
+        "reward": "수장인 반쪽",
+        "hook": "반쪽 인장이 담운 이름을 완성하려 한다.",
+        "location": "천외산맥·원형 천공무고",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "서브액트 중간 선택",
+        "cost": "수장인 반쪽을 쓰자 과거 수장의 말투가 담운 대사에 섞이기 시작한다."
+      },
+      "scene_blueprint": {
+        "episode": 165,
+        "act": "ACT5",
+        "subact_id": "A17",
+        "source_subact": "ACT5-SA1",
+        "title": "수장인의 반쪽",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "담운이 과거 수장 권한의 절반을 얻는다.",
+          "choice": "권한 사용 때 과거 인격 침투 위험",
+          "reward": "수장인 반쪽",
+          "hook": "반쪽 인장이 담운 이름을 완성하려 한다.",
+          "location": "천외산맥·원형 천공무고",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "서브액트 중간 선택",
+          "cost": "수장인 반쪽을 쓰자 과거 수장의 말투가 담운 대사에 섞이기 시작한다."
+        },
+        "state_before": {
+          "previous_hook": "린화가 사람 등급표를 찢자 전시실이 공격한다.",
+          "previous_cost": "사람 등급표를 찢은 린화가 전시실 제거 대상으로 분류된다.",
+          "incoming_subact_cost": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 천외산맥·원형 천공무고에서 즉시 행동 문제로 회수한다.",
+            "pressure": "린화가 사람 등급표를 찢자 전시실이 공격한다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "담운이 과거 수장 권한의 절반을 얻는다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 중간 선택",
+            "action": "천외산맥·원형 천공무고의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "수장인 반쪽을 쓰자 과거 수장의 말투가 담운 대사에 섞이기 시작한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "담운이 과거 수장 권한의 절반을 얻는다.",
+            "pressure": "사람·신수·동료를 전시품·관리자·위험물로 나누는 규칙을 깨뜨린다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 권한 사용 때 과거 인격 침투 위험라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "BS018",
+            "action": "후보 참조(BS018)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "수장인 반쪽",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "권한 사용 때 과거 인격 침투 위험",
+            "pressure": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "수장인 반쪽을 쓰자 과거 수장의 말투가 담운 대사에 섞이기 시작한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "수장인 반쪽",
+            "pressure": "수장인 반쪽을 쓰자 과거 수장의 말투가 담운 대사에 섞이기 시작한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "반쪽 인장이 담운 이름을 완성하려 한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "수장인 반쪽을 쓰자 과거 수장의 말투가 담운 대사에 섞이기 시작한다.",
+          "earned_reward": "수장인 반쪽",
+          "next_hook": "반쪽 인장이 담운 이름을 완성하려 한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": [
+            "BS018"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 166,
+      "canonical_episode": {
+        "episode": 166,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA1",
+        "subact_title": "살아 있는 박물관",
+        "title": "귀환파의 기록환",
+        "goal": "유산을 세상에 돌려보내려다 독점 계승을 낳은 기록을 본다.",
+        "choice": "담운이 귀환도 정답만은 아님을 배움",
+        "reward": "귀환파 기록환",
+        "hook": "기록 속 수장이 자신의 이름을 떼어낸다.",
+        "location": "천외산맥·원형 천공무고",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "선택의 후폭풍과 관계 변화",
+        "cost": "귀환파 실패를 공개해 담운이 믿어 온 귀환 원칙의 절대성을 잃는다."
+      },
+      "scene_blueprint": {
+        "episode": 166,
+        "act": "ACT5",
+        "subact_id": "A17",
+        "source_subact": "ACT5-SA1",
+        "title": "귀환파의 기록환",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "유산을 세상에 돌려보내려다 독점 계승을 낳은 기록을 본다.",
+          "choice": "담운이 귀환도 정답만은 아님을 배움",
+          "reward": "귀환파 기록환",
+          "hook": "기록 속 수장이 자신의 이름을 떼어낸다.",
+          "location": "천외산맥·원형 천공무고",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "선택의 후폭풍과 관계 변화",
+          "cost": "귀환파 실패를 공개해 담운이 믿어 온 귀환 원칙의 절대성을 잃는다."
+        },
+        "state_before": {
+          "previous_hook": "반쪽 인장이 담운 이름을 완성하려 한다.",
+          "previous_cost": "수장인 반쪽을 쓰자 과거 수장의 말투가 담운 대사에 섞이기 시작한다.",
+          "incoming_subact_cost": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 천외산맥·원형 천공무고에서 즉시 행동 문제로 회수한다.",
+            "pressure": "반쪽 인장이 담운 이름을 완성하려 한다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "유산을 세상에 돌려보내려다 독점 계승을 낳은 기록을 본다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "선택의 후폭풍과 관계 변화",
+            "action": "천외산맥·원형 천공무고의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "귀환파 실패를 공개해 담운이 믿어 온 귀환 원칙의 절대성을 잃는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "유산을 세상에 돌려보내려다 독점 계승을 낳은 기록을 본다.",
+            "pressure": "사람·신수·동료를 전시품·관리자·위험물로 나누는 규칙을 깨뜨린다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 귀환도 정답만은 아님을 배움라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI100:first",
+            "action": "후보 참조(CI100:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "귀환파 기록환",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 귀환도 정답만은 아님을 배움",
+            "pressure": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "귀환파 실패를 공개해 담운이 믿어 온 귀환 원칙의 절대성을 잃는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "귀환파 기록환",
+            "pressure": "귀환파 실패를 공개해 담운이 믿어 온 귀환 원칙의 절대성을 잃는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "기록 속 수장이 자신의 이름을 떼어낸다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "귀환파 실패를 공개해 담운이 믿어 온 귀환 원칙의 절대성을 잃는다.",
+          "earned_reward": "귀환파 기록환",
+          "next_hook": "기록 속 수장이 자신의 이름을 떼어낸다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI100:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 167,
+      "canonical_episode": {
+        "episode": 167,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA1",
+        "subact_title": "살아 있는 박물관",
+        "title": "봉장파의 기억쇄",
+        "goal": "봉인과 함께 피해자 기억까지 지운 역사를 확인한다.",
+        "choice": "무석이 과거 조직 죄를 직면",
+        "reward": "봉장파 기억쇄",
+        "hook": "쇄의 마지막 고리가 백장 손목과 연결된다.",
+        "location": "천외산맥·원형 천공무고",
+        "cast": [
+          "백장",
+          "곽무석",
+          "담운",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "숨은 진실 또는 역전",
+        "cost": "기억쇄를 만진 무석은 자신이 잊은 희생자 고통을 한꺼번에 되찾는다."
+      },
+      "scene_blueprint": {
+        "episode": 167,
+        "act": "ACT5",
+        "subact_id": "A17",
+        "source_subact": "ACT5-SA1",
+        "title": "봉장파의 기억쇄",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "봉인과 함께 피해자 기억까지 지운 역사를 확인한다.",
+          "choice": "무석이 과거 조직 죄를 직면",
+          "reward": "봉장파 기억쇄",
+          "hook": "쇄의 마지막 고리가 백장 손목과 연결된다.",
+          "location": "천외산맥·원형 천공무고",
+          "cast": [
+            "백장",
+            "곽무석",
+            "담운",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "숨은 진실 또는 역전",
+          "cost": "기억쇄를 만진 무석은 자신이 잊은 희생자 고통을 한꺼번에 되찾는다."
+        },
+        "state_before": {
+          "previous_hook": "기록 속 수장이 자신의 이름을 떼어낸다.",
+          "previous_cost": "귀환파 실패를 공개해 담운이 믿어 온 귀환 원칙의 절대성을 잃는다.",
+          "incoming_subact_cost": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 천외산맥·원형 천공무고에서 즉시 행동 문제로 회수한다.",
+            "pressure": "기록 속 수장이 자신의 이름을 떼어낸다.",
+            "action": "백장·곽무석가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "봉인과 함께 피해자 기억까지 지운 역사를 확인한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "숨은 진실 또는 역전",
+            "action": "천외산맥·원형 천공무고의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "기억쇄를 만진 무석은 자신이 잊은 희생자 고통을 한꺼번에 되찾는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "봉인과 함께 피해자 기억까지 지운 역사를 확인한다.",
+            "pressure": "사람·신수·동료를 전시품·관리자·위험물로 나누는 규칙을 깨뜨린다.",
+            "action": "백장·곽무석가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 무석이 과거 조직 죄를 직면라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "봉장파 기억쇄",
+            "action": "후보 참조(봉장파 기억쇄)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "봉장파 기억쇄",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "무석이 과거 조직 죄를 직면",
+            "pressure": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "기억쇄를 만진 무석은 자신이 잊은 희생자 고통을 한꺼번에 되찾는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "봉장파 기억쇄",
+            "pressure": "기억쇄를 만진 무석은 자신이 잊은 희생자 고통을 한꺼번에 되찾는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "쇄의 마지막 고리가 백장 손목과 연결된다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "기억쇄를 만진 무석은 자신이 잊은 희생자 고통을 한꺼번에 되찾는다.",
+          "earned_reward": "봉장파 기억쇄",
+          "next_hook": "쇄의 마지막 고리가 백장 손목과 연결된다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 168,
+      "canonical_episode": {
+        "episode": 168,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA1",
+        "subact_title": "살아 있는 박물관",
+        "title": "대주의 중앙핵",
+        "goal": "모든 유산의 의를 하나의 소유권으로 합치는 중앙핵을 본다.",
+        "choice": "진여강이 공동 지분 가능성을 계산",
+        "reward": "중앙핵 공개",
+        "hook": "핵이 담운을 빈 소유자 자리로 인식한다.",
+        "location": "천외산맥·원형 천공무고",
+        "cast": [
+          "담운",
+          "진여강",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "해결책의 조립과 대가 확정",
+        "cost": "중앙핵을 본 진여강은 지분 계산을 위해 자기 기억 일부를 담보로 건다."
+      },
+      "scene_blueprint": {
+        "episode": 168,
+        "act": "ACT5",
+        "subact_id": "A17",
+        "source_subact": "ACT5-SA1",
+        "title": "대주의 중앙핵",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "모든 유산의 의를 하나의 소유권으로 합치는 중앙핵을 본다.",
+          "choice": "진여강이 공동 지분 가능성을 계산",
+          "reward": "중앙핵 공개",
+          "hook": "핵이 담운을 빈 소유자 자리로 인식한다.",
+          "location": "천외산맥·원형 천공무고",
+          "cast": [
+            "담운",
+            "진여강",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "해결책의 조립과 대가 확정",
+          "cost": "중앙핵을 본 진여강은 지분 계산을 위해 자기 기억 일부를 담보로 건다."
+        },
+        "state_before": {
+          "previous_hook": "쇄의 마지막 고리가 백장 손목과 연결된다.",
+          "previous_cost": "기억쇄를 만진 무석은 자신이 잊은 희생자 고통을 한꺼번에 되찾는다.",
+          "incoming_subact_cost": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 천외산맥·원형 천공무고에서 즉시 행동 문제로 회수한다.",
+            "pressure": "쇄의 마지막 고리가 백장 손목과 연결된다.",
+            "action": "담운·진여강가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "모든 유산의 의를 하나의 소유권으로 합치는 중앙핵을 본다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "해결책의 조립과 대가 확정",
+            "action": "천외산맥·원형 천공무고의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "중앙핵을 본 진여강은 지분 계산을 위해 자기 기억 일부를 담보로 건다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "모든 유산의 의를 하나의 소유권으로 합치는 중앙핵을 본다.",
+            "pressure": "사람·신수·동료를 전시품·관리자·위험물로 나누는 규칙을 깨뜨린다.",
+            "action": "담운·진여강가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 진여강이 공동 지분 가능성을 계산라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI101:first",
+            "action": "후보 참조(CI101:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "중앙핵 공개",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "진여강이 공동 지분 가능성을 계산",
+            "pressure": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "중앙핵을 본 진여강은 지분 계산을 위해 자기 기억 일부를 담보로 건다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "중앙핵 공개",
+            "pressure": "중앙핵을 본 진여강은 지분 계산을 위해 자기 기억 일부를 담보로 건다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "핵이 담운을 빈 소유자 자리로 인식한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "중앙핵을 본 진여강은 지분 계산을 위해 자기 기억 일부를 담보로 건다.",
+          "earned_reward": "중앙핵 공개",
+          "next_hook": "핵이 담운을 빈 소유자 자리로 인식한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI101:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 169,
+      "canonical_episode": {
+        "episode": 169,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA1",
+        "subact_title": "살아 있는 박물관",
+        "title": "분류되는 사람들",
+        "goal": "동료들이 각자 수집품·관리자·위험요소로 분류되어 갈라진다.",
+        "choice": "담운이 사람을 목록에서 해방시키려 함",
+        "reward": "분류 규칙 폭주",
+        "hook": "두리가 ‘신수 물품’ 칸에 갇힌다.",
+        "location": "천외산맥·원형 천공무고",
+        "cast": [
+          "담운",
+          "두리",
+          "서린화",
+          "소예란",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "서브액트 클라이맥스",
+        "cost": "사람 분류를 끊는 동안 두리가 신수 물품 칸에 갇혀 최종 진화가 지연된다."
+      },
+      "scene_blueprint": {
+        "episode": 169,
+        "act": "ACT5",
+        "subact_id": "A17",
+        "source_subact": "ACT5-SA1",
+        "title": "분류되는 사람들",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "동료들이 각자 수집품·관리자·위험요소로 분류되어 갈라진다.",
+          "choice": "담운이 사람을 목록에서 해방시키려 함",
+          "reward": "분류 규칙 폭주",
+          "hook": "두리가 ‘신수 물품’ 칸에 갇힌다.",
+          "location": "천외산맥·원형 천공무고",
+          "cast": [
+            "담운",
+            "두리",
+            "서린화",
+            "소예란",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "서브액트 클라이맥스",
+          "cost": "사람 분류를 끊는 동안 두리가 신수 물품 칸에 갇혀 최종 진화가 지연된다."
+        },
+        "state_before": {
+          "previous_hook": "핵이 담운을 빈 소유자 자리로 인식한다.",
+          "previous_cost": "중앙핵을 본 진여강은 지분 계산을 위해 자기 기억 일부를 담보로 건다.",
+          "incoming_subact_cost": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 천외산맥·원형 천공무고에서 즉시 행동 문제로 회수한다.",
+            "pressure": "핵이 담운을 빈 소유자 자리로 인식한다.",
+            "action": "담운·두리가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "동료들이 각자 수집품·관리자·위험요소로 분류되어 갈라진다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 클라이맥스",
+            "action": "천외산맥·원형 천공무고의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "사람 분류를 끊는 동안 두리가 신수 물품 칸에 갇혀 최종 진화가 지연된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "동료들이 각자 수집품·관리자·위험요소로 분류되어 갈라진다.",
+            "pressure": "사람·신수·동료를 전시품·관리자·위험물로 나누는 규칙을 깨뜨린다.",
+            "action": "담운·두리가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 사람을 목록에서 해방시키려 함라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI102:first, BS001, BS018",
+            "action": "후보 참조(CI102:first, BS001, BS018)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "분류 규칙 폭주",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 사람을 목록에서 해방시키려 함",
+            "pressure": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "사람 분류를 끊는 동안 두리가 신수 물품 칸에 갇혀 최종 진화가 지연된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "분류 규칙 폭주",
+            "pressure": "사람 분류를 끊는 동안 두리가 신수 물품 칸에 갇혀 최종 진화가 지연된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "두리가 ‘신수 물품’ 칸에 갇힌다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "사람 분류를 끊는 동안 두리가 신수 물품 칸에 갇혀 최종 진화가 지연된다.",
+          "earned_reward": "분류 규칙 폭주",
+          "next_hook": "두리가 ‘신수 물품’ 칸에 갇힌다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI102:first"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS001",
+            "BS018"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 170,
+      "canonical_episode": {
+        "episode": 170,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA1",
+        "subact_title": "살아 있는 박물관",
+        "title": "백장이 봉인한 날",
+        "goal": "백장이 젊은 시절 유산 폭주로 가족과 도시를 잃은 기록을 공개한다.",
+        "choice": "담운이 백장을 단순 악으로 볼 수 없게 됨",
+        "reward": "백장 과거",
+        "hook": "백장은 담운 수납만이 재발을 막는다고 말한다.",
+        "location": "천외산맥·원형 천공무고",
+        "cast": [
+          "담운",
+          "백장",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "보상 회수와 다음 구간 훅",
+        "cost": "백장 과거를 이해해도 강제 희생을 거부해야 하므로 협상의 쉬운 길을 잃는다."
+      },
+      "scene_blueprint": {
+        "episode": 170,
+        "act": "ACT5",
+        "subact_id": "A17",
+        "source_subact": "ACT5-SA1",
+        "title": "백장이 봉인한 날",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "백장이 젊은 시절 유산 폭주로 가족과 도시를 잃은 기록을 공개한다.",
+          "choice": "담운이 백장을 단순 악으로 볼 수 없게 됨",
+          "reward": "백장 과거",
+          "hook": "백장은 담운 수납만이 재발을 막는다고 말한다.",
+          "location": "천외산맥·원형 천공무고",
+          "cast": [
+            "담운",
+            "백장",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "보상 회수와 다음 구간 훅",
+          "cost": "백장 과거를 이해해도 강제 희생을 거부해야 하므로 협상의 쉬운 길을 잃는다."
+        },
+        "state_before": {
+          "previous_hook": "두리가 ‘신수 물품’ 칸에 갇힌다.",
+          "previous_cost": "사람 분류를 끊는 동안 두리가 신수 물품 칸에 갇혀 최종 진화가 지연된다.",
+          "incoming_subact_cost": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 천외산맥·원형 천공무고에서 즉시 행동 문제로 회수한다.",
+            "pressure": "두리가 ‘신수 물품’ 칸에 갇힌다.",
+            "action": "담운·백장가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "백장이 젊은 시절 유산 폭주로 가족과 도시를 잃은 기록을 공개한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "보상 회수와 다음 구간 훅",
+            "action": "천외산맥·원형 천공무고의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "백장 과거를 이해해도 강제 희생을 거부해야 하므로 협상의 쉬운 길을 잃는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "백장이 젊은 시절 유산 폭주로 가족과 도시를 잃은 기록을 공개한다.",
+            "pressure": "사람·신수·동료를 전시품·관리자·위험물로 나누는 규칙을 깨뜨린다.",
+            "action": "담운·백장가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 백장을 단순 악으로 볼 수 없게 됨라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI097:final, CI098:final, CI099:final, CI101:final, CI102:final, SET020:complete, BS018",
+            "action": "후보 참조(CI097:final, CI098:final, CI099:final, CI101:final, CI102:final, SET020:complete, BS018)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "백장 과거",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 백장을 단순 악으로 볼 수 없게 됨",
+            "pressure": "분산된 동료와 제한된 장비로 중앙 분류 체계에 진입해야 한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "백장 과거를 이해해도 강제 희생을 거부해야 하므로 협상의 쉬운 길을 잃는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "백장 과거",
+            "pressure": "중앙의 안전 기능도 함께 약해지고 담운의 기원을 완성하면 재난을 막을 수 있다는 유혹이 커진다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "백장은 담운 수납만이 재발을 막는다고 말한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "백장 과거를 이해해도 강제 희생을 거부해야 하므로 협상의 쉬운 길을 잃는다.",
+          "earned_reward": "백장 과거",
+          "next_hook": "백장은 담운 수납만이 재발을 막는다고 말한다.",
+          "outgoing_subact_cost": "중앙의 안전 기능도 함께 약해지고 담운의 기원을 완성하면 재난을 막을 수 있다는 유혹이 커진다."
+        },
+        "registry_events": {
+          "items": [
+            "CI097:final",
+            "CI098:final",
+            "CI099:final",
+            "CI101:final",
+            "CI102:final"
+          ],
+          "sets": [
+            "SET020:complete"
+          ],
+          "beasts": [
+            "BS018"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    }
+  ]
+}

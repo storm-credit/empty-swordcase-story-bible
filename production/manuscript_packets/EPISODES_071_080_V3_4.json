@@ -1,0 +1,1611 @@
+{
+  "version": "v3.4-manuscript-packet-v1",
+  "status": "derived_read_only_drafting_input",
+  "protected_canon_unchanged": true,
+  "range": [
+    71,
+    80
+  ],
+  "episodes": [
+    {
+      "episode": 71,
+      "canonical_episode": {
+        "episode": 71,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA4",
+        "subact_title": "파수꾼의 이탈",
+        "title": "눈사태 기록",
+        "goal": "과거 봉인 실패가 자연재해가 아니라 유물 쟁탈전 때문임을 확인한다.",
+        "choice": "무석이 귀장회의 기록 삭제를 의심",
+        "reward": "북풍 종",
+        "hook": "삭제된 기록에 자신의 서명이 있다.",
+        "location": "북설 봉인성·백야 설원",
+        "cast": [
+          "곽무석",
+          "담운",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "새 문제와 지역 규칙 도입",
+        "cost": "삭제 기록을 복원한 무석은 자신의 명령서 원본을 대중 앞에 공개해야 한다."
+      },
+      "scene_blueprint": {
+        "episode": 71,
+        "act": "ACT2",
+        "subact_id": "A08",
+        "source_subact": "ACT2-SA4",
+        "title": "눈사태 기록",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "과거 봉인 실패가 자연재해가 아니라 유물 쟁탈전 때문임을 확인한다.",
+          "choice": "무석이 귀장회의 기록 삭제를 의심",
+          "reward": "북풍 종",
+          "hook": "삭제된 기록에 자신의 서명이 있다.",
+          "location": "북설 봉인성·백야 설원",
+          "cast": [
+            "곽무석",
+            "담운",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "새 문제와 지역 규칙 도입",
+          "cost": "삭제 기록을 복원한 무석은 자신의 명령서 원본을 대중 앞에 공개해야 한다."
+        },
+        "state_before": {
+          "previous_hook": "방벽 안쪽에서만 눈이 녹기 시작한다.",
+          "previous_cost": "세 조각 방벽을 유지하느라 마을 대표 세 명이 동상 후유증을 얻는다.",
+          "incoming_subact_cost": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설 봉인성·백야 설원에서 즉시 행동 문제로 회수한다.",
+            "pressure": "방벽 안쪽에서만 눈이 녹기 시작한다.",
+            "action": "곽무석·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "과거 봉인 실패가 자연재해가 아니라 유물 쟁탈전 때문임을 확인한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "새 문제와 지역 규칙 도입",
+            "action": "북설 봉인성·백야 설원의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "삭제 기록을 복원한 무석은 자신의 명령서 원본을 대중 앞에 공개해야 한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "과거 봉인 실패가 자연재해가 아니라 유물 쟁탈전 때문임을 확인한다.",
+            "pressure": "곽무석이 지킨 사람과 버린 사람의 기록, 봉장파의 삭제 관행을 드러낸다.",
+            "action": "곽무석·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 무석이 귀장회의 기록 삭제를 의심라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI043:first",
+            "action": "후보 참조(CI043:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "북풍 종",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "무석이 귀장회의 기록 삭제를 의심",
+            "pressure": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "삭제 기록을 복원한 무석은 자신의 명령서 원본을 대중 앞에 공개해야 한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "북풍 종",
+            "pressure": "삭제 기록을 복원한 무석은 자신의 명령서 원본을 대중 앞에 공개해야 한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "삭제된 기록에 자신의 서명이 있다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "삭제 기록을 복원한 무석은 자신의 명령서 원본을 대중 앞에 공개해야 한다.",
+          "earned_reward": "북풍 종",
+          "next_hook": "삭제된 기록에 자신의 서명이 있다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI043:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 72,
+      "canonical_episode": {
+        "episode": 72,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA4",
+        "subact_title": "파수꾼의 이탈",
+        "title": "팔린 조각",
+        "goal": "식량난 마을이 설갑 조각을 진여강에게 판다.",
+        "choice": "담운과 진여강이 합법성으로 충돌",
+        "reward": "책임 매매 계약",
+        "hook": "진여강이 소유권 대신 사용권을 나눈다.",
+        "location": "북설 봉인성·백야 설원",
+        "cast": [
+          "담운",
+          "진여강",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "규칙의 예외와 비용 확대",
+        "cost": "식량난 마을의 계약을 무효화하지 않고 진여강에게 실제 매입비를 변상한다."
+      },
+      "scene_blueprint": {
+        "episode": 72,
+        "act": "ACT2",
+        "subact_id": "A08",
+        "source_subact": "ACT2-SA4",
+        "title": "팔린 조각",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "식량난 마을이 설갑 조각을 진여강에게 판다.",
+          "choice": "담운과 진여강이 합법성으로 충돌",
+          "reward": "책임 매매 계약",
+          "hook": "진여강이 소유권 대신 사용권을 나눈다.",
+          "location": "북설 봉인성·백야 설원",
+          "cast": [
+            "담운",
+            "진여강",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "규칙의 예외와 비용 확대",
+          "cost": "식량난 마을의 계약을 무효화하지 않고 진여강에게 실제 매입비를 변상한다."
+        },
+        "state_before": {
+          "previous_hook": "삭제된 기록에 자신의 서명이 있다.",
+          "previous_cost": "삭제 기록을 복원한 무석은 자신의 명령서 원본을 대중 앞에 공개해야 한다.",
+          "incoming_subact_cost": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설 봉인성·백야 설원에서 즉시 행동 문제로 회수한다.",
+            "pressure": "삭제된 기록에 자신의 서명이 있다.",
+            "action": "담운·진여강가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "식량난 마을이 설갑 조각을 진여강에게 판다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "규칙의 예외와 비용 확대",
+            "action": "북설 봉인성·백야 설원의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "식량난 마을의 계약을 무효화하지 않고 진여강에게 실제 매입비를 변상한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "식량난 마을이 설갑 조각을 진여강에게 판다.",
+            "pressure": "곽무석이 지킨 사람과 버린 사람의 기록, 봉장파의 삭제 관행을 드러낸다.",
+            "action": "담운·진여강가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운과 진여강이 합법성으로 충돌라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI044:first, BS009",
+            "action": "후보 참조(CI044:first, BS009)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "책임 매매 계약",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운과 진여강이 합법성으로 충돌",
+            "pressure": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "식량난 마을의 계약을 무효화하지 않고 진여강에게 실제 매입비를 변상한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "책임 매매 계약",
+            "pressure": "식량난 마을의 계약을 무효화하지 않고 진여강에게 실제 매입비를 변상한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "진여강이 소유권 대신 사용권을 나눈다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "식량난 마을의 계약을 무효화하지 않고 진여강에게 실제 매입비를 변상한다.",
+          "earned_reward": "책임 매매 계약",
+          "next_hook": "진여강이 소유권 대신 사용권을 나눈다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI044:first"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS009"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+        "beast_context_additions": [
+          {
+            "id": "BS011",
+            "name": "빙잠나방",
+            "scene_function": "지역 생태 신호와 인간 비용을 보여주며 기존 회차 결말은 바꾸지 않는다.",
+            "canon_effect": "기존 goal·choice·reward·hook·cost 불변"
+          }
+        ]
+      }
+    },
+    {
+      "episode": 73,
+      "canonical_episode": {
+        "episode": 73,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA4",
+        "subact_title": "파수꾼의 이탈",
+        "title": "일곱 주인",
+        "goal": "설갑은 일곱 마을 대표가 동시에 동의해야 움직인다.",
+        "choice": "담운이 다수 소유권을 실전에서 배움",
+        "reward": "공동 방패끈",
+        "hook": "한 대표가 귀장회 첩자로 드러난다.",
+        "location": "북설 봉인성·백야 설원",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "첫 실전 적용과 오판",
+        "cost": "공동 동의를 기다리느라 귀장회 회수대가 봉인성 안쪽까지 진입한다."
+      },
+      "scene_blueprint": {
+        "episode": 73,
+        "act": "ACT2",
+        "subact_id": "A08",
+        "source_subact": "ACT2-SA4",
+        "title": "일곱 주인",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "설갑은 일곱 마을 대표가 동시에 동의해야 움직인다.",
+          "choice": "담운이 다수 소유권을 실전에서 배움",
+          "reward": "공동 방패끈",
+          "hook": "한 대표가 귀장회 첩자로 드러난다.",
+          "location": "북설 봉인성·백야 설원",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "첫 실전 적용과 오판",
+          "cost": "공동 동의를 기다리느라 귀장회 회수대가 봉인성 안쪽까지 진입한다."
+        },
+        "state_before": {
+          "previous_hook": "진여강이 소유권 대신 사용권을 나눈다.",
+          "previous_cost": "식량난 마을의 계약을 무효화하지 않고 진여강에게 실제 매입비를 변상한다.",
+          "incoming_subact_cost": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설 봉인성·백야 설원에서 즉시 행동 문제로 회수한다.",
+            "pressure": "진여강이 소유권 대신 사용권을 나눈다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "설갑은 일곱 마을 대표가 동시에 동의해야 움직인다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "첫 실전 적용과 오판",
+            "action": "북설 봉인성·백야 설원의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "공동 동의를 기다리느라 귀장회 회수대가 봉인성 안쪽까지 진입한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "설갑은 일곱 마을 대표가 동시에 동의해야 움직인다.",
+            "pressure": "곽무석이 지킨 사람과 버린 사람의 기록, 봉장파의 삭제 관행을 드러낸다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 다수 소유권을 실전에서 배움라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI045:first",
+            "action": "후보 참조(CI045:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "공동 방패끈",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 다수 소유권을 실전에서 배움",
+            "pressure": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "공동 동의를 기다리느라 귀장회 회수대가 봉인성 안쪽까지 진입한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "공동 방패끈",
+            "pressure": "공동 동의를 기다리느라 귀장회 회수대가 봉인성 안쪽까지 진입한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "한 대표가 귀장회 첩자로 드러난다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "공동 동의를 기다리느라 귀장회 회수대가 봉인성 안쪽까지 진입한다.",
+          "earned_reward": "공동 방패끈",
+          "next_hook": "한 대표가 귀장회 첩자로 드러난다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI045:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 74,
+      "canonical_episode": {
+        "episode": 74,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA4",
+        "subact_title": "파수꾼의 이탈",
+        "title": "백야의 회수대",
+        "goal": "귀장회가 설갑과 피풍을 한꺼번에 봉인하려 공격한다.",
+        "choice": "무석이 옛 동료와 맞섬",
+        "reward": "봉인쇄 다발",
+        "hook": "피풍 속 주인이 스스로 해동을 시작한다.",
+        "location": "북설 봉인성·백야 설원",
+        "cast": [
+          "곽무석",
+          "담운",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "적대 세력의 압박 구체화",
+        "cost": "옛 동료와 맞서는 동안 무석의 방패 모서리가 부러져 한 팔 방어가 불가능해진다."
+      },
+      "scene_blueprint": {
+        "episode": 74,
+        "act": "ACT2",
+        "subact_id": "A08",
+        "source_subact": "ACT2-SA4",
+        "title": "백야의 회수대",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "귀장회가 설갑과 피풍을 한꺼번에 봉인하려 공격한다.",
+          "choice": "무석이 옛 동료와 맞섬",
+          "reward": "봉인쇄 다발",
+          "hook": "피풍 속 주인이 스스로 해동을 시작한다.",
+          "location": "북설 봉인성·백야 설원",
+          "cast": [
+            "곽무석",
+            "담운",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "적대 세력의 압박 구체화",
+          "cost": "옛 동료와 맞서는 동안 무석의 방패 모서리가 부러져 한 팔 방어가 불가능해진다."
+        },
+        "state_before": {
+          "previous_hook": "한 대표가 귀장회 첩자로 드러난다.",
+          "previous_cost": "공동 동의를 기다리느라 귀장회 회수대가 봉인성 안쪽까지 진입한다.",
+          "incoming_subact_cost": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설 봉인성·백야 설원에서 즉시 행동 문제로 회수한다.",
+            "pressure": "한 대표가 귀장회 첩자로 드러난다.",
+            "action": "곽무석·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "귀장회가 설갑과 피풍을 한꺼번에 봉인하려 공격한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "적대 세력의 압박 구체화",
+            "action": "북설 봉인성·백야 설원의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "옛 동료와 맞서는 동안 무석의 방패 모서리가 부러져 한 팔 방어가 불가능해진다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "귀장회가 설갑과 피풍을 한꺼번에 봉인하려 공격한다.",
+            "pressure": "곽무석이 지킨 사람과 버린 사람의 기록, 봉장파의 삭제 관행을 드러낸다.",
+            "action": "곽무석·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 무석이 옛 동료와 맞섬라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "봉인쇄 다발",
+            "action": "후보 참조(봉인쇄 다발)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "봉인쇄 다발",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "무석이 옛 동료와 맞섬",
+            "pressure": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "옛 동료와 맞서는 동안 무석의 방패 모서리가 부러져 한 팔 방어가 불가능해진다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "봉인쇄 다발",
+            "pressure": "옛 동료와 맞서는 동안 무석의 방패 모서리가 부러져 한 팔 방어가 불가능해진다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "피풍 속 주인이 스스로 해동을 시작한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "옛 동료와 맞서는 동안 무석의 방패 모서리가 부러져 한 팔 방어가 불가능해진다.",
+          "earned_reward": "봉인쇄 다발",
+          "next_hook": "피풍 속 주인이 스스로 해동을 시작한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 75,
+      "canonical_episode": {
+        "episode": 75,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA4",
+        "subact_title": "파수꾼의 이탈",
+        "title": "녹아내린 봉인",
+        "goal": "해동된 주인이 봉인 유지가 자신의 부탁이 아니었다고 말한다.",
+        "choice": "백장의 명령 정당성이 흔들림",
+        "reward": "피풍 미련 해소",
+        "hook": "설갑 마지막 조각이 그의 몸 안에 있다.",
+        "location": "북설 봉인성·백야 설원",
+        "cast": [
+          "백장",
+          "담운",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "서브액트 중간 선택",
+        "cost": "피풍 주인을 깨운 결과 북설 봉인선 한 구간이 영구 폐쇄된다."
+      },
+      "scene_blueprint": {
+        "episode": 75,
+        "act": "ACT2",
+        "subact_id": "A08",
+        "source_subact": "ACT2-SA4",
+        "title": "녹아내린 봉인",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "해동된 주인이 봉인 유지가 자신의 부탁이 아니었다고 말한다.",
+          "choice": "백장의 명령 정당성이 흔들림",
+          "reward": "피풍 미련 해소",
+          "hook": "설갑 마지막 조각이 그의 몸 안에 있다.",
+          "location": "북설 봉인성·백야 설원",
+          "cast": [
+            "백장",
+            "담운",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "서브액트 중간 선택",
+          "cost": "피풍 주인을 깨운 결과 북설 봉인선 한 구간이 영구 폐쇄된다."
+        },
+        "state_before": {
+          "previous_hook": "피풍 속 주인이 스스로 해동을 시작한다.",
+          "previous_cost": "옛 동료와 맞서는 동안 무석의 방패 모서리가 부러져 한 팔 방어가 불가능해진다.",
+          "incoming_subact_cost": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설 봉인성·백야 설원에서 즉시 행동 문제로 회수한다.",
+            "pressure": "피풍 속 주인이 스스로 해동을 시작한다.",
+            "action": "백장·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "해동된 주인이 봉인 유지가 자신의 부탁이 아니었다고 말한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 중간 선택",
+            "action": "북설 봉인성·백야 설원의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "피풍 주인을 깨운 결과 북설 봉인선 한 구간이 영구 폐쇄된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "해동된 주인이 봉인 유지가 자신의 부탁이 아니었다고 말한다.",
+            "pressure": "곽무석이 지킨 사람과 버린 사람의 기록, 봉장파의 삭제 관행을 드러낸다.",
+            "action": "백장·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 백장의 명령 정당성이 흔들림라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI046:first, BS011",
+            "action": "후보 참조(CI046:first, BS011)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "피풍 미련 해소",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "백장의 명령 정당성이 흔들림",
+            "pressure": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "피풍 주인을 깨운 결과 북설 봉인선 한 구간이 영구 폐쇄된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "피풍 미련 해소",
+            "pressure": "피풍 주인을 깨운 결과 북설 봉인선 한 구간이 영구 폐쇄된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "설갑 마지막 조각이 그의 몸 안에 있다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "피풍 주인을 깨운 결과 북설 봉인선 한 구간이 영구 폐쇄된다.",
+          "earned_reward": "피풍 미련 해소",
+          "next_hook": "설갑 마지막 조각이 그의 몸 안에 있다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI046:first"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS011"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 76,
+      "canonical_episode": {
+        "episode": 76,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA4",
+        "subact_title": "파수꾼의 이탈",
+        "title": "갑옷보다 사람",
+        "goal": "담운은 완성 설갑을 위해 주인을 희생시키는 선택을 거부한다.",
+        "choice": "무석이 담운 편으로 기울음",
+        "reward": "설갑 완성 보류",
+        "hook": "주인이 스스로 조각을 떼어 일곱 마을에 나눈다.",
+        "location": "북설 봉인성·백야 설원",
+        "cast": [
+          "담운",
+          "곽무석",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "선택의 후폭풍과 관계 변화",
+        "cost": "설갑 완성을 포기해 귀장회 정예대의 공격을 맨몸 방벽으로 버틴다."
+      },
+      "scene_blueprint": {
+        "episode": 76,
+        "act": "ACT2",
+        "subact_id": "A08",
+        "source_subact": "ACT2-SA4",
+        "title": "갑옷보다 사람",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "담운은 완성 설갑을 위해 주인을 희생시키는 선택을 거부한다.",
+          "choice": "무석이 담운 편으로 기울음",
+          "reward": "설갑 완성 보류",
+          "hook": "주인이 스스로 조각을 떼어 일곱 마을에 나눈다.",
+          "location": "북설 봉인성·백야 설원",
+          "cast": [
+            "담운",
+            "곽무석",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "선택의 후폭풍과 관계 변화",
+          "cost": "설갑 완성을 포기해 귀장회 정예대의 공격을 맨몸 방벽으로 버틴다."
+        },
+        "state_before": {
+          "previous_hook": "설갑 마지막 조각이 그의 몸 안에 있다.",
+          "previous_cost": "피풍 주인을 깨운 결과 북설 봉인선 한 구간이 영구 폐쇄된다.",
+          "incoming_subact_cost": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설 봉인성·백야 설원에서 즉시 행동 문제로 회수한다.",
+            "pressure": "설갑 마지막 조각이 그의 몸 안에 있다.",
+            "action": "담운·곽무석가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "담운은 완성 설갑을 위해 주인을 희생시키는 선택을 거부한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "선택의 후폭풍과 관계 변화",
+            "action": "북설 봉인성·백야 설원의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "설갑 완성을 포기해 귀장회 정예대의 공격을 맨몸 방벽으로 버틴다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "담운은 완성 설갑을 위해 주인을 희생시키는 선택을 거부한다.",
+            "pressure": "곽무석이 지킨 사람과 버린 사람의 기록, 봉장파의 삭제 관행을 드러낸다.",
+            "action": "담운·곽무석가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 무석이 담운 편으로 기울음라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "BS010",
+            "action": "후보 참조(BS010)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "설갑 완성 보류",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "무석이 담운 편으로 기울음",
+            "pressure": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "설갑 완성을 포기해 귀장회 정예대의 공격을 맨몸 방벽으로 버틴다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "설갑 완성 보류",
+            "pressure": "설갑 완성을 포기해 귀장회 정예대의 공격을 맨몸 방벽으로 버틴다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "주인이 스스로 조각을 떼어 일곱 마을에 나눈다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "설갑 완성을 포기해 귀장회 정예대의 공격을 맨몸 방벽으로 버틴다.",
+          "earned_reward": "설갑 완성 보류",
+          "next_hook": "주인이 스스로 조각을 떼어 일곱 마을에 나눈다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": [
+            "BS010"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 77,
+      "canonical_episode": {
+        "episode": 77,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA4",
+        "subact_title": "파수꾼의 이탈",
+        "title": "파수꾼의 이탈",
+        "goal": "무석이 귀장회 지위를 버리고 일행을 보호한다.",
+        "choice": "담운 일행의 방어축 완성",
+        "reward": "무석 정식 합류",
+        "hook": "백장이 무석의 이름을 기록에서 삭제한다.",
+        "location": "북설 봉인성·백야 설원",
+        "cast": [
+          "담운",
+          "백장",
+          "곽무석",
+          "서린화",
+          "소예란"
+        ],
+        "episode_function": "숨은 진실 또는 역전",
+        "cost": "무석은 귀장회 이름·연금·치료권을 모두 잃고 도망자가 된다."
+      },
+      "scene_blueprint": {
+        "episode": 77,
+        "act": "ACT2",
+        "subact_id": "A08",
+        "source_subact": "ACT2-SA4",
+        "title": "파수꾼의 이탈",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "무석이 귀장회 지위를 버리고 일행을 보호한다.",
+          "choice": "담운 일행의 방어축 완성",
+          "reward": "무석 정식 합류",
+          "hook": "백장이 무석의 이름을 기록에서 삭제한다.",
+          "location": "북설 봉인성·백야 설원",
+          "cast": [
+            "담운",
+            "백장",
+            "곽무석",
+            "서린화",
+            "소예란"
+          ],
+          "episode_function": "숨은 진실 또는 역전",
+          "cost": "무석은 귀장회 이름·연금·치료권을 모두 잃고 도망자가 된다."
+        },
+        "state_before": {
+          "previous_hook": "주인이 스스로 조각을 떼어 일곱 마을에 나눈다.",
+          "previous_cost": "설갑 완성을 포기해 귀장회 정예대의 공격을 맨몸 방벽으로 버틴다.",
+          "incoming_subact_cost": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설 봉인성·백야 설원에서 즉시 행동 문제로 회수한다.",
+            "pressure": "주인이 스스로 조각을 떼어 일곱 마을에 나눈다.",
+            "action": "담운·백장가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "무석이 귀장회 지위를 버리고 일행을 보호한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "숨은 진실 또는 역전",
+            "action": "북설 봉인성·백야 설원의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "무석은 귀장회 이름·연금·치료권을 모두 잃고 도망자가 된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "무석이 귀장회 지위를 버리고 일행을 보호한다.",
+            "pressure": "곽무석이 지킨 사람과 버린 사람의 기록, 봉장파의 삭제 관행을 드러낸다.",
+            "action": "담운·백장가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운 일행의 방어축 완성라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI047:first",
+            "action": "후보 참조(CI047:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "무석 정식 합류",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운 일행의 방어축 완성",
+            "pressure": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "무석은 귀장회 이름·연금·치료권을 모두 잃고 도망자가 된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "무석 정식 합류",
+            "pressure": "무석은 귀장회 이름·연금·치료권을 모두 잃고 도망자가 된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "백장이 무석의 이름을 기록에서 삭제한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "무석은 귀장회 이름·연금·치료권을 모두 잃고 도망자가 된다.",
+          "earned_reward": "무석 정식 합류",
+          "next_hook": "백장이 무석의 이름을 기록에서 삭제한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI047:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 78,
+      "canonical_episode": {
+        "episode": 78,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA4",
+        "subact_title": "파수꾼의 이탈",
+        "title": "열린 봉인",
+        "goal": "설갑을 한 창고가 아니라 일곱 봉화대에 분산 보관한다.",
+        "choice": "담운이 분산 관리의 첫 성공 경험",
+        "reward": "설갑 7/7 공동완성",
+        "hook": "무주함 전시실이 공동 소유를 제대로 표시하지 못한다.",
+        "location": "북설 봉인성·백야 설원",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "해결책의 조립과 대가 확정",
+        "cost": "분산 보관으로 각 마을이 매일 봉화 근무 인력을 내야 하는 장기 부담을 진다."
+      },
+      "scene_blueprint": {
+        "episode": 78,
+        "act": "ACT2",
+        "subact_id": "A08",
+        "source_subact": "ACT2-SA4",
+        "title": "열린 봉인",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "설갑을 한 창고가 아니라 일곱 봉화대에 분산 보관한다.",
+          "choice": "담운이 분산 관리의 첫 성공 경험",
+          "reward": "설갑 7/7 공동완성",
+          "hook": "무주함 전시실이 공동 소유를 제대로 표시하지 못한다.",
+          "location": "북설 봉인성·백야 설원",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "해결책의 조립과 대가 확정",
+          "cost": "분산 보관으로 각 마을이 매일 봉화 근무 인력을 내야 하는 장기 부담을 진다."
+        },
+        "state_before": {
+          "previous_hook": "백장이 무석의 이름을 기록에서 삭제한다.",
+          "previous_cost": "무석은 귀장회 이름·연금·치료권을 모두 잃고 도망자가 된다.",
+          "incoming_subact_cost": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설 봉인성·백야 설원에서 즉시 행동 문제로 회수한다.",
+            "pressure": "백장이 무석의 이름을 기록에서 삭제한다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "설갑을 한 창고가 아니라 일곱 봉화대에 분산 보관한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "해결책의 조립과 대가 확정",
+            "action": "북설 봉인성·백야 설원의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "분산 보관으로 각 마을이 매일 봉화 근무 인력을 내야 하는 장기 부담을 진다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "설갑을 한 창고가 아니라 일곱 봉화대에 분산 보관한다.",
+            "pressure": "곽무석이 지킨 사람과 버린 사람의 기록, 봉장파의 삭제 관행을 드러낸다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 분산 관리의 첫 성공 경험라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI041:final, BS001, BS011",
+            "action": "후보 참조(CI041:final, BS001, BS011)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "설갑 7/7 공동완성",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 분산 관리의 첫 성공 경험",
+            "pressure": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "분산 보관으로 각 마을이 매일 봉화 근무 인력을 내야 하는 장기 부담을 진다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "설갑 7/7 공동완성",
+            "pressure": "분산 보관으로 각 마을이 매일 봉화 근무 인력을 내야 하는 장기 부담을 진다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "무주함 전시실이 공동 소유를 제대로 표시하지 못한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "분산 보관으로 각 마을이 매일 봉화 근무 인력을 내야 하는 장기 부담을 진다.",
+          "earned_reward": "설갑 7/7 공동완성",
+          "next_hook": "무주함 전시실이 공동 소유를 제대로 표시하지 못한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI041:final"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS001",
+            "BS011"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 79,
+      "canonical_episode": {
+        "episode": 79,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA4",
+        "subact_title": "파수꾼의 이탈",
+        "title": "회수 명령서",
+        "goal": "귀장회가 담운과 무주함을 재앙 기물 회수 대상으로 공표한다.",
+        "choice": "담운이 도망자가 됨",
+        "reward": "회수 대상 번호",
+        "hook": "명령서 번호가 검함 내부 방 번호와 같다.",
+        "location": "북설 봉인성·백야 설원",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "서브액트 클라이맥스",
+        "cost": "회수 대상 공표로 일행의 합법 역참 이용권과 공개 숙소가 모두 끊긴다."
+      },
+      "scene_blueprint": {
+        "episode": 79,
+        "act": "ACT2",
+        "subact_id": "A08",
+        "source_subact": "ACT2-SA4",
+        "title": "회수 명령서",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "귀장회가 담운과 무주함을 재앙 기물 회수 대상으로 공표한다.",
+          "choice": "담운이 도망자가 됨",
+          "reward": "회수 대상 번호",
+          "hook": "명령서 번호가 검함 내부 방 번호와 같다.",
+          "location": "북설 봉인성·백야 설원",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "서브액트 클라이맥스",
+          "cost": "회수 대상 공표로 일행의 합법 역참 이용권과 공개 숙소가 모두 끊긴다."
+        },
+        "state_before": {
+          "previous_hook": "무주함 전시실이 공동 소유를 제대로 표시하지 못한다.",
+          "previous_cost": "분산 보관으로 각 마을이 매일 봉화 근무 인력을 내야 하는 장기 부담을 진다.",
+          "incoming_subact_cost": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설 봉인성·백야 설원에서 즉시 행동 문제로 회수한다.",
+            "pressure": "무주함 전시실이 공동 소유를 제대로 표시하지 못한다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "귀장회가 담운과 무주함을 재앙 기물 회수 대상으로 공표한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 클라이맥스",
+            "action": "북설 봉인성·백야 설원의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "회수 대상 공표로 일행의 합법 역참 이용권과 공개 숙소가 모두 끊긴다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "귀장회가 담운과 무주함을 재앙 기물 회수 대상으로 공표한다.",
+            "pressure": "곽무석이 지킨 사람과 버린 사람의 기록, 봉장파의 삭제 관행을 드러낸다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 도망자가 됨라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "회수 대상 번호",
+            "action": "후보 참조(회수 대상 번호)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "회수 대상 번호",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 도망자가 됨",
+            "pressure": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "회수 대상 공표로 일행의 합법 역참 이용권과 공개 숙소가 모두 끊긴다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "회수 대상 번호",
+            "pressure": "회수 대상 공표로 일행의 합법 역참 이용권과 공개 숙소가 모두 끊긴다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "명령서 번호가 검함 내부 방 번호와 같다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "회수 대상 공표로 일행의 합법 역참 이용권과 공개 숙소가 모두 끊긴다.",
+          "earned_reward": "회수 대상 번호",
+          "next_hook": "명령서 번호가 검함 내부 방 번호와 같다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 80,
+      "canonical_episode": {
+        "episode": 80,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA4",
+        "subact_title": "파수꾼의 이탈",
+        "title": "눈 위의 수장",
+        "goal": "백장이 설원 전체를 봉인해 일행의 퇴로를 끊는다.",
+        "choice": "무석이 자신의 방패로 길을 고정",
+        "reward": "천품 장갑 흔적 재현",
+        "hook": "서황막 폐분관의 문이 눈 위에 열린다.",
+        "location": "북설 봉인성·백야 설원",
+        "cast": [
+          "백장",
+          "곽무석",
+          "담운",
+          "서린화",
+          "소예란"
+        ],
+        "episode_function": "보상 회수와 다음 구간 훅",
+        "cost": "퇴로를 고정한 무석의 왼팔 감각이 사라져 다음 아크까지 방패 교체가 느려진다."
+      },
+      "scene_blueprint": {
+        "episode": 80,
+        "act": "ACT2",
+        "subact_id": "A08",
+        "source_subact": "ACT2-SA4",
+        "title": "눈 위의 수장",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "백장이 설원 전체를 봉인해 일행의 퇴로를 끊는다.",
+          "choice": "무석이 자신의 방패로 길을 고정",
+          "reward": "천품 장갑 흔적 재현",
+          "hook": "서황막 폐분관의 문이 눈 위에 열린다.",
+          "location": "북설 봉인성·백야 설원",
+          "cast": [
+            "백장",
+            "곽무석",
+            "담운",
+            "서린화",
+            "소예란"
+          ],
+          "episode_function": "보상 회수와 다음 구간 훅",
+          "cost": "퇴로를 고정한 무석의 왼팔 감각이 사라져 다음 아크까지 방패 교체가 느려진다."
+        },
+        "state_before": {
+          "previous_hook": "명령서 번호가 검함 내부 방 번호와 같다.",
+          "previous_cost": "회수 대상 공표로 일행의 합법 역참 이용권과 공개 숙소가 모두 끊긴다.",
+          "incoming_subact_cost": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설 봉인성·백야 설원에서 즉시 행동 문제로 회수한다.",
+            "pressure": "명령서 번호가 검함 내부 방 번호와 같다.",
+            "action": "백장·곽무석가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "백장이 설원 전체를 봉인해 일행의 퇴로를 끊는다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "보상 회수와 다음 구간 훅",
+            "action": "북설 봉인성·백야 설원의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "퇴로를 고정한 무석의 왼팔 감각이 사라져 다음 아크까지 방패 교체가 느려진다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "백장이 설원 전체를 봉인해 일행의 퇴로를 끊는다.",
+            "pressure": "곽무석이 지킨 사람과 버린 사람의 기록, 봉장파의 삭제 관행을 드러낸다.",
+            "action": "백장·곽무석가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 무석이 자신의 방패로 길을 고정라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI043:final, CI045:final, CI046:final, CI047:final, CI048:final, CI048:first, SET010:complete, BS009",
+            "action": "후보 참조(CI043:final, CI045:final, CI046:final, CI047:final, CI048:final, CI048:first, SET010:complete, BS009)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "천품 장갑 흔적 재현",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "무석이 자신의 방패로 길을 고정",
+            "pressure": "공동 방어망이 작동하지만 귀장회는 통제 불가능한 위험으로 보고 회수를 명령한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "퇴로를 고정한 무석의 왼팔 감각이 사라져 다음 아크까지 방패 교체가 느려진다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "천품 장갑 흔적 재현",
+            "pressure": "중앙 봉인 정보·통행권·지원 인력을 잃어 서황막 폐분관 진입이 더 위험해진다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "서황막 폐분관의 문이 눈 위에 열린다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "퇴로를 고정한 무석의 왼팔 감각이 사라져 다음 아크까지 방패 교체가 느려진다.",
+          "earned_reward": "천품 장갑 흔적 재현",
+          "next_hook": "서황막 폐분관의 문이 눈 위에 열린다.",
+          "outgoing_subact_cost": "중앙 봉인 정보·통행권·지원 인력을 잃어 서황막 폐분관 진입이 더 위험해진다."
+        },
+        "registry_events": {
+          "items": [
+            "CI043:final",
+            "CI045:final",
+            "CI046:final",
+            "CI047:final",
+            "CI048:final",
+            "CI048:first"
+          ],
+          "sets": [
+            "SET010:complete"
+          ],
+          "beasts": [
+            "BS009"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    }
+  ]
+}

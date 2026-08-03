@@ -1,0 +1,1604 @@
+{
+  "version": "v3.4-manuscript-packet-v1",
+  "status": "derived_read_only_drafting_input",
+  "protected_canon_unchanged": true,
+  "range": [
+    31,
+    40
+  ],
+  "episodes": [
+    {
+      "episode": 31,
+      "canonical_episode": {
+        "episode": 31,
+        "arc": 2,
+        "title": "풀무를 산 수집가",
+        "goal": "진여강이 한숨풀무를 합법적으로 사들이고 사용권 경매를 연다.",
+        "conflict": "현재 사건: 진여강이 한숨풀무를 합법적으로 사들이고 사용권 경매를 연다. 서브액트 압박: [진여강의 합법적 선점, 풀무가 요구하는 포기의 대가, 완성 세트의 후회 증폭]. 이번 화의 필수 변화는 ‘담운과 진여강의 경쟁 본격화’이다. 이를 피할 수 없으며, 결과적으로 시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+        "choice": "담운과 진여강의 경쟁 본격화",
+        "reward": "한숨풀무 재등장",
+        "hook": "진여강이 돈 아닌 물건을 대가로 요구한다.",
+        "pov": "담운 1인칭",
+        "act": "ACT1",
+        "act_title": "물건의 주인은 누구인가",
+        "subact": "ACT1-SA4",
+        "subact_title": "값 없는 유산과 첫 완성",
+        "location": "경도 위조인 골목·남문 수레길",
+        "cast": [
+          "담운",
+          "진여강",
+          "서린화"
+        ],
+        "episode_function": "새 문제와 지역 규칙 도입",
+        "stakes": "독자 보상 ‘한숨풀무 재등장’의 진척이 무산되고, ‘진여강이 돈 아닌 물건을 대가로 요구한다.’이 더 불리한 조건에서 발생한다.",
+        "cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다."
+      },
+      "scene_blueprint": {
+        "episode": 31,
+        "act": "ACT1",
+        "subact_id": "A04",
+        "source_subact": "ACT1-SA4",
+        "title": "풀무를 산 수집가",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "진여강이 한숨풀무를 합법적으로 사들이고 사용권 경매를 연다.",
+          "choice": "담운과 진여강의 경쟁 본격화",
+          "reward": "한숨풀무 재등장",
+          "hook": "진여강이 돈 아닌 물건을 대가로 요구한다.",
+          "location": "경도 위조인 골목·남문 수레길",
+          "cast": [
+            "담운",
+            "진여강",
+            "서린화"
+          ],
+          "episode_function": "새 문제와 지역 규칙 도입",
+          "cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다."
+        },
+        "state_before": {
+          "previous_hook": "귀환 기록이 무주함 안 새 방을 연다.",
+          "previous_cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+          "incoming_subact_cost": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 경도 위조인 골목·남문 수레길에서 즉시 행동 문제로 회수한다.",
+            "pressure": "귀환 기록이 무주함 안 새 방을 연다.",
+            "action": "담운·진여강가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "진여강이 한숨풀무를 합법적으로 사들이고 사용권 경매를 연다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "새 문제와 지역 규칙 도입",
+            "action": "경도 위조인 골목·남문 수레길의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "진여강이 한숨풀무를 합법적으로 사들이고 사용권 경매를 연다.",
+            "pressure": "무명의 장인 유산을 한 세트로 완성하되 상극과 대가를 검증한다.",
+            "action": "담운·진여강가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운과 진여강의 경쟁 본격화라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI020:first, BS003",
+            "action": "후보 참조(CI020:first, BS003)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "한숨풀무 재등장",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운과 진여강의 경쟁 본격화",
+            "pressure": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "한숨풀무 재등장",
+            "pressure": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "진여강이 돈 아닌 물건을 대가로 요구한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+          "earned_reward": "한숨풀무 재등장",
+          "next_hook": "진여강이 돈 아닌 물건을 대가로 요구한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI020:first"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS003"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 32,
+      "canonical_episode": {
+        "episode": 32,
+        "arc": 2,
+        "title": "돈 없는 내기",
+        "goal": "담운은 자신의 배달패와 한숨풀무 사용권을 걸고 유물 복원 내기를 한다.",
+        "conflict": "현재 사건: 담운은 자신의 배달패와 한숨풀무 사용권을 걸고 유물 복원 내기를 한다. 서브액트 압박: [진여강의 합법적 선점, 풀무가 요구하는 포기의 대가, 완성 세트의 후회 증폭]. 이번 화의 필수 변화는 ‘담운이 개인적 물건을 대가로 제시’이다. 이를 피할 수 없으며, 결과적으로 시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+        "choice": "담운이 개인적 물건을 대가로 제시",
+        "reward": "가격 없는 저울",
+        "hook": "저울이 담운 쪽에서 움직이지 않는다.",
+        "pov": "담운 1인칭",
+        "act": "ACT1",
+        "act_title": "물건의 주인은 누구인가",
+        "subact": "ACT1-SA4",
+        "subact_title": "값 없는 유산과 첫 완성",
+        "location": "경도 위조인 골목·남문 수레길",
+        "cast": [
+          "담운",
+          "서린화",
+          "진여강"
+        ],
+        "episode_function": "규칙의 예외와 비용 확대",
+        "stakes": "독자 보상 ‘가격 없는 저울’의 진척이 무산되고, ‘저울이 담운 쪽에서 움직이지 않는다.’이 더 불리한 조건에서 발생한다.",
+        "cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다."
+      },
+      "scene_blueprint": {
+        "episode": 32,
+        "act": "ACT1",
+        "subact_id": "A04",
+        "source_subact": "ACT1-SA4",
+        "title": "돈 없는 내기",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "담운은 자신의 배달패와 한숨풀무 사용권을 걸고 유물 복원 내기를 한다.",
+          "choice": "담운이 개인적 물건을 대가로 제시",
+          "reward": "가격 없는 저울",
+          "hook": "저울이 담운 쪽에서 움직이지 않는다.",
+          "location": "경도 위조인 골목·남문 수레길",
+          "cast": [
+            "담운",
+            "서린화",
+            "진여강"
+          ],
+          "episode_function": "규칙의 예외와 비용 확대",
+          "cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다."
+        },
+        "state_before": {
+          "previous_hook": "진여강이 돈 아닌 물건을 대가로 요구한다.",
+          "previous_cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+          "incoming_subact_cost": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 경도 위조인 골목·남문 수레길에서 즉시 행동 문제로 회수한다.",
+            "pressure": "진여강이 돈 아닌 물건을 대가로 요구한다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "담운은 자신의 배달패와 한숨풀무 사용권을 걸고 유물 복원 내기를 한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "규칙의 예외와 비용 확대",
+            "action": "경도 위조인 골목·남문 수레길의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "담운은 자신의 배달패와 한숨풀무 사용권을 걸고 유물 복원 내기를 한다.",
+            "pressure": "무명의 장인 유산을 한 세트로 완성하되 상극과 대가를 검증한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 개인적 물건을 대가로 제시라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI021:first",
+            "action": "후보 참조(CI021:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "가격 없는 저울",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 개인적 물건을 대가로 제시",
+            "pressure": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "가격 없는 저울",
+            "pressure": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "저울이 담운 쪽에서 움직이지 않는다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+          "earned_reward": "가격 없는 저울",
+          "next_hook": "저울이 담운 쪽에서 움직이지 않는다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI021:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 33,
+      "canonical_episode": {
+        "episode": 33,
+        "arc": 2,
+        "title": "위조인의 손자국",
+        "goal": "풀무에 남은 열두 손자국이 서로 다른 포기한 꿈을 보여준다.",
+        "conflict": "현재 사건: 풀무에 남은 열두 손자국이 서로 다른 포기한 꿈을 보여준다. 서브액트 압박: [진여강의 합법적 선점, 풀무가 요구하는 포기의 대가, 완성 세트의 후회 증폭]. 이번 화의 필수 변화는 ‘린화가 위조품의 공동 저작권을 주장’이다. 이를 피할 수 없으며, 결과적으로 즉시 얻을 수 있는 전력·소유권·통제권 가운데 하나를 포기한다.",
+        "choice": "린화가 위조품의 공동 저작권을 주장",
+        "reward": "재봉사의 금실",
+        "hook": "마지막 손자국은 죽은 대장장이의 것이다.",
+        "pov": "담운 1인칭",
+        "act": "ACT1",
+        "act_title": "물건의 주인은 누구인가",
+        "subact": "ACT1-SA4",
+        "subact_title": "값 없는 유산과 첫 완성",
+        "location": "경도 위조인 골목·남문 수레길",
+        "cast": [
+          "서린화",
+          "담운",
+          "진여강"
+        ],
+        "episode_function": "첫 실전 적용과 오판",
+        "stakes": "독자 보상 ‘재봉사의 금실’의 진척이 무산되고, ‘마지막 손자국은 죽은 대장장이의 것이다.’이 더 불리한 조건에서 발생한다.",
+        "cost": "즉시 얻을 수 있는 전력·소유권·통제권 가운데 하나를 포기한다."
+      },
+      "scene_blueprint": {
+        "episode": 33,
+        "act": "ACT1",
+        "subact_id": "A04",
+        "source_subact": "ACT1-SA4",
+        "title": "위조인의 손자국",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "풀무에 남은 열두 손자국이 서로 다른 포기한 꿈을 보여준다.",
+          "choice": "린화가 위조품의 공동 저작권을 주장",
+          "reward": "재봉사의 금실",
+          "hook": "마지막 손자국은 죽은 대장장이의 것이다.",
+          "location": "경도 위조인 골목·남문 수레길",
+          "cast": [
+            "서린화",
+            "담운",
+            "진여강"
+          ],
+          "episode_function": "첫 실전 적용과 오판",
+          "cost": "즉시 얻을 수 있는 전력·소유권·통제권 가운데 하나를 포기한다."
+        },
+        "state_before": {
+          "previous_hook": "저울이 담운 쪽에서 움직이지 않는다.",
+          "previous_cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+          "incoming_subact_cost": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 경도 위조인 골목·남문 수레길에서 즉시 행동 문제로 회수한다.",
+            "pressure": "저울이 담운 쪽에서 움직이지 않는다.",
+            "action": "서린화·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "풀무에 남은 열두 손자국이 서로 다른 포기한 꿈을 보여준다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "첫 실전 적용과 오판",
+            "action": "경도 위조인 골목·남문 수레길의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "즉시 얻을 수 있는 전력·소유권·통제권 가운데 하나를 포기한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "풀무에 남은 열두 손자국이 서로 다른 포기한 꿈을 보여준다.",
+            "pressure": "무명의 장인 유산을 한 세트로 완성하되 상극과 대가를 검증한다.",
+            "action": "서린화·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 린화가 위조품의 공동 저작권을 주장라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "재봉사의 금실",
+            "action": "후보 참조(재봉사의 금실)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "재봉사의 금실",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "린화가 위조품의 공동 저작권을 주장",
+            "pressure": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "즉시 얻을 수 있는 전력·소유권·통제권 가운데 하나를 포기한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "재봉사의 금실",
+            "pressure": "즉시 얻을 수 있는 전력·소유권·통제권 가운데 하나를 포기한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "마지막 손자국은 죽은 대장장이의 것이다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "즉시 얻을 수 있는 전력·소유권·통제권 가운데 하나를 포기한다.",
+          "earned_reward": "재봉사의 금실",
+          "next_hook": "마지막 손자국은 죽은 대장장이의 것이다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 34,
+      "canonical_episode": {
+        "episode": 34,
+        "arc": 2,
+        "title": "만보상련의 옳은 말",
+        "goal": "상련이 문서 없는 유물 거래가 약탈을 늘렸다는 실제 사례를 제시한다.",
+        "conflict": "현재 사건: 상련이 문서 없는 유물 거래가 약탈을 늘렸다는 실제 사례를 제시한다. 서브액트 압박: [진여강의 합법적 선점, 풀무가 요구하는 포기의 대가, 완성 세트의 후회 증폭]. 이번 화의 필수 변화는 ‘담운이 시장 규칙 전체를 적으로 보지 않음’이다. 이를 피할 수 없으며, 결과적으로 시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+        "choice": "담운이 시장 규칙 전체를 적으로 보지 않음",
+        "reward": "위험 보험표",
+        "hook": "상련은 공개 감정을 조건으로 풀무를 넘기겠다고 한다.",
+        "pov": "담운 1인칭",
+        "act": "ACT1",
+        "act_title": "물건의 주인은 누구인가",
+        "subact": "ACT1-SA4",
+        "subact_title": "값 없는 유산과 첫 완성",
+        "location": "경도 위조인 골목·남문 수레길",
+        "cast": [
+          "담운",
+          "서린화",
+          "진여강"
+        ],
+        "episode_function": "적대 세력의 압박 구체화",
+        "stakes": "독자 보상 ‘위험 보험표’의 진척이 무산되고, ‘상련은 공개 감정을 조건으로 풀무를 넘기겠다고 한다.’이 더 불리한 조건에서 발생한다.",
+        "cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다."
+      },
+      "scene_blueprint": {
+        "episode": 34,
+        "act": "ACT1",
+        "subact_id": "A04",
+        "source_subact": "ACT1-SA4",
+        "title": "만보상련의 옳은 말",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "상련이 문서 없는 유물 거래가 약탈을 늘렸다는 실제 사례를 제시한다.",
+          "choice": "담운이 시장 규칙 전체를 적으로 보지 않음",
+          "reward": "위험 보험표",
+          "hook": "상련은 공개 감정을 조건으로 풀무를 넘기겠다고 한다.",
+          "location": "경도 위조인 골목·남문 수레길",
+          "cast": [
+            "담운",
+            "서린화",
+            "진여강"
+          ],
+          "episode_function": "적대 세력의 압박 구체화",
+          "cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다."
+        },
+        "state_before": {
+          "previous_hook": "마지막 손자국은 죽은 대장장이의 것이다.",
+          "previous_cost": "즉시 얻을 수 있는 전력·소유권·통제권 가운데 하나를 포기한다.",
+          "incoming_subact_cost": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 경도 위조인 골목·남문 수레길에서 즉시 행동 문제로 회수한다.",
+            "pressure": "마지막 손자국은 죽은 대장장이의 것이다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "상련이 문서 없는 유물 거래가 약탈을 늘렸다는 실제 사례를 제시한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "적대 세력의 압박 구체화",
+            "action": "경도 위조인 골목·남문 수레길의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "상련이 문서 없는 유물 거래가 약탈을 늘렸다는 실제 사례를 제시한다.",
+            "pressure": "무명의 장인 유산을 한 세트로 완성하되 상극과 대가를 검증한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 시장 규칙 전체를 적으로 보지 않음라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI022:first",
+            "action": "후보 참조(CI022:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "위험 보험표",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 시장 규칙 전체를 적으로 보지 않음",
+            "pressure": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "위험 보험표",
+            "pressure": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "상련은 공개 감정을 조건으로 풀무를 넘기겠다고 한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+          "earned_reward": "위험 보험표",
+          "next_hook": "상련은 공개 감정을 조건으로 풀무를 넘기겠다고 한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI022:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 35,
+      "canonical_episode": {
+        "episode": 35,
+        "arc": 2,
+        "title": "거리 한복판의 감정",
+        "goal": "린화가 모든 시민 앞에서 진품·가짜·사용 이력을 공개 검증한다.",
+        "conflict": "현재 사건: 린화가 모든 시민 앞에서 진품·가짜·사용 이력을 공개 검증한다. 서브액트 압박: [진여강의 합법적 선점, 풀무가 요구하는 포기의 대가, 완성 세트의 후회 증폭]. 이번 화의 필수 변화는 ‘린화가 가문 명예 대신 개인 책임 선택’이다. 이를 피할 수 없으며, 결과적으로 시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+        "choice": "린화가 가문 명예 대신 개인 책임 선택",
+        "reward": "열린 감정 방식",
+        "hook": "은귀걸이가 처음으로 아무 말도 먹지 않는다.",
+        "pov": "담운 1인칭",
+        "act": "ACT1",
+        "act_title": "물건의 주인은 누구인가",
+        "subact": "ACT1-SA4",
+        "subact_title": "값 없는 유산과 첫 완성",
+        "location": "경도 위조인 골목·남문 수레길",
+        "cast": [
+          "서린화",
+          "담운",
+          "진여강"
+        ],
+        "episode_function": "서브액트 중간 선택",
+        "stakes": "독자 보상 ‘열린 감정 방식’의 진척이 무산되고, ‘은귀걸이가 처음으로 아무 말도 먹지 않는다.’이 더 불리한 조건에서 발생한다.",
+        "cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다."
+      },
+      "scene_blueprint": {
+        "episode": 35,
+        "act": "ACT1",
+        "subact_id": "A04",
+        "source_subact": "ACT1-SA4",
+        "title": "거리 한복판의 감정",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "린화가 모든 시민 앞에서 진품·가짜·사용 이력을 공개 검증한다.",
+          "choice": "린화가 가문 명예 대신 개인 책임 선택",
+          "reward": "열린 감정 방식",
+          "hook": "은귀걸이가 처음으로 아무 말도 먹지 않는다.",
+          "location": "경도 위조인 골목·남문 수레길",
+          "cast": [
+            "서린화",
+            "담운",
+            "진여강"
+          ],
+          "episode_function": "서브액트 중간 선택",
+          "cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다."
+        },
+        "state_before": {
+          "previous_hook": "상련은 공개 감정을 조건으로 풀무를 넘기겠다고 한다.",
+          "previous_cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+          "incoming_subact_cost": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 경도 위조인 골목·남문 수레길에서 즉시 행동 문제로 회수한다.",
+            "pressure": "상련은 공개 감정을 조건으로 풀무를 넘기겠다고 한다.",
+            "action": "서린화·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "린화가 모든 시민 앞에서 진품·가짜·사용 이력을 공개 검증한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 중간 선택",
+            "action": "경도 위조인 골목·남문 수레길의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "린화가 모든 시민 앞에서 진품·가짜·사용 이력을 공개 검증한다.",
+            "pressure": "무명의 장인 유산을 한 세트로 완성하되 상극과 대가를 검증한다.",
+            "action": "서린화·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 린화가 가문 명예 대신 개인 책임 선택라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "열린 감정 방식",
+            "action": "후보 참조(열린 감정 방식)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "열린 감정 방식",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "린화가 가문 명예 대신 개인 책임 선택",
+            "pressure": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "열린 감정 방식",
+            "pressure": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "은귀걸이가 처음으로 아무 말도 먹지 않는다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+          "earned_reward": "열린 감정 방식",
+          "next_hook": "은귀걸이가 처음으로 아무 말도 먹지 않는다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 36,
+      "canonical_episode": {
+        "episode": 36,
+        "arc": 2,
+        "title": "한숨을 불로 바꾸다",
+        "goal": "담운이 포기한 가능성을 인정해 풀무의 불을 일으킨다.",
+        "conflict": "현재 사건: 담운이 포기한 가능성을 인정해 풀무의 불을 일으킨다. 서브액트 압박: [진여강의 합법적 선점, 풀무가 요구하는 포기의 대가, 완성 세트의 후회 증폭]. 이번 화의 필수 변화는 ‘담운이 역참으로 돌아갈 꿈을 스스로 놓음’이다. 이를 피할 수 없으며, 결과적으로 시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+        "choice": "담운이 역참으로 돌아갈 꿈을 스스로 놓음",
+        "reward": "한숨풀무 획득",
+        "hook": "풀무 불꽃이 빈 명패를 달군다.",
+        "pov": "담운 1인칭",
+        "act": "ACT1",
+        "act_title": "물건의 주인은 누구인가",
+        "subact": "ACT1-SA4",
+        "subact_title": "값 없는 유산과 첫 완성",
+        "location": "경도 위조인 골목·남문 수레길",
+        "cast": [
+          "담운",
+          "서린화",
+          "진여강"
+        ],
+        "episode_function": "선택의 후폭풍과 관계 변화",
+        "stakes": "독자 보상 ‘한숨풀무 획득’의 진척이 무산되고, ‘풀무 불꽃이 빈 명패를 달군다.’이 더 불리한 조건에서 발생한다.",
+        "cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다."
+      },
+      "scene_blueprint": {
+        "episode": 36,
+        "act": "ACT1",
+        "subact_id": "A04",
+        "source_subact": "ACT1-SA4",
+        "title": "한숨을 불로 바꾸다",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "담운이 포기한 가능성을 인정해 풀무의 불을 일으킨다.",
+          "choice": "담운이 역참으로 돌아갈 꿈을 스스로 놓음",
+          "reward": "한숨풀무 획득",
+          "hook": "풀무 불꽃이 빈 명패를 달군다.",
+          "location": "경도 위조인 골목·남문 수레길",
+          "cast": [
+            "담운",
+            "서린화",
+            "진여강"
+          ],
+          "episode_function": "선택의 후폭풍과 관계 변화",
+          "cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다."
+        },
+        "state_before": {
+          "previous_hook": "은귀걸이가 처음으로 아무 말도 먹지 않는다.",
+          "previous_cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+          "incoming_subact_cost": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 경도 위조인 골목·남문 수레길에서 즉시 행동 문제로 회수한다.",
+            "pressure": "은귀걸이가 처음으로 아무 말도 먹지 않는다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "담운이 포기한 가능성을 인정해 풀무의 불을 일으킨다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "선택의 후폭풍과 관계 변화",
+            "action": "경도 위조인 골목·남문 수레길의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "담운이 포기한 가능성을 인정해 풀무의 불을 일으킨다.",
+            "pressure": "무명의 장인 유산을 한 세트로 완성하되 상극과 대가를 검증한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 역참으로 돌아갈 꿈을 스스로 놓음라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI023:final",
+            "action": "후보 참조(CI023:final)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "한숨풀무 획득",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 역참으로 돌아갈 꿈을 스스로 놓음",
+            "pressure": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "한숨풀무 획득",
+            "pressure": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "풀무 불꽃이 빈 명패를 달군다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+          "earned_reward": "한숨풀무 획득",
+          "next_hook": "풀무 불꽃이 빈 명패를 달군다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI023:final"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 37,
+      "canonical_episode": {
+        "episode": 37,
+        "arc": 2,
+        "title": "다섯 번째 이름",
+        "goal": "반치·장갑·망치·풀무·명패가 완성되어 장인의 기록을 복원한다.",
+        "conflict": "현재 사건: 반치·장갑·망치·풀무·명패가 완성되어 장인의 기록을 복원한다. 서브액트 압박: [진여강의 합법적 선점, 풀무가 요구하는 포기의 대가, 완성 세트의 후회 증폭]. 이번 화의 필수 변화는 ‘철구의 아버지는 본명보다 행적으로 기록됨’이다. 이를 피할 수 없으며, 결과적으로 평판·소속 지위·사적 신뢰 가운데 하나가 손상될 위험을 감수한다.",
+        "choice": "철구의 아버지는 본명보다 행적으로 기록됨",
+        "reward": "무명의 대장장이 5품 완성",
+        "hook": "세트 기록에 남독택 배송표가 나온다.",
+        "pov": "담운 1인칭",
+        "act": "ACT1",
+        "act_title": "물건의 주인은 누구인가",
+        "subact": "ACT1-SA4",
+        "subact_title": "값 없는 유산과 첫 완성",
+        "location": "경도 위조인 골목·남문 수레길",
+        "cast": [
+          "철구",
+          "담운",
+          "서린화",
+          "진여강"
+        ],
+        "episode_function": "숨은 진실 또는 역전",
+        "stakes": "독자 보상 ‘무명의 대장장이 5품 완성’의 진척이 무산되고, ‘세트 기록에 남독택 배송표가 나온다.’이 더 불리한 조건에서 발생한다.",
+        "cost": "평판·소속 지위·사적 신뢰 가운데 하나가 손상될 위험을 감수한다."
+      },
+      "scene_blueprint": {
+        "episode": 37,
+        "act": "ACT1",
+        "subact_id": "A04",
+        "source_subact": "ACT1-SA4",
+        "title": "다섯 번째 이름",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "반치·장갑·망치·풀무·명패가 완성되어 장인의 기록을 복원한다.",
+          "choice": "철구의 아버지는 본명보다 행적으로 기록됨",
+          "reward": "무명의 대장장이 5품 완성",
+          "hook": "세트 기록에 남독택 배송표가 나온다.",
+          "location": "경도 위조인 골목·남문 수레길",
+          "cast": [
+            "철구",
+            "담운",
+            "서린화",
+            "진여강"
+          ],
+          "episode_function": "숨은 진실 또는 역전",
+          "cost": "평판·소속 지위·사적 신뢰 가운데 하나가 손상될 위험을 감수한다."
+        },
+        "state_before": {
+          "previous_hook": "풀무 불꽃이 빈 명패를 달군다.",
+          "previous_cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+          "incoming_subact_cost": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 경도 위조인 골목·남문 수레길에서 즉시 행동 문제로 회수한다.",
+            "pressure": "풀무 불꽃이 빈 명패를 달군다.",
+            "action": "철구·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "반치·장갑·망치·풀무·명패가 완성되어 장인의 기록을 복원한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "숨은 진실 또는 역전",
+            "action": "경도 위조인 골목·남문 수레길의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "평판·소속 지위·사적 신뢰 가운데 하나가 손상될 위험을 감수한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "반치·장갑·망치·풀무·명패가 완성되어 장인의 기록을 복원한다.",
+            "pressure": "무명의 장인 유산을 한 세트로 완성하되 상극과 대가를 검증한다.",
+            "action": "철구·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 철구의 아버지는 본명보다 행적으로 기록됨라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "BS004",
+            "action": "후보 참조(BS004)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "무명의 대장장이 5품 완성",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "철구의 아버지는 본명보다 행적으로 기록됨",
+            "pressure": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "평판·소속 지위·사적 신뢰 가운데 하나가 손상될 위험을 감수한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "무명의 대장장이 5품 완성",
+            "pressure": "평판·소속 지위·사적 신뢰 가운데 하나가 손상될 위험을 감수한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "세트 기록에 남독택 배송표가 나온다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "평판·소속 지위·사적 신뢰 가운데 하나가 손상될 위험을 감수한다.",
+          "earned_reward": "무명의 대장장이 5품 완성",
+          "next_hook": "세트 기록에 남독택 배송표가 나온다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": [
+            "BS004"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 38,
+      "canonical_episode": {
+        "episode": 38,
+        "arc": 2,
+        "title": "완성된 세트의 균열",
+        "goal": "5품 세트가 강해진 만큼 서로의 후회를 증폭시킨다.",
+        "conflict": "현재 사건: 5품 세트가 강해진 만큼 서로의 후회를 증폭시킨다. 서브액트 압박: [진여강의 합법적 선점, 풀무가 요구하는 포기의 대가, 완성 세트의 후회 증폭]. 이번 화의 필수 변화는 ‘담운과 린화가 장착 제한을 정함’이다. 이를 피할 수 없으며, 결과적으로 시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+        "choice": "담운과 린화가 장착 제한을 정함",
+        "reward": "세트 과부하 규칙",
+        "hook": "전시실 벽 한 곳이 독안개를 뿜는다.",
+        "pov": "담운 1인칭",
+        "act": "ACT1",
+        "act_title": "물건의 주인은 누구인가",
+        "subact": "ACT1-SA4",
+        "subact_title": "값 없는 유산과 첫 완성",
+        "location": "경도 위조인 골목·남문 수레길",
+        "cast": [
+          "담운",
+          "서린화",
+          "진여강"
+        ],
+        "episode_function": "해결책의 조립과 대가 확정",
+        "stakes": "독자 보상 ‘세트 과부하 규칙’의 진척이 무산되고, ‘전시실 벽 한 곳이 독안개를 뿜는다.’이 더 불리한 조건에서 발생한다.",
+        "cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다."
+      },
+      "scene_blueprint": {
+        "episode": 38,
+        "act": "ACT1",
+        "subact_id": "A04",
+        "source_subact": "ACT1-SA4",
+        "title": "완성된 세트의 균열",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "5품 세트가 강해진 만큼 서로의 후회를 증폭시킨다.",
+          "choice": "담운과 린화가 장착 제한을 정함",
+          "reward": "세트 과부하 규칙",
+          "hook": "전시실 벽 한 곳이 독안개를 뿜는다.",
+          "location": "경도 위조인 골목·남문 수레길",
+          "cast": [
+            "담운",
+            "서린화",
+            "진여강"
+          ],
+          "episode_function": "해결책의 조립과 대가 확정",
+          "cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다."
+        },
+        "state_before": {
+          "previous_hook": "세트 기록에 남독택 배송표가 나온다.",
+          "previous_cost": "평판·소속 지위·사적 신뢰 가운데 하나가 손상될 위험을 감수한다.",
+          "incoming_subact_cost": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 경도 위조인 골목·남문 수레길에서 즉시 행동 문제로 회수한다.",
+            "pressure": "세트 기록에 남독택 배송표가 나온다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "5품 세트가 강해진 만큼 서로의 후회를 증폭시킨다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "해결책의 조립과 대가 확정",
+            "action": "경도 위조인 골목·남문 수레길의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "5품 세트가 강해진 만큼 서로의 후회를 증폭시킨다.",
+            "pressure": "무명의 장인 유산을 한 세트로 완성하되 상극과 대가를 검증한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운과 린화가 장착 제한을 정함라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "SET001:complete",
+            "action": "후보 참조(SET001:complete)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "세트 과부하 규칙",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운과 린화가 장착 제한을 정함",
+            "pressure": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "세트 과부하 규칙",
+            "pressure": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "전시실 벽 한 곳이 독안개를 뿜는다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+          "earned_reward": "세트 과부하 규칙",
+          "next_hook": "전시실 벽 한 곳이 독안개를 뿜는다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [
+            "SET001:complete"
+          ],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 39,
+      "canonical_episode": {
+        "episode": 39,
+        "arc": 2,
+        "title": "남쪽으로 가는 짐",
+        "goal": "남독택 의뢰품과 신수 치료약을 운송하기로 한다.",
+        "conflict": "현재 사건: 남독택 의뢰품과 신수 치료약을 운송하기로 한다. 서브액트 압박: [진여강의 합법적 선점, 풀무가 요구하는 포기의 대가, 완성 세트의 후회 증폭]. 이번 화의 필수 변화는 ‘린화가 정식 동행 계약 작성’이다. 이를 피할 수 없으며, 결과적으로 기존 소속·귀환 가능성·독립성 가운데 하나를 내려놓는다.",
+        "choice": "린화가 정식 동행 계약 작성",
+        "reward": "남독 통행약낭",
+        "hook": "짐 목록에 없는 작은 생명 반응이 잡힌다.",
+        "pov": "담운 1인칭",
+        "act": "ACT1",
+        "act_title": "물건의 주인은 누구인가",
+        "subact": "ACT1-SA4",
+        "subact_title": "값 없는 유산과 첫 완성",
+        "location": "경도 위조인 골목·남문 수레길",
+        "cast": [
+          "서린화",
+          "담운",
+          "진여강"
+        ],
+        "episode_function": "서브액트 클라이맥스",
+        "stakes": "독자 보상 ‘남독 통행약낭’의 진척이 무산되고, ‘짐 목록에 없는 작은 생명 반응이 잡힌다.’이 더 불리한 조건에서 발생한다.",
+        "cost": "기존 소속·귀환 가능성·독립성 가운데 하나를 내려놓는다."
+      },
+      "scene_blueprint": {
+        "episode": 39,
+        "act": "ACT1",
+        "subact_id": "A04",
+        "source_subact": "ACT1-SA4",
+        "title": "남쪽으로 가는 짐",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "남독택 의뢰품과 신수 치료약을 운송하기로 한다.",
+          "choice": "린화가 정식 동행 계약 작성",
+          "reward": "남독 통행약낭",
+          "hook": "짐 목록에 없는 작은 생명 반응이 잡힌다.",
+          "location": "경도 위조인 골목·남문 수레길",
+          "cast": [
+            "서린화",
+            "담운",
+            "진여강"
+          ],
+          "episode_function": "서브액트 클라이맥스",
+          "cost": "기존 소속·귀환 가능성·독립성 가운데 하나를 내려놓는다."
+        },
+        "state_before": {
+          "previous_hook": "전시실 벽 한 곳이 독안개를 뿜는다.",
+          "previous_cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+          "incoming_subact_cost": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 경도 위조인 골목·남문 수레길에서 즉시 행동 문제로 회수한다.",
+            "pressure": "전시실 벽 한 곳이 독안개를 뿜는다.",
+            "action": "서린화·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "남독택 의뢰품과 신수 치료약을 운송하기로 한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 클라이맥스",
+            "action": "경도 위조인 골목·남문 수레길의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "기존 소속·귀환 가능성·독립성 가운데 하나를 내려놓는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "남독택 의뢰품과 신수 치료약을 운송하기로 한다.",
+            "pressure": "무명의 장인 유산을 한 세트로 완성하되 상극과 대가를 검증한다.",
+            "action": "서린화·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 린화가 정식 동행 계약 작성라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "남독 통행약낭",
+            "action": "후보 참조(남독 통행약낭)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "남독 통행약낭",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "린화가 정식 동행 계약 작성",
+            "pressure": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "기존 소속·귀환 가능성·독립성 가운데 하나를 내려놓는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "남독 통행약낭",
+            "pressure": "기존 소속·귀환 가능성·독립성 가운데 하나를 내려놓는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "짐 목록에 없는 작은 생명 반응이 잡힌다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "기존 소속·귀환 가능성·독립성 가운데 하나를 내려놓는다.",
+          "earned_reward": "남독 통행약낭",
+          "next_hook": "짐 목록에 없는 작은 생명 반응이 잡힌다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 40,
+      "canonical_episode": {
+        "episode": 40,
+        "arc": 2,
+        "title": "짐 속의 재채기",
+        "goal": "경도를 떠난 수레에서 마지막 풍비 두리가 튀어나온다.",
+        "conflict": "현재 사건: 경도를 떠난 수레에서 마지막 풍비 두리가 튀어나온다. 서브액트 압박: [진여강의 합법적 선점, 풀무가 요구하는 포기의 대가, 완성 세트의 후회 증폭]. 이번 화의 필수 변화는 ‘담운이 ‘수집’이라 부르자 두리가 손가락을 문다.’이다. 이를 피할 수 없으며, 결과적으로 시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+        "choice": "담운이 ‘수집’이라 부르자 두리가 손가락을 문다.",
+        "reward": "두리 첫 등장",
+        "hook": "두리 목의 금빛 자국이 백장의 장갑과 같은 문양이다.",
+        "pov": "담운 1인칭",
+        "act": "ACT1",
+        "act_title": "물건의 주인은 누구인가",
+        "subact": "ACT1-SA4",
+        "subact_title": "값 없는 유산과 첫 완성",
+        "location": "경도 위조인 골목·남문 수레길",
+        "cast": [
+          "담운",
+          "백장",
+          "두리",
+          "서린화",
+          "진여강"
+        ],
+        "episode_function": "보상 회수와 다음 구간 훅",
+        "stakes": "독자 보상 ‘두리 첫 등장’의 진척이 무산되고, ‘두리 목의 금빛 자국이 백장의 장갑과 같은 문양이다.’이 더 불리한 조건에서 발생한다.",
+        "cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다."
+      },
+      "scene_blueprint": {
+        "episode": 40,
+        "act": "ACT1",
+        "subact_id": "A04",
+        "source_subact": "ACT1-SA4",
+        "title": "짐 속의 재채기",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "경도를 떠난 수레에서 마지막 풍비 두리가 튀어나온다.",
+          "choice": "담운이 ‘수집’이라 부르자 두리가 손가락을 문다.",
+          "reward": "두리 첫 등장",
+          "hook": "두리 목의 금빛 자국이 백장의 장갑과 같은 문양이다.",
+          "location": "경도 위조인 골목·남문 수레길",
+          "cast": [
+            "담운",
+            "백장",
+            "두리",
+            "서린화",
+            "진여강"
+          ],
+          "episode_function": "보상 회수와 다음 구간 훅",
+          "cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다."
+        },
+        "state_before": {
+          "previous_hook": "짐 목록에 없는 작은 생명 반응이 잡힌다.",
+          "previous_cost": "기존 소속·귀환 가능성·독립성 가운데 하나를 내려놓는다.",
+          "incoming_subact_cost": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 경도 위조인 골목·남문 수레길에서 즉시 행동 문제로 회수한다.",
+            "pressure": "짐 목록에 없는 작은 생명 반응이 잡힌다.",
+            "action": "담운·백장가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "경도를 떠난 수레에서 마지막 풍비 두리가 튀어나온다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "보상 회수와 다음 구간 훅",
+            "action": "경도 위조인 골목·남문 수레길의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "경도를 떠난 수레에서 마지막 풍비 두리가 튀어나온다.",
+            "pressure": "무명의 장인 유산을 한 세트로 완성하되 상극과 대가를 검증한다.",
+            "action": "담운·백장가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 ‘수집’이라 부르자 두리가 손가락을 문다.라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI004:final, CI006:final, CI019:final, CI020:final, CI021:final, CI022:final, CI024:final, SET005:complete, BS001, BS003",
+            "action": "후보 참조(CI004:final, CI006:final, CI019:final, CI020:final, CI021:final, CI022:final, CI024:final, SET005:complete, BS001, BS003)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "두리 첫 등장",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 ‘수집’이라 부르자 두리가 손가락을 문다.",
+            "pressure": "가격과 진품 기준을 흔든 결과, 값 없는 실패작과 제작자들이 시장 밖으로 밀려난다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "두리 첫 등장",
+            "pressure": "상극 공명과 감각 손실이 생기고 생명체까지 수집 대상으로 보려는 시선이 두리에게 향한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "두리 목의 금빛 자국이 백장의 장갑과 같은 문양이다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+          "earned_reward": "두리 첫 등장",
+          "next_hook": "두리 목의 금빛 자국이 백장의 장갑과 같은 문양이다.",
+          "outgoing_subact_cost": "상극 공명과 감각 손실이 생기고 생명체까지 수집 대상으로 보려는 시선이 두리에게 향한다."
+        },
+        "registry_events": {
+          "items": [
+            "CI004:final",
+            "CI006:final",
+            "CI019:final",
+            "CI020:final",
+            "CI021:final",
+            "CI022:final",
+            "CI024:final"
+          ],
+          "sets": [
+            "SET005:complete"
+          ],
+          "beasts": [
+            "BS001",
+            "BS003"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    }
+  ]
+}

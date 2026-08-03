@@ -1,0 +1,1612 @@
+{
+  "version": "v3.4-manuscript-packet-v1",
+  "status": "derived_read_only_drafting_input",
+  "protected_canon_unchanged": true,
+  "range": [
+    41,
+    50
+  ],
+  "episodes": [
+    {
+      "episode": 41,
+      "canonical_episode": {
+        "episode": 41,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA1",
+        "subact_title": "계약을 거부한 신수",
+        "title": "마지막 풍비",
+        "goal": "두리가 바람을 먹고 수레 천막을 날려 버린다.",
+        "choice": "담운이 생명과 물건을 같은 방식으로 다루면 안 됨을 체감",
+        "reward": "풍비 생태 공개",
+        "hook": "두리가 남독택 방향으로 울부짖는다.",
+        "location": "남독택 독안개 마을·야생계약소",
+        "cast": [
+          "담운",
+          "두리",
+          "서린화",
+          "소예란"
+        ],
+        "episode_function": "새 문제와 지역 규칙 도입",
+        "cost": "수레 천막과 약재 두 상자가 젖어 남독 통행 검사 순번을 반나절 뒤로 미룬다."
+      },
+      "scene_blueprint": {
+        "episode": 41,
+        "act": "ACT2",
+        "subact_id": "A05",
+        "source_subact": "ACT2-SA1",
+        "title": "마지막 풍비",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "두리가 바람을 먹고 수레 천막을 날려 버린다.",
+          "choice": "담운이 생명과 물건을 같은 방식으로 다루면 안 됨을 체감",
+          "reward": "풍비 생태 공개",
+          "hook": "두리가 남독택 방향으로 울부짖는다.",
+          "location": "남독택 독안개 마을·야생계약소",
+          "cast": [
+            "담운",
+            "두리",
+            "서린화",
+            "소예란"
+          ],
+          "episode_function": "새 문제와 지역 규칙 도입",
+          "cost": "수레 천막과 약재 두 상자가 젖어 남독 통행 검사 순번을 반나절 뒤로 미룬다."
+        },
+        "state_before": {
+          "previous_hook": "두리 목의 금빛 자국이 백장의 장갑과 같은 문양이다.",
+          "previous_cost": "시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.",
+          "incoming_subact_cost": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 남독택 독안개 마을·야생계약소에서 즉시 행동 문제로 회수한다.",
+            "pressure": "두리 목의 금빛 자국이 백장의 장갑과 같은 문양이다.",
+            "action": "담운·두리가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "두리가 바람을 먹고 수레 천막을 날려 버린다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "새 문제와 지역 규칙 도입",
+            "action": "남독택 독안개 마을·야생계약소의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "수레 천막과 약재 두 상자가 젖어 남독 통행 검사 순번을 반나절 뒤로 미룬다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "두리가 바람을 먹고 수레 천막을 날려 버린다.",
+            "pressure": "두리의 반복 거절과 인간 구조 계약의 차이를 확인한다.",
+            "action": "담운·두리가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 생명과 물건을 같은 방식으로 다루면 안 됨을 체감라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI025:first",
+            "action": "후보 참조(CI025:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "풍비 생태 공개",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 생명과 물건을 같은 방식으로 다루면 안 됨을 체감",
+            "pressure": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "수레 천막과 약재 두 상자가 젖어 남독 통행 검사 순번을 반나절 뒤로 미룬다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "풍비 생태 공개",
+            "pressure": "수레 천막과 약재 두 상자가 젖어 남독 통행 검사 순번을 반나절 뒤로 미룬다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "두리가 남독택 방향으로 울부짖는다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "수레 천막과 약재 두 상자가 젖어 남독 통행 검사 순번을 반나절 뒤로 미룬다.",
+          "earned_reward": "풍비 생태 공개",
+          "next_hook": "두리가 남독택 방향으로 울부짖는다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI025:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+        "supporting_cast_additions": [
+          {
+            "id": "SC012",
+            "name": "미라",
+            "role": "야생계약단장",
+            "scene_function": "지역 생활 비용·증거·거절선을 행동으로 보여주고 주연의 선택을 대신 결정하지 않는다.",
+            "canon_effect": "기존 goal·choice·reward·hook·cost 불변"
+          }
+        ]
+      }
+    },
+    {
+      "episode": 42,
+      "canonical_episode": {
+        "episode": 42,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA1",
+        "subact_title": "계약을 거부한 신수",
+        "title": "신수 의원 소예란",
+        "goal": "소예란이 두리를 불법 운송된 멸종종으로 판정한다.",
+        "choice": "예란과 담운의 충돌",
+        "reward": "야생계약 규칙",
+        "hook": "두리가 담운이 아닌 검함을 두려워한다.",
+        "location": "남독택 독안개 마을·야생계약소",
+        "cast": [
+          "담운",
+          "소예란",
+          "두리",
+          "서린화"
+        ],
+        "episode_function": "규칙의 예외와 비용 확대",
+        "cost": "두리는 야생계약소 보호실에 임시 격리되고 담운은 접근권을 잃는다."
+      },
+      "scene_blueprint": {
+        "episode": 42,
+        "act": "ACT2",
+        "subact_id": "A05",
+        "source_subact": "ACT2-SA1",
+        "title": "신수 의원 소예란",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "소예란이 두리를 불법 운송된 멸종종으로 판정한다.",
+          "choice": "예란과 담운의 충돌",
+          "reward": "야생계약 규칙",
+          "hook": "두리가 담운이 아닌 검함을 두려워한다.",
+          "location": "남독택 독안개 마을·야생계약소",
+          "cast": [
+            "담운",
+            "소예란",
+            "두리",
+            "서린화"
+          ],
+          "episode_function": "규칙의 예외와 비용 확대",
+          "cost": "두리는 야생계약소 보호실에 임시 격리되고 담운은 접근권을 잃는다."
+        },
+        "state_before": {
+          "previous_hook": "두리가 남독택 방향으로 울부짖는다.",
+          "previous_cost": "수레 천막과 약재 두 상자가 젖어 남독 통행 검사 순번을 반나절 뒤로 미룬다.",
+          "incoming_subact_cost": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 남독택 독안개 마을·야생계약소에서 즉시 행동 문제로 회수한다.",
+            "pressure": "두리가 남독택 방향으로 울부짖는다.",
+            "action": "담운·소예란가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "소예란이 두리를 불법 운송된 멸종종으로 판정한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "규칙의 예외와 비용 확대",
+            "action": "남독택 독안개 마을·야생계약소의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "두리는 야생계약소 보호실에 임시 격리되고 담운은 접근권을 잃는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "소예란이 두리를 불법 운송된 멸종종으로 판정한다.",
+            "pressure": "두리의 반복 거절과 인간 구조 계약의 차이를 확인한다.",
+            "action": "담운·소예란가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 예란과 담운의 충돌라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI026:first, BS001, BS007",
+            "action": "후보 참조(CI026:first, BS001, BS007)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "야생계약 규칙",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "예란과 담운의 충돌",
+            "pressure": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "두리는 야생계약소 보호실에 임시 격리되고 담운은 접근권을 잃는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "야생계약 규칙",
+            "pressure": "두리는 야생계약소 보호실에 임시 격리되고 담운은 접근권을 잃는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "두리가 담운이 아닌 검함을 두려워한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "두리는 야생계약소 보호실에 임시 격리되고 담운은 접근권을 잃는다.",
+          "earned_reward": "야생계약 규칙",
+          "next_hook": "두리가 담운이 아닌 검함을 두려워한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI026:first"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS001",
+            "BS007"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+        "supporting_cast_additions": [
+          {
+            "id": "SC013",
+            "name": "연호",
+            "role": "독안개 마을 아이",
+            "scene_function": "지역 생활 비용·증거·거절선을 행동으로 보여주고 주연의 선택을 대신 결정하지 않는다.",
+            "canon_effect": "기존 goal·choice·reward·hook·cost 불변"
+          }
+        ]
+      }
+    },
+    {
+      "episode": 43,
+      "canonical_episode": {
+        "episode": 43,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA1",
+        "subact_title": "계약을 거부한 신수",
+        "title": "독안개 마을",
+        "goal": "마을 전체가 잠드는 독안개와 사라진 신수 사건을 조사한다.",
+        "choice": "담운이 지역 생태를 배우기 시작",
+        "reward": "독안개 등불",
+        "hook": "잠든 사람들의 꿈에서 같은 향로가 보인다.",
+        "location": "남독택 독안개 마을·야생계약소",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "첫 실전 적용과 오판",
+        "cost": "독안개 등불 한 개를 과부하시켜 일행이 밤길을 걸을 수 없게 된다."
+      },
+      "scene_blueprint": {
+        "episode": 43,
+        "act": "ACT2",
+        "subact_id": "A05",
+        "source_subact": "ACT2-SA1",
+        "title": "독안개 마을",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "마을 전체가 잠드는 독안개와 사라진 신수 사건을 조사한다.",
+          "choice": "담운이 지역 생태를 배우기 시작",
+          "reward": "독안개 등불",
+          "hook": "잠든 사람들의 꿈에서 같은 향로가 보인다.",
+          "location": "남독택 독안개 마을·야생계약소",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "첫 실전 적용과 오판",
+          "cost": "독안개 등불 한 개를 과부하시켜 일행이 밤길을 걸을 수 없게 된다."
+        },
+        "state_before": {
+          "previous_hook": "두리가 담운이 아닌 검함을 두려워한다.",
+          "previous_cost": "두리는 야생계약소 보호실에 임시 격리되고 담운은 접근권을 잃는다.",
+          "incoming_subact_cost": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 남독택 독안개 마을·야생계약소에서 즉시 행동 문제로 회수한다.",
+            "pressure": "두리가 담운이 아닌 검함을 두려워한다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "마을 전체가 잠드는 독안개와 사라진 신수 사건을 조사한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "첫 실전 적용과 오판",
+            "action": "남독택 독안개 마을·야생계약소의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "독안개 등불 한 개를 과부하시켜 일행이 밤길을 걸을 수 없게 된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "마을 전체가 잠드는 독안개와 사라진 신수 사건을 조사한다.",
+            "pressure": "두리의 반복 거절과 인간 구조 계약의 차이를 확인한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 지역 생태를 배우기 시작라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "BS006",
+            "action": "후보 참조(BS006)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "독안개 등불",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 지역 생태를 배우기 시작",
+            "pressure": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "독안개 등불 한 개를 과부하시켜 일행이 밤길을 걸을 수 없게 된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "독안개 등불",
+            "pressure": "독안개 등불 한 개를 과부하시켜 일행이 밤길을 걸을 수 없게 된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "잠든 사람들의 꿈에서 같은 향로가 보인다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "독안개 등불 한 개를 과부하시켜 일행이 밤길을 걸을 수 없게 된다.",
+          "earned_reward": "독안개 등불",
+          "next_hook": "잠든 사람들의 꿈에서 같은 향로가 보인다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": [
+            "BS006"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+        "supporting_cast_additions": [
+          {
+            "id": "SC014",
+            "name": "사태오",
+            "role": "밀매단장",
+            "scene_function": "지역 생활 비용·증거·거절선을 행동으로 보여주고 주연의 선택을 대신 결정하지 않는다.",
+            "canon_effect": "기존 goal·choice·reward·hook·cost 불변"
+          }
+        ]
+      }
+    },
+    {
+      "episode": 44,
+      "canonical_episode": {
+        "episode": 44,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA1",
+        "subact_title": "계약을 거부한 신수",
+        "title": "잠든 숲의 향로",
+        "goal": "향로가 독을 억제하지만 숲의 동물까지 잠재운다는 사실이 드러난다.",
+        "choice": "예란이 수집을 강하게 반대",
+        "reward": "잠든 숲 향로 후보",
+        "hook": "향로가 무주함에 들어가려다 스스로 멈춘다.",
+        "location": "남독택 독안개 마을·야생계약소",
+        "cast": [
+          "소예란",
+          "담운",
+          "서린화",
+          "두리"
+        ],
+        "episode_function": "적대 세력의 압박 구체화",
+        "cost": "향로를 강제로 옮기려던 불먹장갑의 안감이 독에 물들어 세 화 동안 장착 시간이 늘어난다."
+      },
+      "scene_blueprint": {
+        "episode": 44,
+        "act": "ACT2",
+        "subact_id": "A05",
+        "source_subact": "ACT2-SA1",
+        "title": "잠든 숲의 향로",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "향로가 독을 억제하지만 숲의 동물까지 잠재운다는 사실이 드러난다.",
+          "choice": "예란이 수집을 강하게 반대",
+          "reward": "잠든 숲 향로 후보",
+          "hook": "향로가 무주함에 들어가려다 스스로 멈춘다.",
+          "location": "남독택 독안개 마을·야생계약소",
+          "cast": [
+            "소예란",
+            "담운",
+            "서린화",
+            "두리"
+          ],
+          "episode_function": "적대 세력의 압박 구체화",
+          "cost": "향로를 강제로 옮기려던 불먹장갑의 안감이 독에 물들어 세 화 동안 장착 시간이 늘어난다."
+        },
+        "state_before": {
+          "previous_hook": "잠든 사람들의 꿈에서 같은 향로가 보인다.",
+          "previous_cost": "독안개 등불 한 개를 과부하시켜 일행이 밤길을 걸을 수 없게 된다.",
+          "incoming_subact_cost": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 남독택 독안개 마을·야생계약소에서 즉시 행동 문제로 회수한다.",
+            "pressure": "잠든 사람들의 꿈에서 같은 향로가 보인다.",
+            "action": "소예란·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "향로가 독을 억제하지만 숲의 동물까지 잠재운다는 사실이 드러난다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "적대 세력의 압박 구체화",
+            "action": "남독택 독안개 마을·야생계약소의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "향로를 강제로 옮기려던 불먹장갑의 안감이 독에 물들어 세 화 동안 장착 시간이 늘어난다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "향로가 독을 억제하지만 숲의 동물까지 잠재운다는 사실이 드러난다.",
+            "pressure": "두리의 반복 거절과 인간 구조 계약의 차이를 확인한다.",
+            "action": "소예란·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 예란이 수집을 강하게 반대라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI027:first",
+            "action": "후보 참조(CI027:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "잠든 숲 향로 후보",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "예란이 수집을 강하게 반대",
+            "pressure": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "향로를 강제로 옮기려던 불먹장갑의 안감이 독에 물들어 세 화 동안 장착 시간이 늘어난다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "잠든 숲 향로 후보",
+            "pressure": "향로를 강제로 옮기려던 불먹장갑의 안감이 독에 물들어 세 화 동안 장착 시간이 늘어난다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "향로가 무주함에 들어가려다 스스로 멈춘다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "향로를 강제로 옮기려던 불먹장갑의 안감이 독에 물들어 세 화 동안 장착 시간이 늘어난다.",
+          "earned_reward": "잠든 숲 향로 후보",
+          "next_hook": "향로가 무주함에 들어가려다 스스로 멈춘다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI027:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 45,
+      "canonical_episode": {
+        "episode": 45,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA1",
+        "subact_title": "계약을 거부한 신수",
+        "title": "계약을 거부한 신수",
+        "goal": "담운이 두리에게 계약을 제안하지만 두리가 세 번 거절한다.",
+        "choice": "담운이 선택받지 못함을 받아들임",
+        "reward": "계약 철회권",
+        "hook": "두리가 사라진 어미 냄새를 맡는다.",
+        "location": "남독택 독안개 마을·야생계약소",
+        "cast": [
+          "담운",
+          "두리",
+          "서린화",
+          "소예란"
+        ],
+        "episode_function": "서브액트 중간 선택",
+        "cost": "세 번째 거절 뒤 담운은 계약문을 찢고 두리에게 먼저 다가갈 권리를 포기한다."
+      },
+      "scene_blueprint": {
+        "episode": 45,
+        "act": "ACT2",
+        "subact_id": "A05",
+        "source_subact": "ACT2-SA1",
+        "title": "계약을 거부한 신수",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "담운이 두리에게 계약을 제안하지만 두리가 세 번 거절한다.",
+          "choice": "담운이 선택받지 못함을 받아들임",
+          "reward": "계약 철회권",
+          "hook": "두리가 사라진 어미 냄새를 맡는다.",
+          "location": "남독택 독안개 마을·야생계약소",
+          "cast": [
+            "담운",
+            "두리",
+            "서린화",
+            "소예란"
+          ],
+          "episode_function": "서브액트 중간 선택",
+          "cost": "세 번째 거절 뒤 담운은 계약문을 찢고 두리에게 먼저 다가갈 권리를 포기한다."
+        },
+        "state_before": {
+          "previous_hook": "향로가 무주함에 들어가려다 스스로 멈춘다.",
+          "previous_cost": "향로를 강제로 옮기려던 불먹장갑의 안감이 독에 물들어 세 화 동안 장착 시간이 늘어난다.",
+          "incoming_subact_cost": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 남독택 독안개 마을·야생계약소에서 즉시 행동 문제로 회수한다.",
+            "pressure": "향로가 무주함에 들어가려다 스스로 멈춘다.",
+            "action": "담운·두리가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "담운이 두리에게 계약을 제안하지만 두리가 세 번 거절한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 중간 선택",
+            "action": "남독택 독안개 마을·야생계약소의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "세 번째 거절 뒤 담운은 계약문을 찢고 두리에게 먼저 다가갈 권리를 포기한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "담운이 두리에게 계약을 제안하지만 두리가 세 번 거절한다.",
+            "pressure": "두리의 반복 거절과 인간 구조 계약의 차이를 확인한다.",
+            "action": "담운·두리가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 선택받지 못함을 받아들임라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI028:first, BS001, BS008",
+            "action": "후보 참조(CI028:first, BS001, BS008)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "계약 철회권",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 선택받지 못함을 받아들임",
+            "pressure": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "세 번째 거절 뒤 담운은 계약문을 찢고 두리에게 먼저 다가갈 권리를 포기한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "계약 철회권",
+            "pressure": "세 번째 거절 뒤 담운은 계약문을 찢고 두리에게 먼저 다가갈 권리를 포기한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "두리가 사라진 어미 냄새를 맡는다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "세 번째 거절 뒤 담운은 계약문을 찢고 두리에게 먼저 다가갈 권리를 포기한다.",
+          "earned_reward": "계약 철회권",
+          "next_hook": "두리가 사라진 어미 냄새를 맡는다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI028:first"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS001",
+            "BS008"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 46,
+      "canonical_episode": {
+        "episode": 46,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA1",
+        "subact_title": "계약을 거부한 신수",
+        "title": "독을 삼킨 허물",
+        "goal": "백옥섬이 마을의 독을 대신 삼키고 허물을 남긴다.",
+        "choice": "예란이 인간 치료를 위해 신수 유산 사용 허용",
+        "reward": "백옥섬 허물 공동사용",
+        "hook": "허물 안에 인공 사육 표식이 있다.",
+        "location": "남독택 독안개 마을·야생계약소",
+        "cast": [
+          "소예란",
+          "담운",
+          "서린화",
+          "두리"
+        ],
+        "episode_function": "선택의 후폭풍과 관계 변화",
+        "cost": "백옥섬 허물의 절반을 인간 환자에게 써 신수 치료 비축량이 줄어든다."
+      },
+      "scene_blueprint": {
+        "episode": 46,
+        "act": "ACT2",
+        "subact_id": "A05",
+        "source_subact": "ACT2-SA1",
+        "title": "독을 삼킨 허물",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "백옥섬이 마을의 독을 대신 삼키고 허물을 남긴다.",
+          "choice": "예란이 인간 치료를 위해 신수 유산 사용 허용",
+          "reward": "백옥섬 허물 공동사용",
+          "hook": "허물 안에 인공 사육 표식이 있다.",
+          "location": "남독택 독안개 마을·야생계약소",
+          "cast": [
+            "소예란",
+            "담운",
+            "서린화",
+            "두리"
+          ],
+          "episode_function": "선택의 후폭풍과 관계 변화",
+          "cost": "백옥섬 허물의 절반을 인간 환자에게 써 신수 치료 비축량이 줄어든다."
+        },
+        "state_before": {
+          "previous_hook": "두리가 사라진 어미 냄새를 맡는다.",
+          "previous_cost": "세 번째 거절 뒤 담운은 계약문을 찢고 두리에게 먼저 다가갈 권리를 포기한다.",
+          "incoming_subact_cost": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 남독택 독안개 마을·야생계약소에서 즉시 행동 문제로 회수한다.",
+            "pressure": "두리가 사라진 어미 냄새를 맡는다.",
+            "action": "소예란·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "백옥섬이 마을의 독을 대신 삼키고 허물을 남긴다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "선택의 후폭풍과 관계 변화",
+            "action": "남독택 독안개 마을·야생계약소의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "백옥섬 허물의 절반을 인간 환자에게 써 신수 치료 비축량이 줄어든다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "백옥섬이 마을의 독을 대신 삼키고 허물을 남긴다.",
+            "pressure": "두리의 반복 거절과 인간 구조 계약의 차이를 확인한다.",
+            "action": "소예란·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 예란이 인간 치료를 위해 신수 유산 사용 허용라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "BS006",
+            "action": "후보 참조(BS006)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "백옥섬 허물 공동사용",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "예란이 인간 치료를 위해 신수 유산 사용 허용",
+            "pressure": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "백옥섬 허물의 절반을 인간 환자에게 써 신수 치료 비축량이 줄어든다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "백옥섬 허물 공동사용",
+            "pressure": "백옥섬 허물의 절반을 인간 환자에게 써 신수 치료 비축량이 줄어든다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "허물 안에 인공 사육 표식이 있다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "백옥섬 허물의 절반을 인간 환자에게 써 신수 치료 비축량이 줄어든다.",
+          "earned_reward": "백옥섬 허물 공동사용",
+          "next_hook": "허물 안에 인공 사육 표식이 있다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": [
+            "BS006"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 47,
+      "canonical_episode": {
+        "episode": 47,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA1",
+        "subact_title": "계약을 거부한 신수",
+        "title": "독왕초의 씨앗",
+        "goal": "독을 없애면 숲 전체가 죽는다는 생태 균형이 밝혀진다.",
+        "choice": "담운이 해결과 제거를 구분",
+        "reward": "독왕초 씨앗 비수집",
+        "hook": "귀장회가 씨앗 봉인을 명령한다.",
+        "location": "남독택 독안개 마을·야생계약소",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "숨은 진실 또는 역전",
+        "cost": "독왕초 씨앗을 가져가지 않아 즉각적인 해독 수단과 도감 보상을 포기한다."
+      },
+      "scene_blueprint": {
+        "episode": 47,
+        "act": "ACT2",
+        "subact_id": "A05",
+        "source_subact": "ACT2-SA1",
+        "title": "독왕초의 씨앗",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "독을 없애면 숲 전체가 죽는다는 생태 균형이 밝혀진다.",
+          "choice": "담운이 해결과 제거를 구분",
+          "reward": "독왕초 씨앗 비수집",
+          "hook": "귀장회가 씨앗 봉인을 명령한다.",
+          "location": "남독택 독안개 마을·야생계약소",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "숨은 진실 또는 역전",
+          "cost": "독왕초 씨앗을 가져가지 않아 즉각적인 해독 수단과 도감 보상을 포기한다."
+        },
+        "state_before": {
+          "previous_hook": "허물 안에 인공 사육 표식이 있다.",
+          "previous_cost": "백옥섬 허물의 절반을 인간 환자에게 써 신수 치료 비축량이 줄어든다.",
+          "incoming_subact_cost": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 남독택 독안개 마을·야생계약소에서 즉시 행동 문제로 회수한다.",
+            "pressure": "허물 안에 인공 사육 표식이 있다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "독을 없애면 숲 전체가 죽는다는 생태 균형이 밝혀진다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "숨은 진실 또는 역전",
+            "action": "남독택 독안개 마을·야생계약소의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "독왕초 씨앗을 가져가지 않아 즉각적인 해독 수단과 도감 보상을 포기한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "독을 없애면 숲 전체가 죽는다는 생태 균형이 밝혀진다.",
+            "pressure": "두리의 반복 거절과 인간 구조 계약의 차이를 확인한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 해결과 제거를 구분라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "독왕초 씨앗 비수집",
+            "action": "후보 참조(독왕초 씨앗 비수집)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "독왕초 씨앗 비수집",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 해결과 제거를 구분",
+            "pressure": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "독왕초 씨앗을 가져가지 않아 즉각적인 해독 수단과 도감 보상을 포기한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "독왕초 씨앗 비수집",
+            "pressure": "독왕초 씨앗을 가져가지 않아 즉각적인 해독 수단과 도감 보상을 포기한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "귀장회가 씨앗 봉인을 명령한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "독왕초 씨앗을 가져가지 않아 즉각적인 해독 수단과 도감 보상을 포기한다.",
+          "earned_reward": "독왕초 씨앗 비수집",
+          "next_hook": "귀장회가 씨앗 봉인을 명령한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 48,
+      "canonical_episode": {
+        "episode": 48,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA1",
+        "subact_title": "계약을 거부한 신수",
+        "title": "우리 안의 사람들",
+        "goal": "신수 밀매단이 인간 주민을 미끼로 가두고 신수를 유인한다.",
+        "choice": "예란이 인간을 불신한 자신의 편견과 마주함",
+        "reward": "야생계약 끈",
+        "hook": "밀매단 장부에 만보상련 허가 도장이 있다.",
+        "location": "남독택 독안개 마을·야생계약소",
+        "cast": [
+          "소예란",
+          "담운",
+          "서린화",
+          "두리"
+        ],
+        "episode_function": "해결책의 조립과 대가 확정",
+        "cost": "밀매단의 합법 허가를 깨는 동안 주민 세 명이 인질로 남아 정면 공격을 포기한다."
+      },
+      "scene_blueprint": {
+        "episode": 48,
+        "act": "ACT2",
+        "subact_id": "A05",
+        "source_subact": "ACT2-SA1",
+        "title": "우리 안의 사람들",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "신수 밀매단이 인간 주민을 미끼로 가두고 신수를 유인한다.",
+          "choice": "예란이 인간을 불신한 자신의 편견과 마주함",
+          "reward": "야생계약 끈",
+          "hook": "밀매단 장부에 만보상련 허가 도장이 있다.",
+          "location": "남독택 독안개 마을·야생계약소",
+          "cast": [
+            "소예란",
+            "담운",
+            "서린화",
+            "두리"
+          ],
+          "episode_function": "해결책의 조립과 대가 확정",
+          "cost": "밀매단의 합법 허가를 깨는 동안 주민 세 명이 인질로 남아 정면 공격을 포기한다."
+        },
+        "state_before": {
+          "previous_hook": "귀장회가 씨앗 봉인을 명령한다.",
+          "previous_cost": "독왕초 씨앗을 가져가지 않아 즉각적인 해독 수단과 도감 보상을 포기한다.",
+          "incoming_subact_cost": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 남독택 독안개 마을·야생계약소에서 즉시 행동 문제로 회수한다.",
+            "pressure": "귀장회가 씨앗 봉인을 명령한다.",
+            "action": "소예란·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "신수 밀매단이 인간 주민을 미끼로 가두고 신수를 유인한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "해결책의 조립과 대가 확정",
+            "action": "남독택 독안개 마을·야생계약소의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "밀매단의 합법 허가를 깨는 동안 주민 세 명이 인질로 남아 정면 공격을 포기한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "신수 밀매단이 인간 주민을 미끼로 가두고 신수를 유인한다.",
+            "pressure": "두리의 반복 거절과 인간 구조 계약의 차이를 확인한다.",
+            "action": "소예란·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 예란이 인간을 불신한 자신의 편견과 마주함라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI029:first, BS007",
+            "action": "후보 참조(CI029:first, BS007)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "야생계약 끈",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "예란이 인간을 불신한 자신의 편견과 마주함",
+            "pressure": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "밀매단의 합법 허가를 깨는 동안 주민 세 명이 인질로 남아 정면 공격을 포기한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "야생계약 끈",
+            "pressure": "밀매단의 합법 허가를 깨는 동안 주민 세 명이 인질로 남아 정면 공격을 포기한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "밀매단 장부에 만보상련 허가 도장이 있다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "밀매단의 합법 허가를 깨는 동안 주민 세 명이 인질로 남아 정면 공격을 포기한다.",
+          "earned_reward": "야생계약 끈",
+          "next_hook": "밀매단 장부에 만보상련 허가 도장이 있다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI029:first"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS007"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 49,
+      "canonical_episode": {
+        "episode": 49,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA1",
+        "subact_title": "계약을 거부한 신수",
+        "title": "멸종의 울음",
+        "goal": "사라진 종의 울음을 보존한 병이 두리의 어미 소리를 재생한다.",
+        "choice": "두리가 담운을 따라갈 이유를 얻음",
+        "reward": "멸종 울음병 후보",
+        "hook": "울음 속에 “천외”라는 인간 음성이 섞여 있다.",
+        "location": "남독택 독안개 마을·야생계약소",
+        "cast": [
+          "담운",
+          "두리",
+          "서린화",
+          "소예란"
+        ],
+        "episode_function": "서브액트 클라이맥스",
+        "cost": "울음병을 반복 재생한 두리가 하루 동안 방향 감각을 잃는다."
+      },
+      "scene_blueprint": {
+        "episode": 49,
+        "act": "ACT2",
+        "subact_id": "A05",
+        "source_subact": "ACT2-SA1",
+        "title": "멸종의 울음",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "사라진 종의 울음을 보존한 병이 두리의 어미 소리를 재생한다.",
+          "choice": "두리가 담운을 따라갈 이유를 얻음",
+          "reward": "멸종 울음병 후보",
+          "hook": "울음 속에 “천외”라는 인간 음성이 섞여 있다.",
+          "location": "남독택 독안개 마을·야생계약소",
+          "cast": [
+            "담운",
+            "두리",
+            "서린화",
+            "소예란"
+          ],
+          "episode_function": "서브액트 클라이맥스",
+          "cost": "울음병을 반복 재생한 두리가 하루 동안 방향 감각을 잃는다."
+        },
+        "state_before": {
+          "previous_hook": "밀매단 장부에 만보상련 허가 도장이 있다.",
+          "previous_cost": "밀매단의 합법 허가를 깨는 동안 주민 세 명이 인질로 남아 정면 공격을 포기한다.",
+          "incoming_subact_cost": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 남독택 독안개 마을·야생계약소에서 즉시 행동 문제로 회수한다.",
+            "pressure": "밀매단 장부에 만보상련 허가 도장이 있다.",
+            "action": "담운·두리가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "사라진 종의 울음을 보존한 병이 두리의 어미 소리를 재생한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 클라이맥스",
+            "action": "남독택 독안개 마을·야생계약소의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "울음병을 반복 재생한 두리가 하루 동안 방향 감각을 잃는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "사라진 종의 울음을 보존한 병이 두리의 어미 소리를 재생한다.",
+            "pressure": "두리의 반복 거절과 인간 구조 계약의 차이를 확인한다.",
+            "action": "담운·두리가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 두리가 담운을 따라갈 이유를 얻음라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "멸종 울음병 후보",
+            "action": "후보 참조(멸종 울음병 후보)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "멸종 울음병 후보",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "두리가 담운을 따라갈 이유를 얻음",
+            "pressure": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "울음병을 반복 재생한 두리가 하루 동안 방향 감각을 잃는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "멸종 울음병 후보",
+            "pressure": "울음병을 반복 재생한 두리가 하루 동안 방향 감각을 잃는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "울음 속에 “천외”라는 인간 음성이 섞여 있다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "울음병을 반복 재생한 두리가 하루 동안 방향 감각을 잃는다.",
+          "earned_reward": "멸종 울음병 후보",
+          "next_hook": "울음 속에 “천외”라는 인간 음성이 섞여 있다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 50,
+      "canonical_episode": {
+        "episode": 50,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA1",
+        "subact_title": "계약을 거부한 신수",
+        "title": "두리가 고른 사람",
+        "goal": "담운이 두리를 보호하려 검함을 멀리하고, 두리가 자발적으로 돌아온다.",
+        "choice": "담운이 주인이 아닌 동행자가 됨",
+        "reward": "두리 정식 동행 계약",
+        "hook": "계약문 마지막 칸이 두리 발톱으로 찢긴다.",
+        "location": "남독택 독안개 마을·야생계약소",
+        "cast": [
+          "담운",
+          "두리",
+          "서린화",
+          "소예란"
+        ],
+        "episode_function": "보상 회수와 다음 구간 훅",
+        "cost": "정식 계약에 소유권 조항을 넣지 않아 담운은 명령권 없이 보호 책임만 진다."
+      },
+      "scene_blueprint": {
+        "episode": 50,
+        "act": "ACT2",
+        "subact_id": "A05",
+        "source_subact": "ACT2-SA1",
+        "title": "두리가 고른 사람",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "담운이 두리를 보호하려 검함을 멀리하고, 두리가 자발적으로 돌아온다.",
+          "choice": "담운이 주인이 아닌 동행자가 됨",
+          "reward": "두리 정식 동행 계약",
+          "hook": "계약문 마지막 칸이 두리 발톱으로 찢긴다.",
+          "location": "남독택 독안개 마을·야생계약소",
+          "cast": [
+            "담운",
+            "두리",
+            "서린화",
+            "소예란"
+          ],
+          "episode_function": "보상 회수와 다음 구간 훅",
+          "cost": "정식 계약에 소유권 조항을 넣지 않아 담운은 명령권 없이 보호 책임만 진다."
+        },
+        "state_before": {
+          "previous_hook": "울음 속에 “천외”라는 인간 음성이 섞여 있다.",
+          "previous_cost": "울음병을 반복 재생한 두리가 하루 동안 방향 감각을 잃는다.",
+          "incoming_subact_cost": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 남독택 독안개 마을·야생계약소에서 즉시 행동 문제로 회수한다.",
+            "pressure": "울음 속에 “천외”라는 인간 음성이 섞여 있다.",
+            "action": "담운·두리가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "담운이 두리를 보호하려 검함을 멀리하고, 두리가 자발적으로 돌아온다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "보상 회수와 다음 구간 훅",
+            "action": "남독택 독안개 마을·야생계약소의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "정식 계약에 소유권 조항을 넣지 않아 담운은 명령권 없이 보호 책임만 진다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "담운이 두리를 보호하려 검함을 멀리하고, 두리가 자발적으로 돌아온다.",
+            "pressure": "두리의 반복 거절과 인간 구조 계약의 차이를 확인한다.",
+            "action": "담운·두리가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 주인이 아닌 동행자가 됨라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI025:final, CI026:final, CI027:final, CI028:final, CI029:final, CI030:first, SET006:complete, BS001, BS007",
+            "action": "후보 참조(CI025:final, CI026:final, CI027:final, CI028:final, CI029:final, CI030:first, SET006:complete, BS001, BS007)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "두리 정식 동행 계약",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 주인이 아닌 동행자가 됨",
+            "pressure": "첫 세트 완성이 ‘다음 수집 대상’이라는 기대를 만들고 두리가 물건처럼 추적된다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "정식 계약에 소유권 조항을 넣지 않아 담운은 명령권 없이 보호 책임만 진다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "두리 정식 동행 계약",
+            "pressure": "밀매단이 주민 생계와 치료를 담보로 신수 포획을 확대하고 여행 일정이 늦어진다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "계약문 마지막 칸이 두리 발톱으로 찢긴다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "정식 계약에 소유권 조항을 넣지 않아 담운은 명령권 없이 보호 책임만 진다.",
+          "earned_reward": "두리 정식 동행 계약",
+          "next_hook": "계약문 마지막 칸이 두리 발톱으로 찢긴다.",
+          "outgoing_subact_cost": "밀매단이 주민 생계와 치료를 담보로 신수 포획을 확대하고 여행 일정이 늦어진다."
+        },
+        "registry_events": {
+          "items": [
+            "CI025:final",
+            "CI026:final",
+            "CI027:final",
+            "CI028:final",
+            "CI029:final",
+            "CI030:first"
+          ],
+          "sets": [
+            "SET006:complete"
+          ],
+          "beasts": [
+            "BS001",
+            "BS007"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    }
+  ]
+}

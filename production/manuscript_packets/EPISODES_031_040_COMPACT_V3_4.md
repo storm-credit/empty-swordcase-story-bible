@@ -1,0 +1,123 @@
+# EP031~EP040 집필 압축 패킷 v3.4
+
+> 보호 정본의 집필용 요약이다. 목표·선택·보상·훅·비용을 변경하지 않는다.
+
+## EP031 풀무를 산 수집가
+- Act/Subact: ACT1 / ACT1-SA4 (값 없는 유산과 첫 완성)
+- 장소: 경도 위조인 골목·남문 수레길
+- 등장: 담운, 진여강, 서린화
+- 목표: 진여강이 한숨풀무를 합법적으로 사들이고 사용권 경매를 연다.
+- 선택: 담운과 진여강의 경쟁 본격화
+- 보상: 한숨풀무 재등장
+- 비용: 시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.
+- 훅: 진여강이 돈 아닌 물건을 대가로 요구한다.
+- 기능: 새 문제와 지역 규칙 도입
+- 6비트: hook_recovery → world_pressure → first_attempt → evidence_and_counterpressure → irreversible_choice → reward_cost_and_next_hook
+
+## EP032 돈 없는 내기
+- Act/Subact: ACT1 / ACT1-SA4 (값 없는 유산과 첫 완성)
+- 장소: 경도 위조인 골목·남문 수레길
+- 등장: 담운, 서린화, 진여강
+- 목표: 담운은 자신의 배달패와 한숨풀무 사용권을 걸고 유물 복원 내기를 한다.
+- 선택: 담운이 개인적 물건을 대가로 제시
+- 보상: 가격 없는 저울
+- 비용: 시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.
+- 훅: 저울이 담운 쪽에서 움직이지 않는다.
+- 기능: 규칙의 예외와 비용 확대
+- 6비트: hook_recovery → world_pressure → first_attempt → evidence_and_counterpressure → irreversible_choice → reward_cost_and_next_hook
+
+## EP033 위조인의 손자국
+- Act/Subact: ACT1 / ACT1-SA4 (값 없는 유산과 첫 완성)
+- 장소: 경도 위조인 골목·남문 수레길
+- 등장: 서린화, 담운, 진여강
+- 목표: 풀무에 남은 열두 손자국이 서로 다른 포기한 꿈을 보여준다.
+- 선택: 린화가 위조품의 공동 저작권을 주장
+- 보상: 재봉사의 금실
+- 비용: 즉시 얻을 수 있는 전력·소유권·통제권 가운데 하나를 포기한다.
+- 훅: 마지막 손자국은 죽은 대장장이의 것이다.
+- 기능: 첫 실전 적용과 오판
+- 6비트: hook_recovery → world_pressure → first_attempt → evidence_and_counterpressure → irreversible_choice → reward_cost_and_next_hook
+
+## EP034 만보상련의 옳은 말
+- Act/Subact: ACT1 / ACT1-SA4 (값 없는 유산과 첫 완성)
+- 장소: 경도 위조인 골목·남문 수레길
+- 등장: 담운, 서린화, 진여강
+- 목표: 상련이 문서 없는 유물 거래가 약탈을 늘렸다는 실제 사례를 제시한다.
+- 선택: 담운이 시장 규칙 전체를 적으로 보지 않음
+- 보상: 위험 보험표
+- 비용: 시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.
+- 훅: 상련은 공개 감정을 조건으로 풀무를 넘기겠다고 한다.
+- 기능: 적대 세력의 압박 구체화
+- 6비트: hook_recovery → world_pressure → first_attempt → evidence_and_counterpressure → irreversible_choice → reward_cost_and_next_hook
+
+## EP035 거리 한복판의 감정
+- Act/Subact: ACT1 / ACT1-SA4 (값 없는 유산과 첫 완성)
+- 장소: 경도 위조인 골목·남문 수레길
+- 등장: 서린화, 담운, 진여강
+- 목표: 린화가 모든 시민 앞에서 진품·가짜·사용 이력을 공개 검증한다.
+- 선택: 린화가 가문 명예 대신 개인 책임 선택
+- 보상: 열린 감정 방식
+- 비용: 시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.
+- 훅: 은귀걸이가 처음으로 아무 말도 먹지 않는다.
+- 기능: 서브액트 중간 선택
+- 6비트: hook_recovery → world_pressure → first_attempt → evidence_and_counterpressure → irreversible_choice → reward_cost_and_next_hook
+
+## EP036 한숨을 불로 바꾸다
+- Act/Subact: ACT1 / ACT1-SA4 (값 없는 유산과 첫 완성)
+- 장소: 경도 위조인 골목·남문 수레길
+- 등장: 담운, 서린화, 진여강
+- 목표: 담운이 포기한 가능성을 인정해 풀무의 불을 일으킨다.
+- 선택: 담운이 역참으로 돌아갈 꿈을 스스로 놓음
+- 보상: 한숨풀무 획득
+- 비용: 시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.
+- 훅: 풀무 불꽃이 빈 명패를 달군다.
+- 기능: 선택의 후폭풍과 관계 변화
+- 6비트: hook_recovery → world_pressure → first_attempt → evidence_and_counterpressure → irreversible_choice → reward_cost_and_next_hook
+
+## EP037 다섯 번째 이름
+- Act/Subact: ACT1 / ACT1-SA4 (값 없는 유산과 첫 완성)
+- 장소: 경도 위조인 골목·남문 수레길
+- 등장: 철구, 담운, 서린화, 진여강
+- 목표: 반치·장갑·망치·풀무·명패가 완성되어 장인의 기록을 복원한다.
+- 선택: 철구의 아버지는 본명보다 행적으로 기록됨
+- 보상: 무명의 대장장이 5품 완성
+- 비용: 평판·소속 지위·사적 신뢰 가운데 하나가 손상될 위험을 감수한다.
+- 훅: 세트 기록에 남독택 배송표가 나온다.
+- 기능: 숨은 진실 또는 역전
+- 6비트: hook_recovery → world_pressure → first_attempt → evidence_and_counterpressure → irreversible_choice → reward_cost_and_next_hook
+
+## EP038 완성된 세트의 균열
+- Act/Subact: ACT1 / ACT1-SA4 (값 없는 유산과 첫 완성)
+- 장소: 경도 위조인 골목·남문 수레길
+- 등장: 담운, 서린화, 진여강
+- 목표: 5품 세트가 강해진 만큼 서로의 후회를 증폭시킨다.
+- 선택: 담운과 린화가 장착 제한을 정함
+- 보상: 세트 과부하 규칙
+- 비용: 시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.
+- 훅: 전시실 벽 한 곳이 독안개를 뿜는다.
+- 기능: 해결책의 조립과 대가 확정
+- 6비트: hook_recovery → world_pressure → first_attempt → evidence_and_counterpressure → irreversible_choice → reward_cost_and_next_hook
+
+## EP039 남쪽으로 가는 짐
+- Act/Subact: ACT1 / ACT1-SA4 (값 없는 유산과 첫 완성)
+- 장소: 경도 위조인 골목·남문 수레길
+- 등장: 서린화, 담운, 진여강
+- 목표: 남독택 의뢰품과 신수 치료약을 운송하기로 한다.
+- 선택: 린화가 정식 동행 계약 작성
+- 보상: 남독 통행약낭
+- 비용: 기존 소속·귀환 가능성·독립성 가운데 하나를 내려놓는다.
+- 훅: 짐 목록에 없는 작은 생명 반응이 잡힌다.
+- 기능: 서브액트 클라이맥스
+- 6비트: hook_recovery → world_pressure → first_attempt → evidence_and_counterpressure → irreversible_choice → reward_cost_and_next_hook
+
+## EP040 짐 속의 재채기
+- Act/Subact: ACT1 / ACT1-SA4 (값 없는 유산과 첫 완성)
+- 장소: 경도 위조인 골목·남문 수레길
+- 등장: 담운, 백장, 두리, 서린화, 진여강
+- 목표: 경도를 떠난 수레에서 마지막 풍비 두리가 튀어나온다.
+- 선택: 담운이 ‘수집’이라 부르자 두리가 손가락을 문다.
+- 보상: 두리 첫 등장
+- 비용: 시간·안전·관계 중 최소 하나를 실제 대가로 지불한다.
+- 훅: 두리 목의 금빛 자국이 백장의 장갑과 같은 문양이다.
+- 기능: 보상 회수와 다음 구간 훅
+- 6비트: hook_recovery → world_pressure → first_attempt → evidence_and_counterpressure → irreversible_choice → reward_cost_and_next_hook

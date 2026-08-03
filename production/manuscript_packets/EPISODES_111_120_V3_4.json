@@ -1,0 +1,1603 @@
+{
+  "version": "v3.4-manuscript-packet-v1",
+  "status": "derived_read_only_drafting_input",
+  "protected_canon_unchanged": true,
+  "range": [
+    111,
+    120
+  ],
+  "episodes": [
+    {
+      "episode": 111,
+      "canonical_episode": {
+        "episode": 111,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA4",
+        "subact_title": "공동 소유와 수장의 얼굴",
+        "title": "되풀이되는 침몰",
+        "goal": "기억 닻 때문에 과거 폭풍과 배신이 재현된다.",
+        "choice": "진여강이 자신의 증서를 버릴지 고민",
+        "reward": "파도 기억 공개",
+        "hook": "과거 침몰 원인이 소유권 독점이었다.",
+        "location": "침몰도시 중앙창고·무명시 지하역로",
+        "cast": [
+          "진여강",
+          "담운",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "새 문제와 지역 규칙 도입",
+        "cost": "과거 폭풍을 재현해 부유역참 두 곳이 파손되고 일행이 배상 책임을 진다."
+      },
+      "scene_blueprint": {
+        "episode": 111,
+        "act": "ACT3",
+        "subact_id": "A12",
+        "source_subact": "ACT3-SA4",
+        "title": "되풀이되는 침몰",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "기억 닻 때문에 과거 폭풍과 배신이 재현된다.",
+          "choice": "진여강이 자신의 증서를 버릴지 고민",
+          "reward": "파도 기억 공개",
+          "hook": "과거 침몰 원인이 소유권 독점이었다.",
+          "location": "침몰도시 중앙창고·무명시 지하역로",
+          "cast": [
+            "진여강",
+            "담운",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "새 문제와 지역 규칙 도입",
+          "cost": "과거 폭풍을 재현해 부유역참 두 곳이 파손되고 일행이 배상 책임을 진다."
+        },
+        "state_before": {
+          "previous_hook": "분리된 닻 하나가 폭풍을 부른다.",
+          "previous_cost": "닻을 여섯 칸으로 나누는 동안 작은 닻 하나가 폭풍에 휩쓸린다.",
+          "incoming_subact_cost": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 침몰도시 중앙창고·무명시 지하역로에서 즉시 행동 문제로 회수한다.",
+            "pressure": "분리된 닻 하나가 폭풍을 부른다.",
+            "action": "진여강·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "기억 닻 때문에 과거 폭풍과 배신이 재현된다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "새 문제와 지역 규칙 도입",
+            "action": "침몰도시 중앙창고·무명시 지하역로의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "과거 폭풍을 재현해 부유역참 두 곳이 파손되고 일행이 배상 책임을 진다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "기억 닻 때문에 과거 폭풍과 배신이 재현된다.",
+            "pressure": "수장 초상·과거 기록·공동 소유 실패를 조사해 담운과 천공무고의 연결을 확인한다.",
+            "action": "진여강·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 진여강이 자신의 증서를 버릴지 고민라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI067:first",
+            "action": "후보 참조(CI067:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "파도 기억 공개",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "진여강이 자신의 증서를 버릴지 고민",
+            "pressure": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "과거 폭풍을 재현해 부유역참 두 곳이 파손되고 일행이 배상 책임을 진다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "파도 기억 공개",
+            "pressure": "과거 폭풍을 재현해 부유역참 두 곳이 파손되고 일행이 배상 책임을 진다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "과거 침몰 원인이 소유권 독점이었다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "과거 폭풍을 재현해 부유역참 두 곳이 파손되고 일행이 배상 책임을 진다.",
+          "earned_reward": "파도 기억 공개",
+          "next_hook": "과거 침몰 원인이 소유권 독점이었다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI067:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 112,
+      "canonical_episode": {
+        "episode": 112,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA4",
+        "subact_title": "공동 소유와 수장의 얼굴",
+        "title": "여섯 개의 작은 닻",
+        "goal": "큰 닻을 여섯 작은 닻으로 나눠 각 섬에 맡긴다.",
+        "choice": "담운이 분산 책임 모델을 완성",
+        "reward": "여섯 닻 세트",
+        "hook": "작은 닻 하나가 담운에게 돌아오기를 거부한다.",
+        "location": "침몰도시 중앙창고·무명시 지하역로",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "규칙의 예외와 비용 확대",
+        "cost": "큰 닻을 나눠 단일 전투 기물로서의 위력을 영구히 잃는다."
+      },
+      "scene_blueprint": {
+        "episode": 112,
+        "act": "ACT3",
+        "subact_id": "A12",
+        "source_subact": "ACT3-SA4",
+        "title": "여섯 개의 작은 닻",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "큰 닻을 여섯 작은 닻으로 나눠 각 섬에 맡긴다.",
+          "choice": "담운이 분산 책임 모델을 완성",
+          "reward": "여섯 닻 세트",
+          "hook": "작은 닻 하나가 담운에게 돌아오기를 거부한다.",
+          "location": "침몰도시 중앙창고·무명시 지하역로",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "규칙의 예외와 비용 확대",
+          "cost": "큰 닻을 나눠 단일 전투 기물로서의 위력을 영구히 잃는다."
+        },
+        "state_before": {
+          "previous_hook": "과거 침몰 원인이 소유권 독점이었다.",
+          "previous_cost": "과거 폭풍을 재현해 부유역참 두 곳이 파손되고 일행이 배상 책임을 진다.",
+          "incoming_subact_cost": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 침몰도시 중앙창고·무명시 지하역로에서 즉시 행동 문제로 회수한다.",
+            "pressure": "과거 침몰 원인이 소유권 독점이었다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "큰 닻을 여섯 작은 닻으로 나눠 각 섬에 맡긴다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "규칙의 예외와 비용 확대",
+            "action": "침몰도시 중앙창고·무명시 지하역로의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "큰 닻을 나눠 단일 전투 기물로서의 위력을 영구히 잃는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "큰 닻을 여섯 작은 닻으로 나눠 각 섬에 맡긴다.",
+            "pressure": "수장 초상·과거 기록·공동 소유 실패를 조사해 담운과 천공무고의 연결을 확인한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 분산 책임 모델을 완성라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI068:first, BS001",
+            "action": "후보 참조(CI068:first, BS001)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "여섯 닻 세트",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 분산 책임 모델을 완성",
+            "pressure": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "큰 닻을 나눠 단일 전투 기물로서의 위력을 영구히 잃는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "여섯 닻 세트",
+            "pressure": "큰 닻을 나눠 단일 전투 기물로서의 위력을 영구히 잃는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "작은 닻 하나가 담운에게 돌아오기를 거부한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "큰 닻을 나눠 단일 전투 기물로서의 위력을 영구히 잃는다.",
+          "earned_reward": "여섯 닻 세트",
+          "next_hook": "작은 닻 하나가 담운에게 돌아오기를 거부한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI068:first"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS001"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 113,
+      "canonical_episode": {
+        "episode": 113,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA4",
+        "subact_title": "공동 소유와 수장의 얼굴",
+        "title": "가져가지 않는 구조",
+        "goal": "담운은 도시 보물을 수집하지 않고 출구와 기록만 복원한다.",
+        "choice": "진여강이 처음으로 비소유 해법 인정",
+        "reward": "장소 귀환 등록",
+        "hook": "도시 자체가 무주함에 장소 기록을 맡긴다.",
+        "location": "침몰도시 중앙창고·무명시 지하역로",
+        "cast": [
+          "담운",
+          "진여강",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "첫 실전 적용과 오판",
+        "cost": "보물을 가져가지 않아 잠수 장비 수리비와 다음 항해 자금을 확보하지 못한다."
+      },
+      "scene_blueprint": {
+        "episode": 113,
+        "act": "ACT3",
+        "subact_id": "A12",
+        "source_subact": "ACT3-SA4",
+        "title": "가져가지 않는 구조",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "담운은 도시 보물을 수집하지 않고 출구와 기록만 복원한다.",
+          "choice": "진여강이 처음으로 비소유 해법 인정",
+          "reward": "장소 귀환 등록",
+          "hook": "도시 자체가 무주함에 장소 기록을 맡긴다.",
+          "location": "침몰도시 중앙창고·무명시 지하역로",
+          "cast": [
+            "담운",
+            "진여강",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "첫 실전 적용과 오판",
+          "cost": "보물을 가져가지 않아 잠수 장비 수리비와 다음 항해 자금을 확보하지 못한다."
+        },
+        "state_before": {
+          "previous_hook": "작은 닻 하나가 담운에게 돌아오기를 거부한다.",
+          "previous_cost": "큰 닻을 나눠 단일 전투 기물로서의 위력을 영구히 잃는다.",
+          "incoming_subact_cost": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 침몰도시 중앙창고·무명시 지하역로에서 즉시 행동 문제로 회수한다.",
+            "pressure": "작은 닻 하나가 담운에게 돌아오기를 거부한다.",
+            "action": "담운·진여강가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "담운은 도시 보물을 수집하지 않고 출구와 기록만 복원한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "첫 실전 적용과 오판",
+            "action": "침몰도시 중앙창고·무명시 지하역로의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "보물을 가져가지 않아 잠수 장비 수리비와 다음 항해 자금을 확보하지 못한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "담운은 도시 보물을 수집하지 않고 출구와 기록만 복원한다.",
+            "pressure": "수장 초상·과거 기록·공동 소유 실패를 조사해 담운과 천공무고의 연결을 확인한다.",
+            "action": "담운·진여강가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 진여강이 처음으로 비소유 해법 인정라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "BS015",
+            "action": "후보 참조(BS015)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "장소 귀환 등록",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "진여강이 처음으로 비소유 해법 인정",
+            "pressure": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "보물을 가져가지 않아 잠수 장비 수리비와 다음 항해 자금을 확보하지 못한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "장소 귀환 등록",
+            "pressure": "보물을 가져가지 않아 잠수 장비 수리비와 다음 항해 자금을 확보하지 못한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "도시 자체가 무주함에 장소 기록을 맡긴다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "보물을 가져가지 않아 잠수 장비 수리비와 다음 항해 자금을 확보하지 못한다.",
+          "earned_reward": "장소 귀환 등록",
+          "next_hook": "도시 자체가 무주함에 장소 기록을 맡긴다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": [
+            "BS015"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 114,
+      "canonical_episode": {
+        "episode": 114,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA4",
+        "subact_title": "공동 소유와 수장의 얼굴",
+        "title": "물속의 냄새",
+        "goal": "두리가 바람 대신 거품과 소금 냄새로 길을 찾는다.",
+        "choice": "담운과 두리의 신뢰 강화",
+        "reward": "두리 수중 적응",
+        "hook": "두리가 초상에서 자신의 금빛 자국 냄새를 맡는다.",
+        "location": "침몰도시 중앙창고·무명시 지하역로",
+        "cast": [
+          "담운",
+          "두리",
+          "서린화",
+          "소예란",
+          "곽무석"
+        ],
+        "episode_function": "적대 세력의 압박 구체화",
+        "cost": "두리의 수중 적응 과정에서 바람방울 하나가 소금에 부식된다."
+      },
+      "scene_blueprint": {
+        "episode": 114,
+        "act": "ACT3",
+        "subact_id": "A12",
+        "source_subact": "ACT3-SA4",
+        "title": "물속의 냄새",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "두리가 바람 대신 거품과 소금 냄새로 길을 찾는다.",
+          "choice": "담운과 두리의 신뢰 강화",
+          "reward": "두리 수중 적응",
+          "hook": "두리가 초상에서 자신의 금빛 자국 냄새를 맡는다.",
+          "location": "침몰도시 중앙창고·무명시 지하역로",
+          "cast": [
+            "담운",
+            "두리",
+            "서린화",
+            "소예란",
+            "곽무석"
+          ],
+          "episode_function": "적대 세력의 압박 구체화",
+          "cost": "두리의 수중 적응 과정에서 바람방울 하나가 소금에 부식된다."
+        },
+        "state_before": {
+          "previous_hook": "도시 자체가 무주함에 장소 기록을 맡긴다.",
+          "previous_cost": "보물을 가져가지 않아 잠수 장비 수리비와 다음 항해 자금을 확보하지 못한다.",
+          "incoming_subact_cost": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 침몰도시 중앙창고·무명시 지하역로에서 즉시 행동 문제로 회수한다.",
+            "pressure": "도시 자체가 무주함에 장소 기록을 맡긴다.",
+            "action": "담운·두리가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "두리가 바람 대신 거품과 소금 냄새로 길을 찾는다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "적대 세력의 압박 구체화",
+            "action": "침몰도시 중앙창고·무명시 지하역로의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "두리의 수중 적응 과정에서 바람방울 하나가 소금에 부식된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "두리가 바람 대신 거품과 소금 냄새로 길을 찾는다.",
+            "pressure": "수장 초상·과거 기록·공동 소유 실패를 조사해 담운과 천공무고의 연결을 확인한다.",
+            "action": "담운·두리가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운과 두리의 신뢰 강화라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI069:first",
+            "action": "후보 참조(CI069:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "두리 수중 적응",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운과 두리의 신뢰 강화",
+            "pressure": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "두리의 수중 적응 과정에서 바람방울 하나가 소금에 부식된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "두리 수중 적응",
+            "pressure": "두리의 수중 적응 과정에서 바람방울 하나가 소금에 부식된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "두리가 초상에서 자신의 금빛 자국 냄새를 맡는다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "두리의 수중 적응 과정에서 바람방울 하나가 소금에 부식된다.",
+          "earned_reward": "두리 수중 적응",
+          "next_hook": "두리가 초상에서 자신의 금빛 자국 냄새를 맡는다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI069:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 115,
+      "canonical_episode": {
+        "episode": 115,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA4",
+        "subact_title": "공동 소유와 수장의 얼굴",
+        "title": "열린 감정서",
+        "goal": "린화가 여섯 가문 누구나 수정 가능한 공개 감정서를 만든다.",
+        "choice": "린화가 가문 명예보다 공개 검증 선택",
+        "reward": "열린 감정서",
+        "hook": "감정서 첫 오류 신고자가 진여강이다.",
+        "location": "침몰도시 중앙창고·무명시 지하역로",
+        "cast": [
+          "진여강",
+          "서린화",
+          "담운",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "서브액트 중간 선택",
+        "cost": "열린 감정서의 수정권을 모두에게 줘 린화가 최종 판정 독점권을 포기한다."
+      },
+      "scene_blueprint": {
+        "episode": 115,
+        "act": "ACT3",
+        "subact_id": "A12",
+        "source_subact": "ACT3-SA4",
+        "title": "열린 감정서",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "린화가 여섯 가문 누구나 수정 가능한 공개 감정서를 만든다.",
+          "choice": "린화가 가문 명예보다 공개 검증 선택",
+          "reward": "열린 감정서",
+          "hook": "감정서 첫 오류 신고자가 진여강이다.",
+          "location": "침몰도시 중앙창고·무명시 지하역로",
+          "cast": [
+            "진여강",
+            "서린화",
+            "담운",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "서브액트 중간 선택",
+          "cost": "열린 감정서의 수정권을 모두에게 줘 린화가 최종 판정 독점권을 포기한다."
+        },
+        "state_before": {
+          "previous_hook": "두리가 초상에서 자신의 금빛 자국 냄새를 맡는다.",
+          "previous_cost": "두리의 수중 적응 과정에서 바람방울 하나가 소금에 부식된다.",
+          "incoming_subact_cost": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 침몰도시 중앙창고·무명시 지하역로에서 즉시 행동 문제로 회수한다.",
+            "pressure": "두리가 초상에서 자신의 금빛 자국 냄새를 맡는다.",
+            "action": "진여강·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "린화가 여섯 가문 누구나 수정 가능한 공개 감정서를 만든다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 중간 선택",
+            "action": "침몰도시 중앙창고·무명시 지하역로의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "열린 감정서의 수정권을 모두에게 줘 린화가 최종 판정 독점권을 포기한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "린화가 여섯 가문 누구나 수정 가능한 공개 감정서를 만든다.",
+            "pressure": "수장 초상·과거 기록·공동 소유 실패를 조사해 담운과 천공무고의 연결을 확인한다.",
+            "action": "진여강·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 린화가 가문 명예보다 공개 검증 선택라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI070:first",
+            "action": "후보 참조(CI070:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "열린 감정서",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "린화가 가문 명예보다 공개 검증 선택",
+            "pressure": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "열린 감정서의 수정권을 모두에게 줘 린화가 최종 판정 독점권을 포기한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "열린 감정서",
+            "pressure": "열린 감정서의 수정권을 모두에게 줘 린화가 최종 판정 독점권을 포기한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "감정서 첫 오류 신고자가 진여강이다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "열린 감정서의 수정권을 모두에게 줘 린화가 최종 판정 독점권을 포기한다.",
+          "earned_reward": "열린 감정서",
+          "next_hook": "감정서 첫 오류 신고자가 진여강이다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI070:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 116,
+      "canonical_episode": {
+        "episode": 116,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA4",
+        "subact_title": "공동 소유와 수장의 얼굴",
+        "title": "진여강의 첫 손해",
+        "goal": "진여강이 가진 닻 지분을 무상으로 공동체에 돌려준다.",
+        "choice": "라이벌 관계가 협력으로 변화",
+        "reward": "책임 지분 개념",
+        "hook": "상련 본부가 진여강의 후원을 끊는다.",
+        "location": "침몰도시 중앙창고·무명시 지하역로",
+        "cast": [
+          "진여강",
+          "담운",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "선택의 후폭풍과 관계 변화",
+        "cost": "진여강은 상련 후원과 선박 지분을 잃고 개인 채무를 떠안는다."
+      },
+      "scene_blueprint": {
+        "episode": 116,
+        "act": "ACT3",
+        "subact_id": "A12",
+        "source_subact": "ACT3-SA4",
+        "title": "진여강의 첫 손해",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "진여강이 가진 닻 지분을 무상으로 공동체에 돌려준다.",
+          "choice": "라이벌 관계가 협력으로 변화",
+          "reward": "책임 지분 개념",
+          "hook": "상련 본부가 진여강의 후원을 끊는다.",
+          "location": "침몰도시 중앙창고·무명시 지하역로",
+          "cast": [
+            "진여강",
+            "담운",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "선택의 후폭풍과 관계 변화",
+          "cost": "진여강은 상련 후원과 선박 지분을 잃고 개인 채무를 떠안는다."
+        },
+        "state_before": {
+          "previous_hook": "감정서 첫 오류 신고자가 진여강이다.",
+          "previous_cost": "열린 감정서의 수정권을 모두에게 줘 린화가 최종 판정 독점권을 포기한다.",
+          "incoming_subact_cost": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 침몰도시 중앙창고·무명시 지하역로에서 즉시 행동 문제로 회수한다.",
+            "pressure": "감정서 첫 오류 신고자가 진여강이다.",
+            "action": "진여강·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "진여강이 가진 닻 지분을 무상으로 공동체에 돌려준다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "선택의 후폭풍과 관계 변화",
+            "action": "침몰도시 중앙창고·무명시 지하역로의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "진여강은 상련 후원과 선박 지분을 잃고 개인 채무를 떠안는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "진여강이 가진 닻 지분을 무상으로 공동체에 돌려준다.",
+            "pressure": "수장 초상·과거 기록·공동 소유 실패를 조사해 담운과 천공무고의 연결을 확인한다.",
+            "action": "진여강·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 라이벌 관계가 협력으로 변화라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "BS014",
+            "action": "후보 참조(BS014)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "책임 지분 개념",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "라이벌 관계가 협력으로 변화",
+            "pressure": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "진여강은 상련 후원과 선박 지분을 잃고 개인 채무를 떠안는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "책임 지분 개념",
+            "pressure": "진여강은 상련 후원과 선박 지분을 잃고 개인 채무를 떠안는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "상련 본부가 진여강의 후원을 끊는다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "진여강은 상련 후원과 선박 지분을 잃고 개인 채무를 떠안는다.",
+          "earned_reward": "책임 지분 개념",
+          "next_hook": "상련 본부가 진여강의 후원을 끊는다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": [
+            "BS014"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 117,
+      "canonical_episode": {
+        "episode": 117,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA4",
+        "subact_title": "공동 소유와 수장의 얼굴",
+        "title": "침몰도시를 맡다",
+        "goal": "도시는 축소지도를 일행에게 소유가 아닌 위탁으로 건넨다.",
+        "choice": "담운이 위탁과 소유를 구분",
+        "reward": "침몰도시 축소지도",
+        "hook": "지도 속 박물관에 수장 초상이 나타난다.",
+        "location": "침몰도시 중앙창고·무명시 지하역로",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "숨은 진실 또는 역전",
+        "cost": "도시 지도를 위탁받아 일행은 이후 분쟁 때마다 응답해야 하는 책임을 진다."
+      },
+      "scene_blueprint": {
+        "episode": 117,
+        "act": "ACT3",
+        "subact_id": "A12",
+        "source_subact": "ACT3-SA4",
+        "title": "침몰도시를 맡다",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "도시는 축소지도를 일행에게 소유가 아닌 위탁으로 건넨다.",
+          "choice": "담운이 위탁과 소유를 구분",
+          "reward": "침몰도시 축소지도",
+          "hook": "지도 속 박물관에 수장 초상이 나타난다.",
+          "location": "침몰도시 중앙창고·무명시 지하역로",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "숨은 진실 또는 역전",
+          "cost": "도시 지도를 위탁받아 일행은 이후 분쟁 때마다 응답해야 하는 책임을 진다."
+        },
+        "state_before": {
+          "previous_hook": "상련 본부가 진여강의 후원을 끊는다.",
+          "previous_cost": "진여강은 상련 후원과 선박 지분을 잃고 개인 채무를 떠안는다.",
+          "incoming_subact_cost": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 침몰도시 중앙창고·무명시 지하역로에서 즉시 행동 문제로 회수한다.",
+            "pressure": "상련 본부가 진여강의 후원을 끊는다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "도시는 축소지도를 일행에게 소유가 아닌 위탁으로 건넨다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "숨은 진실 또는 역전",
+            "action": "침몰도시 중앙창고·무명시 지하역로의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "도시 지도를 위탁받아 일행은 이후 분쟁 때마다 응답해야 하는 책임을 진다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "도시는 축소지도를 일행에게 소유가 아닌 위탁으로 건넨다.",
+            "pressure": "수장 초상·과거 기록·공동 소유 실패를 조사해 담운과 천공무고의 연결을 확인한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 위탁과 소유를 구분라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "침몰도시 축소지도",
+            "action": "후보 참조(침몰도시 축소지도)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "침몰도시 축소지도",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 위탁과 소유를 구분",
+            "pressure": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "도시 지도를 위탁받아 일행은 이후 분쟁 때마다 응답해야 하는 책임을 진다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "침몰도시 축소지도",
+            "pressure": "도시 지도를 위탁받아 일행은 이후 분쟁 때마다 응답해야 하는 책임을 진다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "지도 속 박물관에 수장 초상이 나타난다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "도시 지도를 위탁받아 일행은 이후 분쟁 때마다 응답해야 하는 책임을 진다.",
+          "earned_reward": "침몰도시 축소지도",
+          "next_hook": "지도 속 박물관에 수장 초상이 나타난다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 118,
+      "canonical_episode": {
+        "episode": 118,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA4",
+        "subact_title": "공동 소유와 수장의 얼굴",
+        "title": "마지막 수장의 얼굴",
+        "goal": "초상이 담운과 동일하지만 표정과 상처가 다르다.",
+        "choice": "동료들이 담운 정체를 의심하기 시작",
+        "reward": "수장 초상 단서",
+        "hook": "초상 아래 이름은 긁혀 있다.",
+        "location": "침몰도시 중앙창고·무명시 지하역로",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "해결책의 조립과 대가 확정",
+        "cost": "수장 초상 때문에 동료들이 담운을 숨김없이 심문하며 신뢰가 일시 균열된다."
+      },
+      "scene_blueprint": {
+        "episode": 118,
+        "act": "ACT3",
+        "subact_id": "A12",
+        "source_subact": "ACT3-SA4",
+        "title": "마지막 수장의 얼굴",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "초상이 담운과 동일하지만 표정과 상처가 다르다.",
+          "choice": "동료들이 담운 정체를 의심하기 시작",
+          "reward": "수장 초상 단서",
+          "hook": "초상 아래 이름은 긁혀 있다.",
+          "location": "침몰도시 중앙창고·무명시 지하역로",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "해결책의 조립과 대가 확정",
+          "cost": "수장 초상 때문에 동료들이 담운을 숨김없이 심문하며 신뢰가 일시 균열된다."
+        },
+        "state_before": {
+          "previous_hook": "지도 속 박물관에 수장 초상이 나타난다.",
+          "previous_cost": "도시 지도를 위탁받아 일행은 이후 분쟁 때마다 응답해야 하는 책임을 진다.",
+          "incoming_subact_cost": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 침몰도시 중앙창고·무명시 지하역로에서 즉시 행동 문제로 회수한다.",
+            "pressure": "지도 속 박물관에 수장 초상이 나타난다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "초상이 담운과 동일하지만 표정과 상처가 다르다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "해결책의 조립과 대가 확정",
+            "action": "침몰도시 중앙창고·무명시 지하역로의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "수장 초상 때문에 동료들이 담운을 숨김없이 심문하며 신뢰가 일시 균열된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "초상이 담운과 동일하지만 표정과 상처가 다르다.",
+            "pressure": "수장 초상·과거 기록·공동 소유 실패를 조사해 담운과 천공무고의 연결을 확인한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 동료들이 담운 정체를 의심하기 시작라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI071:first, BS016",
+            "action": "후보 참조(CI071:first, BS016)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "수장 초상 단서",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "동료들이 담운 정체를 의심하기 시작",
+            "pressure": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "수장 초상 때문에 동료들이 담운을 숨김없이 심문하며 신뢰가 일시 균열된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "수장 초상 단서",
+            "pressure": "수장 초상 때문에 동료들이 담운을 숨김없이 심문하며 신뢰가 일시 균열된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "초상 아래 이름은 긁혀 있다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "수장 초상 때문에 동료들이 담운을 숨김없이 심문하며 신뢰가 일시 균열된다.",
+          "earned_reward": "수장 초상 단서",
+          "next_hook": "초상 아래 이름은 긁혀 있다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI071:first"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS016"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 119,
+      "canonical_episode": {
+        "episode": 119,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA4",
+        "subact_title": "공동 소유와 수장의 얼굴",
+        "title": "내 얼굴을 가진 타인",
+        "goal": "담운이 자신은 초상의 환생이 아니라고 선언한다.",
+        "choice": "담운이 정체보다 현재 행동을 선택",
+        "reward": "어린 배달패 단서",
+        "hook": "무명시에서 이름을 사면 답을 준다는 초대장이 온다.",
+        "location": "침몰도시 중앙창고·무명시 지하역로",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "서브액트 클라이맥스",
+        "cost": "담운은 과거 이름 복원을 거부해 즉시 얻을 수 있는 수장 권한을 놓친다."
+      },
+      "scene_blueprint": {
+        "episode": 119,
+        "act": "ACT3",
+        "subact_id": "A12",
+        "source_subact": "ACT3-SA4",
+        "title": "내 얼굴을 가진 타인",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "담운이 자신은 초상의 환생이 아니라고 선언한다.",
+          "choice": "담운이 정체보다 현재 행동을 선택",
+          "reward": "어린 배달패 단서",
+          "hook": "무명시에서 이름을 사면 답을 준다는 초대장이 온다.",
+          "location": "침몰도시 중앙창고·무명시 지하역로",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "서브액트 클라이맥스",
+          "cost": "담운은 과거 이름 복원을 거부해 즉시 얻을 수 있는 수장 권한을 놓친다."
+        },
+        "state_before": {
+          "previous_hook": "초상 아래 이름은 긁혀 있다.",
+          "previous_cost": "수장 초상 때문에 동료들이 담운을 숨김없이 심문하며 신뢰가 일시 균열된다.",
+          "incoming_subact_cost": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 침몰도시 중앙창고·무명시 지하역로에서 즉시 행동 문제로 회수한다.",
+            "pressure": "초상 아래 이름은 긁혀 있다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "담운이 자신은 초상의 환생이 아니라고 선언한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 클라이맥스",
+            "action": "침몰도시 중앙창고·무명시 지하역로의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "담운은 과거 이름 복원을 거부해 즉시 얻을 수 있는 수장 권한을 놓친다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "담운이 자신은 초상의 환생이 아니라고 선언한다.",
+            "pressure": "수장 초상·과거 기록·공동 소유 실패를 조사해 담운과 천공무고의 연결을 확인한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 정체보다 현재 행동을 선택라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "어린 배달패 단서",
+            "action": "후보 참조(어린 배달패 단서)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "어린 배달패 단서",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 정체보다 현재 행동을 선택",
+            "pressure": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "담운은 과거 이름 복원을 거부해 즉시 얻을 수 있는 수장 권한을 놓친다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "어린 배달패 단서",
+            "pressure": "담운은 과거 이름 복원을 거부해 즉시 얻을 수 있는 수장 권한을 놓친다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "무명시에서 이름을 사면 답을 준다는 초대장이 온다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "담운은 과거 이름 복원을 거부해 즉시 얻을 수 있는 수장 권한을 놓친다.",
+          "earned_reward": "어린 배달패 단서",
+          "next_hook": "무명시에서 이름을 사면 답을 준다는 초대장이 온다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 120,
+      "canonical_episode": {
+        "episode": 120,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA4",
+        "subact_title": "공동 소유와 수장의 얼굴",
+        "title": "이름을 사러 가는 길",
+        "goal": "일행이 지하 역로를 통해 무명시로 향한다.",
+        "choice": "린화가 담운의 이름을 공식 기록하려 함",
+        "reward": "무명시 등표",
+        "hook": "역로 입구에서 담운의 이름이 통행패에서 사라진다.",
+        "location": "침몰도시 중앙창고·무명시 지하역로",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "보상 회수와 다음 구간 훅",
+        "cost": "무명시로 향하는 동안 닻망 관리 계약 때문에 진여강이 일행과 잠시 떨어진다."
+      },
+      "scene_blueprint": {
+        "episode": 120,
+        "act": "ACT3",
+        "subact_id": "A12",
+        "source_subact": "ACT3-SA4",
+        "title": "이름을 사러 가는 길",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "일행이 지하 역로를 통해 무명시로 향한다.",
+          "choice": "린화가 담운의 이름을 공식 기록하려 함",
+          "reward": "무명시 등표",
+          "hook": "역로 입구에서 담운의 이름이 통행패에서 사라진다.",
+          "location": "침몰도시 중앙창고·무명시 지하역로",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "보상 회수와 다음 구간 훅",
+          "cost": "무명시로 향하는 동안 닻망 관리 계약 때문에 진여강이 일행과 잠시 떨어진다."
+        },
+        "state_before": {
+          "previous_hook": "무명시에서 이름을 사면 답을 준다는 초대장이 온다.",
+          "previous_cost": "담운은 과거 이름 복원을 거부해 즉시 얻을 수 있는 수장 권한을 놓친다.",
+          "incoming_subact_cost": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 침몰도시 중앙창고·무명시 지하역로에서 즉시 행동 문제로 회수한다.",
+            "pressure": "무명시에서 이름을 사면 답을 준다는 초대장이 온다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "일행이 지하 역로를 통해 무명시로 향한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "보상 회수와 다음 구간 훅",
+            "action": "침몰도시 중앙창고·무명시 지하역로의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "무명시로 향하는 동안 닻망 관리 계약 때문에 진여강이 일행과 잠시 떨어진다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "일행이 지하 역로를 통해 무명시로 향한다.",
+            "pressure": "수장 초상·과거 기록·공동 소유 실패를 조사해 담운과 천공무고의 연결을 확인한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 린화가 담운의 이름을 공식 기록하려 함라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI061:final, CI062:final, CI064:final, CI065:final, CI068:final, CI069:final, CI070:final, CI072:first, SET015:complete, BS014, BS015",
+            "action": "후보 참조(CI061:final, CI062:final, CI064:final, CI065:final, CI068:final, CI069:final, CI070:final, CI072:first, SET015:complete, BS014, BS015)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "무명시 등표",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "린화가 담운의 이름을 공식 기록하려 함",
+            "pressure": "여섯 가문의 공동 관리가 중앙 체계보다 느리다는 비판과 함께 담운의 정체가 의심받는다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "무명시로 향하는 동안 닻망 관리 계약 때문에 진여강이 일행과 잠시 떨어진다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "무명시 등표",
+            "pressure": "이름과 행적을 증명해야 하는 부담이 커지고 무명시에서 담운의 이름이 공격 대상이 된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "역로 입구에서 담운의 이름이 통행패에서 사라진다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "무명시로 향하는 동안 닻망 관리 계약 때문에 진여강이 일행과 잠시 떨어진다.",
+          "earned_reward": "무명시 등표",
+          "next_hook": "역로 입구에서 담운의 이름이 통행패에서 사라진다.",
+          "outgoing_subact_cost": "이름과 행적을 증명해야 하는 부담이 커지고 무명시에서 담운의 이름이 공격 대상이 된다."
+        },
+        "registry_events": {
+          "items": [
+            "CI061:final",
+            "CI062:final",
+            "CI064:final",
+            "CI065:final",
+            "CI068:final",
+            "CI069:final",
+            "CI070:final",
+            "CI072:first"
+          ],
+          "sets": [
+            "SET015:complete"
+          ],
+          "beasts": [
+            "BS014",
+            "BS015"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1597 @@
+{
+  "version": "v3.4-manuscript-packet-v1",
+  "status": "derived_read_only_drafting_input",
+  "protected_canon_unchanged": true,
+  "range": [
+    91,
+    100
+  ],
+  "episodes": [
+    {
+      "episode": 91,
+      "canonical_episode": {
+        "episode": 91,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA2",
+        "subact_title": "하나를 놓아야 하는 방",
+        "title": "그림자 속의 두리",
+        "goal": "두리가 생명 수납 금지를 어긴 전시실 오류에 갇힌다.",
+        "choice": "담운이 검함을 부수려 함",
+        "reward": "신수 기록 오류 폭주",
+        "hook": "두리가 안에서 무언가의 이름 냄새를 맡는다.",
+        "location": "폐분관 내부 전시실·동해문",
+        "cast": [
+          "담운",
+          "두리",
+          "서린화",
+          "소예란",
+          "곽무석"
+        ],
+        "episode_function": "새 문제와 지역 규칙 도입",
+        "cost": "검함을 깨려다 담운의 손바닥이 갈라지고 전시실 제어권이 더 불안정해진다."
+      },
+      "scene_blueprint": {
+        "episode": 91,
+        "act": "ACT3",
+        "subact_id": "A10",
+        "source_subact": "ACT3-SA2",
+        "title": "그림자 속의 두리",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "두리가 생명 수납 금지를 어긴 전시실 오류에 갇힌다.",
+          "choice": "담운이 검함을 부수려 함",
+          "reward": "신수 기록 오류 폭주",
+          "hook": "두리가 안에서 무언가의 이름 냄새를 맡는다.",
+          "location": "폐분관 내부 전시실·동해문",
+          "cast": [
+            "담운",
+            "두리",
+            "서린화",
+            "소예란",
+            "곽무석"
+          ],
+          "episode_function": "새 문제와 지역 규칙 도입",
+          "cost": "검함을 깨려다 담운의 손바닥이 갈라지고 전시실 제어권이 더 불안정해진다."
+        },
+        "state_before": {
+          "previous_hook": "무주함이 임의로 두리를 전시실 그림자에 가둔다.",
+          "previous_cost": "무엇을 뺄지 합의하지 못해 두리가 전시실 오류에 빨려 들어간다.",
+          "incoming_subact_cost": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 폐분관 내부 전시실·동해문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "무주함이 임의로 두리를 전시실 그림자에 가둔다.",
+            "action": "담운·두리가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "두리가 생명 수납 금지를 어긴 전시실 오류에 갇힌다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "새 문제와 지역 규칙 도입",
+            "action": "폐분관 내부 전시실·동해문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "검함을 깨려다 담운의 손바닥이 갈라지고 전시실 제어권이 더 불안정해진다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "두리가 생명 수납 금지를 어긴 전시실 오류에 갇힌다.",
+            "pressure": "두리를 구하기 위해 어떤 핵심 유산을 영구 귀환할지 결정한다.",
+            "action": "담운·두리가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 검함을 부수려 함라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI055:first",
+            "action": "후보 참조(CI055:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "신수 기록 오류 폭주",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 검함을 부수려 함",
+            "pressure": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "검함을 깨려다 담운의 손바닥이 갈라지고 전시실 제어권이 더 불안정해진다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "신수 기록 오류 폭주",
+            "pressure": "검함을 깨려다 담운의 손바닥이 갈라지고 전시실 제어권이 더 불안정해진다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "두리가 안에서 무언가의 이름 냄새를 맡는다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "검함을 깨려다 담운의 손바닥이 갈라지고 전시실 제어권이 더 불안정해진다.",
+          "earned_reward": "신수 기록 오류 폭주",
+          "next_hook": "두리가 안에서 무언가의 이름 냄새를 맡는다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI055:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 92,
+      "canonical_episode": {
+        "episode": 92,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA2",
+        "subact_title": "하나를 놓아야 하는 방",
+        "title": "하나를 놓아야 한다",
+        "goal": "전시실을 안정시키려면 핵심 수집품 하나를 영구 귀환해야 한다.",
+        "choice": "담운이 독단적으로 결정하려 함",
+        "reward": "영구 놓아주기 조건",
+        "hook": "철구의 목소리가 소리 없는 망치에서 들린다.",
+        "location": "폐분관 내부 전시실·동해문",
+        "cast": [
+          "담운",
+          "철구",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "규칙의 예외와 비용 확대",
+        "cost": "영구 귀환 대상을 고르는 동안 두리의 호흡이 눈에 띄게 약해진다."
+      },
+      "scene_blueprint": {
+        "episode": 92,
+        "act": "ACT3",
+        "subact_id": "A10",
+        "source_subact": "ACT3-SA2",
+        "title": "하나를 놓아야 한다",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "전시실을 안정시키려면 핵심 수집품 하나를 영구 귀환해야 한다.",
+          "choice": "담운이 독단적으로 결정하려 함",
+          "reward": "영구 놓아주기 조건",
+          "hook": "철구의 목소리가 소리 없는 망치에서 들린다.",
+          "location": "폐분관 내부 전시실·동해문",
+          "cast": [
+            "담운",
+            "철구",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "규칙의 예외와 비용 확대",
+          "cost": "영구 귀환 대상을 고르는 동안 두리의 호흡이 눈에 띄게 약해진다."
+        },
+        "state_before": {
+          "previous_hook": "두리가 안에서 무언가의 이름 냄새를 맡는다.",
+          "previous_cost": "검함을 깨려다 담운의 손바닥이 갈라지고 전시실 제어권이 더 불안정해진다.",
+          "incoming_subact_cost": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 폐분관 내부 전시실·동해문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "두리가 안에서 무언가의 이름 냄새를 맡는다.",
+            "action": "담운·철구가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "전시실을 안정시키려면 핵심 수집품 하나를 영구 귀환해야 한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "규칙의 예외와 비용 확대",
+            "action": "폐분관 내부 전시실·동해문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "영구 귀환 대상을 고르는 동안 두리의 호흡이 눈에 띄게 약해진다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "전시실을 안정시키려면 핵심 수집품 하나를 영구 귀환해야 한다.",
+            "pressure": "두리를 구하기 위해 어떤 핵심 유산을 영구 귀환할지 결정한다.",
+            "action": "담운·철구가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 독단적으로 결정하려 함라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI056:first",
+            "action": "후보 참조(CI056:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "영구 놓아주기 조건",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 독단적으로 결정하려 함",
+            "pressure": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "영구 귀환 대상을 고르는 동안 두리의 호흡이 눈에 띄게 약해진다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "영구 놓아주기 조건",
+            "pressure": "영구 귀환 대상을 고르는 동안 두리의 호흡이 눈에 띄게 약해진다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "철구의 목소리가 소리 없는 망치에서 들린다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "영구 귀환 대상을 고르는 동안 두리의 호흡이 눈에 띄게 약해진다.",
+          "earned_reward": "영구 놓아주기 조건",
+          "next_hook": "철구의 목소리가 소리 없는 망치에서 들린다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI056:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 93,
+      "canonical_episode": {
+        "episode": 93,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA2",
+        "subact_title": "하나를 놓아야 하는 방",
+        "title": "부러진 반치",
+        "goal": "전시실 균열을 자르던 반치가 두 동강 난다.",
+        "choice": "담운이 힘으로 해결하려 한 대가",
+        "reward": "반치 파손",
+        "hook": "부러진 단면에 천품과 같은 문양이 보인다.",
+        "location": "폐분관 내부 전시실·동해문",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "첫 실전 적용과 오판",
+        "cost": "반치가 부러져 담운은 다음 여섯 화 동안 주 무기를 잃는다."
+      },
+      "scene_blueprint": {
+        "episode": 93,
+        "act": "ACT3",
+        "subact_id": "A10",
+        "source_subact": "ACT3-SA2",
+        "title": "부러진 반치",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "전시실 균열을 자르던 반치가 두 동강 난다.",
+          "choice": "담운이 힘으로 해결하려 한 대가",
+          "reward": "반치 파손",
+          "hook": "부러진 단면에 천품과 같은 문양이 보인다.",
+          "location": "폐분관 내부 전시실·동해문",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "첫 실전 적용과 오판",
+          "cost": "반치가 부러져 담운은 다음 여섯 화 동안 주 무기를 잃는다."
+        },
+        "state_before": {
+          "previous_hook": "철구의 목소리가 소리 없는 망치에서 들린다.",
+          "previous_cost": "영구 귀환 대상을 고르는 동안 두리의 호흡이 눈에 띄게 약해진다.",
+          "incoming_subact_cost": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 폐분관 내부 전시실·동해문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "철구의 목소리가 소리 없는 망치에서 들린다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "전시실 균열을 자르던 반치가 두 동강 난다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "첫 실전 적용과 오판",
+            "action": "폐분관 내부 전시실·동해문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "반치가 부러져 담운은 다음 여섯 화 동안 주 무기를 잃는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "전시실 균열을 자르던 반치가 두 동강 난다.",
+            "pressure": "두리를 구하기 위해 어떤 핵심 유산을 영구 귀환할지 결정한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 힘으로 해결하려 한 대가라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI057:first",
+            "action": "후보 참조(CI057:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "반치 파손",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 힘으로 해결하려 한 대가",
+            "pressure": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "반치가 부러져 담운은 다음 여섯 화 동안 주 무기를 잃는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "반치 파손",
+            "pressure": "반치가 부러져 담운은 다음 여섯 화 동안 주 무기를 잃는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "부러진 단면에 천품과 같은 문양이 보인다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "반치가 부러져 담운은 다음 여섯 화 동안 주 무기를 잃는다.",
+          "earned_reward": "반치 파손",
+          "next_hook": "부러진 단면에 천품과 같은 문양이 보인다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI057:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 94,
+      "canonical_episode": {
+        "episode": 94,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA2",
+        "subact_title": "하나를 놓아야 하는 방",
+        "title": "망치의 귀환",
+        "goal": "소리 없는 망치를 청래역 대장간으로 영구 귀환시키기로 한다.",
+        "choice": "담운과 린화가 독단 문제로 크게 충돌",
+        "reward": "망치 놓아줌",
+        "hook": "세트 5품 효과가 사라진다.",
+        "location": "폐분관 내부 전시실·동해문",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "적대 세력의 압박 구체화",
+        "cost": "망치를 놓아 무명의 대장장이 5품 세트가 해체되고 수리 능력이 크게 감소한다."
+      },
+      "scene_blueprint": {
+        "episode": 94,
+        "act": "ACT3",
+        "subact_id": "A10",
+        "source_subact": "ACT3-SA2",
+        "title": "망치의 귀환",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "소리 없는 망치를 청래역 대장간으로 영구 귀환시키기로 한다.",
+          "choice": "담운과 린화가 독단 문제로 크게 충돌",
+          "reward": "망치 놓아줌",
+          "hook": "세트 5품 효과가 사라진다.",
+          "location": "폐분관 내부 전시실·동해문",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "적대 세력의 압박 구체화",
+          "cost": "망치를 놓아 무명의 대장장이 5품 세트가 해체되고 수리 능력이 크게 감소한다."
+        },
+        "state_before": {
+          "previous_hook": "부러진 단면에 천품과 같은 문양이 보인다.",
+          "previous_cost": "반치가 부러져 담운은 다음 여섯 화 동안 주 무기를 잃는다.",
+          "incoming_subact_cost": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 폐분관 내부 전시실·동해문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "부러진 단면에 천품과 같은 문양이 보인다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "소리 없는 망치를 청래역 대장간으로 영구 귀환시키기로 한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "적대 세력의 압박 구체화",
+            "action": "폐분관 내부 전시실·동해문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "망치를 놓아 무명의 대장장이 5품 세트가 해체되고 수리 능력이 크게 감소한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "소리 없는 망치를 청래역 대장간으로 영구 귀환시키기로 한다.",
+            "pressure": "두리를 구하기 위해 어떤 핵심 유산을 영구 귀환할지 결정한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운과 린화가 독단 문제로 크게 충돌라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "SET012:complete, BS001",
+            "action": "후보 참조(SET012:complete, BS001)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "망치 놓아줌",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운과 린화가 독단 문제로 크게 충돌",
+            "pressure": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "망치를 놓아 무명의 대장장이 5품 세트가 해체되고 수리 능력이 크게 감소한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "망치 놓아줌",
+            "pressure": "망치를 놓아 무명의 대장장이 5품 세트가 해체되고 수리 능력이 크게 감소한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "세트 5품 효과가 사라진다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "망치를 놓아 무명의 대장장이 5품 세트가 해체되고 수리 능력이 크게 감소한다.",
+          "earned_reward": "망치 놓아줌",
+          "next_hook": "세트 5품 효과가 사라진다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [
+            "SET012:complete"
+          ],
+          "beasts": [
+            "BS001"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 95,
+      "canonical_episode": {
+        "episode": 95,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA2",
+        "subact_title": "하나를 놓아야 하는 방",
+        "title": "멀리 있는 대장간",
+        "goal": "귀환 기록판을 이용해 망치를 철구에게 돌려보낸다.",
+        "choice": "담운이 비워도 관계가 끊기지 않음을 체감",
+        "reward": "귀환 기록판 획득",
+        "hook": "철구가 망치로 반치 수리법을 두드려 보낸다.",
+        "location": "폐분관 내부 전시실·동해문",
+        "cast": [
+          "담운",
+          "철구",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "서브액트 중간 선택",
+        "cost": "귀환 기록판을 가동한 대가로 청래역과의 통신은 한 달에 한 번으로 제한된다."
+      },
+      "scene_blueprint": {
+        "episode": 95,
+        "act": "ACT3",
+        "subact_id": "A10",
+        "source_subact": "ACT3-SA2",
+        "title": "멀리 있는 대장간",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "귀환 기록판을 이용해 망치를 철구에게 돌려보낸다.",
+          "choice": "담운이 비워도 관계가 끊기지 않음을 체감",
+          "reward": "귀환 기록판 획득",
+          "hook": "철구가 망치로 반치 수리법을 두드려 보낸다.",
+          "location": "폐분관 내부 전시실·동해문",
+          "cast": [
+            "담운",
+            "철구",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "서브액트 중간 선택",
+          "cost": "귀환 기록판을 가동한 대가로 청래역과의 통신은 한 달에 한 번으로 제한된다."
+        },
+        "state_before": {
+          "previous_hook": "세트 5품 효과가 사라진다.",
+          "previous_cost": "망치를 놓아 무명의 대장장이 5품 세트가 해체되고 수리 능력이 크게 감소한다.",
+          "incoming_subact_cost": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 폐분관 내부 전시실·동해문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "세트 5품 효과가 사라진다.",
+            "action": "담운·철구가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "귀환 기록판을 이용해 망치를 철구에게 돌려보낸다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 중간 선택",
+            "action": "폐분관 내부 전시실·동해문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "귀환 기록판을 가동한 대가로 청래역과의 통신은 한 달에 한 번으로 제한된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "귀환 기록판을 이용해 망치를 철구에게 돌려보낸다.",
+            "pressure": "두리를 구하기 위해 어떤 핵심 유산을 영구 귀환할지 결정한다.",
+            "action": "담운·철구가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 비워도 관계가 끊기지 않음을 체감라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "귀환 기록판 획득",
+            "action": "후보 참조(귀환 기록판 획득)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "귀환 기록판 획득",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 비워도 관계가 끊기지 않음을 체감",
+            "pressure": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "귀환 기록판을 가동한 대가로 청래역과의 통신은 한 달에 한 번으로 제한된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "귀환 기록판 획득",
+            "pressure": "귀환 기록판을 가동한 대가로 청래역과의 통신은 한 달에 한 번으로 제한된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "철구가 망치로 반치 수리법을 두드려 보낸다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "귀환 기록판을 가동한 대가로 청래역과의 통신은 한 달에 한 번으로 제한된다.",
+          "earned_reward": "귀환 기록판 획득",
+          "next_hook": "철구가 망치로 반치 수리법을 두드려 보낸다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 96,
+      "canonical_episode": {
+        "episode": 96,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA2",
+        "subact_title": "하나를 놓아야 하는 방",
+        "title": "무너지는 첫 번째 방",
+        "goal": "전시실 일부를 포기하고 두리를 구출한다.",
+        "choice": "일행이 수집량보다 안전 규칙을 합의",
+        "reward": "전시실 축소",
+        "hook": "폐분관 벽 뒤에서 중앙핵 그림이 드러난다.",
+        "location": "폐분관 내부 전시실·동해문",
+        "cast": [
+          "두리",
+          "담운",
+          "서린화",
+          "소예란",
+          "곽무석"
+        ],
+        "episode_function": "선택의 후폭풍과 관계 변화",
+        "cost": "전시실 한 방을 포기하며 그 안의 보조 수집품 네 점을 잃는다."
+      },
+      "scene_blueprint": {
+        "episode": 96,
+        "act": "ACT3",
+        "subact_id": "A10",
+        "source_subact": "ACT3-SA2",
+        "title": "무너지는 첫 번째 방",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "전시실 일부를 포기하고 두리를 구출한다.",
+          "choice": "일행이 수집량보다 안전 규칙을 합의",
+          "reward": "전시실 축소",
+          "hook": "폐분관 벽 뒤에서 중앙핵 그림이 드러난다.",
+          "location": "폐분관 내부 전시실·동해문",
+          "cast": [
+            "두리",
+            "담운",
+            "서린화",
+            "소예란",
+            "곽무석"
+          ],
+          "episode_function": "선택의 후폭풍과 관계 변화",
+          "cost": "전시실 한 방을 포기하며 그 안의 보조 수집품 네 점을 잃는다."
+        },
+        "state_before": {
+          "previous_hook": "철구가 망치로 반치 수리법을 두드려 보낸다.",
+          "previous_cost": "귀환 기록판을 가동한 대가로 청래역과의 통신은 한 달에 한 번으로 제한된다.",
+          "incoming_subact_cost": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 폐분관 내부 전시실·동해문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "철구가 망치로 반치 수리법을 두드려 보낸다.",
+            "action": "두리·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "전시실 일부를 포기하고 두리를 구출한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "선택의 후폭풍과 관계 변화",
+            "action": "폐분관 내부 전시실·동해문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "전시실 한 방을 포기하며 그 안의 보조 수집품 네 점을 잃는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "전시실 일부를 포기하고 두리를 구출한다.",
+            "pressure": "두리를 구하기 위해 어떤 핵심 유산을 영구 귀환할지 결정한다.",
+            "action": "두리·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 일행이 수집량보다 안전 규칙을 합의라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI058:first",
+            "action": "후보 참조(CI058:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "전시실 축소",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "일행이 수집량보다 안전 규칙을 합의",
+            "pressure": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "전시실 한 방을 포기하며 그 안의 보조 수집품 네 점을 잃는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "전시실 축소",
+            "pressure": "전시실 한 방을 포기하며 그 안의 보조 수집품 네 점을 잃는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "폐분관 벽 뒤에서 중앙핵 그림이 드러난다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "전시실 한 방을 포기하며 그 안의 보조 수집품 네 점을 잃는다.",
+          "earned_reward": "전시실 축소",
+          "next_hook": "폐분관 벽 뒤에서 중앙핵 그림이 드러난다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI058:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 97,
+      "canonical_episode": {
+        "episode": 97,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA2",
+        "subact_title": "하나를 놓아야 하는 방",
+        "title": "비어 있는 자리를 지키다",
+        "goal": "담운이 빈 전시 칸을 억지로 채우지 않기로 한다.",
+        "choice": "담운의 수집 강박이 처음 크게 꺾임",
+        "reward": "빈칸 유지 규칙",
+        "hook": "천품 파편이 여섯 방향으로 빛난다.",
+        "location": "폐분관 내부 전시실·동해문",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "숨은 진실 또는 역전",
+        "cost": "빈칸을 유지하기로 해 도감 완성 보너스와 새 슬롯 개방을 미룬다."
+      },
+      "scene_blueprint": {
+        "episode": 97,
+        "act": "ACT3",
+        "subact_id": "A10",
+        "source_subact": "ACT3-SA2",
+        "title": "비어 있는 자리를 지키다",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "담운이 빈 전시 칸을 억지로 채우지 않기로 한다.",
+          "choice": "담운의 수집 강박이 처음 크게 꺾임",
+          "reward": "빈칸 유지 규칙",
+          "hook": "천품 파편이 여섯 방향으로 빛난다.",
+          "location": "폐분관 내부 전시실·동해문",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "숨은 진실 또는 역전",
+          "cost": "빈칸을 유지하기로 해 도감 완성 보너스와 새 슬롯 개방을 미룬다."
+        },
+        "state_before": {
+          "previous_hook": "폐분관 벽 뒤에서 중앙핵 그림이 드러난다.",
+          "previous_cost": "전시실 한 방을 포기하며 그 안의 보조 수집품 네 점을 잃는다.",
+          "incoming_subact_cost": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 폐분관 내부 전시실·동해문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "폐분관 벽 뒤에서 중앙핵 그림이 드러난다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "담운이 빈 전시 칸을 억지로 채우지 않기로 한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "숨은 진실 또는 역전",
+            "action": "폐분관 내부 전시실·동해문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "빈칸을 유지하기로 해 도감 완성 보너스와 새 슬롯 개방을 미룬다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "담운이 빈 전시 칸을 억지로 채우지 않기로 한다.",
+            "pressure": "두리를 구하기 위해 어떤 핵심 유산을 영구 귀환할지 결정한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운의 수집 강박이 처음 크게 꺾임라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "빈칸 유지 규칙",
+            "action": "후보 참조(빈칸 유지 규칙)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "빈칸 유지 규칙",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운의 수집 강박이 처음 크게 꺾임",
+            "pressure": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "빈칸을 유지하기로 해 도감 완성 보너스와 새 슬롯 개방을 미룬다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "빈칸 유지 규칙",
+            "pressure": "빈칸을 유지하기로 해 도감 완성 보너스와 새 슬롯 개방을 미룬다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "천품 파편이 여섯 방향으로 빛난다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "빈칸을 유지하기로 해 도감 완성 보너스와 새 슬롯 개방을 미룬다.",
+          "earned_reward": "빈칸 유지 규칙",
+          "next_hook": "천품 파편이 여섯 방향으로 빛난다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 98,
+      "canonical_episode": {
+        "episode": 98,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA2",
+        "subact_title": "하나를 놓아야 하는 방",
+        "title": "흩어진 것은 계획이었다",
+        "goal": "유산 분산이 내전 사고가 아니라 봉인 구조였음을 해독한다.",
+        "choice": "백장의 문제 인식이 옳았음을 일부 인정",
+        "reward": "육도 분산 설계",
+        "hook": "중앙핵은 여전히 누군가를 기다린다.",
+        "location": "폐분관 내부 전시실·동해문",
+        "cast": [
+          "백장",
+          "담운",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "해결책의 조립과 대가 확정",
+        "cost": "백장의 분산 설계가 옳았음을 인정하면서 동료 내부의 적대 판단이 흔들린다."
+      },
+      "scene_blueprint": {
+        "episode": 98,
+        "act": "ACT3",
+        "subact_id": "A10",
+        "source_subact": "ACT3-SA2",
+        "title": "흩어진 것은 계획이었다",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "유산 분산이 내전 사고가 아니라 봉인 구조였음을 해독한다.",
+          "choice": "백장의 문제 인식이 옳았음을 일부 인정",
+          "reward": "육도 분산 설계",
+          "hook": "중앙핵은 여전히 누군가를 기다린다.",
+          "location": "폐분관 내부 전시실·동해문",
+          "cast": [
+            "백장",
+            "담운",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "해결책의 조립과 대가 확정",
+          "cost": "백장의 분산 설계가 옳았음을 인정하면서 동료 내부의 적대 판단이 흔들린다."
+        },
+        "state_before": {
+          "previous_hook": "천품 파편이 여섯 방향으로 빛난다.",
+          "previous_cost": "빈칸을 유지하기로 해 도감 완성 보너스와 새 슬롯 개방을 미룬다.",
+          "incoming_subact_cost": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 폐분관 내부 전시실·동해문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "천품 파편이 여섯 방향으로 빛난다.",
+            "action": "백장·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "유산 분산이 내전 사고가 아니라 봉인 구조였음을 해독한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "해결책의 조립과 대가 확정",
+            "action": "폐분관 내부 전시실·동해문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "백장의 분산 설계가 옳았음을 인정하면서 동료 내부의 적대 판단이 흔들린다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "유산 분산이 내전 사고가 아니라 봉인 구조였음을 해독한다.",
+            "pressure": "두리를 구하기 위해 어떤 핵심 유산을 영구 귀환할지 결정한다.",
+            "action": "백장·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 백장의 문제 인식이 옳았음을 일부 인정라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "육도 분산 설계",
+            "action": "후보 참조(육도 분산 설계)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "육도 분산 설계",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "백장의 문제 인식이 옳았음을 일부 인정",
+            "pressure": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "백장의 분산 설계가 옳았음을 인정하면서 동료 내부의 적대 판단이 흔들린다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "육도 분산 설계",
+            "pressure": "백장의 분산 설계가 옳았음을 인정하면서 동료 내부의 적대 판단이 흔들린다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "중앙핵은 여전히 누군가를 기다린다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "백장의 분산 설계가 옳았음을 인정하면서 동료 내부의 적대 판단이 흔들린다.",
+          "earned_reward": "육도 분산 설계",
+          "next_hook": "중앙핵은 여전히 누군가를 기다린다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 99,
+      "canonical_episode": {
+        "episode": 99,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA2",
+        "subact_title": "하나를 놓아야 하는 방",
+        "title": "반치의 두 번째 날",
+        "goal": "철구의 수리 지시로 반치를 연결선 절단용으로 복원한다.",
+        "choice": "담운이 살상력 대신 고유 목적을 강화",
+        "reward": "부러진 반치 복원",
+        "hook": "복원된 반치가 담운의 이름 선을 찾지 못한다.",
+        "location": "폐분관 내부 전시실·동해문",
+        "cast": [
+          "담운",
+          "철구",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "서브액트 클라이맥스",
+        "cost": "복원 반치는 살상력이 줄고 강제 연결선에만 완전한 힘을 낸다."
+      },
+      "scene_blueprint": {
+        "episode": 99,
+        "act": "ACT3",
+        "subact_id": "A10",
+        "source_subact": "ACT3-SA2",
+        "title": "반치의 두 번째 날",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "철구의 수리 지시로 반치를 연결선 절단용으로 복원한다.",
+          "choice": "담운이 살상력 대신 고유 목적을 강화",
+          "reward": "부러진 반치 복원",
+          "hook": "복원된 반치가 담운의 이름 선을 찾지 못한다.",
+          "location": "폐분관 내부 전시실·동해문",
+          "cast": [
+            "담운",
+            "철구",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "서브액트 클라이맥스",
+          "cost": "복원 반치는 살상력이 줄고 강제 연결선에만 완전한 힘을 낸다."
+        },
+        "state_before": {
+          "previous_hook": "중앙핵은 여전히 누군가를 기다린다.",
+          "previous_cost": "백장의 분산 설계가 옳았음을 인정하면서 동료 내부의 적대 판단이 흔들린다.",
+          "incoming_subact_cost": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 폐분관 내부 전시실·동해문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "중앙핵은 여전히 누군가를 기다린다.",
+            "action": "담운·철구가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "철구의 수리 지시로 반치를 연결선 절단용으로 복원한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 클라이맥스",
+            "action": "폐분관 내부 전시실·동해문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "복원 반치는 살상력이 줄고 강제 연결선에만 완전한 힘을 낸다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "철구의 수리 지시로 반치를 연결선 절단용으로 복원한다.",
+            "pressure": "두리를 구하기 위해 어떤 핵심 유산을 영구 귀환할지 결정한다.",
+            "action": "담운·철구가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 살상력 대신 고유 목적을 강화라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI059:first",
+            "action": "후보 참조(CI059:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "부러진 반치 복원",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 살상력 대신 고유 목적을 강화",
+            "pressure": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "복원 반치는 살상력이 줄고 강제 연결선에만 완전한 힘을 낸다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "부러진 반치 복원",
+            "pressure": "복원 반치는 살상력이 줄고 강제 연결선에만 완전한 힘을 낸다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "복원된 반치가 담운의 이름 선을 찾지 못한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "복원 반치는 살상력이 줄고 강제 연결선에만 완전한 힘을 낸다.",
+          "earned_reward": "부러진 반치 복원",
+          "next_hook": "복원된 반치가 담운의 이름 선을 찾지 못한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI059:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 100,
+      "canonical_episode": {
+        "episode": 100,
+        "act": "ACT3",
+        "act_title": "보관은 보호인가",
+        "subact": "ACT3-SA2",
+        "subact_title": "하나를 놓아야 하는 방",
+        "title": "바다가 부르는 전시실",
+        "goal": "폐분관의 문이 동해 침몰도시로 열리고 전시실이 다시 떤다.",
+        "choice": "일행이 공동 소유 해답을 찾으러 떠남",
+        "reward": "동해 좌표",
+        "hook": "문 너머 물속에서 담운과 같은 얼굴의 초상이 떠오른다.",
+        "location": "폐분관 내부 전시실·동해문",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "보상 회수와 다음 구간 훅",
+        "cost": "동해문을 열자 폐분관이 붕괴해 다시 조사할 기록 절반을 잃는다."
+      },
+      "scene_blueprint": {
+        "episode": 100,
+        "act": "ACT3",
+        "subact_id": "A10",
+        "source_subact": "ACT3-SA2",
+        "title": "바다가 부르는 전시실",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "폐분관의 문이 동해 침몰도시로 열리고 전시실이 다시 떤다.",
+          "choice": "일행이 공동 소유 해답을 찾으러 떠남",
+          "reward": "동해 좌표",
+          "hook": "문 너머 물속에서 담운과 같은 얼굴의 초상이 떠오른다.",
+          "location": "폐분관 내부 전시실·동해문",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "보상 회수와 다음 구간 훅",
+          "cost": "동해문을 열자 폐분관이 붕괴해 다시 조사할 기록 절반을 잃는다."
+        },
+        "state_before": {
+          "previous_hook": "복원된 반치가 담운의 이름 선을 찾지 못한다.",
+          "previous_cost": "복원 반치는 살상력이 줄고 강제 연결선에만 완전한 힘을 낸다.",
+          "incoming_subact_cost": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 폐분관 내부 전시실·동해문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "복원된 반치가 담운의 이름 선을 찾지 못한다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "폐분관의 문이 동해 침몰도시로 열리고 전시실이 다시 떤다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "보상 회수와 다음 구간 훅",
+            "action": "폐분관 내부 전시실·동해문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "동해문을 열자 폐분관이 붕괴해 다시 조사할 기록 절반을 잃는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "폐분관의 문이 동해 침몰도시로 열리고 전시실이 다시 떤다.",
+            "pressure": "두리를 구하기 위해 어떤 핵심 유산을 영구 귀환할지 결정한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 일행이 공동 소유 해답을 찾으러 떠남라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI005:final, CI051:final, CI054:final, CI055:final, CI056:final, CI057:final, CI060:first, SET013:complete, BS001",
+            "action": "후보 참조(CI005:final, CI051:final, CI054:final, CI055:final, CI056:final, CI057:final, CI060:first, SET013:complete, BS001)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "동해 좌표",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "일행이 공동 소유 해답을 찾으러 떠남",
+            "pressure": "상극 전시실의 오판으로 두리가 물품 칸에 갇히고 담운의 장비 조합도 붕괴한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "동해문을 열자 폐분관이 붕괴해 다시 조사할 기록 절반을 잃는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "동해 좌표",
+            "pressure": "전력·수집 진척·폐분관 접근권을 잃고 동해 침몰도시에서 외부 조정자로 신뢰받기 어려워진다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "문 너머 물속에서 담운과 같은 얼굴의 초상이 떠오른다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "동해문을 열자 폐분관이 붕괴해 다시 조사할 기록 절반을 잃는다.",
+          "earned_reward": "동해 좌표",
+          "next_hook": "문 너머 물속에서 담운과 같은 얼굴의 초상이 떠오른다.",
+          "outgoing_subact_cost": "전력·수집 진척·폐분관 접근권을 잃고 동해 침몰도시에서 외부 조정자로 신뢰받기 어려워진다."
+        },
+        "registry_events": {
+          "items": [
+            "CI005:final",
+            "CI051:final",
+            "CI054:final",
+            "CI055:final",
+            "CI056:final",
+            "CI057:final",
+            "CI060:first"
+          ],
+          "sets": [
+            "SET013:complete"
+          ],
+          "beasts": [
+            "BS001"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    }
+  ]
+}

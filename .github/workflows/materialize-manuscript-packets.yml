@@ -1,0 +1,45 @@
+name: Materialize Manuscript Packets
+
+on:
+  push:
+    branches:
+      - 'agent/manuscript-001-200-v1'
+    paths:
+      - 'scripts/materialize_manuscript_packets_v1.py'
+      - 'data/episodes_*.json'
+      - 'production/blueprints/EPISODES_021_200_SCENE_BLUEPRINT_V3_4.json'
+      - '.github/workflows/materialize-manuscript-packets.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out manuscript branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/manuscript-001-200-v1
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build manuscript packets
+        run: python scripts/materialize_manuscript_packets_v1.py
+
+      - name: Commit packets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add production/manuscript_packets
+          if git diff --cached --quiet; then
+            echo "Packets are already current."
+          else
+            git commit -m "manuscript: materialize EP001-EP200 drafting packets [skip ci]"
+            git push origin HEAD:agent/manuscript-001-200-v1
+          fi

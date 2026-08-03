@@ -1,0 +1,1609 @@
+{
+  "version": "v3.4-manuscript-packet-v1",
+  "status": "derived_read_only_drafting_input",
+  "protected_canon_unchanged": true,
+  "range": [
+    181,
+    190
+  ],
+  "episodes": [
+    {
+      "episode": 181,
+      "canonical_episode": {
+        "episode": 181,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA3",
+        "subact_title": "중앙 소유권 전쟁",
+        "title": "회수 대상 담운",
+        "goal": "백장이 봉인 완성을 위해 담운을 확보한다.",
+        "choice": "동료들이 담운의 선택권을 지키려 함",
+        "reward": "강제 봉인 장치",
+        "hook": "담운이 일부러 백장에게 잡힌다.",
+        "location": "중앙핵 내부·육도 분산 전장",
+        "cast": [
+          "담운",
+          "백장",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "새 문제와 지역 규칙 도입",
+        "cost": "일부러 붙잡혀 반치와 검함을 백장에게 압수당한다."
+      },
+      "scene_blueprint": {
+        "episode": 181,
+        "act": "ACT5",
+        "subact_id": "A19",
+        "source_subact": "ACT5-SA3",
+        "title": "회수 대상 담운",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "백장이 봉인 완성을 위해 담운을 확보한다.",
+          "choice": "동료들이 담운의 선택권을 지키려 함",
+          "reward": "강제 봉인 장치",
+          "hook": "담운이 일부러 백장에게 잡힌다.",
+          "location": "중앙핵 내부·육도 분산 전장",
+          "cast": [
+            "담운",
+            "백장",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "새 문제와 지역 규칙 도입",
+          "cost": "일부러 붙잡혀 반치와 검함을 백장에게 압수당한다."
+        },
+        "state_before": {
+          "previous_hook": "반치가 중앙핵과 육도 열쇠 사이 연결선을 보여준다.",
+          "previous_cost": "제3의 해법을 찾는 동안 담운 수납이 절반 진행돼 남은 시간이 한 시진으로 줄어든다.",
+          "incoming_subact_cost": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 중앙핵 내부·육도 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "반치가 중앙핵과 육도 열쇠 사이 연결선을 보여준다.",
+            "action": "담운·백장가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "백장이 봉인 완성을 위해 담운을 확보한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "새 문제와 지역 규칙 도입",
+            "action": "중앙핵 내부·육도 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "일부러 붙잡혀 반치와 검함을 백장에게 압수당한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "백장이 봉인 완성을 위해 담운을 확보한다.",
+            "pressure": "중앙 봉인·공동 지분·완전 해체 세 선택의 실제 피해와 비용을 검증한다.",
+            "action": "담운·백장가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 동료들이 담운의 선택권을 지키려 함라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI109:first",
+            "action": "후보 참조(CI109:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "강제 봉인 장치",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "동료들이 담운의 선택권을 지키려 함",
+            "pressure": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "일부러 붙잡혀 반치와 검함을 백장에게 압수당한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "강제 봉인 장치",
+            "pressure": "일부러 붙잡혀 반치와 검함을 백장에게 압수당한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "담운이 일부러 백장에게 잡힌다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "일부러 붙잡혀 반치와 검함을 백장에게 압수당한다.",
+          "earned_reward": "강제 봉인 장치",
+          "next_hook": "담운이 일부러 백장에게 잡힌다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI109:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 182,
+      "canonical_episode": {
+        "episode": 182,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA3",
+        "subact_title": "중앙 소유권 전쟁",
+        "title": "중앙 소유권 전쟁",
+        "goal": "중앙핵이 무고와 육도 유산의 소유권을 강제로 합친다.",
+        "choice": "담운이 내부에서 연결 구조를 조사",
+        "reward": "중앙핵 확장",
+        "hook": "육도 열쇠 보유자들이 힘을 잃는다.",
+        "location": "중앙핵 내부·육도 분산 전장",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "규칙의 예외와 비용 확대",
+        "cost": "중앙핵 내부 조사 동안 육도 열쇠지기들의 능력이 순차적으로 약해진다."
+      },
+      "scene_blueprint": {
+        "episode": 182,
+        "act": "ACT5",
+        "subact_id": "A19",
+        "source_subact": "ACT5-SA3",
+        "title": "중앙 소유권 전쟁",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "중앙핵이 무고와 육도 유산의 소유권을 강제로 합친다.",
+          "choice": "담운이 내부에서 연결 구조를 조사",
+          "reward": "중앙핵 확장",
+          "hook": "육도 열쇠 보유자들이 힘을 잃는다.",
+          "location": "중앙핵 내부·육도 분산 전장",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "규칙의 예외와 비용 확대",
+          "cost": "중앙핵 내부 조사 동안 육도 열쇠지기들의 능력이 순차적으로 약해진다."
+        },
+        "state_before": {
+          "previous_hook": "담운이 일부러 백장에게 잡힌다.",
+          "previous_cost": "일부러 붙잡혀 반치와 검함을 백장에게 압수당한다.",
+          "incoming_subact_cost": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 중앙핵 내부·육도 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "담운이 일부러 백장에게 잡힌다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "중앙핵이 무고와 육도 유산의 소유권을 강제로 합친다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "규칙의 예외와 비용 확대",
+            "action": "중앙핵 내부·육도 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "중앙핵 내부 조사 동안 육도 열쇠지기들의 능력이 순차적으로 약해진다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "중앙핵이 무고와 육도 유산의 소유권을 강제로 합친다.",
+            "pressure": "중앙 봉인·공동 지분·완전 해체 세 선택의 실제 피해와 비용을 검증한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 내부에서 연결 구조를 조사라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "중앙핵 확장",
+            "action": "후보 참조(중앙핵 확장)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "중앙핵 확장",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 내부에서 연결 구조를 조사",
+            "pressure": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "중앙핵 내부 조사 동안 육도 열쇠지기들의 능력이 순차적으로 약해진다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "중앙핵 확장",
+            "pressure": "중앙핵 내부 조사 동안 육도 열쇠지기들의 능력이 순차적으로 약해진다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "육도 열쇠 보유자들이 힘을 잃는다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "중앙핵 내부 조사 동안 육도 열쇠지기들의 능력이 순차적으로 약해진다.",
+          "earned_reward": "중앙핵 확장",
+          "next_hook": "육도 열쇠 보유자들이 힘을 잃는다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 183,
+      "canonical_episode": {
+        "episode": 183,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA3",
+        "subact_title": "중앙 소유권 전쟁",
+        "title": "진여강의 공동 소유안",
+        "goal": "진여강이 중앙핵 지분을 모두에게 나누는 방안을 제시한다.",
+        "choice": "담운이 중앙이 남는 한 반복될 것이라 거부",
+        "reward": "공동 소유안",
+        "hook": "지분표가 핵에 흡수된다.",
+        "location": "중앙핵 내부·육도 분산 전장",
+        "cast": [
+          "담운",
+          "진여강",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "첫 실전 적용과 오판",
+        "cost": "공동 소유안을 거부해 진여강과 마지막으로 심각한 전략 충돌을 겪는다."
+      },
+      "scene_blueprint": {
+        "episode": 183,
+        "act": "ACT5",
+        "subact_id": "A19",
+        "source_subact": "ACT5-SA3",
+        "title": "진여강의 공동 소유안",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "진여강이 중앙핵 지분을 모두에게 나누는 방안을 제시한다.",
+          "choice": "담운이 중앙이 남는 한 반복될 것이라 거부",
+          "reward": "공동 소유안",
+          "hook": "지분표가 핵에 흡수된다.",
+          "location": "중앙핵 내부·육도 분산 전장",
+          "cast": [
+            "담운",
+            "진여강",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "첫 실전 적용과 오판",
+          "cost": "공동 소유안을 거부해 진여강과 마지막으로 심각한 전략 충돌을 겪는다."
+        },
+        "state_before": {
+          "previous_hook": "육도 열쇠 보유자들이 힘을 잃는다.",
+          "previous_cost": "중앙핵 내부 조사 동안 육도 열쇠지기들의 능력이 순차적으로 약해진다.",
+          "incoming_subact_cost": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 중앙핵 내부·육도 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "육도 열쇠 보유자들이 힘을 잃는다.",
+            "action": "담운·진여강가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "진여강이 중앙핵 지분을 모두에게 나누는 방안을 제시한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "첫 실전 적용과 오판",
+            "action": "중앙핵 내부·육도 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "공동 소유안을 거부해 진여강과 마지막으로 심각한 전략 충돌을 겪는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "진여강이 중앙핵 지분을 모두에게 나누는 방안을 제시한다.",
+            "pressure": "중앙 봉인·공동 지분·완전 해체 세 선택의 실제 피해와 비용을 검증한다.",
+            "action": "담운·진여강가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 중앙이 남는 한 반복될 것이라 거부라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI110:first",
+            "action": "후보 참조(CI110:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "공동 소유안",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 중앙이 남는 한 반복될 것이라 거부",
+            "pressure": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "공동 소유안을 거부해 진여강과 마지막으로 심각한 전략 충돌을 겪는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "공동 소유안",
+            "pressure": "공동 소유안을 거부해 진여강과 마지막으로 심각한 전략 충돌을 겪는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "지분표가 핵에 흡수된다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "공동 소유안을 거부해 진여강과 마지막으로 심각한 전략 충돌을 겪는다.",
+          "earned_reward": "공동 소유안",
+          "next_hook": "지분표가 핵에 흡수된다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI110:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 184,
+      "canonical_episode": {
+        "episode": 184,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA3",
+        "subact_title": "중앙 소유권 전쟁",
+        "title": "여섯 권역의 답장",
+        "goal": "각 권역 공동체가 유산을 어떻게 관리할지 자발적 답을 보낸다.",
+        "choice": "담운이 해결을 혼자 만들지 않음",
+        "reward": "분산 계약 초안",
+        "hook": "답장들이 무주함 빈 방을 하나씩 닫는다.",
+        "location": "중앙핵 내부·육도 분산 전장",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "적대 세력의 압박 구체화",
+        "cost": "여섯 권역의 답을 기다리며 중앙핵 붕괴 시간을 더 소모한다."
+      },
+      "scene_blueprint": {
+        "episode": 184,
+        "act": "ACT5",
+        "subact_id": "A19",
+        "source_subact": "ACT5-SA3",
+        "title": "여섯 권역의 답장",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "각 권역 공동체가 유산을 어떻게 관리할지 자발적 답을 보낸다.",
+          "choice": "담운이 해결을 혼자 만들지 않음",
+          "reward": "분산 계약 초안",
+          "hook": "답장들이 무주함 빈 방을 하나씩 닫는다.",
+          "location": "중앙핵 내부·육도 분산 전장",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "적대 세력의 압박 구체화",
+          "cost": "여섯 권역의 답을 기다리며 중앙핵 붕괴 시간을 더 소모한다."
+        },
+        "state_before": {
+          "previous_hook": "지분표가 핵에 흡수된다.",
+          "previous_cost": "공동 소유안을 거부해 진여강과 마지막으로 심각한 전략 충돌을 겪는다.",
+          "incoming_subact_cost": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 중앙핵 내부·육도 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "지분표가 핵에 흡수된다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "각 권역 공동체가 유산을 어떻게 관리할지 자발적 답을 보낸다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "적대 세력의 압박 구체화",
+            "action": "중앙핵 내부·육도 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "여섯 권역의 답을 기다리며 중앙핵 붕괴 시간을 더 소모한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "각 권역 공동체가 유산을 어떻게 관리할지 자발적 답을 보낸다.",
+            "pressure": "중앙 봉인·공동 지분·완전 해체 세 선택의 실제 피해와 비용을 검증한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 해결을 혼자 만들지 않음라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI111:first",
+            "action": "후보 참조(CI111:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "분산 계약 초안",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 해결을 혼자 만들지 않음",
+            "pressure": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "여섯 권역의 답을 기다리며 중앙핵 붕괴 시간을 더 소모한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "분산 계약 초안",
+            "pressure": "여섯 권역의 답을 기다리며 중앙핵 붕괴 시간을 더 소모한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "답장들이 무주함 빈 방을 하나씩 닫는다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "여섯 권역의 답을 기다리며 중앙핵 붕괴 시간을 더 소모한다.",
+          "earned_reward": "분산 계약 초안",
+          "next_hook": "답장들이 무주함 빈 방을 하나씩 닫는다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI111:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 185,
+      "canonical_episode": {
+        "episode": 185,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA3",
+        "subact_title": "중앙 소유권 전쟁",
+        "title": "귀로풍비",
+        "goal": "두리가 담운에게 돌아오는 길을 찾겠다는 선택으로 최종 진화한다.",
+        "choice": "두리가 신수 동행기록을 스스로 수정",
+        "reward": "귀로풍비 두리",
+        "hook": "두리가 중앙핵 밖과 안을 잇는 냄새길을 연다.",
+        "location": "중앙핵 내부·육도 분산 전장",
+        "cast": [
+          "담운",
+          "두리",
+          "서린화",
+          "소예란",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "서브액트 중간 선택",
+        "cost": "귀로풍비 진화로 두리는 이전 풍비 능력 하나를 영구히 잃는다."
+      },
+      "scene_blueprint": {
+        "episode": 185,
+        "act": "ACT5",
+        "subact_id": "A19",
+        "source_subact": "ACT5-SA3",
+        "title": "귀로풍비",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "두리가 담운에게 돌아오는 길을 찾겠다는 선택으로 최종 진화한다.",
+          "choice": "두리가 신수 동행기록을 스스로 수정",
+          "reward": "귀로풍비 두리",
+          "hook": "두리가 중앙핵 밖과 안을 잇는 냄새길을 연다.",
+          "location": "중앙핵 내부·육도 분산 전장",
+          "cast": [
+            "담운",
+            "두리",
+            "서린화",
+            "소예란",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "서브액트 중간 선택",
+          "cost": "귀로풍비 진화로 두리는 이전 풍비 능력 하나를 영구히 잃는다."
+        },
+        "state_before": {
+          "previous_hook": "답장들이 무주함 빈 방을 하나씩 닫는다.",
+          "previous_cost": "여섯 권역의 답을 기다리며 중앙핵 붕괴 시간을 더 소모한다.",
+          "incoming_subact_cost": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 중앙핵 내부·육도 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "답장들이 무주함 빈 방을 하나씩 닫는다.",
+            "action": "담운·두리가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "두리가 담운에게 돌아오는 길을 찾겠다는 선택으로 최종 진화한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 중간 선택",
+            "action": "중앙핵 내부·육도 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "귀로풍비 진화로 두리는 이전 풍비 능력 하나를 영구히 잃는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "두리가 담운에게 돌아오는 길을 찾겠다는 선택으로 최종 진화한다.",
+            "pressure": "중앙 봉인·공동 지분·완전 해체 세 선택의 실제 피해와 비용을 검증한다.",
+            "action": "담운·두리가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 두리가 신수 동행기록을 스스로 수정라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "BS001, BS018",
+            "action": "후보 참조(BS001, BS018)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "귀로풍비 두리",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "두리가 신수 동행기록을 스스로 수정",
+            "pressure": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "귀로풍비 진화로 두리는 이전 풍비 능력 하나를 영구히 잃는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "귀로풍비 두리",
+            "pressure": "귀로풍비 진화로 두리는 이전 풍비 능력 하나를 영구히 잃는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "두리가 중앙핵 밖과 안을 잇는 냄새길을 연다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "귀로풍비 진화로 두리는 이전 풍비 능력 하나를 영구히 잃는다.",
+          "earned_reward": "귀로풍비 두리",
+          "next_hook": "두리가 중앙핵 밖과 안을 잇는 냄새길을 연다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": [
+            "BS001",
+            "BS018"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 186,
+      "canonical_episode": {
+        "episode": 186,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA3",
+        "subact_title": "중앙 소유권 전쟁",
+        "title": "반치가 돌아온 이유",
+        "goal": "복원된 반치가 살상선이 아니라 강제 소유권 선만 자를 수 있음을 확인한다.",
+        "choice": "담운이 최종 무공 원리를 정함",
+        "reward": "반치 최종 기능",
+        "hook": "첫 절단으로 백장의 기억쇄가 풀린다.",
+        "location": "중앙핵 내부·육도 분산 전장",
+        "cast": [
+          "담운",
+          "백장",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "선택의 후폭풍과 관계 변화",
+        "cost": "반치 최종 기능이 살상에 약해져 백장을 쓰러뜨릴 직접 수단을 잃는다."
+      },
+      "scene_blueprint": {
+        "episode": 186,
+        "act": "ACT5",
+        "subact_id": "A19",
+        "source_subact": "ACT5-SA3",
+        "title": "반치가 돌아온 이유",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "복원된 반치가 살상선이 아니라 강제 소유권 선만 자를 수 있음을 확인한다.",
+          "choice": "담운이 최종 무공 원리를 정함",
+          "reward": "반치 최종 기능",
+          "hook": "첫 절단으로 백장의 기억쇄가 풀린다.",
+          "location": "중앙핵 내부·육도 분산 전장",
+          "cast": [
+            "담운",
+            "백장",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "선택의 후폭풍과 관계 변화",
+          "cost": "반치 최종 기능이 살상에 약해져 백장을 쓰러뜨릴 직접 수단을 잃는다."
+        },
+        "state_before": {
+          "previous_hook": "두리가 중앙핵 밖과 안을 잇는 냄새길을 연다.",
+          "previous_cost": "귀로풍비 진화로 두리는 이전 풍비 능력 하나를 영구히 잃는다.",
+          "incoming_subact_cost": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 중앙핵 내부·육도 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "두리가 중앙핵 밖과 안을 잇는 냄새길을 연다.",
+            "action": "담운·백장가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "복원된 반치가 살상선이 아니라 강제 소유권 선만 자를 수 있음을 확인한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "선택의 후폭풍과 관계 변화",
+            "action": "중앙핵 내부·육도 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "반치 최종 기능이 살상에 약해져 백장을 쓰러뜨릴 직접 수단을 잃는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "복원된 반치가 살상선이 아니라 강제 소유권 선만 자를 수 있음을 확인한다.",
+            "pressure": "중앙 봉인·공동 지분·완전 해체 세 선택의 실제 피해와 비용을 검증한다.",
+            "action": "담운·백장가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 최종 무공 원리를 정함라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI112:first",
+            "action": "후보 참조(CI112:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "반치 최종 기능",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 최종 무공 원리를 정함",
+            "pressure": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "반치 최종 기능이 살상에 약해져 백장을 쓰러뜨릴 직접 수단을 잃는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "반치 최종 기능",
+            "pressure": "반치 최종 기능이 살상에 약해져 백장을 쓰러뜨릴 직접 수단을 잃는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "첫 절단으로 백장의 기억쇄가 풀린다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "반치 최종 기능이 살상에 약해져 백장을 쓰러뜨릴 직접 수단을 잃는다.",
+          "earned_reward": "반치 최종 기능",
+          "next_hook": "첫 절단으로 백장의 기억쇄가 풀린다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI112:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 187,
+      "canonical_episode": {
+        "episode": 187,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA3",
+        "subact_title": "중앙 소유권 전쟁",
+        "title": "놓아준 것들의 응답",
+        "goal": "모조 왕검, 잠든 숲 향로, 소리 없는 망치가 각자의 장소에서 공명한다.",
+        "choice": "비소유 선택들이 최종 힘이 됨",
+        "reward": "회송 원리 완성",
+        "hook": "망치 한 번의 울림이 중앙핵에 금을 낸다.",
+        "location": "중앙핵 내부·육도 분산 전장",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "숨은 진실 또는 역전",
+        "cost": "놓아준 유산을 부르지 않고 응답을 기다려야 해 통제권 없는 위험을 감수한다."
+      },
+      "scene_blueprint": {
+        "episode": 187,
+        "act": "ACT5",
+        "subact_id": "A19",
+        "source_subact": "ACT5-SA3",
+        "title": "놓아준 것들의 응답",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "모조 왕검, 잠든 숲 향로, 소리 없는 망치가 각자의 장소에서 공명한다.",
+          "choice": "비소유 선택들이 최종 힘이 됨",
+          "reward": "회송 원리 완성",
+          "hook": "망치 한 번의 울림이 중앙핵에 금을 낸다.",
+          "location": "중앙핵 내부·육도 분산 전장",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "숨은 진실 또는 역전",
+          "cost": "놓아준 유산을 부르지 않고 응답을 기다려야 해 통제권 없는 위험을 감수한다."
+        },
+        "state_before": {
+          "previous_hook": "첫 절단으로 백장의 기억쇄가 풀린다.",
+          "previous_cost": "반치 최종 기능이 살상에 약해져 백장을 쓰러뜨릴 직접 수단을 잃는다.",
+          "incoming_subact_cost": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 중앙핵 내부·육도 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "첫 절단으로 백장의 기억쇄가 풀린다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "모조 왕검, 잠든 숲 향로, 소리 없는 망치가 각자의 장소에서 공명한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "숨은 진실 또는 역전",
+            "action": "중앙핵 내부·육도 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "놓아준 유산을 부르지 않고 응답을 기다려야 해 통제권 없는 위험을 감수한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "모조 왕검, 잠든 숲 향로, 소리 없는 망치가 각자의 장소에서 공명한다.",
+            "pressure": "중앙 봉인·공동 지분·완전 해체 세 선택의 실제 피해와 비용을 검증한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 비소유 선택들이 최종 힘이 됨라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "회송 원리 완성",
+            "action": "후보 참조(회송 원리 완성)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "회송 원리 완성",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "비소유 선택들이 최종 힘이 됨",
+            "pressure": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "놓아준 유산을 부르지 않고 응답을 기다려야 해 통제권 없는 위험을 감수한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "회송 원리 완성",
+            "pressure": "놓아준 유산을 부르지 않고 응답을 기다려야 해 통제권 없는 위험을 감수한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "망치 한 번의 울림이 중앙핵에 금을 낸다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "놓아준 유산을 부르지 않고 응답을 기다려야 해 통제권 없는 위험을 감수한다.",
+          "earned_reward": "회송 원리 완성",
+          "next_hook": "망치 한 번의 울림이 중앙핵에 금을 낸다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 188,
+      "canonical_episode": {
+        "episode": 188,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA3",
+        "subact_title": "중앙 소유권 전쟁",
+        "title": "열린 봉인들",
+        "goal": "북설·남독·동해의 분산 관리 시설이 동시에 봉인을 조정한다.",
+        "choice": "동료들이 각자 전장을 담당",
+        "reward": "권역별 제도 작동",
+        "hook": "백장이 중앙 통제를 잃고도 사람들을 구한다.",
+        "location": "중앙핵 내부·육도 분산 전장",
+        "cast": [
+          "백장",
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "해결책의 조립과 대가 확정",
+        "cost": "분산 시설 가동으로 각 권역 주민이 실제 봉인 부담과 부상을 나눠 진다."
+      },
+      "scene_blueprint": {
+        "episode": 188,
+        "act": "ACT5",
+        "subact_id": "A19",
+        "source_subact": "ACT5-SA3",
+        "title": "열린 봉인들",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "북설·남독·동해의 분산 관리 시설이 동시에 봉인을 조정한다.",
+          "choice": "동료들이 각자 전장을 담당",
+          "reward": "권역별 제도 작동",
+          "hook": "백장이 중앙 통제를 잃고도 사람들을 구한다.",
+          "location": "중앙핵 내부·육도 분산 전장",
+          "cast": [
+            "백장",
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "해결책의 조립과 대가 확정",
+          "cost": "분산 시설 가동으로 각 권역 주민이 실제 봉인 부담과 부상을 나눠 진다."
+        },
+        "state_before": {
+          "previous_hook": "망치 한 번의 울림이 중앙핵에 금을 낸다.",
+          "previous_cost": "놓아준 유산을 부르지 않고 응답을 기다려야 해 통제권 없는 위험을 감수한다.",
+          "incoming_subact_cost": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 중앙핵 내부·육도 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "망치 한 번의 울림이 중앙핵에 금을 낸다.",
+            "action": "백장·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "북설·남독·동해의 분산 관리 시설이 동시에 봉인을 조정한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "해결책의 조립과 대가 확정",
+            "action": "중앙핵 내부·육도 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "분산 시설 가동으로 각 권역 주민이 실제 봉인 부담과 부상을 나눠 진다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "북설·남독·동해의 분산 관리 시설이 동시에 봉인을 조정한다.",
+            "pressure": "중앙 봉인·공동 지분·완전 해체 세 선택의 실제 피해와 비용을 검증한다.",
+            "action": "백장·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 동료들이 각자 전장을 담당라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI113:first",
+            "action": "후보 참조(CI113:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "권역별 제도 작동",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "동료들이 각자 전장을 담당",
+            "pressure": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "분산 시설 가동으로 각 권역 주민이 실제 봉인 부담과 부상을 나눠 진다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "권역별 제도 작동",
+            "pressure": "분산 시설 가동으로 각 권역 주민이 실제 봉인 부담과 부상을 나눠 진다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "백장이 중앙 통제를 잃고도 사람들을 구한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "분산 시설 가동으로 각 권역 주민이 실제 봉인 부담과 부상을 나눠 진다.",
+          "earned_reward": "권역별 제도 작동",
+          "next_hook": "백장이 중앙 통제를 잃고도 사람들을 구한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI113:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 189,
+      "canonical_episode": {
+        "episode": 189,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA3",
+        "subact_title": "중앙 소유권 전쟁",
+        "title": "여섯 열쇠지기",
+        "goal": "열쇠를 한데 모으지 않고 여섯 사람이 각 권역에서 돌린다.",
+        "choice": "담운이 중앙 영웅 역할을 거부",
+        "reward": "육도 분산 공명",
+        "hook": "천외 열쇠가 담운 이름 없이 완성된다.",
+        "location": "중앙핵 내부·육도 분산 전장",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "서브액트 클라이맥스",
+        "cost": "여섯 열쇠지기는 자기 권역을 떠날 수 없는 장기 책임을 맡는다."
+      },
+      "scene_blueprint": {
+        "episode": 189,
+        "act": "ACT5",
+        "subact_id": "A19",
+        "source_subact": "ACT5-SA3",
+        "title": "여섯 열쇠지기",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "열쇠를 한데 모으지 않고 여섯 사람이 각 권역에서 돌린다.",
+          "choice": "담운이 중앙 영웅 역할을 거부",
+          "reward": "육도 분산 공명",
+          "hook": "천외 열쇠가 담운 이름 없이 완성된다.",
+          "location": "중앙핵 내부·육도 분산 전장",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "서브액트 클라이맥스",
+          "cost": "여섯 열쇠지기는 자기 권역을 떠날 수 없는 장기 책임을 맡는다."
+        },
+        "state_before": {
+          "previous_hook": "백장이 중앙 통제를 잃고도 사람들을 구한다.",
+          "previous_cost": "분산 시설 가동으로 각 권역 주민이 실제 봉인 부담과 부상을 나눠 진다.",
+          "incoming_subact_cost": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 중앙핵 내부·육도 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "백장이 중앙 통제를 잃고도 사람들을 구한다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "열쇠를 한데 모으지 않고 여섯 사람이 각 권역에서 돌린다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 클라이맥스",
+            "action": "중앙핵 내부·육도 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "여섯 열쇠지기는 자기 권역을 떠날 수 없는 장기 책임을 맡는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "열쇠를 한데 모으지 않고 여섯 사람이 각 권역에서 돌린다.",
+            "pressure": "중앙 봉인·공동 지분·완전 해체 세 선택의 실제 피해와 비용을 검증한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 중앙 영웅 역할을 거부라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "육도 분산 공명",
+            "action": "후보 참조(육도 분산 공명)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "육도 분산 공명",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 중앙 영웅 역할을 거부",
+            "pressure": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "여섯 열쇠지기는 자기 권역을 떠날 수 없는 장기 책임을 맡는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "육도 분산 공명",
+            "pressure": "여섯 열쇠지기는 자기 권역을 떠날 수 없는 장기 책임을 맡는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "천외 열쇠가 담운 이름 없이 완성된다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "여섯 열쇠지기는 자기 권역을 떠날 수 없는 장기 책임을 맡는다.",
+          "earned_reward": "육도 분산 공명",
+          "next_hook": "천외 열쇠가 담운 이름 없이 완성된다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 190,
+      "canonical_episode": {
+        "episode": 190,
+        "act": "ACT5",
+        "act_title": "수장은 무엇을 소유해야 하는가",
+        "subact": "ACT5-SA3",
+        "subact_title": "중앙 소유권 전쟁",
+        "title": "무너지는 박물관",
+        "goal": "원형 무고가 분류 기능을 잃고 물리적으로 붕괴한다.",
+        "choice": "린화가 기록을 외부로 전송",
+        "reward": "살아 있는 전시실 해체",
+        "hook": "중앙핵이 담운 이름을 직접 붙잡는다.",
+        "location": "중앙핵 내부·육도 분산 전장",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "보상 회수와 다음 구간 훅",
+        "cost": "무고 붕괴로 린화가 외부 전송하지 못한 기록 일부가 영구 소실된다."
+      },
+      "scene_blueprint": {
+        "episode": 190,
+        "act": "ACT5",
+        "subact_id": "A19",
+        "source_subact": "ACT5-SA3",
+        "title": "무너지는 박물관",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "원형 무고가 분류 기능을 잃고 물리적으로 붕괴한다.",
+          "choice": "린화가 기록을 외부로 전송",
+          "reward": "살아 있는 전시실 해체",
+          "hook": "중앙핵이 담운 이름을 직접 붙잡는다.",
+          "location": "중앙핵 내부·육도 분산 전장",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "보상 회수와 다음 구간 훅",
+          "cost": "무고 붕괴로 린화가 외부 전송하지 못한 기록 일부가 영구 소실된다."
+        },
+        "state_before": {
+          "previous_hook": "천외 열쇠가 담운 이름 없이 완성된다.",
+          "previous_cost": "여섯 열쇠지기는 자기 권역을 떠날 수 없는 장기 책임을 맡는다.",
+          "incoming_subact_cost": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 중앙핵 내부·육도 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "천외 열쇠가 담운 이름 없이 완성된다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "원형 무고가 분류 기능을 잃고 물리적으로 붕괴한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "보상 회수와 다음 구간 훅",
+            "action": "중앙핵 내부·육도 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "무고 붕괴로 린화가 외부 전송하지 못한 기록 일부가 영구 소실된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "원형 무고가 분류 기능을 잃고 물리적으로 붕괴한다.",
+            "pressure": "중앙 봉인·공동 지분·완전 해체 세 선택의 실제 피해와 비용을 검증한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 린화가 기록을 외부로 전송라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI110:final, CI114:first, SET022:complete",
+            "action": "후보 참조(CI110:final, CI114:first, SET022:complete)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "살아 있는 전시실 해체",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "린화가 기록을 외부로 전송",
+            "pressure": "과거 복원은 막았지만 중앙핵은 담운을 빈 소유자 자리로 요구하고 각 세력은 안전 공백을 두려워한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "무고 붕괴로 린화가 외부 전송하지 못한 기록 일부가 영구 소실된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "살아 있는 전시실 해체",
+            "pressure": "중앙 권한·지원·분류 안전망이 사라지고 여섯 책임 조각을 실제로 배송해야만 세계가 유지된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "중앙핵이 담운 이름을 직접 붙잡는다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "무고 붕괴로 린화가 외부 전송하지 못한 기록 일부가 영구 소실된다.",
+          "earned_reward": "살아 있는 전시실 해체",
+          "next_hook": "중앙핵이 담운 이름을 직접 붙잡는다.",
+          "outgoing_subact_cost": "중앙 권한·지원·분류 안전망이 사라지고 여섯 책임 조각을 실제로 배송해야만 세계가 유지된다."
+        },
+        "registry_events": {
+          "items": [
+            "CI110:final",
+            "CI114:first"
+          ],
+          "sets": [
+            "SET022:complete"
+          ],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    }
+  ]
+}
