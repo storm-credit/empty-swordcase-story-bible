@@ -6,6 +6,7 @@ on:
     paths:
       - 'arcadium_yota.txt'
       - 'scripts/extract_arcadium_yota.py'
+      - 'scripts/split_arcadium_extraction.py'
       - '.github/workflows/extract-arcadium-yota.yml'
   pull_request:
     branches: [main]
@@ -13,6 +14,7 @@ on:
       - 'analysis/ARCADIUM_EXTRACTION_REQUEST.md'
       - 'arcadium_yota.txt'
       - 'scripts/extract_arcadium_yota.py'
+      - 'scripts/split_arcadium_extraction.py'
       - '.github/workflows/extract-arcadium-yota.yml'
   workflow_dispatch:
 
@@ -31,15 +33,17 @@ jobs:
         with:
           python-version: '3.12'
       - name: Extract large source by worldbuilding category
-        run: python scripts/extract_arcadium_yota.py
+        run: |
+          python scripts/extract_arcadium_yota.py
+          python scripts/split_arcadium_extraction.py
       - name: Commit derived analysis source
         run: |
-          if [ -z "$(git status --porcelain -- analysis/arcadium_yota_extraction.md)" ]; then
+          if [ -z "$(git status --porcelain -- analysis/arcadium_yota_extraction.md analysis/arcadium_categories)" ]; then
             echo 'No extraction changes'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add analysis/arcadium_yota_extraction.md
-          git commit -m 'Generate Arcadium Yota comparison extraction [skip ci]'
+          git add analysis/arcadium_yota_extraction.md analysis/arcadium_categories
+          git commit -m 'Generate Arcadium Yota comparison categories [skip ci]'
           git push origin HEAD:${{ github.head_ref || github.ref_name }}
