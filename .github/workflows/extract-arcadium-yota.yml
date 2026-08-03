@@ -1,0 +1,37 @@
+name: Extract Arcadium Yota world bible
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'arcadium_yota.txt'
+      - 'scripts/extract_arcadium_yota.py'
+      - '.github/workflows/extract-arcadium-yota.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Extract large source by worldbuilding category
+        run: python scripts/extract_arcadium_yota.py
+      - name: Commit derived analysis source
+        run: |
+          if git diff --quiet -- analysis/arcadium_yota_extraction.md; then
+            echo 'No extraction changes'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add analysis/arcadium_yota_extraction.md
+          git commit -m 'Generate Arcadium Yota comparison extraction [skip ci]'
+          git push
