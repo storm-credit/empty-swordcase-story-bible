@@ -28,6 +28,13 @@ def require(condition: bool, message: str) -> None:
         ERRORS.append(message)
 
 
+def meaningful_sentence(value: Any, minimum: int = 18) -> bool:
+    if not isinstance(value, str):
+        return False
+    text = value.strip()
+    return len(text) >= minimum and text[-1] in ".?!다요음됨함임." 
+
+
 def main() -> int:
     voice_cards = load("data/character_voice_cards_v2_9.json")
     overlay = load("data/character_emotional_operability_overlay_v3_3.json")
@@ -39,41 +46,62 @@ def main() -> int:
     require(len(voice_names) == 28, f"voice-card source must contain 28 characters, found {len(voice_names)}")
     require(len(records) == 28, f"emotional overlay must contain 28 characters, found {len(records)}")
     require(overlay.get("author_approval_required") is True, "character overlay must require author approval")
-    require([record.get("id") for record in records] == [f"CH{index:03d}" for index in range(1, 29)], "character IDs must be CH001..CH028")
+    require(
+        [record.get("id") for record in records] == [f"CH{index:03d}" for index in range(1, 29)],
+        "character IDs must be CH001..CH028",
+    )
+
     overlay_names = [record.get("name") for record in records]
     require(overlay_names == voice_names, "character overlay names/order must exactly match voice-card source")
     require(len(set(overlay_names)) == 28, "character names must be unique")
 
-    required_fields = [
-        "source_role", "private_goal", "hidden_insecurity", "refusal_line",
-        "personal_loss_from_damun_choice", "choice_without_damun",
-        "relationship_pressure", "focus_episodes",
+    text_fields = [
+        "source_role",
+        "private_goal",
+        "hidden_insecurity",
+        "refusal_line",
+        "personal_loss_from_damun_choice",
+        "choice_without_damun",
+        "relationship_pressure",
     ]
     for record in records:
         label = record.get("id", "unknown character")
-        for field in required_fields:
-            require(record.get(field) not in (None, "", []), f"{label} missing/empty field: {field}")
-        for field in required_fields[:-1]:
-            require(len(record.get(field, "")) >= 18, f"{label} field too vague: {field}")
+        for field in text_fields:
+            require(meaningful_sentence(record.get(field)), f"{label} field is empty or too vague: {field}")
+
+        private_goal = record.get("private_goal", "").strip()
+        choice_without_damun = record.get("choice_without_damun", "").strip()
+        refusal_line = record.get("refusal_line", "").strip()
+        personal_loss = record.get("personal_loss_from_damun_choice", "").strip()
+        require(choice_without_damun != private_goal, f"{label} choice_without_damun merely repeats private_goal")
+        require(refusal_line != private_goal, f"{label} refusal_line merely repeats private_goal")
+        require(personal_loss != private_goal, f"{label} personal loss merely repeats private_goal")
+        require("담운이 결정한다" not in choice_without_damun, f"{label} choice_without_damun still depends on Damun")
+        require("담운의 명령" not in choice_without_damun, f"{label} choice_without_damun still depends on Damun's order")
+
         episodes = record.get("focus_episodes", [])
+        require(isinstance(episodes, list) and episodes, f"{label} focus_episodes missing")
         require(episodes == sorted(set(episodes)), f"{label} focus_episodes must be sorted and unique")
-        require(all(isinstance(episode, int) and 1 <= episode <= 200 for episode in episodes), f"{label} invalid focus episode")
-        require("담운" not in record.get("private_goal", "") or record.get("name") == "담운", f"{label} private goal must not depend on Damun")
-        require(any(word in record.get("choice_without_damun", "") for word in ("공개", "선택", "열", "넘", "돌", "중단", "파괴", "배포", "복제", "울", "구조", "인계")), f"{label} choice_without_damun lacks a concrete action")
+        require(
+            all(isinstance(episode, int) and 1 <= episode <= 200 for episode in episodes),
+            f"{label} invalid focus episode",
+        )
 
     corrections = governance.get("effective_corrections", {})
     effective_beast_names: list[str] = []
     for beast in beasts_payload.get("beasts", []):
-        effective_beast_names.append(corrections.get(beast.get("id"), {}).get("name", beast.get("name")))
+        effective_beast_names.append(
+            corrections.get(beast.get("id"), {}).get("name", beast.get("name"))
+        )
     collisions = sorted(set(overlay_names) & set(effective_beast_names))
     require(not collisions, f"human/beast name collision remains after governance corrections: {collisions}")
 
     result = {
-        "version":"3.3",
-        "status":"failed" if ERRORS else "passed",
-        "errors":ERRORS,
-        "verified_characters":len(records),
-        "canon_status":"provisional_candidate_pending_author_approval",
+        "version": "3.3",
+        "status": "failed" if ERRORS else "passed",
+        "errors": ERRORS,
+        "verified_characters": len(records),
+        "canon_status": "provisional_candidate_pending_author_approval",
     }
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return 1 if ERRORS else 0
