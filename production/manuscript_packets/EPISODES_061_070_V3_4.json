@@ -1,0 +1,1632 @@
+{
+  "version": "v3.4-manuscript-packet-v1",
+  "status": "derived_read_only_drafting_input",
+  "protected_canon_unchanged": true,
+  "range": [
+    61,
+    70
+  ],
+  "episodes": [
+    {
+      "episode": 61,
+      "canonical_episode": {
+        "episode": 61,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA3",
+        "subact_title": "일곱 조각의 봉인성",
+        "title": "북설원의 문",
+        "goal": "북설원 입구에서 신수와 유물의 통행을 따로 심사한다.",
+        "choice": "무석이 일행 감시자로 붙음",
+        "reward": "북설 통행패",
+        "hook": "검함이 눈 아래 묻힌 갑옷 조각에 반응한다.",
+        "location": "북설원 칠촌·얼어붙은 역참",
+        "cast": [
+          "곽무석",
+          "담운",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "새 문제와 지역 규칙 도입",
+        "cost": "신수·유물 이중 심사로 식량과 약재가 얼어붙은 관문에 하루 묶인다."
+      },
+      "scene_blueprint": {
+        "episode": 61,
+        "act": "ACT2",
+        "subact_id": "A07",
+        "source_subact": "ACT2-SA3",
+        "title": "북설원의 문",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "북설원 입구에서 신수와 유물의 통행을 따로 심사한다.",
+          "choice": "무석이 일행 감시자로 붙음",
+          "reward": "북설 통행패",
+          "hook": "검함이 눈 아래 묻힌 갑옷 조각에 반응한다.",
+          "location": "북설원 칠촌·얼어붙은 역참",
+          "cast": [
+            "곽무석",
+            "담운",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "새 문제와 지역 규칙 도입",
+          "cost": "신수·유물 이중 심사로 식량과 약재가 얼어붙은 관문에 하루 묶인다."
+        },
+        "state_before": {
+          "previous_hook": "두리가 멈춘 채 북쪽을 가리킨다.",
+          "previous_cost": "원격 봉인을 끊는 과정에서 두리의 한쪽 날개가 굳어 북설까지 비행하지 못한다.",
+          "incoming_subact_cost": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설원 칠촌·얼어붙은 역참에서 즉시 행동 문제로 회수한다.",
+            "pressure": "두리가 멈춘 채 북쪽을 가리킨다.",
+            "action": "곽무석·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "북설원 입구에서 신수와 유물의 통행을 따로 심사한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "새 문제와 지역 규칙 도입",
+            "action": "북설원 칠촌·얼어붙은 역참의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "신수·유물 이중 심사로 식량과 약재가 얼어붙은 관문에 하루 묶인다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "북설원 입구에서 신수와 유물의 통행을 따로 심사한다.",
+            "pressure": "설갑 일곱 조각과 식량·봉화 교대를 공동 방어망으로 재구성한다.",
+            "action": "곽무석·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 무석이 일행 감시자로 붙음라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI037:first",
+            "action": "후보 참조(CI037:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "북설 통행패",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "무석이 일행 감시자로 붙음",
+            "pressure": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "신수·유물 이중 심사로 식량과 약재가 얼어붙은 관문에 하루 묶인다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "북설 통행패",
+            "pressure": "신수·유물 이중 심사로 식량과 약재가 얼어붙은 관문에 하루 묶인다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "검함이 눈 아래 묻힌 갑옷 조각에 반응한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "신수·유물 이중 심사로 식량과 약재가 얼어붙은 관문에 하루 묶인다.",
+          "earned_reward": "북설 통행패",
+          "next_hook": "검함이 눈 아래 묻힌 갑옷 조각에 반응한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI037:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+        "supporting_cast_additions": [
+          {
+            "id": "SC015",
+            "name": "강설현",
+            "role": "피풍 속 생존자",
+            "scene_function": "지역 생활 비용·증거·거절선을 행동으로 보여주고 주연의 선택을 대신 결정하지 않는다.",
+            "canon_effect": "기존 goal·choice·reward·hook·cost 불변"
+          }
+        ]
+      }
+    },
+    {
+      "episode": 62,
+      "canonical_episode": {
+        "episode": 62,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA3",
+        "subact_title": "일곱 조각의 봉인성",
+        "title": "얼어붙은 역참",
+        "goal": "버려진 역참의 사람들은 피풍 안에서 시간이 멈춰 있다.",
+        "choice": "담운이 구조와 봉인의 차이를 고민",
+        "reward": "얼음숨 복면",
+        "hook": "피풍 주인이 아직 살아 있다는 신호가 잡힌다.",
+        "location": "북설원 칠촌·얼어붙은 역참",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "규칙의 예외와 비용 확대",
+        "cost": "피풍 구조를 시도하다 예란의 체온이 급락해 이후 해동 작업에서 빠진다."
+      },
+      "scene_blueprint": {
+        "episode": 62,
+        "act": "ACT2",
+        "subact_id": "A07",
+        "source_subact": "ACT2-SA3",
+        "title": "얼어붙은 역참",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "버려진 역참의 사람들은 피풍 안에서 시간이 멈춰 있다.",
+          "choice": "담운이 구조와 봉인의 차이를 고민",
+          "reward": "얼음숨 복면",
+          "hook": "피풍 주인이 아직 살아 있다는 신호가 잡힌다.",
+          "location": "북설원 칠촌·얼어붙은 역참",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "규칙의 예외와 비용 확대",
+          "cost": "피풍 구조를 시도하다 예란의 체온이 급락해 이후 해동 작업에서 빠진다."
+        },
+        "state_before": {
+          "previous_hook": "검함이 눈 아래 묻힌 갑옷 조각에 반응한다.",
+          "previous_cost": "신수·유물 이중 심사로 식량과 약재가 얼어붙은 관문에 하루 묶인다.",
+          "incoming_subact_cost": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설원 칠촌·얼어붙은 역참에서 즉시 행동 문제로 회수한다.",
+            "pressure": "검함이 눈 아래 묻힌 갑옷 조각에 반응한다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "버려진 역참의 사람들은 피풍 안에서 시간이 멈춰 있다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "규칙의 예외와 비용 확대",
+            "action": "북설원 칠촌·얼어붙은 역참의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "피풍 구조를 시도하다 예란의 체온이 급락해 이후 해동 작업에서 빠진다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "버려진 역참의 사람들은 피풍 안에서 시간이 멈춰 있다.",
+            "pressure": "설갑 일곱 조각과 식량·봉화 교대를 공동 방어망으로 재구성한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 구조와 봉인의 차이를 고민라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI038:first",
+            "action": "후보 참조(CI038:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "얼음숨 복면",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 구조와 봉인의 차이를 고민",
+            "pressure": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "피풍 구조를 시도하다 예란의 체온이 급락해 이후 해동 작업에서 빠진다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "얼음숨 복면",
+            "pressure": "피풍 구조를 시도하다 예란의 체온이 급락해 이후 해동 작업에서 빠진다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "피풍 주인이 아직 살아 있다는 신호가 잡힌다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "피풍 구조를 시도하다 예란의 체온이 급락해 이후 해동 작업에서 빠진다.",
+          "earned_reward": "얼음숨 복면",
+          "next_hook": "피풍 주인이 아직 살아 있다는 신호가 잡힌다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI038:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+        "supporting_cast_additions": [
+          {
+            "id": "SC016",
+            "name": "노상린",
+            "role": "칠촌 대표",
+            "scene_function": "지역 생활 비용·증거·거절선을 행동으로 보여주고 주연의 선택을 대신 결정하지 않는다.",
+            "canon_effect": "기존 goal·choice·reward·hook·cost 불변"
+          }
+        ]
+      }
+    },
+    {
+      "episode": 63,
+      "canonical_episode": {
+        "episode": 63,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA3",
+        "subact_title": "일곱 조각의 봉인성",
+        "title": "첫 번째 설갑 조각",
+        "goal": "설촌 아이가 썰매 밑판으로 쓰던 갑옷 조각을 발견한다.",
+        "choice": "무석이 강제 회수를 시도",
+        "reward": "설갑 1/7",
+        "hook": "조각이 아이의 이름을 방패 표면에 새긴다.",
+        "location": "북설원 칠촌·얼어붙은 역참",
+        "cast": [
+          "곽무석",
+          "담운",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "첫 실전 적용과 오판",
+        "cost": "설갑 조각을 되찾는 대신 아이의 썰매를 새로 만들어 줄 장비와 시간을 지불한다."
+      },
+      "scene_blueprint": {
+        "episode": 63,
+        "act": "ACT2",
+        "subact_id": "A07",
+        "source_subact": "ACT2-SA3",
+        "title": "첫 번째 설갑 조각",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "설촌 아이가 썰매 밑판으로 쓰던 갑옷 조각을 발견한다.",
+          "choice": "무석이 강제 회수를 시도",
+          "reward": "설갑 1/7",
+          "hook": "조각이 아이의 이름을 방패 표면에 새긴다.",
+          "location": "북설원 칠촌·얼어붙은 역참",
+          "cast": [
+            "곽무석",
+            "담운",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "첫 실전 적용과 오판",
+          "cost": "설갑 조각을 되찾는 대신 아이의 썰매를 새로 만들어 줄 장비와 시간을 지불한다."
+        },
+        "state_before": {
+          "previous_hook": "피풍 주인이 아직 살아 있다는 신호가 잡힌다.",
+          "previous_cost": "피풍 구조를 시도하다 예란의 체온이 급락해 이후 해동 작업에서 빠진다.",
+          "incoming_subact_cost": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설원 칠촌·얼어붙은 역참에서 즉시 행동 문제로 회수한다.",
+            "pressure": "피풍 주인이 아직 살아 있다는 신호가 잡힌다.",
+            "action": "곽무석·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "설촌 아이가 썰매 밑판으로 쓰던 갑옷 조각을 발견한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "첫 실전 적용과 오판",
+            "action": "북설원 칠촌·얼어붙은 역참의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "설갑 조각을 되찾는 대신 아이의 썰매를 새로 만들어 줄 장비와 시간을 지불한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "설촌 아이가 썰매 밑판으로 쓰던 갑옷 조각을 발견한다.",
+            "pressure": "설갑 일곱 조각과 식량·봉화 교대를 공동 방어망으로 재구성한다.",
+            "action": "곽무석·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 무석이 강제 회수를 시도라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "BS009",
+            "action": "후보 참조(BS009)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "설갑 1/7",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "무석이 강제 회수를 시도",
+            "pressure": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "설갑 조각을 되찾는 대신 아이의 썰매를 새로 만들어 줄 장비와 시간을 지불한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "설갑 1/7",
+            "pressure": "설갑 조각을 되찾는 대신 아이의 썰매를 새로 만들어 줄 장비와 시간을 지불한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "조각이 아이의 이름을 방패 표면에 새긴다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "설갑 조각을 되찾는 대신 아이의 썰매를 새로 만들어 줄 장비와 시간을 지불한다.",
+          "earned_reward": "설갑 1/7",
+          "next_hook": "조각이 아이의 이름을 방패 표면에 새긴다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": [
+            "BS009"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803",
+        "supporting_cast_additions": [
+          {
+            "id": "SC017",
+            "name": "윤봉",
+            "role": "귀장회 북설 현장대장",
+            "scene_function": "지역 생활 비용·증거·거절선을 행동으로 보여주고 주연의 선택을 대신 결정하지 않는다.",
+            "canon_effect": "기존 goal·choice·reward·hook·cost 불변"
+          }
+        ]
+      }
+    },
+    {
+      "episode": 64,
+      "canonical_episode": {
+        "episode": 64,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA3",
+        "subact_title": "일곱 조각의 봉인성",
+        "title": "일곱 마을의 갑옷",
+        "goal": "설갑이 일곱 마을에 한 조각씩 분산된 공동 방어구임을 안다.",
+        "choice": "담운이 한 사람이 소유할 수 없음을 인정",
+        "reward": "설갑 세트 구조",
+        "hook": "한 마을이 조각을 팔아 식량을 구하려 한다.",
+        "location": "북설원 칠촌·얼어붙은 역참",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "적대 세력의 압박 구체화",
+        "cost": "조각을 팔려는 마을에 식량을 보전해 주느라 일행의 여비 절반이 사라진다."
+      },
+      "scene_blueprint": {
+        "episode": 64,
+        "act": "ACT2",
+        "subact_id": "A07",
+        "source_subact": "ACT2-SA3",
+        "title": "일곱 마을의 갑옷",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "설갑이 일곱 마을에 한 조각씩 분산된 공동 방어구임을 안다.",
+          "choice": "담운이 한 사람이 소유할 수 없음을 인정",
+          "reward": "설갑 세트 구조",
+          "hook": "한 마을이 조각을 팔아 식량을 구하려 한다.",
+          "location": "북설원 칠촌·얼어붙은 역참",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "적대 세력의 압박 구체화",
+          "cost": "조각을 팔려는 마을에 식량을 보전해 주느라 일행의 여비 절반이 사라진다."
+        },
+        "state_before": {
+          "previous_hook": "조각이 아이의 이름을 방패 표면에 새긴다.",
+          "previous_cost": "설갑 조각을 되찾는 대신 아이의 썰매를 새로 만들어 줄 장비와 시간을 지불한다.",
+          "incoming_subact_cost": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설원 칠촌·얼어붙은 역참에서 즉시 행동 문제로 회수한다.",
+            "pressure": "조각이 아이의 이름을 방패 표면에 새긴다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "설갑이 일곱 마을에 한 조각씩 분산된 공동 방어구임을 안다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "적대 세력의 압박 구체화",
+            "action": "북설원 칠촌·얼어붙은 역참의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "조각을 팔려는 마을에 식량을 보전해 주느라 일행의 여비 절반이 사라진다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "설갑이 일곱 마을에 한 조각씩 분산된 공동 방어구임을 안다.",
+            "pressure": "설갑 일곱 조각과 식량·봉화 교대를 공동 방어망으로 재구성한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 한 사람이 소유할 수 없음을 인정라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI039:first, BS010",
+            "action": "후보 참조(CI039:first, BS010)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "설갑 세트 구조",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 한 사람이 소유할 수 없음을 인정",
+            "pressure": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "조각을 팔려는 마을에 식량을 보전해 주느라 일행의 여비 절반이 사라진다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "설갑 세트 구조",
+            "pressure": "조각을 팔려는 마을에 식량을 보전해 주느라 일행의 여비 절반이 사라진다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "한 마을이 조각을 팔아 식량을 구하려 한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "조각을 팔려는 마을에 식량을 보전해 주느라 일행의 여비 절반이 사라진다.",
+          "earned_reward": "설갑 세트 구조",
+          "next_hook": "한 마을이 조각을 팔아 식량을 구하려 한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI039:first"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS010"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 65,
+      "canonical_episode": {
+        "episode": 65,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA3",
+        "subact_title": "일곱 조각의 봉인성",
+        "title": "주인을 얼린 피풍",
+        "goal": "피풍이 치명상 입은 주인을 수십 년간 얼려 살린 사실을 확인한다.",
+        "choice": "예란이 해동 위험을 경고",
+        "reward": "피풍 후보",
+        "hook": "주인이 깨어나면 일곱 마을 봉인이 무너진다.",
+        "location": "북설원 칠촌·얼어붙은 역참",
+        "cast": [
+          "소예란",
+          "담운",
+          "서린화",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "서브액트 중간 선택",
+        "cost": "피풍 주인을 살리기 위해 해동을 미루고 봉인성 진입 시간을 잃는다."
+      },
+      "scene_blueprint": {
+        "episode": 65,
+        "act": "ACT2",
+        "subact_id": "A07",
+        "source_subact": "ACT2-SA3",
+        "title": "주인을 얼린 피풍",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "피풍이 치명상 입은 주인을 수십 년간 얼려 살린 사실을 확인한다.",
+          "choice": "예란이 해동 위험을 경고",
+          "reward": "피풍 후보",
+          "hook": "주인이 깨어나면 일곱 마을 봉인이 무너진다.",
+          "location": "북설원 칠촌·얼어붙은 역참",
+          "cast": [
+            "소예란",
+            "담운",
+            "서린화",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "서브액트 중간 선택",
+          "cost": "피풍 주인을 살리기 위해 해동을 미루고 봉인성 진입 시간을 잃는다."
+        },
+        "state_before": {
+          "previous_hook": "한 마을이 조각을 팔아 식량을 구하려 한다.",
+          "previous_cost": "조각을 팔려는 마을에 식량을 보전해 주느라 일행의 여비 절반이 사라진다.",
+          "incoming_subact_cost": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설원 칠촌·얼어붙은 역참에서 즉시 행동 문제로 회수한다.",
+            "pressure": "한 마을이 조각을 팔아 식량을 구하려 한다.",
+            "action": "소예란·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "피풍이 치명상 입은 주인을 수십 년간 얼려 살린 사실을 확인한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 중간 선택",
+            "action": "북설원 칠촌·얼어붙은 역참의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "피풍 주인을 살리기 위해 해동을 미루고 봉인성 진입 시간을 잃는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "피풍이 치명상 입은 주인을 수십 년간 얼려 살린 사실을 확인한다.",
+            "pressure": "설갑 일곱 조각과 식량·봉화 교대를 공동 방어망으로 재구성한다.",
+            "action": "소예란·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 예란이 해동 위험을 경고라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI040:first, BS009",
+            "action": "후보 참조(CI040:first, BS009)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "피풍 후보",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "예란이 해동 위험을 경고",
+            "pressure": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "피풍 주인을 살리기 위해 해동을 미루고 봉인성 진입 시간을 잃는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "피풍 후보",
+            "pressure": "피풍 주인을 살리기 위해 해동을 미루고 봉인성 진입 시간을 잃는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "주인이 깨어나면 일곱 마을 봉인이 무너진다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "피풍 주인을 살리기 위해 해동을 미루고 봉인성 진입 시간을 잃는다.",
+          "earned_reward": "피풍 후보",
+          "next_hook": "주인이 깨어나면 일곱 마을 봉인이 무너진다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI040:first"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS009"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 66,
+      "canonical_episode": {
+        "episode": 66,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA3",
+        "subact_title": "일곱 조각의 봉인성",
+        "title": "봉인관의 결투",
+        "goal": "무석이 담운에게 유물 사용 자격 결투를 요구한다.",
+        "choice": "담운은 이기기보다 마을을 지키는 목표 선택",
+        "reward": "인정 결투 규칙",
+        "hook": "무석의 방패 안에서 희생자 이름이 들린다.",
+        "location": "북설원 칠촌·얼어붙은 역참",
+        "cast": [
+          "담운",
+          "곽무석",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "선택의 후폭풍과 관계 변화",
+        "cost": "결투에서 담운은 승기를 버리고 봉화대를 지켜 오른쪽 무릎을 다친다."
+      },
+      "scene_blueprint": {
+        "episode": 66,
+        "act": "ACT2",
+        "subact_id": "A07",
+        "source_subact": "ACT2-SA3",
+        "title": "봉인관의 결투",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "무석이 담운에게 유물 사용 자격 결투를 요구한다.",
+          "choice": "담운은 이기기보다 마을을 지키는 목표 선택",
+          "reward": "인정 결투 규칙",
+          "hook": "무석의 방패 안에서 희생자 이름이 들린다.",
+          "location": "북설원 칠촌·얼어붙은 역참",
+          "cast": [
+            "담운",
+            "곽무석",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "선택의 후폭풍과 관계 변화",
+          "cost": "결투에서 담운은 승기를 버리고 봉화대를 지켜 오른쪽 무릎을 다친다."
+        },
+        "state_before": {
+          "previous_hook": "주인이 깨어나면 일곱 마을 봉인이 무너진다.",
+          "previous_cost": "피풍 주인을 살리기 위해 해동을 미루고 봉인성 진입 시간을 잃는다.",
+          "incoming_subact_cost": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설원 칠촌·얼어붙은 역참에서 즉시 행동 문제로 회수한다.",
+            "pressure": "주인이 깨어나면 일곱 마을 봉인이 무너진다.",
+            "action": "담운·곽무석가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "무석이 담운에게 유물 사용 자격 결투를 요구한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "선택의 후폭풍과 관계 변화",
+            "action": "북설원 칠촌·얼어붙은 역참의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "결투에서 담운은 승기를 버리고 봉화대를 지켜 오른쪽 무릎을 다친다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "무석이 담운에게 유물 사용 자격 결투를 요구한다.",
+            "pressure": "설갑 일곱 조각과 식량·봉화 교대를 공동 방어망으로 재구성한다.",
+            "action": "담운·곽무석가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운은 이기기보다 마을을 지키는 목표 선택라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "BS011",
+            "action": "후보 참조(BS011)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "인정 결투 규칙",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운은 이기기보다 마을을 지키는 목표 선택",
+            "pressure": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "결투에서 담운은 승기를 버리고 봉화대를 지켜 오른쪽 무릎을 다친다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "인정 결투 규칙",
+            "pressure": "결투에서 담운은 승기를 버리고 봉화대를 지켜 오른쪽 무릎을 다친다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "무석의 방패 안에서 희생자 이름이 들린다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "결투에서 담운은 승기를 버리고 봉화대를 지켜 오른쪽 무릎을 다친다.",
+          "earned_reward": "인정 결투 규칙",
+          "next_hook": "무석의 방패 안에서 희생자 이름이 들린다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": [
+            "BS011"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 67,
+      "canonical_episode": {
+        "episode": 67,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA3",
+        "subact_title": "일곱 조각의 봉인성",
+        "title": "잠들지 않는 설각마",
+        "goal": "설각마 무리가 밤새 봉인선을 순찰한다.",
+        "choice": "두리와 설각마가 서로 경계",
+        "reward": "설각마 공동계약 후보",
+        "hook": "무리의 선두가 인간 안장을 거부한다.",
+        "location": "북설원 칠촌·얼어붙은 역참",
+        "cast": [
+          "두리",
+          "담운",
+          "서린화",
+          "소예란",
+          "곽무석"
+        ],
+        "episode_function": "숨은 진실 또는 역전",
+        "cost": "설각마 안장을 포기해 눈보라 속 이동 속도가 절반으로 줄어든다."
+      },
+      "scene_blueprint": {
+        "episode": 67,
+        "act": "ACT2",
+        "subact_id": "A07",
+        "source_subact": "ACT2-SA3",
+        "title": "잠들지 않는 설각마",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "설각마 무리가 밤새 봉인선을 순찰한다.",
+          "choice": "두리와 설각마가 서로 경계",
+          "reward": "설각마 공동계약 후보",
+          "hook": "무리의 선두가 인간 안장을 거부한다.",
+          "location": "북설원 칠촌·얼어붙은 역참",
+          "cast": [
+            "두리",
+            "담운",
+            "서린화",
+            "소예란",
+            "곽무석"
+          ],
+          "episode_function": "숨은 진실 또는 역전",
+          "cost": "설각마 안장을 포기해 눈보라 속 이동 속도가 절반으로 줄어든다."
+        },
+        "state_before": {
+          "previous_hook": "무석의 방패 안에서 희생자 이름이 들린다.",
+          "previous_cost": "결투에서 담운은 승기를 버리고 봉화대를 지켜 오른쪽 무릎을 다친다.",
+          "incoming_subact_cost": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설원 칠촌·얼어붙은 역참에서 즉시 행동 문제로 회수한다.",
+            "pressure": "무석의 방패 안에서 희생자 이름이 들린다.",
+            "action": "두리·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "설각마 무리가 밤새 봉인선을 순찰한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "숨은 진실 또는 역전",
+            "action": "북설원 칠촌·얼어붙은 역참의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "설각마 안장을 포기해 눈보라 속 이동 속도가 절반으로 줄어든다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "설각마 무리가 밤새 봉인선을 순찰한다.",
+            "pressure": "설갑 일곱 조각과 식량·봉화 교대를 공동 방어망으로 재구성한다.",
+            "action": "두리·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 두리와 설각마가 서로 경계라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI041:first, BS010",
+            "action": "후보 참조(CI041:first, BS010)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "설각마 공동계약 후보",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "두리와 설각마가 서로 경계",
+            "pressure": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "설각마 안장을 포기해 눈보라 속 이동 속도가 절반으로 줄어든다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "설각마 공동계약 후보",
+            "pressure": "설각마 안장을 포기해 눈보라 속 이동 속도가 절반으로 줄어든다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "무리의 선두가 인간 안장을 거부한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "설각마 안장을 포기해 눈보라 속 이동 속도가 절반으로 줄어든다.",
+          "earned_reward": "설각마 공동계약 후보",
+          "next_hook": "무리의 선두가 인간 안장을 거부한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI041:first"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS010"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 68,
+      "canonical_episode": {
+        "episode": 68,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA3",
+        "subact_title": "일곱 조각의 봉인성",
+        "title": "곽무석의 봉인",
+        "goal": "무석이 과거 자신의 판단으로 한 마을을 봉인했음을 고백한다.",
+        "choice": "무석의 죄책감과 역할 공개",
+        "reward": "방패 이름판",
+        "hook": "봉인된 마을에서 생존자의 종이 울린다.",
+        "location": "북설원 칠촌·얼어붙은 역참",
+        "cast": [
+          "곽무석",
+          "담운",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "해결책의 조립과 대가 확정",
+        "cost": "무석의 과거를 공개한 대가로 봉인관 지휘권이 정지된다."
+      },
+      "scene_blueprint": {
+        "episode": 68,
+        "act": "ACT2",
+        "subact_id": "A07",
+        "source_subact": "ACT2-SA3",
+        "title": "곽무석의 봉인",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "무석이 과거 자신의 판단으로 한 마을을 봉인했음을 고백한다.",
+          "choice": "무석의 죄책감과 역할 공개",
+          "reward": "방패 이름판",
+          "hook": "봉인된 마을에서 생존자의 종이 울린다.",
+          "location": "북설원 칠촌·얼어붙은 역참",
+          "cast": [
+            "곽무석",
+            "담운",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "해결책의 조립과 대가 확정",
+          "cost": "무석의 과거를 공개한 대가로 봉인관 지휘권이 정지된다."
+        },
+        "state_before": {
+          "previous_hook": "무리의 선두가 인간 안장을 거부한다.",
+          "previous_cost": "설각마 안장을 포기해 눈보라 속 이동 속도가 절반으로 줄어든다.",
+          "incoming_subact_cost": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설원 칠촌·얼어붙은 역참에서 즉시 행동 문제로 회수한다.",
+            "pressure": "무리의 선두가 인간 안장을 거부한다.",
+            "action": "곽무석·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "무석이 과거 자신의 판단으로 한 마을을 봉인했음을 고백한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "해결책의 조립과 대가 확정",
+            "action": "북설원 칠촌·얼어붙은 역참의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "무석의 과거를 공개한 대가로 봉인관 지휘권이 정지된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "무석이 과거 자신의 판단으로 한 마을을 봉인했음을 고백한다.",
+            "pressure": "설갑 일곱 조각과 식량·봉화 교대를 공동 방어망으로 재구성한다.",
+            "action": "곽무석·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 무석의 죄책감과 역할 공개라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "BS011",
+            "action": "후보 참조(BS011)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "방패 이름판",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "무석의 죄책감과 역할 공개",
+            "pressure": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "무석의 과거를 공개한 대가로 봉인관 지휘권이 정지된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "방패 이름판",
+            "pressure": "무석의 과거를 공개한 대가로 봉인관 지휘권이 정지된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "봉인된 마을에서 생존자의 종이 울린다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "무석의 과거를 공개한 대가로 봉인관 지휘권이 정지된다.",
+          "earned_reward": "방패 이름판",
+          "next_hook": "봉인된 마을에서 생존자의 종이 울린다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": [
+            "BS011"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 69,
+      "canonical_episode": {
+        "episode": 69,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA3",
+        "subact_title": "일곱 조각의 봉인성",
+        "title": "백장의 빈 손목",
+        "goal": "백장이 직접 나타나지만 오른손에 아무 장비도 없다.",
+        "choice": "담운이 백장의 실제 구조 실적을 목격",
+        "reward": "천품 장갑 공백",
+        "hook": "백장이 담운을 수장 후보로 부른다.",
+        "location": "북설원 칠촌·얼어붙은 역참",
+        "cast": [
+          "담운",
+          "백장",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "서브액트 클라이맥스",
+        "cost": "백장의 구조 작전을 돕느라 천품 장갑을 추적할 기회를 놓친다."
+      },
+      "scene_blueprint": {
+        "episode": 69,
+        "act": "ACT2",
+        "subact_id": "A07",
+        "source_subact": "ACT2-SA3",
+        "title": "백장의 빈 손목",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "백장이 직접 나타나지만 오른손에 아무 장비도 없다.",
+          "choice": "담운이 백장의 실제 구조 실적을 목격",
+          "reward": "천품 장갑 공백",
+          "hook": "백장이 담운을 수장 후보로 부른다.",
+          "location": "북설원 칠촌·얼어붙은 역참",
+          "cast": [
+            "담운",
+            "백장",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "서브액트 클라이맥스",
+          "cost": "백장의 구조 작전을 돕느라 천품 장갑을 추적할 기회를 놓친다."
+        },
+        "state_before": {
+          "previous_hook": "봉인된 마을에서 생존자의 종이 울린다.",
+          "previous_cost": "무석의 과거를 공개한 대가로 봉인관 지휘권이 정지된다.",
+          "incoming_subact_cost": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설원 칠촌·얼어붙은 역참에서 즉시 행동 문제로 회수한다.",
+            "pressure": "봉인된 마을에서 생존자의 종이 울린다.",
+            "action": "담운·백장가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "백장이 직접 나타나지만 오른손에 아무 장비도 없다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 클라이맥스",
+            "action": "북설원 칠촌·얼어붙은 역참의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "백장의 구조 작전을 돕느라 천품 장갑을 추적할 기회를 놓친다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "백장이 직접 나타나지만 오른손에 아무 장비도 없다.",
+            "pressure": "설갑 일곱 조각과 식량·봉화 교대를 공동 방어망으로 재구성한다.",
+            "action": "담운·백장가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 백장의 실제 구조 실적을 목격라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "BS009",
+            "action": "후보 참조(BS009)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "천품 장갑 공백",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 백장의 실제 구조 실적을 목격",
+            "pressure": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "백장의 구조 작전을 돕느라 천품 장갑을 추적할 기회를 놓친다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "천품 장갑 공백",
+            "pressure": "백장의 구조 작전을 돕느라 천품 장갑을 추적할 기회를 놓친다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "백장이 담운을 수장 후보로 부른다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "백장의 구조 작전을 돕느라 천품 장갑을 추적할 기회를 놓친다.",
+          "earned_reward": "천품 장갑 공백",
+          "next_hook": "백장이 담운을 수장 후보로 부른다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": [
+            "BS009"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 70,
+      "canonical_episode": {
+        "episode": 70,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA3",
+        "subact_title": "일곱 조각의 봉인성",
+        "title": "칠촌의 방패",
+        "goal": "설갑 세 조각이 공명해 공동 방벽을 만든다.",
+        "choice": "마을들이 경쟁을 멈추고 잠시 협력",
+        "reward": "설갑 3/7 효과",
+        "hook": "방벽 안쪽에서만 눈이 녹기 시작한다.",
+        "location": "북설원 칠촌·얼어붙은 역참",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "보상 회수와 다음 구간 훅",
+        "cost": "세 조각 방벽을 유지하느라 마을 대표 세 명이 동상 후유증을 얻는다."
+      },
+      "scene_blueprint": {
+        "episode": 70,
+        "act": "ACT2",
+        "subact_id": "A07",
+        "source_subact": "ACT2-SA3",
+        "title": "칠촌의 방패",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "설갑 세 조각이 공명해 공동 방벽을 만든다.",
+          "choice": "마을들이 경쟁을 멈추고 잠시 협력",
+          "reward": "설갑 3/7 효과",
+          "hook": "방벽 안쪽에서만 눈이 녹기 시작한다.",
+          "location": "북설원 칠촌·얼어붙은 역참",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "보상 회수와 다음 구간 훅",
+          "cost": "세 조각 방벽을 유지하느라 마을 대표 세 명이 동상 후유증을 얻는다."
+        },
+        "state_before": {
+          "previous_hook": "백장이 담운을 수장 후보로 부른다.",
+          "previous_cost": "백장의 구조 작전을 돕느라 천품 장갑을 추적할 기회를 놓친다.",
+          "incoming_subact_cost": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 북설원 칠촌·얼어붙은 역참에서 즉시 행동 문제로 회수한다.",
+            "pressure": "백장이 담운을 수장 후보로 부른다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "설갑 세 조각이 공명해 공동 방벽을 만든다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "보상 회수와 다음 구간 훅",
+            "action": "북설원 칠촌·얼어붙은 역참의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "세 조각 방벽을 유지하느라 마을 대표 세 명이 동상 후유증을 얻는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "설갑 세 조각이 공명해 공동 방벽을 만든다.",
+            "pressure": "설갑 일곱 조각과 식량·봉화 교대를 공동 방어망으로 재구성한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 마을들이 경쟁을 멈추고 잠시 협력라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI037:final, CI038:final, CI039:final, CI040:final, CI042:first, SET009:complete, BS010",
+            "action": "후보 참조(CI037:final, CI038:final, CI039:final, CI040:final, CI042:first, SET009:complete, BS010)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "설갑 3/7 효과",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "마을들이 경쟁을 멈추고 잠시 협력",
+            "pressure": "남독의 비수집 선택으로 북설원에 보낼 단일 강력 유물이 없고 일곱 촌락의 부담이 커진다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "세 조각 방벽을 유지하느라 마을 대표 세 명이 동상 후유증을 얻는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "설갑 3/7 효과",
+            "pressure": "가난한 촌락의 교대 부담과 귀장회 규격 충돌이 커지고 곽무석이 조직과 주민 사이에서 갈라진다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "방벽 안쪽에서만 눈이 녹기 시작한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "세 조각 방벽을 유지하느라 마을 대표 세 명이 동상 후유증을 얻는다.",
+          "earned_reward": "설갑 3/7 효과",
+          "next_hook": "방벽 안쪽에서만 눈이 녹기 시작한다.",
+          "outgoing_subact_cost": "가난한 촌락의 교대 부담과 귀장회 규격 충돌이 커지고 곽무석이 조직과 주민 사이에서 갈라진다."
+        },
+        "registry_events": {
+          "items": [
+            "CI037:final",
+            "CI038:final",
+            "CI039:final",
+            "CI040:final",
+            "CI042:first"
+          ],
+          "sets": [
+            "SET009:complete"
+          ],
+          "beasts": [
+            "BS010"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    }
+  ]
+}

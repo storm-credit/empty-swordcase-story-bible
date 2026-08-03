@@ -1,0 +1,1607 @@
+{
+  "version": "v3.4-manuscript-packet-v1",
+  "status": "derived_read_only_drafting_input",
+  "protected_canon_unchanged": true,
+  "range": [
+    51,
+    60
+  ],
+  "episodes": [
+    {
+      "episode": 51,
+      "canonical_episode": {
+        "episode": 51,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA2",
+        "subact_title": "잠든 숲을 놓아주다",
+        "title": "그리움의 냄새",
+        "goal": "두리의 능력으로 사라진 신수와 사람의 흔적을 구분해 추적한다.",
+        "choice": "담운과 예란 협업 시작",
+        "reward": "두리 능력 1단계",
+        "hook": "냄새가 향로가 아니라 마을 원로에게 이어진다.",
+        "location": "잠든 숲·천공무고 신수 분류실",
+        "cast": [
+          "담운",
+          "두리",
+          "소예란",
+          "서린화",
+          "허잠"
+        ],
+        "episode_function": "새 문제와 지역 규칙 도입",
+        "cost": "추적 중 두리의 냄새 감각이 과열돼 한 시진 동안 담운도 구별하지 못한다."
+      },
+      "scene_blueprint": {
+        "episode": 51,
+        "act": "ACT2",
+        "subact_id": "A06",
+        "source_subact": "ACT2-SA2",
+        "title": "그리움의 냄새",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "두리의 능력으로 사라진 신수와 사람의 흔적을 구분해 추적한다.",
+          "choice": "담운과 예란 협업 시작",
+          "reward": "두리 능력 1단계",
+          "hook": "냄새가 향로가 아니라 마을 원로에게 이어진다.",
+          "location": "잠든 숲·천공무고 신수 분류실",
+          "cast": [
+            "담운",
+            "두리",
+            "소예란",
+            "서린화",
+            "허잠"
+          ],
+          "episode_function": "새 문제와 지역 규칙 도입",
+          "cost": "추적 중 두리의 냄새 감각이 과열돼 한 시진 동안 담운도 구별하지 못한다."
+        },
+        "state_before": {
+          "previous_hook": "계약문 마지막 칸이 두리 발톱으로 찢긴다.",
+          "previous_cost": "정식 계약에 소유권 조항을 넣지 않아 담운은 명령권 없이 보호 책임만 진다.",
+          "incoming_subact_cost": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 잠든 숲·천공무고 신수 분류실에서 즉시 행동 문제로 회수한다.",
+            "pressure": "계약문 마지막 칸이 두리 발톱으로 찢긴다.",
+            "action": "담운·두리가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "두리의 능력으로 사라진 신수와 사람의 흔적을 구분해 추적한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "새 문제와 지역 규칙 도입",
+            "action": "잠든 숲·천공무고 신수 분류실의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "추적 중 두리의 냄새 감각이 과열돼 한 시진 동안 담운도 구별하지 못한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "두리의 능력으로 사라진 신수와 사람의 흔적을 구분해 추적한다.",
+            "pressure": "향로와 독왕초가 사람을 살리면서 숲을 잠재우는 구조를 끊는다.",
+            "action": "담운·두리가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운과 예란 협업 시작라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI031:first, BS008",
+            "action": "후보 참조(CI031:first, BS008)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "두리 능력 1단계",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운과 예란 협업 시작",
+            "pressure": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "추적 중 두리의 냄새 감각이 과열돼 한 시진 동안 담운도 구별하지 못한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "두리 능력 1단계",
+            "pressure": "추적 중 두리의 냄새 감각이 과열돼 한 시진 동안 담운도 구별하지 못한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "냄새가 향로가 아니라 마을 원로에게 이어진다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "추적 중 두리의 냄새 감각이 과열돼 한 시진 동안 담운도 구별하지 못한다.",
+          "earned_reward": "두리 능력 1단계",
+          "next_hook": "냄새가 향로가 아니라 마을 원로에게 이어진다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI031:first"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS008"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 52,
+      "canonical_episode": {
+        "episode": 52,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA2",
+        "subact_title": "잠든 숲을 놓아주다",
+        "title": "향로를 만든 사람",
+        "goal": "원로가 과거 전염병을 막기 위해 숲을 재운 장본인임을 고백한다.",
+        "choice": "예란이 완전한 선악 구도를 버림",
+        "reward": "역향 침통",
+        "hook": "향로의 미련은 자신을 부수라는 것이 아니다.",
+        "location": "잠든 숲·천공무고 신수 분류실",
+        "cast": [
+          "소예란",
+          "담운",
+          "서린화",
+          "두리",
+          "허잠"
+        ],
+        "episode_function": "규칙의 예외와 비용 확대",
+        "cost": "원로의 고백을 공개하는 대신 마을 치료비를 일행이 떠안는다."
+      },
+      "scene_blueprint": {
+        "episode": 52,
+        "act": "ACT2",
+        "subact_id": "A06",
+        "source_subact": "ACT2-SA2",
+        "title": "향로를 만든 사람",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "원로가 과거 전염병을 막기 위해 숲을 재운 장본인임을 고백한다.",
+          "choice": "예란이 완전한 선악 구도를 버림",
+          "reward": "역향 침통",
+          "hook": "향로의 미련은 자신을 부수라는 것이 아니다.",
+          "location": "잠든 숲·천공무고 신수 분류실",
+          "cast": [
+            "소예란",
+            "담운",
+            "서린화",
+            "두리",
+            "허잠"
+          ],
+          "episode_function": "규칙의 예외와 비용 확대",
+          "cost": "원로의 고백을 공개하는 대신 마을 치료비를 일행이 떠안는다."
+        },
+        "state_before": {
+          "previous_hook": "냄새가 향로가 아니라 마을 원로에게 이어진다.",
+          "previous_cost": "추적 중 두리의 냄새 감각이 과열돼 한 시진 동안 담운도 구별하지 못한다.",
+          "incoming_subact_cost": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 잠든 숲·천공무고 신수 분류실에서 즉시 행동 문제로 회수한다.",
+            "pressure": "냄새가 향로가 아니라 마을 원로에게 이어진다.",
+            "action": "소예란·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "원로가 과거 전염병을 막기 위해 숲을 재운 장본인임을 고백한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "규칙의 예외와 비용 확대",
+            "action": "잠든 숲·천공무고 신수 분류실의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "원로의 고백을 공개하는 대신 마을 치료비를 일행이 떠안는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "원로가 과거 전염병을 막기 위해 숲을 재운 장본인임을 고백한다.",
+            "pressure": "향로와 독왕초가 사람을 살리면서 숲을 잠재우는 구조를 끊는다.",
+            "action": "소예란·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 예란이 완전한 선악 구도를 버림라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI032:first, BS006",
+            "action": "후보 참조(CI032:first, BS006)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "역향 침통",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "예란이 완전한 선악 구도를 버림",
+            "pressure": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "원로의 고백을 공개하는 대신 마을 치료비를 일행이 떠안는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "역향 침통",
+            "pressure": "원로의 고백을 공개하는 대신 마을 치료비를 일행이 떠안는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "향로의 미련은 자신을 부수라는 것이 아니다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "원로의 고백을 공개하는 대신 마을 치료비를 일행이 떠안는다.",
+          "earned_reward": "역향 침통",
+          "next_hook": "향로의 미련은 자신을 부수라는 것이 아니다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI032:first"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS006"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 53,
+      "canonical_episode": {
+        "episode": 53,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA2",
+        "subact_title": "잠든 숲을 놓아주다",
+        "title": "신수 사냥꾼의 허가증",
+        "goal": "밀매단이 합법 허가를 이용해 멸종종을 독점한 사실을 폭로한다.",
+        "choice": "린화가 시장 제도의 책임을 추적",
+        "reward": "사냥 허가증 파기",
+        "hook": "진여강이 허가증 보증인으로 나타난다.",
+        "location": "잠든 숲·천공무고 신수 분류실",
+        "cast": [
+          "진여강",
+          "서린화",
+          "담운",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "첫 실전 적용과 오판",
+        "cost": "사냥 허가증을 파기해 만보상련의 합법 운송망을 이용할 수 없게 된다."
+      },
+      "scene_blueprint": {
+        "episode": 53,
+        "act": "ACT2",
+        "subact_id": "A06",
+        "source_subact": "ACT2-SA2",
+        "title": "신수 사냥꾼의 허가증",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "밀매단이 합법 허가를 이용해 멸종종을 독점한 사실을 폭로한다.",
+          "choice": "린화가 시장 제도의 책임을 추적",
+          "reward": "사냥 허가증 파기",
+          "hook": "진여강이 허가증 보증인으로 나타난다.",
+          "location": "잠든 숲·천공무고 신수 분류실",
+          "cast": [
+            "진여강",
+            "서린화",
+            "담운",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "첫 실전 적용과 오판",
+          "cost": "사냥 허가증을 파기해 만보상련의 합법 운송망을 이용할 수 없게 된다."
+        },
+        "state_before": {
+          "previous_hook": "향로의 미련은 자신을 부수라는 것이 아니다.",
+          "previous_cost": "원로의 고백을 공개하는 대신 마을 치료비를 일행이 떠안는다.",
+          "incoming_subact_cost": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 잠든 숲·천공무고 신수 분류실에서 즉시 행동 문제로 회수한다.",
+            "pressure": "향로의 미련은 자신을 부수라는 것이 아니다.",
+            "action": "진여강·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "밀매단이 합법 허가를 이용해 멸종종을 독점한 사실을 폭로한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "첫 실전 적용과 오판",
+            "action": "잠든 숲·천공무고 신수 분류실의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "사냥 허가증을 파기해 만보상련의 합법 운송망을 이용할 수 없게 된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "밀매단이 합법 허가를 이용해 멸종종을 독점한 사실을 폭로한다.",
+            "pressure": "향로와 독왕초가 사람을 살리면서 숲을 잠재우는 구조를 끊는다.",
+            "action": "진여강·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 린화가 시장 제도의 책임을 추적라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI033:first",
+            "action": "후보 참조(CI033:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "사냥 허가증 파기",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "린화가 시장 제도의 책임을 추적",
+            "pressure": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "사냥 허가증을 파기해 만보상련의 합법 운송망을 이용할 수 없게 된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "사냥 허가증 파기",
+            "pressure": "사냥 허가증을 파기해 만보상련의 합법 운송망을 이용할 수 없게 된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "진여강이 허가증 보증인으로 나타난다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "사냥 허가증을 파기해 만보상련의 합법 운송망을 이용할 수 없게 된다.",
+          "earned_reward": "사냥 허가증 파기",
+          "next_hook": "진여강이 허가증 보증인으로 나타난다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI033:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 54,
+      "canonical_episode": {
+        "episode": 54,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA2",
+        "subact_title": "잠든 숲을 놓아주다",
+        "title": "소예란의 인간 환자",
+        "goal": "예란이 신수 치료제를 인간 아이에게 써야 하는 선택을 한다.",
+        "choice": "예란이 인간도 생태의 일부로 받아들임",
+        "reward": "백옥 여과관",
+        "hook": "아이의 혈액에서 향로와 같은 독이 검출된다.",
+        "location": "잠든 숲·천공무고 신수 분류실",
+        "cast": [
+          "소예란",
+          "담운",
+          "서린화",
+          "두리",
+          "허잠"
+        ],
+        "episode_function": "적대 세력의 압박 구체화",
+        "cost": "백옥 여과관을 인간 아이에게 고정해 이후 신수 치료에 쓸 수 없게 된다."
+      },
+      "scene_blueprint": {
+        "episode": 54,
+        "act": "ACT2",
+        "subact_id": "A06",
+        "source_subact": "ACT2-SA2",
+        "title": "소예란의 인간 환자",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "예란이 신수 치료제를 인간 아이에게 써야 하는 선택을 한다.",
+          "choice": "예란이 인간도 생태의 일부로 받아들임",
+          "reward": "백옥 여과관",
+          "hook": "아이의 혈액에서 향로와 같은 독이 검출된다.",
+          "location": "잠든 숲·천공무고 신수 분류실",
+          "cast": [
+            "소예란",
+            "담운",
+            "서린화",
+            "두리",
+            "허잠"
+          ],
+          "episode_function": "적대 세력의 압박 구체화",
+          "cost": "백옥 여과관을 인간 아이에게 고정해 이후 신수 치료에 쓸 수 없게 된다."
+        },
+        "state_before": {
+          "previous_hook": "진여강이 허가증 보증인으로 나타난다.",
+          "previous_cost": "사냥 허가증을 파기해 만보상련의 합법 운송망을 이용할 수 없게 된다.",
+          "incoming_subact_cost": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 잠든 숲·천공무고 신수 분류실에서 즉시 행동 문제로 회수한다.",
+            "pressure": "진여강이 허가증 보증인으로 나타난다.",
+            "action": "소예란·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "예란이 신수 치료제를 인간 아이에게 써야 하는 선택을 한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "적대 세력의 압박 구체화",
+            "action": "잠든 숲·천공무고 신수 분류실의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "백옥 여과관을 인간 아이에게 고정해 이후 신수 치료에 쓸 수 없게 된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "예란이 신수 치료제를 인간 아이에게 써야 하는 선택을 한다.",
+            "pressure": "향로와 독왕초가 사람을 살리면서 숲을 잠재우는 구조를 끊는다.",
+            "action": "소예란·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 예란이 인간도 생태의 일부로 받아들임라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "백옥 여과관",
+            "action": "후보 참조(백옥 여과관)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "백옥 여과관",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "예란이 인간도 생태의 일부로 받아들임",
+            "pressure": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "백옥 여과관을 인간 아이에게 고정해 이후 신수 치료에 쓸 수 없게 된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "백옥 여과관",
+            "pressure": "백옥 여과관을 인간 아이에게 고정해 이후 신수 치료에 쓸 수 없게 된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "아이의 혈액에서 향로와 같은 독이 검출된다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "백옥 여과관을 인간 아이에게 고정해 이후 신수 치료에 쓸 수 없게 된다.",
+          "earned_reward": "백옥 여과관",
+          "next_hook": "아이의 혈액에서 향로와 같은 독이 검출된다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 55,
+      "canonical_episode": {
+        "episode": 55,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA2",
+        "subact_title": "잠든 숲을 놓아주다",
+        "title": "거꾸로 된 사냥",
+        "goal": "두리와 야생 신수들이 밀매단을 숲 바깥으로 몰아낸다.",
+        "choice": "담운이 명령하지 않고 길만 열어줌",
+        "reward": "숨잠자리 날개",
+        "hook": "귀장회 봉인대가 숲 전체를 태우려 한다.",
+        "location": "잠든 숲·천공무고 신수 분류실",
+        "cast": [
+          "담운",
+          "두리",
+          "서린화",
+          "소예란",
+          "허잠"
+        ],
+        "episode_function": "서브액트 중간 선택",
+        "cost": "숲 동물의 길을 열어주느라 밀매단 우두머리를 놓친다."
+      },
+      "scene_blueprint": {
+        "episode": 55,
+        "act": "ACT2",
+        "subact_id": "A06",
+        "source_subact": "ACT2-SA2",
+        "title": "거꾸로 된 사냥",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "두리와 야생 신수들이 밀매단을 숲 바깥으로 몰아낸다.",
+          "choice": "담운이 명령하지 않고 길만 열어줌",
+          "reward": "숨잠자리 날개",
+          "hook": "귀장회 봉인대가 숲 전체를 태우려 한다.",
+          "location": "잠든 숲·천공무고 신수 분류실",
+          "cast": [
+            "담운",
+            "두리",
+            "서린화",
+            "소예란",
+            "허잠"
+          ],
+          "episode_function": "서브액트 중간 선택",
+          "cost": "숲 동물의 길을 열어주느라 밀매단 우두머리를 놓친다."
+        },
+        "state_before": {
+          "previous_hook": "아이의 혈액에서 향로와 같은 독이 검출된다.",
+          "previous_cost": "백옥 여과관을 인간 아이에게 고정해 이후 신수 치료에 쓸 수 없게 된다.",
+          "incoming_subact_cost": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 잠든 숲·천공무고 신수 분류실에서 즉시 행동 문제로 회수한다.",
+            "pressure": "아이의 혈액에서 향로와 같은 독이 검출된다.",
+            "action": "담운·두리가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "두리와 야생 신수들이 밀매단을 숲 바깥으로 몰아낸다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 중간 선택",
+            "action": "잠든 숲·천공무고 신수 분류실의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "숲 동물의 길을 열어주느라 밀매단 우두머리를 놓친다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "두리와 야생 신수들이 밀매단을 숲 바깥으로 몰아낸다.",
+            "pressure": "향로와 독왕초가 사람을 살리면서 숲을 잠재우는 구조를 끊는다.",
+            "action": "담운·두리가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 명령하지 않고 길만 열어줌라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI034:first, BS008",
+            "action": "후보 참조(CI034:first, BS008)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "숨잠자리 날개",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 명령하지 않고 길만 열어줌",
+            "pressure": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "숲 동물의 길을 열어주느라 밀매단 우두머리를 놓친다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "숨잠자리 날개",
+            "pressure": "숲 동물의 길을 열어주느라 밀매단 우두머리를 놓친다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "귀장회 봉인대가 숲 전체를 태우려 한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "숲 동물의 길을 열어주느라 밀매단 우두머리를 놓친다.",
+          "earned_reward": "숨잠자리 날개",
+          "next_hook": "귀장회 봉인대가 숲 전체를 태우려 한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI034:first"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS008"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 56,
+      "canonical_episode": {
+        "episode": 56,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA2",
+        "subact_title": "잠든 숲을 놓아주다",
+        "title": "수집하지 않는 향로",
+        "goal": "담운은 향로를 가져가는 대신 숲과 마을의 공동 관리에 남긴다.",
+        "choice": "담운의 첫 대형 비수집 선택",
+        "reward": "잠든 숲 향로 놓아줌",
+        "hook": "무주함에 ‘귀환 가능’ 표시가 생긴다.",
+        "location": "잠든 숲·천공무고 신수 분류실",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "허잠"
+        ],
+        "episode_function": "선택의 후폭풍과 관계 변화",
+        "cost": "향로를 남겨 전투용 수면 기물과 세트 후보를 영구히 포기한다."
+      },
+      "scene_blueprint": {
+        "episode": 56,
+        "act": "ACT2",
+        "subact_id": "A06",
+        "source_subact": "ACT2-SA2",
+        "title": "수집하지 않는 향로",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "담운은 향로를 가져가는 대신 숲과 마을의 공동 관리에 남긴다.",
+          "choice": "담운의 첫 대형 비수집 선택",
+          "reward": "잠든 숲 향로 놓아줌",
+          "hook": "무주함에 ‘귀환 가능’ 표시가 생긴다.",
+          "location": "잠든 숲·천공무고 신수 분류실",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "허잠"
+          ],
+          "episode_function": "선택의 후폭풍과 관계 변화",
+          "cost": "향로를 남겨 전투용 수면 기물과 세트 후보를 영구히 포기한다."
+        },
+        "state_before": {
+          "previous_hook": "귀장회 봉인대가 숲 전체를 태우려 한다.",
+          "previous_cost": "숲 동물의 길을 열어주느라 밀매단 우두머리를 놓친다.",
+          "incoming_subact_cost": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 잠든 숲·천공무고 신수 분류실에서 즉시 행동 문제로 회수한다.",
+            "pressure": "귀장회 봉인대가 숲 전체를 태우려 한다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "담운은 향로를 가져가는 대신 숲과 마을의 공동 관리에 남긴다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "선택의 후폭풍과 관계 변화",
+            "action": "잠든 숲·천공무고 신수 분류실의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "향로를 남겨 전투용 수면 기물과 세트 후보를 영구히 포기한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "담운은 향로를 가져가는 대신 숲과 마을의 공동 관리에 남긴다.",
+            "pressure": "향로와 독왕초가 사람을 살리면서 숲을 잠재우는 구조를 끊는다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운의 첫 대형 비수집 선택라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "BS001",
+            "action": "후보 참조(BS001)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "잠든 숲 향로 놓아줌",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운의 첫 대형 비수집 선택",
+            "pressure": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "향로를 남겨 전투용 수면 기물과 세트 후보를 영구히 포기한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "잠든 숲 향로 놓아줌",
+            "pressure": "향로를 남겨 전투용 수면 기물과 세트 후보를 영구히 포기한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "무주함에 ‘귀환 가능’ 표시가 생긴다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "향로를 남겨 전투용 수면 기물과 세트 후보를 영구히 포기한다.",
+          "earned_reward": "잠든 숲 향로 놓아줌",
+          "next_hook": "무주함에 ‘귀환 가능’ 표시가 생긴다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": [
+            "BS001"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 57,
+      "canonical_episode": {
+        "episode": 57,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA2",
+        "subact_title": "잠든 숲을 놓아주다",
+        "title": "깨어난 숲",
+        "goal": "향로를 분산 사용해 독안개와 수면 주기를 되돌린다.",
+        "choice": "예란이 동행을 선택",
+        "reward": "남독 공동관리 규칙",
+        "hook": "숲 아래 천공무고의 신수 분류실이 열린다.",
+        "location": "잠든 숲·천공무고 신수 분류실",
+        "cast": [
+          "소예란",
+          "담운",
+          "서린화",
+          "두리",
+          "허잠"
+        ],
+        "episode_function": "숨은 진실 또는 역전",
+        "cost": "분산 사용 과정에서 숲 한 구역의 약초 수확이 한 계절 중단된다."
+      },
+      "scene_blueprint": {
+        "episode": 57,
+        "act": "ACT2",
+        "subact_id": "A06",
+        "source_subact": "ACT2-SA2",
+        "title": "깨어난 숲",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "향로를 분산 사용해 독안개와 수면 주기를 되돌린다.",
+          "choice": "예란이 동행을 선택",
+          "reward": "남독 공동관리 규칙",
+          "hook": "숲 아래 천공무고의 신수 분류실이 열린다.",
+          "location": "잠든 숲·천공무고 신수 분류실",
+          "cast": [
+            "소예란",
+            "담운",
+            "서린화",
+            "두리",
+            "허잠"
+          ],
+          "episode_function": "숨은 진실 또는 역전",
+          "cost": "분산 사용 과정에서 숲 한 구역의 약초 수확이 한 계절 중단된다."
+        },
+        "state_before": {
+          "previous_hook": "무주함에 ‘귀환 가능’ 표시가 생긴다.",
+          "previous_cost": "향로를 남겨 전투용 수면 기물과 세트 후보를 영구히 포기한다.",
+          "incoming_subact_cost": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 잠든 숲·천공무고 신수 분류실에서 즉시 행동 문제로 회수한다.",
+            "pressure": "무주함에 ‘귀환 가능’ 표시가 생긴다.",
+            "action": "소예란·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "향로를 분산 사용해 독안개와 수면 주기를 되돌린다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "숨은 진실 또는 역전",
+            "action": "잠든 숲·천공무고 신수 분류실의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "분산 사용 과정에서 숲 한 구역의 약초 수확이 한 계절 중단된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "향로를 분산 사용해 독안개와 수면 주기를 되돌린다.",
+            "pressure": "향로와 독왕초가 사람을 살리면서 숲을 잠재우는 구조를 끊는다.",
+            "action": "소예란·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 예란이 동행을 선택라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI035:first, BS006",
+            "action": "후보 참조(CI035:first, BS006)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "남독 공동관리 규칙",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "예란이 동행을 선택",
+            "pressure": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "분산 사용 과정에서 숲 한 구역의 약초 수확이 한 계절 중단된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "남독 공동관리 규칙",
+            "pressure": "분산 사용 과정에서 숲 한 구역의 약초 수확이 한 계절 중단된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "숲 아래 천공무고의 신수 분류실이 열린다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "분산 사용 과정에서 숲 한 구역의 약초 수확이 한 계절 중단된다.",
+          "earned_reward": "남독 공동관리 규칙",
+          "next_hook": "숲 아래 천공무고의 신수 분류실이 열린다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI035:first"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS006"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 58,
+      "canonical_episode": {
+        "episode": 58,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA2",
+        "subact_title": "잠든 숲을 놓아주다",
+        "title": "두 갈래 꼬리",
+        "goal": "두리의 진화가 먹이와 선택에 따라 갈리는 것을 확인한다.",
+        "choice": "담운이 빠른 강화를 거부",
+        "reward": "두리 진화 분기 공개",
+        "hook": "금빛 자국이 봉인에 반응한다.",
+        "location": "잠든 숲·천공무고 신수 분류실",
+        "cast": [
+          "담운",
+          "두리",
+          "서린화",
+          "소예란",
+          "허잠"
+        ],
+        "episode_function": "해결책의 조립과 대가 확정",
+        "cost": "빠른 진화를 거부해 두리는 다음 아크까지 전투 능력 상승을 얻지 못한다."
+      },
+      "scene_blueprint": {
+        "episode": 58,
+        "act": "ACT2",
+        "subact_id": "A06",
+        "source_subact": "ACT2-SA2",
+        "title": "두 갈래 꼬리",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "두리의 진화가 먹이와 선택에 따라 갈리는 것을 확인한다.",
+          "choice": "담운이 빠른 강화를 거부",
+          "reward": "두리 진화 분기 공개",
+          "hook": "금빛 자국이 봉인에 반응한다.",
+          "location": "잠든 숲·천공무고 신수 분류실",
+          "cast": [
+            "담운",
+            "두리",
+            "서린화",
+            "소예란",
+            "허잠"
+          ],
+          "episode_function": "해결책의 조립과 대가 확정",
+          "cost": "빠른 진화를 거부해 두리는 다음 아크까지 전투 능력 상승을 얻지 못한다."
+        },
+        "state_before": {
+          "previous_hook": "숲 아래 천공무고의 신수 분류실이 열린다.",
+          "previous_cost": "분산 사용 과정에서 숲 한 구역의 약초 수확이 한 계절 중단된다.",
+          "incoming_subact_cost": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 잠든 숲·천공무고 신수 분류실에서 즉시 행동 문제로 회수한다.",
+            "pressure": "숲 아래 천공무고의 신수 분류실이 열린다.",
+            "action": "담운·두리가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "두리의 진화가 먹이와 선택에 따라 갈리는 것을 확인한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "해결책의 조립과 대가 확정",
+            "action": "잠든 숲·천공무고 신수 분류실의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "빠른 진화를 거부해 두리는 다음 아크까지 전투 능력 상승을 얻지 못한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "두리의 진화가 먹이와 선택에 따라 갈리는 것을 확인한다.",
+            "pressure": "향로와 독왕초가 사람을 살리면서 숲을 잠재우는 구조를 끊는다.",
+            "action": "담운·두리가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 빠른 강화를 거부라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "SET008:complete",
+            "action": "후보 참조(SET008:complete)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "두리 진화 분기 공개",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 빠른 강화를 거부",
+            "pressure": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "빠른 진화를 거부해 두리는 다음 아크까지 전투 능력 상승을 얻지 못한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "두리 진화 분기 공개",
+            "pressure": "빠른 진화를 거부해 두리는 다음 아크까지 전투 능력 상승을 얻지 못한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "금빛 자국이 봉인에 반응한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "빠른 진화를 거부해 두리는 다음 아크까지 전투 능력 상승을 얻지 못한다.",
+          "earned_reward": "두리 진화 분기 공개",
+          "next_hook": "금빛 자국이 봉인에 반응한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [
+            "SET008:complete"
+          ],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 59,
+      "canonical_episode": {
+        "episode": 59,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA2",
+        "subact_title": "잠든 숲을 놓아주다",
+        "title": "생명을 적은 장부",
+        "goal": "천공무고가 신수를 물건 번호로 기록했던 죄를 발견한다.",
+        "choice": "예란의 개인 목표가 역계약 제도로 확장",
+        "reward": "신수 기록 오류",
+        "hook": "장부에 백장의 젊은 시절 서명이 있다.",
+        "location": "잠든 숲·천공무고 신수 분류실",
+        "cast": [
+          "백장",
+          "소예란",
+          "담운",
+          "서린화",
+          "두리"
+        ],
+        "episode_function": "서브액트 클라이맥스",
+        "cost": "분류 장부를 공개하자 예란의 옛 동료들이 그녀를 배신자로 규정한다."
+      },
+      "scene_blueprint": {
+        "episode": 59,
+        "act": "ACT2",
+        "subact_id": "A06",
+        "source_subact": "ACT2-SA2",
+        "title": "생명을 적은 장부",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "천공무고가 신수를 물건 번호로 기록했던 죄를 발견한다.",
+          "choice": "예란의 개인 목표가 역계약 제도로 확장",
+          "reward": "신수 기록 오류",
+          "hook": "장부에 백장의 젊은 시절 서명이 있다.",
+          "location": "잠든 숲·천공무고 신수 분류실",
+          "cast": [
+            "백장",
+            "소예란",
+            "담운",
+            "서린화",
+            "두리"
+          ],
+          "episode_function": "서브액트 클라이맥스",
+          "cost": "분류 장부를 공개하자 예란의 옛 동료들이 그녀를 배신자로 규정한다."
+        },
+        "state_before": {
+          "previous_hook": "금빛 자국이 봉인에 반응한다.",
+          "previous_cost": "빠른 진화를 거부해 두리는 다음 아크까지 전투 능력 상승을 얻지 못한다.",
+          "incoming_subact_cost": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 잠든 숲·천공무고 신수 분류실에서 즉시 행동 문제로 회수한다.",
+            "pressure": "금빛 자국이 봉인에 반응한다.",
+            "action": "백장·소예란가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "천공무고가 신수를 물건 번호로 기록했던 죄를 발견한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 클라이맥스",
+            "action": "잠든 숲·천공무고 신수 분류실의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "분류 장부를 공개하자 예란의 옛 동료들이 그녀를 배신자로 규정한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "천공무고가 신수를 물건 번호로 기록했던 죄를 발견한다.",
+            "pressure": "향로와 독왕초가 사람을 살리면서 숲을 잠재우는 구조를 끊는다.",
+            "action": "백장·소예란가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 예란의 개인 목표가 역계약 제도로 확장라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "BS001, BS007",
+            "action": "후보 참조(BS001, BS007)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "신수 기록 오류",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "예란의 개인 목표가 역계약 제도로 확장",
+            "pressure": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "분류 장부를 공개하자 예란의 옛 동료들이 그녀를 배신자로 규정한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "신수 기록 오류",
+            "pressure": "분류 장부를 공개하자 예란의 옛 동료들이 그녀를 배신자로 규정한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "장부에 백장의 젊은 시절 서명이 있다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "분류 장부를 공개하자 예란의 옛 동료들이 그녀를 배신자로 규정한다.",
+          "earned_reward": "신수 기록 오류",
+          "next_hook": "장부에 백장의 젊은 시절 서명이 있다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": [
+            "BS001",
+            "BS007"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 60,
+      "canonical_episode": {
+        "episode": 60,
+        "act": "ACT2",
+        "act_title": "생명은 수집될 수 있는가",
+        "subact": "ACT2-SA2",
+        "subact_title": "잠든 숲을 놓아주다",
+        "title": "금빛 장갑의 명령",
+        "goal": "백장이 원격 봉인으로 두리의 몸을 멈춘다.",
+        "choice": "담운 일행이 북설원 봉인성으로 향함",
+        "reward": "천품 장갑 단서",
+        "hook": "두리가 멈춘 채 북쪽을 가리킨다.",
+        "location": "잠든 숲·천공무고 신수 분류실",
+        "cast": [
+          "담운",
+          "백장",
+          "두리",
+          "서린화",
+          "소예란"
+        ],
+        "episode_function": "보상 회수와 다음 구간 훅",
+        "cost": "원격 봉인을 끊는 과정에서 두리의 한쪽 날개가 굳어 북설까지 비행하지 못한다."
+      },
+      "scene_blueprint": {
+        "episode": 60,
+        "act": "ACT2",
+        "subact_id": "A06",
+        "source_subact": "ACT2-SA2",
+        "title": "금빛 장갑의 명령",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "백장이 원격 봉인으로 두리의 몸을 멈춘다.",
+          "choice": "담운 일행이 북설원 봉인성으로 향함",
+          "reward": "천품 장갑 단서",
+          "hook": "두리가 멈춘 채 북쪽을 가리킨다.",
+          "location": "잠든 숲·천공무고 신수 분류실",
+          "cast": [
+            "담운",
+            "백장",
+            "두리",
+            "서린화",
+            "소예란"
+          ],
+          "episode_function": "보상 회수와 다음 구간 훅",
+          "cost": "원격 봉인을 끊는 과정에서 두리의 한쪽 날개가 굳어 북설까지 비행하지 못한다."
+        },
+        "state_before": {
+          "previous_hook": "장부에 백장의 젊은 시절 서명이 있다.",
+          "previous_cost": "분류 장부를 공개하자 예란의 옛 동료들이 그녀를 배신자로 규정한다.",
+          "incoming_subact_cost": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 잠든 숲·천공무고 신수 분류실에서 즉시 행동 문제로 회수한다.",
+            "pressure": "장부에 백장의 젊은 시절 서명이 있다.",
+            "action": "담운·백장가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "백장이 원격 봉인으로 두리의 몸을 멈춘다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "보상 회수와 다음 구간 훅",
+            "action": "잠든 숲·천공무고 신수 분류실의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "원격 봉인을 끊는 과정에서 두리의 한쪽 날개가 굳어 북설까지 비행하지 못한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "백장이 원격 봉인으로 두리의 몸을 멈춘다.",
+            "pressure": "향로와 독왕초가 사람을 살리면서 숲을 잠재우는 구조를 끊는다.",
+            "action": "담운·백장가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운 일행이 북설원 봉인성으로 향함라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI031:final, CI032:final, CI033:final, CI034:final, CI035:final, CI036:first, SET007:complete, BS008",
+            "action": "후보 참조(CI031:final, CI032:final, CI033:final, CI034:final, CI035:final, CI036:first, SET007:complete, BS008)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "천품 장갑 단서",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운 일행이 북설원 봉인성으로 향함",
+            "pressure": "두리를 소유하지 않은 대가로 치료·운송 능력이 부족해지고 마을은 향로에 의존한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "원격 봉인을 끊는 과정에서 두리의 한쪽 날개가 굳어 북설까지 비행하지 못한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "천품 장갑 단서",
+            "pressure": "즉시 쓸 수 있는 전력을 잃고 북설원은 방어 유산 지원을 받지 못해 공동 방어 위기에 놓인다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "두리가 멈춘 채 북쪽을 가리킨다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "원격 봉인을 끊는 과정에서 두리의 한쪽 날개가 굳어 북설까지 비행하지 못한다.",
+          "earned_reward": "천품 장갑 단서",
+          "next_hook": "두리가 멈춘 채 북쪽을 가리킨다.",
+          "outgoing_subact_cost": "즉시 쓸 수 있는 전력을 잃고 북설원은 방어 유산 지원을 받지 못해 공동 방어 위기에 놓인다."
+        },
+        "registry_events": {
+          "items": [
+            "CI031:final",
+            "CI032:final",
+            "CI033:final",
+            "CI034:final",
+            "CI035:final",
+            "CI036:first"
+          ],
+          "sets": [
+            "SET007:complete"
+          ],
+          "beasts": [
+            "BS008"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    }
+  ]
+}

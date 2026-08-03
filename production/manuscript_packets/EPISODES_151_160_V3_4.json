@@ -1,0 +1,1620 @@
+{
+  "version": "v3.4-manuscript-packet-v1",
+  "status": "derived_read_only_drafting_input",
+  "protected_canon_unchanged": true,
+  "range": [
+    151,
+    160
+  ],
+  "episodes": [
+    {
+      "episode": 151,
+      "canonical_episode": {
+        "episode": 151,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA4",
+        "subact_title": "동료들의 완성과 마지막 빈칸",
+        "title": "곽무석의 완성 방패",
+        "goal": "무석이 팔 복원 대신 방패의 이름 해방을 선택한다.",
+        "choice": "무석 개인 아크 완결",
+        "reward": "무석 완성 방패",
+        "hook": "방패가 백장의 공격을 한 번 되돌린다.",
+        "location": "육도 열쇠 집결지·천외문",
+        "cast": [
+          "곽무석",
+          "백장",
+          "담운",
+          "서린화",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "새 문제와 지역 규칙 도입",
+        "cost": "무석은 팔 복원 가능성을 영구히 포기하고 방패를 공동 방어 전용으로 바꾼다."
+      },
+      "scene_blueprint": {
+        "episode": 151,
+        "act": "ACT4",
+        "subact_id": "A16",
+        "source_subact": "ACT4-SA4",
+        "title": "곽무석의 완성 방패",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "무석이 팔 복원 대신 방패의 이름 해방을 선택한다.",
+          "choice": "무석 개인 아크 완결",
+          "reward": "무석 완성 방패",
+          "hook": "방패가 백장의 공격을 한 번 되돌린다.",
+          "location": "육도 열쇠 집결지·천외문",
+          "cast": [
+            "곽무석",
+            "백장",
+            "담운",
+            "서린화",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "새 문제와 지역 규칙 도입",
+          "cost": "무석은 팔 복원 가능성을 영구히 포기하고 방패를 공동 방어 전용으로 바꾼다."
+        },
+        "state_before": {
+          "previous_hook": "사람형 빈칸이 담운 자세를 따라 한다.",
+          "previous_cost": "피를 거부한 검함이 담운의 소유자·수집품 어느 신분도 인정하지 않아 보호 규칙 밖으로 밀어낸다.",
+          "incoming_subact_cost": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도 열쇠 집결지·천외문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "사람형 빈칸이 담운 자세를 따라 한다.",
+            "action": "곽무석·백장가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "무석이 팔 복원 대신 방패의 이름 해방을 선택한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "새 문제와 지역 규칙 도입",
+            "action": "육도 열쇠 집결지·천외문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "무석은 팔 복원 가능성을 영구히 포기하고 방패를 공동 방어 전용으로 바꾼다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "무석이 팔 복원 대신 방패의 이름 해방을 선택한다.",
+            "pressure": "각 동료가 담운과 무관한 진로를 선택하고 마지막 빈칸의 의미를 확인한다.",
+            "action": "곽무석·백장가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 무석 개인 아크 완결라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI092:first",
+            "action": "후보 참조(CI092:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "무석 완성 방패",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "무석 개인 아크 완결",
+            "pressure": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "무석은 팔 복원 가능성을 영구히 포기하고 방패를 공동 방어 전용으로 바꾼다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "무석 완성 방패",
+            "pressure": "무석은 팔 복원 가능성을 영구히 포기하고 방패를 공동 방어 전용으로 바꾼다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "방패가 백장의 공격을 한 번 되돌린다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "무석은 팔 복원 가능성을 영구히 포기하고 방패를 공동 방어 전용으로 바꾼다.",
+          "earned_reward": "무석 완성 방패",
+          "next_hook": "방패가 백장의 공격을 한 번 되돌린다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI092:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 152,
+      "canonical_episode": {
+        "episode": 152,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA4",
+        "subact_title": "동료들의 완성과 마지막 빈칸",
+        "title": "신수가 인간을 고르다",
+        "goal": "역계약 공개 심사에서 두리가 담운의 계약을 갱신한다.",
+        "choice": "담운이 계속 선택받아야 함을 인정",
+        "reward": "신수 역계약서",
+        "hook": "두리가 마지막 진화 조건을 숨긴다.",
+        "location": "육도 열쇠 집결지·천외문",
+        "cast": [
+          "담운",
+          "두리",
+          "서린화",
+          "소예란",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "규칙의 예외와 비용 확대",
+        "cost": "역계약 갱신에서 두리가 언제든 떠날 수 있다는 조건을 공개적으로 확정한다."
+      },
+      "scene_blueprint": {
+        "episode": 152,
+        "act": "ACT4",
+        "subact_id": "A16",
+        "source_subact": "ACT4-SA4",
+        "title": "신수가 인간을 고르다",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "역계약 공개 심사에서 두리가 담운의 계약을 갱신한다.",
+          "choice": "담운이 계속 선택받아야 함을 인정",
+          "reward": "신수 역계약서",
+          "hook": "두리가 마지막 진화 조건을 숨긴다.",
+          "location": "육도 열쇠 집결지·천외문",
+          "cast": [
+            "담운",
+            "두리",
+            "서린화",
+            "소예란",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "규칙의 예외와 비용 확대",
+          "cost": "역계약 갱신에서 두리가 언제든 떠날 수 있다는 조건을 공개적으로 확정한다."
+        },
+        "state_before": {
+          "previous_hook": "방패가 백장의 공격을 한 번 되돌린다.",
+          "previous_cost": "무석은 팔 복원 가능성을 영구히 포기하고 방패를 공동 방어 전용으로 바꾼다.",
+          "incoming_subact_cost": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도 열쇠 집결지·천외문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "방패가 백장의 공격을 한 번 되돌린다.",
+            "action": "담운·두리가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "역계약 공개 심사에서 두리가 담운의 계약을 갱신한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "규칙의 예외와 비용 확대",
+            "action": "육도 열쇠 집결지·천외문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "역계약 갱신에서 두리가 언제든 떠날 수 있다는 조건을 공개적으로 확정한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "역계약 공개 심사에서 두리가 담운의 계약을 갱신한다.",
+            "pressure": "각 동료가 담운과 무관한 진로를 선택하고 마지막 빈칸의 의미를 확인한다.",
+            "action": "담운·두리가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 계속 선택받아야 함을 인정라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI030:final, BS001, BS007",
+            "action": "후보 참조(CI030:final, BS001, BS007)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "신수 역계약서",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 계속 선택받아야 함을 인정",
+            "pressure": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "역계약 갱신에서 두리가 언제든 떠날 수 있다는 조건을 공개적으로 확정한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "신수 역계약서",
+            "pressure": "역계약 갱신에서 두리가 언제든 떠날 수 있다는 조건을 공개적으로 확정한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "두리가 마지막 진화 조건을 숨긴다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "역계약 갱신에서 두리가 언제든 떠날 수 있다는 조건을 공개적으로 확정한다.",
+          "earned_reward": "신수 역계약서",
+          "next_hook": "두리가 마지막 진화 조건을 숨긴다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI030:final"
+          ],
+          "sets": [],
+          "beasts": [
+            "BS001",
+            "BS007"
+          ]
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 153,
+      "canonical_episode": {
+        "episode": 153,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA4",
+        "subact_title": "동료들의 완성과 마지막 빈칸",
+        "title": "가격표를 찢는 감정사",
+        "goal": "린화가 천품을 가격이 아닌 책임 공개 대상으로 감정한다.",
+        "choice": "린화 개인 아크 완결",
+        "reward": "열린 감정서 완성",
+        "hook": "감정서가 무주함을 ‘소유권 장치’로 판정한다.",
+        "location": "육도 열쇠 집결지·천외문",
+        "cast": [
+          "서린화",
+          "담운",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "첫 실전 적용과 오판",
+        "cost": "린화가 천품 가격표를 찢어 감정업계의 수익과 보호를 잃는다."
+      },
+      "scene_blueprint": {
+        "episode": 153,
+        "act": "ACT4",
+        "subact_id": "A16",
+        "source_subact": "ACT4-SA4",
+        "title": "가격표를 찢는 감정사",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "린화가 천품을 가격이 아닌 책임 공개 대상으로 감정한다.",
+          "choice": "린화 개인 아크 완결",
+          "reward": "열린 감정서 완성",
+          "hook": "감정서가 무주함을 ‘소유권 장치’로 판정한다.",
+          "location": "육도 열쇠 집결지·천외문",
+          "cast": [
+            "서린화",
+            "담운",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "첫 실전 적용과 오판",
+          "cost": "린화가 천품 가격표를 찢어 감정업계의 수익과 보호를 잃는다."
+        },
+        "state_before": {
+          "previous_hook": "두리가 마지막 진화 조건을 숨긴다.",
+          "previous_cost": "역계약 갱신에서 두리가 언제든 떠날 수 있다는 조건을 공개적으로 확정한다.",
+          "incoming_subact_cost": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도 열쇠 집결지·천외문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "두리가 마지막 진화 조건을 숨긴다.",
+            "action": "서린화·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "린화가 천품을 가격이 아닌 책임 공개 대상으로 감정한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "첫 실전 적용과 오판",
+            "action": "육도 열쇠 집결지·천외문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "린화가 천품 가격표를 찢어 감정업계의 수익과 보호를 잃는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "린화가 천품을 가격이 아닌 책임 공개 대상으로 감정한다.",
+            "pressure": "각 동료가 담운과 무관한 진로를 선택하고 마지막 빈칸의 의미를 확인한다.",
+            "action": "서린화·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 린화 개인 아크 완결라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI093:first",
+            "action": "후보 참조(CI093:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "열린 감정서 완성",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "린화 개인 아크 완결",
+            "pressure": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "린화가 천품 가격표를 찢어 감정업계의 수익과 보호를 잃는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "열린 감정서 완성",
+            "pressure": "린화가 천품 가격표를 찢어 감정업계의 수익과 보호를 잃는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "감정서가 무주함을 ‘소유권 장치’로 판정한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "린화가 천품 가격표를 찢어 감정업계의 수익과 보호를 잃는다.",
+          "earned_reward": "열린 감정서 완성",
+          "next_hook": "감정서가 무주함을 ‘소유권 장치’로 판정한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI093:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 154,
+      "canonical_episode": {
+        "episode": 154,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA4",
+        "subact_title": "동료들의 완성과 마지막 빈칸",
+        "title": "수집가의 책임 지분",
+        "goal": "진여강이 천품 하나를 수천 명에게 책임 지분으로 나눈다.",
+        "choice": "진여강 개인 아크 완결",
+        "reward": "책임 지분표",
+        "hook": "중앙핵은 지분을 모두 하나로 합치려 한다.",
+        "location": "육도 열쇠 집결지·천외문",
+        "cast": [
+          "진여강",
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "적대 세력의 압박 구체화",
+        "cost": "진여강은 중앙핵 지분 거래 가능성을 스스로 봉쇄해 마지막 부의 기회를 버린다."
+      },
+      "scene_blueprint": {
+        "episode": 154,
+        "act": "ACT4",
+        "subact_id": "A16",
+        "source_subact": "ACT4-SA4",
+        "title": "수집가의 책임 지분",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "진여강이 천품 하나를 수천 명에게 책임 지분으로 나눈다.",
+          "choice": "진여강 개인 아크 완결",
+          "reward": "책임 지분표",
+          "hook": "중앙핵은 지분을 모두 하나로 합치려 한다.",
+          "location": "육도 열쇠 집결지·천외문",
+          "cast": [
+            "진여강",
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "적대 세력의 압박 구체화",
+          "cost": "진여강은 중앙핵 지분 거래 가능성을 스스로 봉쇄해 마지막 부의 기회를 버린다."
+        },
+        "state_before": {
+          "previous_hook": "감정서가 무주함을 ‘소유권 장치’로 판정한다.",
+          "previous_cost": "린화가 천품 가격표를 찢어 감정업계의 수익과 보호를 잃는다.",
+          "incoming_subact_cost": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도 열쇠 집결지·천외문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "감정서가 무주함을 ‘소유권 장치’로 판정한다.",
+            "action": "진여강·담운가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "진여강이 천품 하나를 수천 명에게 책임 지분으로 나눈다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "적대 세력의 압박 구체화",
+            "action": "육도 열쇠 집결지·천외문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "진여강은 중앙핵 지분 거래 가능성을 스스로 봉쇄해 마지막 부의 기회를 버린다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "진여강이 천품 하나를 수천 명에게 책임 지분으로 나눈다.",
+            "pressure": "각 동료가 담운과 무관한 진로를 선택하고 마지막 빈칸의 의미를 확인한다.",
+            "action": "진여강·담운가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 진여강 개인 아크 완결라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI094:first",
+            "action": "후보 참조(CI094:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "책임 지분표",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "진여강 개인 아크 완결",
+            "pressure": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "진여강은 중앙핵 지분 거래 가능성을 스스로 봉쇄해 마지막 부의 기회를 버린다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "책임 지분표",
+            "pressure": "진여강은 중앙핵 지분 거래 가능성을 스스로 봉쇄해 마지막 부의 기회를 버린다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "중앙핵은 지분을 모두 하나로 합치려 한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "진여강은 중앙핵 지분 거래 가능성을 스스로 봉쇄해 마지막 부의 기회를 버린다.",
+          "earned_reward": "책임 지분표",
+          "next_hook": "중앙핵은 지분을 모두 하나로 합치려 한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI094:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 155,
+      "canonical_episode": {
+        "episode": 155,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA4",
+        "subact_title": "동료들의 완성과 마지막 빈칸",
+        "title": "백장이 구한 도시",
+        "goal": "백장이 위험 유산을 즉시 봉인해 실제로 도시를 구한다.",
+        "choice": "담운이 적의 방식 효과를 인정",
+        "reward": "귀장회 정당성 강화",
+        "hook": "봉인된 사람들의 기억도 함께 사라진다.",
+        "location": "육도 열쇠 집결지·천외문",
+        "cast": [
+          "담운",
+          "백장",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "서브액트 중간 선택",
+        "cost": "백장이 도시를 구하는 동안 봉인된 주민 기억 일부가 실제로 사라진다."
+      },
+      "scene_blueprint": {
+        "episode": 155,
+        "act": "ACT4",
+        "subact_id": "A16",
+        "source_subact": "ACT4-SA4",
+        "title": "백장이 구한 도시",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "백장이 위험 유산을 즉시 봉인해 실제로 도시를 구한다.",
+          "choice": "담운이 적의 방식 효과를 인정",
+          "reward": "귀장회 정당성 강화",
+          "hook": "봉인된 사람들의 기억도 함께 사라진다.",
+          "location": "육도 열쇠 집결지·천외문",
+          "cast": [
+            "담운",
+            "백장",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "서브액트 중간 선택",
+          "cost": "백장이 도시를 구하는 동안 봉인된 주민 기억 일부가 실제로 사라진다."
+        },
+        "state_before": {
+          "previous_hook": "중앙핵은 지분을 모두 하나로 합치려 한다.",
+          "previous_cost": "진여강은 중앙핵 지분 거래 가능성을 스스로 봉쇄해 마지막 부의 기회를 버린다.",
+          "incoming_subact_cost": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도 열쇠 집결지·천외문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "중앙핵은 지분을 모두 하나로 합치려 한다.",
+            "action": "담운·백장가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "백장이 위험 유산을 즉시 봉인해 실제로 도시를 구한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 중간 선택",
+            "action": "육도 열쇠 집결지·천외문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "백장이 도시를 구하는 동안 봉인된 주민 기억 일부가 실제로 사라진다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "백장이 위험 유산을 즉시 봉인해 실제로 도시를 구한다.",
+            "pressure": "각 동료가 담운과 무관한 진로를 선택하고 마지막 빈칸의 의미를 확인한다.",
+            "action": "담운·백장가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 적의 방식 효과를 인정라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "귀장회 정당성 강화",
+            "action": "후보 참조(귀장회 정당성 강화)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "귀장회 정당성 강화",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 적의 방식 효과를 인정",
+            "pressure": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "백장이 도시를 구하는 동안 봉인된 주민 기억 일부가 실제로 사라진다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "귀장회 정당성 강화",
+            "pressure": "백장이 도시를 구하는 동안 봉인된 주민 기억 일부가 실제로 사라진다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "봉인된 사람들의 기억도 함께 사라진다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "백장이 도시를 구하는 동안 봉인된 주민 기억 일부가 실제로 사라진다.",
+          "earned_reward": "귀장회 정당성 강화",
+          "next_hook": "봉인된 사람들의 기억도 함께 사라진다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 156,
+      "canonical_episode": {
+        "episode": 156,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA4",
+        "subact_title": "동료들의 완성과 마지막 빈칸",
+        "title": "모두 모으지 않겠다",
+        "goal": "담운이 여섯 열쇠를 무주함 한곳에 넣지 않겠다고 선언한다.",
+        "choice": "담운의 철학 명확화",
+        "reward": "분산 운반 결정",
+        "hook": "열쇠들이 자발적으로 담운 주변에 공명한다.",
+        "location": "육도 열쇠 집결지·천외문",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "선택의 후폭풍과 관계 변화",
+        "cost": "여섯 열쇠를 한데 넣지 않아 이동·통신·호위 비용이 여섯 배로 늘어난다."
+      },
+      "scene_blueprint": {
+        "episode": 156,
+        "act": "ACT4",
+        "subact_id": "A16",
+        "source_subact": "ACT4-SA4",
+        "title": "모두 모으지 않겠다",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "담운이 여섯 열쇠를 무주함 한곳에 넣지 않겠다고 선언한다.",
+          "choice": "담운의 철학 명확화",
+          "reward": "분산 운반 결정",
+          "hook": "열쇠들이 자발적으로 담운 주변에 공명한다.",
+          "location": "육도 열쇠 집결지·천외문",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "선택의 후폭풍과 관계 변화",
+          "cost": "여섯 열쇠를 한데 넣지 않아 이동·통신·호위 비용이 여섯 배로 늘어난다."
+        },
+        "state_before": {
+          "previous_hook": "봉인된 사람들의 기억도 함께 사라진다.",
+          "previous_cost": "백장이 도시를 구하는 동안 봉인된 주민 기억 일부가 실제로 사라진다.",
+          "incoming_subact_cost": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도 열쇠 집결지·천외문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "봉인된 사람들의 기억도 함께 사라진다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "담운이 여섯 열쇠를 무주함 한곳에 넣지 않겠다고 선언한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "선택의 후폭풍과 관계 변화",
+            "action": "육도 열쇠 집결지·천외문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "여섯 열쇠를 한데 넣지 않아 이동·통신·호위 비용이 여섯 배로 늘어난다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "담운이 여섯 열쇠를 무주함 한곳에 넣지 않겠다고 선언한다.",
+            "pressure": "각 동료가 담운과 무관한 진로를 선택하고 마지막 빈칸의 의미를 확인한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운의 철학 명확화라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI095:first",
+            "action": "후보 참조(CI095:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "분산 운반 결정",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운의 철학 명확화",
+            "pressure": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "여섯 열쇠를 한데 넣지 않아 이동·통신·호위 비용이 여섯 배로 늘어난다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "분산 운반 결정",
+            "pressure": "여섯 열쇠를 한데 넣지 않아 이동·통신·호위 비용이 여섯 배로 늘어난다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "열쇠들이 자발적으로 담운 주변에 공명한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "여섯 열쇠를 한데 넣지 않아 이동·통신·호위 비용이 여섯 배로 늘어난다.",
+          "earned_reward": "분산 운반 결정",
+          "next_hook": "열쇠들이 자발적으로 담운 주변에 공명한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI095:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 157,
+      "canonical_episode": {
+        "episode": 157,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA4",
+        "subact_title": "동료들의 완성과 마지막 빈칸",
+        "title": "다시 모인 사람들",
+        "goal": "동료들이 각자의 열쇠와 제도를 가지고 합류한다.",
+        "choice": "파티가 주인공 보조가 아닌 동등한 설계자 집단이 됨",
+        "reward": "개인 세트 완성",
+        "hook": "천외 열쇠가 담운 이름 대신 여섯 증언을 받아들인다.",
+        "location": "육도 열쇠 집결지·천외문",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "숨은 진실 또는 역전",
+        "cost": "동료들이 동등한 설계자가 되면서 담운은 최종 결정을 독점할 수 없게 된다."
+      },
+      "scene_blueprint": {
+        "episode": 157,
+        "act": "ACT4",
+        "subact_id": "A16",
+        "source_subact": "ACT4-SA4",
+        "title": "다시 모인 사람들",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "동료들이 각자의 열쇠와 제도를 가지고 합류한다.",
+          "choice": "파티가 주인공 보조가 아닌 동등한 설계자 집단이 됨",
+          "reward": "개인 세트 완성",
+          "hook": "천외 열쇠가 담운 이름 대신 여섯 증언을 받아들인다.",
+          "location": "육도 열쇠 집결지·천외문",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "숨은 진실 또는 역전",
+          "cost": "동료들이 동등한 설계자가 되면서 담운은 최종 결정을 독점할 수 없게 된다."
+        },
+        "state_before": {
+          "previous_hook": "열쇠들이 자발적으로 담운 주변에 공명한다.",
+          "previous_cost": "여섯 열쇠를 한데 넣지 않아 이동·통신·호위 비용이 여섯 배로 늘어난다.",
+          "incoming_subact_cost": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도 열쇠 집결지·천외문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "열쇠들이 자발적으로 담운 주변에 공명한다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "동료들이 각자의 열쇠와 제도를 가지고 합류한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "숨은 진실 또는 역전",
+            "action": "육도 열쇠 집결지·천외문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "동료들이 동등한 설계자가 되면서 담운은 최종 결정을 독점할 수 없게 된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "동료들이 각자의 열쇠와 제도를 가지고 합류한다.",
+            "pressure": "각 동료가 담운과 무관한 진로를 선택하고 마지막 빈칸의 의미를 확인한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 파티가 주인공 보조가 아닌 동등한 설계자 집단이 됨라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "개인 세트 완성",
+            "action": "후보 참조(개인 세트 완성)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "개인 세트 완성",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "파티가 주인공 보조가 아닌 동등한 설계자 집단이 됨",
+            "pressure": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "동료들이 동등한 설계자가 되면서 담운은 최종 결정을 독점할 수 없게 된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "개인 세트 완성",
+            "pressure": "동료들이 동등한 설계자가 되면서 담운은 최종 결정을 독점할 수 없게 된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "천외 열쇠가 담운 이름 대신 여섯 증언을 받아들인다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "동료들이 동등한 설계자가 되면서 담운은 최종 결정을 독점할 수 없게 된다.",
+          "earned_reward": "개인 세트 완성",
+          "next_hook": "천외 열쇠가 담운 이름 대신 여섯 증언을 받아들인다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 158,
+      "canonical_episode": {
+        "episode": 158,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA4",
+        "subact_title": "동료들의 완성과 마지막 빈칸",
+        "title": "여섯 문이 한 번 열릴 때",
+        "goal": "여섯 권역의 문이 동시에 천외산맥으로 열린다.",
+        "choice": "공동체 전체가 마지막 여정에 참여",
+        "reward": "육도 열쇠 공명",
+        "hook": "무주함 안 사람형 칸이 완전히 열린다.",
+        "location": "육도 열쇠 집결지·천외문",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "해결책의 조립과 대가 확정",
+        "cost": "육도 문을 동시에 열어 각 권역 방어 시설이 한 시진 비게 된다."
+      },
+      "scene_blueprint": {
+        "episode": 158,
+        "act": "ACT4",
+        "subact_id": "A16",
+        "source_subact": "ACT4-SA4",
+        "title": "여섯 문이 한 번 열릴 때",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "여섯 권역의 문이 동시에 천외산맥으로 열린다.",
+          "choice": "공동체 전체가 마지막 여정에 참여",
+          "reward": "육도 열쇠 공명",
+          "hook": "무주함 안 사람형 칸이 완전히 열린다.",
+          "location": "육도 열쇠 집결지·천외문",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "해결책의 조립과 대가 확정",
+          "cost": "육도 문을 동시에 열어 각 권역 방어 시설이 한 시진 비게 된다."
+        },
+        "state_before": {
+          "previous_hook": "천외 열쇠가 담운 이름 대신 여섯 증언을 받아들인다.",
+          "previous_cost": "동료들이 동등한 설계자가 되면서 담운은 최종 결정을 독점할 수 없게 된다.",
+          "incoming_subact_cost": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도 열쇠 집결지·천외문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "천외 열쇠가 담운 이름 대신 여섯 증언을 받아들인다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "여섯 권역의 문이 동시에 천외산맥으로 열린다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "해결책의 조립과 대가 확정",
+            "action": "육도 열쇠 집결지·천외문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "육도 문을 동시에 열어 각 권역 방어 시설이 한 시진 비게 된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "여섯 권역의 문이 동시에 천외산맥으로 열린다.",
+            "pressure": "각 동료가 담운과 무관한 진로를 선택하고 마지막 빈칸의 의미를 확인한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 공동체 전체가 마지막 여정에 참여라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI096:first",
+            "action": "후보 참조(CI096:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "육도 열쇠 공명",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "공동체 전체가 마지막 여정에 참여",
+            "pressure": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "육도 문을 동시에 열어 각 권역 방어 시설이 한 시진 비게 된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "육도 열쇠 공명",
+            "pressure": "육도 문을 동시에 열어 각 권역 방어 시설이 한 시진 비게 된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "무주함 안 사람형 칸이 완전히 열린다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "육도 문을 동시에 열어 각 권역 방어 시설이 한 시진 비게 된다.",
+          "earned_reward": "육도 열쇠 공명",
+          "next_hook": "무주함 안 사람형 칸이 완전히 열린다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI096:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 159,
+      "canonical_episode": {
+        "episode": 159,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA4",
+        "subact_title": "동료들의 완성과 마지막 빈칸",
+        "title": "사람 모양의 빈칸",
+        "goal": "빈칸 안에서 담운의 어린 시절 목소리와 수장 기록이 겹친다.",
+        "choice": "담운이 자신의 소멸 가능성을 동료에게 말함",
+        "reward": "최종 빈칸 완전 공개 전야",
+        "hook": "빈칸 아래에 ‘이름’이라고 적힌다.",
+        "location": "육도 열쇠 집결지·천외문",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "서브액트 클라이맥스",
+        "cost": "자신의 소멸 가능성을 고백해 파티의 신뢰는 깊어지지만 공포도 숨길 수 없게 된다."
+      },
+      "scene_blueprint": {
+        "episode": 159,
+        "act": "ACT4",
+        "subact_id": "A16",
+        "source_subact": "ACT4-SA4",
+        "title": "사람 모양의 빈칸",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "빈칸 안에서 담운의 어린 시절 목소리와 수장 기록이 겹친다.",
+          "choice": "담운이 자신의 소멸 가능성을 동료에게 말함",
+          "reward": "최종 빈칸 완전 공개 전야",
+          "hook": "빈칸 아래에 ‘이름’이라고 적힌다.",
+          "location": "육도 열쇠 집결지·천외문",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "서브액트 클라이맥스",
+          "cost": "자신의 소멸 가능성을 고백해 파티의 신뢰는 깊어지지만 공포도 숨길 수 없게 된다."
+        },
+        "state_before": {
+          "previous_hook": "무주함 안 사람형 칸이 완전히 열린다.",
+          "previous_cost": "육도 문을 동시에 열어 각 권역 방어 시설이 한 시진 비게 된다.",
+          "incoming_subact_cost": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도 열쇠 집결지·천외문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "무주함 안 사람형 칸이 완전히 열린다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "빈칸 안에서 담운의 어린 시절 목소리와 수장 기록이 겹친다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 클라이맥스",
+            "action": "육도 열쇠 집결지·천외문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "자신의 소멸 가능성을 고백해 파티의 신뢰는 깊어지지만 공포도 숨길 수 없게 된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "빈칸 안에서 담운의 어린 시절 목소리와 수장 기록이 겹친다.",
+            "pressure": "각 동료가 담운과 무관한 진로를 선택하고 마지막 빈칸의 의미를 확인한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 자신의 소멸 가능성을 동료에게 말함라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI091:first",
+            "action": "후보 참조(CI091:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "최종 빈칸 완전 공개 전야",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 자신의 소멸 가능성을 동료에게 말함",
+            "pressure": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "자신의 소멸 가능성을 고백해 파티의 신뢰는 깊어지지만 공포도 숨길 수 없게 된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "최종 빈칸 완전 공개 전야",
+            "pressure": "자신의 소멸 가능성을 고백해 파티의 신뢰는 깊어지지만 공포도 숨길 수 없게 된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "빈칸 아래에 ‘이름’이라고 적힌다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "자신의 소멸 가능성을 고백해 파티의 신뢰는 깊어지지만 공포도 숨길 수 없게 된다.",
+          "earned_reward": "최종 빈칸 완전 공개 전야",
+          "next_hook": "빈칸 아래에 ‘이름’이라고 적힌다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI091:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 160,
+      "canonical_episode": {
+        "episode": 160,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA4",
+        "subact_title": "동료들의 완성과 마지막 빈칸",
+        "title": "마지막 수집 대상",
+        "goal": "무주함이 최종 대상이 `담운의 이름`임을 기록한다.",
+        "choice": "담운이 혼자 들어가려다 동료들에게 저지",
+        "reward": "최종 대상 공개",
+        "hook": "천외산맥의 원형 무고가 담운에게 문을 연다.",
+        "location": "육도 열쇠 집결지·천외문",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "보상 회수와 다음 구간 훅",
+        "cost": "혼자 들어가려던 담운은 동료에게 제압당해 천외문 선두권을 잃는다."
+      },
+      "scene_blueprint": {
+        "episode": 160,
+        "act": "ACT4",
+        "subact_id": "A16",
+        "source_subact": "ACT4-SA4",
+        "title": "마지막 수집 대상",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "무주함이 최종 대상이 `담운의 이름`임을 기록한다.",
+          "choice": "담운이 혼자 들어가려다 동료들에게 저지",
+          "reward": "최종 대상 공개",
+          "hook": "천외산맥의 원형 무고가 담운에게 문을 연다.",
+          "location": "육도 열쇠 집결지·천외문",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "보상 회수와 다음 구간 훅",
+          "cost": "혼자 들어가려던 담운은 동료에게 제압당해 천외문 선두권을 잃는다."
+        },
+        "state_before": {
+          "previous_hook": "빈칸 아래에 ‘이름’이라고 적힌다.",
+          "previous_cost": "자신의 소멸 가능성을 고백해 파티의 신뢰는 깊어지지만 공포도 숨길 수 없게 된다.",
+          "incoming_subact_cost": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도 열쇠 집결지·천외문에서 즉시 행동 문제로 회수한다.",
+            "pressure": "빈칸 아래에 ‘이름’이라고 적힌다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "무주함이 최종 대상이 `담운의 이름`임을 기록한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "보상 회수와 다음 구간 훅",
+            "action": "육도 열쇠 집결지·천외문의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "혼자 들어가려던 담운은 동료에게 제압당해 천외문 선두권을 잃는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "무주함이 최종 대상이 `담운의 이름`임을 기록한다.",
+            "pressure": "각 동료가 담운과 무관한 진로를 선택하고 마지막 빈칸의 의미를 확인한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 혼자 들어가려다 동료들에게 저지라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI085:final, CI086:final, CI087:final, CI088:final, CI089:final, CI090:final, CI092:final, CI093:final, CI094:final, SET019:complete",
+            "action": "후보 참조(CI085:final, CI086:final, CI087:final, CI088:final, CI089:final, CI090:final, CI092:final, CI093:final, CI094:final, SET019:complete)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "최종 대상 공개",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 혼자 들어가려다 동료들에게 저지",
+            "pressure": "권한 분산으로 전쟁은 끝나지만 동료들이 각자의 지역·조직 책임을 맡아 일행이 해체될 위기에 놓인다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "혼자 들어가려던 담운은 동료에게 제압당해 천외문 선두권을 잃는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "최종 대상 공개",
+            "pressure": "중앙으로 들어갈 인원·장비·정보가 줄고 원형 천공무고는 빈자리를 담운 한 사람으로 채우려 한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "천외산맥의 원형 무고가 담운에게 문을 연다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "혼자 들어가려던 담운은 동료에게 제압당해 천외문 선두권을 잃는다.",
+          "earned_reward": "최종 대상 공개",
+          "next_hook": "천외산맥의 원형 무고가 담운에게 문을 연다.",
+          "outgoing_subact_cost": "중앙으로 들어갈 인원·장비·정보가 줄고 원형 천공무고는 빈자리를 담운 한 사람으로 채우려 한다."
+        },
+        "registry_events": {
+          "items": [
+            "CI085:final",
+            "CI086:final",
+            "CI087:final",
+            "CI088:final",
+            "CI089:final",
+            "CI090:final",
+            "CI092:final",
+            "CI093:final",
+            "CI094:final"
+          ],
+          "sets": [
+            "SET019:complete"
+          ],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    }
+  ]
+}

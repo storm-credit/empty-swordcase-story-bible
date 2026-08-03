@@ -1,0 +1,1605 @@
+{
+  "version": "v3.4-manuscript-packet-v1",
+  "status": "derived_read_only_drafting_input",
+  "protected_canon_unchanged": true,
+  "range": [
+    141,
+    150
+  ],
+  "episodes": [
+    {
+      "episode": 141,
+      "canonical_episode": {
+        "episode": 141,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA3",
+        "subact_title": "여섯 갈래 수집 전쟁",
+        "title": "보물 지도가 퍼졌다",
+        "goal": "누군가 육도 천품 위치를 공개해 문파·상단·귀장회가 움직인다.",
+        "choice": "일행이 전쟁을 막기 위해 분산",
+        "reward": "육도 공개지도",
+        "hook": "지도 발신지가 천외산맥이다.",
+        "location": "육도천하 분산 전장",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "새 문제와 지역 규칙 도입",
+        "cost": "지도 공개로 청래역을 포함한 민간 거점이 약탈 위험에 노출된다."
+      },
+      "scene_blueprint": {
+        "episode": 141,
+        "act": "ACT4",
+        "subact_id": "A15",
+        "source_subact": "ACT4-SA3",
+        "title": "보물 지도가 퍼졌다",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "누군가 육도 천품 위치를 공개해 문파·상단·귀장회가 움직인다.",
+          "choice": "일행이 전쟁을 막기 위해 분산",
+          "reward": "육도 공개지도",
+          "hook": "지도 발신지가 천외산맥이다.",
+          "location": "육도천하 분산 전장",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "새 문제와 지역 규칙 도입",
+          "cost": "지도 공개로 청래역을 포함한 민간 거점이 약탈 위험에 노출된다."
+        },
+        "state_before": {
+          "previous_hook": "육도천하 전역에 천품 유산 위치가 공개된다.",
+          "previous_cost": "이름을 되찾았지만 중앙 권한 없이 천품 전쟁을 맞아야 한다.",
+          "incoming_subact_cost": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도천하 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "육도천하 전역에 천품 유산 위치가 공개된다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "누군가 육도 천품 위치를 공개해 문파·상단·귀장회가 움직인다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "새 문제와 지역 규칙 도입",
+            "action": "육도천하 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "지도 공개로 청래역을 포함한 민간 거점이 약탈 위험에 노출된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "누군가 육도 천품 위치를 공개해 문파·상단·귀장회가 움직인다.",
+            "pressure": "각 전선의 생계·안전·기억·계약 문제를 동료들이 나눠 해결한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 일행이 전쟁을 막기 위해 분산라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI085:first",
+            "action": "후보 참조(CI085:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "육도 공개지도",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "일행이 전쟁을 막기 위해 분산",
+            "pressure": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "지도 공개로 청래역을 포함한 민간 거점이 약탈 위험에 노출된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "육도 공개지도",
+            "pressure": "지도 공개로 청래역을 포함한 민간 거점이 약탈 위험에 노출된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "지도 발신지가 천외산맥이다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "지도 공개로 청래역을 포함한 민간 거점이 약탈 위험에 노출된다.",
+          "earned_reward": "육도 공개지도",
+          "next_hook": "지도 발신지가 천외산맥이다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI085:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 142,
+      "canonical_episode": {
+        "episode": 142,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA3",
+        "subact_title": "여섯 갈래 수집 전쟁",
+        "title": "여섯 갈래 전쟁",
+        "goal": "일행은 각자의 전문 권역으로 나뉘어 열쇠를 확보한다.",
+        "choice": "담운이 혼자 책임지려는 습관을 내려놓음",
+        "reward": "육도 열쇠 구조",
+        "hook": "각 열쇠가 다른 사람만 인정한다.",
+        "location": "육도천하 분산 전장",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "규칙의 예외와 비용 확대",
+        "cost": "일행 분산으로 담운은 무주함 기능 절반과 동료 보호를 동시에 잃는다."
+      },
+      "scene_blueprint": {
+        "episode": 142,
+        "act": "ACT4",
+        "subact_id": "A15",
+        "source_subact": "ACT4-SA3",
+        "title": "여섯 갈래 전쟁",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "일행은 각자의 전문 권역으로 나뉘어 열쇠를 확보한다.",
+          "choice": "담운이 혼자 책임지려는 습관을 내려놓음",
+          "reward": "육도 열쇠 구조",
+          "hook": "각 열쇠가 다른 사람만 인정한다.",
+          "location": "육도천하 분산 전장",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "규칙의 예외와 비용 확대",
+          "cost": "일행 분산으로 담운은 무주함 기능 절반과 동료 보호를 동시에 잃는다."
+        },
+        "state_before": {
+          "previous_hook": "지도 발신지가 천외산맥이다.",
+          "previous_cost": "지도 공개로 청래역을 포함한 민간 거점이 약탈 위험에 노출된다.",
+          "incoming_subact_cost": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도천하 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "지도 발신지가 천외산맥이다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "일행은 각자의 전문 권역으로 나뉘어 열쇠를 확보한다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "규칙의 예외와 비용 확대",
+            "action": "육도천하 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "일행 분산으로 담운은 무주함 기능 절반과 동료 보호를 동시에 잃는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "일행은 각자의 전문 권역으로 나뉘어 열쇠를 확보한다.",
+            "pressure": "각 전선의 생계·안전·기억·계약 문제를 동료들이 나눠 해결한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 혼자 책임지려는 습관을 내려놓음라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI086:first",
+            "action": "후보 참조(CI086:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "육도 열쇠 구조",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 혼자 책임지려는 습관을 내려놓음",
+            "pressure": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "일행 분산으로 담운은 무주함 기능 절반과 동료 보호를 동시에 잃는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "육도 열쇠 구조",
+            "pressure": "일행 분산으로 담운은 무주함 기능 절반과 동료 보호를 동시에 잃는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "각 열쇠가 다른 사람만 인정한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "일행 분산으로 담운은 무주함 기능 절반과 동료 보호를 동시에 잃는다.",
+          "earned_reward": "육도 열쇠 구조",
+          "next_hook": "각 열쇠가 다른 사람만 인정한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI086:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 143,
+      "canonical_episode": {
+        "episode": 143,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA3",
+        "subact_title": "여섯 갈래 수집 전쟁",
+        "title": "따로 걷는 동료들",
+        "goal": "담운·린화, 무석, 예란, 진여강이 각자 임무를 맡는다.",
+        "choice": "동료들의 독립성 시험",
+        "reward": "개인 세트 개방",
+        "hook": "무주함이 담운 곁에서 기능 절반을 닫는다.",
+        "location": "육도천하 분산 전장",
+        "cast": [
+          "담운",
+          "진여강",
+          "서린화",
+          "곽무석",
+          "소예란",
+          "두리"
+        ],
+        "episode_function": "첫 실전 적용과 오판",
+        "cost": "각자 임무를 맡기며 담운은 동료 결정을 되돌릴 지휘권을 포기한다."
+      },
+      "scene_blueprint": {
+        "episode": 143,
+        "act": "ACT4",
+        "subact_id": "A15",
+        "source_subact": "ACT4-SA3",
+        "title": "따로 걷는 동료들",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "담운·린화, 무석, 예란, 진여강이 각자 임무를 맡는다.",
+          "choice": "동료들의 독립성 시험",
+          "reward": "개인 세트 개방",
+          "hook": "무주함이 담운 곁에서 기능 절반을 닫는다.",
+          "location": "육도천하 분산 전장",
+          "cast": [
+            "담운",
+            "진여강",
+            "서린화",
+            "곽무석",
+            "소예란",
+            "두리"
+          ],
+          "episode_function": "첫 실전 적용과 오판",
+          "cost": "각자 임무를 맡기며 담운은 동료 결정을 되돌릴 지휘권을 포기한다."
+        },
+        "state_before": {
+          "previous_hook": "각 열쇠가 다른 사람만 인정한다.",
+          "previous_cost": "일행 분산으로 담운은 무주함 기능 절반과 동료 보호를 동시에 잃는다.",
+          "incoming_subact_cost": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도천하 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "각 열쇠가 다른 사람만 인정한다.",
+            "action": "담운·진여강가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "담운·린화, 무석, 예란, 진여강이 각자 임무를 맡는다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "첫 실전 적용과 오판",
+            "action": "육도천하 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "각자 임무를 맡기며 담운은 동료 결정을 되돌릴 지휘권을 포기한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "담운·린화, 무석, 예란, 진여강이 각자 임무를 맡는다.",
+            "pressure": "각 전선의 생계·안전·기억·계약 문제를 동료들이 나눠 해결한다.",
+            "action": "담운·진여강가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 동료들의 독립성 시험라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI087:first",
+            "action": "후보 참조(CI087:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "개인 세트 개방",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "동료들의 독립성 시험",
+            "pressure": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "각자 임무를 맡기며 담운은 동료 결정을 되돌릴 지휘권을 포기한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "개인 세트 개방",
+            "pressure": "각자 임무를 맡기며 담운은 동료 결정을 되돌릴 지휘권을 포기한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "무주함이 담운 곁에서 기능 절반을 닫는다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "각자 임무를 맡기며 담운은 동료 결정을 되돌릴 지휘권을 포기한다.",
+          "earned_reward": "개인 세트 개방",
+          "next_hook": "무주함이 담운 곁에서 기능 절반을 닫는다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI087:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 144,
+      "canonical_episode": {
+        "episode": 144,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA3",
+        "subact_title": "여섯 갈래 수집 전쟁",
+        "title": "경도의 열쇠",
+        "goal": "린화가 시민 기억과 공개 감정으로 경도 열쇠를 연다.",
+        "choice": "담운이 보조 역할을 맡음",
+        "reward": "육도 열쇠-경도",
+        "hook": "열쇠가 린화를 소유자로 등록하지 않는다.",
+        "location": "육도천하 분산 전장",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "적대 세력의 압박 구체화",
+        "cost": "경도 열쇠를 린화가 열어 담운은 주인공 권한 대신 보조 역할을 받아들인다."
+      },
+      "scene_blueprint": {
+        "episode": 144,
+        "act": "ACT4",
+        "subact_id": "A15",
+        "source_subact": "ACT4-SA3",
+        "title": "경도의 열쇠",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "린화가 시민 기억과 공개 감정으로 경도 열쇠를 연다.",
+          "choice": "담운이 보조 역할을 맡음",
+          "reward": "육도 열쇠-경도",
+          "hook": "열쇠가 린화를 소유자로 등록하지 않는다.",
+          "location": "육도천하 분산 전장",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "적대 세력의 압박 구체화",
+          "cost": "경도 열쇠를 린화가 열어 담운은 주인공 권한 대신 보조 역할을 받아들인다."
+        },
+        "state_before": {
+          "previous_hook": "무주함이 담운 곁에서 기능 절반을 닫는다.",
+          "previous_cost": "각자 임무를 맡기며 담운은 동료 결정을 되돌릴 지휘권을 포기한다.",
+          "incoming_subact_cost": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도천하 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "무주함이 담운 곁에서 기능 절반을 닫는다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "린화가 시민 기억과 공개 감정으로 경도 열쇠를 연다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "적대 세력의 압박 구체화",
+            "action": "육도천하 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "경도 열쇠를 린화가 열어 담운은 주인공 권한 대신 보조 역할을 받아들인다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "린화가 시민 기억과 공개 감정으로 경도 열쇠를 연다.",
+            "pressure": "각 전선의 생계·안전·기억·계약 문제를 동료들이 나눠 해결한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 보조 역할을 맡음라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "육도 열쇠-경도",
+            "action": "후보 참조(육도 열쇠-경도)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "육도 열쇠-경도",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 보조 역할을 맡음",
+            "pressure": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "경도 열쇠를 린화가 열어 담운은 주인공 권한 대신 보조 역할을 받아들인다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "육도 열쇠-경도",
+            "pressure": "경도 열쇠를 린화가 열어 담운은 주인공 권한 대신 보조 역할을 받아들인다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "열쇠가 린화를 소유자로 등록하지 않는다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "경도 열쇠를 린화가 열어 담운은 주인공 권한 대신 보조 역할을 받아들인다.",
+          "earned_reward": "육도 열쇠-경도",
+          "next_hook": "열쇠가 린화를 소유자로 등록하지 않는다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 145,
+      "canonical_episode": {
+        "episode": 145,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA3",
+        "subact_title": "여섯 갈래 수집 전쟁",
+        "title": "북설의 열쇠",
+        "goal": "무석이 완성 방패를 공동 사용으로 돌려 북설 열쇠를 얻는다.",
+        "choice": "무석이 삭제된 이름 대신 현재 이름을 선택",
+        "reward": "육도 열쇠-북설",
+        "hook": "방패에 담운의 이름이 위험 대상으로 뜬다.",
+        "location": "육도천하 분산 전장",
+        "cast": [
+          "담운",
+          "곽무석",
+          "서린화",
+          "소예란",
+          "두리",
+          "진여강"
+        ],
+        "episode_function": "서브액트 중간 선택",
+        "cost": "무석은 북설 열쇠를 얻는 대신 완성 방패의 개인 회복 기능을 포기한다."
+      },
+      "scene_blueprint": {
+        "episode": 145,
+        "act": "ACT4",
+        "subact_id": "A15",
+        "source_subact": "ACT4-SA3",
+        "title": "북설의 열쇠",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "무석이 완성 방패를 공동 사용으로 돌려 북설 열쇠를 얻는다.",
+          "choice": "무석이 삭제된 이름 대신 현재 이름을 선택",
+          "reward": "육도 열쇠-북설",
+          "hook": "방패에 담운의 이름이 위험 대상으로 뜬다.",
+          "location": "육도천하 분산 전장",
+          "cast": [
+            "담운",
+            "곽무석",
+            "서린화",
+            "소예란",
+            "두리",
+            "진여강"
+          ],
+          "episode_function": "서브액트 중간 선택",
+          "cost": "무석은 북설 열쇠를 얻는 대신 완성 방패의 개인 회복 기능을 포기한다."
+        },
+        "state_before": {
+          "previous_hook": "열쇠가 린화를 소유자로 등록하지 않는다.",
+          "previous_cost": "경도 열쇠를 린화가 열어 담운은 주인공 권한 대신 보조 역할을 받아들인다.",
+          "incoming_subact_cost": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도천하 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "열쇠가 린화를 소유자로 등록하지 않는다.",
+            "action": "담운·곽무석가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "무석이 완성 방패를 공동 사용으로 돌려 북설 열쇠를 얻는다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 중간 선택",
+            "action": "육도천하 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "무석은 북설 열쇠를 얻는 대신 완성 방패의 개인 회복 기능을 포기한다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "무석이 완성 방패를 공동 사용으로 돌려 북설 열쇠를 얻는다.",
+            "pressure": "각 전선의 생계·안전·기억·계약 문제를 동료들이 나눠 해결한다.",
+            "action": "담운·곽무석가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 무석이 삭제된 이름 대신 현재 이름을 선택라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI088:first",
+            "action": "후보 참조(CI088:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "육도 열쇠-북설",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "무석이 삭제된 이름 대신 현재 이름을 선택",
+            "pressure": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "무석은 북설 열쇠를 얻는 대신 완성 방패의 개인 회복 기능을 포기한다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "육도 열쇠-북설",
+            "pressure": "무석은 북설 열쇠를 얻는 대신 완성 방패의 개인 회복 기능을 포기한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "방패에 담운의 이름이 위험 대상으로 뜬다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "무석은 북설 열쇠를 얻는 대신 완성 방패의 개인 회복 기능을 포기한다.",
+          "earned_reward": "육도 열쇠-북설",
+          "next_hook": "방패에 담운의 이름이 위험 대상으로 뜬다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI088:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 146,
+      "canonical_episode": {
+        "episode": 146,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA3",
+        "subact_title": "여섯 갈래 수집 전쟁",
+        "title": "남독의 열쇠",
+        "goal": "예란이 신수가 인간을 심사하는 역계약을 성립시킨다.",
+        "choice": "예란이 제도 설계자로 성장",
+        "reward": "육도 열쇠-남독",
+        "hook": "두리가 담운 계약을 다시 심사한다.",
+        "location": "육도천하 분산 전장",
+        "cast": [
+          "담운",
+          "두리",
+          "소예란",
+          "서린화",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "선택의 후폭풍과 관계 변화",
+        "cost": "예란은 역계약 실패 시 인간 치료소 폐쇄 책임까지 진다."
+      },
+      "scene_blueprint": {
+        "episode": 146,
+        "act": "ACT4",
+        "subact_id": "A15",
+        "source_subact": "ACT4-SA3",
+        "title": "남독의 열쇠",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "예란이 신수가 인간을 심사하는 역계약을 성립시킨다.",
+          "choice": "예란이 제도 설계자로 성장",
+          "reward": "육도 열쇠-남독",
+          "hook": "두리가 담운 계약을 다시 심사한다.",
+          "location": "육도천하 분산 전장",
+          "cast": [
+            "담운",
+            "두리",
+            "소예란",
+            "서린화",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "선택의 후폭풍과 관계 변화",
+          "cost": "예란은 역계약 실패 시 인간 치료소 폐쇄 책임까지 진다."
+        },
+        "state_before": {
+          "previous_hook": "방패에 담운의 이름이 위험 대상으로 뜬다.",
+          "previous_cost": "무석은 북설 열쇠를 얻는 대신 완성 방패의 개인 회복 기능을 포기한다.",
+          "incoming_subact_cost": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도천하 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "방패에 담운의 이름이 위험 대상으로 뜬다.",
+            "action": "담운·두리가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "예란이 신수가 인간을 심사하는 역계약을 성립시킨다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "선택의 후폭풍과 관계 변화",
+            "action": "육도천하 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "예란은 역계약 실패 시 인간 치료소 폐쇄 책임까지 진다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "예란이 신수가 인간을 심사하는 역계약을 성립시킨다.",
+            "pressure": "각 전선의 생계·안전·기억·계약 문제를 동료들이 나눠 해결한다.",
+            "action": "담운·두리가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 예란이 제도 설계자로 성장라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "육도 열쇠-남독",
+            "action": "후보 참조(육도 열쇠-남독)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "육도 열쇠-남독",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "예란이 제도 설계자로 성장",
+            "pressure": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "예란은 역계약 실패 시 인간 치료소 폐쇄 책임까지 진다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "육도 열쇠-남독",
+            "pressure": "예란은 역계약 실패 시 인간 치료소 폐쇄 책임까지 진다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "두리가 담운 계약을 다시 심사한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "예란은 역계약 실패 시 인간 치료소 폐쇄 책임까지 진다.",
+          "earned_reward": "육도 열쇠-남독",
+          "next_hook": "두리가 담운 계약을 다시 심사한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 147,
+      "canonical_episode": {
+        "episode": 147,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA3",
+        "subact_title": "여섯 갈래 수집 전쟁",
+        "title": "서황의 열쇠",
+        "goal": "진여강이 가격 대신 책임 지분을 분배해 서황 열쇠를 연다.",
+        "choice": "진여강이 독점 거래를 버림",
+        "reward": "육도 열쇠-서황",
+        "hook": "책임표에 담운 지분만 0으로 표시된다.",
+        "location": "육도천하 분산 전장",
+        "cast": [
+          "담운",
+          "진여강",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석"
+        ],
+        "episode_function": "숨은 진실 또는 역전",
+        "cost": "진여강은 서황 거래망의 독점 이익과 본가 상속권을 내려놓는다."
+      },
+      "scene_blueprint": {
+        "episode": 147,
+        "act": "ACT4",
+        "subact_id": "A15",
+        "source_subact": "ACT4-SA3",
+        "title": "서황의 열쇠",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "진여강이 가격 대신 책임 지분을 분배해 서황 열쇠를 연다.",
+          "choice": "진여강이 독점 거래를 버림",
+          "reward": "육도 열쇠-서황",
+          "hook": "책임표에 담운 지분만 0으로 표시된다.",
+          "location": "육도천하 분산 전장",
+          "cast": [
+            "담운",
+            "진여강",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석"
+          ],
+          "episode_function": "숨은 진실 또는 역전",
+          "cost": "진여강은 서황 거래망의 독점 이익과 본가 상속권을 내려놓는다."
+        },
+        "state_before": {
+          "previous_hook": "두리가 담운 계약을 다시 심사한다.",
+          "previous_cost": "예란은 역계약 실패 시 인간 치료소 폐쇄 책임까지 진다.",
+          "incoming_subact_cost": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도천하 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "두리가 담운 계약을 다시 심사한다.",
+            "action": "담운·진여강가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "진여강이 가격 대신 책임 지분을 분배해 서황 열쇠를 연다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "숨은 진실 또는 역전",
+            "action": "육도천하 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "진여강은 서황 거래망의 독점 이익과 본가 상속권을 내려놓는다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "진여강이 가격 대신 책임 지분을 분배해 서황 열쇠를 연다.",
+            "pressure": "각 전선의 생계·안전·기억·계약 문제를 동료들이 나눠 해결한다.",
+            "action": "담운·진여강가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 진여강이 독점 거래를 버림라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI089:first",
+            "action": "후보 참조(CI089:first)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "육도 열쇠-서황",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "진여강이 독점 거래를 버림",
+            "pressure": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "진여강은 서황 거래망의 독점 이익과 본가 상속권을 내려놓는다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "육도 열쇠-서황",
+            "pressure": "진여강은 서황 거래망의 독점 이익과 본가 상속권을 내려놓는다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "책임표에 담운 지분만 0으로 표시된다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "진여강은 서황 거래망의 독점 이익과 본가 상속권을 내려놓는다.",
+          "earned_reward": "육도 열쇠-서황",
+          "next_hook": "책임표에 담운 지분만 0으로 표시된다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [
+            "CI089:first"
+          ],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 148,
+      "canonical_episode": {
+        "episode": 148,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA3",
+        "subact_title": "여섯 갈래 수집 전쟁",
+        "title": "동해의 열쇠",
+        "goal": "여섯 작은 닻이 동시에 울려 동해 열쇠를 만든다.",
+        "choice": "공동체가 일행을 지원",
+        "reward": "육도 열쇠-동해",
+        "hook": "열쇠 다섯 개가 천외 하나를 요구한다.",
+        "location": "육도천하 분산 전장",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "해결책의 조립과 대가 확정",
+        "cost": "동해 닻 하나가 파손돼 여섯 섬의 물자 이동이 한 달 지연된다."
+      },
+      "scene_blueprint": {
+        "episode": 148,
+        "act": "ACT4",
+        "subact_id": "A15",
+        "source_subact": "ACT4-SA3",
+        "title": "동해의 열쇠",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "여섯 작은 닻이 동시에 울려 동해 열쇠를 만든다.",
+          "choice": "공동체가 일행을 지원",
+          "reward": "육도 열쇠-동해",
+          "hook": "열쇠 다섯 개가 천외 하나를 요구한다.",
+          "location": "육도천하 분산 전장",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "해결책의 조립과 대가 확정",
+          "cost": "동해 닻 하나가 파손돼 여섯 섬의 물자 이동이 한 달 지연된다."
+        },
+        "state_before": {
+          "previous_hook": "책임표에 담운 지분만 0으로 표시된다.",
+          "previous_cost": "진여강은 서황 거래망의 독점 이익과 본가 상속권을 내려놓는다.",
+          "incoming_subact_cost": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도천하 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "책임표에 담운 지분만 0으로 표시된다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "여섯 작은 닻이 동시에 울려 동해 열쇠를 만든다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "해결책의 조립과 대가 확정",
+            "action": "육도천하 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "동해 닻 하나가 파손돼 여섯 섬의 물자 이동이 한 달 지연된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "여섯 작은 닻이 동시에 울려 동해 열쇠를 만든다.",
+            "pressure": "각 전선의 생계·안전·기억·계약 문제를 동료들이 나눠 해결한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 공동체가 일행을 지원라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "육도 열쇠-동해",
+            "action": "후보 참조(육도 열쇠-동해)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "육도 열쇠-동해",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "공동체가 일행을 지원",
+            "pressure": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "동해 닻 하나가 파손돼 여섯 섬의 물자 이동이 한 달 지연된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "육도 열쇠-동해",
+            "pressure": "동해 닻 하나가 파손돼 여섯 섬의 물자 이동이 한 달 지연된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "열쇠 다섯 개가 천외 하나를 요구한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "동해 닻 하나가 파손돼 여섯 섬의 물자 이동이 한 달 지연된다.",
+          "earned_reward": "육도 열쇠-동해",
+          "next_hook": "열쇠 다섯 개가 천외 하나를 요구한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 149,
+      "canonical_episode": {
+        "episode": 149,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA3",
+        "subact_title": "여섯 갈래 수집 전쟁",
+        "title": "열리지 않는 천외 열쇠",
+        "goal": "천외 열쇠는 담운의 이름 없이는 완성되지 않는다.",
+        "choice": "담운이 정체 문제를 피할 수 없게 됨",
+        "reward": "육도 열쇠-천외 미완",
+        "hook": "무주함이 담운 피를 요구한다.",
+        "location": "육도천하 분산 전장",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "서브액트 클라이맥스",
+        "cost": "천외 열쇠가 열리지 않아 다른 다섯 열쇠 보유자가 동시에 표적이 된다."
+      },
+      "scene_blueprint": {
+        "episode": 149,
+        "act": "ACT4",
+        "subact_id": "A15",
+        "source_subact": "ACT4-SA3",
+        "title": "열리지 않는 천외 열쇠",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "천외 열쇠는 담운의 이름 없이는 완성되지 않는다.",
+          "choice": "담운이 정체 문제를 피할 수 없게 됨",
+          "reward": "육도 열쇠-천외 미완",
+          "hook": "무주함이 담운 피를 요구한다.",
+          "location": "육도천하 분산 전장",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "서브액트 클라이맥스",
+          "cost": "천외 열쇠가 열리지 않아 다른 다섯 열쇠 보유자가 동시에 표적이 된다."
+        },
+        "state_before": {
+          "previous_hook": "열쇠 다섯 개가 천외 하나를 요구한다.",
+          "previous_cost": "동해 닻 하나가 파손돼 여섯 섬의 물자 이동이 한 달 지연된다.",
+          "incoming_subact_cost": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도천하 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "열쇠 다섯 개가 천외 하나를 요구한다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "천외 열쇠는 담운의 이름 없이는 완성되지 않는다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "서브액트 클라이맥스",
+            "action": "육도천하 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "천외 열쇠가 열리지 않아 다른 다섯 열쇠 보유자가 동시에 표적이 된다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "천외 열쇠는 담운의 이름 없이는 완성되지 않는다.",
+            "pressure": "각 전선의 생계·안전·기억·계약 문제를 동료들이 나눠 해결한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 정체 문제를 피할 수 없게 됨라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "육도 열쇠-천외 미완",
+            "action": "후보 참조(육도 열쇠-천외 미완)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "육도 열쇠-천외 미완",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 정체 문제를 피할 수 없게 됨",
+            "pressure": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "천외 열쇠가 열리지 않아 다른 다섯 열쇠 보유자가 동시에 표적이 된다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "육도 열쇠-천외 미완",
+            "pressure": "천외 열쇠가 열리지 않아 다른 다섯 열쇠 보유자가 동시에 표적이 된다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "무주함이 담운 피를 요구한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "천외 열쇠가 열리지 않아 다른 다섯 열쇠 보유자가 동시에 표적이 된다.",
+          "earned_reward": "육도 열쇠-천외 미완",
+          "next_hook": "무주함이 담운 피를 요구한다.",
+          "outgoing_subact_cost": null
+        },
+        "registry_events": {
+          "items": [],
+          "sets": [],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    },
+    {
+      "episode": 150,
+      "canonical_episode": {
+        "episode": 150,
+        "act": "ACT4",
+        "act_title": "사람의 이름도 소유될 수 있는가",
+        "subact": "ACT4-SA3",
+        "subact_title": "여섯 갈래 수집 전쟁",
+        "title": "피를 거부한 검함",
+        "goal": "담운의 피가 무주함에 흡수되지 않고 밀려난다.",
+        "choice": "담운이 주인도 소유물도 아닌 상태",
+        "reward": "최종 대상 경고",
+        "hook": "사람형 빈칸이 담운 자세를 따라 한다.",
+        "location": "육도천하 분산 전장",
+        "cast": [
+          "담운",
+          "서린화",
+          "소예란",
+          "두리",
+          "곽무석",
+          "진여강"
+        ],
+        "episode_function": "보상 회수와 다음 구간 훅",
+        "cost": "피를 거부한 검함이 담운의 소유자·수집품 어느 신분도 인정하지 않아 보호 규칙 밖으로 밀어낸다."
+      },
+      "scene_blueprint": {
+        "episode": 150,
+        "act": "ACT4",
+        "subact_id": "A15",
+        "source_subact": "ACT4-SA3",
+        "title": "피를 거부한 검함",
+        "status": "canon_production_blueprint",
+        "author_approval_required": false,
+        "protected_canon_unchanged": true,
+        "source_core": {
+          "goal": "담운의 피가 무주함에 흡수되지 않고 밀려난다.",
+          "choice": "담운이 주인도 소유물도 아닌 상태",
+          "reward": "최종 대상 경고",
+          "hook": "사람형 빈칸이 담운 자세를 따라 한다.",
+          "location": "육도천하 분산 전장",
+          "cast": [
+            "담운",
+            "서린화",
+            "소예란",
+            "두리",
+            "곽무석",
+            "진여강"
+          ],
+          "episode_function": "보상 회수와 다음 구간 훅",
+          "cost": "피를 거부한 검함이 담운의 소유자·수집품 어느 신분도 인정하지 않아 보호 규칙 밖으로 밀어낸다."
+        },
+        "state_before": {
+          "previous_hook": "무주함이 담운 피를 요구한다.",
+          "previous_cost": "천외 열쇠가 열리지 않아 다른 다섯 열쇠 보유자가 동시에 표적이 된다.",
+          "incoming_subact_cost": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다."
+        },
+        "scene_beats": [
+          {
+            "beat_no": 1,
+            "phase": "hook_recovery",
+            "objective": "직전 화의 훅을 육도천하 분산 전장에서 즉시 행동 문제로 회수한다.",
+            "pressure": "무주함이 담운 피를 요구한다.",
+            "action": "담운·서린화가 직전 훅의 물리적 결과를 확인하고 이번 목표를 선택한다.",
+            "reaction": "담운의 피가 무주함에 흡수되지 않고 밀려난다.",
+            "state_change": "이번 화의 즉시 목표와 실패 손실이 고정된다.",
+            "source_fields": [
+              "previous.hook",
+              "location",
+              "goal"
+            ]
+          },
+          {
+            "beat_no": 2,
+            "phase": "world_pressure",
+            "objective": "지역 운영 규칙과 생활 병목이 목표를 제한하는 방식을 장면화한다.",
+            "pressure": "보상 회수와 다음 구간 훅",
+            "action": "육도천하 분산 전장의 검문·거래·수선·운송·생계 중 현재 비용과 직접 맞닿은 행동을 수행한다.",
+            "reaction": "피를 거부한 검함이 담운의 소유자·수집품 어느 신분도 인정하지 않아 보호 규칙 밖으로 밀어낸다.",
+            "state_change": "시간·돈·장비·권리·관계 중 최소 하나가 악화된다.",
+            "source_fields": [
+              "location",
+              "episode_function",
+              "cost"
+            ]
+          },
+          {
+            "beat_no": 3,
+            "phase": "first_attempt",
+            "objective": "담운의 피가 무주함에 흡수되지 않고 밀려난다.",
+            "pressure": "각 전선의 생계·안전·기억·계약 문제를 동료들이 나눠 해결한다.",
+            "action": "담운·서린화가 가장 직접적인 해결 시도를 실행한다.",
+            "reaction": "시도는 담운이 주인도 소유물도 아닌 상태라는 선택 없이는 끝낼 수 없는 상태를 만든다.",
+            "state_change": "초기 해법이 불완전하다는 사실과 반대자의 정당성이 드러난다.",
+            "source_fields": [
+              "goal",
+              "choice",
+              "subact.present_problem"
+            ]
+          },
+          {
+            "beat_no": 4,
+            "phase": "evidence_and_counterpressure",
+            "objective": "문서 설명보다 생활 흔적·사용 기록·관계 반응을 먼저 확인한다.",
+            "pressure": "CI090:first, SET018:complete",
+            "action": "후보 참조(CI090:first, SET018:complete)를 소유 보상이 아니라 증거·제약·책임으로 사용한다.",
+            "reaction": "최종 대상 경고",
+            "state_change": "첫 해석이 수정되고 비가역 선택의 기준이 생긴다.",
+            "source_fields": [
+              "reward",
+              "collection_registry",
+              "set_registry",
+              "beast_registry"
+            ]
+          },
+          {
+            "beat_no": 5,
+            "phase": "irreversible_choice",
+            "objective": "담운이 주인도 소유물도 아닌 상태",
+            "pressure": "장부 분산으로 감춰졌던 권리 청구가 동시에 살아나 여섯 권역이 서로 다른 유산을 요구한다.",
+            "action": "담운 또는 핵심 동료가 하나의 이익·권한·전력·관계를 실제로 포기한다.",
+            "reaction": "피를 거부한 검함이 담운의 소유자·수집품 어느 신분도 인정하지 않아 보호 규칙 밖으로 밀어낸다.",
+            "state_change": "비용이 즉시 지불되고 이전 상태로 돌아갈 수 없게 된다.",
+            "source_fields": [
+              "choice",
+              "cost",
+              "subact.incoming_cost"
+            ]
+          },
+          {
+            "beat_no": 6,
+            "phase": "reward_cost_and_next_hook",
+            "objective": "최종 대상 경고",
+            "pressure": "동료들이 담운 없이도 독립 결정을 내리며 일부 선택은 담운의 계획과 충돌한다.",
+            "action": "보상·정보·관계 변화가 실제 행동이나 물건 상태로 확인된다.",
+            "reaction": "사람형 빈칸이 담운 자세를 따라 한다.",
+            "state_change": "다음 화의 첫 행동을 발생시키는 물리·관계·권리 잔여가 남는다.",
+            "source_fields": [
+              "reward",
+              "hook",
+              "cost",
+              "subact.outgoing_cost"
+            ]
+          }
+        ],
+        "state_after": {
+          "paid_cost": "피를 거부한 검함이 담운의 소유자·수집품 어느 신분도 인정하지 않아 보호 규칙 밖으로 밀어낸다.",
+          "earned_reward": "최종 대상 경고",
+          "next_hook": "사람형 빈칸이 담운 자세를 따라 한다.",
+          "outgoing_subact_cost": "동료들이 담운 없이도 독립 결정을 내리며 일부 선택은 담운의 계획과 충돌한다."
+        },
+        "registry_events": {
+          "items": [
+            "CI090:first"
+          ],
+          "sets": [
+            "SET018:complete"
+          ],
+          "beasts": []
+        },
+        "approval_id": "AUTHOR-AUTO-V3.4-20260803"
+      }
+    }
+  ]
+}
