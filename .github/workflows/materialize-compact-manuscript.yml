@@ -9,6 +9,13 @@ on:
       - 'scripts/materialize_compact_manuscript_v1.py'
       - 'scripts/validate_complete_compact_manuscript_v1.py'
       - '.github/workflows/materialize-compact-manuscript.yml'
+  pull_request:
+    paths:
+      - 'manuscript/compact_sources/**'
+      - 'manuscript/drafts/**'
+      - 'scripts/materialize_compact_manuscript_v1.py'
+      - 'scripts/validate_complete_compact_manuscript_v1.py'
+      - '.github/workflows/materialize-compact-manuscript.yml'
   workflow_dispatch:
 
 permissions:
@@ -44,11 +51,5 @@ jobs:
             git push origin HEAD:agent/manuscript-001-200-v1
           fi
 
-      - name: Validate complete compact manuscript when all episodes exist
-        run: |
-          count=$(find manuscript/drafts -maxdepth 1 -type f -name '[0-9][0-9][0-9]_*.md' | wc -l)
-          if [ "$count" -eq 200 ]; then
-            python scripts/validate_complete_compact_manuscript_v1.py
-          else
-            echo "Current materialized episode count: $count/200"
-          fi
+      - name: Validate complete compact manuscript
+        run: python scripts/validate_complete_compact_manuscript_v1.py
