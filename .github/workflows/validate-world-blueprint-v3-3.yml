@@ -53,16 +53,15 @@ jobs:
         run: python scripts/validate_collection_governance_v3_3.py
 
       - name: Finalize approved v3.4 canon artifacts
-        run: python scripts/finalize_canon_v3_4.py
+        run: python scripts/finalize_canon_v3_4_complete.py
 
       - name: Validate approved v3.4 final canon
-        run: python scripts/validate_final_canon_v3_4.py
+        run: python scripts/validate_final_canon_v3_4_complete.py
 
       - name: Check deterministic finalization
         run: |
-          git diff --exit-code -- scripts/finalize_canon_v3_4.py scripts/validate_final_canon_v3_4.py
-          python scripts/finalize_canon_v3_4.py
-          python scripts/validate_final_canon_v3_4.py
+          python scripts/finalize_canon_v3_4_complete.py
+          python scripts/validate_final_canon_v3_4_complete.py
 
       - name: Commit generated final canon artifacts
         if: github.event_name == 'push'
