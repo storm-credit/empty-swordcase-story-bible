@@ -1,0 +1,35 @@
+name: Validate Pacheon Reboot v1
+
+on:
+  pull_request:
+    paths:
+      - "reboot_v1/**"
+      - "data/pacheon_reboot_manifest_v1.json"
+      - "scripts/validate_pacheon_reboot_v1.py"
+      - "CLAUDE.md"
+      - "AGENTS.md"
+      - "README.md"
+  push:
+    branches: [main]
+    paths:
+      - "reboot_v1/**"
+      - "data/pacheon_reboot_manifest_v1.json"
+      - "scripts/validate_pacheon_reboot_v1.py"
+      - "CLAUDE.md"
+      - "AGENTS.md"
+      - "README.md"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate reboot package
+        run: python scripts/validate_pacheon_reboot_v1.py
