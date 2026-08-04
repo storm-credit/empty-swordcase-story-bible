@@ -1,0 +1,18 @@
+{
+  "project": "유물을 먹는 파천마검",
+  "mode": "REBOOT_MANUSCRIPT_DRAFT_MODE",
+  "total_episodes": 200,
+  "completed_drafts": 1,
+  "author_approved": 0,
+  "next_episode": 2,
+  "episodes": [
+    {
+      "episode": 1,
+      "title": "버려진 길잡이",
+      "manuscript": "manuscript/reboot_v1/EP001_버려진_길잡이.md",
+      "review": "production/reviews/reboot_v1/EP001_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 5135
+    }
+  ]
+}
