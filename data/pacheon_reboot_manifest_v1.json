@@ -1,0 +1,102 @@
+{
+  "project": {
+    "working_title": "유물을 먹는 파천마검",
+    "version": "1.0",
+    "status": "DESIGN_COMPLETE_MANUSCRIPT_PENDING",
+    "genre": [
+      "동양 다크 모험 판타지",
+      "무협식 액션",
+      "유물 수집",
+      "파티 모험",
+      "미스터리"
+    ],
+    "genre_ratio": {
+      "eastern_dark_fantasy": 70,
+      "wuxia_action": 30
+    }
+  },
+  "canon": {
+    "official_weapon_name": "파천검",
+    "taboo_weapon_name": "파천마검",
+    "core_medium": "파천검의 칼날 없는 자루",
+    "deprecated_medium": "검함",
+    "protagonist": "담운",
+    "starting_role": "하급 유물 사냥꾼",
+    "core_loop": "단서-지역진입-유물재앙-세력충돌-기억진실-사냥시험계약-검흔획득-대가-진실갱신",
+    "final_choice": "완전한 파천검을 한 번 사용한 뒤 열두 본흔을 지역별 철회 가능한 계약으로 분산"
+  },
+  "structure": {
+    "acts": 5,
+    "arcs": 10,
+    "subacts": 20,
+    "episodes": 200,
+    "episodes_per_act": 40,
+    "episodes_per_arc": 20,
+    "episodes_per_subact": 10
+  },
+  "main_blade_marks": [
+    {"id": 1, "name": "흑염도", "source": "화귀의 심장", "first_complete_episode": 19, "cost": "체온과 감정의 온기"},
+    {"id": 2, "name": "빙갑검", "source": "설왕의 갑주", "first_complete_episode": 39, "cost": "감정과 통각 둔화"},
+    {"id": 3, "name": "공절검", "source": "접천도", "first_complete_episode": 59, "cost": "방향감각과 공간 기억"},
+    {"id": 4, "name": "몽단검", "source": "백몽경", "first_complete_episode": 79, "cost": "소중한 기억"},
+    {"id": 5, "name": "풍아검", "source": "청람의 부러진 뿔", "first_complete_episode": 99, "cost": "계약 상대의 고통과 철회 가능성"},
+    {"id": 6, "name": "천근도", "source": "철산국 산심", "first_complete_episode": 114, "cost": "뼈와 관절의 하중"},
+    {"id": 7, "name": "뇌명극", "source": "천뢰고 심축", "first_complete_episode": 120, "cost": "심박과 수명"},
+    {"id": 8, "name": "해문월도", "source": "조수 열쇠", "first_complete_episode": 139, "cost": "익사 기억과 물 공포"},
+    {"id": 9, "name": "귀영쌍검", "source": "쌍면귀", "first_complete_episode": 150, "cost": "억눌린 욕망의 독립"},
+    {"id": 10, "name": "명실검", "source": "연명사", "first_complete_episode": 160, "cost": "관계와 기억 약화 위험"},
+    {"id": 11, "name": "반생검", "source": "반생화", "first_complete_episode": 175, "cost": "치료한 상처의 일부 전이"},
+    {"id": 12, "name": "무명검", "source": "천명망 마지막 기록판", "first_complete_episode": 189, "cost": "담운의 이름과 존재 기억"}
+  ],
+  "core_party": [
+    "담운",
+    "서린",
+    "연비",
+    "무겸",
+    "청람",
+    "하진명"
+  ],
+  "regions": [
+    "적화분지",
+    "설관령",
+    "접경사막",
+    "몽경도",
+    "풍수해",
+    "철산국",
+    "해문군도",
+    "무명황도"
+  ],
+  "legacy": {
+    "version": "v3.4",
+    "status": "LEGACY_V3_4",
+    "preserve_files": true,
+    "reuse_policy": "기능 단위 재평가 후 선택적 재활용",
+    "forbidden_as_new_canon": [
+      "표국 배달부 메인 구조",
+      "원래 주인 반환 반복",
+      "검함",
+      "소유권 행정 중심 결말",
+      "중앙 소유선과 여섯 책임 조각"
+    ]
+  },
+  "entrypoints": [
+    "CLAUDE.md",
+    "AGENTS.md",
+    "reboot_v1/09_CANON_FREEZE_V1.md",
+    "reboot_v1/00_ORCHESTRA_VERDICT.md",
+    "reboot_v1/01_FINAL_PREMISE.md",
+    "reboot_v1/02_WORLD_BIBLE.md",
+    "reboot_v1/03_POWER_SYSTEM.md",
+    "reboot_v1/04_CAST_AND_FACTIONS.md",
+    "reboot_v1/05_REGIONS_RELICS_AND_EXPLORATION.md",
+    "reboot_v1/06_5ACT_10ARC_20SUBACT.md",
+    "reboot_v1/07_FORESHADOWING_AND_PAYOFF.md",
+    "reboot_v1/08_MARKET_AND_SERIALIZATION_PACKAGE.md",
+    "reboot_v1/episodes/EP001_050_BLUEPRINT.md",
+    "reboot_v1/episodes/EP051_100_BLUEPRINT.md",
+    "reboot_v1/episodes/EP101_150_BLUEPRINT.md",
+    "reboot_v1/episodes/EP151_200_BLUEPRINT.md"
+  ],
+  "next_mode": "REBOOT_MANUSCRIPT_DRAFT_MODE",
+  "next_target": "EP001 버려진 길잡이"
+}
