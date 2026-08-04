@@ -2,9 +2,9 @@
   "project": "유물을 먹는 파천마검",
   "mode": "REBOOT_MANUSCRIPT_DRAFT_MODE",
   "total_episodes": 200,
-  "completed_drafts": 1,
+  "completed_drafts": 2,
   "author_approved": 0,
-  "next_episode": 2,
+  "next_episode": 3,
   "episodes": [
     {
       "episode": 1,
@@ -13,6 +13,14 @@
       "review": "production/reviews/reboot_v1/EP001_REVIEW.md",
       "status": "draft",
       "body_chars_no_newlines": 5135
+    },
+    {
+      "episode": 2,
+      "title": "불이 차갑다",
+      "manuscript": "manuscript/reboot_v1/EP002_불이_차갑다.md",
+      "review": "production/reviews/reboot_v1/EP002_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4792
     }
   ]
 }
