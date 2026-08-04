@@ -1,0 +1,33 @@
+name: Validate Reboot Manuscript v1
+
+on:
+  pull_request:
+    paths:
+      - "manuscript/reboot_v1/**"
+      - "production/reviews/reboot_v1/**"
+      - "data/reboot_manuscript_progress_v1.json"
+      - "scripts/validate_reboot_manuscript_v1.py"
+      - ".github/workflows/validate-reboot-manuscript-v1.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "manuscript/reboot_v1/**"
+      - "production/reviews/reboot_v1/**"
+      - "data/reboot_manuscript_progress_v1.json"
+      - "scripts/validate_reboot_manuscript_v1.py"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate reboot manuscript
+        run: python scripts/validate_reboot_manuscript_v1.py
