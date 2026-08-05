@@ -10,6 +10,27 @@ ROOT = Path(__file__).resolve().parents[1]
 PROGRESS = ROOT / "data/reboot_manuscript_progress_v1.json"
 BANNED_MAIN_ENGINE_TERMS = ("검함", "표국 배달부", "원래 주인 찾아주기")
 
+# (첫 허용 회차, 본문 정규식, 설명) — 해당 회차 이전 본문에 나타나면 정본 위반.
+REVEAL_GATES = (
+    (9, re.compile(r"흑염"), "검흔 이름 `흑염`은 EP009 이전 공개 금지"),
+    (10, re.compile(r"흑염도"), "흑염도 구현은 EP010 이전 금지"),
+    (19, re.compile(r"(?<!불)완전한 흑염도"), "완전한 흑염도는 EP019 이전 금지"),
+    (20, re.compile(r"연무진"), "연무진은 EP020 첫 목소리 이전 언급 금지"),
+    (33, re.compile(r"빙갑검"), "빙갑검 이름은 설관령 아크 잔광(EP033) 이전 금지"),
+)
+
+# EP003부터 검수 보고서에 반드시 있어야 하는 섹션 표지.
+REQUIRED_REVIEW_SECTIONS = (
+    "직전 화 훅",
+    "장면 비트",
+    "공간",
+    "인물",
+    "복선",
+    "다음 화",
+    "국소 수정",
+    "판정",
+)
+
 
 def fail(message: str) -> None:
     print(f"[FAIL] {message}")
@@ -85,9 +106,18 @@ def main() -> int:
             if term in body:
                 fail(f"EP{number:03d} contains banned legacy term: {term}")
 
+        for first_allowed, pattern, label in REVEAL_GATES:
+            if number < first_allowed and pattern.search(body):
+                fail(f"EP{number:03d} reveal gate violation: {label}")
+
         review = review_path.read_text(encoding="utf-8")
         if f"EP{number:03d}" not in review or "DRAFT_REVIEW_PASS" not in review:
             fail(f"EP{number:03d} review is incomplete")
+
+        if number >= 3:
+            for section in REQUIRED_REVIEW_SECTIONS:
+                if section not in review:
+                    fail(f"EP{number:03d} review missing section: {section}")
 
         if re.search(r"\b(?:TODO|TBD|PLACEHOLDER)\b", text, re.IGNORECASE):
             fail(f"EP{number:03d} contains placeholder token")
