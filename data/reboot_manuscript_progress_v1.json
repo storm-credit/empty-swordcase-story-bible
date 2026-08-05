@@ -2,9 +2,9 @@
   "project": "유물을 먹는 파천마검",
   "mode": "REBOOT_MANUSCRIPT_DRAFT_MODE",
   "total_episodes": 200,
-  "completed_drafts": 2,
+  "completed_drafts": 20,
   "author_approved": 0,
-  "next_episode": 3,
+  "next_episode": 21,
   "episodes": [
     {
       "episode": 1,
@@ -21,6 +21,150 @@
       "review": "production/reviews/reboot_v1/EP002_REVIEW.md",
       "status": "draft",
       "body_chars_no_newlines": 4792
+    },
+    {
+      "episode": 3,
+      "title": "고철 한 자루",
+      "manuscript": "manuscript/reboot_v1/EP003_고철_한_자루.md",
+      "review": "production/reviews/reboot_v1/EP003_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4755
+    },
+    {
+      "episode": 4,
+      "title": "화귀의 심장",
+      "manuscript": "manuscript/reboot_v1/EP004_화귀의_심장.md",
+      "review": "production/reviews/reboot_v1/EP004_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4865
+    },
+    {
+      "episode": 5,
+      "title": "살아남은 자의 값",
+      "manuscript": "manuscript/reboot_v1/EP005_살아남은_자의_값.md",
+      "review": "production/reviews/reboot_v1/EP005_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 5114
+    },
+    {
+      "episode": 6,
+      "title": "금서 기록사",
+      "manuscript": "manuscript/reboot_v1/EP006_금서_기록사.md",
+      "review": "production/reviews/reboot_v1/EP006_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4595
+    },
+    {
+      "episode": 7,
+      "title": "불을 빼앗긴 광부들",
+      "manuscript": "manuscript/reboot_v1/EP007_불을_빼앗긴_광부들.md",
+      "review": "production/reviews/reboot_v1/EP007_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4601
+    },
+    {
+      "episode": 8,
+      "title": "칼날 없는 싸움",
+      "manuscript": "manuscript/reboot_v1/EP008_칼날_없는_싸움.md",
+      "review": "production/reviews/reboot_v1/EP008_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4619
+    },
+    {
+      "episode": 9,
+      "title": "심장을 잡는 손",
+      "manuscript": "manuscript/reboot_v1/EP009_심장을_잡는_손.md",
+      "review": "production/reviews/reboot_v1/EP009_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4607
+    },
+    {
+      "episode": 10,
+      "title": "흑염의 잔광",
+      "manuscript": "manuscript/reboot_v1/EP010_흑염의_잔광.md",
+      "review": "production/reviews/reboot_v1/EP010_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4630
+    },
+    {
+      "episode": 11,
+      "title": "국가급 도굴범",
+      "manuscript": "manuscript/reboot_v1/EP011_국가급_도굴범.md",
+      "review": "production/reviews/reboot_v1/EP011_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4577
+    },
+    {
+      "episode": 12,
+      "title": "열을 파는 상회",
+      "manuscript": "manuscript/reboot_v1/EP012_열을_파는_상회.md",
+      "review": "production/reviews/reboot_v1/EP012_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4584
+    },
+    {
+      "episode": 13,
+      "title": "도망치지 않는 길",
+      "manuscript": "manuscript/reboot_v1/EP013_도망치지_않는_길.md",
+      "review": "production/reviews/reboot_v1/EP013_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4567
+    },
+    {
+      "episode": 14,
+      "title": "차가운 분노",
+      "manuscript": "manuscript/reboot_v1/EP014_차가운_분노.md",
+      "review": "production/reviews/reboot_v1/EP014_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4566
+    },
+    {
+      "episode": 15,
+      "title": "사람이 된 화귀",
+      "manuscript": "manuscript/reboot_v1/EP015_사람이_된_화귀.md",
+      "review": "production/reviews/reboot_v1/EP015_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4568
+    },
+    {
+      "episode": 16,
+      "title": "꺼지지 않는 폐광",
+      "manuscript": "manuscript/reboot_v1/EP016_꺼지지_않는_폐광.md",
+      "review": "production/reviews/reboot_v1/EP016_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4571
+    },
+    {
+      "episode": 17,
+      "title": "깨진 나침반의 글씨",
+      "manuscript": "manuscript/reboot_v1/EP017_깨진_나침반의_글씨.md",
+      "review": "production/reviews/reboot_v1/EP017_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4547
+    },
+    {
+      "episode": 18,
+      "title": "불의 마지막 주인",
+      "manuscript": "manuscript/reboot_v1/EP018_불의_마지막_주인.md",
+      "review": "production/reviews/reboot_v1/EP018_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4555
+    },
+    {
+      "episode": 19,
+      "title": "불을 먹는 흑염도",
+      "manuscript": "manuscript/reboot_v1/EP019_불을_먹는_흑염도.md",
+      "review": "production/reviews/reboot_v1/EP019_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4566
+    },
+    {
+      "episode": 20,
+      "title": "파천마검의 목소리",
+      "manuscript": "manuscript/reboot_v1/EP020_파천마검의_목소리.md",
+      "review": "production/reviews/reboot_v1/EP020_REVIEW.md",
+      "status": "draft",
+      "body_chars_no_newlines": 4852
     }
   ]
 }
