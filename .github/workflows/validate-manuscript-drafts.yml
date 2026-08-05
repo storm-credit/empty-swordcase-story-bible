@@ -1,14 +1,9 @@
+# LEGACY_V3_4 보관용: 구판 《빈 검함》 압축 초고 검증기.
+# 리부트 정본(manuscript/reboot_v1/)과 무관하며 push 트리거 시 상시 실패해
+# 수동 실행 전용으로 전환했다. 구판 자료 자체는 참고본으로 보존한다.
 name: Validate manuscript drafts
 
 on:
-  push:
-    paths:
-      - 'manuscript/drafts/**'
-      - 'production/reviews/**'
-      - 'data/manuscript_status_v3_0.json'
-      - 'scripts/lint_prose.py'
-      - 'scripts/validate_manuscript_drafts_v3_0.py'
-      - '.github/workflows/validate-manuscript-drafts.yml'
   workflow_dispatch:
 
 permissions:
