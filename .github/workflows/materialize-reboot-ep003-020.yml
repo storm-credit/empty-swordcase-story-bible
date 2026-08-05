@@ -5,7 +5,7 @@ on:
     branches:
       - agent/reboot-manuscript-ep003-020-v1
     paths:
-      - assets/reboot_ep003_020.tar.xz
+      - assets/ep003_020.part*.b64
       - scripts/materialize_reboot_ep003_020.py
       - .github/workflows/materialize-reboot-ep003-020.yml
 
@@ -27,9 +27,10 @@ jobs:
         run: python scripts/materialize_reboot_ep003_020.py
       - name: Remove one-time payload
         run: |
-          git rm -f assets/reboot_ep003_020.tar.xz
-          git rm -f scripts/materialize_reboot_ep003_020.py
-          git rm -f .github/workflows/materialize-reboot-ep003-020.yml
+          git rm -f --ignore-unmatch assets/reboot_ep003_020.tar.xz
+          git rm -f --ignore-unmatch assets/ep003_020.part*.b64
+          git rm -f --ignore-unmatch scripts/materialize_reboot_ep003_020.py
+          git rm -f --ignore-unmatch .github/workflows/materialize-reboot-ep003-020.yml
       - name: Commit generated files
         run: |
           git config user.name "github-actions[bot]"
