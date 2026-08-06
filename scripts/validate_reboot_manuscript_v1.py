@@ -122,6 +122,10 @@ def main() -> int:
         if re.search(r"\b(?:TODO|TBD|PLACEHOLDER)\b", text, re.IGNORECASE):
             fail(f"EP{number:03d} contains placeholder token")
 
+        # 본문 중간에 남은 초고용 종결 토큰(단독 행 `끝.`/`끝`) 금지.
+        if re.search(r"(?m)^\s*끝\.?\s*$", body):
+            fail(f"EP{number:03d} contains stray draft closing token (`끝.`)")
+
         print(f"[PASS] EP{number:03d} {title}: {body_chars} chars")
 
     print(f"[PASS] reboot manuscript progress: {completed}/200, next EP{next_episode:03d}")
