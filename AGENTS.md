@@ -1,4 +1,4 @@
-# AGENTS.md — 《유물을 먹는 파천마검》 제작 오케스트라 v1.0
+# AGENTS.md — 《유물을 먹는 파천마검》 제작 오케스트라 v1.1
 
 ## Governance
 
@@ -89,6 +89,7 @@
 
 ```bash
 python scripts/validate_pacheon_reboot_v1.py
+python scripts/validate_reboot_manuscript_v1.py
 ```
 
 ## Current Verdict
@@ -101,5 +102,7 @@ python scripts/validate_pacheon_reboot_v1.py
 - EP001~EP200 회차 Blueprint: 완료
 - 복선·회수: 완료
 - 시장 패키지: 완료
-- 리부트 장편 원고: 0/200
-- 다음 작업: EP001 「버려진 길잡이」 초고와 검수
+- 리부트 장편 원고: **20/200**
+- 작가 승인 원고: **0/200**
+- 완료 구간: ARC 1 「적화분지의 흑염」 EP001~EP020
+- 다음 작업: EP021 「눈이 멈추지 않는 나라」 초고와 검수
