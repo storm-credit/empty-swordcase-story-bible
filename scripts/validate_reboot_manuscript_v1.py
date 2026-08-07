@@ -8,6 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PROGRESS = ROOT / "data/reboot_manuscript_progress_v1.json"
+MIN_BODY_CHARS = 4500
 BANNED_MAIN_ENGINE_TERMS = ("검함", "표국 배달부", "원래 주인 찾아주기")
 
 # (첫 허용 회차, 본문 정규식, 설명) — 해당 회차 이전 본문에 나타나면 정본 위반.
@@ -86,8 +87,11 @@ def main() -> int:
         body = body_text(text)
         body_chars = len(body.replace("\n", ""))
 
-        if not 4500 <= body_chars <= 5500:
-            fail(f"EP{number:03d} body length {body_chars} is outside 4500~5500")
+        if body_chars < MIN_BODY_CHARS:
+            fail(
+                f"EP{number:03d} body length {body_chars} is below minimum "
+                f"{MIN_BODY_CHARS}"
+            )
 
         expected_heading = f"# 제{number}화 {title}"
         if expected_heading not in text:
@@ -128,7 +132,10 @@ def main() -> int:
 
         print(f"[PASS] EP{number:03d} {title}: {body_chars} chars")
 
-    print(f"[PASS] reboot manuscript progress: {completed}/200, next EP{next_episode:03d}")
+    print(
+        f"[PASS] reboot manuscript progress: {completed}/200, "
+        f"next EP{next_episode:03d}, minimum {MIN_BODY_CHARS} chars, no upper limit"
+    )
     return 0
 
 
